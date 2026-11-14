@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/husrcf/Code/SAS/scripts/analyze_matched_shared_training_timing.py", line 108, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/husrcf/Code/SAS/scripts/analyze_matched_shared_training_timing.py", line 104, in main
+    report=audit_run(args.run,args.allow_smoke);write_json(args.output,report);args.output.with_suffix('.source.py').write_bytes(Path(__file__).read_bytes())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/husrcf/Code/SAS/scripts/analyze_matched_shared_training_timing.py", line 62, in audit_run
+    raise ValueError('Complete paired training schedule, runtime, inventory or chronology differs')
+ValueError: Complete paired training schedule, runtime, inventory or chronology differs

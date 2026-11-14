@@ -6547,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T19:45:44.218861+00:00",
+  "updated_utc": "2026-11-14T19:59:59.666514+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10072,7 +10072,7 @@
   },
   "current_phase": "matched_shared_training_timing",
   "matched_shared_training_timing": {
-    "status": "all198tests_passed_ready_for_two_arm_real_safety_smoke",
+    "status": "verified_safety_and_import_closed_inventory_passed_scheduled_training_pipeline_starting",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
     "plan_sha256": "027e1d8fcfde9478115e1d238b0528497e6285ca3b1a80086fe332389da5405f",
     "registered_utc": "2026-11-14T19:35:24.223581+00:00",
@@ -10089,7 +10089,7 @@
     "training_data_unchanged": true,
     "future_confirmation_arms": 16,
     "future_confirmation_readouts": 5376,
-    "runtime_source_count": 140,
+    "runtime_source_count": 155,
     "unit_tests_passed": 5,
     "unit_test_log": "/media/990Pro/Code/SAS/logs/matched-shared-training-timing-unit-tests-20261115-01.log",
     "next_actions": [
@@ -10097,7 +10097,20 @@
       "Run the fixed432step schedules, independently audit all6checkpoints and all1728teacher/1728development outcomes.",
       "Then prepare the single pre-registered63000-63007cohort and full16arm cross-schedule confirmation without choosing favorable old queries."
     ],
-    "complete_tests_passed": 198,
-    "complete_test_log": "/media/990Pro/Code/SAS/logs/matched-shared-training-timing-complete-tests-20261115-01.log"
+    "complete_tests_passed": 200,
+    "complete_test_log": "/media/990Pro/Code/SAS/logs/matched-shared-training-timing-complete-tests-20261115-02.log",
+    "original_actual_safety_sources": 146,
+    "original_declared_core_sources": 140,
+    "source_inventory_addendum": "configs/matched_shared_training_timing_source_addendum.json",
+    "source_inventory_addendum_sha256": "f072973cef1bbb6dba6db2e30fcf6a14b5467d68b9778d58b0a9fb0713405688",
+    "retained_source_inventory_audit_failure": {
+      "log": "/media/990Pro/Code/SAS/logs/matched-shared-training-timing-smoke-audit-20261115-01.log",
+      "reason": "Actual unchanged training engine archived six existing dependencies beyond the declared140filecore. Both real safety checks passed; scheduled training stopped before any step. All146actual archived/live sources are preserved; a separate verified auditor/wrapper adds3provenance files for149total without scientific-plan/model/data/loss/budget changes."
+    },
+    "additional_targeted_tests_passed": 8,
+    "additional_test_log": "/media/990Pro/Code/SAS/logs/matched-shared-training-timing-inventory-tests-20261115-03.log",
+    "verified_smoke_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-smoke-audit-20261115-02.json",
+    "training_run": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
+    "training_log": "/media/990Pro/Code/SAS/logs/matched-shared-training-timing-train-20261115-02.log"
   }
 }
