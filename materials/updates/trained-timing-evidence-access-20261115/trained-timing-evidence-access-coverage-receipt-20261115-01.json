@@ -1,0 +1,17 @@
+{
+  "status": "pre_inference_coverage_strengthened_without_modifying_mask_registration",
+  "recorded_utc": "2026-11-14T21:32:47.697101+00:00",
+  "reason": "The inherited10fixed controls cover depth1/3, notdepth2. Add two predetermined depth2 memory proofs permodel in bothsmokes and fullrun.",
+  "original_mask_registration_preserved": true,
+  "sealed_data_source_files_preserved": 163,
+  "prior_measurement_source_files_preserved": 160,
+  "new_inference_runs_started_at_correction": 0,
+  "primary_queries_changed": false,
+  "primary_readout_budget_changed": false,
+  "model_or_mask_or_checkpoint_selection": false,
+  "original_core_proofs_per_model": 10,
+  "supplemental_depth2_proofs_per_model": 2,
+  "source_inventory_count_unchanged": 166,
+  "interrupted_orchestrator_pid": 2122116,
+  "completed_original_full_test_log": "/media/990Pro/Code/SAS/logs/trained-timing-evidence-access-complete-tests-20261115-01.log"
+}

@@ -49,6 +49,29 @@ class EvidenceAccessTests(unittest.TestCase):
         self.assertEqual(len(unique_prefix_queries(physical)),6)
         self.assertEqual(len(unique_prefix_queries(self.registry['physical'])),56)
 
+    def test_supplemental_controls_cover_depth2_short_long_and_both_styles(self):
+        from scripts.trained_timing_evidence_access_metrics import supplemental_depth2_queries
+        queries=supplemental_depth2_queries(self.cases,self.registry);ids={q['id'] for q in queries}
+        self.assertEqual(len(ids),2)
+        selected=[b for b in self.registry['bindings'] if b['physical_id'] in ids and b['role']=='target_current' and b['variant']!='before']
+        self.assertEqual({b['dependency_depth'] for b in selected},{2})
+        self.assertEqual({b['question_style'] for b in selected},{'original','entity_first'})
+        self.assertEqual({b['distractor_updates'] for b in selected},{8,64})
+        base=set(sample_ids(self.cases,self.registry));self.assertFalse(base&ids)
+        combined=[b for b in self.registry['bindings'] if b['physical_id'] in base|ids and b['role']=='target_current' and b['variant']!='before']
+        self.assertEqual({b['dependency_depth'] for b in combined},{1,2,3})
+
+    def test_cross_order_equivalence_rejects_supplemental_depth2_control_drift(self):
+        from scripts.analyze_trained_timing_evidence_access import compare_observations
+        ids=[str(i) for i in range(18)]
+        first={'model_order':list(MODELS),'selected_physical_ids':ids,'native_anchors':[],
+            'models':{n:{'depth2_proofs':[{'observed':'same'}]} for n in MODELS}}
+        second=deepcopy(first);second['model_order'].reverse()
+        rows={n:{r:[{'id':key} for key in ids] for r in REGIMES} for n in MODELS}
+        self.assertEqual(compare_observations(first,second,rows,deepcopy(rows))['exact_readouts'],270)
+        second['models']['native']['depth2_proofs'][0]['observed']='changed'
+        with self.assertRaises(ValueError):compare_observations(first,second,rows,deepcopy(rows))
+
     def test_full_reference_rejects_any_of_five_field_changes_even_small_nll(self):
         expected={'answer':'123','answer_nll':1.,'greedy_exact':True,'generated':'123','query_tokens':10}
         require_exact_full(expected,expected,'native','x')

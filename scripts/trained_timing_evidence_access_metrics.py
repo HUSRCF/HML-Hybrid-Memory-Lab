@@ -20,3 +20,16 @@ def summarize(all_rows,cases,registry,plan):
     return {'models':stats,'oracle_paired_contrasts':comparisons,'old_gates_can_change':False,
         'architecture_effectiveness_claim':False,'prospective_unseen_replication':False,'primary_evaluated':True,
         'success_thresholds':None,'interpretation':plan['interpretation_limits']}
+
+
+def supplemental_depth2_queries(cases,registry):
+    """Fixed short/long, original/entity-first depth2 controls; never inspect scores."""
+    seeds=sorted({c['seed'] for c in cases})
+    chosen=[]
+    for seed,style,variant in [(seeds[0],'original','control'),(seeds[-1],'entity_first','treatment')]:
+        case=next(c for c in cases if c['seed']==seed and c['dependency_depth']==2 and c['question_style']==style)
+        binding=next(b for b in registry['bindings'] if b['case_id']==case['id'] and b['variant']==variant and b['role']=='target_current')
+        chosen.append(binding['physical_id'])
+    result=[q for q in registry['physical'] if q['id'] in chosen]
+    if len(result)!=2:raise ValueError('Two complete predetermined depth2 controls required')
+    return result

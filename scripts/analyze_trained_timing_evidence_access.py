@@ -17,7 +17,7 @@ from scripts.canonical_necessity_common import ADDENDUM_SHA256, audit_affines
 from scripts.trained_timing_evidence_access_data import (MODELS, PROTOCOL, MASKED_REGIMES, REGIMES,
     read_plan, registered_inputs, checked_smoke_equivalence, model_order, sources, require_exact_full)
 from scripts.copy_readout_data import sample_ids, safety_samples, selected_inputs
-from scripts.trained_timing_evidence_access_metrics import summarize
+from scripts.trained_timing_evidence_access_metrics import summarize,supplemental_depth2_queries
 from scripts.copy_readout_runtime import readout, check_weight_stats
 from scripts.analyze_unseen_shared_timing import audit_prefix
 from scripts.trained_timing_evidence_access_data import unique_prefix_queries
@@ -83,6 +83,7 @@ def audit_run(path, allow_smoke=False):
         raise ValueError('Actual stopping configuration or installed native source changed')
     physical, bindings = selected_inputs(registry, manifest["smoke"])
     samples, prefix_samples = sample_ids(cases, registry), safety_samples(registry)
+    extra_queries=supplemental_depth2_queries(cases,registry)
     queries = {q["id"]: q for q in physical}
     order = model_order(manifest["reverse_model_order"])
     weights = manifest["weights_after"]
@@ -97,6 +98,7 @@ def audit_run(path, allow_smoke=False):
         manifest["model_path"] != plan["model_path"] or manifest["packages"] != plan["packages"] or
         manifest["selected_physical_ids"] != list(queries) or manifest["bindings_per_model_regime"] != len(bindings) or
         manifest["sample_query_ids"] != samples or manifest["native_prefix_sample_ids"] != prefix_samples or
+        manifest["supplemental_depth2_query_ids"] != [q["id"] for q in extra_queries] or
         manifest["generation"] != plan["generation"] or manifest["model_order"] != order or
         manifest["completed_models"] != order or list(manifest["models"]) != order or
         set(manifest["source_sha256"]) != sources() or manifest["weights_before"] != weights or
@@ -174,6 +176,21 @@ def audit_run(path, allow_smoke=False):
         old_prefixes={p['source_key']:p for p in source_manifest['models'][name]['prefix_checks']}
         if state['prefix_checks']!=[old_prefixes[q['source_key']] for q in prefix_queries]:
             raise ValueError('Complete native prefix differs from the actual completed timing reference')
+        extra=state['depth2_proofs'];extra_ids=[q['id'] for q in extra_queries]
+        if [p['id'] for p in extra]!=extra_ids:raise ValueError('Both additional depth2 proofs required')
+        extra_full={};extra_rows={r:{} for r in MASKED_REGIMES}
+        for item,q in zip(extra,extra_queries):
+            if item['registration_sha256']!=data_fingerprint(q) or item['mask_registration_sha256']!=data_fingerprint(masks[q['id']]):
+                raise ValueError('Supplemental depth2 control input or mask differs')
+            audit_readout(item['full_readout'],q);require_exact_full(item['full_readout'],reference_rows[name][q['id']],name,q['id'])
+            extra_full[q['id']]=item['full_readout']
+            for r in MASKED_REGIMES:
+                record=item['proof']['regimes'][r];audit_readout(record['readout'],q)
+                if record['measure_hook_calls']['prefill']!=1 or record['measure_hook_calls']['cached']<1:raise ValueError('Depth2 mask execution incomplete')
+                extra_rows[r][q['id']]={**record['readout'],'hook_calls':record['measure_hook_calls']}
+                if policy=='question' and record['prefix_sha256']!=old_prefixes[q['source_key']]['native_prefix_sha256']:
+                    raise ValueError('Supplemental depth2 masked prefix differs from actual old native prefix')
+        audit_proofs([p['proof'] for p in extra],extra_ids,extra_full,extra_rows)
         hashes={p['source_key']:p['native_prefix_sha256'] for p in state['prefix_checks']}
         for proof in state['proofs']:
             source=queries[proof['id']]['source_key']
@@ -207,7 +224,8 @@ def audit_run(path, allow_smoke=False):
         "complete_prefix_and_historical_KV_proofs": 2*proof_count, "detached_native_exact_replays": detach_count,
         "question_only_native_prefix_checks": prefix_count, "exact_completed_canonical_full_replays": len(physical) * 5,
         "native_before_attach_exact_replays":before_count,"attached_none_identities":none_count,
-        "source_files_verified":len(sources()),"prior_timing_criteria_unchanged":registered["references"]["prior_timing_criteria_unchanged"],
+        "source_files_verified":len(sources()),"supplemental_depth2_complete_memory_controls":10,
+        "total_actual_masked_attention_checks_including_depth2":120,"prior_timing_criteria_unchanged":registered["references"]["prior_timing_criteria_unchanged"],
         "metrics": metrics, "interpretation": plan["interpretation_limits"],
         "analysis_source_sha256": streaming_hash(Path(__file__))}
 
@@ -222,12 +240,12 @@ def compare_observations(first,second,a,b):
             if a[name][regime]!=b[name][regime] or [r['id'] for r in a[name][regime]]!=first['selected_physical_ids']:
                 raise ValueError(f'Exact complete readout, mask or execution receipts differ: {name},{regime}')
             count+=len(a[name][regime])
-        for field in ('proofs','prefix_checks','native_before_attach_checks','attached_none_checks','native_restore_checks',
+        for field in ('proofs','depth2_proofs','prefix_checks','native_before_attach_checks','attached_none_checks','native_restore_checks',
             'description','arithmetic','adapter_state_sha256_before','adapter_state_sha256_after','actual_affine_calls'):
             if first['models'][name].get(field)!=second['models'][name].get(field):raise ValueError(f'Complete prefix/scope control differs: {name},{field}')
     if count!=270:raise ValueError('All270exact readouts required')
     return {'exact_readouts':count,'exact_complete_memory_samples':50,'exact_masked_prefix_pairs':100,
-        'exact_question_only_prefix_checks':6,'exact_native_anchors':10}
+        'exact_question_only_prefix_checks':6,'exact_native_anchors':10,'exact_supplemental_depth2_controls':10}
 
 
 def audit_equivalence(forward_path,reverse_path):

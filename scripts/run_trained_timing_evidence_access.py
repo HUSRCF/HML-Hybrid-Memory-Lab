@@ -24,6 +24,7 @@ from scripts.run_copy_dependency_transfer import actual_prompt
 from scripts.run_oracle_kv_readout import measure
 from scripts.unseen_shared_timing_runtime import verify_prefix
 from scripts.trained_timing_evidence_access_data import unique_prefix_queries
+from scripts.trained_timing_evidence_access_metrics import supplemental_depth2_queries
 from scripts.run_write_locality_load_screen import hook_state, weights_fingerprint
 from scripts.stable_adapter_linears import StableAdapterLinears
 
@@ -35,6 +36,7 @@ def execute(args, plan, registered, source_plan, cases, registry, masks, referen
     torch.set_num_threads(4)
     physical, bindings = selected_inputs(registry, args.smoke)
     samples, prefix_samples = sample_ids(cases, registry), safety_samples(registry)
+    extra_queries=supplemental_depth2_queries(cases,registry)
     case_map = {c["id"]: c for c in cases}
     reference_rows = {m: {r["id"]: r for r in rows} for m, rows in references.items()}
     order = model_order(args.reverse_model_order)
@@ -48,7 +50,7 @@ def execute(args, plan, registered, source_plan, cases, registry, masks, referen
         "mask_registry_sha256": registered["mask_registry_sha256"], "references": registered["references"],
         "model_path": plan["model_path"], "selected_physical_ids": [q["id"] for q in physical],
         "bindings_per_model_regime": len(bindings), "sample_query_ids": samples,
-        "native_prefix_sample_ids": prefix_samples, "smoke_equivalence_gate": gate, "generation": plan["generation"],
+        "native_prefix_sample_ids": prefix_samples, "supplemental_depth2_query_ids":[q["id"] for q in extra_queries], "smoke_equivalence_gate": gate, "generation": plan["generation"],
         "models": {}, "completed_models": [], "native_anchors": [],
         "source_sha256": {n: streaming_hash(ROOT / n) for n in sorted(sources())},
         "generation_config_sha256": {p.name: streaming_hash(p) for p in Path(plan["model_path"]).glob("generation_config.json")}}
@@ -91,7 +93,7 @@ def execute(args, plan, registered, source_plan, cases, registry, masks, referen
         for name in order:
             spec = source_plan["models"][name]
             state = {"completed_queries_per_regime": 0, "prefix_checks": [], "proofs": [],
-                "native_restore_checks": [], "native_before_attach_checks": [], "attached_none_checks": [], "exact_canonical_full_replays": 0, "token_policy": spec["token_policy"] if spec else "none"}
+                "native_restore_checks": [], "depth2_proofs": [], "native_before_attach_checks": [], "attached_none_checks": [], "exact_canonical_full_replays": 0, "token_policy": spec["token_policy"] if spec else "none"}
             manifest["models"][name] = state
             controller, arithmetic = None, None
             try:
@@ -173,6 +175,17 @@ def execute(args, plan, registered, source_plan, cases, registry, masks, referen
                             write_json(path, manifest)
                             print(json.dumps({"event": "trained_timing_evidence_access", "model": name,
                                 "queries_per_regime": number, "total": len(physical)}), flush=True)
+                # The inherited10proofs cover depth1/3 endpoints. Always add both
+                # predetermined depth2 controls, including in each operational smoke.
+                with torch.inference_mode():
+                    for q in extra_queries:
+                        ledger=actual_prompt(runtime,case_map,q)
+                        if controller:controller.set_token_policy(spec['token_policy'],q['ledger_tokens'])
+                        full=measure(runtime,ledger,q);require_exact_full(full,reference_rows[name][q['id']],name,q['id'])
+                        keeps={r:[bit=='1' for bit in masks[q['id']]['keep_bits'][r]] for r in MASKED_REGIMES}
+                        proof,_=prove_and_measure(runtime,ledger,q,keeps,full)
+                        state['depth2_proofs'].append({'id':q['id'],'registration_sha256':data_fingerprint(q),
+                            'mask_registration_sha256':data_fingerprint(masks[q['id']]),'full_readout':full,'proof':proof})
                 if controller is not None:
                     state.update(adapter_state_sha256_after=state_fingerprint(controller),
                         all_adapter_parameters_frozen=all(not p.requires_grad and p.grad is None for p in controller.parameters()),
