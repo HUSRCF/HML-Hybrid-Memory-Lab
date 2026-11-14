@@ -1,0 +1,217 @@
+{
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "model_key": "it",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "models": {
+    "native": null,
+    "shared": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "shared",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/shared/step-000432/controller.safetensors",
+      "checkpoint_sha256": "3ac57cfd86116dc712aacd14de526ccc3cb8f60c7348317fbacc16910914d8fc",
+      "checkpoint_metadata_sha256": "b2bc536ef797684ef00736b8a2622eb94dbe7c6d6d6b55a8f672346a35663225",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.007630780778693288,
+        "teacher_numeric_tokens_correct": 2585,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "shared_question_trained_all": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
+      "training_arm": "shared_question",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01/shared_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "1aa88746b1e317047b6095e21cdfc70f7008b1205c79378b1a740e2df3410035",
+      "checkpoint_metadata_sha256": "941e41380f5d7f01de211044c598269f7c4ae5850d6226302f019d4d54f89e2a",
+      "manifest_sha256": "226ce6120ff2405928b9e9081b08b530333255a31516da79ad98f832c721d9bc",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-audit-20261115-01.json",
+      "audit_sha256": "58dc86ad25e8d858e0077d3b1e5ae7e4950130b02e6d8e6ec0a7387be799e49c",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005023321897164545,
+        "teacher_numeric_tokens_correct": 2590,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "shared_question_trained_question": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
+      "training_arm": "shared_question",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01/shared_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "1aa88746b1e317047b6095e21cdfc70f7008b1205c79378b1a740e2df3410035",
+      "checkpoint_metadata_sha256": "941e41380f5d7f01de211044c598269f7c4ae5850d6226302f019d4d54f89e2a",
+      "manifest_sha256": "226ce6120ff2405928b9e9081b08b530333255a31516da79ad98f832c721d9bc",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-audit-20261115-01.json",
+      "audit_sha256": "58dc86ad25e8d858e0077d3b1e5ae7e4950130b02e6d8e6ec0a7387be799e49c",
+      "final_step": 432,
+      "token_policy": "question",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005023321897164545,
+        "teacher_numeric_tokens_correct": 2590,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "gdn_all_tokens": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "gdn_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+      "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.006321374711538502,
+        "teacher_numeric_tokens_correct": 2584,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    }
+  },
+  "model_order": [
+    "native",
+    "shared",
+    "shared_question_trained_all",
+    "shared_question_trained_question",
+    "gdn_all_tokens"
+  ],
+  "generation": {
+    "max_tokens": 12,
+    "prefill": "full",
+    "score_batch": false
+  },
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "precision_addendum": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_precision_addendum.json",
+  "precision_addendum_sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc",
+  "status": "registered_before_mask_registration_or_new_intervention_inference",
+  "registered_utc": "2026-11-14T23:13:30.765426+00:00",
+  "profile": "oracle_write_hold_factorial",
+  "purpose": "Fixed original-token/position diagnostic crossing oracle recurrent update holds with question-time support-only Attention. Privileged query-conditioned localization, not a learned architecture.",
+  "training": false,
+  "new_adapters": false,
+  "new_models": false,
+  "new_task_cases": false,
+  "new_environment": false,
+  "local_files_only": true,
+  "prospective_unseen_confirmation": false,
+  "architecture_effectiveness_claim": false,
+  "can_change_prior_gates": false,
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/text-competence-factorial-20261115-01",
+  "source_manifest_sha256": "cf0884e96d8566874c65beaf7b744362b8606a40bd50934c993582443fad1b77",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/text-competence-factorial-audit-20261115-01.json",
+  "source_audit_sha256": "63e4688e7521ba17f7156f1f8167fa35f380d5a18be1b4d3bd0ba98df0af8310",
+  "source_protocol": "configs/text_competence_factorial_plan.json",
+  "source_protocol_sha256": "fce95c001170418fdd485495d5cfde0120c89b751e136816fc8fc1d86621f00d",
+  "source_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/text-competence-factorial-v1",
+  "source_dataset_manifest_sha256": "fca5d76d9456dfe834a6127c63100ab00cde71335845ed7eae99952d3b11931c",
+  "source_mask_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/trained-timing-evidence-access-v1",
+  "source_mask_manifest_sha256": "f23e18dd755417761f4a0a609dd0bbde2c8d21644688881e1c42d5009525de74",
+  "source_masks_sha256": "e2e51e83647200af0a0368956d6427a535bf4d2322c40e5104486de884da8301",
+  "preserved_runtime_source_count": 172,
+  "regimes": [
+    "full",
+    "hold",
+    "oracle",
+    "hold_oracle"
+  ],
+  "factors": {
+    "recurrent_policy": [
+      "native",
+      "hold_nonsupport_record_updates"
+    ],
+    "reader_policy": [
+      "full",
+      "oracle"
+    ]
+  },
+  "counts": {
+    "base_streams": 8,
+    "cases": 48,
+    "physical_queries": 336,
+    "related_bindings": 432,
+    "models": 5,
+    "regimes": 4,
+    "primary_physical_readouts": 6720,
+    "primary_related_bindings": 8640,
+    "exact_prior_full_replays": 1680,
+    "exact_prior_oracle_replays": 1680,
+    "new_write_hold_readouts": 3360
+  },
+  "smoke_queries_per_model": 18,
+  "smoke_readouts_per_order": 360,
+  "smoke_orders": [
+    "registered_forward",
+    "registered_reverse"
+  ],
+  "dataset_destination": "/media/990Pro/Code/SAS/datasets/memory_update/oracle-write-hold-factorial-v1",
+  "intervention": {
+    "layer_scope": "All18GDNlayers, no layer selection. All6fullAttention layers remain present in all configurations. GDN-only describes adapter scope only.",
+    "held_tokens": "Only original record tokens after prelude with original executable oracle keep bit0. Preserve all prelude, support record, question and answer token updates. Use same original336input IDs, prompt tokens, causal positions, boundaries and generation.",
+    "implementation": "Post-projection hooks set in_proj_a and in_proj_b outputs to negative infinity only on held positions; actual kernel must receive log-decay g=0 and write beta=0 there, finite g/b throughout, and exact original projected gates elsewhere. All weights remain frozen; no source/kernel edit.",
+    "retained_computation": "Q/K/V projection, causal convolution including conv cache, GDN reads, residual/MLP and all full Attention computations continue. Only recurrent state decay/write are held. Changed outputs may affect later GDN inputs and contextualized KV.",
+    "reader": "Use original QuestionKVReadout oracle on q/answer rows only; no change to historical Attention access or historical prefix when changing only reader policy.",
+    "timing_limit": "Support labels depend on later query and executable event semantics, so this is a hindsight oracle, not a causal online update policy.",
+    "numerical_checks": "Original full and oracle exact five-field replay for every model/query; independent no-op wrapper controls. Actual kernel g/b observed on every readout. Auxiliary cached one-token holds must preserve all18recurrent states exactly while advancing all6KV caches and retaining convolution computation; all-held synthetic chunk/recurrent native-kernel checks precede outcome inference.",
+    "control_coverage": "Use unchanged12condition-safety queries (legacy10 plus fixed2depth2); no case/depth/model selection from outcomes. Every control includes native anchors, preattach, disabled-controller, detached replay, no-op hook exactness, kernel coverage, reader weight observation and cached state identity. Question-deployed adapter prefix equality on all56original prefixes."
+  },
+  "requirements": [
+    "Freeze all172 prior runtime sources and raw results; do not modify native modeling source, model weights, precision, tokenizer or scoring.",
+    "Register full plan before producing new masks/data or new intervention inference. Validate original executable mask reconstruction and full latest factorial audit.",
+    "Run all tests, then independently audited opposite360-readout smokes, exact on unrestricted readout fields and intervention observations, before starting full6720readouts. Preserve failed attempts; no mid-run implementation edits.",
+    "Keep original336queries/432bindings, all5fixed checkpoints and deployment policies, all3depths and2styles; no new training or scaleup.",
+    "Report paired repairs and regressions, role/joint/depth outcomes and loss interaction descriptively. No new architecture success gate; all earlier failed criteria remain failed.",
+    "Publish raw registrations, full source closure, controls, all20cells, limitations and exact-byte archive to existing GitHub repository."
+  ],
+  "interpretation_limits": [
+    "An improvement would show relevance of the intervened recurrent update route under privileged query-specific suppression; it does not establish natural GDN damage, learned semantic locality or recurrent-state-only answerability.",
+    "A decline may reflect useful background computation or out-of-distribution gate inputs; no monotonic improvement is assumed.",
+    "Record token spans can include shared delimiters/subword boundary tokens as in existing mask registry; source mask validity must be retained and disclosed.",
+    "Convolution state remains active, Attention K/V can change downstream of altered GDN outputs, and read-only GDN outputs still depend on held token Q. This is not a full removal of irrelevant content.",
+    "2x2 loss interaction is descriptive and does not by itself imply memory synergy, semantic interference or architecture advantage.",
+    "Reused eight base streams and related bindings are correlated exploratory samples; no new unseen confirmation claim."
+  ]
+}

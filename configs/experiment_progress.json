@@ -11007,5 +11007,25 @@
     "source_files_unchanged_after_publication": 172,
     "all_phase_jobs_terminal": true,
     "gdn_only_denotes_adapter_scope": true
+  },
+  "oracle_write_hold_factorial": {
+    "status": "data_frozen_tests_passed_smokes_pending",
+    "protocol": "configs/oracle_write_hold_factorial_plan.json",
+    "protocol_sha256": "b05fc0ee3b1a1134e54e2a0c43ee815a650b08599c9654122e87682d1f9710e1",
+    "prior_runtime_sources_preserved": 172,
+    "runtime_source_files": 180,
+    "training": false,
+    "primary_readouts_planned": 6720,
+    "new_scientific_results": false,
+    "prior_failed_gates_unchanged": true,
+    "next_action": "Complete full tests, freeze original masks, run actual native-kernel identity checks and two independently audited opposite-order360readout smokes before primary.",
+    "full_tests_passed": 229,
+    "full_tests_seconds": 157.269,
+    "source_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/oracle-write-hold-factorial-v1",
+    "held_token_range": [
+      255,
+      1287
+    ],
+    "previous_full_audit_reexecuted": true
   }
 }
