@@ -1,0 +1,57 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:03,  2.58it/s]Loading weights:   9%|▉         | 28/320 [00:00<00:03, 74.19it/s]Loading weights:  18%|█▊        | 59/320 [00:00<00:01, 136.80it/s]Loading weights:  28%|██▊       | 90/320 [00:00<00:01, 185.15it/s]Loading weights:  37%|███▋      | 118/320 [00:00<00:00, 210.11it/s]Loading weights:  46%|████▌     | 147/320 [00:00<00:00, 230.50it/s]Loading weights:  57%|█████▋    | 181/320 [00:01<00:00, 253.12it/s]Loading weights:  65%|██████▌   | 209/320 [00:01<00:00, 251.86it/s]Loading weights:  75%|███████▌  | 240/320 [00:01<00:00, 264.74it/s]Loading weights:  85%|████████▌ | 272/320 [00:01<00:00, 275.75it/s]Loading weights:  95%|█████████▌| 305/320 [00:01<00:00, 284.76it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 211.94it/s]
+{"event": "trained_timing_evidence_access", "model": "native", "queries_per_regime": 32, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "native", "queries_per_regime": 64, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "native", "queries_per_regime": 96, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "native", "queries_per_regime": 128, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "native", "queries_per_regime": 160, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "native", "queries_per_regime": 192, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "native", "queries_per_regime": 224, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "native", "queries_per_regime": 256, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "native", "queries_per_regime": 288, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "native", "queries_per_regime": 320, "total": 336}
+{"event": "evidence_access_arm_complete", "model": "native", "new_readouts": 1008}
+{"event": "trained_timing_evidence_access", "model": "shared", "queries_per_regime": 32, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared", "queries_per_regime": 64, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared", "queries_per_regime": 96, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared", "queries_per_regime": 128, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared", "queries_per_regime": 160, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared", "queries_per_regime": 192, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared", "queries_per_regime": 224, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared", "queries_per_regime": 256, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared", "queries_per_regime": 288, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared", "queries_per_regime": 320, "total": 336}
+{"event": "evidence_access_arm_complete", "model": "shared", "new_readouts": 1008}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_all", "queries_per_regime": 32, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_all", "queries_per_regime": 64, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_all", "queries_per_regime": 96, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_all", "queries_per_regime": 128, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_all", "queries_per_regime": 160, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_all", "queries_per_regime": 192, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_all", "queries_per_regime": 224, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_all", "queries_per_regime": 256, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_all", "queries_per_regime": 288, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_all", "queries_per_regime": 320, "total": 336}
+{"event": "evidence_access_arm_complete", "model": "shared_question_trained_all", "new_readouts": 1008}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_question", "queries_per_regime": 32, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_question", "queries_per_regime": 64, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_question", "queries_per_regime": 96, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_question", "queries_per_regime": 128, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_question", "queries_per_regime": 160, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_question", "queries_per_regime": 192, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_question", "queries_per_regime": 224, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_question", "queries_per_regime": 256, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_question", "queries_per_regime": 288, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_question", "queries_per_regime": 320, "total": 336}
+{"event": "evidence_access_arm_complete", "model": "shared_question_trained_question", "new_readouts": 1008}
+{"event": "trained_timing_evidence_access", "model": "gdn_all_tokens", "queries_per_regime": 32, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "gdn_all_tokens", "queries_per_regime": 64, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "gdn_all_tokens", "queries_per_regime": 96, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "gdn_all_tokens", "queries_per_regime": 128, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "gdn_all_tokens", "queries_per_regime": 160, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "gdn_all_tokens", "queries_per_regime": 192, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "gdn_all_tokens", "queries_per_regime": 224, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "gdn_all_tokens", "queries_per_regime": 256, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "gdn_all_tokens", "queries_per_regime": 288, "total": 336}
+{"event": "trained_timing_evidence_access", "model": "gdn_all_tokens", "queries_per_regime": 320, "total": 336}
+{"event": "evidence_access_arm_complete", "model": "gdn_all_tokens", "new_readouts": 1008}

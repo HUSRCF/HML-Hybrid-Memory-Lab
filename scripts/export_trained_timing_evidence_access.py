@@ -97,7 +97,7 @@ def export(audit_path,prefix):
         for pos in (2.5,5.5,8.5,11.5):ax.axhline(pos,color='#d8d8d8',lw=.7)
         ax.invert_yaxis();ax.set_axisbelow(True);ax.grid(axis='x',alpha=.2)
         for side in ('top','right'):ax.spines[side].set_visible(False)
-    fig.suptitle('Frozen-prefix evidence access — all five checkpoints and three regimes',fontsize=14)
+    fig.suptitle('Frozen-prefix evidence access — all five registered configurations',fontsize=14)
     fig.text(.02,.06,'Reused cohort: 8 source streams, 48 related cases. All 5040 primary readouts shown; related bindings are correlated.',fontsize=9)
     fig.text(.02,.027,'Program oracle masks query-time history access only. Dense eager kernels; no speed claim. Oracle failure alone does not identify a composition failure.',fontsize=9)
     fig.tight_layout(rect=[0,.1,1,.94]);fig.savefig(prefix.with_suffix('.png'),dpi=180);fig.savefig(prefix.with_suffix('.pdf'));plt.close(fig)

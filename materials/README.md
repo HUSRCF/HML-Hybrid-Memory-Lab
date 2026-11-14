@@ -7,7 +7,18 @@
 实验使用 Qwen3.5-2B IT；不能将这些结果当作 Base 模型的实测结果，也尚未
 实现显式的共享语义依赖控制器。
 
-## Current evidence
+## Latest completed phase
+
+[冻结历史状态的完整证据访问诊断](updates/trained-timing-evidence-access-20261115/README.md)
+已完成5040次正式读出、独立审计和215项测试。Oracle支持事件掩码使原Shared/all
+从14/48升至48/48；Native历史状态完全保留的question配置从15/48升至46/48，
+GDN-only也达到46/48。这是复用8条事件流的解释性诊断，不证明新架构有效；
+所有旧失败门槛保持原判。nonslice在五个配置上均为0/336，具有强干预和语法混淆。
+
+此前[匹配训练/部署确认](updates/trained-shared-timing-20261115/README.md)的
+5376次读出也已完整备份，三项研究门槛未通过。完整模型检查点另见对应Release。
+
+## Evidence at the initial backup
 
 以下记录备份时点的结果，恢复后的新批次见
 [未见事件流时段验证](updates/unseen-shared-timing-20261115/README.md)。

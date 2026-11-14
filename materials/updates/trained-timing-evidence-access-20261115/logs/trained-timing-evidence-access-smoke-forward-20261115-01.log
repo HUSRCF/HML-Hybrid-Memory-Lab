@@ -1,0 +1,22 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<01:59,  2.68it/s]Loading weights:  11%|█▏        | 36/320 [00:00<00:02, 96.29it/s]Loading weights:  20%|██        | 65/320 [00:00<00:01, 148.52it/s]Loading weights:  29%|██▉       | 94/320 [00:00<00:01, 187.16it/s]Loading weights:  39%|███▉      | 125/320 [00:00<00:00, 217.05it/s]Loading weights:  48%|████▊     | 152/320 [00:00<00:00, 231.15it/s]Loading weights:  58%|█████▊    | 186/320 [00:01<00:00, 251.06it/s]Loading weights:  68%|██████▊   | 217/320 [00:01<00:00, 266.59it/s]Loading weights:  78%|███████▊  | 251/320 [00:01<00:00, 267.93it/s]Loading weights:  88%|████████▊ | 283/320 [00:01<00:00, 281.71it/s]Loading weights:  98%|█████████▊| 313/320 [00:01<00:00, 282.02it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 218.94it/s]
+{"event": "trained_timing_evidence_access", "model": "native", "queries_per_regime": 6, "total": 18}
+{"event": "trained_timing_evidence_access", "model": "native", "queries_per_regime": 12, "total": 18}
+{"event": "trained_timing_evidence_access", "model": "native", "queries_per_regime": 18, "total": 18}
+{"event": "evidence_access_arm_complete", "model": "native", "new_readouts": 54}
+{"event": "trained_timing_evidence_access", "model": "shared", "queries_per_regime": 6, "total": 18}
+{"event": "trained_timing_evidence_access", "model": "shared", "queries_per_regime": 12, "total": 18}
+{"event": "trained_timing_evidence_access", "model": "shared", "queries_per_regime": 18, "total": 18}
+{"event": "evidence_access_arm_complete", "model": "shared", "new_readouts": 54}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_all", "queries_per_regime": 6, "total": 18}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_all", "queries_per_regime": 12, "total": 18}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_all", "queries_per_regime": 18, "total": 18}
+{"event": "evidence_access_arm_complete", "model": "shared_question_trained_all", "new_readouts": 54}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_question", "queries_per_regime": 6, "total": 18}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_question", "queries_per_regime": 12, "total": 18}
+{"event": "trained_timing_evidence_access", "model": "shared_question_trained_question", "queries_per_regime": 18, "total": 18}
+{"event": "evidence_access_arm_complete", "model": "shared_question_trained_question", "new_readouts": 54}
+{"event": "trained_timing_evidence_access", "model": "gdn_all_tokens", "queries_per_regime": 6, "total": 18}
+{"event": "trained_timing_evidence_access", "model": "gdn_all_tokens", "queries_per_regime": 12, "total": 18}
+{"event": "trained_timing_evidence_access", "model": "gdn_all_tokens", "queries_per_regime": 18, "total": 18}
+{"event": "evidence_access_arm_complete", "model": "gdn_all_tokens", "new_readouts": 54}

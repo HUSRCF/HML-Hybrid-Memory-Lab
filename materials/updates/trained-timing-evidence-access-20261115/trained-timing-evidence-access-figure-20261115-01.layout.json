@@ -1,0 +1,88 @@
+{
+  "model_order": [
+    "native",
+    "shared",
+    "shared_question_trained_all",
+    "shared_question_trained_question",
+    "gdn_all_tokens"
+  ],
+  "regimes": [
+    "full",
+    "oracle",
+    "nonslice"
+  ],
+  "labels": [
+    "Native | full",
+    "Native | oracle",
+    "Native | nonslice",
+    "Shared: train all / deploy all | full",
+    "Shared: train all / deploy all | oracle",
+    "Shared: train all / deploy all | nonslice",
+    "Shared: train question / deploy all | full",
+    "Shared: train question / deploy all | oracle",
+    "Shared: train question / deploy all | nonslice",
+    "Shared: train question / deploy question | full",
+    "Shared: train question / deploy question | oracle",
+    "Shared: train question / deploy question | nonslice",
+    "GDN: train all / deploy all | full",
+    "GDN: train all / deploy all | oracle",
+    "GDN: train all / deploy all | nonslice"
+  ],
+  "joint_counts": [
+    1,
+    13,
+    0,
+    14,
+    48,
+    0,
+    15,
+    47,
+    0,
+    15,
+    46,
+    0,
+    16,
+    46,
+    0
+  ],
+  "current_counts": [
+    13,
+    44,
+    0,
+    45,
+    96,
+    0,
+    43,
+    96,
+    0,
+    39,
+    96,
+    0,
+    38,
+    95,
+    0
+  ],
+  "physical_counts": [
+    249,
+    277,
+    0,
+    281,
+    336,
+    0,
+    280,
+    334,
+    0,
+    279,
+    334,
+    0,
+    278,
+    334,
+    0
+  ],
+  "figure_inches": [
+    15,
+    9
+  ],
+  "dpi": 180,
+  "intervals": "Exact fixed-cohort counts; no binomial intervals on correlated bindings."
+}

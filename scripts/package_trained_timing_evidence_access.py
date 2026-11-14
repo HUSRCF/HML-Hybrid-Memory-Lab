@@ -57,7 +57,7 @@ def package(audit_path,output):
     material=ROOT/'materials/updates'/f'{PHASE}-20261115'
     for p in sorted(material.rglob('*')):
         if p.is_file():add(p,ROOT,'code')
-    for name in ['README.md','.gitattributes','requirements.txt','configs/experiment_progress.json',
+    for name in ['README.md','materials/README.md','.gitattributes','requirements.txt','configs/experiment_progress.json',
                  'scripts/export_trained_timing_evidence_access.py','scripts/package_trained_timing_evidence_access.py',
                  'scripts/document_trained_timing_evidence_access.py',
                  'tests/test_trained_timing_evidence_access.py']:

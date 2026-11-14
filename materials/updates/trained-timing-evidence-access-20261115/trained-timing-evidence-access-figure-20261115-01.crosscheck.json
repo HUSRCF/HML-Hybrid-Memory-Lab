@@ -1,0 +1,471 @@
+{
+  "status": "all5040_csv_rows_exact_and_independent_counts_match",
+  "counts": {
+    "native": {
+      "full": {
+        "physical_correct": 249,
+        "joint_six_after": 1,
+        "role_variant_counts": {
+          "target_current": {
+            "before": 48,
+            "control": 2,
+            "treatment": 11
+          },
+          "target_initial": {
+            "before": 48,
+            "control": 48,
+            "treatment": 48
+          },
+          "protected_current": {
+            "before": 48,
+            "control": 45,
+            "treatment": 47
+          }
+        },
+        "joint_by_depth": {
+          "1": 1,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "oracle": {
+        "physical_correct": 277,
+        "joint_six_after": 13,
+        "role_variant_counts": {
+          "target_current": {
+            "before": 48,
+            "control": 13,
+            "treatment": 31
+          },
+          "target_initial": {
+            "before": 48,
+            "control": 48,
+            "treatment": 48
+          },
+          "protected_current": {
+            "before": 48,
+            "control": 42,
+            "treatment": 47
+          }
+        },
+        "joint_by_depth": {
+          "1": 6,
+          "2": 4,
+          "3": 3
+        }
+      },
+      "nonslice": {
+        "physical_correct": 0,
+        "joint_six_after": 0,
+        "role_variant_counts": {
+          "target_current": {
+            "before": 0,
+            "control": 0,
+            "treatment": 0
+          },
+          "target_initial": {
+            "before": 0,
+            "control": 0,
+            "treatment": 0
+          },
+          "protected_current": {
+            "before": 0,
+            "control": 0,
+            "treatment": 0
+          }
+        },
+        "joint_by_depth": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "oracle_minus_full": {
+        "preserved": 242,
+        "regression": 7,
+        "repair": 35,
+        "both_wrong": 52
+      },
+      "oracle_minus_nonslice": {
+        "preserved": 0,
+        "regression": 0,
+        "repair": 277,
+        "both_wrong": 59
+      }
+    },
+    "shared": {
+      "full": {
+        "physical_correct": 281,
+        "joint_six_after": 14,
+        "role_variant_counts": {
+          "target_current": {
+            "before": 48,
+            "control": 19,
+            "treatment": 26
+          },
+          "target_initial": {
+            "before": 48,
+            "control": 45,
+            "treatment": 47
+          },
+          "protected_current": {
+            "before": 48,
+            "control": 48,
+            "treatment": 48
+          }
+        },
+        "joint_by_depth": {
+          "1": 12,
+          "2": 2,
+          "3": 0
+        }
+      },
+      "oracle": {
+        "physical_correct": 336,
+        "joint_six_after": 48,
+        "role_variant_counts": {
+          "target_current": {
+            "before": 48,
+            "control": 48,
+            "treatment": 48
+          },
+          "target_initial": {
+            "before": 48,
+            "control": 48,
+            "treatment": 48
+          },
+          "protected_current": {
+            "before": 48,
+            "control": 48,
+            "treatment": 48
+          }
+        },
+        "joint_by_depth": {
+          "1": 16,
+          "2": 16,
+          "3": 16
+        }
+      },
+      "nonslice": {
+        "physical_correct": 0,
+        "joint_six_after": 0,
+        "role_variant_counts": {
+          "target_current": {
+            "before": 0,
+            "control": 0,
+            "treatment": 0
+          },
+          "target_initial": {
+            "before": 0,
+            "control": 0,
+            "treatment": 0
+          },
+          "protected_current": {
+            "before": 0,
+            "control": 0,
+            "treatment": 0
+          }
+        },
+        "joint_by_depth": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "oracle_minus_full": {
+        "preserved": 281,
+        "regression": 0,
+        "repair": 55,
+        "both_wrong": 0
+      },
+      "oracle_minus_nonslice": {
+        "preserved": 0,
+        "regression": 0,
+        "repair": 336,
+        "both_wrong": 0
+      }
+    },
+    "shared_question_trained_all": {
+      "full": {
+        "physical_correct": 280,
+        "joint_six_after": 15,
+        "role_variant_counts": {
+          "target_current": {
+            "before": 48,
+            "control": 20,
+            "treatment": 23
+          },
+          "target_initial": {
+            "before": 48,
+            "control": 45,
+            "treatment": 48
+          },
+          "protected_current": {
+            "before": 48,
+            "control": 48,
+            "treatment": 48
+          }
+        },
+        "joint_by_depth": {
+          "1": 13,
+          "2": 1,
+          "3": 1
+        }
+      },
+      "oracle": {
+        "physical_correct": 334,
+        "joint_six_after": 47,
+        "role_variant_counts": {
+          "target_current": {
+            "before": 45,
+            "control": 48,
+            "treatment": 48
+          },
+          "target_initial": {
+            "before": 48,
+            "control": 48,
+            "treatment": 48
+          },
+          "protected_current": {
+            "before": 48,
+            "control": 47,
+            "treatment": 48
+          }
+        },
+        "joint_by_depth": {
+          "1": 16,
+          "2": 15,
+          "3": 16
+        }
+      },
+      "nonslice": {
+        "physical_correct": 0,
+        "joint_six_after": 0,
+        "role_variant_counts": {
+          "target_current": {
+            "before": 0,
+            "control": 0,
+            "treatment": 0
+          },
+          "target_initial": {
+            "before": 0,
+            "control": 0,
+            "treatment": 0
+          },
+          "protected_current": {
+            "before": 0,
+            "control": 0,
+            "treatment": 0
+          }
+        },
+        "joint_by_depth": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "oracle_minus_full": {
+        "preserved": 278,
+        "regression": 2,
+        "repair": 56,
+        "both_wrong": 0
+      },
+      "oracle_minus_nonslice": {
+        "preserved": 0,
+        "regression": 0,
+        "repair": 334,
+        "both_wrong": 2
+      }
+    },
+    "shared_question_trained_question": {
+      "full": {
+        "physical_correct": 279,
+        "joint_six_after": 15,
+        "role_variant_counts": {
+          "target_current": {
+            "before": 48,
+            "control": 19,
+            "treatment": 20
+          },
+          "target_initial": {
+            "before": 48,
+            "control": 48,
+            "treatment": 48
+          },
+          "protected_current": {
+            "before": 48,
+            "control": 48,
+            "treatment": 48
+          }
+        },
+        "joint_by_depth": {
+          "1": 15,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "oracle": {
+        "physical_correct": 334,
+        "joint_six_after": 46,
+        "role_variant_counts": {
+          "target_current": {
+            "before": 48,
+            "control": 48,
+            "treatment": 48
+          },
+          "target_initial": {
+            "before": 48,
+            "control": 48,
+            "treatment": 48
+          },
+          "protected_current": {
+            "before": 48,
+            "control": 46,
+            "treatment": 48
+          }
+        },
+        "joint_by_depth": {
+          "1": 16,
+          "2": 15,
+          "3": 15
+        }
+      },
+      "nonslice": {
+        "physical_correct": 0,
+        "joint_six_after": 0,
+        "role_variant_counts": {
+          "target_current": {
+            "before": 0,
+            "control": 0,
+            "treatment": 0
+          },
+          "target_initial": {
+            "before": 0,
+            "control": 0,
+            "treatment": 0
+          },
+          "protected_current": {
+            "before": 0,
+            "control": 0,
+            "treatment": 0
+          }
+        },
+        "joint_by_depth": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "oracle_minus_full": {
+        "preserved": 277,
+        "regression": 2,
+        "repair": 57,
+        "both_wrong": 0
+      },
+      "oracle_minus_nonslice": {
+        "preserved": 0,
+        "regression": 0,
+        "repair": 334,
+        "both_wrong": 2
+      }
+    },
+    "gdn_all_tokens": {
+      "full": {
+        "physical_correct": 278,
+        "joint_six_after": 16,
+        "role_variant_counts": {
+          "target_current": {
+            "before": 48,
+            "control": 20,
+            "treatment": 18
+          },
+          "target_initial": {
+            "before": 48,
+            "control": 48,
+            "treatment": 48
+          },
+          "protected_current": {
+            "before": 48,
+            "control": 48,
+            "treatment": 48
+          }
+        },
+        "joint_by_depth": {
+          "1": 15,
+          "2": 0,
+          "3": 1
+        }
+      },
+      "oracle": {
+        "physical_correct": 334,
+        "joint_six_after": 46,
+        "role_variant_counts": {
+          "target_current": {
+            "before": 48,
+            "control": 47,
+            "treatment": 48
+          },
+          "target_initial": {
+            "before": 48,
+            "control": 48,
+            "treatment": 48
+          },
+          "protected_current": {
+            "before": 48,
+            "control": 47,
+            "treatment": 48
+          }
+        },
+        "joint_by_depth": {
+          "1": 16,
+          "2": 15,
+          "3": 15
+        }
+      },
+      "nonslice": {
+        "physical_correct": 0,
+        "joint_six_after": 0,
+        "role_variant_counts": {
+          "target_current": {
+            "before": 0,
+            "control": 0,
+            "treatment": 0
+          },
+          "target_initial": {
+            "before": 0,
+            "control": 0,
+            "treatment": 0
+          },
+          "protected_current": {
+            "before": 0,
+            "control": 0,
+            "treatment": 0
+          }
+        },
+        "joint_by_depth": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "oracle_minus_full": {
+        "preserved": 277,
+        "regression": 1,
+        "repair": 57,
+        "both_wrong": 1
+      },
+      "oracle_minus_nonslice": {
+        "preserved": 0,
+        "regression": 0,
+        "repair": 334,
+        "both_wrong": 2
+      }
+    }
+  },
+  "raw_csv_rows_verified": 5040,
+  "old_gates_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  }
+}

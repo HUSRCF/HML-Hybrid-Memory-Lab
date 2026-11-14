@@ -1,0 +1,20 @@
+{
+  "status": "all_five_models_three_regimes_exported_from_actual_audited5040readouts",
+  "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/trained-timing-evidence-access-audit-20261115-01.json",
+  "audit_sha256": "1bfb845bd0648220300502d6d5d44a92c2d2d6f42fcef82e47fdb696f249b395",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/trained-timing-evidence-access-20261115-01",
+  "manifest_sha256": "42f5f64830b1f2a8e64691f6b770333c96a4eb89e2e1a21d252254765de55b56",
+  "mask_registry_sha256": "b123217dfd5e2f8214b1d4f99a441b501548078203d9b99787cca39bcae1cbe3",
+  "dataset_manifest_sha256": "f23e18dd755417761f4a0a609dd0bbde2c8d21644688881e1c42d5009525de74",
+  "export_source_sha256": "575930c9b84d34ffe8b4515dc54357371cbe65b7c08a1894a13e3698aedd2753",
+  "output_sha256": {
+    "trained-timing-evidence-access-figure-20261115-01.png": "6a6df5c4af5b8d492fb75d706b82cc414d4aa06d3c4049a741f0ec267d8ef30e",
+    "trained-timing-evidence-access-figure-20261115-01.pdf": "ea734a99d3933c3098aa6f5e961d788a6df1f262aa08791d4a15fb55c2cc052e",
+    "trained-timing-evidence-access-figure-20261115-01.csv": "87bfc383461ed59a603ee4e202dfdc7797baab30c99957a826224509c27577cc",
+    "trained-timing-evidence-access-figure-20261115-01.pairs.csv": "65c60097716c284405f51f64dc7808c225ba5592514140fc471f1d5dbf47848b",
+    "trained-timing-evidence-access-figure-20261115-01.data.json": "d19d077d9baeaf3092179bfbf534f3993dd3a35f6932b48faae5dfbda5575692",
+    "trained-timing-evidence-access-figure-20261115-01.layout.json": "efe8e5213666f6463dc1d80d84ed266a06850af385e08dcc9644ffec56b75811",
+    "trained-timing-evidence-access-figure-20261115-01.source.py": "575930c9b84d34ffe8b4515dc54357371cbe65b7c08a1894a13e3698aedd2753",
+    "trained-timing-evidence-access-figure-20261115-01.crosscheck.json": "53fb68cd73d9ffda0c0fc54db815460fd8d315565bfce8afef1552a5f220f9ce"
+  }
+}

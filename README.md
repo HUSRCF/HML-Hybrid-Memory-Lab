@@ -5,21 +5,21 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; the unseen-stream timing experiment is completed and audited.**
-All 3,360 full-answer readouts and 193 regression tests completed. Both registered
-question-only criteria failed: the same shared checkpoint drops from 17/48 joint
-cases with all-token activation to 0/48 with question/answer-only activation,
-with 33 previously correct physical answers lost and two repaired. Ledger-only
-activation reaches 9/48; the ordinary local-adapter baseline reaches 21/48.
-All 56 question-only native prefixes are exact. These schedule effects do not
-establish semantic write necessity, recurrent memory damage or an architecture
-improvement. The earlier four-case state-restoration series remains closed.
+**Status: active; the complete frozen-prefix evidence-access diagnostic is audited.**
+All 5,040 registered readouts and 215 regression tests passed their operational
+checks. Program-support masks raise the original shared arm from 14/48 to 48/48
+joint cases, and the question-trained/question-deployed arm from 15/48 to 46/48
+with all 56 history prefixes identical to native. GDN-only also reaches 46/48.
+These are explanatory results on a reused eight-stream cohort, not a new
+architecture success. All previous failed scientific gates remain failed.
+The equal-token nonslice control scores 0/336 for every arm and is a strong
+intervention with grammatical and evidence-availability confounds.
 
+- [Complete five-configuration, three-regime results](materials/updates/trained-timing-evidence-access-20261115/README.md)
+- [Previous 5,376-readout matched-training confirmation](materials/updates/trained-shared-timing-20261115/README.md)
 - [Research status and archived materials](materials/README.md)
-- [All ten timing results, audit and figure](materials/updates/unseen-shared-timing-20261115/README.md)
-- [Registered training-schedule control](materials/updates/matched-shared-training-timing-20261115/README.md)
+- [Registered evidence-access protocol](configs/trained_timing_evidence_access_plan.json)
 - [Machine-readable progress](configs/experiment_progress.json)
-- [Next registered experiment](configs/unseen_shared_timing_plan.json)
 - [Full backup files](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases)
 
 The fixed backup release records the explicit pause; subsequent work resumes
@@ -2820,3 +2820,5 @@ reported in [the completed phase](materials/updates/unseen-shared-timing-2026111
 The broader goal remains active; this result does not trigger new training.
 
 最新完成：[匹配训练/部署时机的完整新样本结果](materials/updates/trained-shared-timing-20261115/README.md)。5376次读出与独立审计完成；三项研究门槛均未通过，匹配训练的收益集中于一跳任务。
+
+后续完成：[冻结历史状态的证据访问诊断](materials/updates/trained-timing-evidence-access-20261115/README.md)。5040次正式读出、独立审计及全量导出完成；旧失败门槛保持原判，研究继续。
