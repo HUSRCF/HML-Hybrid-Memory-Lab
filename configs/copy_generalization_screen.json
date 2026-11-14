@@ -1,0 +1,61 @@
+{
+  "status": "locked_for_frozen_evaluation",
+  "cases_file": "/media/990Pro/Code/SAS/datasets/memory_update/copy-generalization-v1/cases.json",
+  "expected_cases_sha256": "a995eea7d47b5b03423ccf17d7c26f65d4d873f7a7fc391821bcc03f563efba7",
+  "cluster_key": "base_case_id",
+  "strata": [
+    "dependency_depth",
+    "question_style"
+  ],
+  "checkpoints": [
+    "native",
+    "runs/memory_update/controller-keys-pilot-20261114-01/local",
+    "runs/memory_update/controller-question-trained-20261114-01/local"
+  ],
+  "oracle": "Backward slice for all current-value queries, with the same frozen checkpoints.",
+  "notes": [
+    "No training or adaptation on this cohort.",
+    "Only executable operation records and natural questions enter the model; condition/dependency labels are evaluation metadata.",
+    "Report every condition; compare current, initial, protected and joint readouts."
+  ],
+  "registered_utc": "2026-11-13T21:55:33.946818+00:00",
+  "task_protocol": "copy_generalization_v1",
+  "evaluation_kind": "heldout_depth_wording_generalization",
+  "modes": [
+    "local_all",
+    "local_question"
+  ],
+  "checkpoint_runs": {
+    "local_all": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-keys-pilot-20261114-01",
+      "mode": "local"
+    },
+    "local_question": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-question-trained-20261114-01",
+      "mode": "local"
+    }
+  },
+  "paired_comparisons": [
+    [
+      "local_question",
+      "native"
+    ],
+    [
+      "local_question",
+      "local_all"
+    ]
+  ],
+  "oracle_evaluation": {
+    "variants": [
+      "control",
+      "treatment"
+    ],
+    "roles": [
+      "target_current"
+    ]
+  },
+  "excluded_case_files": [
+    "/media/990Pro/Code/SAS/runs/memory_update/controller-keys-confirm-20261114-01/cases.json",
+    "/media/990Pro/Code/SAS/runs/memory_update/controller-timing-confirm-20261114-01/cases.json"
+  ]
+}

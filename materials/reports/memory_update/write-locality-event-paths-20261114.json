@@ -1,0 +1,2627 @@
+{
+  "status": "completed_and_audited",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/write-locality-event-paths-20261114-01",
+  "manifest_sha256": "930032f4f5364020b34645f2ca05d50cb5e08628a954be2628fa957ae6f0e7cf",
+  "dataset_manifest_sha256": "fd8d7a0be96932d543f852aba12f832990a8f45665770046a82f6141bf5b7be8",
+  "registry_sha256": "7bbb5d141693f34bab31c553916bb4e579e7e2c7cfcf9726750030df00d1ed3b",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "readouts_audited": 1200,
+  "calibrations_audited": 448,
+  "pairs_audited": 96,
+  "readout_counts": {
+    "cache_condition/preservation": 384,
+    "cache_condition/current_A": 384,
+    "oracle/preservation": 192,
+    "replay/preservation": 48,
+    "full_C_baseline/current_C": 64,
+    "cache_condition/current_C": 128
+  },
+  "physical_ledger_prefills": 192,
+  "unique_natural_prefixes": 160,
+  "source_KV_identity_pairs": 96,
+  "actual_attention_probability_checks": 72,
+  "metrics": {
+    "by_cohort_and_stratum": [
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_B_at32",
+        "pairs": 16,
+        "base_streams": [
+          "write-locality-s97000",
+          "write-locality-s97001",
+          "write-locality-s97002",
+          "write-locality-s97003"
+        ],
+        "conditions": [
+          {
+            "condition": 0,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 12,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 4
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 16,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 11,
+                "both_correct": 0,
+                "both_wrong": 5
+              }
+            },
+            "preservation_rescue_but_right_update_failure": [
+              "write-locality-s97003-a032-v1"
+            ]
+          },
+          {
+            "condition": 1,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 11,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 5
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 11,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 5
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 2,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 14,
+                "rescued": 3,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 2
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 14,
+                "rescued": 3,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 2
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 3,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 10,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 10,
+                "both_wrong": 5
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 16,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 11,
+                "both_correct": 0,
+                "both_wrong": 5
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          }
+        ],
+        "oracle_vs_cached_natural": [
+          {
+            "side": "left",
+            "units": 16,
+            "reference_correct": 12,
+            "candidate_correct": 16,
+            "rescued": 4,
+            "regressed": 0,
+            "both_correct": 12,
+            "both_wrong": 0
+          },
+          {
+            "side": "right",
+            "units": 16,
+            "reference_correct": 11,
+            "candidate_correct": 16,
+            "rescued": 5,
+            "regressed": 0,
+            "both_correct": 11,
+            "both_wrong": 0
+          }
+        ],
+        "preservation_NLL_contrasts": {
+          "means": {
+            "recurrent_right_minus_left_at_left_KV": 0.04550170215467612,
+            "recurrent_right_minus_left_at_right_KV": 0.0344807809839646,
+            "KV_right_minus_left_at_left_recurrent": -0.0019301852832237908,
+            "KV_right_minus_left_at_right_recurrent": -0.012951106453935305,
+            "interaction_difference_in_differences": -0.011020921170711517
+          },
+          "individual_pairs": [
+            {
+              "case_id": "write-locality-s97000-a032-v0",
+              "seed": 97000,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.011344542105992644,
+              "recurrent_right_minus_left_at_right_KV": 0.033398141463597625,
+              "KV_right_minus_left_at_left_recurrent": 0.0038212438424428397,
+              "KV_right_minus_left_at_right_recurrent": 0.02587484320004782,
+              "interaction_difference_in_differences": 0.02205359935760498
+            },
+            {
+              "case_id": "write-locality-s97000-a032-v1",
+              "seed": 97000,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.047504742940266964,
+              "recurrent_right_minus_left_at_right_KV": 0.016524314880371094,
+              "KV_right_minus_left_at_left_recurrent": 0.02930130561192834,
+              "KV_right_minus_left_at_right_recurrent": -0.0016791224479675293,
+              "interaction_difference_in_differences": -0.03098042805989587
+            },
+            {
+              "case_id": "write-locality-s97000-a032-v2",
+              "seed": 97000,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.014108419418334961,
+              "recurrent_right_minus_left_at_right_KV": 0.020090500513712584,
+              "KV_right_minus_left_at_left_recurrent": -0.023745179176330566,
+              "KV_right_minus_left_at_right_recurrent": -0.017763098080952944,
+              "interaction_difference_in_differences": 0.005982081095377623
+            },
+            {
+              "case_id": "write-locality-s97000-a032-v3",
+              "seed": 97000,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.047769546508789035,
+              "recurrent_right_minus_left_at_right_KV": 0.021873732407887786,
+              "KV_right_minus_left_at_left_recurrent": -0.009818732738494873,
+              "KV_right_minus_left_at_right_recurrent": -0.03571454683939612,
+              "interaction_difference_in_differences": -0.025895814100901277
+            },
+            {
+              "case_id": "write-locality-s97001-a032-v0",
+              "seed": 97001,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.12811140219370526,
+              "recurrent_right_minus_left_at_right_KV": 0.1108320951461792,
+              "KV_right_minus_left_at_left_recurrent": -0.012329618136088072,
+              "KV_right_minus_left_at_right_recurrent": -0.029608925183614132,
+              "interaction_difference_in_differences": -0.01727930704752606
+            },
+            {
+              "case_id": "write-locality-s97001-a032-v1",
+              "seed": 97001,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.05767265955607093,
+              "recurrent_right_minus_left_at_right_KV": 0.058720012505849184,
+              "KV_right_minus_left_at_left_recurrent": -0.03908330202102661,
+              "KV_right_minus_left_at_right_recurrent": -0.038035949071248354,
+              "interaction_difference_in_differences": 0.0010473529497782574
+            },
+            {
+              "case_id": "write-locality-s97001-a032-v2",
+              "seed": 97001,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.057134807109832764,
+              "recurrent_right_minus_left_at_right_KV": 0.057569921016693115,
+              "KV_right_minus_left_at_left_recurrent": -0.00593694051106769,
+              "KV_right_minus_left_at_right_recurrent": -0.005501826604207338,
+              "interaction_difference_in_differences": 0.00043511390686035156
+            },
+            {
+              "case_id": "write-locality-s97001-a032-v3",
+              "seed": 97001,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.05862728754679358,
+              "recurrent_right_minus_left_at_right_KV": 0.05486361185709637,
+              "KV_right_minus_left_at_left_recurrent": -0.018651107947031675,
+              "KV_right_minus_left_at_right_recurrent": -0.022414783636728886,
+              "interaction_difference_in_differences": -0.00376367568969721
+            },
+            {
+              "case_id": "write-locality-s97002-a032-v0",
+              "seed": 97002,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.08401250839233398,
+              "recurrent_right_minus_left_at_right_KV": 0.052974263827005985,
+              "KV_right_minus_left_at_left_recurrent": 0.024260878562927246,
+              "KV_right_minus_left_at_right_recurrent": -0.006777366002400753,
+              "interaction_difference_in_differences": -0.031038244565328
+            },
+            {
+              "case_id": "write-locality-s97002-a032-v1",
+              "seed": 97002,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.05551536877950031,
+              "recurrent_right_minus_left_at_right_KV": 0.039375046888987214,
+              "KV_right_minus_left_at_left_recurrent": -0.038639426231384305,
+              "KV_right_minus_left_at_right_recurrent": -0.0547797481218974,
+              "interaction_difference_in_differences": -0.01614032189051312
+            },
+            {
+              "case_id": "write-locality-s97002-a032-v2",
+              "seed": 97002,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.018750945727030427,
+              "recurrent_right_minus_left_at_right_KV": 0.016785899798075377,
+              "KV_right_minus_left_at_left_recurrent": 0.00814799467722574,
+              "KV_right_minus_left_at_right_recurrent": 0.006182948748270689,
+              "interaction_difference_in_differences": -0.0019650459289550504
+            },
+            {
+              "case_id": "write-locality-s97002-a032-v3",
+              "seed": 97002,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.016616185506184877,
+              "recurrent_right_minus_left_at_right_KV": 0.011278967062632206,
+              "KV_right_minus_left_at_left_recurrent": -0.007271846135457338,
+              "KV_right_minus_left_at_right_recurrent": -0.01260906457901001,
+              "interaction_difference_in_differences": -0.0053372184435526715
+            },
+            {
+              "case_id": "write-locality-s97003-a032-v0",
+              "seed": 97003,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.028153181076049805,
+              "recurrent_right_minus_left_at_right_KV": 0.03195381164550781,
+              "KV_right_minus_left_at_left_recurrent": -0.008573532104492188,
+              "KV_right_minus_left_at_right_recurrent": -0.00477290153503418,
+              "interaction_difference_in_differences": 0.003800630569458008
+            },
+            {
+              "case_id": "write-locality-s97003-a032-v1",
+              "seed": 97003,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.06856592496236164,
+              "recurrent_right_minus_left_at_right_KV": 0.0009027719497680664,
+              "KV_right_minus_left_at_left_recurrent": 0.04074104626973468,
+              "KV_right_minus_left_at_right_recurrent": -0.026922106742858887,
+              "interaction_difference_in_differences": -0.06766315301259357
+            },
+            {
+              "case_id": "write-locality-s97003-a032-v2",
+              "seed": 97003,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.02017243703206384,
+              "recurrent_right_minus_left_at_right_KV": 0.0031941731770833703,
+              "KV_right_minus_left_at_left_recurrent": 0.024100462595621708,
+              "KV_right_minus_left_at_right_recurrent": 0.007122198740641239,
+              "interaction_difference_in_differences": -0.01697826385498047
+            },
+            {
+              "case_id": "write-locality-s97003-a032-v3",
+              "seed": 97003,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.013967275619506836,
+              "recurrent_right_minus_left_at_right_KV": 0.021355231602986635,
+              "KV_right_minus_left_at_left_recurrent": 0.0027937889099121094,
+              "KV_right_minus_left_at_right_recurrent": 0.010181744893391909,
+              "interaction_difference_in_differences": 0.007387955983479799
+            }
+          ]
+        }
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "initial_A_at128",
+        "pairs": 16,
+        "base_streams": [
+          "write-locality-s97000",
+          "write-locality-s97001",
+          "write-locality-s97002",
+          "write-locality-s97003"
+        ],
+        "conditions": [
+          {
+            "condition": 0,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 16,
+                "rescued": 5,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 16,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 11,
+                "both_correct": 0,
+                "both_wrong": 5
+              }
+            },
+            "preservation_rescue_but_right_update_failure": [
+              "write-locality-s97001-a128-v1",
+              "write-locality-s97001-a128-v2",
+              "write-locality-s97002-a128-v2",
+              "write-locality-s97003-a128-v1",
+              "write-locality-s97003-a128-v2"
+            ]
+          },
+          {
+            "condition": 1,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 11,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 5
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 11,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 5
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 2,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 13,
+                "rescued": 2,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 3
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 13,
+                "rescued": 2,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 3
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 3,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 16,
+                "rescued": 5,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 16,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 11,
+                "both_correct": 0,
+                "both_wrong": 5
+              }
+            },
+            "preservation_rescue_but_right_update_failure": [
+              "write-locality-s97001-a128-v1",
+              "write-locality-s97001-a128-v2",
+              "write-locality-s97002-a128-v2",
+              "write-locality-s97003-a128-v1",
+              "write-locality-s97003-a128-v2"
+            ]
+          }
+        ],
+        "oracle_vs_cached_natural": [
+          {
+            "side": "left",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0
+          },
+          {
+            "side": "right",
+            "units": 16,
+            "reference_correct": 11,
+            "candidate_correct": 16,
+            "rescued": 5,
+            "regressed": 0,
+            "both_correct": 11,
+            "both_wrong": 0
+          }
+        ],
+        "preservation_NLL_contrasts": {
+          "means": {
+            "recurrent_right_minus_left_at_left_KV": 0.010485138511285186,
+            "recurrent_right_minus_left_at_right_KV": 0.04103340208530426,
+            "KV_right_minus_left_at_left_recurrent": 0.18766433815471828,
+            "KV_right_minus_left_at_right_recurrent": 0.21821260172873735,
+            "interaction_difference_in_differences": 0.030548263574019078
+          },
+          "individual_pairs": [
+            {
+              "case_id": "write-locality-s97000-a128-v0",
+              "seed": 97000,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.0014291206995646205,
+              "recurrent_right_minus_left_at_right_KV": 0.013408859570821108,
+              "KV_right_minus_left_at_left_recurrent": 0.20608584086100262,
+              "KV_right_minus_left_at_right_recurrent": 0.2180655797322591,
+              "interaction_difference_in_differences": 0.011979738871256487
+            },
+            {
+              "case_id": "write-locality-s97000-a128-v1",
+              "seed": 97000,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.024129509925842285,
+              "recurrent_right_minus_left_at_right_KV": 0.07095674673716224,
+              "KV_right_minus_left_at_left_recurrent": 0.2655237118403117,
+              "KV_right_minus_left_at_right_recurrent": 0.31235094865163165,
+              "interaction_difference_in_differences": 0.04682723681131995
+            },
+            {
+              "case_id": "write-locality-s97000-a128-v2",
+              "seed": 97000,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": -0.014217923084894807,
+              "recurrent_right_minus_left_at_right_KV": -0.008780598640441895,
+              "KV_right_minus_left_at_left_recurrent": 0.14051995674769086,
+              "KV_right_minus_left_at_right_recurrent": 0.14595728119214377,
+              "interaction_difference_in_differences": 0.005437324444452912
+            },
+            {
+              "case_id": "write-locality-s97000-a128-v3",
+              "seed": 97000,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.02621103326479593,
+              "recurrent_right_minus_left_at_right_KV": -0.006828089555104555,
+              "KV_right_minus_left_at_left_recurrent": 0.18351473410924274,
+              "KV_right_minus_left_at_right_recurrent": 0.15047561128934225,
+              "interaction_difference_in_differences": -0.033039122819900485
+            },
+            {
+              "case_id": "write-locality-s97001-a128-v0",
+              "seed": 97001,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.005349035064379375,
+              "recurrent_right_minus_left_at_right_KV": 0.0582232077916463,
+              "KV_right_minus_left_at_left_recurrent": 0.14450875421365103,
+              "KV_right_minus_left_at_right_recurrent": 0.19738292694091797,
+              "interaction_difference_in_differences": 0.052874172727266924
+            },
+            {
+              "case_id": "write-locality-s97001-a128-v1",
+              "seed": 97001,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.009587491552035018,
+              "recurrent_right_minus_left_at_right_KV": 0.06717181205749514,
+              "KV_right_minus_left_at_left_recurrent": 0.18726412951946259,
+              "KV_right_minus_left_at_right_recurrent": 0.2448484500249227,
+              "interaction_difference_in_differences": 0.057584320505460126
+            },
+            {
+              "case_id": "write-locality-s97001-a128-v2",
+              "seed": 97001,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.012303479015827182,
+              "recurrent_right_minus_left_at_right_KV": 0.06974124908447266,
+              "KV_right_minus_left_at_left_recurrent": 0.19860456387201944,
+              "KV_right_minus_left_at_right_recurrent": 0.25604233394066495,
+              "interaction_difference_in_differences": 0.05743777006864548
+            },
+            {
+              "case_id": "write-locality-s97001-a128-v3",
+              "seed": 97001,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.011806180079778045,
+              "recurrent_right_minus_left_at_right_KV": 0.018863101800282805,
+              "KV_right_minus_left_at_left_recurrent": 0.15077259639898938,
+              "KV_right_minus_left_at_right_recurrent": 0.15782951811949414,
+              "interaction_difference_in_differences": 0.007056921720504761
+            },
+            {
+              "case_id": "write-locality-s97002-a128-v0",
+              "seed": 97002,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.00845878819624583,
+              "recurrent_right_minus_left_at_right_KV": 0.017100339134534195,
+              "KV_right_minus_left_at_left_recurrent": 0.03761529177427292,
+              "KV_right_minus_left_at_right_recurrent": 0.04625684271256129,
+              "interaction_difference_in_differences": 0.008641550938288365
+            },
+            {
+              "case_id": "write-locality-s97002-a128-v1",
+              "seed": 97002,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.003162552913029991,
+              "recurrent_right_minus_left_at_right_KV": 0.040263831615447984,
+              "KV_right_minus_left_at_left_recurrent": 0.0592645804087321,
+              "KV_right_minus_left_at_right_recurrent": 0.09636585911115009,
+              "interaction_difference_in_differences": 0.03710127870241799
+            },
+            {
+              "case_id": "write-locality-s97002-a128-v2",
+              "seed": 97002,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.007999698321024575,
+              "recurrent_right_minus_left_at_right_KV": 0.06688837210337317,
+              "KV_right_minus_left_at_left_recurrent": 0.3232321788867315,
+              "KV_right_minus_left_at_right_recurrent": 0.3821208526690801,
+              "interaction_difference_in_differences": 0.0588886737823486
+            },
+            {
+              "case_id": "write-locality-s97002-a128-v3",
+              "seed": 97002,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.00400509809454282,
+              "recurrent_right_minus_left_at_right_KV": 0.01967042187849681,
+              "KV_right_minus_left_at_left_recurrent": 0.047932027528683335,
+              "KV_right_minus_left_at_right_recurrent": 0.06359735131263733,
+              "interaction_difference_in_differences": 0.01566532378395399
+            },
+            {
+              "case_id": "write-locality-s97003-a128-v0",
+              "seed": 97003,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": -0.00982333223025006,
+              "recurrent_right_minus_left_at_right_KV": 0.049435098965962765,
+              "KV_right_minus_left_at_left_recurrent": 0.23328417539596555,
+              "KV_right_minus_left_at_right_recurrent": 0.29254260659217834,
+              "interaction_difference_in_differences": 0.059258431196212824
+            },
+            {
+              "case_id": "write-locality-s97003-a128-v1",
+              "seed": 97003,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.0361586312452952,
+              "recurrent_right_minus_left_at_right_KV": 0.10525071620941168,
+              "KV_right_minus_left_at_left_recurrent": 0.38450718919436133,
+              "KV_right_minus_left_at_right_recurrent": 0.45359927415847784,
+              "interaction_difference_in_differences": 0.06909208496411648
+            },
+            {
+              "case_id": "write-locality-s97003-a128-v2",
+              "seed": 97003,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.015572120745976775,
+              "recurrent_right_minus_left_at_right_KV": 0.0224429766337077,
+              "KV_right_minus_left_at_left_recurrent": 0.25750212868054706,
+              "KV_right_minus_left_at_right_recurrent": 0.26437298456827796,
+              "interaction_difference_in_differences": 0.006870855887730926
+            },
+            {
+              "case_id": "write-locality-s97003-a128-v3",
+              "seed": 97003,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.025630732377370194,
+              "recurrent_right_minus_left_at_right_KV": 0.0527263879776001,
+              "KV_right_minus_left_at_left_recurrent": 0.1824975510438283,
+              "KV_right_minus_left_at_right_recurrent": 0.20959320664405823,
+              "interaction_difference_in_differences": 0.027095655600229904
+            }
+          ]
+        }
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "pairs": 16,
+        "base_streams": [
+          "write-locality-s97000",
+          "write-locality-s97001",
+          "write-locality-s97002",
+          "write-locality-s97003"
+        ],
+        "conditions": [
+          {
+            "condition": 0,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 13,
+                "rescued": 2,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 3
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 16,
+                "reference_correct": 13,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 13,
+                "both_correct": 0,
+                "both_wrong": 3
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 11,
+                "both_correct": 0,
+                "both_wrong": 5
+              }
+            },
+            "preservation_rescue_but_right_update_failure": [
+              "write-locality-s97001-a128-v1",
+              "write-locality-s97001-a128-v2"
+            ]
+          },
+          {
+            "condition": 1,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 11,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 5
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 16,
+                "reference_correct": 13,
+                "candidate_correct": 13,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 13,
+                "both_wrong": 3
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 11,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 5
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 2,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 13,
+                "rescued": 2,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 3
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 16,
+                "reference_correct": 13,
+                "candidate_correct": 13,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 13,
+                "both_wrong": 3
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 12,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 4
+              }
+            },
+            "preservation_rescue_but_right_update_failure": [
+              "write-locality-s97001-a128-v2"
+            ]
+          },
+          {
+            "condition": 3,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 11,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 11,
+                "both_wrong": 5
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 16,
+                "reference_correct": 13,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 13,
+                "both_correct": 0,
+                "both_wrong": 3
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 11,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 11,
+                "both_correct": 0,
+                "both_wrong": 5
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          }
+        ],
+        "oracle_vs_cached_natural": [
+          {
+            "side": "left",
+            "units": 16,
+            "reference_correct": 13,
+            "candidate_correct": 16,
+            "rescued": 3,
+            "regressed": 0,
+            "both_correct": 13,
+            "both_wrong": 0
+          },
+          {
+            "side": "right",
+            "units": 16,
+            "reference_correct": 11,
+            "candidate_correct": 16,
+            "rescued": 5,
+            "regressed": 0,
+            "both_correct": 11,
+            "both_wrong": 0
+          }
+        ],
+        "preservation_NLL_contrasts": {
+          "means": {
+            "recurrent_right_minus_left_at_left_KV": 0.028757734224200245,
+            "recurrent_right_minus_left_at_right_KV": 0.03157464166482289,
+            "KV_right_minus_left_at_left_recurrent": 0.0011078026145696683,
+            "KV_right_minus_left_at_right_recurrent": 0.003924710055192315,
+            "interaction_difference_in_differences": 0.0028169074406226464
+          },
+          "individual_pairs": [
+            {
+              "case_id": "write-locality-s97000-a128-v0",
+              "seed": 97000,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.006327072779337528,
+              "recurrent_right_minus_left_at_right_KV": 0.02283565203348792,
+              "KV_right_minus_left_at_left_recurrent": 0.0031290054321289062,
+              "KV_right_minus_left_at_right_recurrent": 0.019637584686279297,
+              "interaction_difference_in_differences": 0.01650857925415039
+            },
+            {
+              "case_id": "write-locality-s97000-a128-v1",
+              "seed": 97000,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.04452649752298987,
+              "recurrent_right_minus_left_at_right_KV": 0.057532111803690555,
+              "KV_right_minus_left_at_left_recurrent": -0.001584768295288086,
+              "KV_right_minus_left_at_right_recurrent": 0.011420845985412598,
+              "interaction_difference_in_differences": 0.013005614280700684
+            },
+            {
+              "case_id": "write-locality-s97000-a128-v2",
+              "seed": 97000,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.035546799500783294,
+              "recurrent_right_minus_left_at_right_KV": 0.06705997387568158,
+              "KV_right_minus_left_at_left_recurrent": 0.005336443583170564,
+              "KV_right_minus_left_at_right_recurrent": 0.03684961795806885,
+              "interaction_difference_in_differences": 0.031513174374898284
+            },
+            {
+              "case_id": "write-locality-s97000-a128-v3",
+              "seed": 97000,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": -0.03380997975667316,
+              "recurrent_right_minus_left_at_right_KV": -0.006779074668884277,
+              "KV_right_minus_left_at_left_recurrent": -0.05755650997161865,
+              "KV_right_minus_left_at_right_recurrent": -0.03052560488382977,
+              "interaction_difference_in_differences": 0.02703090508778888
+            },
+            {
+              "case_id": "write-locality-s97001-a128-v0",
+              "seed": 97001,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.02781146764755249,
+              "recurrent_right_minus_left_at_right_KV": 0.08943818012873331,
+              "KV_right_minus_left_at_left_recurrent": -0.008567710717519134,
+              "KV_right_minus_left_at_right_recurrent": 0.053059001763661684,
+              "interaction_difference_in_differences": 0.06162671248118082
+            },
+            {
+              "case_id": "write-locality-s97001-a128-v1",
+              "seed": 97001,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.08110352357228598,
+              "recurrent_right_minus_left_at_right_KV": 0.08565729856491092,
+              "KV_right_minus_left_at_left_recurrent": -0.014945149421691895,
+              "KV_right_minus_left_at_right_recurrent": -0.010391374429066957,
+              "interaction_difference_in_differences": 0.004553774992624937
+            },
+            {
+              "case_id": "write-locality-s97001-a128-v2",
+              "seed": 97001,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.08880279461542767,
+              "recurrent_right_minus_left_at_right_KV": 0.08360453446706137,
+              "KV_right_minus_left_at_left_recurrent": 0.001841167608896882,
+              "KV_right_minus_left_at_right_recurrent": -0.0033570925394694195,
+              "interaction_difference_in_differences": -0.005198260148366302
+            },
+            {
+              "case_id": "write-locality-s97001-a128-v3",
+              "seed": 97001,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.06417703628540039,
+              "recurrent_right_minus_left_at_right_KV": 0.06772933403650921,
+              "KV_right_minus_left_at_left_recurrent": -0.007033050060272217,
+              "KV_right_minus_left_at_right_recurrent": -0.003480752309163393,
+              "interaction_difference_in_differences": 0.003552297751108824
+            },
+            {
+              "case_id": "write-locality-s97002-a128-v0",
+              "seed": 97002,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.0073802371819814,
+              "recurrent_right_minus_left_at_right_KV": 0.018400073051452637,
+              "KV_right_minus_left_at_left_recurrent": -0.013968686262766525,
+              "KV_right_minus_left_at_right_recurrent": -0.002948850393295288,
+              "interaction_difference_in_differences": 0.011019835869471237
+            },
+            {
+              "case_id": "write-locality-s97002-a128-v1",
+              "seed": 97002,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.023367325464884445,
+              "recurrent_right_minus_left_at_right_KV": 0.014783412218093872,
+              "KV_right_minus_left_at_left_recurrent": 0.017313023408253983,
+              "KV_right_minus_left_at_right_recurrent": 0.00872911016146341,
+              "interaction_difference_in_differences": -0.008583913246790573
+            },
+            {
+              "case_id": "write-locality-s97002-a128-v2",
+              "seed": 97002,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.0244215726852417,
+              "recurrent_right_minus_left_at_right_KV": 0.03243378798166907,
+              "KV_right_minus_left_at_left_recurrent": -0.004237691561380985,
+              "KV_right_minus_left_at_right_recurrent": 0.0037745237350463867,
+              "interaction_difference_in_differences": 0.008012215296427372
+            },
+            {
+              "case_id": "write-locality-s97002-a128-v3",
+              "seed": 97002,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.005443771680196122,
+              "recurrent_right_minus_left_at_right_KV": 0.0026782850424448695,
+              "KV_right_minus_left_at_left_recurrent": -0.01216484109560649,
+              "KV_right_minus_left_at_right_recurrent": -0.014930327733357743,
+              "interaction_difference_in_differences": -0.002765486637751252
+            },
+            {
+              "case_id": "write-locality-s97003-a128-v0",
+              "seed": 97003,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.04689896106719971,
+              "recurrent_right_minus_left_at_right_KV": 0.0005582571029663086,
+              "KV_right_minus_left_at_left_recurrent": 0.042835354804992676,
+              "KV_right_minus_left_at_right_recurrent": -0.0035053491592407227,
+              "interaction_difference_in_differences": -0.0463407039642334
+            },
+            {
+              "case_id": "write-locality-s97003-a128-v1",
+              "seed": 97003,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.01596943537394202,
+              "recurrent_right_minus_left_at_right_KV": -0.04330933094024658,
+              "KV_right_minus_left_at_left_recurrent": 0.07068940003712976,
+              "KV_right_minus_left_at_right_recurrent": 0.011410633722941155,
+              "interaction_difference_in_differences": -0.0592787663141886
+            },
+            {
+              "case_id": "write-locality-s97003-a128-v2",
+              "seed": 97003,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.0044812758763631,
+              "recurrent_right_minus_left_at_right_KV": 0.01523717244466144,
+              "KV_right_minus_left_at_left_recurrent": -0.015381177266438784,
+              "KV_right_minus_left_at_right_recurrent": -0.004625280698140444,
+              "interaction_difference_in_differences": 0.01075589656829834
+            },
+            {
+              "case_id": "write-locality-s97003-a128-v3",
+              "seed": 97003,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.017675956090291378,
+              "recurrent_right_minus_left_at_right_KV": -0.002665400505065918,
+              "KV_right_minus_left_at_left_recurrent": 0.012020031611124693,
+              "KV_right_minus_left_at_right_recurrent": -0.008321324984232603,
+              "interaction_difference_in_differences": -0.020341356595357296
+            }
+          ]
+        }
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_B_at32",
+        "pairs": 16,
+        "base_streams": [
+          "write-locality-s97100",
+          "write-locality-s97101",
+          "write-locality-s97102",
+          "write-locality-s97103"
+        ],
+        "conditions": [
+          {
+            "condition": 0,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 10,
+                "candidate_correct": 12,
+                "rescued": 2,
+                "regressed": 0,
+                "both_correct": 10,
+                "both_wrong": 4
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 16,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 10,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 10,
+                "both_correct": 0,
+                "both_wrong": 6
+              }
+            },
+            "preservation_rescue_but_right_update_failure": [
+              "write-locality-s97101-a032-v3",
+              "write-locality-s97102-a032-v3"
+            ]
+          },
+          {
+            "condition": 1,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 10,
+                "candidate_correct": 10,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 10,
+                "both_wrong": 6
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 10,
+                "candidate_correct": 10,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 10,
+                "both_wrong": 6
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 2,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 10,
+                "candidate_correct": 12,
+                "rescued": 2,
+                "regressed": 0,
+                "both_correct": 10,
+                "both_wrong": 4
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 10,
+                "candidate_correct": 12,
+                "rescued": 2,
+                "regressed": 0,
+                "both_correct": 10,
+                "both_wrong": 4
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 3,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 10,
+                "candidate_correct": 11,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 10,
+                "both_wrong": 5
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 16,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 10,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 10,
+                "both_correct": 0,
+                "both_wrong": 6
+              }
+            },
+            "preservation_rescue_but_right_update_failure": [
+              "write-locality-s97102-a032-v3"
+            ]
+          }
+        ],
+        "oracle_vs_cached_natural": [
+          {
+            "side": "left",
+            "units": 16,
+            "reference_correct": 12,
+            "candidate_correct": 16,
+            "rescued": 4,
+            "regressed": 0,
+            "both_correct": 12,
+            "both_wrong": 0
+          },
+          {
+            "side": "right",
+            "units": 16,
+            "reference_correct": 10,
+            "candidate_correct": 16,
+            "rescued": 6,
+            "regressed": 0,
+            "both_correct": 10,
+            "both_wrong": 0
+          }
+        ],
+        "preservation_NLL_contrasts": {
+          "means": {
+            "recurrent_right_minus_left_at_left_KV": 0.018064991881450016,
+            "recurrent_right_minus_left_at_right_KV": 0.02830176427960395,
+            "KV_right_minus_left_at_left_recurrent": -0.00997401401400566,
+            "KV_right_minus_left_at_right_recurrent": 0.00026275838414827404,
+            "interaction_difference_in_differences": 0.010236772398153932
+          },
+          "individual_pairs": [
+            {
+              "case_id": "write-locality-s97100-a032-v0",
+              "seed": 97100,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.01916317145029703,
+              "recurrent_right_minus_left_at_right_KV": 0.013622959454854339,
+              "KV_right_minus_left_at_left_recurrent": -0.045345346132914216,
+              "KV_right_minus_left_at_right_recurrent": -0.050885558128356906,
+              "interaction_difference_in_differences": -0.005540211995442718
+            },
+            {
+              "case_id": "write-locality-s97100-a032-v1",
+              "seed": 97100,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.0052947998046875,
+              "recurrent_right_minus_left_at_right_KV": 0.056373814741770445,
+              "KV_right_minus_left_at_left_recurrent": -0.04537755250930786,
+              "KV_right_minus_left_at_right_recurrent": 0.005701462427775084,
+              "interaction_difference_in_differences": 0.051079014937082945
+            },
+            {
+              "case_id": "write-locality-s97100-a032-v2",
+              "seed": 97100,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": -0.005154430866241455,
+              "recurrent_right_minus_left_at_right_KV": 0.030782183011372866,
+              "KV_right_minus_left_at_left_recurrent": 0.014967819054921505,
+              "KV_right_minus_left_at_right_recurrent": 0.050904432932535826,
+              "interaction_difference_in_differences": 0.03593661387761432
+            },
+            {
+              "case_id": "write-locality-s97100-a032-v3",
+              "seed": 97100,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.03877592086791992,
+              "recurrent_right_minus_left_at_right_KV": 0.024191041787465395,
+              "KV_right_minus_left_at_left_recurrent": -0.052791555722554534,
+              "KV_right_minus_left_at_right_recurrent": -0.06737643480300906,
+              "interaction_difference_in_differences": -0.014584879080454527
+            },
+            {
+              "case_id": "write-locality-s97101-a032-v0",
+              "seed": 97101,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.0051252643267313824,
+              "recurrent_right_minus_left_at_right_KV": 0.009502708911895752,
+              "KV_right_minus_left_at_left_recurrent": 0.0071014364560444965,
+              "KV_right_minus_left_at_right_recurrent": 0.011478881041208866,
+              "interaction_difference_in_differences": 0.0043774445851643695
+            },
+            {
+              "case_id": "write-locality-s97101-a032-v1",
+              "seed": 97101,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.023522992928822817,
+              "recurrent_right_minus_left_at_right_KV": 0.03190726041793823,
+              "KV_right_minus_left_at_left_recurrent": 0.00634137789408365,
+              "KV_right_minus_left_at_right_recurrent": 0.014725645383199065,
+              "interaction_difference_in_differences": 0.008384267489115416
+            },
+            {
+              "case_id": "write-locality-s97101-a032-v2",
+              "seed": 97101,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.030993878841400146,
+              "recurrent_right_minus_left_at_right_KV": 0.015642960866292327,
+              "KV_right_minus_left_at_left_recurrent": -0.0031126936276753836,
+              "KV_right_minus_left_at_right_recurrent": -0.018463611602783203,
+              "interaction_difference_in_differences": -0.01535091797510782
+            },
+            {
+              "case_id": "write-locality-s97101-a032-v3",
+              "seed": 97101,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.026237289110819517,
+              "recurrent_right_minus_left_at_right_KV": 0.03288426001866657,
+              "KV_right_minus_left_at_left_recurrent": -0.0064665277798970355,
+              "KV_right_minus_left_at_right_recurrent": 0.00018044312795001405,
+              "interaction_difference_in_differences": 0.00664697090784705
+            },
+            {
+              "case_id": "write-locality-s97102-a032-v0",
+              "seed": 97102,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.020839889844258552,
+              "recurrent_right_minus_left_at_right_KV": -0.0015577475229899829,
+              "KV_right_minus_left_at_left_recurrent": 0.007937192916870117,
+              "KV_right_minus_left_at_right_recurrent": -0.014460444450378418,
+              "interaction_difference_in_differences": -0.022397637367248535
+            },
+            {
+              "case_id": "write-locality-s97102-a032-v1",
+              "seed": 97102,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.03099509080251059,
+              "recurrent_right_minus_left_at_right_KV": 0.039729297161102295,
+              "KV_right_minus_left_at_left_recurrent": -0.008130947748819978,
+              "KV_right_minus_left_at_right_recurrent": 0.0006032586097717285,
+              "interaction_difference_in_differences": 0.008734206358591706
+            },
+            {
+              "case_id": "write-locality-s97102-a032-v2",
+              "seed": 97102,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.038958847522735596,
+              "recurrent_right_minus_left_at_right_KV": 0.05061360200246176,
+              "KV_right_minus_left_at_left_recurrent": 0.006415148576100649,
+              "KV_right_minus_left_at_right_recurrent": 0.018069903055826814,
+              "interaction_difference_in_differences": 0.011654754479726165
+            },
+            {
+              "case_id": "write-locality-s97102-a032-v3",
+              "seed": 97102,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.00893402099609375,
+              "recurrent_right_minus_left_at_right_KV": 0.05065959692001343,
+              "KV_right_minus_left_at_left_recurrent": -0.02521878480911255,
+              "KV_right_minus_left_at_right_recurrent": 0.01650679111480713,
+              "interaction_difference_in_differences": 0.04172557592391968
+            },
+            {
+              "case_id": "write-locality-s97103-a032-v0",
+              "seed": 97103,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": -0.006611466407775879,
+              "recurrent_right_minus_left_at_right_KV": 0.03452352682749432,
+              "KV_right_minus_left_at_left_recurrent": -0.041124979654947935,
+              "KV_right_minus_left_at_right_recurrent": 1.0013580322265625e-05,
+              "interaction_difference_in_differences": 0.0411349932352702
+            },
+            {
+              "case_id": "write-locality-s97103-a032-v1",
+              "seed": 97103,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": -0.013233780860900879,
+              "recurrent_right_minus_left_at_right_KV": 0.03453902403513587,
+              "KV_right_minus_left_at_left_recurrent": -0.04746452967325843,
+              "KV_right_minus_left_at_right_recurrent": 0.0003082752227783203,
+              "interaction_difference_in_differences": 0.04777280489603675
+            },
+            {
+              "case_id": "write-locality-s97103-a032-v2",
+              "seed": 97103,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.039100130399068234,
+              "recurrent_right_minus_left_at_right_KV": 0.014808972676595089,
+              "KV_right_minus_left_at_left_recurrent": 0.03895831108093262,
+              "KV_right_minus_left_at_right_recurrent": 0.014667153358459473,
+              "interaction_difference_in_differences": -0.024291157722473145
+            },
+            {
+              "case_id": "write-locality-s97103-a032-v3",
+              "seed": 97103,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.026098251342773438,
+              "recurrent_right_minus_left_at_right_KV": 0.01460476716359449,
+              "KV_right_minus_left_at_left_recurrent": 0.033727407455444336,
+              "KV_right_minus_left_at_right_recurrent": 0.022233923276265388,
+              "interaction_difference_in_differences": -0.011493484179178948
+            }
+          ]
+        }
+      },
+      {
+        "cohort": "replica",
+        "stratum": "initial_A_at128",
+        "pairs": 16,
+        "base_streams": [
+          "write-locality-s97100",
+          "write-locality-s97101",
+          "write-locality-s97102",
+          "write-locality-s97103"
+        ],
+        "conditions": [
+          {
+            "condition": 0,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 16,
+                "rescued": 10,
+                "regressed": 0,
+                "both_correct": 6,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 16,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 6,
+                "both_correct": 0,
+                "both_wrong": 10
+              }
+            },
+            "preservation_rescue_but_right_update_failure": [
+              "write-locality-s97100-a128-v0",
+              "write-locality-s97100-a128-v2",
+              "write-locality-s97102-a128-v0",
+              "write-locality-s97102-a128-v1",
+              "write-locality-s97102-a128-v2",
+              "write-locality-s97102-a128-v3",
+              "write-locality-s97103-a128-v0",
+              "write-locality-s97103-a128-v1",
+              "write-locality-s97103-a128-v2",
+              "write-locality-s97103-a128-v3"
+            ]
+          },
+          {
+            "condition": 1,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 6,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 6,
+                "both_wrong": 10
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 6,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 6,
+                "both_wrong": 10
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 2,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 6,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 6,
+                "both_wrong": 10
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 6,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 6,
+                "both_wrong": 10
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 3,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 16,
+                "rescued": 10,
+                "regressed": 0,
+                "both_correct": 6,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 16,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 6,
+                "both_correct": 0,
+                "both_wrong": 10
+              }
+            },
+            "preservation_rescue_but_right_update_failure": [
+              "write-locality-s97100-a128-v0",
+              "write-locality-s97100-a128-v2",
+              "write-locality-s97102-a128-v0",
+              "write-locality-s97102-a128-v1",
+              "write-locality-s97102-a128-v2",
+              "write-locality-s97102-a128-v3",
+              "write-locality-s97103-a128-v0",
+              "write-locality-s97103-a128-v1",
+              "write-locality-s97103-a128-v2",
+              "write-locality-s97103-a128-v3"
+            ]
+          }
+        ],
+        "oracle_vs_cached_natural": [
+          {
+            "side": "left",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0
+          },
+          {
+            "side": "right",
+            "units": 16,
+            "reference_correct": 6,
+            "candidate_correct": 16,
+            "rescued": 10,
+            "regressed": 0,
+            "both_correct": 6,
+            "both_wrong": 0
+          }
+        ],
+        "preservation_NLL_contrasts": {
+          "means": {
+            "recurrent_right_minus_left_at_left_KV": 0.015505670880277952,
+            "recurrent_right_minus_left_at_right_KV": 0.03236550030608971,
+            "KV_right_minus_left_at_left_recurrent": 0.28398969769477844,
+            "KV_right_minus_left_at_right_recurrent": 0.3008495271205902,
+            "interaction_difference_in_differences": 0.016859829425811754
+          },
+          "individual_pairs": [
+            {
+              "case_id": "write-locality-s97100-a128-v0",
+              "seed": 97100,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.02716219425201416,
+              "recurrent_right_minus_left_at_right_KV": -0.019188682238260923,
+              "KV_right_minus_left_at_left_recurrent": 0.2217550079027812,
+              "KV_right_minus_left_at_right_recurrent": 0.1754041314125061,
+              "interaction_difference_in_differences": -0.046350876490275084
+            },
+            {
+              "case_id": "write-locality-s97100-a128-v1",
+              "seed": 97100,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.010089695453643799,
+              "recurrent_right_minus_left_at_right_KV": 0.02294244368871054,
+              "KV_right_minus_left_at_left_recurrent": 0.15204227964083356,
+              "KV_right_minus_left_at_right_recurrent": 0.16489502787590027,
+              "interaction_difference_in_differences": 0.012852748235066741
+            },
+            {
+              "case_id": "write-locality-s97100-a128-v2",
+              "seed": 97100,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.017690251270929977,
+              "recurrent_right_minus_left_at_right_KV": 0.07004149754842126,
+              "KV_right_minus_left_at_left_recurrent": 0.3092310428619385,
+              "KV_right_minus_left_at_right_recurrent": 0.36158228913942975,
+              "interaction_difference_in_differences": 0.052351246277491284
+            },
+            {
+              "case_id": "write-locality-s97100-a128-v3",
+              "seed": 97100,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.023104677597681672,
+              "recurrent_right_minus_left_at_right_KV": 0.04730735222498578,
+              "KV_right_minus_left_at_left_recurrent": 0.17813103397687274,
+              "KV_right_minus_left_at_right_recurrent": 0.20233370860417688,
+              "interaction_difference_in_differences": 0.024202674627304105
+            },
+            {
+              "case_id": "write-locality-s97101-a128-v0",
+              "seed": 97101,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.014431590835253402,
+              "recurrent_right_minus_left_at_right_KV": 0.011134505271911621,
+              "KV_right_minus_left_at_left_recurrent": 0.06999029219150545,
+              "KV_right_minus_left_at_right_recurrent": 0.06669320662816366,
+              "interaction_difference_in_differences": -0.003297085563341781
+            },
+            {
+              "case_id": "write-locality-s97101-a128-v1",
+              "seed": 97101,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.025640219449996948,
+              "recurrent_right_minus_left_at_right_KV": 0.06150508920351663,
+              "KV_right_minus_left_at_left_recurrent": 0.0380113422870636,
+              "KV_right_minus_left_at_right_recurrent": 0.07387621204058328,
+              "interaction_difference_in_differences": 0.035864869753519685
+            },
+            {
+              "case_id": "write-locality-s97101-a128-v2",
+              "seed": 97101,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.015865271290143326,
+              "recurrent_right_minus_left_at_right_KV": 0.0784155527750651,
+              "KV_right_minus_left_at_left_recurrent": 0.11660581330458324,
+              "KV_right_minus_left_at_right_recurrent": 0.179156094789505,
+              "interaction_difference_in_differences": 0.06255028148492177
+            },
+            {
+              "case_id": "write-locality-s97101-a128-v3",
+              "seed": 97101,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.015943159659703575,
+              "recurrent_right_minus_left_at_right_KV": 0.012255767981211363,
+              "KV_right_minus_left_at_left_recurrent": 0.09529301524162292,
+              "KV_right_minus_left_at_right_recurrent": 0.0916056235631307,
+              "interaction_difference_in_differences": -0.003687391678492212
+            },
+            {
+              "case_id": "write-locality-s97102-a128-v0",
+              "seed": 97102,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.017960578203201294,
+              "recurrent_right_minus_left_at_right_KV": 0.050872484842936216,
+              "KV_right_minus_left_at_left_recurrent": 0.3979714612166087,
+              "KV_right_minus_left_at_right_recurrent": 0.4308833678563436,
+              "interaction_difference_in_differences": 0.03291190663973492
+            },
+            {
+              "case_id": "write-locality-s97102-a128-v1",
+              "seed": 97102,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.03665696581204732,
+              "recurrent_right_minus_left_at_right_KV": 0.09465432167053223,
+              "KV_right_minus_left_at_left_recurrent": 0.35164358218510944,
+              "KV_right_minus_left_at_right_recurrent": 0.40964093804359436,
+              "interaction_difference_in_differences": 0.05799735585848491
+            },
+            {
+              "case_id": "write-locality-s97102-a128-v2",
+              "seed": 97102,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.017878681421279907,
+              "recurrent_right_minus_left_at_right_KV": 0.05966746807098383,
+              "KV_right_minus_left_at_left_recurrent": 0.331450233856837,
+              "KV_right_minus_left_at_right_recurrent": 0.3732390205065409,
+              "interaction_difference_in_differences": 0.041788786649703924
+            },
+            {
+              "case_id": "write-locality-s97102-a128-v3",
+              "seed": 97102,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.027846316496531173,
+              "recurrent_right_minus_left_at_right_KV": 0.14208972454071045,
+              "KV_right_minus_left_at_left_recurrent": 0.4022608498732249,
+              "KV_right_minus_left_at_right_recurrent": 0.5165042579174042,
+              "interaction_difference_in_differences": 0.11424340804417928
+            },
+            {
+              "case_id": "write-locality-s97103-a128-v0",
+              "seed": 97103,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": -0.013361344734827668,
+              "recurrent_right_minus_left_at_right_KV": -0.15109054247538256,
+              "KV_right_minus_left_at_left_recurrent": 0.8579662442207338,
+              "KV_right_minus_left_at_right_recurrent": 0.7202370464801788,
+              "interaction_difference_in_differences": -0.1377291977405549
+            },
+            {
+              "case_id": "write-locality-s97103-a128-v1",
+              "seed": 97103,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.004445413748423249,
+              "recurrent_right_minus_left_at_right_KV": 0.056742191314697266,
+              "KV_right_minus_left_at_left_recurrent": 0.23225218057632446,
+              "KV_right_minus_left_at_right_recurrent": 0.2845489581425985,
+              "interaction_difference_in_differences": 0.052296777566274016
+            },
+            {
+              "case_id": "write-locality-s97103-a128-v2",
+              "seed": 97103,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.0015490949153900285,
+              "recurrent_right_minus_left_at_right_KV": -0.010449330012003655,
+              "KV_right_minus_left_at_left_recurrent": 0.4286398887634278,
+              "KV_right_minus_left_at_right_recurrent": 0.41664146383603406,
+              "interaction_difference_in_differences": -0.011998424927393683
+            },
+            {
+              "case_id": "write-locality-s97103-a128-v3",
+              "seed": 97103,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.005187968413035066,
+              "recurrent_right_minus_left_at_right_KV": -0.009051839510599846,
+              "KV_right_minus_left_at_left_recurrent": 0.36059089501698816,
+              "KV_right_minus_left_at_right_recurrent": 0.34635108709335327,
+              "interaction_difference_in_differences": -0.014239807923634912
+            }
+          ]
+        }
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "pairs": 16,
+        "base_streams": [
+          "write-locality-s97100",
+          "write-locality-s97101",
+          "write-locality-s97102",
+          "write-locality-s97103"
+        ],
+        "conditions": [
+          {
+            "condition": 0,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 6,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 6,
+                "both_wrong": 10
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 16,
+                "reference_correct": 13,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 13,
+                "both_correct": 0,
+                "both_wrong": 3
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 6,
+                "both_correct": 0,
+                "both_wrong": 10
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 1,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 6,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 6,
+                "both_wrong": 10
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 16,
+                "reference_correct": 13,
+                "candidate_correct": 13,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 13,
+                "both_wrong": 3
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 6,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 6,
+                "both_wrong": 10
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 2,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 6,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 6,
+                "both_wrong": 10
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 16,
+                "reference_correct": 13,
+                "candidate_correct": 13,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 13,
+                "both_wrong": 3
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 6,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 6,
+                "both_wrong": 10
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 3,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 6,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 6,
+                "both_wrong": 10
+              },
+              "current_A": {
+                "units": 16,
+                "reference_correct": 16,
+                "candidate_correct": 16,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 16,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 16,
+                "reference_correct": 13,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 13,
+                "both_correct": 0,
+                "both_wrong": 3
+              },
+              "all_roles_joint": {
+                "units": 16,
+                "reference_correct": 6,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 6,
+                "both_correct": 0,
+                "both_wrong": 10
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          }
+        ],
+        "oracle_vs_cached_natural": [
+          {
+            "side": "left",
+            "units": 16,
+            "reference_correct": 6,
+            "candidate_correct": 16,
+            "rescued": 10,
+            "regressed": 0,
+            "both_correct": 6,
+            "both_wrong": 0
+          },
+          {
+            "side": "right",
+            "units": 16,
+            "reference_correct": 6,
+            "candidate_correct": 16,
+            "rescued": 10,
+            "regressed": 0,
+            "both_correct": 6,
+            "both_wrong": 0
+          }
+        ],
+        "preservation_NLL_contrasts": {
+          "means": {
+            "recurrent_right_minus_left_at_left_KV": -0.008171656479438138,
+            "recurrent_right_minus_left_at_right_KV": -0.014720584576328594,
+            "KV_right_minus_left_at_left_recurrent": -0.003832089404265082,
+            "KV_right_minus_left_at_right_recurrent": -0.010381017501155538,
+            "interaction_difference_in_differences": -0.0065489280968904495
+          },
+          "individual_pairs": [
+            {
+              "case_id": "write-locality-s97100-a128-v0",
+              "seed": 97100,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.05786019563674927,
+              "recurrent_right_minus_left_at_right_KV": -0.012612620989481627,
+              "KV_right_minus_left_at_left_recurrent": 0.03522731860478723,
+              "KV_right_minus_left_at_right_recurrent": -0.035245498021443666,
+              "interaction_difference_in_differences": -0.0704728166262309
+            },
+            {
+              "case_id": "write-locality-s97100-a128-v1",
+              "seed": 97100,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.03876201311747232,
+              "recurrent_right_minus_left_at_right_KV": 0.045680304368337005,
+              "KV_right_minus_left_at_left_recurrent": -0.018965065479278564,
+              "KV_right_minus_left_at_right_recurrent": -0.012046774228413881,
+              "interaction_difference_in_differences": 0.006918291250864683
+            },
+            {
+              "case_id": "write-locality-s97100-a128-v2",
+              "seed": 97100,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.02258133888244629,
+              "recurrent_right_minus_left_at_right_KV": 0.09284718831380212,
+              "KV_right_minus_left_at_left_recurrent": -0.023756027221679688,
+              "KV_right_minus_left_at_right_recurrent": 0.046509822209676144,
+              "interaction_difference_in_differences": 0.07026584943135583
+            },
+            {
+              "case_id": "write-locality-s97100-a128-v3",
+              "seed": 97100,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": -0.010682245095570864,
+              "recurrent_right_minus_left_at_right_KV": 0.0040045181910197125,
+              "KV_right_minus_left_at_left_recurrent": -0.02881067991256714,
+              "KV_right_minus_left_at_right_recurrent": -0.014123916625976562,
+              "interaction_difference_in_differences": 0.014686763286590576
+            },
+            {
+              "case_id": "write-locality-s97101-a128-v0",
+              "seed": 97101,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.022355725367863982,
+              "recurrent_right_minus_left_at_right_KV": 0.0140691896279653,
+              "KV_right_minus_left_at_left_recurrent": -0.009859353303909302,
+              "KV_right_minus_left_at_right_recurrent": -0.018145889043807983,
+              "interaction_difference_in_differences": -0.008286535739898682
+            },
+            {
+              "case_id": "write-locality-s97101-a128-v1",
+              "seed": 97101,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.049841960271199554,
+              "recurrent_right_minus_left_at_right_KV": 0.03346261382102966,
+              "KV_right_minus_left_at_left_recurrent": 0.005448430776596069,
+              "KV_right_minus_left_at_right_recurrent": -0.010930915673573821,
+              "interaction_difference_in_differences": -0.01637934645016989
+            },
+            {
+              "case_id": "write-locality-s97101-a128-v2",
+              "seed": 97101,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": 0.010685920715332031,
+              "recurrent_right_minus_left_at_right_KV": 0.030022939046223968,
+              "KV_right_minus_left_at_left_recurrent": -0.020481805006662995,
+              "KV_right_minus_left_at_right_recurrent": -0.001144786675771059,
+              "interaction_difference_in_differences": 0.019337018330891936
+            },
+            {
+              "case_id": "write-locality-s97101-a128-v3",
+              "seed": 97101,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": 0.014651467402776092,
+              "recurrent_right_minus_left_at_right_KV": -0.0026763180891672678,
+              "KV_right_minus_left_at_left_recurrent": 0.01962071657180786,
+              "KV_right_minus_left_at_right_recurrent": 0.002292931079864502,
+              "interaction_difference_in_differences": -0.01732778549194336
+            },
+            {
+              "case_id": "write-locality-s97102-a128-v0",
+              "seed": 97102,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": -0.0024009148279826587,
+              "recurrent_right_minus_left_at_right_KV": 0.0073519150416057055,
+              "KV_right_minus_left_at_left_recurrent": -0.0352367560068767,
+              "KV_right_minus_left_at_right_recurrent": -0.025483926137288337,
+              "interaction_difference_in_differences": 0.009752829869588364
+            },
+            {
+              "case_id": "write-locality-s97102-a128-v1",
+              "seed": 97102,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": 0.040145277976989746,
+              "recurrent_right_minus_left_at_right_KV": 0.0038336912790933875,
+              "KV_right_minus_left_at_left_recurrent": 0.03591231505076098,
+              "KV_right_minus_left_at_right_recurrent": -0.00039927164713537966,
+              "interaction_difference_in_differences": -0.03631158669789636
+            },
+            {
+              "case_id": "write-locality-s97102-a128-v2",
+              "seed": 97102,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": -0.0004547437032063062,
+              "recurrent_right_minus_left_at_right_KV": -0.011921564737955803,
+              "KV_right_minus_left_at_left_recurrent": 0.00796608130137133,
+              "KV_right_minus_left_at_right_recurrent": -0.0035007397333781665,
+              "interaction_difference_in_differences": -0.011466821034749497
+            },
+            {
+              "case_id": "write-locality-s97102-a128-v3",
+              "seed": 97102,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": -0.05873990058898926,
+              "recurrent_right_minus_left_at_right_KV": -0.062401771545410156,
+              "KV_right_minus_left_at_left_recurrent": 0.07248918215433753,
+              "KV_right_minus_left_at_right_recurrent": 0.06882731119791663,
+              "interaction_difference_in_differences": -0.0036618709564208984
+            },
+            {
+              "case_id": "write-locality-s97103-a128-v0",
+              "seed": 97103,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": -0.17562103271484364,
+              "recurrent_right_minus_left_at_right_KV": -0.22775157292683912,
+              "KV_right_minus_left_at_left_recurrent": -0.06072378158569336,
+              "KV_right_minus_left_at_right_recurrent": -0.11285432179768884,
+              "interaction_difference_in_differences": -0.05213054021199537
+            },
+            {
+              "case_id": "write-locality-s97103-a128-v1",
+              "seed": 97103,
+              "value_version": 1,
+              "recurrent_right_minus_left_at_left_KV": -0.05383515357971197,
+              "recurrent_right_minus_left_at_right_KV": -0.01528437932332355,
+              "KV_right_minus_left_at_left_recurrent": -0.036338686943054255,
+              "KV_right_minus_left_at_right_recurrent": 0.0022120873133341656,
+              "interaction_difference_in_differences": 0.03855077425638842
+            },
+            {
+              "case_id": "write-locality-s97103-a128-v2",
+              "seed": 97103,
+              "value_version": 2,
+              "recurrent_right_minus_left_at_left_KV": -0.05455843607584632,
+              "recurrent_right_minus_left_at_right_KV": -0.08059899012247729,
+              "KV_right_minus_left_at_left_recurrent": -0.009023269017537361,
+              "KV_right_minus_left_at_right_recurrent": -0.03506382306416833,
+              "interaction_difference_in_differences": -0.02604055404663097
+            },
+            {
+              "case_id": "write-locality-s97103-a128-v3",
+              "seed": 97103,
+              "value_version": 3,
+              "recurrent_right_minus_left_at_left_KV": -0.03133797645568848,
+              "recurrent_right_minus_left_at_right_KV": -0.05355449517567956,
+              "KV_right_minus_left_at_left_recurrent": 0.005217949549357059,
+              "KV_right_minus_left_at_right_recurrent": -0.016998569170634026,
+              "interaction_difference_in_differences": -0.022216518719991085
+            }
+          ]
+        }
+      }
+    ],
+    "cached_vs_full_calibration": [
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_B_at32",
+        "label": "preservation",
+        "side": "left",
+        "units": 16,
+        "reference_correct": 13,
+        "candidate_correct": 12,
+        "rescued": 0,
+        "regressed": 1,
+        "both_correct": 12,
+        "both_wrong": 3,
+        "different_generation": 1,
+        "mean_absolute_nll_delta": 0.012929857398072881,
+        "max_absolute_nll_delta": 0.03287911415100098
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_B_at32",
+        "label": "current_A",
+        "side": "left",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 16,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 16,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.007048478660484156,
+        "max_absolute_nll_delta": 0.03564673662185669
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_B_at32",
+        "label": "preservation",
+        "side": "right",
+        "units": 16,
+        "reference_correct": 11,
+        "candidate_correct": 11,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 11,
+        "both_wrong": 5,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.014460263152917234,
+        "max_absolute_nll_delta": 0.05217639605204266
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_B_at32",
+        "label": "current_A",
+        "side": "right",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 16,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 16,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.006515891912082831,
+        "max_absolute_nll_delta": 0.015199989080429077
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "initial_A_at128",
+        "label": "preservation",
+        "side": "left",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 16,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 16,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.005402835551649331,
+        "max_absolute_nll_delta": 0.01807093620300293
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "initial_A_at128",
+        "label": "current_A",
+        "side": "left",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 16,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 16,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.010784424220522245,
+        "max_absolute_nll_delta": 0.025409460067749023
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "initial_A_at128",
+        "label": "preservation",
+        "side": "right",
+        "units": 16,
+        "reference_correct": 11,
+        "candidate_correct": 11,
+        "rescued": 1,
+        "regressed": 1,
+        "both_correct": 10,
+        "both_wrong": 4,
+        "different_generation": 2,
+        "mean_absolute_nll_delta": 0.01570092979818582,
+        "max_absolute_nll_delta": 0.03707136710484822
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "initial_A_at128",
+        "label": "current_A",
+        "side": "right",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 16,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 16,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.0059522533168395375,
+        "max_absolute_nll_delta": 0.014138758182525635
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "preservation",
+        "side": "left",
+        "units": 16,
+        "reference_correct": 13,
+        "candidate_correct": 13,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 13,
+        "both_wrong": 3,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.014449863073726492,
+        "max_absolute_nll_delta": 0.05108034610748288
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_A",
+        "side": "left",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 16,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 16,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.0070401442547639225,
+        "max_absolute_nll_delta": 0.0253935654958089
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_C",
+        "side": "left",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 16,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 16,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.005914448450009026,
+        "max_absolute_nll_delta": 0.029869874318440737
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "preservation",
+        "side": "right",
+        "units": 16,
+        "reference_correct": 11,
+        "candidate_correct": 11,
+        "rescued": 1,
+        "regressed": 1,
+        "both_correct": 10,
+        "both_wrong": 4,
+        "different_generation": 2,
+        "mean_absolute_nll_delta": 0.01570092979818582,
+        "max_absolute_nll_delta": 0.03707136710484822
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_A",
+        "side": "right",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 16,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 16,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.0059522533168395375,
+        "max_absolute_nll_delta": 0.014138758182525635
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_C",
+        "side": "right",
+        "units": 16,
+        "reference_correct": 13,
+        "candidate_correct": 13,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 13,
+        "both_wrong": 3,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.014589489748080563,
+        "max_absolute_nll_delta": 0.06734498341878253
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_B_at32",
+        "label": "preservation",
+        "side": "left",
+        "units": 16,
+        "reference_correct": 12,
+        "candidate_correct": 12,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 12,
+        "both_wrong": 4,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.01455782850583394,
+        "max_absolute_nll_delta": 0.04564034938812256
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_B_at32",
+        "label": "current_A",
+        "side": "left",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 16,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 16,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.006647348869591953,
+        "max_absolute_nll_delta": 0.017443329095840454
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_B_at32",
+        "label": "preservation",
+        "side": "right",
+        "units": 16,
+        "reference_correct": 10,
+        "candidate_correct": 10,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 10,
+        "both_wrong": 6,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.01286348700523377,
+        "max_absolute_nll_delta": 0.02819104989369714
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_B_at32",
+        "label": "current_A",
+        "side": "right",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 16,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 16,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.00862461607903242,
+        "max_absolute_nll_delta": 0.035188496112823486
+      },
+      {
+        "cohort": "replica",
+        "stratum": "initial_A_at128",
+        "label": "preservation",
+        "side": "left",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 16,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 16,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.005511165286103885,
+        "max_absolute_nll_delta": 0.016404529412587493
+      },
+      {
+        "cohort": "replica",
+        "stratum": "initial_A_at128",
+        "label": "current_A",
+        "side": "left",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 16,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 16,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.009195208549499517,
+        "max_absolute_nll_delta": 0.016777535279591874
+      },
+      {
+        "cohort": "replica",
+        "stratum": "initial_A_at128",
+        "label": "preservation",
+        "side": "right",
+        "units": 16,
+        "reference_correct": 6,
+        "candidate_correct": 6,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 6,
+        "both_wrong": 10,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.036074396222829805,
+        "max_absolute_nll_delta": 0.18976147969563795
+      },
+      {
+        "cohort": "replica",
+        "stratum": "initial_A_at128",
+        "label": "current_A",
+        "side": "right",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 16,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 16,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.007367749388019236,
+        "max_absolute_nll_delta": 0.023561179637908936
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "preservation",
+        "side": "left",
+        "units": 16,
+        "reference_correct": 6,
+        "candidate_correct": 6,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 6,
+        "both_wrong": 10,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.01923589222133161,
+        "max_absolute_nll_delta": 0.05501719315846765
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_A",
+        "side": "left",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 16,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 16,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.009991768126686408,
+        "max_absolute_nll_delta": 0.02754002809524536
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_C",
+        "side": "left",
+        "units": 16,
+        "reference_correct": 12,
+        "candidate_correct": 12,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 12,
+        "both_wrong": 4,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.017788564165433257,
+        "max_absolute_nll_delta": 0.03677225112915039
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "preservation",
+        "side": "right",
+        "units": 16,
+        "reference_correct": 6,
+        "candidate_correct": 6,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 6,
+        "both_wrong": 10,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.036074396222829805,
+        "max_absolute_nll_delta": 0.18976147969563795
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_A",
+        "side": "right",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 16,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 16,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.007367749388019236,
+        "max_absolute_nll_delta": 0.023561179637908936
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_C",
+        "side": "right",
+        "units": 16,
+        "reference_correct": 13,
+        "candidate_correct": 13,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 13,
+        "both_wrong": 3,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.015539138267437616,
+        "max_absolute_nll_delta": 0.037767887115478516
+      }
+    ],
+    "world_scoring": "Every comparison above uses the fixed right-world truth. Left natural endpoints are explicit counterfactual scores for changed A/C, never a claimed own-world baseline failure. Calibration uses each endpoint's own-world truth.",
+    "NLL_interpretation": "Positive differences mean greater preservation-answer loss. Mixed caches can be incompatible; mediator effects do not prove semantic destruction or shared-controller necessity.",
+    "sampling": "Discovery and replica remain separate. Four value siblings share a base stream; no independent-readout confidence interval is asserted."
+  },
+  "analysis_source_sha256": "0e98f2a6630b088005eb979e4b09d7a9e68df43dc65998a17dc66ff4d3580d7c"
+}

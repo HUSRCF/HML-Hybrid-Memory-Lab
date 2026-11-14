@@ -1,0 +1,27 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<03:24,  1.56it/s]Loading weights:   8%|▊         | 24/320 [00:00<00:06, 42.96it/s]Loading weights:  12%|█▎        | 40/320 [00:00<00:04, 66.90it/s]Loading weights:  19%|█▉        | 62/320 [00:00<00:02, 100.98it/s]Loading weights:  25%|██▌       | 80/320 [00:01<00:02, 118.59it/s]Loading weights:  31%|███       | 98/320 [00:01<00:01, 132.83it/s]Loading weights:  37%|███▋      | 119/320 [00:01<00:01, 138.17it/s]Loading weights:  46%|████▌     | 147/320 [00:01<00:01, 157.10it/s]Loading weights:  54%|█████▍    | 172/320 [00:01<00:00, 169.60it/s]Loading weights:  62%|██████▏   | 199/320 [00:01<00:00, 189.31it/s]Loading weights:  69%|██████▉   | 220/320 [00:01<00:00, 191.01it/s]Loading weights:  75%|███████▌  | 240/320 [00:01<00:00, 179.98it/s]Loading weights:  81%|████████  | 259/320 [00:02<00:00, 175.69it/s]Loading weights:  88%|████████▊ | 283/320 [00:02<00:00, 175.02it/s]Loading weights:  97%|█████████▋| 310/320 [00:02<00:00, 199.17it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 138.17it/s]
+{"event": "order_validation", "model": "native", "examples": 108}
+{"event": "order_validation", "model": "native", "examples": 216}
+{"event": "order_validation", "model": "native", "examples": 324}
+{"event": "order_validation", "model": "native", "examples": 432}
+{"event": "model_completed", "model": "native", "correct": 367, "examples": 432}
+{"event": "order_validation", "model": "shared", "examples": 108}
+{"event": "order_validation", "model": "shared", "examples": 216}
+{"event": "order_validation", "model": "shared", "examples": 324}
+{"event": "order_validation", "model": "shared", "examples": 432}
+{"event": "model_completed", "model": "shared", "correct": 419, "examples": 432}
+{"event": "order_validation", "model": "independent", "examples": 108}
+{"event": "order_validation", "model": "independent", "examples": 216}
+{"event": "order_validation", "model": "independent", "examples": 324}
+{"event": "order_validation", "model": "independent", "examples": 432}
+{"event": "model_completed", "model": "independent", "correct": 429, "examples": 432}
+{"event": "order_validation", "model": "local", "examples": 108}
+{"event": "order_validation", "model": "local", "examples": 216}
+{"event": "order_validation", "model": "local", "examples": 324}
+{"event": "order_validation", "model": "local", "examples": 432}
+{"event": "model_completed", "model": "local", "correct": 396, "examples": 432}
+{"event": "order_validation", "model": "local_question", "examples": 108}
+{"event": "order_validation", "model": "local_question", "examples": 216}
+{"event": "order_validation", "model": "local_question", "examples": 324}
+{"event": "order_validation", "model": "local_question", "examples": 432}
+{"event": "model_completed", "model": "local_question", "correct": 423, "examples": 432}

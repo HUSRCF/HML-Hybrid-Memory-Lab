@@ -1,0 +1,18 @@
+{
+  "status": "audited_export_and_visually_verified_figure",
+  "verified_utc": "2026-11-14T08:49:47.569826+00:00",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-adapter-transfer-20261114.json",
+  "source_audit_sha256": "c42750b6e3670af3a2de8ac0fcd615c03c9cf9381f470e724edc05a62868e7fc",
+  "source_manifest_sha256": "6d9a6ac4a75467f46482c55ddceb63e43c52d25d75bd010f81df33299d06c183",
+  "registry_sha256": "d94101f7c97349476d92f0cdd6057b17553cac99f1fb52336fb88fa4a88b57ca",
+  "exporter": "/home/husrcf/Code/SAS/scripts/export_write_locality_adapter_transfer.py",
+  "exporter_sha256": "8aa8b7e1e2f94b6b44ff166ce673e0712ab844adef568759dfad8ffbe93e16f9",
+  "files": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-adapter-transfer-comparison-20261114.json": "ef9bfc5eaa4521beba37b81633b072beede55698b5e76a28c728e540e9eabc92",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-adapter-transfer-comparison-20261114.source.py": "8aa8b7e1e2f94b6b44ff166ce673e0712ab844adef568759dfad8ffbe93e16f9",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-adapter-transfer-comparison-20261114.csv": "e278f07a0afa33eb2ea2fdcbced2f86e73f48fea888912eff4c7a61fb75198dc",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-adapter-transfer-comparison-20261114.png": "8724ff7ca254120c9fcbcfc45c235fbe8bc5badcf3b13b3d4dd2b40fec122472",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-adapter-transfer-comparison-20261114.pdf": "dec83353324ca99e3d9934b316fb1cf465a8d34a55c941f4ee473e8dc43cfefa"
+  },
+  "visual_check": "Inspected final PNG: all six cohort/stratum panels, model/role labels, exact counts /16 and related-readout caveat are visible and match independently audited metrics."
+}

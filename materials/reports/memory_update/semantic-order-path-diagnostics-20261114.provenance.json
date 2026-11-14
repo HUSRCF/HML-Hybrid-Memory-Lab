@@ -1,0 +1,16 @@
+{
+  "status": "source_reports_and_visually_checked_figure_recorded",
+  "recorded_utc": "2026-11-14T05:23:38.799501+00:00",
+  "files_sha256": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-order-path-20261114.json": "c28b1c576b3a240803658569e83c186923e38cfd6196409e7c097e2efa687561",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-order-path-20261114.source.py": "01a9a870b3c6bc588cc142cc970398e32b16222f0c536057b52291346ac9e566",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-order-path-diagnostics-20261114.json": "57313bc3cb4e9f47878d997f174d4e563d8a5d7b093e5661867d8f66042a636c",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-order-path-diagnostics-20261114.source.py": "77f63845dd6300baf7f5385a8b599f874ec055ad24594b11217e97acabe06857",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-order-path-diagnostics-20261114.png": "81853b590df3aa7b1cfa4b58bf19345c870a6319e12ed1590d0fad11787ed44d",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-order-path-diagnostics-20261114.pdf": "4e945a016f7a8bfc5dcf470269677c402d2b00dee6ef5d8cf0577f24f221ea02"
+  },
+  "analysis_source_sha256": "77f63845dd6300baf7f5385a8b599f874ec055ad24594b11217e97acabe06857",
+  "manifest_sha256": "29e5aa592247512f025c718d4d4d6c20ff2f77b0fa5eae951beb1bbeb88b9444",
+  "plan_sha256": "b94c2bc7db129a544a40631a81c9570849c182f3a9719d8612330ab245f02b4a",
+  "visual_inspection": "Viewed final PNG; legends and annotations are legible, source-effect direction and DiD definition are explicit in the footer."
+}

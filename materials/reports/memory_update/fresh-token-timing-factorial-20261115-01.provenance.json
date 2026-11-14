@@ -1,0 +1,8 @@
+{
+  "source_audit_sha256": "17ca8a1279550fa5bc35c6795a7b0cb99709e495ef2395be560f93dd19ba032e",
+  "source_manifest_sha256": "dbe7ed952b00f90e2274352c236ab53da7c69fc7c72f0143ee5da475f6a0fcc8",
+  "artifacts_sha256": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-token-timing-factorial-20261115-01.json": "cd2b69af15fc9a5526b433880246f68d132fc06a18a40d9b69a64ee1c6b9d7fc",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-token-timing-factorial-20261115-01.source.py": "a3cfbba17810fa4ac0aa4032ec2534e41d82f0d3050773aa5072b3f70b3a51ff"
+  }
+}

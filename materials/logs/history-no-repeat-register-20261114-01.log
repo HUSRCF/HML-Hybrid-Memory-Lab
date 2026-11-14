@@ -1,0 +1,2 @@
+{"event": "complete1920_query_control_panel_audit_reexecuted"}
+{"status": "registered_before_inference", "counts": {"examples": 384, "case_pairs": 64, "natural_prefixes": 128, "base_streams": 8, "cohorts": 2, "loads": [32, 128], "records_per_prefix": 162, "four_value_query_groups": 96}, "prompt_tokens": [2865], "registry_sha256": "b7b14510934d2ca8e976d562567e4f33de9bc799d982914ea6e577128b2e3207"}

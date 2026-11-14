@@ -1,0 +1,29 @@
+{
+  "protocol_version": 1,
+  "model": "it",
+  "group_index": 3,
+  "initialization_seed": 1701,
+  "steps": 64,
+  "gradient_accumulation": 2,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "max_gradient_norm": 1.0,
+  "max_sequence_tokens": 1536,
+  "validation_copy_cases": 4,
+  "validation_overwrite_cases": 2,
+  "test_copy_cases": 8,
+  "test_overwrite_cases": 4,
+  "modes": {
+    "local": 22
+  },
+  "notes": [
+    "Functional probe, not a new architecture or capacity-impossibility claim.",
+    "Use original ordered 128 examples/512 supervised tokens and frozen backbone; no training on diagnostic cohorts.",
+    "Same group/local rank and zero-output initialization in both token-policy arms.",
+    "Every query/answer forward blocks historical ledger-record KV; prefix processing remains causal and unrestricted.",
+    "Native zero-init/restoration checks must use the same blocked reader policy."
+  ],
+  "adapt_gdn_keys": true,
+  "token_policy": "all",
+  "reader_policy": "records_blocked"
+}

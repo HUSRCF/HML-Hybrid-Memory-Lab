@@ -1,0 +1,6 @@
+test_all_three_control_comparisons_required (tests.test_copy_dependency_transfer.CopyTransferTests.test_all_three_control_comparisons_required) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.268s
+
+OK

@@ -1,0 +1,91 @@
+{
+  "status": "completed",
+  "started_utc": "2026-11-13T20:41:59.191475+00:00",
+  "config": {
+    "protocol_version": 1,
+    "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-keys-pilot-20261114-01",
+    "seed_offset": 10000,
+    "copy_cases": 32,
+    "overwrite_cases": 16,
+    "modes": [
+      "shared",
+      "independent",
+      "attention_only",
+      "gdn_only",
+      "local"
+    ],
+    "notes": [
+      "Frozen checkpoints only. No optimization, tuning or checkpoint selection on this confirmation set.",
+      "All 48 seeds (40000..40047) are distinct from train, validation and pilot test.",
+      "Native plus all five prespecified controls evaluated on the same cases.",
+      "Primary outcome: all current/initial/protected readouts correct for each ledger variant.",
+      "Queries share cases; aggregate uncertainty at case level."
+    ]
+  },
+  "training_config": {
+    "protocol_version": 1,
+    "model": "it",
+    "group_index": 3,
+    "initialization_seed": 1701,
+    "steps": 64,
+    "gradient_accumulation": 2,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "max_gradient_norm": 1.0,
+    "max_sequence_tokens": 1536,
+    "validation_copy_cases": 4,
+    "validation_overwrite_cases": 2,
+    "test_copy_cases": 8,
+    "test_overwrite_cases": 4,
+    "modes": {
+      "shared": 64,
+      "independent": 54,
+      "attention_only": 150,
+      "gdn_only": 84,
+      "local": 22
+    },
+    "notes": [
+      "Small feasibility trial, not a novelty or architecture claim.",
+      "Frozen IT backbone; existing conda base. No new environment or package installation.",
+      "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+      "No test-based hyperparameter selection; evaluate final checkpoint only.",
+      "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+      "Seed and entity namespaces are disjoint across train/validation/test.",
+      "Only three-digit answer and newline tokens receive supervised loss.",
+      "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets."
+    ],
+    "adapt_gdn_keys": true
+  },
+  "cases_sha256": "f0bb7f0f5c61d1c9de1a9013d46f9ce2660caed86f4b22d1b79dd89d4ef4e6c1",
+  "completed_modes": [
+    "native",
+    "shared",
+    "independent",
+    "attention_only",
+    "gdn_only",
+    "local"
+  ],
+  "checkpoint_sha256": {
+    "shared": "fff035b3075df0e2421e8758ec86f25130ccaeba263f40828e521c99a7d37990",
+    "independent": "3a04838987f6d21670584f9c601dd625d48897dc91c197e3cd223404e7d6f98e",
+    "attention_only": "760ea3032ec1c814384031e5e103e679db6808cb435b91ea8ce4eb0c83e3f4f4",
+    "gdn_only": "0966928053145d3f7eab958edea5bf081ca8ffb39f57fbb5dfdd495b4eab3db9",
+    "local": "3fa297b0fb279adb5f53e22483932e756ba08df71b3c29dc57831f896090c577"
+  },
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/controllers.py": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/metrics.py": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/stress_tasks.py": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "scripts/run_controller_trial.py": "8e23714dabc7c8b98b579df97e500a46b947c36153216324d0dcdfea01d491f1",
+    "scripts/run_controller_confirmation.py": "0b1715d1a697e76ddd53915f4f2ca9ed86ca406e67a5da65dc37ac938ebc3a90"
+  },
+  "training": false,
+  "interpretation": "Frozen-checkpoint fresh-seed confirmation; no test-based tuning.",
+  "completed_utc": "2026-11-13T20:54:05.566014+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "retained_failed_figure_layout_attempt",
+  "inference_or_scores_affected": false,
+  "reason": "Automatic colorbar tick outside canvas; no figure artifact was written.",
+  "source_snapshot_method": "Exact reconstruction from the sole subsequent three-line colorbar-tick patch; not an original at-execution snapshot.",
+  "source_sha256": "78b83d1d8e1b93765b177fa9b922406b3b6c2ad0cbeba8705710a1528f8e6eab",
+  "log": "/media/990Pro/Code/SAS/logs/fresh-layer-localization-export-20261115-01.log",
+  "log_sha256": "0b475b5a7f33fe5320b97d032f07840c7a881ca01c7a9187a2e121d890c46227"
+}

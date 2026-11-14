@@ -1,0 +1,21 @@
+{
+  "status": "audited_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-counterbalance-smoke-20261114-01",
+  "manifest_sha256": "f77379d734705303b99da75f21bda9a54082e6c5a42eabdeff6df7962c78a2ce",
+  "cases_sha256": "94a77ba1ca2731da60b7d5f9d0b4e2e9142b24ea18017b4b8f837253c2ca3619",
+  "registry_sha256": "2a38c241db2e638c13684d18c7b594c287865c328fbaa1886190519f5f861954",
+  "base_cases": 2,
+  "contexts_per_regime": 4,
+  "rows_audited": 64,
+  "checks": {
+    "source_snapshots_and_checkpoints": true,
+    "executable_truth_and_balanced_conditions": true,
+    "original_prompt_token_identity": true,
+    "retained_evidence_and_equal_extra_token_budgets": true,
+    "same_extra_token_positions_after_role_swap": true,
+    "equal_extra_SET_values": true,
+    "sampled_cache_logit_and_greedy_identity": true,
+    "all_rows_prefill_and_cached_masks": true
+  },
+  "interpretation": "Oracle event selection at all six full-attention layers during question/answer processing, with original prefix intact. Both extra SETs write the same new value; source/unrelated roles swap at exact matching late token intervals. Effects describe this COPY-template family, not irreversible GDN damage, a learned router, architecture superiority, or efficient sparse kernels. Bootstrap units are base facts; initialization averages are conditional on the three fixed trained seeds."
+}

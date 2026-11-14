@@ -1,0 +1,340 @@
+{
+  "status": "completed",
+  "started_utc": "2026-11-14T01:50:42.863004+00:00",
+  "training": false,
+  "smoke": true,
+  "reader_policy": "full",
+  "plan_sha256": "2ff3186dd3865b41014d645579677002cee02c20028a729ecd5a38dbf6162209",
+  "data_manifest_sha256": "f572ee457fbea4deb6135abeaa12d32094f0e1e66d7906192ab6c442a7ec8fcf",
+  "evaluated_keys": [
+    [
+      "paired-validation-copy-001-v2",
+      "before",
+      "target_initial"
+    ],
+    [
+      "paired-validation-copy-001-v0",
+      "treatment",
+      "protected_current"
+    ],
+    [
+      "paired-validation-copy-001-v1",
+      "control",
+      "target_current"
+    ],
+    [
+      "paired-validation-copy-001-v0",
+      "control",
+      "target_initial"
+    ],
+    [
+      "paired-validation-copy-001-v3",
+      "control",
+      "target_current"
+    ],
+    [
+      "paired-validation-copy-001-v1",
+      "before",
+      "protected_current"
+    ],
+    [
+      "paired-validation-copy-001-v2",
+      "treatment",
+      "target_current"
+    ],
+    [
+      "paired-validation-copy-001-v3",
+      "control",
+      "protected_current"
+    ],
+    [
+      "paired-validation-copy-001-v1",
+      "before",
+      "target_current"
+    ],
+    [
+      "paired-validation-copy-001-v0",
+      "before",
+      "target_initial"
+    ],
+    [
+      "paired-validation-copy-001-v1",
+      "treatment",
+      "protected_current"
+    ],
+    [
+      "paired-validation-copy-001-v1",
+      "control",
+      "target_initial"
+    ],
+    [
+      "paired-validation-copy-001-v3",
+      "control",
+      "target_initial"
+    ],
+    [
+      "paired-validation-copy-001-v2",
+      "control",
+      "target_initial"
+    ],
+    [
+      "paired-validation-copy-001-v1",
+      "before",
+      "target_initial"
+    ],
+    [
+      "paired-validation-copy-001-v2",
+      "control",
+      "protected_current"
+    ],
+    [
+      "paired-validation-copy-001-v2",
+      "treatment",
+      "protected_current"
+    ],
+    [
+      "paired-validation-copy-001-v2",
+      "control",
+      "target_current"
+    ],
+    [
+      "paired-validation-copy-001-v0",
+      "control",
+      "protected_current"
+    ],
+    [
+      "paired-validation-copy-001-v3",
+      "before",
+      "target_initial"
+    ],
+    [
+      "paired-validation-copy-001-v2",
+      "treatment",
+      "target_initial"
+    ],
+    [
+      "paired-validation-copy-001-v1",
+      "control",
+      "protected_current"
+    ],
+    [
+      "paired-validation-copy-001-v2",
+      "before",
+      "protected_current"
+    ],
+    [
+      "paired-validation-copy-001-v0",
+      "treatment",
+      "target_initial"
+    ],
+    [
+      "paired-validation-copy-001-v0",
+      "before",
+      "target_current"
+    ],
+    [
+      "paired-validation-copy-001-v3",
+      "treatment",
+      "target_current"
+    ],
+    [
+      "paired-validation-copy-001-v1",
+      "treatment",
+      "target_initial"
+    ],
+    [
+      "paired-validation-copy-001-v0",
+      "treatment",
+      "target_current"
+    ],
+    [
+      "paired-validation-copy-001-v0",
+      "before",
+      "protected_current"
+    ],
+    [
+      "paired-validation-copy-001-v3",
+      "before",
+      "target_current"
+    ],
+    [
+      "paired-validation-copy-001-v2",
+      "before",
+      "target_current"
+    ],
+    [
+      "paired-validation-copy-001-v1",
+      "treatment",
+      "target_current"
+    ],
+    [
+      "paired-validation-copy-001-v3",
+      "treatment",
+      "target_initial"
+    ],
+    [
+      "paired-validation-copy-001-v0",
+      "control",
+      "target_current"
+    ],
+    [
+      "paired-validation-copy-001-v3",
+      "before",
+      "protected_current"
+    ],
+    [
+      "paired-validation-copy-001-v3",
+      "treatment",
+      "protected_current"
+    ]
+  ],
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/calibration.py": "922499d57024c280f3ab93de1dac9ef4a3d611a216f2c1ae4af7fa7862ef7a06",
+    "sas_memory/controllers.py": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9",
+    "sas_memory/counterbalance_data.py": "88e38ff2901e652335e23ff5decd4bb69d59481a58d27f7284b99fcdf47d176c",
+    "sas_memory/counterbalance_tasks.py": "914523e92d5d1e657646d0e6d179c86845af2605fc6f7d8ab34794181fd6bf1d",
+    "sas_memory/gdn_query_control.py": "b65468349959abd3ebe6a67562e720a13d1590aa37b58803b8cb0b98db026231",
+    "sas_memory/generalization_tasks.py": "697a6fdc1e9d448fdfd5b7fa6e22adca40477d35c6e70f7aaebf648ef8b608fd",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/kv_readout.py": "2927df0cfdaf4972287b83914092e2224eacfc3ccf9d0508e03a64e85e919b8b",
+    "sas_memory/metrics.py": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e",
+    "sas_memory/readout_controls.py": "c15b4e3d4f4de2ce09a3c559dae64be8d849f472d6b02b9f70dd165c2cf73afa",
+    "sas_memory/record_kv_ablation.py": "37c694da6bfb100fba6498df3a4b09ae89dde5181b55b1b17d80585e873f6093",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/semantic_metrics.py": "3f1383a7aed4d72558d567894532ddfa1486de690849c9eea0c73215aaca4efe",
+    "sas_memory/stress_tasks.py": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "scripts/run_paired_semantic_probe.py": "e0f9cd1b6f75ab61afc40e88cfc934464a0f2e2f07e6e9cb5263a837e34cb470",
+    "scripts/analyze_paired_semantic_probe.py": "ddbc998afe4cfdbca4b9245503bd75f419e74a4c136e2040ba540f80fae1d4c7",
+    "scripts/prepare_paired_semantic_updates.py": "27cf1b60a66f9aebaa4b6ce519344bf45930f1b9bf2dde3998e6d59fcb2356fa",
+    "scripts/check_record_attention_weights.py": "952d6b00870e170ab6d3cf210b6d150a761c38133257782cc8e63a0d5a4af47f",
+    "scripts/run_controller_trial.py": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262",
+    "scripts/run_oracle_kv_readout.py": "45f0cf4760af5fdfa42e473c80aa5dc6fbf04d0a71d23b7927b6310e06c8e886",
+    "scripts/analyze_blocked_reader_adaptation.py": "a23c1d33644f906b1a521fdb44a68d5e6dff86f5c11e094387eaa3fb085f94f5",
+    "scripts/analyze_controller_trial.py": "aee986c912b7f3ada5de142978ef10793f16a7753ffdc8e33733682767137e41"
+  },
+  "completed_splits": [
+    "validation"
+  ],
+  "safety_checks": [
+    {
+      "key": [
+        "paired-validation-copy-001-v0",
+        "before",
+        "protected_current"
+      ],
+      "native_replay_exact": true,
+      "full_attention_weights": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.7421875,
+          "max_record_mass": 0.9924100637435913
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.9453125,
+          "max_record_mass": 0.9908618927001953
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.98046875,
+          "max_record_mass": 0.9998173713684082
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.9375,
+          "max_record_mass": 0.9847785830497742
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.87109375,
+          "max_record_mass": 0.9968744516372681
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.35546875,
+          "max_record_mass": 0.9797738790512085
+        }
+      }
+    },
+    {
+      "key": [
+        "paired-validation-copy-001-v3",
+        "treatment",
+        "target_initial"
+      ],
+      "native_replay_exact": true,
+      "full_attention_weights": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.890625,
+          "max_record_mass": 0.9847878813743591
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.83203125,
+          "max_record_mass": 0.9835293292999268
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.73046875,
+          "max_record_mass": 0.9894834756851196
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.921875,
+          "max_record_mass": 0.997718334197998
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.92578125,
+          "max_record_mass": 0.9887499213218689
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.53515625,
+          "max_record_mass": 0.9660837650299072
+        }
+      }
+    }
+  ],
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "python": "/home/husrcf/anaconda3/bin/python",
+  "gpu": "AMD Radeon AI PRO R9700",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "frozen_parameters_and_no_gradients": true,
+  "hooks_restored": true,
+  "completed_utc": "2026-11-14T01:51:05.425552+00:00",
+  "result_sha256": "b40b7e4cf8852ac95f3e26a8c18ac3a959c1d718473dbee2cf46549b17fa4c30"
+}

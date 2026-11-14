@@ -1,0 +1,18 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<03:05,  1.72it/s]Loading weights:   7%|▋         | 23/320 [00:00<00:07, 42.23it/s]Loading weights:  14%|█▍        | 45/320 [00:00<00:03, 79.41it/s]Loading weights:  21%|██        | 67/320 [00:00<00:02, 108.08it/s]Loading weights:  29%|██▉       | 93/320 [00:01<00:01, 136.57it/s]Loading weights:  37%|███▋      | 117/320 [00:01<00:01, 155.82it/s]Loading weights:  44%|████▍     | 142/320 [00:01<00:01, 175.20it/s]Loading weights:  51%|█████     | 163/320 [00:01<00:00, 170.49it/s]Loading weights:  57%|█████▋    | 183/320 [00:01<00:00, 176.68it/s]Loading weights:  64%|██████▍   | 205/320 [00:01<00:00, 176.45it/s]Loading weights:  72%|███████▎  | 232/320 [00:01<00:00, 197.15it/s]Loading weights:  79%|███████▉  | 253/320 [00:01<00:00, 187.41it/s]Loading weights:  87%|████████▋ | 277/320 [00:01<00:00, 195.31it/s]Loading weights:  93%|█████████▎| 298/320 [00:02<00:00, 199.23it/s]Loading weights: 100%|█████████▉| 319/320 [00:02<00:00, 188.38it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 144.80it/s]
+{"event": "fixed_checkpoint_transfer", "model": "shared", "completed": 12, "total": 24}
+{"event": "fixed_checkpoint_transfer", "model": "shared", "completed": 24, "total": 24}
+{"event": "timing_checkpoint_completed", "model": "shared", "readouts": 24}
+{"event": "fixed_checkpoint_transfer", "model": "independent", "completed": 12, "total": 24}
+{"event": "fixed_checkpoint_transfer", "model": "independent", "completed": 24, "total": 24}
+{"event": "timing_checkpoint_completed", "model": "independent", "readouts": 24}
+{"event": "fixed_checkpoint_transfer", "model": "local", "completed": 12, "total": 24}
+{"event": "fixed_checkpoint_transfer", "model": "local", "completed": 24, "total": 24}
+{"event": "timing_checkpoint_completed", "model": "local", "readouts": 24}
+{"event": "native_long_prefix_identity_passed", "model": "local_question", "prefixes": 10}
+{"event": "fixed_checkpoint_transfer", "model": "local_question", "completed": 12, "total": 24}
+{"event": "fixed_checkpoint_transfer", "model": "local_question", "completed": 24, "total": 24}
+{"event": "timing_checkpoint_completed", "model": "local_question", "readouts": 24}
+{"event": "fixed_checkpoint_transfer", "model": "attention_only", "completed": 12, "total": 24}
+{"event": "fixed_checkpoint_transfer", "model": "attention_only", "completed": 24, "total": 24}
+{"event": "timing_checkpoint_completed", "model": "attention_only", "readouts": 24}

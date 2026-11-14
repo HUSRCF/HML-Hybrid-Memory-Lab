@@ -1,0 +1,33 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<03:09,  1.69it/s]Loading weights:   7%|▋         | 22/320 [00:00<00:07, 41.71it/s]Loading weights:  13%|█▎        | 41/320 [00:00<00:03, 71.79it/s]Loading weights:  18%|█▊        | 58/320 [00:00<00:02, 93.82it/s]Loading weights:  25%|██▍       | 79/320 [00:01<00:01, 122.23it/s]Loading weights:  30%|███       | 97/320 [00:01<00:01, 134.64it/s]Loading weights:  37%|███▋      | 118/320 [00:01<00:01, 152.09it/s]Loading weights:  42%|████▎     | 136/320 [00:01<00:01, 154.50it/s]Loading weights:  48%|████▊     | 154/320 [00:01<00:01, 151.87it/s]Loading weights:  56%|█████▋    | 180/320 [00:01<00:00, 180.92it/s]Loading weights:  62%|██████▎   | 200/320 [00:01<00:00, 166.09it/s]Loading weights:  70%|███████   | 224/320 [00:01<00:00, 179.82it/s]Loading weights:  76%|███████▌  | 243/320 [00:01<00:00, 177.97it/s]Loading weights:  82%|████████▏ | 262/320 [00:02<00:00, 170.68it/s]Loading weights:  89%|████████▉ | 284/320 [00:02<00:00, 180.79it/s]Loading weights:  95%|█████████▍| 303/320 [00:02<00:00, 177.58it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 136.41it/s]
+{"event": "copy_readout", "model": "native", "queries_per_regime": 6, "total": 18}
+{"event": "copy_readout", "model": "native", "queries_per_regime": 12, "total": 18}
+{"event": "copy_readout", "model": "native", "queries_per_regime": 18, "total": 18}
+{"event": "copy_readout_arm_complete", "model": "native", "readouts": 36}
+{"event": "copy_readout", "model": "shared", "queries_per_regime": 6, "total": 18}
+{"event": "copy_readout", "model": "shared", "queries_per_regime": 12, "total": 18}
+{"event": "copy_readout", "model": "shared", "queries_per_regime": 18, "total": 18}
+{"event": "copy_readout_arm_complete", "model": "shared", "readouts": 36}
+{"event": "copy_readout", "model": "independent", "queries_per_regime": 6, "total": 18}
+{"event": "copy_readout", "model": "independent", "queries_per_regime": 12, "total": 18}
+{"event": "copy_readout", "model": "independent", "queries_per_regime": 18, "total": 18}
+{"event": "copy_readout_arm_complete", "model": "independent", "readouts": 36}
+{"event": "copy_readout", "model": "local", "queries_per_regime": 6, "total": 18}
+{"event": "copy_readout", "model": "local", "queries_per_regime": 12, "total": 18}
+{"event": "copy_readout", "model": "local", "queries_per_regime": 18, "total": 18}
+{"event": "copy_readout_arm_complete", "model": "local", "readouts": 36}
+{"event": "copy_readout", "model": "local_question", "queries_per_regime": 6, "total": 18}
+{"event": "copy_readout", "model": "local_question", "queries_per_regime": 12, "total": 18}
+{"event": "copy_readout", "model": "local_question", "queries_per_regime": 18, "total": 18}
+{"event": "copy_readout_arm_complete", "model": "local_question", "readouts": 36}
+Traceback (most recent call last):
+  File "/home/husrcf/Code/SAS/scripts/run_copy_readout_sufficiency.py", line 174, in <module>
+    main()
+  File "/home/husrcf/Code/SAS/scripts/run_copy_readout_sufficiency.py", line 170, in main
+    execute(args, read_plan(), registered, source_plan, cases, registry, masks, rows, gate)
+  File "/home/husrcf/Code/SAS/scripts/run_copy_readout_sufficiency.py", line 106, in execute
+    proof, actual = prove_and_measure(runtime, ledger, q, keeps, full[name][q["id"]])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/husrcf/Code/SAS/scripts/copy_readout_runtime.py", line 121, in prove_and_measure
+    raise ValueError("Actual unmasked reference readout or observer cleanup changed")
+ValueError: Actual unmasked reference readout or observer cleanup changed

@@ -1,0 +1,14 @@
+test_all_five_actual_cache_origins_preserve_sources_and_complete_layout (tests.test_state_continuation.StateContinuationTests.test_all_five_actual_cache_origins_preserve_sources_and_complete_layout) ... ok
+test_eos_newline_and_max_length_include_original_unused_final_forward (tests.test_state_continuation.StateContinuationTests.test_eos_newline_and_max_length_include_original_unused_final_forward) ... ok
+test_full_KV_current_row_and_non_target_state_corruption_are_rejected (tests.test_state_continuation.StateContinuationTests.test_full_KV_current_row_and_non_target_state_corruption_are_rejected) ... ok
+test_gold_scoring_uses_original_float32_addition_and_complete_forward_shape (tests.test_state_continuation.StateContinuationTests.test_gold_scoring_uses_original_float32_addition_and_complete_forward_shape) ... ok
+test_metadata_covers_container_types_and_previously_unlisted_bookkeeping (tests.test_state_continuation.StateContinuationTests.test_metadata_covers_container_types_and_previously_unlisted_bookkeeping) ... ok
+test_original_runtime_greedy_and_gold_are_reconstructed_from_actual_passive_vectors (tests.test_state_continuation.StateContinuationTests.test_original_runtime_greedy_and_gold_are_reconstructed_from_actual_passive_vectors) ... ok
+test_passive_hook_exception_cleanup_and_original_position_validation (tests.test_state_continuation.StateContinuationTests.test_passive_hook_exception_cleanup_and_original_position_validation) ... ok
+test_registered_inputs_pin_all32_actual_source_observations_and129_sources (tests.test_state_continuation.StateContinuationTests.test_registered_inputs_pin_all32_actual_source_observations_and129_sources) ... ok
+test_vector_corruption_wrong_losses_positions_and_generations_are_rejected (tests.test_state_continuation.StateContinuationTests.test_vector_corruption_wrong_losses_positions_and_generations_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 13.139s
+
+OK

@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "status": "registered_before_transfer_implementation_and_inference_on_existing_development_cohort",
+  "registered_utc": "2026-11-14T10:42:09.558306+00:00",
+  "profile": "fixed_augmented_checkpoint_copy_dependency_transfer",
+  "purpose": "Complete the missing shared/independent/component/question-stage control comparison on the existing snapshot-COPY depth/wording cohort. No new training or repeat-write load hunting.",
+  "model_key": "it",
+  "model_class": "Qwen3_5ForCausalLM",
+  "local_files_only": true,
+  "training": false,
+  "new_adapters": false,
+  "reader_policy": "full",
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "source_cases": "/media/990Pro/Code/SAS/datasets/memory_update/copy-generalization-v1/cases.json",
+  "source_cases_file_sha256": "9cf394ded8f0ac5c1795ff992e2eba0c28be6d086528b380e25af7221ca74b40",
+  "source_cases_canonical_sha256": "a995eea7d47b5b03423ccf17d7c26f65d4d873f7a7fc391821bcc03f563efba7",
+  "source_generation": "Unchanged build_generalization_cases:seeds60000..60007, depths1/2/3, original/entity_first wording. Existing48cases/8base streams. No new values, entities, lengths, templates or role selection.",
+  "previous_negative_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/overwrite-history-20261114.json",
+  "previous_negative_audit_sha256": "ef369a7feb824d0696ad36c7cb14dfc5e51fd629570852724bc41514383881cf",
+  "preserve_failed_historical_and_repeat_primaries": true,
+  "models": {
+    "native": null,
+    "shared": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "shared",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/shared/step-000432/controller.safetensors",
+      "checkpoint_sha256": "3ac57cfd86116dc712aacd14de526ccc3cb8f60c7348317fbacc16910914d8fc",
+      "checkpoint_metadata_sha256": "b2bc536ef797684ef00736b8a2622eb94dbe7c6d6d6b55a8f672346a35663225",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.007630780778693288,
+        "teacher_numeric_tokens_correct": 2585,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "independent": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "independent",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/independent/step-000432/controller.safetensors",
+      "checkpoint_sha256": "e042e284b0bf7c32dc4f1340120f3e71d904b3ddc08ae5f5ebbc6c3b8d93823f",
+      "checkpoint_metadata_sha256": "9c27b9340c726e6fbf915af8a6d187c27b0a28204950589692cdb8c09b533cf9",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "independent",
+      "rank": 54,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696384,
+      "initial_state_sha256": "02120c5c68629314f6cac9fc2e6adb4f4d3da57691e1d1c0bca711e62c2baf26",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.003956158183937246,
+        "teacher_numeric_tokens_correct": 2591,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "local": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "local",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/local/step-000432/controller.safetensors",
+      "checkpoint_sha256": "776d5e1c35c5aa3ec8056fdaf4ad453b8a85d58d156d1448e2788ca2564c0e91",
+      "checkpoint_metadata_sha256": "ec839a0e752ab0fb988c4a86b8345c5c26151b15c030817e091530006acc4a90",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "local",
+      "rank": 22,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 689216,
+      "initial_state_sha256": "44ebb8784799d6d68369fc7953ccfa42429b30109fbe8cbd43aaa1d8d1b2ea8f",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.013929484663227262,
+        "teacher_numeric_tokens_correct": 2578,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "local_question": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "local_question",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/local_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ee78264808d0a532188c61c78e68407e72551947941ebb977ab25864b600a848",
+      "checkpoint_metadata_sha256": "432c52e03ed06df0230b7c925ff440ca6eaca087f4a5ad1589facbb99635a581",
+      "final_step": 432,
+      "token_policy": "question",
+      "mode": "local",
+      "rank": 22,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 689216,
+      "initial_state_sha256": "44ebb8784799d6d68369fc7953ccfa42429b30109fbe8cbd43aaa1d8d1b2ea8f",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005892252288227247,
+        "teacher_numeric_tokens_correct": 2585,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "attention_only": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "attention_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/attention_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "20d9827c1eec05f9ac425f96530df59bd899a3a3a2f4599e3cfcba494715dd61",
+      "checkpoint_metadata_sha256": "3d6840519da53c2eab88d58937f6b241ee003498b7d0b333f084528e8320ca1a",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "attention_only",
+      "rank": 150,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 691200,
+      "initial_state_sha256": "ac7920d08d807c0bd99a58afda8e72b9658235e8e38093bad83b2f491bd05396",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.03906242988725555,
+        "teacher_numeric_tokens_correct": 2551,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "gdn_all_tokens": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "gdn_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+      "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.006321374711538502,
+        "teacher_numeric_tokens_correct": 2584,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "gdn_question_only": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/gdn-question-timing-20261114-01",
+      "training_arm": "gdn_question",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/gdn-question-timing-20261114.json",
+      "audit_sha256": "1ea60978eeac9414ab0211d4e3ad668c080267724b00706fba9bcb745623825e",
+      "manifest_sha256": "a4df590b2b104dd4a87c9ff7c38b82d2f45a6df67a5a02db3434b084108c67da",
+      "training_plan_sha256": "6b02735cd42629e92676fa7c0ff05a34ed0f0976c56ad8d0df7095de907a7b9b",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/gdn-question-timing-20261114-01/gdn_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "5aeea3bc1679df153bb9e246426da580c37575d7292399edd9c21d98c5952662",
+      "checkpoint_metadata_sha256": "b7f77c2dcc05f2105ebe0ca34832f3a534254630d01f434f951b644e6d3523f1",
+      "final_step": 432,
+      "token_policy": "question",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.004157001361527869,
+        "teacher_numeric_tokens_correct": 2588,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    }
+  },
+  "variants": [
+    "before",
+    "control",
+    "treatment"
+  ],
+  "roles": [
+    "target_current",
+    "protected_current",
+    "target_initial"
+  ],
+  "counts": {
+    "models": 8,
+    "existing_cases": 48,
+    "base_streams": 8,
+    "reported_bindings_per_model": 432,
+    "physical_queries_per_model": 336,
+    "reported_bindings_total": 3456,
+    "physical_queries_total": 2688
+  },
+  "deduplication": "Merge only identical complete prompt tokens, question/answer strings and answer tokens; retain all432case/variant/role bindings. Repeated before contexts across depths merge. Never select by correctness.",
+  "generation": {
+    "maximum_new_tokens": 12,
+    "candidate_restriction": false,
+    "gold_nll_tokens": 3,
+    "prefix_processing": "fresh full prefill for every physical query"
+  },
+  "safety": {
+    "smoke": "Original first and last cases, all3variants/3roles, all8models:18physical queries/model,144total. Operational only, no performance gate.",
+    "samples": "First and last cases, all3variants, target_current query:6actual historical-access checks and6exact detached-native replays permodel. Both question-only adapters:6complete native-prefix KV/recurrent/conv/bookkeeping and last-logit equalities each. Same samples in full run.",
+    "invariants": "Freeze actual tokenizer registry before inference; independent complete smoke audit before full evaluation. Full loaded native hash unchanged/no gradients, fixed adapter tensors frozen/unchanged, all6softmax layers exercise history during full prefill and cached decoding, all hooks restored; pin actual/archived sources and checkpoint files."
+  },
+  "analysis": {
+    "unit": "base_case_id:8existing streams; depth, wording, order and role observations are related.",
+    "coverage": "All432bindings and336physical queries permodel. Report role/variant and depth/wording strata; target-current correct in BOTH necessary COPY/SET orders; all6after-update answers jointly correct; all9including before jointly correct; protected/history regressions versus before, retaining failed baselines.",
+    "comparisons": [
+      [
+        "shared",
+        "independent"
+      ],
+      [
+        "shared",
+        "local_question"
+      ],
+      [
+        "shared",
+        "gdn_question_only"
+      ],
+      [
+        "local",
+        "local_question"
+      ],
+      [
+        "gdn_all_tokens",
+        "gdn_question_only"
+      ],
+      [
+        "shared",
+        "attention_only"
+      ],
+      [
+        "shared",
+        "gdn_all_tokens"
+      ]
+    ],
+    "descriptive_shared_candidate_gate": "For EACH comparator independent,local_question,gdn_question_only: shared has positive signed net six-answer joint gain overall, positive signed gain in at least3distinct base streams, and positive pooled signed gain at EACH depth1/2/3. All3comparisons required. Conservative descriptive development screening, not significance or architecture success.",
+    "if_absent": "No new shared-interface training, rank/checkpoint/threshold tuning or favorable-subset search. Record control sufficiency and preserve prior negative branches.",
+    "if_present": "Only motivates separately registered fresh-cohort mechanism/replication before architecture work. Generic shared adapters do not encode explicit semantic dependencies; question-stage success does not isolate Attention-Q or rule out compensated prefix damage."
+  },
+  "scope": "Seven fixed final432-step adapters and freshly rerun native model. Identical864short order-augmented training examples and budgets, near-matched parameter counts, one initialization; Attention-only has weaker teacher fit. Existing COPY data has observed native/older-adapter results: development transfer, not untouched confirmation, novelty or cross-path necessity."
+}

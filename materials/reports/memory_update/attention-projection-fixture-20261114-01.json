@@ -1,0 +1,51 @@
+{
+  "status": "cold_exact_reference_numeric_fixture",
+  "query_id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+  "result": {
+    "answer": "263",
+    "answer_nll": 0.4226212501525879,
+    "generated": "406\n",
+    "greedy_exact": false,
+    "query_tokens": 26
+  },
+  "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/attention_only/step-000432/controller.safetensors",
+  "checkpoint_sha256": "20d9827c1eec05f9ac425f96530df59bd899a3a3a2f4599e3cfcba494715dd61",
+  "adapter_state_sha256": "e644876521c780629d7358c585c4e48ec187b946fbc3307b77162f4bf6da69e0",
+  "blas_backend": "_BlasBackend.Cublaslt",
+  "fixture_sha256": "8d9b76606a5b4aa58afe03d735ff74356124cc734d4d91b4df110656c9d7fe40",
+  "tensors": {
+    "q_input": {
+      "shape": [
+        1,
+        421,
+        150
+      ],
+      "sha256": "42ff1a6cf3ca72992b81f7cab7e8b362434d347df5fc3eaa99466b8a5add549d"
+    },
+    "q": {
+      "shape": [
+        1,
+        421,
+        2048
+      ],
+      "sha256": "ac994ff87d07400b3f607850f7481466be14caf34bc8443ce042699678e8d721"
+    },
+    "k_input": {
+      "shape": [
+        1,
+        421,
+        150
+      ],
+      "sha256": "42ff1a6cf3ca72992b81f7cab7e8b362434d347df5fc3eaa99466b8a5add549d"
+    },
+    "k": {
+      "shape": [
+        1,
+        421,
+        512
+      ],
+      "sha256": "01b4b6389edb9a79cb3e00e5cb542bd46dfa48c6643828cef71ddf3a86febb99"
+    }
+  },
+  "source_sha256": "ddbc27adfb92eb6c600a20f13dde93b6ddc2310360ab794617df7ece13ff3727"
+}

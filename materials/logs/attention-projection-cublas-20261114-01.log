@@ -1,0 +1,2 @@
+[W1114 20:54:59.798331488 Context.cpp:533] Warning: Attempting to use CK on an unsupported architecture! Cannot set backend to CK (function operator())
+{"backend": "cublas", "projections": {"q": {"same_input_cold_warm": null, "input_difference": null, "output_cold_versus_warm": null, "distinct_output_hashes": 1}, "k": {"same_input_cold_warm": null, "input_difference": null, "output_cold_versus_warm": null, "distinct_output_hashes": 1}}}

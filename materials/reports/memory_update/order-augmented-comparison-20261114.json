@@ -1,0 +1,4336 @@
+{
+  "status": "completed_paired_augmentation_comparison",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+  "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+  "counts": {
+    "shared": {
+      "canonical": {
+        "original_training": {
+          "individual": {
+            "correct": 429,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 105,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 141,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 33,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 96,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 24,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 93,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 80,
+            "units": 80
+          }
+        },
+        "augmented_training": {
+          "individual": {
+            "correct": 429,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 105,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 141,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 34,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 95,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 23,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 94,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 80,
+            "units": 80
+          }
+        }
+      },
+      "permuted": {
+        "original_training": {
+          "individual": {
+            "correct": 419,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 103,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 131,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 31,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 96,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 24,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 83,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 74,
+            "units": 80
+          }
+        },
+        "augmented_training": {
+          "individual": {
+            "correct": 428,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 105,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 140,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 33,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 95,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 23,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 93,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 78,
+            "units": 80
+          }
+        }
+      }
+    },
+    "independent": {
+      "canonical": {
+        "original_training": {
+          "individual": {
+            "correct": 429,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 106,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 141,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 34,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 96,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 24,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 93,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 80,
+            "units": 80
+          }
+        },
+        "augmented_training": {
+          "individual": {
+            "correct": 429,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 105,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 141,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 33,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 96,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 24,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 93,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 80,
+            "units": 80
+          }
+        }
+      },
+      "permuted": {
+        "original_training": {
+          "individual": {
+            "correct": 429,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 106,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 141,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 34,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 96,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 24,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 93,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 78,
+            "units": 80
+          }
+        },
+        "augmented_training": {
+          "individual": {
+            "correct": 428,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 106,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 140,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 34,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 96,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 24,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 92,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 80,
+            "units": 80
+          }
+        }
+      }
+    },
+    "local": {
+      "canonical": {
+        "original_training": {
+          "individual": {
+            "correct": 391,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 95,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 103,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 23,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 94,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 23,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 57,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 56,
+            "units": 80
+          }
+        },
+        "augmented_training": {
+          "individual": {
+            "correct": 428,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 105,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 140,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 33,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 96,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 24,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 92,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 80,
+            "units": 80
+          }
+        }
+      },
+      "permuted": {
+        "original_training": {
+          "individual": {
+            "correct": 396,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 90,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 109,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 20,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 89,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 20,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 70,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 67,
+            "units": 80
+          }
+        },
+        "augmented_training": {
+          "individual": {
+            "correct": 427,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 104,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 139,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 32,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 96,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 24,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 91,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 78,
+            "units": 80
+          }
+        }
+      }
+    },
+    "local_question": {
+      "canonical": {
+        "original_training": {
+          "individual": {
+            "correct": 427,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 105,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 139,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 33,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 96,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 24,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 91,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 80,
+            "units": 80
+          }
+        },
+        "augmented_training": {
+          "individual": {
+            "correct": 428,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 106,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 140,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 34,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 96,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 24,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 92,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 79,
+            "units": 80
+          }
+        }
+      },
+      "permuted": {
+        "original_training": {
+          "individual": {
+            "correct": 423,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 102,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 135,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 31,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 91,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 22,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 95,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 80,
+            "units": 80
+          }
+        },
+        "augmented_training": {
+          "individual": {
+            "correct": 418,
+            "units": 432
+          },
+          "four_values": {
+            "correct": 102,
+            "units": 108
+          },
+          "three_roles": {
+            "correct": 130,
+            "units": 144
+          },
+          "twelve_value_variant": {
+            "correct": 30,
+            "units": 36
+          },
+          "stable_unchanged_case_role": {
+            "correct": 96,
+            "units": 96
+          },
+          "stable_unchanged_four_values": {
+            "correct": 24,
+            "units": 24
+          },
+          "updated_target": {
+            "correct": 82,
+            "units": 96
+          },
+          "updated_target_except_add": {
+            "correct": 74,
+            "units": 80
+          }
+        }
+      }
+    }
+  },
+  "training_order_change": {
+    "shared": {
+      "canonical": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 429,
+          "candidate_correct": 429,
+          "rescued": 2,
+          "regressed": 2,
+          "both_correct": 427,
+          "both_wrong": 1,
+          "net_correct_change": 0
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 105,
+          "candidate_correct": 105,
+          "rescued": 2,
+          "regressed": 2,
+          "both_correct": 103,
+          "both_wrong": 1,
+          "net_correct_change": 0
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 141,
+          "candidate_correct": 141,
+          "rescued": 2,
+          "regressed": 2,
+          "both_correct": 139,
+          "both_wrong": 1,
+          "net_correct_change": 0
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 33,
+          "candidate_correct": 34,
+          "rescued": 2,
+          "regressed": 1,
+          "both_correct": 32,
+          "both_wrong": 1,
+          "net_correct_change": 1
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 96,
+          "candidate_correct": 95,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 95,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 24,
+          "candidate_correct": 23,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 23,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 93,
+          "candidate_correct": 94,
+          "rescued": 2,
+          "regressed": 1,
+          "both_correct": 92,
+          "both_wrong": 1,
+          "net_correct_change": 1
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 80,
+          "candidate_correct": 80,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 80,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        }
+      },
+      "permuted": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 419,
+          "candidate_correct": 428,
+          "rescued": 10,
+          "regressed": 1,
+          "both_correct": 418,
+          "both_wrong": 3,
+          "net_correct_change": 9
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 103,
+          "candidate_correct": 105,
+          "rescued": 3,
+          "regressed": 1,
+          "both_correct": 102,
+          "both_wrong": 2,
+          "net_correct_change": 2
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 131,
+          "candidate_correct": 140,
+          "rescued": 10,
+          "regressed": 1,
+          "both_correct": 130,
+          "both_wrong": 3,
+          "net_correct_change": 9
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 31,
+          "candidate_correct": 33,
+          "rescued": 3,
+          "regressed": 1,
+          "both_correct": 30,
+          "both_wrong": 2,
+          "net_correct_change": 2
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 96,
+          "candidate_correct": 95,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 95,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 24,
+          "candidate_correct": 23,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 23,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 83,
+          "candidate_correct": 93,
+          "rescued": 10,
+          "regressed": 0,
+          "both_correct": 83,
+          "both_wrong": 3,
+          "net_correct_change": 10
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 74,
+          "candidate_correct": 78,
+          "rescued": 4,
+          "regressed": 0,
+          "both_correct": 74,
+          "both_wrong": 2,
+          "net_correct_change": 4
+        }
+      }
+    },
+    "independent": {
+      "canonical": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 429,
+          "candidate_correct": 429,
+          "rescued": 2,
+          "regressed": 2,
+          "both_correct": 427,
+          "both_wrong": 1,
+          "net_correct_change": 0
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 106,
+          "candidate_correct": 105,
+          "rescued": 1,
+          "regressed": 2,
+          "both_correct": 104,
+          "both_wrong": 1,
+          "net_correct_change": -1
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 141,
+          "candidate_correct": 141,
+          "rescued": 2,
+          "regressed": 2,
+          "both_correct": 139,
+          "both_wrong": 1,
+          "net_correct_change": 0
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 34,
+          "candidate_correct": 33,
+          "rescued": 1,
+          "regressed": 2,
+          "both_correct": 32,
+          "both_wrong": 1,
+          "net_correct_change": -1
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 96,
+          "candidate_correct": 96,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 96,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 24,
+          "candidate_correct": 24,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 24,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 93,
+          "candidate_correct": 93,
+          "rescued": 2,
+          "regressed": 2,
+          "both_correct": 91,
+          "both_wrong": 1,
+          "net_correct_change": 0
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 80,
+          "candidate_correct": 80,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 80,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        }
+      },
+      "permuted": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 429,
+          "candidate_correct": 428,
+          "rescued": 2,
+          "regressed": 3,
+          "both_correct": 426,
+          "both_wrong": 1,
+          "net_correct_change": -1
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 106,
+          "candidate_correct": 106,
+          "rescued": 1,
+          "regressed": 1,
+          "both_correct": 105,
+          "both_wrong": 1,
+          "net_correct_change": 0
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 141,
+          "candidate_correct": 140,
+          "rescued": 2,
+          "regressed": 3,
+          "both_correct": 138,
+          "both_wrong": 1,
+          "net_correct_change": -1
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 34,
+          "candidate_correct": 34,
+          "rescued": 1,
+          "regressed": 1,
+          "both_correct": 33,
+          "both_wrong": 1,
+          "net_correct_change": 0
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 96,
+          "candidate_correct": 96,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 96,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 24,
+          "candidate_correct": 24,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 24,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 93,
+          "candidate_correct": 92,
+          "rescued": 2,
+          "regressed": 3,
+          "both_correct": 90,
+          "both_wrong": 1,
+          "net_correct_change": -1
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 78,
+          "candidate_correct": 80,
+          "rescued": 2,
+          "regressed": 0,
+          "both_correct": 78,
+          "both_wrong": 0,
+          "net_correct_change": 2
+        }
+      }
+    },
+    "local": {
+      "canonical": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 391,
+          "candidate_correct": 428,
+          "rescued": 38,
+          "regressed": 1,
+          "both_correct": 390,
+          "both_wrong": 3,
+          "net_correct_change": 37
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 95,
+          "candidate_correct": 105,
+          "rescued": 10,
+          "regressed": 0,
+          "both_correct": 95,
+          "both_wrong": 3,
+          "net_correct_change": 10
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 103,
+          "candidate_correct": 140,
+          "rescued": 38,
+          "regressed": 1,
+          "both_correct": 102,
+          "both_wrong": 3,
+          "net_correct_change": 37
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 23,
+          "candidate_correct": 33,
+          "rescued": 10,
+          "regressed": 0,
+          "both_correct": 23,
+          "both_wrong": 3,
+          "net_correct_change": 10
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 94,
+          "candidate_correct": 96,
+          "rescued": 2,
+          "regressed": 0,
+          "both_correct": 94,
+          "both_wrong": 0,
+          "net_correct_change": 2
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 23,
+          "candidate_correct": 24,
+          "rescued": 1,
+          "regressed": 0,
+          "both_correct": 23,
+          "both_wrong": 0,
+          "net_correct_change": 1
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 57,
+          "candidate_correct": 92,
+          "rescued": 36,
+          "regressed": 1,
+          "both_correct": 56,
+          "both_wrong": 3,
+          "net_correct_change": 35
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 56,
+          "candidate_correct": 80,
+          "rescued": 24,
+          "regressed": 0,
+          "both_correct": 56,
+          "both_wrong": 0,
+          "net_correct_change": 24
+        }
+      },
+      "permuted": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 396,
+          "candidate_correct": 427,
+          "rescued": 33,
+          "regressed": 2,
+          "both_correct": 394,
+          "both_wrong": 3,
+          "net_correct_change": 31
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 90,
+          "candidate_correct": 104,
+          "rescued": 15,
+          "regressed": 1,
+          "both_correct": 89,
+          "both_wrong": 3,
+          "net_correct_change": 14
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 109,
+          "candidate_correct": 139,
+          "rescued": 31,
+          "regressed": 1,
+          "both_correct": 108,
+          "both_wrong": 4,
+          "net_correct_change": 30
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 20,
+          "candidate_correct": 32,
+          "rescued": 12,
+          "regressed": 0,
+          "both_correct": 20,
+          "both_wrong": 4,
+          "net_correct_change": 12
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 89,
+          "candidate_correct": 96,
+          "rescued": 7,
+          "regressed": 0,
+          "both_correct": 89,
+          "both_wrong": 0,
+          "net_correct_change": 7
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 20,
+          "candidate_correct": 24,
+          "rescued": 4,
+          "regressed": 0,
+          "both_correct": 20,
+          "both_wrong": 0,
+          "net_correct_change": 4
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 70,
+          "candidate_correct": 91,
+          "rescued": 23,
+          "regressed": 2,
+          "both_correct": 68,
+          "both_wrong": 3,
+          "net_correct_change": 21
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 67,
+          "candidate_correct": 78,
+          "rescued": 13,
+          "regressed": 2,
+          "both_correct": 65,
+          "both_wrong": 0,
+          "net_correct_change": 11
+        }
+      }
+    },
+    "local_question": {
+      "canonical": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 427,
+          "candidate_correct": 428,
+          "rescued": 5,
+          "regressed": 4,
+          "both_correct": 423,
+          "both_wrong": 0,
+          "net_correct_change": 1
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 105,
+          "candidate_correct": 106,
+          "rescued": 3,
+          "regressed": 2,
+          "both_correct": 103,
+          "both_wrong": 0,
+          "net_correct_change": 1
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 139,
+          "candidate_correct": 140,
+          "rescued": 5,
+          "regressed": 4,
+          "both_correct": 135,
+          "both_wrong": 0,
+          "net_correct_change": 1
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 33,
+          "candidate_correct": 34,
+          "rescued": 3,
+          "regressed": 2,
+          "both_correct": 31,
+          "both_wrong": 0,
+          "net_correct_change": 1
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 96,
+          "candidate_correct": 96,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 96,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 24,
+          "candidate_correct": 24,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 24,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 91,
+          "candidate_correct": 92,
+          "rescued": 5,
+          "regressed": 4,
+          "both_correct": 87,
+          "both_wrong": 0,
+          "net_correct_change": 1
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 80,
+          "candidate_correct": 79,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 79,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        }
+      },
+      "permuted": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 423,
+          "candidate_correct": 418,
+          "rescued": 9,
+          "regressed": 14,
+          "both_correct": 409,
+          "both_wrong": 0,
+          "net_correct_change": -5
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 102,
+          "candidate_correct": 102,
+          "rescued": 5,
+          "regressed": 5,
+          "both_correct": 97,
+          "both_wrong": 1,
+          "net_correct_change": 0
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 135,
+          "candidate_correct": 130,
+          "rescued": 8,
+          "regressed": 13,
+          "both_correct": 122,
+          "both_wrong": 1,
+          "net_correct_change": -5
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 31,
+          "candidate_correct": 30,
+          "rescued": 4,
+          "regressed": 5,
+          "both_correct": 26,
+          "both_wrong": 1,
+          "net_correct_change": -1
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 91,
+          "candidate_correct": 96,
+          "rescued": 5,
+          "regressed": 0,
+          "both_correct": 91,
+          "both_wrong": 0,
+          "net_correct_change": 5
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 22,
+          "candidate_correct": 24,
+          "rescued": 2,
+          "regressed": 0,
+          "both_correct": 22,
+          "both_wrong": 0,
+          "net_correct_change": 2
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 95,
+          "candidate_correct": 82,
+          "rescued": 1,
+          "regressed": 14,
+          "both_correct": 81,
+          "both_wrong": 0,
+          "net_correct_change": -13
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 80,
+          "candidate_correct": 74,
+          "rescued": 0,
+          "regressed": 6,
+          "both_correct": 74,
+          "both_wrong": 0,
+          "net_correct_change": -6
+        }
+      }
+    }
+  },
+  "shared_vs_augmented_controls": {
+    "canonical": {
+      "independent": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 429,
+          "candidate_correct": 429,
+          "rescued": 1,
+          "regressed": 1,
+          "both_correct": 428,
+          "both_wrong": 2,
+          "net_correct_change": 0
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 105,
+          "candidate_correct": 105,
+          "rescued": 1,
+          "regressed": 1,
+          "both_correct": 104,
+          "both_wrong": 2,
+          "net_correct_change": 0
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 141,
+          "candidate_correct": 141,
+          "rescued": 1,
+          "regressed": 1,
+          "both_correct": 140,
+          "both_wrong": 2,
+          "net_correct_change": 0
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 33,
+          "candidate_correct": 34,
+          "rescued": 1,
+          "regressed": 0,
+          "both_correct": 33,
+          "both_wrong": 2,
+          "net_correct_change": 1
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 96,
+          "candidate_correct": 95,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 95,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 24,
+          "candidate_correct": 23,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 23,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 93,
+          "candidate_correct": 94,
+          "rescued": 1,
+          "regressed": 0,
+          "both_correct": 93,
+          "both_wrong": 2,
+          "net_correct_change": 1
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 80,
+          "candidate_correct": 80,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 80,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        }
+      },
+      "local": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 428,
+          "candidate_correct": 429,
+          "rescued": 2,
+          "regressed": 1,
+          "both_correct": 427,
+          "both_wrong": 2,
+          "net_correct_change": 1
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 105,
+          "candidate_correct": 105,
+          "rescued": 1,
+          "regressed": 1,
+          "both_correct": 104,
+          "both_wrong": 2,
+          "net_correct_change": 0
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 140,
+          "candidate_correct": 141,
+          "rescued": 2,
+          "regressed": 1,
+          "both_correct": 139,
+          "both_wrong": 2,
+          "net_correct_change": 1
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 33,
+          "candidate_correct": 34,
+          "rescued": 1,
+          "regressed": 0,
+          "both_correct": 33,
+          "both_wrong": 2,
+          "net_correct_change": 1
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 96,
+          "candidate_correct": 95,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 95,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 24,
+          "candidate_correct": 23,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 23,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 92,
+          "candidate_correct": 94,
+          "rescued": 2,
+          "regressed": 0,
+          "both_correct": 92,
+          "both_wrong": 2,
+          "net_correct_change": 2
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 80,
+          "candidate_correct": 80,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 80,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        }
+      },
+      "local_question": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 428,
+          "candidate_correct": 429,
+          "rescued": 3,
+          "regressed": 2,
+          "both_correct": 426,
+          "both_wrong": 1,
+          "net_correct_change": 1
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 106,
+          "candidate_correct": 105,
+          "rescued": 1,
+          "regressed": 2,
+          "both_correct": 104,
+          "both_wrong": 1,
+          "net_correct_change": -1
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 140,
+          "candidate_correct": 141,
+          "rescued": 2,
+          "regressed": 1,
+          "both_correct": 139,
+          "both_wrong": 2,
+          "net_correct_change": 1
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 34,
+          "candidate_correct": 34,
+          "rescued": 1,
+          "regressed": 1,
+          "both_correct": 33,
+          "both_wrong": 1,
+          "net_correct_change": 0
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 96,
+          "candidate_correct": 95,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 95,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 24,
+          "candidate_correct": 23,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 23,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 92,
+          "candidate_correct": 94,
+          "rescued": 3,
+          "regressed": 1,
+          "both_correct": 91,
+          "both_wrong": 1,
+          "net_correct_change": 2
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 79,
+          "candidate_correct": 80,
+          "rescued": 1,
+          "regressed": 0,
+          "both_correct": 79,
+          "both_wrong": 0,
+          "net_correct_change": 1
+        }
+      }
+    },
+    "permuted": {
+      "independent": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 428,
+          "candidate_correct": 428,
+          "rescued": 3,
+          "regressed": 3,
+          "both_correct": 425,
+          "both_wrong": 1,
+          "net_correct_change": 0
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 106,
+          "candidate_correct": 105,
+          "rescued": 1,
+          "regressed": 2,
+          "both_correct": 104,
+          "both_wrong": 1,
+          "net_correct_change": -1
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 140,
+          "candidate_correct": 140,
+          "rescued": 3,
+          "regressed": 3,
+          "both_correct": 137,
+          "both_wrong": 1,
+          "net_correct_change": 0
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 34,
+          "candidate_correct": 33,
+          "rescued": 1,
+          "regressed": 2,
+          "both_correct": 32,
+          "both_wrong": 1,
+          "net_correct_change": -1
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 96,
+          "candidate_correct": 95,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 95,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 24,
+          "candidate_correct": 23,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 23,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 92,
+          "candidate_correct": 93,
+          "rescued": 3,
+          "regressed": 2,
+          "both_correct": 90,
+          "both_wrong": 1,
+          "net_correct_change": 1
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 80,
+          "candidate_correct": 78,
+          "rescued": 0,
+          "regressed": 2,
+          "both_correct": 78,
+          "both_wrong": 0,
+          "net_correct_change": -2
+        }
+      },
+      "local": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 427,
+          "candidate_correct": 428,
+          "rescued": 2,
+          "regressed": 1,
+          "both_correct": 426,
+          "both_wrong": 3,
+          "net_correct_change": 1
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 104,
+          "candidate_correct": 105,
+          "rescued": 2,
+          "regressed": 1,
+          "both_correct": 103,
+          "both_wrong": 2,
+          "net_correct_change": 1
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 139,
+          "candidate_correct": 140,
+          "rescued": 2,
+          "regressed": 1,
+          "both_correct": 138,
+          "both_wrong": 3,
+          "net_correct_change": 1
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 32,
+          "candidate_correct": 33,
+          "rescued": 2,
+          "regressed": 1,
+          "both_correct": 31,
+          "both_wrong": 2,
+          "net_correct_change": 1
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 96,
+          "candidate_correct": 95,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 95,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 24,
+          "candidate_correct": 23,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 23,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 91,
+          "candidate_correct": 93,
+          "rescued": 2,
+          "regressed": 0,
+          "both_correct": 91,
+          "both_wrong": 3,
+          "net_correct_change": 2
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 78,
+          "candidate_correct": 78,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 78,
+          "both_wrong": 2,
+          "net_correct_change": 0
+        }
+      },
+      "local_question": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 418,
+          "candidate_correct": 428,
+          "rescued": 11,
+          "regressed": 1,
+          "both_correct": 417,
+          "both_wrong": 3,
+          "net_correct_change": 10
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 102,
+          "candidate_correct": 105,
+          "rescued": 4,
+          "regressed": 1,
+          "both_correct": 101,
+          "both_wrong": 2,
+          "net_correct_change": 3
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 130,
+          "candidate_correct": 140,
+          "rescued": 10,
+          "regressed": 0,
+          "both_correct": 130,
+          "both_wrong": 4,
+          "net_correct_change": 10
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 30,
+          "candidate_correct": 33,
+          "rescued": 3,
+          "regressed": 0,
+          "both_correct": 30,
+          "both_wrong": 3,
+          "net_correct_change": 3
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 96,
+          "candidate_correct": 95,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 95,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 24,
+          "candidate_correct": 23,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 23,
+          "both_wrong": 0,
+          "net_correct_change": -1
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 82,
+          "candidate_correct": 93,
+          "rescued": 11,
+          "regressed": 0,
+          "both_correct": 82,
+          "both_wrong": 3,
+          "net_correct_change": 11
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 74,
+          "candidate_correct": 78,
+          "rescued": 4,
+          "regressed": 0,
+          "both_correct": 74,
+          "both_wrong": 2,
+          "net_correct_change": 4
+        }
+      }
+    }
+  },
+  "augmented_canonical_to_permuted": {
+    "shared": {
+      "individual": {
+        "units": 432,
+        "reference_correct": 429,
+        "candidate_correct": 428,
+        "rescued": 2,
+        "regressed": 3,
+        "both_correct": 426,
+        "both_wrong": 1,
+        "net_correct_change": -1
+      },
+      "four_values": {
+        "units": 108,
+        "reference_correct": 105,
+        "candidate_correct": 105,
+        "rescued": 2,
+        "regressed": 2,
+        "both_correct": 103,
+        "both_wrong": 1,
+        "net_correct_change": 0
+      },
+      "three_roles": {
+        "units": 144,
+        "reference_correct": 141,
+        "candidate_correct": 140,
+        "rescued": 2,
+        "regressed": 3,
+        "both_correct": 138,
+        "both_wrong": 1,
+        "net_correct_change": -1
+      },
+      "twelve_value_variant": {
+        "units": 36,
+        "reference_correct": 34,
+        "candidate_correct": 33,
+        "rescued": 1,
+        "regressed": 2,
+        "both_correct": 32,
+        "both_wrong": 1,
+        "net_correct_change": -1
+      },
+      "stable_unchanged_case_role": {
+        "units": 96,
+        "reference_correct": 95,
+        "candidate_correct": 95,
+        "rescued": 1,
+        "regressed": 1,
+        "both_correct": 94,
+        "both_wrong": 0,
+        "net_correct_change": 0
+      },
+      "stable_unchanged_four_values": {
+        "units": 24,
+        "reference_correct": 23,
+        "candidate_correct": 23,
+        "rescued": 1,
+        "regressed": 1,
+        "both_correct": 22,
+        "both_wrong": 0,
+        "net_correct_change": 0
+      },
+      "updated_target": {
+        "units": 96,
+        "reference_correct": 94,
+        "candidate_correct": 93,
+        "rescued": 1,
+        "regressed": 2,
+        "both_correct": 92,
+        "both_wrong": 1,
+        "net_correct_change": -1
+      },
+      "updated_target_except_add": {
+        "units": 80,
+        "reference_correct": 80,
+        "candidate_correct": 78,
+        "rescued": 0,
+        "regressed": 2,
+        "both_correct": 78,
+        "both_wrong": 0,
+        "net_correct_change": -2
+      }
+    },
+    "independent": {
+      "individual": {
+        "units": 432,
+        "reference_correct": 429,
+        "candidate_correct": 428,
+        "rescued": 1,
+        "regressed": 2,
+        "both_correct": 427,
+        "both_wrong": 2,
+        "net_correct_change": -1
+      },
+      "four_values": {
+        "units": 108,
+        "reference_correct": 105,
+        "candidate_correct": 106,
+        "rescued": 1,
+        "regressed": 0,
+        "both_correct": 105,
+        "both_wrong": 2,
+        "net_correct_change": 1
+      },
+      "three_roles": {
+        "units": 144,
+        "reference_correct": 141,
+        "candidate_correct": 140,
+        "rescued": 1,
+        "regressed": 2,
+        "both_correct": 139,
+        "both_wrong": 2,
+        "net_correct_change": -1
+      },
+      "twelve_value_variant": {
+        "units": 36,
+        "reference_correct": 33,
+        "candidate_correct": 34,
+        "rescued": 1,
+        "regressed": 0,
+        "both_correct": 33,
+        "both_wrong": 2,
+        "net_correct_change": 1
+      },
+      "stable_unchanged_case_role": {
+        "units": 96,
+        "reference_correct": 96,
+        "candidate_correct": 96,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 96,
+        "both_wrong": 0,
+        "net_correct_change": 0
+      },
+      "stable_unchanged_four_values": {
+        "units": 24,
+        "reference_correct": 24,
+        "candidate_correct": 24,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 24,
+        "both_wrong": 0,
+        "net_correct_change": 0
+      },
+      "updated_target": {
+        "units": 96,
+        "reference_correct": 93,
+        "candidate_correct": 92,
+        "rescued": 1,
+        "regressed": 2,
+        "both_correct": 91,
+        "both_wrong": 2,
+        "net_correct_change": -1
+      },
+      "updated_target_except_add": {
+        "units": 80,
+        "reference_correct": 80,
+        "candidate_correct": 80,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 80,
+        "both_wrong": 0,
+        "net_correct_change": 0
+      }
+    },
+    "local": {
+      "individual": {
+        "units": 432,
+        "reference_correct": 428,
+        "candidate_correct": 427,
+        "rescued": 2,
+        "regressed": 3,
+        "both_correct": 425,
+        "both_wrong": 2,
+        "net_correct_change": -1
+      },
+      "four_values": {
+        "units": 108,
+        "reference_correct": 105,
+        "candidate_correct": 104,
+        "rescued": 1,
+        "regressed": 2,
+        "both_correct": 103,
+        "both_wrong": 2,
+        "net_correct_change": -1
+      },
+      "three_roles": {
+        "units": 144,
+        "reference_correct": 140,
+        "candidate_correct": 139,
+        "rescued": 2,
+        "regressed": 3,
+        "both_correct": 137,
+        "both_wrong": 2,
+        "net_correct_change": -1
+      },
+      "twelve_value_variant": {
+        "units": 36,
+        "reference_correct": 33,
+        "candidate_correct": 32,
+        "rescued": 1,
+        "regressed": 2,
+        "both_correct": 31,
+        "both_wrong": 2,
+        "net_correct_change": -1
+      },
+      "stable_unchanged_case_role": {
+        "units": 96,
+        "reference_correct": 96,
+        "candidate_correct": 96,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 96,
+        "both_wrong": 0,
+        "net_correct_change": 0
+      },
+      "stable_unchanged_four_values": {
+        "units": 24,
+        "reference_correct": 24,
+        "candidate_correct": 24,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 24,
+        "both_wrong": 0,
+        "net_correct_change": 0
+      },
+      "updated_target": {
+        "units": 96,
+        "reference_correct": 92,
+        "candidate_correct": 91,
+        "rescued": 2,
+        "regressed": 3,
+        "both_correct": 89,
+        "both_wrong": 2,
+        "net_correct_change": -1
+      },
+      "updated_target_except_add": {
+        "units": 80,
+        "reference_correct": 80,
+        "candidate_correct": 78,
+        "rescued": 0,
+        "regressed": 2,
+        "both_correct": 78,
+        "both_wrong": 0,
+        "net_correct_change": -2
+      }
+    },
+    "local_question": {
+      "individual": {
+        "units": 432,
+        "reference_correct": 428,
+        "candidate_correct": 418,
+        "rescued": 0,
+        "regressed": 10,
+        "both_correct": 418,
+        "both_wrong": 4,
+        "net_correct_change": -10
+      },
+      "four_values": {
+        "units": 108,
+        "reference_correct": 106,
+        "candidate_correct": 102,
+        "rescued": 0,
+        "regressed": 4,
+        "both_correct": 102,
+        "both_wrong": 2,
+        "net_correct_change": -4
+      },
+      "three_roles": {
+        "units": 144,
+        "reference_correct": 140,
+        "candidate_correct": 130,
+        "rescued": 0,
+        "regressed": 10,
+        "both_correct": 130,
+        "both_wrong": 4,
+        "net_correct_change": -10
+      },
+      "twelve_value_variant": {
+        "units": 36,
+        "reference_correct": 34,
+        "candidate_correct": 30,
+        "rescued": 0,
+        "regressed": 4,
+        "both_correct": 30,
+        "both_wrong": 2,
+        "net_correct_change": -4
+      },
+      "stable_unchanged_case_role": {
+        "units": 96,
+        "reference_correct": 96,
+        "candidate_correct": 96,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 96,
+        "both_wrong": 0,
+        "net_correct_change": 0
+      },
+      "stable_unchanged_four_values": {
+        "units": 24,
+        "reference_correct": 24,
+        "candidate_correct": 24,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 24,
+        "both_wrong": 0,
+        "net_correct_change": 0
+      },
+      "updated_target": {
+        "units": 96,
+        "reference_correct": 92,
+        "candidate_correct": 82,
+        "rescued": 0,
+        "regressed": 10,
+        "both_correct": 82,
+        "both_wrong": 4,
+        "net_correct_change": -10
+      },
+      "updated_target_except_add": {
+        "units": 80,
+        "reference_correct": 79,
+        "candidate_correct": 74,
+        "rescued": 0,
+        "regressed": 5,
+        "both_correct": 74,
+        "both_wrong": 1,
+        "net_correct_change": -5
+      }
+    }
+  },
+  "target_updates_by_family": {
+    "shared": {
+      "canonical": {
+        "original_training": {
+          "accumulate": {
+            "correct": 13,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 16,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 16,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 16,
+            "examples": 16
+          }
+        },
+        "augmented_training": {
+          "accumulate": {
+            "correct": 14,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 16,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 16,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 16,
+            "examples": 16
+          }
+        }
+      },
+      "permuted": {
+        "original_training": {
+          "accumulate": {
+            "correct": 9,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 11,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 16,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 15,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 16,
+            "examples": 16
+          }
+        },
+        "augmented_training": {
+          "accumulate": {
+            "correct": 15,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 14,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 16,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 16,
+            "examples": 16
+          }
+        }
+      }
+    },
+    "independent": {
+      "canonical": {
+        "original_training": {
+          "accumulate": {
+            "correct": 13,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 16,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 16,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 16,
+            "examples": 16
+          }
+        },
+        "augmented_training": {
+          "accumulate": {
+            "correct": 13,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 16,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 16,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 16,
+            "examples": 16
+          }
+        }
+      },
+      "permuted": {
+        "original_training": {
+          "accumulate": {
+            "correct": 15,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 14,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 16,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 16,
+            "examples": 16
+          }
+        },
+        "augmented_training": {
+          "accumulate": {
+            "correct": 12,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 16,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 16,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 16,
+            "examples": 16
+          }
+        }
+      }
+    },
+    "local": {
+      "canonical": {
+        "original_training": {
+          "accumulate": {
+            "correct": 1,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 14,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 8,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 7,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 11,
+            "examples": 16
+          }
+        },
+        "augmented_training": {
+          "accumulate": {
+            "correct": 12,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 16,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 16,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 16,
+            "examples": 16
+          }
+        }
+      },
+      "permuted": {
+        "original_training": {
+          "accumulate": {
+            "correct": 3,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 13,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 16,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 8,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 14,
+            "examples": 16
+          }
+        },
+        "augmented_training": {
+          "accumulate": {
+            "correct": 13,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 14,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 16,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 16,
+            "examples": 16
+          }
+        }
+      }
+    },
+    "local_question": {
+      "canonical": {
+        "original_training": {
+          "accumulate": {
+            "correct": 11,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 16,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 16,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 16,
+            "examples": 16
+          }
+        },
+        "augmented_training": {
+          "accumulate": {
+            "correct": 13,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 15,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 16,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 16,
+            "examples": 16
+          }
+        }
+      },
+      "permuted": {
+        "original_training": {
+          "accumulate": {
+            "correct": 15,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 16,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 16,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 16,
+            "examples": 16
+          }
+        },
+        "augmented_training": {
+          "accumulate": {
+            "correct": 8,
+            "examples": 16
+          },
+          "copy": {
+            "correct": 11,
+            "examples": 16
+          },
+          "dependent_swap": {
+            "correct": 16,
+            "examples": 16
+          },
+          "duplicate_set": {
+            "correct": 16,
+            "examples": 16
+          },
+          "independent_swap": {
+            "correct": 15,
+            "examples": 16
+          },
+          "overwrite": {
+            "correct": 16,
+            "examples": 16
+          }
+        }
+      }
+    }
+  },
+  "correctness_changes": [
+    {
+      "arm": "shared",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "329",
+      "original_training_generated": "319\n",
+      "augmented_training_generated": "329\n",
+      "rescued": true
+    },
+    {
+      "arm": "shared",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-001-v0",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "712",
+      "original_training_generated": "712\n",
+      "augmented_training_generated": "692\n",
+      "rescued": false
+    },
+    {
+      "arm": "shared",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-001-v1",
+        "treatment",
+        "protected_current"
+      ],
+      "family": "accumulate",
+      "gold": "670",
+      "original_training_generated": "670\n",
+      "augmented_training_generated": "680\n",
+      "rescued": false
+    },
+    {
+      "arm": "shared",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v0",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "478",
+      "original_training_generated": "499\n",
+      "augmented_training_generated": "478\n",
+      "rescued": true
+    },
+    {
+      "arm": "shared",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v1",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "448",
+      "original_training_generated": "438\n",
+      "augmented_training_generated": "448\n",
+      "rescued": true
+    },
+    {
+      "arm": "shared",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v3",
+        "treatment",
+        "protected_current"
+      ],
+      "family": "accumulate",
+      "gold": "200",
+      "original_training_generated": "200\n",
+      "augmented_training_generated": "210\n",
+      "rescued": false
+    },
+    {
+      "arm": "shared",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "458",
+      "original_training_generated": "448\n",
+      "augmented_training_generated": "458\n",
+      "rescued": true
+    },
+    {
+      "arm": "shared",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "448",
+      "original_training_generated": "438\n",
+      "augmented_training_generated": "448\n",
+      "rescued": true
+    },
+    {
+      "arm": "shared",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-independent_swap-001-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "762",
+      "original_training_generated": "397\n",
+      "augmented_training_generated": "762\n",
+      "rescued": true
+    },
+    {
+      "arm": "shared",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "368",
+      "original_training_generated": "358\n",
+      "augmented_training_generated": "368\n",
+      "rescued": true
+    },
+    {
+      "arm": "shared",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v0",
+        "treatment",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "463",
+      "original_training_generated": "414\n",
+      "augmented_training_generated": "463\n",
+      "rescued": true
+    },
+    {
+      "arm": "shared",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "329",
+      "original_training_generated": "319\n",
+      "augmented_training_generated": "329\n",
+      "rescued": true
+    },
+    {
+      "arm": "shared",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v0",
+        "control",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "578",
+      "original_training_generated": "414\n",
+      "augmented_training_generated": "578\n",
+      "rescued": true
+    },
+    {
+      "arm": "shared",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v1",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "235",
+      "original_training_generated": "225\n",
+      "augmented_training_generated": "235\n",
+      "rescued": true
+    },
+    {
+      "arm": "shared",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "799",
+      "original_training_generated": "247\n",
+      "augmented_training_generated": "799\n",
+      "rescued": true
+    },
+    {
+      "arm": "independent",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v1",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "458",
+      "original_training_generated": "451\n",
+      "augmented_training_generated": "458\n",
+      "rescued": true
+    },
+    {
+      "arm": "independent",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "329",
+      "original_training_generated": "329\n",
+      "augmented_training_generated": "319\n",
+      "rescued": false
+    },
+    {
+      "arm": "independent",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-001-v0",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "712",
+      "original_training_generated": "712\n",
+      "augmented_training_generated": "692\n",
+      "rescued": false
+    },
+    {
+      "arm": "independent",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v0",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "478",
+      "original_training_generated": "499\n",
+      "augmented_training_generated": "478\n",
+      "rescued": true
+    },
+    {
+      "arm": "independent",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "368",
+      "original_training_generated": "368\n",
+      "augmented_training_generated": "358\n",
+      "rescued": false
+    },
+    {
+      "arm": "independent",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "329",
+      "original_training_generated": "329\n",
+      "augmented_training_generated": "319\n",
+      "rescued": false
+    },
+    {
+      "arm": "independent",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "617",
+      "original_training_generated": "621\n",
+      "augmented_training_generated": "617\n",
+      "rescued": true
+    },
+    {
+      "arm": "independent",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v1",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "235",
+      "original_training_generated": "235\n",
+      "augmented_training_generated": "225\n",
+      "rescued": false
+    },
+    {
+      "arm": "independent",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "799",
+      "original_training_generated": "247\n",
+      "augmented_training_generated": "799\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-001-v2",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "378",
+      "original_training_generated": "368\n",
+      "augmented_training_generated": "378\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v1",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "448",
+      "original_training_generated": "438\n",
+      "augmented_training_generated": "448\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-independent_swap-001-v0",
+        "control",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "476",
+      "original_training_generated": "425\n",
+      "augmented_training_generated": "476\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-duplicate_set-001-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "duplicate_set",
+      "gold": "581",
+      "original_training_generated": "783\n",
+      "augmented_training_generated": "581\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-independent_swap-001-v1",
+        "control",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "211",
+      "original_training_generated": "509\n",
+      "augmented_training_generated": "211\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-copy-001-v2",
+        "treatment",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "383",
+      "original_training_generated": "355\n",
+      "augmented_training_generated": "383\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-dependent_swap-001-v1",
+        "before",
+        "protected_current"
+      ],
+      "family": "dependent_swap",
+      "gold": "469",
+      "original_training_generated": "397\n",
+      "augmented_training_generated": "469\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-duplicate_set-001-v2",
+        "treatment",
+        "target_current"
+      ],
+      "family": "duplicate_set",
+      "gold": "581",
+      "original_training_generated": "583\n",
+      "augmented_training_generated": "581\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-independent_swap-001-v2",
+        "treatment",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "245",
+      "original_training_generated": "469\n",
+      "augmented_training_generated": "245\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "458",
+      "original_training_generated": "448\n",
+      "augmented_training_generated": "458\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v0",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "468",
+      "original_training_generated": "458\n",
+      "augmented_training_generated": "468\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v2",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "339",
+      "original_training_generated": "329\n",
+      "augmented_training_generated": "339\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-independent_swap-001-v1",
+        "treatment",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "211",
+      "original_training_generated": "509\n",
+      "augmented_training_generated": "211\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-001-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "448",
+      "original_training_generated": "438\n",
+      "augmented_training_generated": "448\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-independent_swap-001-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "762",
+      "original_training_generated": "397\n",
+      "augmented_training_generated": "762\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-001-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "368",
+      "original_training_generated": "358\n",
+      "augmented_training_generated": "368\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-duplicate_set-001-v0",
+        "control",
+        "target_current"
+      ],
+      "family": "duplicate_set",
+      "gold": "717",
+      "original_training_generated": "771\n",
+      "augmented_training_generated": "717\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v3",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "468",
+      "original_training_generated": "458\n",
+      "augmented_training_generated": "468\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-duplicate_set-001-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "duplicate_set",
+      "gold": "387",
+      "original_training_generated": "336\n",
+      "augmented_training_generated": "387\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "329",
+      "original_training_generated": "320\n",
+      "augmented_training_generated": "329\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-001-v0",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "702",
+      "original_training_generated": "702\n",
+      "augmented_training_generated": "698\n",
+      "rescued": false
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-independent_swap-001-v3",
+        "treatment",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "762",
+      "original_training_generated": "397\n",
+      "augmented_training_generated": "762\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-duplicate_set-001-v1",
+        "control",
+        "target_current"
+      ],
+      "family": "duplicate_set",
+      "gold": "656",
+      "original_training_generated": "651\n",
+      "augmented_training_generated": "656\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-overwrite-001-v0",
+        "treatment",
+        "target_current"
+      ],
+      "family": "overwrite",
+      "gold": "378",
+      "original_training_generated": "371\n",
+      "augmented_training_generated": "378\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-overwrite-001-v1",
+        "treatment",
+        "target_current"
+      ],
+      "family": "overwrite",
+      "gold": "725",
+      "original_training_generated": "209\n",
+      "augmented_training_generated": "725\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-dependent_swap-001-v0",
+        "before",
+        "protected_current"
+      ],
+      "family": "dependent_swap",
+      "gold": "575",
+      "original_training_generated": "440\n",
+      "augmented_training_generated": "575\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-independent_swap-001-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "245",
+      "original_training_generated": "469\n",
+      "augmented_training_generated": "245\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-duplicate_set-001-v1",
+        "treatment",
+        "target_current"
+      ],
+      "family": "duplicate_set",
+      "gold": "656",
+      "original_training_generated": "651\n",
+      "augmented_training_generated": "656\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-independent_swap-000-v1",
+        "control",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "571",
+      "original_training_generated": "579\n",
+      "augmented_training_generated": "571\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-duplicate_set-001-v0",
+        "treatment",
+        "target_current"
+      ],
+      "family": "duplicate_set",
+      "gold": "717",
+      "original_training_generated": "771\n",
+      "augmented_training_generated": "717\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-001-v3",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "458",
+      "original_training_generated": "448\n",
+      "augmented_training_generated": "458\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-001-v1",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "245",
+      "original_training_generated": "235\n",
+      "augmented_training_generated": "245\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-independent_swap-001-v0",
+        "treatment",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "476",
+      "original_training_generated": "478\n",
+      "augmented_training_generated": "476\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-overwrite-001-v2",
+        "treatment",
+        "target_current"
+      ],
+      "family": "overwrite",
+      "gold": "290",
+      "original_training_generated": "298\n",
+      "augmented_training_generated": "290\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-overwrite-001-v3",
+        "treatment",
+        "target_current"
+      ],
+      "family": "overwrite",
+      "gold": "303",
+      "original_training_generated": "513\n",
+      "augmented_training_generated": "303\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-overwrite-000-v3",
+        "treatment",
+        "target_current"
+      ],
+      "family": "overwrite",
+      "gold": "567",
+      "original_training_generated": "619\n",
+      "augmented_training_generated": "567\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v0",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "478",
+      "original_training_generated": "468\n",
+      "augmented_training_generated": "478\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-copy-001-v1",
+        "treatment",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "703",
+      "original_training_generated": "291\n",
+      "augmented_training_generated": "703\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-duplicate_set-001-v3",
+        "treatment",
+        "target_current"
+      ],
+      "family": "duplicate_set",
+      "gold": "387",
+      "original_training_generated": "336\n",
+      "augmented_training_generated": "387\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-duplicate_set-001-v3",
+        "treatment",
+        "target_initial"
+      ],
+      "family": "duplicate_set",
+      "gold": "336",
+      "original_training_generated": "314\n",
+      "augmented_training_generated": "336\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v3",
+        "treatment",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "674",
+      "original_training_generated": "679\n",
+      "augmented_training_generated": "674\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-duplicate_set-001-v0",
+        "treatment",
+        "target_initial"
+      ],
+      "family": "duplicate_set",
+      "gold": "771",
+      "original_training_generated": "632\n",
+      "augmented_training_generated": "771\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v1",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "458",
+      "original_training_generated": "448\n",
+      "augmented_training_generated": "458\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-independent_swap-000-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "371",
+      "original_training_generated": "373\n",
+      "augmented_training_generated": "371\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-independent_swap-001-v0",
+        "control",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "476",
+      "original_training_generated": "425\n",
+      "augmented_training_generated": "476\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-001-v2",
+        "treatment",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "383",
+      "original_training_generated": "355\n",
+      "augmented_training_generated": "383\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v0",
+        "treatment",
+        "target_initial"
+      ],
+      "family": "copy",
+      "gold": "414",
+      "original_training_generated": "514\n",
+      "augmented_training_generated": "414\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-independent_swap-001-v2",
+        "treatment",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "245",
+      "original_training_generated": "469\n",
+      "augmented_training_generated": "245\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "458",
+      "original_training_generated": "448\n",
+      "augmented_training_generated": "458\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v0",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "468",
+      "original_training_generated": "458\n",
+      "augmented_training_generated": "468\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "448",
+      "original_training_generated": "438\n",
+      "augmented_training_generated": "448\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-independent_swap-001-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "762",
+      "original_training_generated": "397\n",
+      "augmented_training_generated": "762\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "368",
+      "original_training_generated": "358\n",
+      "augmented_training_generated": "368\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-overwrite-000-v0",
+        "treatment",
+        "target_current"
+      ],
+      "family": "overwrite",
+      "gold": "569",
+      "original_training_generated": "267\n",
+      "augmented_training_generated": "569\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v3",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "468",
+      "original_training_generated": "458\n",
+      "augmented_training_generated": "468\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-dependent_swap-001-v0",
+        "treatment",
+        "target_initial"
+      ],
+      "family": "dependent_swap",
+      "gold": "440",
+      "original_training_generated": "270\n",
+      "augmented_training_generated": "440\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "329",
+      "original_training_generated": "320\n",
+      "augmented_training_generated": "329\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v1",
+        "control",
+        "target_initial"
+      ],
+      "family": "copy",
+      "gold": "477",
+      "original_training_generated": "406\n",
+      "augmented_training_generated": "477\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-independent_swap-001-v3",
+        "treatment",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "762",
+      "original_training_generated": "397\n",
+      "augmented_training_generated": "762\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-overwrite-001-v1",
+        "treatment",
+        "target_current"
+      ],
+      "family": "overwrite",
+      "gold": "725",
+      "original_training_generated": "209\n",
+      "augmented_training_generated": "725\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-independent_swap-001-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "245",
+      "original_training_generated": "469\n",
+      "augmented_training_generated": "245\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-independent_swap-000-v1",
+        "control",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "571",
+      "original_training_generated": "579\n",
+      "augmented_training_generated": "571\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-dependent_swap-001-v0",
+        "control",
+        "target_initial"
+      ],
+      "family": "dependent_swap",
+      "gold": "440",
+      "original_training_generated": "270\n",
+      "augmented_training_generated": "440\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-001-v1",
+        "treatment",
+        "target_initial"
+      ],
+      "family": "copy",
+      "gold": "759",
+      "original_training_generated": "655\n",
+      "augmented_training_generated": "759\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v1",
+        "control",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "406",
+      "original_training_generated": "406\n",
+      "augmented_training_generated": "477\n",
+      "rescued": false
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v0",
+        "control",
+        "target_initial"
+      ],
+      "family": "copy",
+      "gold": "414",
+      "original_training_generated": "578\n",
+      "augmented_training_generated": "414\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-independent_swap-000-v2",
+        "treatment",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "371",
+      "original_training_generated": "373\n",
+      "augmented_training_generated": "371\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v1",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "245",
+      "original_training_generated": "235\n",
+      "augmented_training_generated": "245\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v2",
+        "treatment",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "510",
+      "original_training_generated": "517\n",
+      "augmented_training_generated": "510\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "617",
+      "original_training_generated": "617\n",
+      "augmented_training_generated": "621\n",
+      "rescued": false
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v1",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "235",
+      "original_training_generated": "225\n",
+      "augmented_training_generated": "235\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v0",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "478",
+      "original_training_generated": "472\n",
+      "augmented_training_generated": "478\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v3",
+        "treatment",
+        "target_initial"
+      ],
+      "family": "copy",
+      "gold": "247",
+      "original_training_generated": "799\n",
+      "augmented_training_generated": "247\n",
+      "rescued": true
+    },
+    {
+      "arm": "local",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v3",
+        "control",
+        "target_initial"
+      ],
+      "family": "copy",
+      "gold": "247",
+      "original_training_generated": "799\n",
+      "augmented_training_generated": "247\n",
+      "rescued": true
+    },
+    {
+      "arm": "local_question",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v1",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "458",
+      "original_training_generated": "591\n",
+      "augmented_training_generated": "458\n",
+      "rescued": true
+    },
+    {
+      "arm": "local_question",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v0",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "468",
+      "original_training_generated": "508\n",
+      "augmented_training_generated": "468\n",
+      "rescued": true
+    },
+    {
+      "arm": "local_question",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v3",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "468",
+      "original_training_generated": "722\n",
+      "augmented_training_generated": "468\n",
+      "rescued": true
+    },
+    {
+      "arm": "local_question",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-001-v3",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "458",
+      "original_training_generated": "458\n",
+      "augmented_training_generated": "448\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-001-v0",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "712",
+      "original_training_generated": "712\n",
+      "augmented_training_generated": "702\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-001-v1",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "245",
+      "original_training_generated": "245\n",
+      "augmented_training_generated": "235\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-001-v1",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "235",
+      "original_training_generated": "2350\n",
+      "augmented_training_generated": "235\n",
+      "rescued": true
+    },
+    {
+      "arm": "local_question",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-accumulate-000-v0",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "478",
+      "original_training_generated": "518\n",
+      "augmented_training_generated": "478\n",
+      "rescued": true
+    },
+    {
+      "arm": "local_question",
+      "condition": "canonical",
+      "key": [
+        "paired-validation-copy-000-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "799",
+      "original_training_generated": "799\n",
+      "augmented_training_generated": "247\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v2",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "378",
+      "original_training_generated": "378\n",
+      "augmented_training_generated": "368\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-001-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "712",
+      "original_training_generated": "712\n",
+      "augmented_training_generated": "668\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v3",
+        "treatment",
+        "protected_current"
+      ],
+      "family": "accumulate",
+      "gold": "200",
+      "original_training_generated": "210\n",
+      "augmented_training_generated": "200\n",
+      "rescued": true
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v0",
+        "control",
+        "protected_current"
+      ],
+      "family": "accumulate",
+      "gold": "422",
+      "original_training_generated": "432\n",
+      "augmented_training_generated": "422\n",
+      "rescued": true
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "448",
+      "original_training_generated": "448\n",
+      "augmented_training_generated": "438\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-independent_swap-001-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "independent_swap",
+      "gold": "762",
+      "original_training_generated": "762\n",
+      "augmented_training_generated": "397\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v3",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "468",
+      "original_training_generated": "468\n",
+      "augmented_training_generated": "458\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-dependent_swap-001-v0",
+        "treatment",
+        "target_initial"
+      ],
+      "family": "dependent_swap",
+      "gold": "440",
+      "original_training_generated": "270\n",
+      "augmented_training_generated": "440\n",
+      "rescued": true
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v0",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "702",
+      "original_training_generated": "702\n",
+      "augmented_training_generated": "692\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v2",
+        "control",
+        "protected_current"
+      ],
+      "family": "accumulate",
+      "gold": "464",
+      "original_training_generated": "474\n",
+      "augmented_training_generated": "464\n",
+      "rescued": true
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v0",
+        "control",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "578",
+      "original_training_generated": "578\n",
+      "augmented_training_generated": "414\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v3",
+        "control",
+        "protected_current"
+      ],
+      "family": "accumulate",
+      "gold": "200",
+      "original_training_generated": "210\n",
+      "augmented_training_generated": "200\n",
+      "rescued": true
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-dependent_swap-001-v0",
+        "control",
+        "target_initial"
+      ],
+      "family": "dependent_swap",
+      "gold": "440",
+      "original_training_generated": "270\n",
+      "augmented_training_generated": "440\n",
+      "rescued": true
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v3",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "458",
+      "original_training_generated": "458\n",
+      "augmented_training_generated": "448\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-dependent_swap-001-v2",
+        "before",
+        "target_initial"
+      ],
+      "family": "dependent_swap",
+      "gold": "653",
+      "original_training_generated": "765\n",
+      "augmented_training_generated": "653\n",
+      "rescued": true
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v1",
+        "control",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "406",
+      "original_training_generated": "406\n",
+      "augmented_training_generated": "477\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v0",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "712",
+      "original_training_generated": "712\n",
+      "augmented_training_generated": "702\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v1",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "245",
+      "original_training_generated": "245\n",
+      "augmented_training_generated": "235\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v2",
+        "control",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "617",
+      "original_training_generated": "617\n",
+      "augmented_training_generated": "621\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-001-v1",
+        "control",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "235",
+      "original_training_generated": "235\n",
+      "augmented_training_generated": "225\n",
+      "rescued": false
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-accumulate-000-v0",
+        "treatment",
+        "target_current"
+      ],
+      "family": "accumulate",
+      "gold": "478",
+      "original_training_generated": "518\n",
+      "augmented_training_generated": "478\n",
+      "rescued": true
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-dependent_swap-001-v0",
+        "before",
+        "target_initial"
+      ],
+      "family": "dependent_swap",
+      "gold": "440",
+      "original_training_generated": "270\n",
+      "augmented_training_generated": "440\n",
+      "rescued": true
+    },
+    {
+      "arm": "local_question",
+      "condition": "permuted",
+      "key": [
+        "paired-validation-copy-000-v3",
+        "control",
+        "target_current"
+      ],
+      "family": "copy",
+      "gold": "799",
+      "original_training_generated": "799\n",
+      "augmented_training_generated": "247\n",
+      "rescued": false
+    }
+  ],
+  "interpretation": "One paired initialization and the same original train/validation event streams. Only half the training initial-record orders change; per-example positions/lengths/labels and all hyperparameters stay matched. Both already-observed validation orders are development diagnostics, not fresh confirmation. Neither an augmentation gain nor a generic shared bottleneck establishes a semantic interface or isolated recurrent-write damage. Shared must beat independent controllers under the same ordinary augmentation before architectural escalation. Equal averages retain paired rescues/regressions. Correlated value/role/variant readouts are not independent experiments. A training-order effect under these matched weights/budgets is not an isolated recurrent-write mechanism.",
+  "audit_report_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+  "analysis_source_sha256": "624c0c693615884a7bc1b1e4f3ad944786f5236ad656cf82c2c1a942c1fe3a86"
+}

@@ -1,0 +1,41 @@
+{
+  "status": "numeric_diagnostic_only",
+  "profile": "FP64affine_then_FP32",
+  "fixture_sha256": "8d9b76606a5b4aa58afe03d735ff74356124cc734d4d91b4df110656c9d7fe40",
+  "projections": {
+    "q": {
+      "distinct_hashes": 1,
+      "all20layout_replays_agree_cpu_fp64_rounded_fp32": true,
+      "max_error": 0.0,
+      "hashes": [
+        "08a558248a6859169d73520a384b7849bf0d3cc65b148a777eefa2908ee37ed4",
+        "08a558248a6859169d73520a384b7849bf0d3cc65b148a777eefa2908ee37ed4",
+        "08a558248a6859169d73520a384b7849bf0d3cc65b148a777eefa2908ee37ed4",
+        "08a558248a6859169d73520a384b7849bf0d3cc65b148a777eefa2908ee37ed4",
+        "08a558248a6859169d73520a384b7849bf0d3cc65b148a777eefa2908ee37ed4",
+        "08a558248a6859169d73520a384b7849bf0d3cc65b148a777eefa2908ee37ed4",
+        "08a558248a6859169d73520a384b7849bf0d3cc65b148a777eefa2908ee37ed4",
+        "08a558248a6859169d73520a384b7849bf0d3cc65b148a777eefa2908ee37ed4",
+        "08a558248a6859169d73520a384b7849bf0d3cc65b148a777eefa2908ee37ed4",
+        "08a558248a6859169d73520a384b7849bf0d3cc65b148a777eefa2908ee37ed4"
+      ]
+    },
+    "k": {
+      "distinct_hashes": 1,
+      "all20layout_replays_agree_cpu_fp64_rounded_fp32": true,
+      "max_error": 0.0,
+      "hashes": [
+        "337f5f1cdf35a592ba74043374abb2993972f696d6869d2baacd3c2f91ec6b55",
+        "337f5f1cdf35a592ba74043374abb2993972f696d6869d2baacd3c2f91ec6b55",
+        "337f5f1cdf35a592ba74043374abb2993972f696d6869d2baacd3c2f91ec6b55",
+        "337f5f1cdf35a592ba74043374abb2993972f696d6869d2baacd3c2f91ec6b55",
+        "337f5f1cdf35a592ba74043374abb2993972f696d6869d2baacd3c2f91ec6b55",
+        "337f5f1cdf35a592ba74043374abb2993972f696d6869d2baacd3c2f91ec6b55",
+        "337f5f1cdf35a592ba74043374abb2993972f696d6869d2baacd3c2f91ec6b55",
+        "337f5f1cdf35a592ba74043374abb2993972f696d6869d2baacd3c2f91ec6b55",
+        "337f5f1cdf35a592ba74043374abb2993972f696d6869d2baacd3c2f91ec6b55",
+        "337f5f1cdf35a592ba74043374abb2993972f696d6869d2baacd3c2f91ec6b55"
+      ]
+    }
+  }
+}

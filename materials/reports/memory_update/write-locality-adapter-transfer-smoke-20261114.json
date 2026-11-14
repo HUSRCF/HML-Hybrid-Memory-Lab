@@ -1,0 +1,2979 @@
+{
+  "status": "audited_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/write-locality-adapter-transfer-smoke-20261114-01",
+  "manifest_sha256": "1a8f2d2faa84a3027a9500679f0c51db198f7fadb873ca231fa7d73881ce50d4",
+  "dataset_manifest_sha256": "87d3ca1794f7ab08521b8598fe5114885bd63315108267bebcf0fcee0a293a60",
+  "registry_sha256": "d94101f7c97349476d92f0cdd6057b17553cac99f1fb52336fb88fa4a88b57ca",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "physical_readouts_audited": 48,
+  "reported_bindings_audited": 56,
+  "pairs_per_model_audited": 6,
+  "prefix_identity_checks": 10,
+  "actual_attention_checks": 20,
+  "detached_native_replays": 20,
+  "adapter_state_sha256": {
+    "gdn_all_tokens": "cb5ddf299e0a0335c64a3815da0a26e18a7179df938731b8895c6e9b437de7e7",
+    "gdn_question_only": "7f4cd348b4835d4760c92fa94cdd4564d2602149296b1449d67531cd7f9f7dee"
+  },
+  "metrics": {
+    "unique_query_totals": {
+      "native": {
+        "correct": 20,
+        "physical_queries": 24,
+        "reported_binding_correct": 23,
+        "reported_bindings": 28
+      },
+      "gdn_all_tokens": {
+        "correct": 24,
+        "physical_queries": 24,
+        "reported_binding_correct": 28,
+        "reported_bindings": 28
+      },
+      "gdn_question_only": {
+        "correct": 22,
+        "physical_queries": 24,
+        "reported_binding_correct": 25,
+        "reported_bindings": 28
+      }
+    },
+    "cohort_stratum_results": [
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_B_at32",
+        "pairs": 1,
+        "base_streams": [
+          "write-locality-s97000"
+        ],
+        "counts": {
+          "native": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.12848129868507385
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.1306063731511434
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.15770075718561807
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.10705481966336568
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 1.7404397416006152e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.3801745555829257e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.0424304238986224e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.972213163351019e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 1.8993812166930486e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 4.7801280743442476e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.034482410332809e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.9324920130117487e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          }
+        },
+        "versus_native": {
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            }
+          }
+        },
+        "question_versus_all_token": {
+          "left": {
+            "preservation": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "current_A": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "all_roles_joint": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            }
+          },
+          "right": {
+            "preservation": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "current_A": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "all_roles_joint": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            }
+          }
+        },
+        "preservation_left_to_right": {
+          "native": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          },
+          "gdn_all_tokens": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          },
+          "gdn_question_only": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          }
+        },
+        "native_full_update_regression_cases": [],
+        "native_full_update_regression_repairs": {
+          "gdn_all_tokens": {
+            "preservation_repaired": [],
+            "all_roles_joint_repaired": []
+          },
+          "gdn_question_only": {
+            "preservation_repaired": [],
+            "all_roles_joint_repaired": []
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "initial_A_at128",
+        "pairs": 1,
+        "base_streams": [
+          "write-locality-s97000"
+        ],
+        "counts": {
+          "native": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0893504520257314
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.17777597904205322
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.30022696654001874
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.1527320941289266
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 3.0357742313450824e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 3.194751237363865e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.21269230047861734
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.964258116359512e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 5.697948896947006e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 6.405248132068664e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.5353841384251913
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 3.77881854850178e-05
+              },
+              "all_roles_joint": {
+                "correct": 0,
+                "examples": 1
+              }
+            }
+          }
+        },
+        "versus_native": {
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            }
+          }
+        },
+        "question_versus_all_token": {
+          "left": {
+            "preservation": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "current_A": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "all_roles_joint": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            }
+          },
+          "right": {
+            "preservation": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 0,
+              "rescued": 0,
+              "regressed": 1,
+              "both_correct": 0,
+              "both_wrong": 0
+            },
+            "current_A": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "all_roles_joint": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 0,
+              "rescued": 0,
+              "regressed": 1,
+              "both_correct": 0,
+              "both_wrong": 0
+            }
+          }
+        },
+        "preservation_left_to_right": {
+          "native": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          },
+          "gdn_all_tokens": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          },
+          "gdn_question_only": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 0,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 0,
+            "both_wrong": 0
+          }
+        },
+        "native_full_update_regression_cases": [],
+        "native_full_update_regression_repairs": {
+          "gdn_all_tokens": {
+            "preservation_repaired": [],
+            "all_roles_joint_repaired": []
+          },
+          "gdn_question_only": {
+            "preservation_repaired": [],
+            "all_roles_joint_repaired": []
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "pairs": 1,
+        "base_streams": [
+          "write-locality-s97000"
+        ],
+        "counts": {
+          "native": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.28016364574432373
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.16712329785029092
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.1818955143292745
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.30022696654001874
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.1527320941289266
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.2628849148750305
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.06818082928657532
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.5549954443704337e-05
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 6.710970289229105e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.21269230047861734
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.964258116359512e-05
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0037113462264339128
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.3905266920725505
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.8569874605940033e-05
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0001038591144606471
+              },
+              "all_roles_joint": {
+                "correct": 0,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.5353841384251913
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 3.77881854850178e-05
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0002850809639009337
+              },
+              "all_roles_joint": {
+                "correct": 0,
+                "examples": 1
+              }
+            }
+          }
+        },
+        "versus_native": {
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            },
+            "right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            }
+          }
+        },
+        "question_versus_all_token": {
+          "left": {
+            "preservation": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 0,
+              "rescued": 0,
+              "regressed": 1,
+              "both_correct": 0,
+              "both_wrong": 0
+            },
+            "current_A": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "current_C": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "all_roles_joint": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 0,
+              "rescued": 0,
+              "regressed": 1,
+              "both_correct": 0,
+              "both_wrong": 0
+            }
+          },
+          "right": {
+            "preservation": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 0,
+              "rescued": 0,
+              "regressed": 1,
+              "both_correct": 0,
+              "both_wrong": 0
+            },
+            "current_A": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "current_C": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "all_roles_joint": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 0,
+              "rescued": 0,
+              "regressed": 1,
+              "both_correct": 0,
+              "both_wrong": 0
+            }
+          }
+        },
+        "preservation_left_to_right": {
+          "native": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          },
+          "gdn_all_tokens": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          },
+          "gdn_question_only": {
+            "units": 1,
+            "reference_correct": 0,
+            "candidate_correct": 0,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 0,
+            "both_wrong": 1
+          }
+        },
+        "native_full_update_regression_cases": [],
+        "native_full_update_regression_repairs": {
+          "gdn_all_tokens": {
+            "preservation_repaired": [],
+            "all_roles_joint_repaired": []
+          },
+          "gdn_question_only": {
+            "preservation_repaired": [],
+            "all_roles_joint_repaired": []
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_B_at32",
+        "pairs": 1,
+        "base_streams": [
+          "write-locality-s97100"
+        ],
+        "counts": {
+          "native": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.25119272867838544
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.07057676215966542
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.20935867230097452
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.10848359266916911
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 1.2199007566474998e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 1.8199107823117327e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 1.7086514465821285e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 8.975940484864016e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 1.362949114991352e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.133816936596607e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 1.815936411730945e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 6.949612967825185e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          }
+        },
+        "versus_native": {
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            }
+          }
+        },
+        "question_versus_all_token": {
+          "left": {
+            "preservation": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "current_A": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "all_roles_joint": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            }
+          },
+          "right": {
+            "preservation": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "current_A": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "all_roles_joint": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            }
+          }
+        },
+        "preservation_left_to_right": {
+          "native": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          },
+          "gdn_all_tokens": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          },
+          "gdn_question_only": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          }
+        },
+        "native_full_update_regression_cases": [],
+        "native_full_update_regression_repairs": {
+          "gdn_all_tokens": {
+            "preservation_repaired": [],
+            "all_roles_joint_repaired": []
+          },
+          "gdn_question_only": {
+            "preservation_repaired": [],
+            "all_roles_joint_repaired": []
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "stratum": "initial_A_at128",
+        "pairs": 1,
+        "base_streams": [
+          "write-locality-s97100"
+        ],
+        "counts": {
+          "native": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.14171303311983743
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.27568646272023517
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.3699314594268799
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.19541050990422568
+              },
+              "all_roles_joint": {
+                "correct": 0,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 6.202521520511557e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 7.847585463120292e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00037334424753983814
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00044445092013726634
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00010564991195375721
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00012861580277482668
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.001616723525027434
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0004642164179434379
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          }
+        },
+        "versus_native": {
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            }
+          }
+        },
+        "question_versus_all_token": {
+          "left": {
+            "preservation": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "current_A": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "all_roles_joint": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            }
+          },
+          "right": {
+            "preservation": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "current_A": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "all_roles_joint": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            }
+          }
+        },
+        "preservation_left_to_right": {
+          "native": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 0,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 0,
+            "both_wrong": 0
+          },
+          "gdn_all_tokens": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          },
+          "gdn_question_only": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          }
+        },
+        "native_full_update_regression_cases": [
+          "write-locality-s97100-a128-v0"
+        ],
+        "native_full_update_regression_repairs": {
+          "gdn_all_tokens": {
+            "preservation_repaired": [
+              "write-locality-s97100-a128-v0"
+            ],
+            "all_roles_joint_repaired": [
+              "write-locality-s97100-a128-v0"
+            ]
+          },
+          "gdn_question_only": {
+            "preservation_repaired": [
+              "write-locality-s97100-a128-v0"
+            ],
+            "all_roles_joint_repaired": [
+              "write-locality-s97100-a128-v0"
+            ]
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "pairs": 1,
+        "base_streams": [
+          "write-locality-s97100"
+        ],
+        "counts": {
+          "native": {
+            "left": {
+              "preservation": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.37813087304433185
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.19274367888768515
+              },
+              "current_C": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.7896569569905599
+              },
+              "all_roles_joint": {
+                "correct": 0,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.3699314594268799
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.19541050990422568
+              },
+              "current_C": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.6385421355565389
+              },
+              "all_roles_joint": {
+                "correct": 0,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0002644766354933381
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0012844525432835023
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00011144509577813248
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00037334424753983814
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00044445092013726634
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 5.054323992226273e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.001152161741629243
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00038225102859238785
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.001822735338161389
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.001616723525027434
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0004642164179434379
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0002709771894539396
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          }
+        },
+        "versus_native": {
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            },
+            "right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            },
+            "right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            }
+          }
+        },
+        "question_versus_all_token": {
+          "left": {
+            "preservation": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "current_A": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "current_C": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "all_roles_joint": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            }
+          },
+          "right": {
+            "preservation": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "current_A": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "current_C": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            },
+            "all_roles_joint": {
+              "units": 1,
+              "reference_correct": 1,
+              "candidate_correct": 1,
+              "rescued": 0,
+              "regressed": 0,
+              "both_correct": 1,
+              "both_wrong": 0
+            }
+          }
+        },
+        "preservation_left_to_right": {
+          "native": {
+            "units": 1,
+            "reference_correct": 0,
+            "candidate_correct": 0,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 0,
+            "both_wrong": 1
+          },
+          "gdn_all_tokens": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          },
+          "gdn_question_only": {
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          }
+        },
+        "native_full_update_regression_cases": [],
+        "native_full_update_regression_repairs": {
+          "gdn_all_tokens": {
+            "preservation_repaired": [],
+            "all_roles_joint_repaired": []
+          },
+          "gdn_question_only": {
+            "preservation_repaired": [],
+            "all_roles_joint_repaired": []
+          }
+        }
+      }
+    ],
+    "base_stream_results": [
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_B_at32",
+        "base_stream_id": "write-locality-s97000",
+        "value_cases": 1,
+        "counts": {
+          "native": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.12848129868507385
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.1306063731511434
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.15770075718561807
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.10705481966336568
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 1.7404397416006152e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.3801745555829257e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.0424304238986224e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.972213163351019e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 1.8993812166930486e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 4.7801280743442476e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.034482410332809e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.9324920130117487e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          }
+        },
+        "all_values_roles_and_sides_correct": {
+          "native": true,
+          "gdn_all_tokens": true,
+          "gdn_question_only": true
+        }
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "initial_A_at128",
+        "base_stream_id": "write-locality-s97000",
+        "value_cases": 1,
+        "counts": {
+          "native": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0893504520257314
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.17777597904205322
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.30022696654001874
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.1527320941289266
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 3.0357742313450824e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 3.194751237363865e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.21269230047861734
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.964258116359512e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 5.697948896947006e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 6.405248132068664e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.5353841384251913
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 3.77881854850178e-05
+              },
+              "all_roles_joint": {
+                "correct": 0,
+                "examples": 1
+              }
+            }
+          }
+        },
+        "all_values_roles_and_sides_correct": {
+          "native": true,
+          "gdn_all_tokens": true,
+          "gdn_question_only": false
+        }
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "base_stream_id": "write-locality-s97000",
+        "value_cases": 1,
+        "counts": {
+          "native": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.28016364574432373
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.16712329785029092
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.1818955143292745
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.30022696654001874
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.1527320941289266
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.2628849148750305
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.06818082928657532
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.5549954443704337e-05
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 6.710970289229105e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.21269230047861734
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.964258116359512e-05
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0037113462264339128
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.3905266920725505
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.8569874605940033e-05
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0001038591144606471
+              },
+              "all_roles_joint": {
+                "correct": 0,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.5353841384251913
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 3.77881854850178e-05
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0002850809639009337
+              },
+              "all_roles_joint": {
+                "correct": 0,
+                "examples": 1
+              }
+            }
+          }
+        },
+        "all_values_roles_and_sides_correct": {
+          "native": true,
+          "gdn_all_tokens": true,
+          "gdn_question_only": false
+        }
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_B_at32",
+        "base_stream_id": "write-locality-s97100",
+        "value_cases": 1,
+        "counts": {
+          "native": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.25119272867838544
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.07057676215966542
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.20935867230097452
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.10848359266916911
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 1.2199007566474998e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 1.8199107823117327e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 1.7086514465821285e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 8.975940484864016e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 1.362949114991352e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 2.133816936596607e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 1.815936411730945e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 6.949612967825185e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          }
+        },
+        "all_values_roles_and_sides_correct": {
+          "native": true,
+          "gdn_all_tokens": true,
+          "gdn_question_only": true
+        }
+      },
+      {
+        "cohort": "replica",
+        "stratum": "initial_A_at128",
+        "base_stream_id": "write-locality-s97100",
+        "value_cases": 1,
+        "counts": {
+          "native": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.14171303311983743
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.27568646272023517
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.3699314594268799
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.19541050990422568
+              },
+              "all_roles_joint": {
+                "correct": 0,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 6.202521520511557e-05
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 7.847585463120292e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00037334424753983814
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00044445092013726634
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00010564991195375721
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00012861580277482668
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.001616723525027434
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0004642164179434379
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          }
+        },
+        "all_values_roles_and_sides_correct": {
+          "native": false,
+          "gdn_all_tokens": true,
+          "gdn_question_only": true
+        }
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "base_stream_id": "write-locality-s97100",
+        "value_cases": 1,
+        "counts": {
+          "native": {
+            "left": {
+              "preservation": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.37813087304433185
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.19274367888768515
+              },
+              "current_C": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.7896569569905599
+              },
+              "all_roles_joint": {
+                "correct": 0,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.3699314594268799
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.19541050990422568
+              },
+              "current_C": {
+                "correct": 0,
+                "examples": 1,
+                "answer_nll": 0.6385421355565389
+              },
+              "all_roles_joint": {
+                "correct": 0,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_all_tokens": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0002644766354933381
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0012844525432835023
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00011144509577813248
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00037334424753983814
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00044445092013726634
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 5.054323992226273e-05
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          },
+          "gdn_question_only": {
+            "left": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.001152161741629243
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.00038225102859238785
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.001822735338161389
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            },
+            "right": {
+              "preservation": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.001616723525027434
+              },
+              "current_A": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0004642164179434379
+              },
+              "current_C": {
+                "correct": 1,
+                "examples": 1,
+                "answer_nll": 0.0002709771894539396
+              },
+              "all_roles_joint": {
+                "correct": 1,
+                "examples": 1
+              }
+            }
+          }
+        },
+        "all_values_roles_and_sides_correct": {
+          "native": false,
+          "gdn_all_tokens": true,
+          "gdn_question_only": true
+        }
+      }
+    ],
+    "interpretation": "All natural endpoints use their own full-prefill source-world truth. Reused bindings are not extra model executions or independent samples. Transfer is from the earlier short eight-account training distribution; no checkpoint selection or new training. Question-phase adaptation includes recurrent and KV updates during question/answer processing, not a pure Attention-Q intervention."
+  },
+  "interpretation": "This is frozen-checkpoint transfer from the earlier eight-account, at-most832-token semantic training tasks, not matched training on the new2865-token distribution. Success of question-only adaptation demonstrates sufficiency of a later intervention for tested functions; it does not isolate Attention Q or exclude compensated GDN state damage. Failure can be distribution shift and does not establish prefix-writing or shared-interface necessity. No architecture training or4B/9B scaling follows automatically.",
+  "analysis_source_sha256": "6d6002133df41c24b71ac97ebaf7fdd7cad2feba8c3e7bbbdb51891aa3abc358"
+}

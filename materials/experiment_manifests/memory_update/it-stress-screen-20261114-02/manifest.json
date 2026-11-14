@@ -1,0 +1,56 @@
+{
+  "started_utc": "2026-11-13T19:50:24.461739+00:00",
+  "model": "it",
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "backend": "auto",
+  "config": {
+    "protocol_version": 2,
+    "seeds": [
+      101,
+      103
+    ],
+    "distractor_updates": [
+      64,
+      512
+    ],
+    "distractor_entities": [
+      4,
+      128
+    ],
+    "families": [
+      "overwrite"
+    ],
+    "notes": [
+      "Screening subset of diagnostic_stress.json; remaining seeds are reserved for confirmation.",
+      "Target values and final updates match across length and entity-load conditions."
+    ]
+  },
+  "cases_sha256": "45123eb281e212829377a24c037076057859a97fc9cddcf657efe7024d62db89",
+  "model_config_sha256": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "gpu": "AMD Radeon AI PRO R9700",
+  "python": "/home/husrcf/anaconda3/bin/python",
+  "training": false,
+  "generation": true,
+  "status": "completed",
+  "case_count": 8,
+  "prefill": "full",
+  "score_batch": false,
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/metrics.py": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/stress_tasks.py": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "scripts/run_diagnostics.py": "1c17b8595594e4ce653f24f6af8a15424c5f94c191878f145dadca3481f9c8f5"
+  },
+  "elapsed_seconds": 100.14022330194712,
+  "peak_allocated_gib": 10.450989246368408,
+  "completed_utc": "2026-11-13T19:52:04.607330+00:00"
+}

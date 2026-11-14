@@ -1,0 +1,122 @@
+{
+  "status": "completed",
+  "started_utc": "2026-11-13T23:15:54.529071+00:00",
+  "config": {
+    "reference_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-generalization-20261114-01",
+    "expected_cases_sha256": "a995eea7d47b5b03423ccf17d7c26f65d4d873f7a7fc391821bcc03f563efba7",
+    "modes": [
+      "local_question"
+    ],
+    "variants": [
+      "control",
+      "treatment"
+    ],
+    "cluster_key": "base_case_id",
+    "strata": [
+      "dependency_depth",
+      "question_style"
+    ],
+    "selection_kind": "source_other_only",
+    "registered_utc": "2026-11-13T23:09:05.254699+00:00",
+    "intervention": "Keep original full input and prefix. At question/answer positions, allow necessary evidence plus just one of the two previously bundled unnecessary SET records.",
+    "notes": [
+      "Exploratory decomposition after seed1701 showed no late-source accuracy penalty in the new equal-value/position-balanced cohort.",
+      "Use every existing 60000-series case and both COPY orders; no failure selection, optimization or checkpoint selection.",
+      "Target-initial and unnecessary-source records occupy different original positions and contain different values. This split identifies a component/interaction of the earlier bundled intervention, not an isolated causal semantic-version effect.",
+      "Freeze the same existing question-only seed1701 checkpoint. Reuse old oracle and both-extra scores with hash checks and explicit replay."
+    ],
+    "control_validation": "/media/990Pro/Code/SAS/datasets/memory_update/copy-generalization-v1/singleton-control-validation.json",
+    "control_validation_sha256": "d401a82e9bfcc4bd77c8d281800cbe7ce1eeff41aa7ab5cae2651eef8fbc0653",
+    "oracle_kv_reference": "/media/990Pro/Code/SAS/runs/memory_update/oracle-kv-readout-20261114-01",
+    "both_reference": "/media/990Pro/Code/SAS/runs/memory_update/oracle-kv-competing-20261114-01"
+  },
+  "smoke": false,
+  "training": false,
+  "cases_sha256": "a995eea7d47b5b03423ccf17d7c26f65d4d873f7a7fc391821bcc03f563efba7",
+  "task_validation": {
+    "cases": 48,
+    "base_cases": 8,
+    "conditions": [
+      {
+        "dependency_depth": 1,
+        "question_style": "entity_first"
+      },
+      {
+        "dependency_depth": 1,
+        "question_style": "original"
+      },
+      {
+        "dependency_depth": 2,
+        "question_style": "entity_first"
+      },
+      {
+        "dependency_depth": 2,
+        "question_style": "original"
+      },
+      {
+        "dependency_depth": 3,
+        "question_style": "entity_first"
+      },
+      {
+        "dependency_depth": 3,
+        "question_style": "original"
+      }
+    ]
+  },
+  "reference_manifest_sha256": "fbd8a94e1ebf080b2cac4f2eaf062d0e85c27847dda500803eb863df1d63a405",
+  "reference_results_sha256": {
+    "local_question": {
+      "raw": "f9470ca737c343e8ebb1de13148ed9d111fddd47c5fe65b1fe801b337b6fe2e3",
+      "oracle": "6623d58baddd3dd8c40bd8c52c118bac6aba97d8599ae2e50ddbaca35908ae16"
+    }
+  },
+  "checkpoint_sha256": {
+    "local_question": "613d5d757584845332b0b03d03f4b444aa73afe6c8597abc68fb8b614ff80b69"
+  },
+  "completed_modes": [
+    "local_question"
+  ],
+  "safety_checks": {
+    "local_question": {
+      "case_id": "test-copy-s60000-n8-depth1-original",
+      "variant": "control",
+      "all_history_full_cache_and_logits_exact": true,
+      "all_history_scoring_and_greedy_exact": true,
+      "pre_question_kv_recurrent_conv_and_logits_exact": true,
+      "historical_kv_exact_in_full_prefill": true,
+      "historical_kv_fields_checked": 12,
+      "unrestricted_replay_max_nll_error": 0.0,
+      "all_history_hook_calls": {
+        "prefill": 2,
+        "cached": 4
+      }
+    }
+  },
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/controllers.py": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9",
+    "sas_memory/counterbalance_data.py": "88e38ff2901e652335e23ff5decd4bb69d59481a58d27f7284b99fcdf47d176c",
+    "sas_memory/counterbalance_tasks.py": "914523e92d5d1e657646d0e6d179c86845af2605fc6f7d8ab34794181fd6bf1d",
+    "sas_memory/generalization_tasks.py": "697a6fdc1e9d448fdfd5b7fa6e22adca40477d35c6e70f7aaebf648ef8b608fd",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/kv_readout.py": "2927df0cfdaf4972287b83914092e2224eacfc3ccf9d0508e03a64e85e919b8b",
+    "sas_memory/metrics.py": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e",
+    "sas_memory/readout_controls.py": "c15b4e3d4f4de2ce09a3c559dae64be8d849f472d6b02b9f70dd165c2cf73afa",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/stress_tasks.py": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "scripts/run_oracle_kv_readout.py": "45f0cf4760af5fdfa42e473c80aa5dc6fbf04d0a71d23b7927b6310e06c8e886",
+    "scripts/run_controller_trial.py": "69230ea519774a7d17bc890cfc5dae43069977d5add285a0bc9b75ff9f7d566f"
+  },
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "python": "/home/husrcf/anaconda3/bin/python",
+  "gpu": "AMD Radeon AI PRO R9700",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "completed_utc": "2026-11-13T23:16:43.114283+00:00"
+}

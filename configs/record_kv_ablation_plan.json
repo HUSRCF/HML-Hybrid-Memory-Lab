@@ -1,0 +1,30 @@
+{
+  "status": "planned_not_started",
+  "research_scope": "Diagnose information carriers before choosing dependency-aware recurrent/attention co-design; retain matched-cost write-side and read-side methods as candidates.",
+  "reference_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-counterbalance-20261114-01",
+  "expected_cases_sha256": "94a77ba1ca2731da60b7d5f9d0b4e2e9142b24ea18017b4b8f837253c2ca3619",
+  "models": ["native", "question_only_seed1701", "question_only_seed2718", "question_only_seed31415"],
+  "training": false,
+  "contexts_per_model": 288,
+  "intervention": "Keep the full original input, positions and prefix computation. At every full-attention layer, question/answer rows may access prelude/instruction tokens and causal question/answer tokens, but none of the historical ledger-record KV positions. GDN and convolution updates remain unchanged.",
+  "mask_inputs": "Only fixed prelude tokenizer boundaries and the registered ledger boundary; no dependency indices, fact values, answers or per-case failure information.",
+  "required_checks": [
+    "Validate and hash every token mask before inference, using all existing contexts and frozen checkpoint identities.",
+    "All-history masks exactly reproduce the reference full-cache/logit/scoring/generation behavior on sampled short and long cases.",
+    "Records-blocked masks preserve original prefix cache/logits and all historical KV tensors on the sampled full-prefill cases.",
+    "Restrictions apply to every cached scoring/generation forward, with no future-token access.",
+    "Replay reference raw-full scores before reusing them; check reference manifest/result/checkpoint hashes.",
+    "Report raw-full, oracle-evidence and records-blocked results by depth, wording, late order, initialization and base-fact pairs. Bootstrap by the 24 base facts."
+  ],
+  "interpretation": {
+    "success": "The frozen full hybrid can answer these queries from carriers available after historical record KV access is blocked, including recurrent/convolution states built during ordinary hybrid prefix processing. This is not a claim about isolated GDN matrices or arbitrary semantic/history tasks.",
+    "failure": "The frozen computation did not recover the answer under this intervention; it does not prove the state lacks that information, because the readout can be distribution-shifted.",
+    "cost": "Dense eager masking remains a diagnostic, not a latency/memory benchmark or deployable routing result."
+  },
+  "followups": [
+    "Control values and initial-record positions when testing target-initial versus unrelated-initial interference on fresh facts.",
+    "Include source-update-before/after-COPY positive controls and initial-version questions, so a fixed earliest-value shortcut cannot qualify as semantic update competence.",
+    "Compare ordinary data augmentation/local adaptation, learned evidence access and dependency-aware write/read co-design at matched training/parameter/runtime budgets.",
+    "Oracle access success does not rule out a useful write-side architecture: require an advantage over practical matched-cost controls, rather than requiring oracle access to fail."
+  ]
+}

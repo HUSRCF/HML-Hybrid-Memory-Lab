@@ -1,0 +1,33 @@
+{
+  "status": "complete_independently_audited_export_and_visually_verified_figure",
+  "verified_utc": "2026-11-14T10:06:33.306366+00:00",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/history-no-repeat-20261114.json",
+  "source_audit_sha256": "16a21e91ea563cb753d3744cbe3d869c9bbbe32b42bfc065c8ea2759ccf0bb47",
+  "source_manifest_sha256": "92bead97e90577fd678794a1b4d8279d298386fff17d195e787b10ef0aeadbac",
+  "dataset_manifest_sha256": "d73205d16b25e4d65bac701a26f29cd45844aa1297c65bcbc30d8538b11d3226",
+  "registry_sha256": "b7b14510934d2ca8e976d562567e4f33de9bc799d982914ea6e577128b2e3207",
+  "analysis_source": "/home/husrcf/Code/SAS/scripts/export_semantic_history_no_repeat.py",
+  "analysis_source_sha256": "c3166ee92bdaab0d2560c68150d106aa6099338b20f8766b60134658ce54ce91",
+  "files": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/history-no-repeat-diagnostics-20261114.json": "3cdaaea10172464ee570f70a2795f5edfc618a6db2f9d5381d4375d383aef96f",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/history-no-repeat-diagnostics-20261114.source.py": "c3166ee92bdaab0d2560c68150d106aa6099338b20f8766b60134658ce54ce91",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/history-no-repeat-diagnostics-20261114.csv": "ccef957f7de3c3fc3c23109baf08733ae621377b3ccacf33facc320093fda499",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/history-no-repeat-diagnostics-20261114.png": "f8ad8f938e3c9208ef6961404ec8ab52ef383dad117fb3c8bd604558e6e089bc",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/history-no-repeat-diagnostics-20261114.pdf": "6892b95b7753c47b0ff5623d0e3d1864ed6bea800946d1d818702aff2a306808",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/history-no-repeat-diagnostics-20261114-pairs.csv": "983d65c225ee9c95ac652de7ba798d108ee8d48808b6c9646e69ebbbf2346ff9"
+  },
+  "figure_image_checks": {
+    "size": [
+      2080,
+      1440
+    ],
+    "distinct_colors": 260,
+    "top_left": [
+      255,
+      255,
+      255
+    ]
+  },
+  "visual_check": "Viewed final four-panel PNG: counts /16, cohort/load primary/secondary labels, all current-value guards, qualified regression stream counts, legend and related-case caveats are readable and match independently audited metrics.",
+  "decision": "Historical-preservation primary failed; current-value repetition errors are a separate post-hoc exploratory observation. Numeric matches do not identify storage mechanisms."
+}

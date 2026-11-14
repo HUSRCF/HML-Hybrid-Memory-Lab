@@ -1,0 +1,36 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<03:10,  1.67it/s]Loading weights:   8%|▊         | 26/320 [00:00<00:06, 48.42it/s]Loading weights:  12%|█▎        | 40/320 [00:00<00:04, 66.84it/s]Loading weights:  20%|██        | 65/320 [00:00<00:02, 106.12it/s]Loading weights:  27%|██▋       | 86/320 [00:01<00:01, 129.68it/s]Loading weights:  33%|███▎      | 105/320 [00:01<00:01, 144.76it/s]Loading weights:  40%|████      | 128/320 [00:01<00:01, 164.70it/s]Loading weights:  46%|████▋     | 148/320 [00:01<00:01, 167.85it/s]Loading weights:  54%|█████▍    | 172/320 [00:01<00:00, 180.75it/s]Loading weights:  61%|██████    | 195/320 [00:01<00:00, 192.83it/s]Loading weights:  68%|██████▊   | 216/320 [00:01<00:00, 180.28it/s]Loading weights:  74%|███████▍  | 238/320 [00:01<00:00, 188.87it/s]Loading weights:  81%|████████  | 258/320 [00:01<00:00, 178.29it/s]Loading weights:  89%|████████▉ | 286/320 [00:02<00:00, 202.03it/s]Loading weights:  96%|█████████▌| 307/320 [00:02<00:00, 198.02it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 144.28it/s]
+{"event": "copy_dependency_transfer", "model": "native", "completed": 6, "total": 18}
+{"event": "copy_dependency_transfer", "model": "native", "completed": 12, "total": 18}
+{"event": "copy_dependency_transfer", "model": "native", "completed": 18, "total": 18}
+{"event": "copy_transfer_arm_complete", "model": "native", "readouts": 18}
+{"event": "copy_dependency_transfer", "model": "shared", "completed": 6, "total": 18}
+{"event": "copy_dependency_transfer", "model": "shared", "completed": 12, "total": 18}
+{"event": "copy_dependency_transfer", "model": "shared", "completed": 18, "total": 18}
+{"event": "copy_transfer_arm_complete", "model": "shared", "readouts": 18}
+{"event": "copy_dependency_transfer", "model": "independent", "completed": 6, "total": 18}
+{"event": "copy_dependency_transfer", "model": "independent", "completed": 12, "total": 18}
+{"event": "copy_dependency_transfer", "model": "independent", "completed": 18, "total": 18}
+{"event": "copy_transfer_arm_complete", "model": "independent", "readouts": 18}
+{"event": "copy_dependency_transfer", "model": "local", "completed": 6, "total": 18}
+{"event": "copy_dependency_transfer", "model": "local", "completed": 12, "total": 18}
+{"event": "copy_dependency_transfer", "model": "local", "completed": 18, "total": 18}
+{"event": "copy_transfer_arm_complete", "model": "local", "readouts": 18}
+{"event": "copy_native_prefix_identity", "model": "local_question", "prefixes": 6}
+{"event": "copy_dependency_transfer", "model": "local_question", "completed": 6, "total": 18}
+{"event": "copy_dependency_transfer", "model": "local_question", "completed": 12, "total": 18}
+{"event": "copy_dependency_transfer", "model": "local_question", "completed": 18, "total": 18}
+{"event": "copy_transfer_arm_complete", "model": "local_question", "readouts": 18}
+{"event": "copy_dependency_transfer", "model": "attention_only", "completed": 6, "total": 18}
+{"event": "copy_dependency_transfer", "model": "attention_only", "completed": 12, "total": 18}
+{"event": "copy_dependency_transfer", "model": "attention_only", "completed": 18, "total": 18}
+{"event": "copy_transfer_arm_complete", "model": "attention_only", "readouts": 18}
+{"event": "copy_dependency_transfer", "model": "gdn_all_tokens", "completed": 6, "total": 18}
+{"event": "copy_dependency_transfer", "model": "gdn_all_tokens", "completed": 12, "total": 18}
+{"event": "copy_dependency_transfer", "model": "gdn_all_tokens", "completed": 18, "total": 18}
+{"event": "copy_transfer_arm_complete", "model": "gdn_all_tokens", "readouts": 18}
+{"event": "copy_native_prefix_identity", "model": "gdn_question_only", "prefixes": 6}
+{"event": "copy_dependency_transfer", "model": "gdn_question_only", "completed": 6, "total": 18}
+{"event": "copy_dependency_transfer", "model": "gdn_question_only", "completed": 12, "total": 18}
+{"event": "copy_dependency_transfer", "model": "gdn_question_only", "completed": 18, "total": 18}
+{"event": "copy_transfer_arm_complete", "model": "gdn_question_only", "readouts": 18}

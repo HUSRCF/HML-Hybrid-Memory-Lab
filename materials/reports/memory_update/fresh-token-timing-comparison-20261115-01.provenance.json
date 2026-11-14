@@ -1,0 +1,13 @@
+{
+  "status": "complete_posthoc_timing_figure",
+  "source_audit_sha256": "17ca8a1279550fa5bc35c6795a7b0cb99709e495ef2395be560f93dd19ba032e",
+  "source_manifest_sha256": "dbe7ed952b00f90e2274352c236ab53da7c69fc7c72f0143ee5da475f6a0fcc8",
+  "all96cells_retained": true,
+  "artifacts_sha256": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-token-timing-comparison-20261115-01.png": "116c22d8e5f0d303eba81295097bd5be80d8d6d42fd34825152c1b18870f2d4a",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-token-timing-comparison-20261115-01.pdf": "3bc0b7addd24cef0ad7a2fa4a45fa538bcc13b1acac03bbe686ab962bcdb0fd3",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-token-timing-comparison-20261115-01.json": "d592a21e6d4fdc836b89894357667eeb5dbea363ce1b0d9424b556b04cface12",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-token-timing-comparison-20261115-01.layout.json": "4a1c05ce40ca85ddef82e2a4eaaebc7709d6df97d0bdf3944ec3b08e2bfcc37c",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-token-timing-comparison-20261115-01.source.py": "c8411f99bbd3b77f57db5815310cd3441733a0956e93778aab949d29b04f9990"
+  }
+}

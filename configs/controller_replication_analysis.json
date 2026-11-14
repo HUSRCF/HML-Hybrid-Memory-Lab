@@ -1,0 +1,41 @@
+{
+  "registered_utc": "2026-11-13T21:23:29.804003+00:00",
+  "training_plan": "configs/controller_initialization_replication.json",
+  "evaluation_config": "configs/controller_replication_evaluation.json",
+  "initialization_seeds": [
+    1701,
+    2718,
+    31415
+  ],
+  "parameters_per_controller": 689216,
+  "training_data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+  "tokenized_input_answer_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a",
+  "runs": [
+    {
+      "path": "/media/990Pro/Code/SAS/runs/memory_update/controller-timing-confirm-20261114-01",
+      "pairs": [
+        {
+          "seed": 1701,
+          "all": "local_all",
+          "question": "local_question"
+        }
+      ]
+    },
+    {
+      "path": "/media/990Pro/Code/SAS/runs/memory_update/controller-initialization-eval-20261114-01",
+      "pairs": [
+        {
+          "seed": 2718,
+          "all": "all_s2718",
+          "question": "question_s2718"
+        },
+        {
+          "seed": 31415,
+          "all": "all_s31415",
+          "question": "question_s31415"
+        }
+      ]
+    }
+  ],
+  "uncertainty": "Describe each seed separately; a case bootstrap of the fixed three-seed average is conditional on these seeds and is not a population-over-initializations confidence interval."
+}

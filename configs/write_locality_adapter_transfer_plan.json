@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "status": "registered_before_adapter_transfer_implementation_and_inference",
+  "registered_utc": "2026-11-14T08:00:53.706721+00:00",
+  "profile": "fixed_checkpoint_transfer_at_native_write_locality_endpoints",
+  "purpose": "Test whether the existing question-phase GDN adaptation transfers to the longer fixed-load symptoms before introducing a new update mechanism or shared hybrid interface. Compare with its paired all-token GDN checkpoint; no new training or checkpoint selection.",
+  "model_key": "it",
+  "local_files_only": true,
+  "reader_policy": "full",
+  "training": false,
+  "new_adapters": false,
+  "models": {
+    "gdn_all_tokens": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "gdn_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+      "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295"
+    },
+    "gdn_question_only": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/gdn-question-timing-20261114-01",
+      "training_arm": "gdn_question",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/gdn-question-timing-20261114.json",
+      "audit_sha256": "1ea60978eeac9414ab0211d4e3ad668c080267724b00706fba9bcb745623825e",
+      "manifest_sha256": "a4df590b2b104dd4a87c9ff7c38b82d2f45a6df67a5a02db3434b084108c67da",
+      "training_plan_sha256": "6b02735cd42629e92676fa7c0ff05a34ed0f0976c56ad8d0df7095de907a7b9b",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/gdn-question-timing-20261114-01/gdn_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "5aeea3bc1679df153bb9e246426da580c37575d7292399edd9c21d98c5952662",
+      "checkpoint_metadata_sha256": "b7f77c2dcc05f2105ebe0ca34832f3a534254630d01f434f951b644e6d3523f1",
+      "final_step": 432,
+      "token_policy": "question",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295"
+    }
+  },
+  "event_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/fixed-length-write-locality-event-paths-v1",
+  "event_dataset_manifest_sha256": "fd8d7a0be96932d543f852aba12f832990a8f45665770046a82f6141bf5b7be8",
+  "event_registry_sha256": "7bbb5d141693f34bab31c553916bb4e579e7e2c7cfcf9726750030df00d1ed3b",
+  "event_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-event-paths-20261114.json",
+  "event_audit_sha256": "8008396f5f4c4fddb579b4814237d4efe06f5cc3d355d5dafe76bcb4f271f577",
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "cohorts": [
+    "discovery",
+    "replica"
+  ],
+  "strata": [
+    "unrelated_B_at32",
+    "initial_A_at128",
+    "unrelated_C_on_initial_A_at128"
+  ],
+  "selection": "Every registered pair, both natural source worlds, preservation/current_A and current_C in the C-axis stratum. No mixed caches, oracles, error-only filtering, retraining or hyperparameter selection. Deduplicate exact natural-prefix/question identities, then reuse each physical observation for every registered binding.",
+  "counts": {
+    "models": 2,
+    "reported_pair_endpoint_readouts_per_model": 448,
+    "unique_physical_queries_per_model": 384,
+    "total_reported_bindings": 896,
+    "total_physical_queries": 768,
+    "pairs_per_cohort_stratum": 16,
+    "independent_base_streams_per_cohort": 4
+  },
+  "generation": {
+    "maximum_new_tokens": 12,
+    "candidate_restriction": false,
+    "gold_nll_tokens": 3,
+    "prefix_processing": "full prefill for every physical query; compare only full-prefill native references, not cached endpoints"
+  },
+  "native_references": "Reuse each natural source full-prefill reference frozen in the event registry; use the newly audited full_C_baseline rows for current_C. Compare own-source-world truths only. Do not relabel left-world current answers as right-world failures.",
+  "prefix_checks": "For question-only adaptation, on minimum/maximum pair identities in every cohort/stratum, verify exact complete KV/recurrent/convolution cache bookkeeping and final-ledger logits under separate ledger-only native versus enabled-adapter prefills, before any question token. Record and deduplicate repeated prefix identities. Do not claim prefix identity for all-token adaptation.",
+  "runtime_safety": "Use the same existing base environment/text-only model and group3 GDN-only implementation. Verify fixed final checkpoint tensors and696192 adapter parameters, freeze all evaluation weights, no gradients/optimizer updates, unchanged native and adapter state hashes, actual full-history access at all six Attention layers, hook restoration and sampled detached native readout replay. Independent operational smoke precedes the complete transfer cohort; smoke performance is not a gate.",
+  "smoke": "First lexicographic case/value identity in each of the six cohort/stratum groups, both worlds/all registered questions and both fixed adapters. Deduplicate only exact natural prefix/question identities; all six operational groups remain represented.",
+  "reporting": "Both cohorts, all strata and all value/base-stream cases. Report per-role and joint preservation/current-update outcomes, paired changes versus native and between timing checkpoints, natural A/C update competence and every regression. Count unique queries and related reported bindings separately. Do not pool the four-base-stream cohorts into independent-readout confidence claims.",
+  "interpretation": "This is frozen-checkpoint transfer from the earlier eight-account, at-most832-token semantic training tasks, not matched training on the new2865-token distribution. Success of question-only adaptation demonstrates sufficiency of a later intervention for tested functions; it does not isolate Attention Q or exclude compensated GDN state damage. Failure can be distribution shift and does not establish prefix-writing or shared-interface necessity. No architecture training or4B/9B scaling follows automatically.",
+  "implementation_status": "Protocol registered only; no adapter-transfer runner, new transfer output or additional training yet."
+}

@@ -1,0 +1,817 @@
+{
+  "status": "completed",
+  "cases": 48,
+  "base_cases": 8,
+  "models": {
+    "native": {
+      "regimes": {
+        "minimal": {
+          "correct": 48,
+          "count": 48,
+          "accuracy": 1,
+          "answer_nll": 0.08363883581478149
+        },
+        "known_accounts": {
+          "correct": 48,
+          "count": 48,
+          "accuracy": 1,
+          "answer_nll": 0.14997734134602878
+        },
+        "source_update": {
+          "correct": 32,
+          "count": 48,
+          "accuracy": 0.6666666666666666,
+          "answer_nll": 0.535602793097496
+        },
+        "unrelated_update": {
+          "correct": 40,
+          "count": 48,
+          "accuracy": 0.8333333333333334,
+          "answer_nll": 0.43819232285022736
+        }
+      },
+      "paired_differences": {
+        "source_update_minus_unrelated_update": {
+          "difference": -0.16666666666666669,
+          "ci95": [
+            -0.33333333333333337,
+            -0.04166666666666666
+          ],
+          "cases": 8,
+          "bootstrap_samples": 5000,
+          "unit": "base_case_id, averaging all six matched depth/wording conditions",
+          "multiple_comparison_adjustment": false
+        },
+        "source_update_minus_known_accounts": {
+          "difference": -0.33333333333333337,
+          "ci95": [
+            -0.5625,
+            -0.125
+          ],
+          "cases": 8,
+          "bootstrap_samples": 5000,
+          "unit": "base_case_id, averaging all six matched depth/wording conditions",
+          "multiple_comparison_adjustment": false
+        },
+        "unrelated_update_minus_known_accounts": {
+          "difference": -0.16666666666666669,
+          "ci95": [
+            -0.3541666666666667,
+            -0.02083333333333333
+          ],
+          "cases": 8,
+          "bootstrap_samples": 5000,
+          "unit": "base_case_id, averaging all six matched depth/wording conditions",
+          "multiple_comparison_adjustment": false
+        }
+      },
+      "error_types": {
+        "source_update": {
+          "correct": 32,
+          "other": 8,
+          "newly_written_value": 8
+        },
+        "unrelated_update": {
+          "correct": 40,
+          "other": 1,
+          "newly_written_value": 7
+        }
+      },
+      "paired_preservation": {
+        "source_update": {
+          "initially_correct": 48,
+          "regressions": 16,
+          "recoveries": 0
+        },
+        "unrelated_update": {
+          "initially_correct": 48,
+          "regressions": 8,
+          "recoveries": 0
+        }
+      },
+      "by_condition": [
+        {
+          "dependency_depth": 1,
+          "question_style": "entity_first",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.025424962242444355
+            },
+            "known_accounts": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.06699563066164653
+            },
+            "source_update": {
+              "correct": 7,
+              "count": 8,
+              "accuracy": 0.875,
+              "answer_nll": 0.48419634501139325
+            },
+            "unrelated_update": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.3508954718708992
+            }
+          }
+        },
+        {
+          "dependency_depth": 1,
+          "question_style": "original",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.012967521402363976
+            },
+            "known_accounts": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.03488448541611433
+            },
+            "source_update": {
+              "correct": 7,
+              "count": 8,
+              "accuracy": 0.875,
+              "answer_nll": 0.4319072763125102
+            },
+            "unrelated_update": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.2806466966867447
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.11884171391526858
+            },
+            "known_accounts": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.19704211254914603
+            },
+            "source_update": {
+              "correct": 4,
+              "count": 8,
+              "accuracy": 0.5,
+              "answer_nll": 0.5887886534134547
+            },
+            "unrelated_update": {
+              "correct": 5,
+              "count": 8,
+              "accuracy": 0.625,
+              "answer_nll": 0.5068985472122828
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "original",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.12991979345679283
+            },
+            "known_accounts": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.21789564937353134
+            },
+            "source_update": {
+              "correct": 4,
+              "count": 8,
+              "accuracy": 0.5,
+              "answer_nll": 0.5989115238189697
+            },
+            "unrelated_update": {
+              "correct": 7,
+              "count": 8,
+              "accuracy": 0.875,
+              "answer_nll": 0.5118292073408762
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "entity_first",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.09329652910431226
+            },
+            "known_accounts": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.17413738121589026
+            },
+            "source_update": {
+              "correct": 5,
+              "count": 8,
+              "accuracy": 0.625,
+              "answer_nll": 0.5462268541256586
+            },
+            "unrelated_update": {
+              "correct": 6,
+              "count": 8,
+              "accuracy": 0.75,
+              "answer_nll": 0.47985801845788956
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "original",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.12138249476750691
+            },
+            "known_accounts": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.2089087888598442
+            },
+            "source_update": {
+              "correct": 5,
+              "count": 8,
+              "accuracy": 0.625,
+              "answer_nll": 0.5635861059029897
+            },
+            "unrelated_update": {
+              "correct": 6,
+              "count": 8,
+              "accuracy": 0.75,
+              "answer_nll": 0.49902599553267163
+            }
+          }
+        }
+      ]
+    },
+    "local_all": {
+      "regimes": {
+        "minimal": {
+          "correct": 48,
+          "count": 48,
+          "accuracy": 1,
+          "answer_nll": 0.002279365831074958
+        },
+        "known_accounts": {
+          "correct": 46,
+          "count": 48,
+          "accuracy": 0.9583333333333334,
+          "answer_nll": 0.018271667763959464
+        },
+        "source_update": {
+          "correct": 25,
+          "count": 48,
+          "accuracy": 0.5208333333333334,
+          "answer_nll": 0.6678230382554425
+        },
+        "unrelated_update": {
+          "correct": 27,
+          "count": 48,
+          "accuracy": 0.5625,
+          "answer_nll": 0.5920327467502425
+        }
+      },
+      "paired_differences": {
+        "source_update_minus_unrelated_update": {
+          "difference": -0.041666666666666664,
+          "ci95": [
+            -0.14583333333333334,
+            0.04166666666666668
+          ],
+          "cases": 8,
+          "bootstrap_samples": 5000,
+          "unit": "base_case_id, averaging all six matched depth/wording conditions",
+          "multiple_comparison_adjustment": false
+        },
+        "source_update_minus_known_accounts": {
+          "difference": -0.4375,
+          "ci95": [
+            -0.5625,
+            -0.2916666666666667
+          ],
+          "cases": 8,
+          "bootstrap_samples": 5000,
+          "unit": "base_case_id, averaging all six matched depth/wording conditions",
+          "multiple_comparison_adjustment": false
+        },
+        "unrelated_update_minus_known_accounts": {
+          "difference": -0.39583333333333337,
+          "ci95": [
+            -0.5833333333333334,
+            -0.1875
+          ],
+          "cases": 8,
+          "bootstrap_samples": 5000,
+          "unit": "base_case_id, averaging all six matched depth/wording conditions",
+          "multiple_comparison_adjustment": false
+        }
+      },
+      "error_types": {
+        "source_update": {
+          "correct": 25,
+          "newly_written_value": 14,
+          "unrelated_initial_value": 9
+        },
+        "unrelated_update": {
+          "correct": 27,
+          "unrelated_initial_value": 7,
+          "newly_written_value": 14
+        }
+      },
+      "paired_preservation": {
+        "source_update": {
+          "initially_correct": 46,
+          "regressions": 21,
+          "recoveries": 0
+        },
+        "unrelated_update": {
+          "initially_correct": 46,
+          "regressions": 19,
+          "recoveries": 0
+        }
+      },
+      "by_condition": [
+        {
+          "dependency_depth": 1,
+          "question_style": "entity_first",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0001377210204130582
+            },
+            "known_accounts": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.00010914246013271622
+            },
+            "source_update": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.011231906809067974
+            },
+            "unrelated_update": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0002929735395203655
+            }
+          }
+        },
+        {
+          "dependency_depth": 1,
+          "question_style": "original",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0001913954474730417
+            },
+            "known_accounts": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.00015312922854112307
+            },
+            "source_update": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.00023304155365622137
+            },
+            "unrelated_update": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0001720217093558555
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0012453449962777086
+            },
+            "known_accounts": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0026821370544591145
+            },
+            "source_update": {
+              "correct": 1,
+              "count": 8,
+              "accuracy": 0.125,
+              "answer_nll": 1.0436265071233113
+            },
+            "unrelated_update": {
+              "correct": 2,
+              "count": 8,
+              "accuracy": 0.25,
+              "answer_nll": 0.9432627949863672
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "original",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0003545841694479653
+            },
+            "known_accounts": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0008938654239803631
+            },
+            "source_update": {
+              "correct": 4,
+              "count": 8,
+              "accuracy": 0.5,
+              "answer_nll": 0.5655847582966089
+            },
+            "unrelated_update": {
+              "correct": 3,
+              "count": 8,
+              "accuracy": 0.375,
+              "answer_nll": 0.5374316691110531
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "entity_first",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.008144042105413973
+            },
+            "known_accounts": {
+              "correct": 7,
+              "count": 8,
+              "accuracy": 0.875,
+              "answer_nll": 0.04613479240409409
+            },
+            "source_update": {
+              "correct": 1,
+              "count": 8,
+              "accuracy": 0.125,
+              "answer_nll": 1.4912222251296043
+            },
+            "unrelated_update": {
+              "correct": 3,
+              "count": 8,
+              "accuracy": 0.375,
+              "answer_nll": 1.2861252042154472
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "original",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0036031072474240014
+            },
+            "known_accounts": {
+              "correct": 7,
+              "count": 8,
+              "accuracy": 0.875,
+              "answer_nll": 0.05965694001254936
+            },
+            "source_update": {
+              "correct": 3,
+              "count": 8,
+              "accuracy": 0.375,
+              "answer_nll": 0.8950397906204065
+            },
+            "unrelated_update": {
+              "correct": 3,
+              "count": 8,
+              "accuracy": 0.375,
+              "answer_nll": 0.7849118169397116
+            }
+          }
+        }
+      ]
+    },
+    "local_question": {
+      "regimes": {
+        "minimal": {
+          "correct": 48,
+          "count": 48,
+          "accuracy": 1,
+          "answer_nll": 0.0010388040995571322
+        },
+        "known_accounts": {
+          "correct": 41,
+          "count": 48,
+          "accuracy": 0.8541666666666666,
+          "answer_nll": 0.07685907239627138
+        },
+        "source_update": {
+          "correct": 30,
+          "count": 48,
+          "accuracy": 0.625,
+          "answer_nll": 0.4051393454770328
+        },
+        "unrelated_update": {
+          "correct": 21,
+          "count": 48,
+          "accuracy": 0.4375,
+          "answer_nll": 0.47038292582722835
+        }
+      },
+      "paired_differences": {
+        "source_update_minus_unrelated_update": {
+          "difference": 0.1875,
+          "ci95": [
+            0.04166666666666667,
+            0.3541666666666667
+          ],
+          "cases": 8,
+          "bootstrap_samples": 5000,
+          "unit": "base_case_id, averaging all six matched depth/wording conditions",
+          "multiple_comparison_adjustment": false
+        },
+        "source_update_minus_known_accounts": {
+          "difference": -0.22916666666666666,
+          "ci95": [
+            -0.35416666666666663,
+            -0.10416666666666666
+          ],
+          "cases": 8,
+          "bootstrap_samples": 5000,
+          "unit": "base_case_id, averaging all six matched depth/wording conditions",
+          "multiple_comparison_adjustment": false
+        },
+        "unrelated_update_minus_known_accounts": {
+          "difference": -0.4166666666666667,
+          "ci95": [
+            -0.5416666666666667,
+            -0.29166666666666663
+          ],
+          "cases": 8,
+          "bootstrap_samples": 5000,
+          "unit": "base_case_id, averaging all six matched depth/wording conditions",
+          "multiple_comparison_adjustment": false
+        }
+      },
+      "error_types": {
+        "source_update": {
+          "correct": 30,
+          "unrelated_initial_value": 8,
+          "newly_written_value": 10
+        },
+        "unrelated_update": {
+          "correct": 21,
+          "unrelated_initial_value": 25,
+          "newly_written_value": 2
+        }
+      },
+      "paired_preservation": {
+        "source_update": {
+          "initially_correct": 41,
+          "regressions": 11,
+          "recoveries": 0
+        },
+        "unrelated_update": {
+          "initially_correct": 41,
+          "regressions": 20,
+          "recoveries": 0
+        }
+      },
+      "by_condition": [
+        {
+          "dependency_depth": 1,
+          "question_style": "entity_first",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0001265763579188691
+            },
+            "known_accounts": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0001870267739529178
+            },
+            "source_update": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.00346837525163816
+            },
+            "unrelated_update": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0006727923288660047
+            }
+          }
+        },
+        {
+          "dependency_depth": 1,
+          "question_style": "original",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.00013829656381858513
+            },
+            "known_accounts": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.00014055615186710688
+            },
+            "source_update": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0005168194426611686
+            },
+            "unrelated_update": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0002901646694226656
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0020485031224476793
+            },
+            "known_accounts": {
+              "correct": 6,
+              "count": 8,
+              "accuracy": 0.75,
+              "answer_nll": 0.09819982709207882
+            },
+            "source_update": {
+              "correct": 3,
+              "count": 8,
+              "accuracy": 0.375,
+              "answer_nll": 0.3820030726492405
+            },
+            "unrelated_update": {
+              "correct": 2,
+              "count": 8,
+              "accuracy": 0.25,
+              "answer_nll": 0.48519378527998924
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "original",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0005305643911318232
+            },
+            "known_accounts": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.03892195200023707
+            },
+            "source_update": {
+              "correct": 6,
+              "count": 8,
+              "accuracy": 0.75,
+              "answer_nll": 0.15138638811185956
+            },
+            "unrelated_update": {
+              "correct": 2,
+              "count": 8,
+              "accuracy": 0.25,
+              "answer_nll": 0.5330933667719364
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "entity_first",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0026944098353851587
+            },
+            "known_accounts": {
+              "correct": 6,
+              "count": 8,
+              "accuracy": 0.75,
+              "answer_nll": 0.18276668091615042
+            },
+            "source_update": {
+              "correct": 2,
+              "count": 8,
+              "accuracy": 0.25,
+              "answer_nll": 1.1553327217698097
+            },
+            "unrelated_update": {
+              "correct": 0,
+              "count": 8,
+              "accuracy": 0,
+              "answer_nll": 0.9268610924482346
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "original",
+          "regimes": {
+            "minimal": {
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.000694474326640678
+            },
+            "known_accounts": {
+              "correct": 5,
+              "count": 8,
+              "accuracy": 0.625,
+              "answer_nll": 0.14093839144334197
+            },
+            "source_update": {
+              "correct": 3,
+              "count": 8,
+              "accuracy": 0.375,
+              "answer_nll": 0.7381286956369877
+            },
+            "unrelated_update": {
+              "correct": 1,
+              "count": 8,
+              "accuracy": 0.125,
+              "answer_nll": 0.8761863534649214
+            }
+          }
+        }
+      ]
+    }
+  },
+  "interpretation": "Exploratory matched programs; all target answers remain fixed. Account-specific versus general extra-update effects are functional readout effects, not localization to recurrent state, KV or query construction.",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-update-controls-20261114-01",
+  "manifest_sha256": "00b7d76ba4d06c750813f3af04223d24ac4803f49d5d16343f4ae7b20837b185"
+}

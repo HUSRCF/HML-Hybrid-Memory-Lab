@@ -1,0 +1,35 @@
+{
+  "status": "audited_operational_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/initial-order-control-smoke-20261114-01",
+  "manifest_sha256": "21d3ca99507c0f706906dd2d66fa76a62705dfa4ad74d2a044fe84b11dbb1980",
+  "models": {
+    "native": {
+      "examples": 4,
+      "correct": 0,
+      "operational_smoke_only": true
+    },
+    "shared": {
+      "examples": 4,
+      "correct": 4,
+      "operational_smoke_only": true
+    },
+    "independent": {
+      "examples": 4,
+      "correct": 4,
+      "operational_smoke_only": true
+    },
+    "local": {
+      "examples": 4,
+      "correct": 4,
+      "operational_smoke_only": true
+    },
+    "local_question": {
+      "examples": 4,
+      "correct": 4,
+      "operational_smoke_only": true
+    }
+  },
+  "records_audited": 20,
+  "interpretation": "Functional independent-order/generalization diagnostic on reused validation facts, not fresh confirmation or isolated GDN write damage. Canonical training has fixed initial record roles, so a drop can reveal a position shortcut; ordinary order augmentation is a required alternative before claiming a semantic architecture.",
+  "analysis_source_sha256": "7e4fe503fd34ea7c81915c97b5ee5fa9c6e67105bda9c685e6733e85d8625240"
+}

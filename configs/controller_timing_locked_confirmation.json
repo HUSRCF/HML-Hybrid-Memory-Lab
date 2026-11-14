@@ -1,0 +1,38 @@
+{
+  "protocol_version": 2,
+  "registered_utc": "2026-11-13T21:02:51.220581+00:00",
+  "seed_offset": 20000,
+  "copy_cases": 32,
+  "overwrite_cases": 16,
+  "modes": [
+    "local_all",
+    "local_ledger",
+    "local_question"
+  ],
+  "checkpoint_runs": {
+    "local_all": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-keys-pilot-20261114-01",
+      "mode": "local"
+    },
+    "local_ledger": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-ledger-trained-20261114-01",
+      "mode": "local"
+    },
+    "local_question": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-question-trained-20261114-01",
+      "mode": "local"
+    }
+  },
+  "comparison_reference": "local_question",
+  "excluded_case_files": [
+    "/media/990Pro/Code/SAS/runs/memory_update/controller-keys-confirm-20261114-01/cases.json"
+  ],
+  "expected_cases_sha256": "2787cf2d28d57db0f3ad4ed7fe249a809a9eb6f172871ceb800a8b91e663848b",
+  "notes": [
+    "Frozen checkpoints only; no tuning or checkpoint selection on these 48 new seeds (50000..50047).",
+    "Training inputs/answer tokens, seed, steps, optimizer, parameter count and architecture match; only training/evaluation token policy differs.",
+    "Question-only vs full adaptation is the primary comparison; no equivalence claim from a non-significant difference.",
+    "Verify actual question-only checkpoint preserves native ledger KV, recurrent/conv states and logits before scoring.",
+    "All findings still use a single training initialization."
+  ]
+}

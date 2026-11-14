@@ -1,0 +1,28 @@
+{
+  "status": "planned_not_started",
+  "registered_utc": "2026-11-14T01:42:10.236174+00:00",
+  "training": false,
+  "model": "it",
+  "models": [
+    "native"
+  ],
+  "reader_policy": "full",
+  "splits": [
+    "validation"
+  ],
+  "data_source": "/media/990Pro/Code/SAS/datasets/memory_update/paired-semantic-updates-v1",
+  "data_sha256": "9a58823c8348db79b5b20db418894ae51782d02d943dc2440365af66c6838791",
+  "registry_sha256": "8f70d5b240b52d5acf8e280a6a2e1e8d8a185479eaab9fd502dfc2995d060024",
+  "examples": {
+    "validation": 432
+  },
+  "primary_metric": "All four value siblings correct within each fixed question/variant; also report current/protected/initial joint competence and all-twelve per four-value variant.",
+  "requirements": [
+    "Audit executable truth and complete six-family coverage before inference. Reproduce every registered prompt ID hash and all non-value token/position identity.",
+    "Preserve normal full historical attention and native recurrent computation. Use full prefill and unrestricted greedy decoding; candidate scoring is NLL-only.",
+    "Use all validation examples in the fixed registered order; no training or budget selection and no original-test/70000-series inference.",
+    "Report per-family/variant/role results, independent and necessary-order behavior, unchanged protected/initial truths, and before-to-after regressions. These are functional diagnostics; position changes and downstream computation prevent a write-damage attribution.",
+    "Do not enable a learned controller or oracle dependency labels at inference. Register any later matched shared/independent/local training separately."
+  ],
+  "interpretation": "First mainline value-paired multi-entity baseline after carrier/readout calibration. It neither assumes recurrent-state damage nor presupposes a shared-interface advantage."
+}

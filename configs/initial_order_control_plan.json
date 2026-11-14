@@ -1,0 +1,67 @@
+{
+  "status": "planned_not_started",
+  "registered_utc": "2026-11-14T02:30:49.222912+00:00",
+  "training": false,
+  "backbone": "it",
+  "group_index": 3,
+  "reader_policy": "full",
+  "condition": "initial_record_derangement",
+  "data_source": "/media/990Pro/Code/SAS/datasets/memory_update/initial-order-derangement-v1",
+  "data_manifest_sha256": "33d25a3564b5b872227664da10d6c447bcd12fc17bb221b0c9df7dc8afc380d5",
+  "cases_sha256": "1125157f9d81f09a44958d77fa27ae82f252871af5b3f52b5a54cdb234fe662c",
+  "registry_sha256": "17b5b7c00fad7d43a0c367f5d08e069f4d1a3f678ab9bbbc1aa1b2f0597e9669",
+  "training_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-controllers-20261114-01",
+  "native_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-native-20261114-01",
+  "training_plan_sha256": "52f0db3fe5e6635eb19380856c5792940e9d31124fe29f0543544ad505aed587",
+  "models": [
+    "native",
+    "shared",
+    "independent",
+    "local",
+    "local_question"
+  ],
+  "checkpoint_sources": {
+    "shared": {
+      "mode": "shared",
+      "rank": 64,
+      "token_policy": "all",
+      "parameters": 694272,
+      "weights": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-controllers-20261114-01/shared/step-000432/controller.safetensors",
+      "weights_sha256": "3140f7f17304de6e568adb6169304558f569744d23a1f5ebb3acaa74bad19c3e"
+    },
+    "independent": {
+      "mode": "independent",
+      "rank": 54,
+      "token_policy": "all",
+      "parameters": 696384,
+      "weights": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-controllers-20261114-01/independent/step-000432/controller.safetensors",
+      "weights_sha256": "d07ecda3b22a66650af0382d94a2686619b0cfd3feea256596e2bfbecc517d94"
+    },
+    "local": {
+      "mode": "local",
+      "rank": 22,
+      "token_policy": "all",
+      "parameters": 689216,
+      "weights": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-controllers-20261114-01/local/step-000432/controller.safetensors",
+      "weights_sha256": "99a462d0407a17540f04724cc01c62b99f77ff39fb8d6ab666785515c4782189"
+    },
+    "local_question": {
+      "mode": "local",
+      "rank": 22,
+      "token_policy": "question",
+      "parameters": 689216,
+      "weights": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-controllers-20261114-01/local_question/step-000432/controller.safetensors",
+      "weights_sha256": "571779120296928b2f025065714c14351260697e485abab642f1c7c6dccd4aee"
+    }
+  },
+  "examples_per_model": 432,
+  "gate": "All four original matched controller arms must finish and pass independent audit before any order-control model inference.",
+  "requirements": [
+    "Evaluate every original validation readout under exactly the registered initial SET permutation. Move all eight independent initial records; preserve all original current/initial truths, tails, question tokens and absolute query positions.",
+    "Reuse original canonical-order results only from audited native/trained references. Do not retrain, select checkpoints or tune budgets on this reused-validation diagnostic.",
+    "Load strict pinned adapter weights into the same frozen backbone and runtime. No oracle evidence labels/masks at inference. Verify unchanged adapter weights, sampled native restoration after detach and actual full historical access.",
+    "For the question-only controller, verify sampled permuted-prefix KV/recurrent/convolution/logit identity against native before question processing.",
+    "Report semantic joint readouts, paired canonical-to-permuted rescues/regressions and stable unchanged facts; all four value siblings remain matched."
+  ],
+  "interpretation": "Functional independent-order/generalization diagnostic on reused validation facts, not fresh confirmation or isolated GDN write damage. Canonical training has fixed initial record roles, so a drop can reveal a position shortcut; ordinary order augmentation is a required alternative before claiming a semantic architecture."
+}

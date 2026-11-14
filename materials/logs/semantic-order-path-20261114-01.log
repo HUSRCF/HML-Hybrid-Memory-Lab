@@ -1,0 +1,14 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<03:26,  1.55it/s]Loading weights:   7%|▋         | 21/320 [00:00<00:08, 37.12it/s]Loading weights:  13%|█▎        | 41/320 [00:00<00:04, 68.14it/s]Loading weights:  19%|█▉        | 61/320 [00:00<00:02, 95.00it/s]Loading weights:  25%|██▍       | 79/320 [00:01<00:02, 111.29it/s]Loading weights:  30%|██▉       | 95/320 [00:01<00:01, 116.83it/s]Loading weights:  37%|███▋      | 118/320 [00:01<00:01, 134.68it/s]Loading weights:  44%|████▍     | 142/320 [00:01<00:01, 155.40it/s]Loading weights:  50%|█████     | 160/320 [00:01<00:01, 148.19it/s]Loading weights:  56%|█████▌    | 179/320 [00:01<00:00, 155.40it/s]Loading weights:  62%|██████▏   | 199/320 [00:01<00:00, 166.80it/s]Loading weights:  68%|██████▊   | 217/320 [00:01<00:00, 167.72it/s]Loading weights:  73%|███████▎  | 235/320 [00:02<00:00, 167.93it/s]Loading weights:  79%|███████▉  | 253/320 [00:02<00:00, 163.31it/s]Loading weights:  84%|████████▍ | 270/320 [00:02<00:00, 158.46it/s]Loading weights:  91%|█████████ | 290/320 [00:02<00:00, 153.42it/s]Loading weights:  97%|█████████▋| 311/320 [00:02<00:00, 161.93it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 125.99it/s]
+{"event": "native_path_queries", "examples_per_condition": 36, "conditions": 4}
+{"event": "native_path_queries", "examples_per_condition": 72, "conditions": 4}
+{"event": "native_path_queries", "examples_per_condition": 108, "conditions": 4}
+{"event": "native_path_queries", "examples_per_condition": 144, "conditions": 4}
+{"event": "native_path_queries", "examples_per_condition": 180, "conditions": 4}
+{"event": "native_path_queries", "examples_per_condition": 216, "conditions": 4}
+{"event": "native_path_queries", "examples_per_condition": 252, "conditions": 4}
+{"event": "native_path_queries", "examples_per_condition": 288, "conditions": 4}
+{"event": "native_path_queries", "examples_per_condition": 324, "conditions": 4}
+{"event": "native_path_queries", "examples_per_condition": 360, "conditions": 4}
+{"event": "native_path_queries", "examples_per_condition": 396, "conditions": 4}
+{"event": "native_path_queries", "examples_per_condition": 432, "conditions": 4}

@@ -1,0 +1,29 @@
+{
+  "reference_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-generalization-20261114-01",
+  "expected_cases_sha256": "a995eea7d47b5b03423ccf17d7c26f65d4d873f7a7fc391821bcc03f563efba7",
+  "modes": [
+    "native",
+    "local_all",
+    "local_question"
+  ],
+  "variants": [
+    "control",
+    "treatment"
+  ],
+  "cluster_key": "base_case_id",
+  "strata": [
+    "dependency_depth",
+    "question_style"
+  ],
+  "intervention": "At all six full-attention layers, only question/answer rows restrict historical keys to executable backward-slice event spans plus the instruction/chat prelude. All query and answer tokens retain causal access. GDN masks stay None.",
+  "notes": [
+    "Exploratory frozen-checkpoint diagnostic on all 48 existing cases; no training or failure selection.",
+    "The complete original token stream, positions, prefix GDN computations and historical KV remain present.",
+    "All-history mask must exactly match unmodified scoring, greedy generation, logits and cache on a sampled query per checkpoint.",
+    "Restricted masks must preserve prefix cache/logits and historical KV in full prefill on a sampled query per checkpoint.",
+    "Dense eager masking is a causal diagnostic; it does not measure an efficient sparse implementation.",
+    "Success does not prove GDN state corruption; failure does not prove an irreversible information loss."
+  ],
+  "registered_utc": "2026-11-13T22:29:31.305923+00:00",
+  "smoke_run": "/media/990Pro/Code/SAS/runs/memory_update/oracle-kv-smoke-20261114-01"
+}

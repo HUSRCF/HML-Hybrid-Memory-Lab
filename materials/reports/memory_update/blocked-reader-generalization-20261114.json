@@ -1,0 +1,809 @@
+{
+  "status": "completed_and_audited",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/blocked-reader-generalization-20261114-02",
+  "manifest_sha256": "e0af07292f902bb03b63951e30e3a8a50e056544a6a6b4d54c109e4d2ed8d1ee",
+  "analysis_source_sha256": "a5c821ae37d86ca97db8ce640731f96097ecf0ebe00def127d2384d3a4735164",
+  "models": {
+    "question_only": {
+      "overall": {
+        "correct": 12,
+        "count": 288,
+        "accuracy": 0.041666666666666664,
+        "answer_nll": 2.0876407993060573
+      },
+      "training": {
+        "path": "/media/990Pro/Code/SAS/runs/memory_update/blocked-reader-question_only-trained-20261114-01",
+        "manifest_sha256": "76ca2c28cf9fbc914b6cf02fd86911f7bb1867d7bc6e4ed6a7b38ab71e5ef9dd",
+        "checkpoint_sha256": "deaa9f1d176bb4388e14473087a86f2852f03e5d0219c0b1c529122e1590aba8",
+        "token_policy": "question",
+        "initial_state_sha256": "44ebb8784799d6d68369fc7953ccfa42429b30109fbe8cbd43aaa1d8d1b2ea8f",
+        "data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+        "tokenized_input_answer_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a",
+        "reader_registry_sha256": "e1f77655a674e820283aed70fd24c58878b94e10e0b6f04868f31f7507dc2c4b",
+        "parameters": 689216,
+        "steps": 64,
+        "training_loss_first": 4.460931301116943,
+        "training_loss_last": 1.4516629576683044,
+        "metrics": {
+          "validation": {
+            "native": {
+              "metrics": [
+                {
+                  "family": "copy",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.8703684012095136
+                },
+                {
+                  "family": "copy",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.749768932660421
+                },
+                {
+                  "family": "copy",
+                  "role": "target_initial",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.786153336366018
+                },
+                {
+                  "family": "overwrite",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0,
+                  "answer_nll": 2.695207754770915
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0,
+                  "answer_nll": 2.5286344289779663
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_initial",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0,
+                  "answer_nll": 2.684067726135254
+                }
+              ],
+              "joint_all_three_correct": [
+                {
+                  "family": "copy",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0
+                },
+                {
+                  "family": "overwrite",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0
+                }
+              ]
+            },
+            "adapted": {
+              "metrics": [
+                {
+                  "family": "copy",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.284412205219269
+                },
+                {
+                  "family": "copy",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.092304507891337
+                },
+                {
+                  "family": "copy",
+                  "role": "target_initial",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.0586360494295755
+                },
+                {
+                  "family": "overwrite",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0,
+                  "answer_nll": 2.1766672134399414
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0,
+                  "answer_nll": 2.0580691496531167
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_initial",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0,
+                  "answer_nll": 1.8927454948425293
+                }
+              ],
+              "joint_all_three_correct": [
+                {
+                  "family": "copy",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0
+                },
+                {
+                  "family": "overwrite",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0
+                }
+              ]
+            }
+          },
+          "test": {
+            "native": {
+              "metrics": [
+                {
+                  "family": "copy",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 16,
+                  "accuracy": 0,
+                  "answer_nll": 2.7054399251937866
+                },
+                {
+                  "family": "copy",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 16,
+                  "accuracy": 0,
+                  "answer_nll": 2.841140021880468
+                },
+                {
+                  "family": "copy",
+                  "role": "target_initial",
+                  "correct": 0,
+                  "count": 16,
+                  "accuracy": 0,
+                  "answer_nll": 2.7758736312389374
+                },
+                {
+                  "family": "overwrite",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.35349573691686
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.588995556036631
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_initial",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.7404446999231973
+                }
+              ],
+              "joint_all_three_correct": [
+                {
+                  "family": "copy",
+                  "correct": 0,
+                  "count": 16,
+                  "accuracy": 0
+                },
+                {
+                  "family": "overwrite",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0
+                }
+              ]
+            },
+            "adapted": {
+              "metrics": [
+                {
+                  "family": "copy",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 16,
+                  "accuracy": 0,
+                  "answer_nll": 2.175543228785197
+                },
+                {
+                  "family": "copy",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 16,
+                  "accuracy": 0,
+                  "answer_nll": 2.1144065658251443
+                },
+                {
+                  "family": "copy",
+                  "role": "target_initial",
+                  "correct": 1,
+                  "count": 16,
+                  "accuracy": 0.0625,
+                  "answer_nll": 1.9945236643155415
+                },
+                {
+                  "family": "overwrite",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.0465441942214966
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.1092639366785684
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_initial",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 1.9682040611902873
+                }
+              ],
+              "joint_all_three_correct": [
+                {
+                  "family": "copy",
+                  "correct": 0,
+                  "count": 16,
+                  "accuracy": 0
+                },
+                {
+                  "family": "overwrite",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      "by_condition": [
+        {
+          "depth": 1,
+          "style": "original",
+          "correct": 2,
+          "count": 48,
+          "accuracy": 0.041666666666666664,
+          "answer_nll": 2.0805933111243777
+        },
+        {
+          "depth": 1,
+          "style": "entity_first",
+          "correct": 1,
+          "count": 48,
+          "accuracy": 0.020833333333333332,
+          "answer_nll": 2.0800804495811462
+        },
+        {
+          "depth": 2,
+          "style": "original",
+          "correct": 3,
+          "count": 48,
+          "accuracy": 0.0625,
+          "answer_nll": 2.0849243303140006
+        },
+        {
+          "depth": 2,
+          "style": "entity_first",
+          "correct": 2,
+          "count": 48,
+          "accuracy": 0.041666666666666664,
+          "answer_nll": 2.0805243452390036
+        },
+        {
+          "depth": 3,
+          "style": "original",
+          "correct": 2,
+          "count": 48,
+          "accuracy": 0.041666666666666664,
+          "answer_nll": 2.107231315639284
+        },
+        {
+          "depth": 3,
+          "style": "entity_first",
+          "correct": 2,
+          "count": 48,
+          "accuracy": 0.041666666666666664,
+          "answer_nll": 2.092491043938531
+        }
+      ],
+      "late_order_consistency": {
+        "pairs": 144,
+        "both_correct": 2,
+        "both_incorrect": 134,
+        "correctness_disagreements": 8,
+        "generated_string_disagreements": 93,
+        "mean_absolute_answer_nll_difference": 0.06760963797569275
+      },
+      "correct_by_base_case": {
+        "test-copy-s70003-n64": 8,
+        "test-copy-s70016-n8": 4
+      },
+      "prediction_counts": {
+        "602": 3,
+        "600": 53,
+        "472": 26,
+        "416": 3,
+        "473": 17,
+        "476": 44,
+        "410": 4,
+        "456": 3,
+        "400": 7,
+        "372": 2,
+        "640": 8,
+        "672": 4,
+        "700": 15,
+        "470": 13,
+        "603": 10,
+        "605": 2,
+        "778": 2,
+        "776": 1,
+        "478": 1,
+        "475": 9,
+        "643": 1,
+        "636": 4,
+        "417": 1,
+        "413": 1,
+        "402": 2,
+        "406": 1,
+        "403": 3,
+        "708": 1,
+        "670": 3,
+        "759": 12,
+        "272": 2,
+        "608": 1,
+        "276": 1,
+        "620": 1,
+        "630": 8,
+        "676": 2,
+        "496": 1,
+        "750": 3,
+        "756": 3,
+        "740": 3,
+        "746": 2,
+        "752": 1,
+        "442": 1,
+        "647": 1,
+        "673": 1,
+        "706": 1
+      },
+      "integer_format_outputs": 288
+    },
+    "all_tokens": {
+      "overall": {
+        "correct": 4,
+        "count": 288,
+        "accuracy": 0.013888888888888888,
+        "answer_nll": 2.101639935815776
+      },
+      "training": {
+        "path": "/media/990Pro/Code/SAS/runs/memory_update/blocked-reader-all_tokens-trained-20261114-01",
+        "manifest_sha256": "831fb5c43449112f02ccdc9cc6fe0c72986bf3b41fbaf861841f31c6564cd987",
+        "checkpoint_sha256": "31ac8a4a71fe9072555521a40d325342e7a7f0d57f2d6d32f3cb4922663b0b5c",
+        "token_policy": "all",
+        "initial_state_sha256": "44ebb8784799d6d68369fc7953ccfa42429b30109fbe8cbd43aaa1d8d1b2ea8f",
+        "data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+        "tokenized_input_answer_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a",
+        "reader_registry_sha256": "e1f77655a674e820283aed70fd24c58878b94e10e0b6f04868f31f7507dc2c4b",
+        "parameters": 689216,
+        "steps": 64,
+        "training_loss_first": 4.460931301116943,
+        "training_loss_last": 1.5151357650756836,
+        "metrics": {
+          "validation": {
+            "native": {
+              "metrics": [
+                {
+                  "family": "copy",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.8703684012095136
+                },
+                {
+                  "family": "copy",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.749768932660421
+                },
+                {
+                  "family": "copy",
+                  "role": "target_initial",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.786153336366018
+                },
+                {
+                  "family": "overwrite",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0,
+                  "answer_nll": 2.695207754770915
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0,
+                  "answer_nll": 2.5286344289779663
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_initial",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0,
+                  "answer_nll": 2.684067726135254
+                }
+              ],
+              "joint_all_three_correct": [
+                {
+                  "family": "copy",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0
+                },
+                {
+                  "family": "overwrite",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0
+                }
+              ]
+            },
+            "adapted": {
+              "metrics": [
+                {
+                  "family": "copy",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.20287162065506
+                },
+                {
+                  "family": "copy",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.143446226914724
+                },
+                {
+                  "family": "copy",
+                  "role": "target_initial",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 1.9725098013877869
+                },
+                {
+                  "family": "overwrite",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0,
+                  "answer_nll": 2.025520443916321
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0,
+                  "answer_nll": 2.022208094596863
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_initial",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0,
+                  "answer_nll": 1.9924761454264321
+                }
+              ],
+              "joint_all_three_correct": [
+                {
+                  "family": "copy",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0
+                },
+                {
+                  "family": "overwrite",
+                  "correct": 0,
+                  "count": 4,
+                  "accuracy": 0
+                }
+              ]
+            }
+          },
+          "test": {
+            "native": {
+              "metrics": [
+                {
+                  "family": "copy",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 16,
+                  "accuracy": 0,
+                  "answer_nll": 2.7054399251937866
+                },
+                {
+                  "family": "copy",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 16,
+                  "accuracy": 0,
+                  "answer_nll": 2.841140021880468
+                },
+                {
+                  "family": "copy",
+                  "role": "target_initial",
+                  "correct": 0,
+                  "count": 16,
+                  "accuracy": 0,
+                  "answer_nll": 2.7758736312389374
+                },
+                {
+                  "family": "overwrite",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.35349573691686
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.588995556036631
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_initial",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.7404446999231973
+                }
+              ],
+              "joint_all_three_correct": [
+                {
+                  "family": "copy",
+                  "correct": 0,
+                  "count": 16,
+                  "accuracy": 0
+                },
+                {
+                  "family": "overwrite",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0
+                }
+              ]
+            },
+            "adapted": {
+              "metrics": [
+                {
+                  "family": "copy",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 16,
+                  "accuracy": 0,
+                  "answer_nll": 2.1740159591039023
+                },
+                {
+                  "family": "copy",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 16,
+                  "accuracy": 0,
+                  "answer_nll": 2.1130793591340384
+                },
+                {
+                  "family": "copy",
+                  "role": "target_initial",
+                  "correct": 0,
+                  "count": 16,
+                  "accuracy": 0,
+                  "answer_nll": 1.8747754196325939
+                },
+                {
+                  "family": "overwrite",
+                  "role": "protected_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.0792724887530007
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_current",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 2.0096208453178406
+                },
+                {
+                  "family": "overwrite",
+                  "role": "target_initial",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0,
+                  "answer_nll": 1.8976462880770366
+                }
+              ],
+              "joint_all_three_correct": [
+                {
+                  "family": "copy",
+                  "correct": 0,
+                  "count": 16,
+                  "accuracy": 0
+                },
+                {
+                  "family": "overwrite",
+                  "correct": 0,
+                  "count": 8,
+                  "accuracy": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      "by_condition": [
+        {
+          "depth": 1,
+          "style": "original",
+          "correct": 1,
+          "count": 48,
+          "accuracy": 0.020833333333333332,
+          "answer_nll": 2.0918139583534665
+        },
+        {
+          "depth": 1,
+          "style": "entity_first",
+          "correct": 1,
+          "count": 48,
+          "accuracy": 0.020833333333333332,
+          "answer_nll": 2.1088155806064606
+        },
+        {
+          "depth": 2,
+          "style": "original",
+          "correct": 0,
+          "count": 48,
+          "accuracy": 0,
+          "answer_nll": 2.0998628470632763
+        },
+        {
+          "depth": 2,
+          "style": "entity_first",
+          "correct": 1,
+          "count": 48,
+          "accuracy": 0.020833333333333332,
+          "answer_nll": 2.1034278174241385
+        },
+        {
+          "depth": 3,
+          "style": "original",
+          "correct": 0,
+          "count": 48,
+          "accuracy": 0,
+          "answer_nll": 2.10067880153656
+        },
+        {
+          "depth": 3,
+          "style": "entity_first",
+          "correct": 1,
+          "count": 48,
+          "accuracy": 0.020833333333333332,
+          "answer_nll": 2.1052406099107532
+        }
+      ],
+      "late_order_consistency": {
+        "pairs": 144,
+        "both_correct": 0,
+        "both_incorrect": 140,
+        "correctness_disagreements": 4,
+        "generated_string_disagreements": 54,
+        "mean_absolute_answer_nll_difference": 0.060472555734493116
+      },
+      "correct_by_base_case": {
+        "test-copy-s70003-n64": 2,
+        "test-copy-s70016-n8": 2
+      },
+      "prediction_counts": {
+        "600": 55,
+        "200": 18,
+        "203": 18,
+        "300": 25,
+        "375": 1,
+        "350": 4,
+        "340": 2,
+        "370": 3,
+        "603": 17,
+        "400": 51,
+        "470": 1,
+        "405": 2,
+        "403": 7,
+        "333": 2,
+        "337": 4,
+        "473": 1,
+        "305": 3,
+        "303": 3,
+        "759": 12,
+        "500": 26,
+        "205": 1,
+        "633": 1,
+        "700": 24,
+        "338": 2,
+        "273": 1,
+        "703": 4
+      },
+      "integer_format_outputs": 288
+    }
+  },
+  "records_audited": 576,
+  "hindsight_best_constant_answer_correct": 12,
+  "constant_reference_note": "Descriptive ceiling for a single constant answer chosen with hindsight on these labels; not a trained or deployable baseline, and not a random-chance calibration.",
+  "all_minus_question_accuracy": {
+    "difference": -0.027777777777777776,
+    "ci95": [
+      -0.0763888888888889,
+      0
+    ],
+    "cases": 24,
+    "bootstrap_samples": 5000,
+    "unit": "base_case_id, averaging depth/wording/late-order variants",
+    "multiple_comparison_adjustment": false
+  },
+  "interpretation": "Compare recoverability under ordinary question-only or all-token local adaptation with the same blocked historical reader. Prefix carriers include recurrent and convolution states built using normal hybrid prefix attention. Neither superiority nor failure isolates GDN write quality. One fixed initialization; reused diagnostics, not untouched confirmation. Degenerate zero-effect intervals do not prove equivalence. Missing task success can reflect optimization/adapter expressivity and the intervention's distribution shift; it does not establish absent information."
+}

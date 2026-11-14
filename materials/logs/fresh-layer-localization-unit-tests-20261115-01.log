@@ -1,0 +1,15 @@
+test_complete_prefix_and_only_final_layer_question_identity_required (tests.test_fresh_layer_localization.LayerAuditTests.test_complete_prefix_and_only_final_layer_question_identity_required) ... ok
+test_exact_replay_mask_receipt_and_selected_suppression_required (tests.test_fresh_layer_localization.LayerAuditTests.test_exact_replay_mask_receipt_and_selected_suppression_required) ... ok
+test_first_token_margin_and_identity_are_not_mean_answer_nll (tests.test_fresh_layer_localization.LayerAuditTests.test_first_token_margin_and_identity_are_not_mean_answer_nll) ... ok
+test_no_condition_or_probability_observation_may_be_omitted (tests.test_fresh_layer_localization.LayerAuditTests.test_no_condition_or_probability_observation_may_be_omitted) ... ok
+test_registered_four_cases_all_layers_and_repair_retained (tests.test_fresh_layer_localization.LayerAuditTests.test_registered_four_cases_all_layers_and_repair_retained) ... ok
+test_unselected_probability_changes_do_not_invalidate_localization (tests.test_fresh_layer_localization.LayerAuditTests.test_unselected_probability_changes_do_not_invalidate_localization) ... ok
+test_capture_full_question_once_and_cleanup_on_exception (tests.test_fresh_layer_localization.LayerHookTests.test_capture_full_question_once_and_cleanup_on_exception) ... ok
+test_global_and_all_layer_masks_agree_and_all_history_is_identity (tests.test_fresh_layer_localization.LayerHookTests.test_global_and_all_layer_masks_agree_and_all_history_is_identity) ... ok
+test_invalid_scope_and_custom_global_inputs_are_rejected (tests.test_fresh_layer_localization.LayerHookTests.test_invalid_scope_and_custom_global_inputs_are_rejected) ... ok
+test_selected_masks_only_question_rows_and_cached_decode (tests.test_fresh_layer_localization.LayerHookTests.test_selected_masks_only_question_rows_and_cached_decode) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 12.860s
+
+OK

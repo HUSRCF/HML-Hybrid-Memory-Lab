@@ -1,0 +1,68 @@
+{
+  "status": "registered_before_training",
+  "registered_utc": "2026-11-14T03:06:44.883498+00:00",
+  "training": false,
+  "model_inference": false,
+  "reader_policy": "full",
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "base_data": "/media/990Pro/Code/SAS/datasets/memory_update/paired-semantic-updates-v1",
+  "base_data_manifest_sha256": "f572ee457fbea4deb6135abeaa12d32094f0e1e66d7906192ab6c442a7ec8fcf",
+  "base_data_sha256": "9a58823c8348db79b5b20db418894ae51782d02d943dc2440365af66c6838791",
+  "counts": {
+    "train": {
+      "base_families": 24,
+      "cases": 96,
+      "examples": 864,
+      "query_variant_families": 216,
+      "siblings_per_group": 4,
+      "per_family_cases": {
+        "copy": 16,
+        "overwrite": 16,
+        "independent_swap": 16,
+        "duplicate_set": 16,
+        "dependent_swap": 16,
+        "accumulate": 16
+      }
+    },
+    "validation": {
+      "base_families": 12,
+      "cases": 48,
+      "examples": 432,
+      "query_variant_families": 108,
+      "siblings_per_group": 4,
+      "per_family_cases": {
+        "dependent_swap": 8,
+        "accumulate": 8,
+        "duplicate_set": 8,
+        "copy": 8,
+        "independent_swap": 8,
+        "overwrite": 8
+      }
+    }
+  },
+  "data_sha256": "3ccaa5be8591fc896646a50991aaa86f5f722e00e76a198449791d3caa992b0f",
+  "orders_sha256": "4c5e34738ffeb4fe96a1005047c2ebf5ad30a11d24158aff07d0c9ed6773ea6d",
+  "registry_sha256": "9147f9f76334ebda3ad503f17603c3d06be630fae72b0dd930d5029ae877c55e",
+  "tokenized_train_sha256": "0ca8f4af05d0c7948c21e7a0fe0a1ba8707f2925f39e0e9037b36dc46fcf6123",
+  "tokenized_input_answer_sha256": "8f286e49883583b97d4bf48822ea4663bd2cc3f5979f2031eef4c0b583cb3d1f",
+  "seed_offset": 991003,
+  "canonical_train_stream_indices": [
+    0,
+    3
+  ],
+  "deranged_train_stream_indices": [
+    1,
+    2
+  ],
+  "source_sha256": {
+    "scripts/prepare_order_augmented_semantics.py": "f9d6d73a8ea48a9e55a55426c68e01236699cb1374fe63f317880393c2c22e5d",
+    "scripts/analyze_paired_semantic_probe.py": "ddbc998afe4cfdbca4b9245503bd75f419e74a4c136e2040ba540f80fae1d4c7",
+    "scripts/prepare_paired_semantic_updates.py": "27cf1b60a66f9aebaa4b6ce519344bf45930f1b9bf2dde3998e6d59fcb2356fa",
+    "scripts/analyze_blocked_reader_adaptation.py": "a23c1d33644f906b1a521fdb44a68d5e6dff86f5c11e094387eaa3fb085f94f5",
+    "scripts/run_controller_trial.py": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91"
+  },
+  "interpretation": "Ordinary deterministic 50/50 initial-order augmentation, not a semantic architecture. Same train examples, labels, questions, per-example input/answer lengths and ordering; half the base streams change only eight independent initial SET records. Each task and length has one canonical and one deranged stream. Four siblings share the same permutation. Canonical validation stays byte-for-byte unchanged; both observed validation orders remain development, not untouched confirmation."
+}

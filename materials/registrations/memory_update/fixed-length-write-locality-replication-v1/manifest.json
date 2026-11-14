@@ -1,0 +1,59 @@
+{
+  "status": "registered_before_inference",
+  "registered_utc": "2026-11-14T07:01:09.408276+00:00",
+  "model_inference": false,
+  "training": false,
+  "reader_policy": "full",
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "protocol_sha256": "cc321076e4c16df135c506fabf5e9c1edbdf09408899444a6b93289676fecb1f",
+  "counts": {
+    "examples": 576,
+    "value_cases": 48,
+    "base_streams": 4,
+    "loads": [
+      8,
+      32,
+      128
+    ],
+    "prefixes_with_tail": 192,
+    "records_per_prefix": 162,
+    "four_value_query_groups": 144
+  },
+  "data_sha256": "a32c572c17219876a58512a9fefe640097beeb97ad3d3c6d34303f1f058c9cf6",
+  "registry_sha256": "5a319c4bd6f0f77759e8bf292283e69f6967d90d84d5914d5dd735fb32d5833a",
+  "evaluation_keys_sha256": "6af1c34bd84f10f6bd90f0cff8c316fe257cb63c654c9029bc71d1fa9c985adc",
+  "reference_gate": {
+    "report_path": "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-load-20261114.json",
+    "report_sha256": "47e1835173dea129230ebe48cff6ee5c3aa59b82eff34322899a0a0319b47e83",
+    "manifest_sha256": "8588af35b666ae846e496b6a7e8fae4fc0d559d9cc08ede08b2c72b0f1aa1768",
+    "status": "completed_and_audited"
+  },
+  "complete_discovery_audit_reexecuted_at_registration": true,
+  "discovery_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "source_sha256": {
+    "configs/models.json": "c1ca82d887e5892dcb8238bcaeb55bada81607b6457cf0dbf273014f6ddb5305",
+    "configs/semantic_write_locality_load_plan.json": "f0f3d9311eccf72580e500ebf74d2e92e16933898ed59b3d96b8e4673ed25411",
+    "configs/semantic_write_locality_replication_plan.json": "cc321076e4c16df135c506fabf5e9c1edbdf09408899444a6b93289676fecb1f",
+    "sas_memory/calibration.py": "922499d57024c280f3ab93de1dac9ef4a3d611a216f2c1ae4af7fa7862ef7a06",
+    "sas_memory/locality_replication.py": "b34538ae6aaeb5f7cc4c0b4c53e9f83c60a069f807b5df81f897db8b683c29ec",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "sas_memory/write_locality_data.py": "ac4ebadc19ce69b527b1c78ca3ee9af7b775f2230a5d991295601186a3725aeb",
+    "scripts/analyze_blocked_reader_adaptation.py": "a23c1d33644f906b1a521fdb44a68d5e6dff86f5c11e094387eaa3fb085f94f5",
+    "scripts/analyze_controller_trial.py": "aee986c912b7f3ada5de142978ef10793f16a7753ffdc8e33733682767137e41",
+    "scripts/prepare_write_locality_load_screen.py": "9d7700bc4d52f1f16b9392cceb8af6a43cc82cd9a42a7fdb2ada8a3dfbc9eab2",
+    "scripts/prepare_write_locality_replication.py": "91e48536230e3b347fb83494612dde647c6f0e5eaf376db2e6fb00c2f6f720de",
+    "scripts/run_controller_trial.py": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262"
+  },
+  "tokenizer_sha256": {
+    "chat_template.jinja": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+    "config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c"
+  },
+  "checkpoint_sha256": {
+    "model.safetensors-00001-of-00001.safetensors": "aa33250c4fc64891ddfaba3a314fd9542ea371843c387178b425fbcc5ed680b1"
+  },
+  "interpretation": "Replicate the observed native functional preservation regressions under the same fixed-length generation mechanism with four newly specified base seeds, before attributing them to recurrent write damage or training a new architecture."
+}

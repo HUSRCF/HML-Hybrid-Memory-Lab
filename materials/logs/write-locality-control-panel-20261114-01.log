@@ -1,0 +1,68 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<03:19,  1.60it/s]Loading weights:   7%|▋         | 23/320 [00:00<00:07, 42.22it/s]Loading weights:  13%|█▎        | 41/320 [00:00<00:04, 67.08it/s]Loading weights:  19%|█▉        | 62/320 [00:00<00:02, 93.34it/s]Loading weights:  26%|██▋       | 84/320 [00:01<00:01, 122.33it/s]Loading weights:  32%|███▏      | 102/320 [00:01<00:01, 129.80it/s]Loading weights:  38%|███▊      | 122/320 [00:01<00:01, 141.64it/s]Loading weights:  46%|████▌     | 147/320 [00:01<00:01, 157.49it/s]Loading weights:  53%|█████▎    | 171/320 [00:01<00:00, 176.30it/s]Loading weights:  60%|█████▉    | 191/320 [00:01<00:00, 168.68it/s]Loading weights:  65%|██████▌   | 209/320 [00:01<00:00, 167.87it/s]Loading weights:  71%|███████   | 227/320 [00:01<00:00, 163.33it/s]Loading weights:  78%|███████▊  | 248/320 [00:02<00:00, 175.31it/s]Loading weights:  83%|████████▎ | 267/320 [00:02<00:00, 173.12it/s]Loading weights:  90%|█████████ | 288/320 [00:02<00:00, 181.77it/s]Loading weights:  96%|█████████▌| 307/320 [00:02<00:00, 176.24it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 133.25it/s]
+{"event": "fixed_checkpoint_transfer", "model": "shared", "completed": 32, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "shared", "completed": 64, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "shared", "completed": 96, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "shared", "completed": 128, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "shared", "completed": 160, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "shared", "completed": 192, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "shared", "completed": 224, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "shared", "completed": 256, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "shared", "completed": 288, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "shared", "completed": 320, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "shared", "completed": 352, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "shared", "completed": 384, "total": 384}
+{"event": "timing_checkpoint_completed", "model": "shared", "readouts": 384}
+{"event": "fixed_checkpoint_transfer", "model": "independent", "completed": 32, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "independent", "completed": 64, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "independent", "completed": 96, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "independent", "completed": 128, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "independent", "completed": 160, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "independent", "completed": 192, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "independent", "completed": 224, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "independent", "completed": 256, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "independent", "completed": 288, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "independent", "completed": 320, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "independent", "completed": 352, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "independent", "completed": 384, "total": 384}
+{"event": "timing_checkpoint_completed", "model": "independent", "readouts": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local", "completed": 32, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local", "completed": 64, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local", "completed": 96, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local", "completed": 128, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local", "completed": 160, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local", "completed": 192, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local", "completed": 224, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local", "completed": 256, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local", "completed": 288, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local", "completed": 320, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local", "completed": 352, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local", "completed": 384, "total": 384}
+{"event": "timing_checkpoint_completed", "model": "local", "readouts": 384}
+{"event": "native_long_prefix_identity_passed", "model": "local_question", "prefixes": 20}
+{"event": "fixed_checkpoint_transfer", "model": "local_question", "completed": 32, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local_question", "completed": 64, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local_question", "completed": 96, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local_question", "completed": 128, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local_question", "completed": 160, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local_question", "completed": 192, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local_question", "completed": 224, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local_question", "completed": 256, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local_question", "completed": 288, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local_question", "completed": 320, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local_question", "completed": 352, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "local_question", "completed": 384, "total": 384}
+{"event": "timing_checkpoint_completed", "model": "local_question", "readouts": 384}
+{"event": "fixed_checkpoint_transfer", "model": "attention_only", "completed": 32, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "attention_only", "completed": 64, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "attention_only", "completed": 96, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "attention_only", "completed": 128, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "attention_only", "completed": 160, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "attention_only", "completed": 192, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "attention_only", "completed": 224, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "attention_only", "completed": 256, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "attention_only", "completed": 288, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "attention_only", "completed": 320, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "attention_only", "completed": 352, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "attention_only", "completed": 384, "total": 384}
+{"event": "timing_checkpoint_completed", "model": "attention_only", "readouts": 384}

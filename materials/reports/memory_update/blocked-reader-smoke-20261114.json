@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "arms": [
+    {
+      "arm": "question_only",
+      "manifest_sha256": "59f7f2304f6eafe104884badfea04d64c85c35cac8396611c067576a2414aa42",
+      "safety_checks": "passed",
+      "optimized_training_started": false
+    },
+    {
+      "arm": "all_tokens",
+      "manifest_sha256": "b8e99cde947102a9f49fdf0644d28b9df4c43577eaf68f6bbead22d779c52ee1",
+      "safety_checks": "passed",
+      "optimized_training_started": false
+    }
+  ],
+  "masks_and_training_tokens_matched": true,
+  "unit_tests_passed": 30
+}

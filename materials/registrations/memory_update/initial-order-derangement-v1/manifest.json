@@ -1,0 +1,28 @@
+{
+  "status": "registered_before_inference",
+  "registered_utc": "2026-11-14T02:27:23.559547+00:00",
+  "training": false,
+  "model_inference": false,
+  "base_data": "/media/990Pro/Code/SAS/datasets/memory_update/paired-semantic-updates-v1",
+  "base_data_manifest_sha256": "f572ee457fbea4deb6135abeaa12d32094f0e1e66d7906192ab6c442a7ec8fcf",
+  "base_data_sha256": "9a58823c8348db79b5b20db418894ae51782d02d943dc2440365af66c6838791",
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "condition": "initial_record_derangement",
+  "cases": 48,
+  "base_families": 12,
+  "examples": 432,
+  "cases_sha256": "1125157f9d81f09a44958d77fa27ae82f252871af5b3f52b5a54cdb234fe662c",
+  "permutations_sha256": "c9705152617f172e2733805184b6b5f26b71c16af1c800b460baee111856b992",
+  "registry_sha256": "17b5b7c00fad7d43a0c367f5d08e069f4d1a3f678ab9bbbc1aa1b2f0597e9669",
+  "source_sha256": {
+    "scripts/prepare_initial_order_control.py": "b34346ad0f90e7bd22539e9fc308259ef230d2385f288e61c1b991cd6e0ebc3b",
+    "scripts/analyze_paired_semantic_probe.py": "ddbc998afe4cfdbca4b9245503bd75f419e74a4c136e2040ba540f80fae1d4c7",
+    "scripts/prepare_paired_semantic_updates.py": "27cf1b60a66f9aebaa4b6ce519344bf45930f1b9bf2dde3998e6d59fcb2356fa",
+    "scripts/run_controller_trial.py": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262",
+    "scripts/analyze_blocked_reader_adaptation.py": "a23c1d33644f906b1a521fdb44a68d5e6dff86f5c11e094387eaa3fb085f94f5",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91"
+  },
+  "interpretation": "Reused-validation functional order diagnostic, not untouched confirmation. All eight independent initial SET records move; tails, questions, executable current/initial truth, query IDs and absolute query positions stay fixed. Recomputed recurrent states and contextual KV differ, so failures do not isolate GDN write damage. Four-value matching still holds within each question/variant. No training or method selection on this condition is registered yet."
+}

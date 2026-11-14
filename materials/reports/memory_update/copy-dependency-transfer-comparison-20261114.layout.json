@@ -1,0 +1,19 @@
+{
+  "actual_metrics_layout_checks": [
+    {
+      "outside_figure": [],
+      "net_axis_ylim": [
+        -5.0,
+        5.0
+      ]
+    },
+    {
+      "outside_figure": [],
+      "net_axis_ylim": [
+        -5.0,
+        5.0
+      ]
+    }
+  ],
+  "zero_effect_layout_checks_passed": true
+}

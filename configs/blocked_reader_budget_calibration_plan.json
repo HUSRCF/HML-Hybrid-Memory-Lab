@@ -1,0 +1,76 @@
+{
+  "status": "planned_not_started",
+  "registered_utc": "2026-11-14T00:20:40.156379+00:00",
+  "stage": "posthoc_optimization_budget_calibration",
+  "question": "Can the same ordinary local adapters fit the fixed original data with more updates, before interpreting blocked-reader failures as information or capacity limits?",
+  "research_scope": "Carrier/readout calibration is a diagnostic step within whole-block semantic write/read co-design. It is not a replacement architecture goal.",
+  "backbone": "it",
+  "group_index": 3,
+  "mode": "local",
+  "rank": 22,
+  "expected_trainable_parameters": 689216,
+  "initialization_seed": 1701,
+  "initial_state_sha256": "44ebb8784799d6d68369fc7953ccfa42429b30109fbe8cbd43aaa1d8d1b2ea8f",
+  "data_source": "/media/990Pro/Code/SAS/runs/memory_update/controller-question-trained-20261114-01",
+  "data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+  "tokenized_input_answer_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a",
+  "unique_training_examples": 128,
+  "supervised_answer_tokens_per_cycle": 512,
+  "data_order": "Repeat the exact original ordered 128 examples; for microbatch m use encoded[m % 128]. No new examples, shuffling, warm starts or changes to labels.",
+  "gradient_accumulation": 2,
+  "maximum_optimizer_steps": 1024,
+  "checkpoint_steps": [
+    64,
+    256,
+    1024
+  ],
+  "supervised_answer_token_budgets": {
+    "64": 512,
+    "256": 2048,
+    "1024": 8192
+  },
+  "optimized_input_token_budgets": {
+    "64": 74102,
+    "256": 296408,
+    "1024": 1185632
+  },
+  "learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "max_gradient_norm": 1.0,
+  "reader_policy": "records_blocked",
+  "arms": {
+    "question_only": {
+      "token_policy": "question",
+      "description": "Preserve pre-question KV/recurrent/convolution computation exactly; adapt only during question/answer processing."
+    },
+    "all_tokens": {
+      "token_policy": "all",
+      "description": "Same local targets/parameters; permit prefix as well as question/answer adaptation. Changes both recurrent/convolution state and attention/KV construction."
+    }
+  },
+  "reference_step64": {
+    "question": "/media/990Pro/Code/SAS/runs/memory_update/blocked-reader-question_only-trained-20261114-01",
+    "all": "/media/990Pro/Code/SAS/runs/memory_update/blocked-reader-all_tokens-trained-20261114-01"
+  },
+  "requirements": [
+    "Use existing base Conda, local frozen backbone and unchanged GroupController targets; no environment creation, package changes or model copies.",
+    "Preserve all original optimizer settings, inputs and reader masks; initialize each arm from the same zero-output state, without warm-starting the previous trained adapters.",
+    "At step 64 verify exact adapter-state and loss replay against the corresponding completed reference before proceeding; investigate a mismatch rather than silently treating it as the same protocol.",
+    "Save adapter and optimizer state, actual microbatch identities/reader-call counts, source/data/checkpoint hashes and completed-step status so an interrupted run can be resumed without guessing.",
+    "Evaluate only the fixed checkpoints on the exact 128 training examples and original validation split. Distinguish teacher-forced numeric-token accuracy, newline accuracy and unrestricted greedy answers.",
+    "Do not repeatedly evaluate the original test grid or the 70000-series generalization cohort during this calibration; they have already been inspected. Do not select a winning checkpoint from those data.",
+    "Run both arms to the same registered maximum unless a numerical/protocol failure stops the run. Do not use success-based early stopping to create unmatched budgets.",
+    "Recheck finite nonzero adapter gradients, absent backbone gradients, actual zero record-attention probabilities and question-only prefix identity before release; verify final-checkpoint prefix preservation on short/long samples."
+  ],
+  "interpretation": {
+    "fit_recovers": "Additional optimization resolves at least part of the prior negative result; it does not establish semantic generalization or a new architecture.",
+    "train_fits_validation_fails": "Data diversity/generalization is unresolved; compare simple augmentation before adding architectural complexity.",
+    "both_still_fail_to_fit": "Budget, adapter expressivity, target coverage and inaccessible information remain alternatives. Next include single-fact positive controls and explicit GDN-query/readout-capacity controls rather than claiming a state-capacity impossibility.",
+    "all_token_advantage": "Earlier computation changes both recurrent/convolution states and attention/KV construction; this does not isolate GDN write damage."
+  },
+  "broader_followups": [
+    "Replicate promising effects across the two other fixed initializations before a comparative claim.",
+    "Add fresh value/position-matched initial-fact and source-before/after-COPY controls with historical queries.",
+    "Compare ordinary augmentation/local adaptation and practical learned access with shared write/read co-design at matched cost before claiming architectural value."
+  ]
+}

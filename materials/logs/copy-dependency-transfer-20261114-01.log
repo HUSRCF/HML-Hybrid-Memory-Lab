@@ -1,0 +1,92 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<03:02,  1.75it/s]Loading weights:   8%|▊         | 26/320 [00:00<00:05, 49.98it/s]Loading weights:  14%|█▍        | 45/320 [00:00<00:03, 78.86it/s]Loading weights:  20%|██        | 65/320 [00:02<00:10, 23.59it/s]Loading weights:  25%|██▍       | 79/320 [00:02<00:07, 30.99it/s]Loading weights:  31%|███       | 99/320 [00:02<00:04, 45.56it/s]Loading weights:  39%|███▉      | 124/320 [00:02<00:02, 67.31it/s]Loading weights:  46%|████▌     | 146/320 [00:02<00:01, 87.84it/s]Loading weights:  52%|█████▏    | 167/320 [00:02<00:01, 105.27it/s]Loading weights:  58%|█████▊    | 186/320 [00:03<00:01, 117.80it/s]Loading weights:  64%|██████▍   | 204/320 [00:03<00:00, 124.43it/s]Loading weights:  70%|██████▉   | 223/320 [00:03<00:00, 132.14it/s]Loading weights:  79%|███████▉  | 253/320 [00:03<00:00, 165.22it/s]Loading weights:  86%|████████▌ | 275/320 [00:03<00:00, 171.59it/s]Loading weights:  92%|█████████▏| 295/320 [00:03<00:00, 159.76it/s]Loading weights: 100%|██████████| 320/320 [00:03<00:00, 84.14it/s] 
+{"event": "copy_dependency_transfer", "model": "native", "completed": 32, "total": 336}
+{"event": "copy_dependency_transfer", "model": "native", "completed": 64, "total": 336}
+{"event": "copy_dependency_transfer", "model": "native", "completed": 96, "total": 336}
+{"event": "copy_dependency_transfer", "model": "native", "completed": 128, "total": 336}
+{"event": "copy_dependency_transfer", "model": "native", "completed": 160, "total": 336}
+{"event": "copy_dependency_transfer", "model": "native", "completed": 192, "total": 336}
+{"event": "copy_dependency_transfer", "model": "native", "completed": 224, "total": 336}
+{"event": "copy_dependency_transfer", "model": "native", "completed": 256, "total": 336}
+{"event": "copy_dependency_transfer", "model": "native", "completed": 288, "total": 336}
+{"event": "copy_dependency_transfer", "model": "native", "completed": 320, "total": 336}
+{"event": "copy_transfer_arm_complete", "model": "native", "readouts": 336}
+{"event": "copy_dependency_transfer", "model": "shared", "completed": 32, "total": 336}
+{"event": "copy_dependency_transfer", "model": "shared", "completed": 64, "total": 336}
+{"event": "copy_dependency_transfer", "model": "shared", "completed": 96, "total": 336}
+{"event": "copy_dependency_transfer", "model": "shared", "completed": 128, "total": 336}
+{"event": "copy_dependency_transfer", "model": "shared", "completed": 160, "total": 336}
+{"event": "copy_dependency_transfer", "model": "shared", "completed": 192, "total": 336}
+{"event": "copy_dependency_transfer", "model": "shared", "completed": 224, "total": 336}
+{"event": "copy_dependency_transfer", "model": "shared", "completed": 256, "total": 336}
+{"event": "copy_dependency_transfer", "model": "shared", "completed": 288, "total": 336}
+{"event": "copy_dependency_transfer", "model": "shared", "completed": 320, "total": 336}
+{"event": "copy_transfer_arm_complete", "model": "shared", "readouts": 336}
+{"event": "copy_dependency_transfer", "model": "independent", "completed": 32, "total": 336}
+{"event": "copy_dependency_transfer", "model": "independent", "completed": 64, "total": 336}
+{"event": "copy_dependency_transfer", "model": "independent", "completed": 96, "total": 336}
+{"event": "copy_dependency_transfer", "model": "independent", "completed": 128, "total": 336}
+{"event": "copy_dependency_transfer", "model": "independent", "completed": 160, "total": 336}
+{"event": "copy_dependency_transfer", "model": "independent", "completed": 192, "total": 336}
+{"event": "copy_dependency_transfer", "model": "independent", "completed": 224, "total": 336}
+{"event": "copy_dependency_transfer", "model": "independent", "completed": 256, "total": 336}
+{"event": "copy_dependency_transfer", "model": "independent", "completed": 288, "total": 336}
+{"event": "copy_dependency_transfer", "model": "independent", "completed": 320, "total": 336}
+{"event": "copy_transfer_arm_complete", "model": "independent", "readouts": 336}
+{"event": "copy_dependency_transfer", "model": "local", "completed": 32, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local", "completed": 64, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local", "completed": 96, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local", "completed": 128, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local", "completed": 160, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local", "completed": 192, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local", "completed": 224, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local", "completed": 256, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local", "completed": 288, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local", "completed": 320, "total": 336}
+{"event": "copy_transfer_arm_complete", "model": "local", "readouts": 336}
+{"event": "copy_native_prefix_identity", "model": "local_question", "prefixes": 6}
+{"event": "copy_dependency_transfer", "model": "local_question", "completed": 32, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local_question", "completed": 64, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local_question", "completed": 96, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local_question", "completed": 128, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local_question", "completed": 160, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local_question", "completed": 192, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local_question", "completed": 224, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local_question", "completed": 256, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local_question", "completed": 288, "total": 336}
+{"event": "copy_dependency_transfer", "model": "local_question", "completed": 320, "total": 336}
+{"event": "copy_transfer_arm_complete", "model": "local_question", "readouts": 336}
+{"event": "copy_dependency_transfer", "model": "attention_only", "completed": 32, "total": 336}
+{"event": "copy_dependency_transfer", "model": "attention_only", "completed": 64, "total": 336}
+{"event": "copy_dependency_transfer", "model": "attention_only", "completed": 96, "total": 336}
+{"event": "copy_dependency_transfer", "model": "attention_only", "completed": 128, "total": 336}
+{"event": "copy_dependency_transfer", "model": "attention_only", "completed": 160, "total": 336}
+{"event": "copy_dependency_transfer", "model": "attention_only", "completed": 192, "total": 336}
+{"event": "copy_dependency_transfer", "model": "attention_only", "completed": 224, "total": 336}
+{"event": "copy_dependency_transfer", "model": "attention_only", "completed": 256, "total": 336}
+{"event": "copy_dependency_transfer", "model": "attention_only", "completed": 288, "total": 336}
+{"event": "copy_dependency_transfer", "model": "attention_only", "completed": 320, "total": 336}
+{"event": "copy_transfer_arm_complete", "model": "attention_only", "readouts": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_all_tokens", "completed": 32, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_all_tokens", "completed": 64, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_all_tokens", "completed": 96, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_all_tokens", "completed": 128, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_all_tokens", "completed": 160, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_all_tokens", "completed": 192, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_all_tokens", "completed": 224, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_all_tokens", "completed": 256, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_all_tokens", "completed": 288, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_all_tokens", "completed": 320, "total": 336}
+{"event": "copy_transfer_arm_complete", "model": "gdn_all_tokens", "readouts": 336}
+{"event": "copy_native_prefix_identity", "model": "gdn_question_only", "prefixes": 6}
+{"event": "copy_dependency_transfer", "model": "gdn_question_only", "completed": 32, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_question_only", "completed": 64, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_question_only", "completed": 96, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_question_only", "completed": 128, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_question_only", "completed": 160, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_question_only", "completed": 192, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_question_only", "completed": 224, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_question_only", "completed": 256, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_question_only", "completed": 288, "total": 336}
+{"event": "copy_dependency_transfer", "model": "gdn_question_only", "completed": 320, "total": 336}
+{"event": "copy_transfer_arm_complete", "model": "gdn_question_only", "readouts": 336}

@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "started_utc": "2026-11-13T20:19:10.626337+00:00",
+  "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-pilot-20261114-01",
+  "mode": "shared",
+  "checkpoint_sha256": "6cd3b355950a2f97f80b4a37dd10c13357fb87e98468b7d104e633c2a2675c3d",
+  "data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+  "completed_ablations": [
+    "all_enabled",
+    "gdn_only_enabled",
+    "attention_only_enabled",
+    "attention_query_only",
+    "attention_key_only",
+    "all_disabled"
+  ],
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/controllers.py": "63c3ff96bb989e72ff9d9c2b260c30d7a44eb1169ef3553ca6688b174dbb21b1",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/metrics.py": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/stress_tasks.py": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "fb576a833e224cd50b2b79dfd86b338af67f36f633f83a346df99bf2d5d94162",
+    "scripts/run_controller_ablations.py": "b7cbdafafe6dabd6ad14db5fc4c8c815fcbab72e32e835bedb937b1320bd4caa"
+  },
+  "interpretation": "Post-training branch interventions; disablement is not matched-budget retraining.",
+  "all_enabled_max_nll_replay_error": 0.0,
+  "all_disabled_max_nll_replay_error": 0.0,
+  "completed_utc": "2026-11-13T20:22:26.241817+00:00"
+}

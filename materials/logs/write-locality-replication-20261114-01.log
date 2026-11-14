@@ -1,0 +1,15 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<03:02,  1.75it/s]Loading weights:   8%|▊         | 25/320 [00:00<00:06, 49.12it/s]Loading weights:  12%|█▏        | 39/320 [00:00<00:04, 65.73it/s]Loading weights:  20%|██        | 64/320 [00:00<00:02, 107.26it/s]Loading weights:  26%|██▌       | 82/320 [00:01<00:02, 117.71it/s]Loading weights:  31%|███       | 99/320 [00:01<00:01, 129.57it/s]Loading weights:  38%|███▊      | 120/320 [00:01<00:01, 147.01it/s]Loading weights:  45%|████▍     | 143/320 [00:01<00:01, 168.61it/s]Loading weights:  51%|█████     | 162/320 [00:01<00:00, 167.81it/s]Loading weights:  57%|█████▊    | 184/320 [00:01<00:00, 181.65it/s]Loading weights:  64%|██████▍   | 204/320 [00:01<00:00, 168.87it/s]Loading weights:  70%|███████   | 225/320 [00:01<00:00, 174.21it/s]Loading weights:  77%|███████▋  | 247/320 [00:01<00:00, 169.32it/s]Loading weights:  85%|████████▍ | 271/320 [00:02<00:00, 183.59it/s]Loading weights:  91%|█████████▏| 292/320 [00:02<00:00, 188.81it/s]Loading weights:  98%|█████████▊| 312/320 [00:02<00:00, 177.67it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 138.96it/s]
+{"event": "native_locality_evaluation", "completed": 48, "total": 576}
+{"event": "native_locality_evaluation", "completed": 96, "total": 576}
+{"event": "native_locality_evaluation", "completed": 144, "total": 576}
+{"event": "native_locality_evaluation", "completed": 192, "total": 576}
+{"event": "native_locality_evaluation", "completed": 240, "total": 576}
+{"event": "native_locality_evaluation", "completed": 288, "total": 576}
+{"event": "native_locality_evaluation", "completed": 336, "total": 576}
+{"event": "native_locality_evaluation", "completed": 384, "total": 576}
+{"event": "native_locality_evaluation", "completed": 432, "total": 576}
+{"event": "native_locality_evaluation", "completed": 480, "total": 576}
+{"event": "native_locality_evaluation", "completed": 528, "total": 576}
+{"event": "native_locality_evaluation", "completed": 576, "total": 576}
+{"event": "native_locality_completed", "examples": 576, "weights_identical": true}

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "status": "registered_before_new_profile_oracle_inference",
+  "registered_utc": "2026-11-14T14:14:04.862666+00:00",
+  "purpose": "Replicate the recorded frozen-prefix oracle sufficiency check under the same canonical arithmetic as the completed whole-record necessity experiment. Do not combine old FP32 oracle results with canonical necessity as one same-profile experiment.",
+  "model_key": "it",
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "model_class": "Qwen3_5ForCausalLM",
+  "local_files_only": true,
+  "models": [
+    "local_question",
+    "gdn_question_only"
+  ],
+  "model_selection": "Exactly the two primary models prescribed before both previous phases; no best-arm or checkpoint search.",
+  "training": false,
+  "new_adapters": false,
+  "new_task_cases": false,
+  "new_models": false,
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "precision_addendum": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_precision_addendum.json",
+  "precision_addendum_sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc",
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "profile_source": "scripts/stable_adapter_linears.py",
+  "profile_source_sha256": "99c57ff1ad4fe2722b4a260e62e3a63d69c2190acd9e710193a6fabe7617c670",
+  "completed_necessity_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/canonical-copy-necessity-audit-20261114-01.json",
+  "completed_necessity_audit_sha256": "e6de2525297a1c2549b40a804e84e5b0c494ae964daf3625e92c24c88d9e0873",
+  "completed_necessity_manifest_sha256": "9b65a918880a68dd26a6e0be93af980c3b51d30710ad4b18b4c9decd9dc1bf5f",
+  "completed_necessity_source_run": "/media/990Pro/Code/SAS/runs/memory_update/canonical-copy-necessity-20261114-01",
+  "prior_exact_order_smoke_equivalence": "/media/990Pro/Code/SAS/artifacts/memory_update/canonical-copy-necessity-smoke-equivalence-20261114-01.json",
+  "prior_exact_order_smoke_equivalence_sha256": "529c1b269e70752330e3d6b742ca42ba46bd4120be645590350cc7442a053f68",
+  "existing_oracle_protocol": "/home/husrcf/Code/SAS/configs/copy_readout_sufficiency_plan.json",
+  "existing_oracle_protocol_sha256": "20c576579c9b076bc56d3f5dd66413ef955235033bf228afaa34fab0f9bb080b",
+  "existing_oracle_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/copy-readout-sufficiency-v1",
+  "existing_oracle_mask_registry_sha256": "de14fa807c4590c833297cd110504f643fff9e873ec0bb9626b1812d8d828bfa",
+  "data": "All336physical queries and432related bindings permodel from the same48related cases and8reused streams. Same complete program-derived evidence events at original positions. Do not use the previous partial-record nonslice mask.",
+  "regimes": [
+    "full",
+    "oracle"
+  ],
+  "reference_policy": "Recompute full-history readouts for every physical query under the canonical profile and require exact5field replay of the completed canonical necessity full rows for both models. The primary contrast uses this phase own fresh full rows. Never use old FP32 NLLs as canonical references.",
+  "counts": {
+    "models": 2,
+    "queries_per_model_regime": 336,
+    "bindings_per_model_regime": 432,
+    "fresh_full_readouts": 672,
+    "new_oracle_readouts": 672,
+    "all_new_primary_readouts": 1344,
+    "all_new_related_bindings": 1728
+  },
+  "generation": {
+    "maximum_new_tokens": 12,
+    "candidate_restriction": false,
+    "gold_nll_tokens": 3,
+    "prefix_processing": "fresh full prefill for every physical query"
+  },
+  "operational_smoke": {
+    "physical_ids": "Same first/lastcase18physical queries used by the canonical necessity smokes.",
+    "models_forward": [
+      "local_question",
+      "gdn_question_only"
+    ],
+    "models_reverse": [
+      "gdn_question_only",
+      "local_question"
+    ],
+    "readouts_each_order": 72,
+    "gate": "Independently audit both72-readout smokes. All72corresponding full/oracle readouts,20sampled complete prefixes,12native-question-prefix checks and10native anchors must match exactly across orders. No accuracy gate, tolerance, omission or success filtering.",
+    "before_full": "Both audits and exact equivalence required before1344primary readouts; no reuse of prior432smokes as an oracle-intervention smoke."
+  },
+  "controls": {
+    "sample_query_ids": "Use existing10all-role necessity proof samples permodel, without alteration.",
+    "prefix": "Actual complete recurrent, convolution, historicalKV and bookkeeping states and prefix logits unchanged under oracle masking; all12historicalKVslice fields preserved on each sampled full-question execution.",
+    "probabilities": "At all6softmax layers, sampled removed-history probability and mass exactly0, nonvacuous unmasked controls and retained-record mass; actualprefill andcached generation hookcounts.",
+    "other": "20all-history exact controls,20masked-memory proofs,20actual masked probability checks,20detached-native replays,12question-only nativeprefix identities,10pre-controller nativeanchors. All native and frozen FP32adapter tensors unchanged. Canonical hooks only on controller linears; no native overlap. Save source closures, generation config, checkpoint hashes and restore all hooks."
+  },
+  "scientific_gate": {
+    "reuse": "Exactly the five frozen-prefix sufficiency checks from scripts/copy_readout_metrics.py:sufficiency_checks; no threshold changes.",
+    "each_model": [
+      "oracle current-target-after correctness>=90/96",
+      "oracle historical-after count no lower than freshfull",
+      "oracle unrelated-after count no lower than freshfull",
+      "positive paired current-answer net repair versus freshfull",
+      "net current repair positive in at least4of8reused base streams"
+    ],
+    "pass": "Allfivechecks for BOTH prescribed models.",
+    "scope": "Same-corpus, same-checkpoint numerical-profile replication. Not a new architecture, feasible selector, independent-data validation, or proof that GDN has not lost information."
+  },
+  "full_reference_drift_policy": "If any newly computed canonical full5field observation differs from the completed canonical necessity reference, preserve failure and stop before interpreting oracle effects. Do not relax tolerance, drop a sample or substitute old scores.",
+  "preserve": "All historical shared/history/repeat failures and old FP32 sufficiency remain recorded. The completed canonical whole-record necessity gate remains passed. No new training, scaling, downloads, environment, larger corpus or favorable layer/cohort/mask/checkpoint search follows automatically.",
+  "primary_inference_started": false
+}

@@ -1,0 +1,423 @@
+{
+  "status": "completed",
+  "runs": [
+    {
+      "path": "/media/990Pro/Code/SAS/runs/memory_update/controller-question-branch-20261114-01",
+      "mode": "local",
+      "temporal": false,
+      "gdn_components": false,
+      "source_audit": {
+        "missing_snapshots": [],
+        "evaluation_helper_recorded": true
+      },
+      "endpoint_max_nll_error": {
+        "all_enabled": 0.0,
+        "all_disabled": 0.0
+      },
+      "conditions": {
+        "all_enabled": {
+          "metrics": [
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0006462382655930317
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.002861630947639545
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.011139074072161748
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 4.694576515854957e-05
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 5.202608372201212e-05
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0018736700864489346
+            }
+          ],
+          "joint_all_three_correct": [
+            {
+              "family": "copy",
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1
+            },
+            {
+              "family": "overwrite",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1
+            }
+          ]
+        },
+        "gdn_only_enabled": {
+          "metrics": [
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0010953560849884525
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "correct": 15,
+              "count": 16,
+              "accuracy": 0.9375,
+              "answer_nll": 0.022984934866447777
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0030972292473355387
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 3.1211989153234754e-05
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 8.062207719679768e-05
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0007206628476221036
+            }
+          ],
+          "joint_all_three_correct": [
+            {
+              "family": "copy",
+              "correct": 15,
+              "count": 16,
+              "accuracy": 0.9375
+            },
+            {
+              "family": "overwrite",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1
+            }
+          ]
+        },
+        "attention_only_enabled": {
+          "metrics": [
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.06312572599078219
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "correct": 12,
+              "count": 16,
+              "accuracy": 0.75,
+              "answer_nll": 0.3128075584148367
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "correct": 12,
+              "count": 16,
+              "accuracy": 0.75,
+              "answer_nll": 0.21345025766640902
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.025688043097034097
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.02691667728746931
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.06027592536217223
+            }
+          ],
+          "joint_all_three_correct": [
+            {
+              "family": "copy",
+              "correct": 8,
+              "count": 16,
+              "accuracy": 0.5
+            },
+            {
+              "family": "overwrite",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1
+            }
+          ]
+        },
+        "attention_query_only": {
+          "metrics": [
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.09531221787134807
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "correct": 12,
+              "count": 16,
+              "accuracy": 0.75,
+              "answer_nll": 0.30172091629356146
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "correct": 12,
+              "count": 16,
+              "accuracy": 0.75,
+              "answer_nll": 0.23549419098223248
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.029312340387453638
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.030579629936255515
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.05835463486922284
+            }
+          ],
+          "joint_all_three_correct": [
+            {
+              "family": "copy",
+              "correct": 8,
+              "count": 16,
+              "accuracy": 0.5
+            },
+            {
+              "family": "overwrite",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1
+            }
+          ]
+        },
+        "attention_key_only": {
+          "metrics": [
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.15800527731577554
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "correct": 8,
+              "count": 16,
+              "accuracy": 0.5,
+              "answer_nll": 0.6036578466494879
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.1027356485525767
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0757414794837435
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.08495234612685938
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.07373488182201982
+            }
+          ],
+          "joint_all_three_correct": [
+            {
+              "family": "copy",
+              "correct": 8,
+              "count": 16,
+              "accuracy": 0.5
+            },
+            {
+              "family": "overwrite",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1
+            }
+          ]
+        },
+        "all_disabled": {
+          "metrics": [
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.2822176069021225
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "correct": 7,
+              "count": 16,
+              "accuracy": 0.4375,
+              "answer_nll": 0.625162715713183
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.12856522761285305
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.13321803758541742
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "correct": 7,
+              "count": 8,
+              "accuracy": 0.875,
+              "answer_nll": 0.1491392234650751
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "correct": 8,
+              "count": 8,
+              "accuracy": 1,
+              "answer_nll": 0.0806920810136944
+            }
+          ],
+          "joint_all_three_correct": [
+            {
+              "family": "copy",
+              "correct": 7,
+              "count": 16,
+              "accuracy": 0.4375
+            },
+            {
+              "family": "overwrite",
+              "correct": 7,
+              "count": 8,
+              "accuracy": 0.875
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "interpretation": [
+    "Post-training disablement can introduce distribution shifts; this is not matched-budget retraining.",
+    "Ledger-only changes both recurrent state formation and evidence KV construction. It does not isolate GDN writes.",
+    "Question-only includes the fixed question suffix and answer generation, not just one attention query.",
+    "Source provenance varies across older runs; inspect each run's source audit separately from endpoint replay."
+  ]
+}

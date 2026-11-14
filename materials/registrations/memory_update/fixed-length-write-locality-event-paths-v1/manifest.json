@@ -1,0 +1,154 @@
+{
+  "status": "registered_before_inference",
+  "registered_utc": "2026-11-14T07:28:49.696768+00:00",
+  "model_inference": false,
+  "training": false,
+  "adapters": false,
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "replica_audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-replication-20261114.json",
+  "references": {
+    "discovery": {
+      "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-load-20261114.json",
+      "audit_sha256": "47e1835173dea129230ebe48cff6ee5c3aa59b82eff34322899a0a0319b47e83",
+      "run": "/media/990Pro/Code/SAS/runs/memory_update/write-locality-load-20261114-01",
+      "manifest_sha256": "8588af35b666ae846e496b6a7e8fae4fc0d559d9cc08ede08b2c72b0f1aa1768",
+      "raw_sha256": "3f04d50e2fe6dc93031e97c007bbf164f53bf115290460a434b9df311007ee43",
+      "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+      "records_audited": 576
+    },
+    "replica": {
+      "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-replication-20261114.json",
+      "audit_sha256": "580b1ec27758479eddfd1b5e55e2091de283f4de0f338fc2119bab5dd34771c9",
+      "run": "/media/990Pro/Code/SAS/runs/memory_update/write-locality-replication-20261114-01",
+      "manifest_sha256": "feaa1674dd9784e669203be3b5d05e109a9390e0010397d5a446db1d55c30f92",
+      "raw_sha256": "4479f3833688ab278dcb8f6148e628c52fbfaf56b10d820d81278bdc1fc401bf",
+      "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+      "records_audited": 576
+    }
+  },
+  "primary_recurrence": {
+    "contrasts": [
+      {
+        "id": "unrelated_B_at32",
+        "active_accounts": 32,
+        "axis": "A",
+        "fixed_other_bit": 1,
+        "role": "protected_current",
+        "units": 16,
+        "reference_correct": 12,
+        "candidate_correct": 10,
+        "rescued": 0,
+        "regressed": 2,
+        "both_correct": 10,
+        "both_wrong": 4,
+        "mean_nll_candidate_minus_reference": 0.014938227832317349,
+        "regressed_case_ids": [
+          "write-locality-s97101-a032-v3",
+          "write-locality-s97102-a032-v3"
+        ],
+        "regressed_base_streams": [
+          "write-locality-s97101",
+          "write-locality-s97102"
+        ],
+        "rescued_case_ids": [],
+        "secondary_baseline_correct_regression_rate": {
+          "regressed": 2,
+          "baseline_correct": 12,
+          "rate": 0.16666666666666666
+        },
+        "recurs": true
+      },
+      {
+        "id": "initial_A_at128",
+        "active_accounts": 128,
+        "axis": "A",
+        "fixed_other_bit": 1,
+        "role": "target_initial",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 6,
+        "rescued": 0,
+        "regressed": 10,
+        "both_correct": 6,
+        "both_wrong": 0,
+        "mean_nll_candidate_minus_reference": 0.32765558672448,
+        "regressed_case_ids": [
+          "write-locality-s97100-a128-v0",
+          "write-locality-s97100-a128-v2",
+          "write-locality-s97102-a128-v0",
+          "write-locality-s97102-a128-v1",
+          "write-locality-s97102-a128-v2",
+          "write-locality-s97102-a128-v3",
+          "write-locality-s97103-a128-v0",
+          "write-locality-s97103-a128-v1",
+          "write-locality-s97103-a128-v2",
+          "write-locality-s97103-a128-v3"
+        ],
+        "regressed_base_streams": [
+          "write-locality-s97100",
+          "write-locality-s97102",
+          "write-locality-s97103"
+        ],
+        "rescued_case_ids": [],
+        "secondary_baseline_correct_regression_rate": {
+          "regressed": 10,
+          "baseline_correct": 16,
+          "rate": 0.625
+        },
+        "recurs": true
+      }
+    ],
+    "event_path_gate_passed": true,
+    "interpretation": "Apply only the two registered primaries; secondary signals cannot replace failed primaries."
+  },
+  "complete_reference_audits_reexecuted_at_registration": true,
+  "source_sha256": {
+    "configs/models.json": "c1ca82d887e5892dcb8238bcaeb55bada81607b6457cf0dbf273014f6ddb5305",
+    "configs/semantic_write_locality_event_paths_addendum.json": "a17cf6b406fc6ffa5b623bc1d9bbf7ecb9e76c03aba55541864a29e0f5003b87",
+    "configs/semantic_write_locality_event_paths_commit_guard.json": "ba85327bc97c5a6698e3337b1315a66875c340017d5b3ffeb7cc2e05b6ca9fac",
+    "configs/semantic_write_locality_event_paths_plan.json": "e180ebbb62f8a81775a838e29eb43225d991ba10866eb46722aa8fe8a20e7d40",
+    "configs/semantic_write_locality_load_plan.json": "f0f3d9311eccf72580e500ebf74d2e92e16933898ed59b3d96b8e4673ed25411",
+    "configs/semantic_write_locality_replication_plan.json": "cc321076e4c16df135c506fabf5e9c1edbdf09408899444a6b93289676fecb1f",
+    "sas_memory/calibration.py": "922499d57024c280f3ab93de1dac9ef4a3d611a216f2c1ae4af7fa7862ef7a06",
+    "sas_memory/kv_readout.py": "2927df0cfdaf4972287b83914092e2224eacfc3ccf9d0508e03a64e85e919b8b",
+    "sas_memory/locality_replication.py": "b34538ae6aaeb5f7cc4c0b4c53e9f83c60a069f807b5df81f897db8b683c29ec",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "sas_memory/write_locality_data.py": "ac4ebadc19ce69b527b1c78ca3ee9af7b775f2230a5d991295601186a3725aeb",
+    "scripts/analyze_blocked_reader_adaptation.py": "a23c1d33644f906b1a521fdb44a68d5e6dff86f5c11e094387eaa3fb085f94f5",
+    "scripts/analyze_controller_trial.py": "aee986c912b7f3ada5de142978ef10793f16a7753ffdc8e33733682767137e41",
+    "scripts/analyze_write_locality_load_screen.py": "43adbeb05d687c512654927768a7d01e69241dba91a00b8c008b12793d6a14dd",
+    "scripts/analyze_write_locality_replication.py": "314486a345281970503bc61ad3e102d192589e8844ab6385a2fac7f4181ad89d",
+    "scripts/locality_event_data.py": "35d742c796722f1e8066b7d5a7ebfd858df93726209829514cadfc0874a5f59e",
+    "scripts/prepare_write_locality_event_paths.py": "6fce22ee2e152bbe9fef3262e33967589f585c9c1572bea18717b0c73302ace0",
+    "scripts/prepare_write_locality_load_screen.py": "9d7700bc4d52f1f16b9392cceb8af6a43cc82cd9a42a7fdb2ada8a3dfbc9eab2",
+    "scripts/prepare_write_locality_replication.py": "91e48536230e3b347fb83494612dde647c6f0e5eaf376db2e6fb00c2f6f720de",
+    "scripts/run_controller_trial.py": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262",
+    "scripts/run_write_locality_load_screen.py": "50cf643027299432d247e6fc2ed7cd9d43d5460a50e9d8cf0e29bdef71ced32f",
+    "scripts/run_write_locality_replication.py": "c34ae1209a7958fc9d7de21f58865701c409e26db012514a5e7f28f7fd927232"
+  },
+  "protocol_sha256": {
+    "configs/semantic_write_locality_event_paths_plan.json": "e180ebbb62f8a81775a838e29eb43225d991ba10866eb46722aa8fe8a20e7d40",
+    "configs/semantic_write_locality_event_paths_addendum.json": "a17cf6b406fc6ffa5b623bc1d9bbf7ecb9e76c03aba55541864a29e0f5003b87",
+    "configs/semantic_write_locality_event_paths_commit_guard.json": "ba85327bc97c5a6698e3337b1315a66875c340017d5b3ffeb7cc2e05b6ca9fac"
+  },
+  "registry_sha256": "7bbb5d141693f34bab31c553916bb4e579e7e2c7cfcf9726750030df00d1ed3b",
+  "counts": {
+    "datasets": 2,
+    "strata": 3,
+    "pairs": 96,
+    "pairs_per_stratum_per_dataset": 16,
+    "unique_natural_prefixes": 160,
+    "unique_natural_prefixes_per_dataset": 80,
+    "primary_preservation_readouts": 384,
+    "A_current_companion_readouts": 384,
+    "C_current_companion_readouts": 128,
+    "oracle_history_readouts": 192,
+    "new_full_prefill_C_current_baselines": 64,
+    "cached_natural_endpoint_calibrations_including_companions": 448,
+    "prescribed_self_and_all_path_replays": 48
+  },
+  "source_boundary": "All source caches must stop after the162 ledger records and exclude every question/answer token.",
+  "interpretation": "Frozen diagnosis, not a repair method. Mixed-cache effects and oracle recovery do not prove irreversible recurrent memory damage or its absence."
+}

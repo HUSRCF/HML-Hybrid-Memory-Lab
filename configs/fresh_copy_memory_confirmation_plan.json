@@ -1,0 +1,404 @@
+{
+  "schema_version": 1,
+  "status": "registered_before_fresh_case_generation_or_model_inference",
+  "registered_utc": "2026-11-14T14:40:54.405379+00:00",
+  "purpose": "Test the observed access-recoverability/necessity pattern on a single new fixed cohort, while independently retaining the original generic shared-controller versus independent/read-only architecture controls. Do not treat repeated developer-cohort successes as new-data evidence or as architecture success.",
+  "model_key": "it",
+  "model_class": "Qwen3_5ForCausalLM",
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "local_files_only": true,
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "models": {
+    "native": null,
+    "shared": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "shared",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/shared/step-000432/controller.safetensors",
+      "checkpoint_sha256": "3ac57cfd86116dc712aacd14de526ccc3cb8f60c7348317fbacc16910914d8fc",
+      "checkpoint_metadata_sha256": "b2bc536ef797684ef00736b8a2622eb94dbe7c6d6d6b55a8f672346a35663225",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.007630780778693288,
+        "teacher_numeric_tokens_correct": 2585,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "independent": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "independent",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/independent/step-000432/controller.safetensors",
+      "checkpoint_sha256": "e042e284b0bf7c32dc4f1340120f3e71d904b3ddc08ae5f5ebbc6c3b8d93823f",
+      "checkpoint_metadata_sha256": "9c27b9340c726e6fbf915af8a6d187c27b0a28204950589692cdb8c09b533cf9",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "independent",
+      "rank": 54,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696384,
+      "initial_state_sha256": "02120c5c68629314f6cac9fc2e6adb4f4d3da57691e1d1c0bca711e62c2baf26",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.003956158183937246,
+        "teacher_numeric_tokens_correct": 2591,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "local": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "local",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/local/step-000432/controller.safetensors",
+      "checkpoint_sha256": "776d5e1c35c5aa3ec8056fdaf4ad453b8a85d58d156d1448e2788ca2564c0e91",
+      "checkpoint_metadata_sha256": "ec839a0e752ab0fb988c4a86b8345c5c26151b15c030817e091530006acc4a90",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "local",
+      "rank": 22,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 689216,
+      "initial_state_sha256": "44ebb8784799d6d68369fc7953ccfa42429b30109fbe8cbd43aaa1d8d1b2ea8f",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.013929484663227262,
+        "teacher_numeric_tokens_correct": 2578,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "local_question": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "local_question",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/local_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ee78264808d0a532188c61c78e68407e72551947941ebb977ab25864b600a848",
+      "checkpoint_metadata_sha256": "432c52e03ed06df0230b7c925ff440ca6eaca087f4a5ad1589facbb99635a581",
+      "final_step": 432,
+      "token_policy": "question",
+      "mode": "local",
+      "rank": 22,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 689216,
+      "initial_state_sha256": "44ebb8784799d6d68369fc7953ccfa42429b30109fbe8cbd43aaa1d8d1b2ea8f",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005892252288227247,
+        "teacher_numeric_tokens_correct": 2585,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "attention_only": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "attention_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/attention_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "20d9827c1eec05f9ac425f96530df59bd899a3a3a2f4599e3cfcba494715dd61",
+      "checkpoint_metadata_sha256": "3d6840519da53c2eab88d58937f6b241ee003498b7d0b333f084528e8320ca1a",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "attention_only",
+      "rank": 150,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 691200,
+      "initial_state_sha256": "ac7920d08d807c0bd99a58afda8e72b9658235e8e38093bad83b2f491bd05396",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.03906242988725555,
+        "teacher_numeric_tokens_correct": 2551,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "gdn_all_tokens": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "gdn_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+      "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.006321374711538502,
+        "teacher_numeric_tokens_correct": 2584,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "gdn_question_only": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/gdn-question-timing-20261114-01",
+      "training_arm": "gdn_question",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/gdn-question-timing-20261114.json",
+      "audit_sha256": "1ea60978eeac9414ab0211d4e3ad668c080267724b00706fba9bcb745623825e",
+      "manifest_sha256": "a4df590b2b104dd4a87c9ff7c38b82d2f45a6df67a5a02db3434b084108c67da",
+      "training_plan_sha256": "6b02735cd42629e92676fa7c0ff05a34ed0f0976c56ad8d0df7095de907a7b9b",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/gdn-question-timing-20261114-01/gdn_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "5aeea3bc1679df153bb9e246426da580c37575d7292399edd9c21d98c5952662",
+      "checkpoint_metadata_sha256": "b7f77c2dcc05f2105ebe0ca34832f3a534254630d01f434f951b644e6d3523f1",
+      "final_step": 432,
+      "token_policy": "question",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.004157001361527869,
+        "teacher_numeric_tokens_correct": 2588,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    }
+  },
+  "model_order": [
+    "native",
+    "shared",
+    "independent",
+    "local",
+    "local_question",
+    "attention_only",
+    "gdn_all_tokens",
+    "gdn_question_only"
+  ],
+  "primary_readout_models": [
+    "local_question",
+    "gdn_question_only"
+  ],
+  "regimes_by_model": {
+    "native": [
+      "full"
+    ],
+    "shared": [
+      "full"
+    ],
+    "independent": [
+      "full"
+    ],
+    "local": [
+      "full"
+    ],
+    "local_question": [
+      "full",
+      "oracle",
+      "remove_support",
+      "remove_matched_other"
+    ],
+    "attention_only": [
+      "full"
+    ],
+    "gdn_all_tokens": [
+      "full"
+    ],
+    "gdn_question_only": [
+      "full",
+      "oracle",
+      "remove_support",
+      "remove_matched_other"
+    ]
+  },
+  "training": false,
+  "new_adapters": false,
+  "new_models": false,
+  "new_environment": false,
+  "fresh_case_generation": true,
+  "fixed_checkpoint_protocol": "/home/husrcf/Code/SAS/configs/copy_dependency_transfer_plan.json",
+  "fixed_checkpoint_protocol_sha256": "84d864ce4ad6373059fc49a559a18b5b39d497bbcaa6544afef5bb6fb4888772",
+  "prior_canonical_oracle_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/canonical-oracle-replication-audit-20261114-01.json",
+  "prior_canonical_oracle_audit_sha256": "d3d819049b1fbffba68711c95704cc91541102f3e3ef78096aa35a99a90a3d33",
+  "prior_canonical_necessity_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/canonical-copy-necessity-audit-20261114-01.json",
+  "prior_canonical_necessity_audit_sha256": "e6de2525297a1c2549b40a804e84e5b0c494ae964daf3625e92c24c88d9e0873",
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "profile_source": "scripts/stable_adapter_linears.py",
+  "profile_source_sha256": "99c57ff1ad4fe2722b4a260e62e3a63d69c2190acd9e710193a6fabe7617c670",
+  "precision_addendum": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_precision_addendum.json",
+  "precision_addendum_sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc",
+  "dataset_destination": "/media/990Pro/Code/SAS/datasets/memory_update/fresh-copy-memory-confirmation-v1",
+  "case_generator": "sas_memory.generalization_tasks.build_generalization_cases",
+  "case_generator_source_sha256": "697a6fdc1e9d448fdfd5b7fa6e22adca40477d35c6e70f7aaebf648ef8b608fd",
+  "fresh_seeds": [
+    61000,
+    61001,
+    61002,
+    61003,
+    61004,
+    61005,
+    61006,
+    61007
+  ],
+  "distractor_updates_by_seed_index": [
+    8,
+    64,
+    8,
+    64,
+    8,
+    64,
+    8,
+    64
+  ],
+  "dependency_depths": [
+    1,
+    2,
+    3
+  ],
+  "question_styles": [
+    "original",
+    "entity_first"
+  ],
+  "variants": [
+    "before",
+    "control",
+    "treatment"
+  ],
+  "roles": [
+    "target_current",
+    "protected_current",
+    "target_initial"
+  ],
+  "freshness_checks": "Before any inference, scan prior registered dataset case/registry inputs and reject reused seed/base-case IDs, identical complete physical prompt IDs or identical complete prefix IDs. Seeds are fixed now; stop rather than resample if eligibility/validation fails. Existing templates/tokenizer distribution intentionally remain the same; this is new-history confirmation, not out-of-domain transfer.",
+  "data_policy": "Generate all48related cases from8fixed fresh base streams once, validate executable gold and the full grid, then tokenize all336physical prompts and432bindings. Keep every valid registered question. No outcome-based filtering, extra seeds, alternative cohorts or adaptive load search. Context must remain within4096tokens.",
+  "masks": "Use the existing complete-event oracle constructor and whole-record necessity constructor without changing their semantic rules. Freeze oracle/evidence-removal/nearest equal-token semantically unrelated whole-SET masks for every question, with original positions and prelude retained. Never execute the partial-record nonslice condition. Validate event boundaries, necessary symbolic SET leaf, equal removal counts, deterministic nearest-control ties and disjoint semantic entities before inference.",
+  "counts": {
+    "base_streams": 8,
+    "related_cases": 48,
+    "physical_queries": 336,
+    "related_bindings": 432,
+    "models_full": 8,
+    "models_with_three_extra_masks": 2,
+    "fresh_full_readouts": 2688,
+    "new_masked_readouts": 2016,
+    "all_new_primary_readouts": 4704,
+    "all_new_related_bindings": 6048,
+    "readout_subset_four_regime_readouts": 2688
+  },
+  "generation": {
+    "maximum_new_tokens": 12,
+    "candidate_restriction": false,
+    "gold_nll_tokens": 3,
+    "prefix_processing": "fresh full prefill for every physical query"
+  },
+  "operational_smoke": {
+    "selection": "First and last fresh cases, all variants/roles:18physical prompts. Same10all-role proof samples and6native-prefix sample rules as the sealed prior phases.",
+    "forward_model_order": [
+      "native",
+      "shared",
+      "independent",
+      "local",
+      "local_question",
+      "attention_only",
+      "gdn_all_tokens",
+      "gdn_question_only"
+    ],
+    "reverse_model_order": [
+      "gdn_question_only",
+      "gdn_all_tokens",
+      "attention_only",
+      "local_question",
+      "local",
+      "independent",
+      "shared",
+      "native"
+    ],
+    "readouts_per_order": 252,
+    "gate": "Independently audit both252-readout smokes and exact cross-order equivalence of all252five-field readouts,20complete prefix samples under all3masks (60mask prefix-hash pairs),12question-only nativeprefix checks and10nativeanchors. Same sources/checkpoints/data/masks/arithmetic. No accuracy gate, tolerances, omissions or success filtering. Both required before4704primary readouts."
+  },
+  "controls": {
+    "all_models": "Freeze native and final adapter tensors, record all actual source closures/checkpoint/package/generation hashes, canonical affine scopes/call counts with no native-module overlap, and restore original native hooks after each arm.10pre-controller nativeanchors,10sampled exact unmasked repeats permodel,80all-history exact controls and80detached-native replays in each run.",
+    "primary_readout_models": "On10prescribed samples permodel, verify original complete prefix recurrent/conv/KV/bookkeeping states and logits under everymask, all12historicalKVslice fields, actual all6layer suppressed-probability/mass zero and nonzero retained/unmasked controls, prefill/cached calls, native-prefix identity and hook cleanup.60mask proofs/probability checks plus12question-only nativeprefix checks.",
+    "reference": "Compute fresh full references on every new prompt. All contrasts use the same frozen model/profile/prompt. No previous-cohort prediction is a reference for new data. Stop on numerical/control failure before scientific interpretation."
+  },
+  "scientific_gates": {
+    "readout_sufficiency": {
+      "scope": "Apply the unchanged5checks from scripts/copy_readout_metrics.py:sufficiency_checks to EACH primary model.",
+      "checks": [
+        "oracle current-after>=90/96",
+        "historical-after no lower than own full",
+        "unrelated-after no lower than own full",
+        "positive paired current-after net repair",
+        "net repair positive in>=4of8streams"
+      ],
+      "pass": "Allchecks for both fixed models."
+    },
+    "whole_record_necessity": {
+      "scope": "Apply unchanged6checks from scripts/copy_necessity_metrics.py:necessity_checks to EACH primary model.",
+      "checks": [
+        "matched-other current-after no lower than full",
+        "matched-other historical-after no lower than full",
+        "matched-other unrelated-after no lower than full",
+        "matched-other before joint success no lower than full",
+        "positive signed current-after support-removal harm relative to matched-other",
+        "positive net harm in>=4of8streams"
+      ],
+      "pass": "Allchecks for both fixed models."
+    },
+    "generic_shared_controller": {
+      "scope": "Separate candidate screen on fresh natural full-history observations for all8fixed models. Generic shared latent adapters do not implement explicit semantic-dependency constraints.",
+      "candidate": "shared",
+      "comparators": [
+        "independent",
+        "local_question",
+        "gdn_question_only"
+      ],
+      "endpoint": "Six-answer after-update joint correctness percase, paired using the same48cases clustered by8base streams.",
+      "checks_for_each_comparator": [
+        "positive net paired joint-case gain overall",
+        "positive net gain in>=3of8streams",
+        "positive net gain at EACH depth1,2,3"
+      ],
+      "pass": "Allthreechecks versus EACH of three comparators, using unchanged scripts/copy_transfer_metrics.py:paired_outcomes. Do not collapse this gate with the readout gates.",
+      "interpretation": "Failure does not disprove every semantic co-design. A pass cannot erase previous failures or by itself establish a robust architecture contribution."
+    }
+  },
+  "reporting": "Export every new observation, all6048related bindings, all natural full-history candidate comparisons, all primary readout contrasts, depth/wording/stream results and output-format counts. Show all8models even if only the two primary readout models pass. Mark48cases as related within8streams; no independent-token/example significance claim. Export and inspect scientificPNG/PDF with complete source/artifact provenance.",
+  "failure_policy": "Keep all registered outcomes. No threshold, seed, mask, layer, checkpoint or cohort substitution after scores. Preserve failures and separate numeric/control failure from scientific negative results. Do not automatically retrain or scale.",
+  "preserve": "All prior failed shared/history/repeat primaries stay failed. Prior canonical necessity and same-profile oracle sufficiency stay recorded as passed on the reused development cohort. Oracle evidence addresses are program-supplied and can simplify reasoning; neither oracle success nor record-deletion failure proves GDN information loss or the superiority of a new block.",
+  "case_generation_started": false,
+  "model_inference_started": false
+}

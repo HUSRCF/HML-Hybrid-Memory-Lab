@@ -1,0 +1,29 @@
+{
+  "registered_utc": "2026-11-13T22:09:10.347198+00:00",
+  "reference_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-generalization-20261114-01",
+  "expected_cases_sha256": "a995eea7d47b5b03423ccf17d7c26f65d4d873f7a7fc391821bcc03f563efba7",
+  "modes": [
+    "native",
+    "local_all",
+    "local_question"
+  ],
+  "regimes": [
+    "known_accounts",
+    "source_update",
+    "unrelated_update"
+  ],
+  "cluster_key": "base_case_id",
+  "strata": [
+    "dependency_depth",
+    "question_style"
+  ],
+  "selection": "Every control-order current-target question in the existing generalization cohort. No failing-case selection.",
+  "notes": [
+    "Exploratory follow-up after the generalization screen; no training or tuning.",
+    "The shared short prefix initializes both source and unrelated accounts, then executes the COPY chain.",
+    "Source and unrelated update conditions differ only in the final SET target; token lengths must match.",
+    "The copied target answer is unchanged in every regime.",
+    "Minimal reference results are reused from the completed oracle run, with hash checks and one replay per checkpoint.",
+    "Changing contexts does not itself localize an error to recurrent state or KV/query computation."
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "status": "audited_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/single-fact-native-smoke-20261114-01",
+  "manifest_sha256": "b99cc912476736b285e53e319e81bdde8d3705da21bfcaf869149a6e6712fe3c",
+  "records_audited": 16,
+  "splits": {
+    "train": {
+      "full_history": {
+        "examples": 4,
+        "correct": 4,
+        "accuracy": 1,
+        "answer_nll": 0.005669456751396259,
+        "families": 1,
+        "all_four_correct": 1,
+        "more_than_one_correct": 1,
+        "correct_per_family_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1
+        },
+        "identical_predictions_in_family": 0,
+        "prediction_counts": {
+          "799": 1,
+          "549": 1,
+          "489": 1,
+          "469": 1
+        }
+      },
+      "records_blocked": {
+        "examples": 4,
+        "correct": 0,
+        "accuracy": 0,
+        "answer_nll": 2.893375555674235,
+        "families": 1,
+        "all_four_correct": 0,
+        "more_than_one_correct": 0,
+        "correct_per_family_histogram": {
+          "0": 1,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        "identical_predictions_in_family": 0,
+        "prediction_counts": {
+          "1000000000": 3,
+          "100000000000": 1
+        }
+      }
+    },
+    "validation": {
+      "full_history": {
+        "examples": 4,
+        "correct": 4,
+        "accuracy": 1,
+        "answer_nll": 0.004884578287601471,
+        "families": 1,
+        "all_four_correct": 1,
+        "more_than_one_correct": 1,
+        "correct_per_family_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1
+        },
+        "identical_predictions_in_family": 0,
+        "prediction_counts": {
+          "586": 1,
+          "510": 1,
+          "517": 1,
+          "476": 1
+        }
+      },
+      "records_blocked": {
+        "examples": 4,
+        "correct": 0,
+        "accuracy": 0,
+        "answer_nll": 2.878608544667562,
+        "families": 1,
+        "all_four_correct": 0,
+        "more_than_one_correct": 0,
+        "correct_per_family_histogram": {
+          "0": 1,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        "identical_predictions_in_family": 1,
+        "prediction_counts": {
+          "100000000000": 4
+        }
+      }
+    }
+  },
+  "interpretation": "Immediate single-fact carrier/readout positive control, not a long-memory or semantic-update result. Within each family only three value-token IDs differ; question text, token positions, all other input IDs and allowed history columns match. A deterministic prefix-independent answer can get at most one of four siblings correct. Retained carriers include recurrent/convolution state built with normal hybrid prefix attention.",
+  "analysis_source_sha256": "41e5dcca6edfbcab09a8aeb9be5edb67b5e58dddc3c493148469b5aa4fd0d92a"
+}

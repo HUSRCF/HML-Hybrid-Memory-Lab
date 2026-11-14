@@ -1,0 +1,22 @@
+{
+  "status": "complete_independently_audited_export_and_visually_verified_figure",
+  "verified_utc": "2026-11-14T09:34:21.415569+00:00",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-control-panel-20261114.json",
+  "source_audit_sha256": "5e7c14141a335565fbb0187826ed9f60966770394ad674d745b33ba2ab4902e0",
+  "source_manifest_sha256": "30c7b97bf163479aa015c563e199d2afbe6e27b702615fe9daffb20557c7f4d1",
+  "source_dataset_manifest_sha256": "41ccbfa48fc472394152dbb90c0037ed2f0d503e39c5cb90c2026ba1b012e452",
+  "registry_sha256": "d94101f7c97349476d92f0cdd6057b17553cac99f1fb52336fb88fa4a88b57ca",
+  "external_timing_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-adapter-transfer-20261114.json",
+  "external_timing_audit_sha256": "c42750b6e3670af3a2de8ac0fcd615c03c9cf9381f470e724edc05a62868e7fc",
+  "analysis_source": "/home/husrcf/Code/SAS/scripts/export_write_locality_control_panel.py",
+  "analysis_source_sha256": "7175611ded5c0530c68e0e0c49a82b29dd547a6c94f91de8a5b63a16caa6ebbd",
+  "files": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-control-panel-comparison-20261114.json": "08a0ef74dec48909adc8a460e6d4feea768326c69c51b9a81c1e124e8c307061",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-control-panel-comparison-20261114.source.py": "7175611ded5c0530c68e0e0c49a82b29dd547a6c94f91de8a5b63a16caa6ebbd",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-control-panel-comparison-20261114.csv": "a2c0f4b52e761eced85193a0ad1f3efcd2fdad730e2f130dbe866ff4e1873c73",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-control-panel-comparison-20261114.png": "88b7a9f803aad9d90ed738c1c4a0e9f9a713cd953e2fe0918d3b8ae5a798648b",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-control-panel-comparison-20261114.pdf": "7d960ac279060cf799f7590804d9e16598916a3631f241eb6224d41d01a1ff0d"
+  },
+  "visual_check": "Viewed final PNG: all six cohort/stratum panels, eight model labels, four role columns, n/a cells, /16 counts, current A/C joint guards and related-value/fit caveats are readable and agree with audited metrics.",
+  "posthoc_agreement_scope": "Shared/local-question384 exact generated-output matches are descriptive after equal totals were observed, not representation or population equivalence."
+}

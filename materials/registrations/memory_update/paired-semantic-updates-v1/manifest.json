@@ -1,0 +1,58 @@
+{
+  "status": "registered_before_inference",
+  "registered_utc": "2026-11-14T01:38:15.010879+00:00",
+  "training": false,
+  "model_inference": false,
+  "reader_policy": "full",
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "counts": {
+    "train": {
+      "base_families": 24,
+      "cases": 96,
+      "examples": 864,
+      "query_variant_families": 216,
+      "siblings_per_group": 4,
+      "per_family_cases": {
+        "copy": 16,
+        "overwrite": 16,
+        "independent_swap": 16,
+        "duplicate_set": 16,
+        "dependent_swap": 16,
+        "accumulate": 16
+      }
+    },
+    "validation": {
+      "base_families": 12,
+      "cases": 48,
+      "examples": 432,
+      "query_variant_families": 108,
+      "siblings_per_group": 4,
+      "per_family_cases": {
+        "dependent_swap": 8,
+        "accumulate": 8,
+        "duplicate_set": 8,
+        "copy": 8,
+        "independent_swap": 8,
+        "overwrite": 8
+      }
+    }
+  },
+  "data_sha256": "9a58823c8348db79b5b20db418894ae51782d02d943dc2440365af66c6838791",
+  "registry_sha256": "8f70d5b240b52d5acf8e280a6a2e1e8d8a185479eaab9fd502dfc2995d060024",
+  "tokenized_input_answer_sha256": "ee59f26241a0fc7727f6fced018d2c5062986eb5c5d37240001dab1e3a0e1563",
+  "source_sha256": {
+    "scripts/prepare_paired_semantic_updates.py": "27cf1b60a66f9aebaa4b6ce519344bf45930f1b9bf2dde3998e6d59fcb2356fa",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "scripts/run_controller_trial.py": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262",
+    "scripts/analyze_blocked_reader_adaptation.py": "a23c1d33644f906b1a521fdb44a68d5e6dff86f5c11e094387eaa3fb085f94f5"
+  },
+  "tokenizer_sha256": {
+    "chat_template.jinja": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+    "config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c"
+  },
+  "interpretation": "Mainline multi-entity full-history diagnostics, not a query-capacity training change. Six executable semantic families, paired before/control/treatment and current/protected/initial readouts. Four siblings change only registered SET value tokens and every fixed question/variant has four distinct answers. ADD amounts remain constant and accumulate. No architectural or write-damage claim; native evaluation and a matched shared/independent/local training protocol still need separate registration."
+}

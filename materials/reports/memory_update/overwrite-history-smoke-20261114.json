@@ -1,0 +1,53 @@
+{
+  "status": "audited_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/overwrite-history-smoke-20261114-01",
+  "manifest_sha256": "fb710bf8d92fed896a7d2ae530050af8dc0d9f5d3253ff91366005bbe143234d",
+  "dataset_manifest_sha256": "d783f7c3261a44f108db2dc7064772bc044a1570e1e89bfbef8e5f018d583330",
+  "data_sha256": "e5ca4d2537487e5d12c49f387f075cdc214973838b4a8dd2537719931ae76ba3",
+  "registry_sha256": "84c8cd5bf6ea828190b9f8b2d3ca5ae936cb6d9ad6e261422481f7f200cceff0",
+  "protocol_sha256": "a6f66f16f8e6f58ff140739727dbf2c2ee164749409b5ea4286d0a5eb66c247d",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "records_audited": 24,
+  "case_values_audited": 2,
+  "same_final_pairs_audited": 4,
+  "actual_attention_checks": 8,
+  "native_exact_replays": 8,
+  "execution_engine": {
+    "path": "/home/husrcf/Code/SAS/scripts/run_semantic_history_no_repeat.py",
+    "sha256": "052b40cc3ccf66eacc579595bfc81d0e74e80aeceb5ec2a3eb362470a077bb6f",
+    "bound_protocol": "/home/husrcf/Code/SAS/configs/semantic_overwrite_history_plan.json",
+    "bound_data_functions": {
+      "evaluated_members": "scripts.overwrite_history_data.evaluated_members",
+      "identity": "scripts.overwrite_history_data.identity",
+      "prompt_for": "scripts.overwrite_history_data.prompt_for",
+      "safety_samples": "scripts.overwrite_history_data.safety_samples"
+    },
+    "source_set_sha256": "095908e9d76416899acc78e2913f60302ef4bea5542565ac8be745563136349b",
+    "method": "private module instance; replace only protocol, source set and four data functions; execute bytecode unchanged"
+  },
+  "metrics": {
+    "examples": 24,
+    "correct": 24,
+    "primary_signal_evaluated": false
+  },
+  "reference_gate": {
+    "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/history-no-repeat-20261114.json",
+    "audit_sha256": "16a21e91ea563cb753d3744cbe3d869c9bbbe32b42bfc065c8ea2759ccf0bb47",
+    "manifest_sha256": "92bead97e90577fd678794a1b4d8279d298386fff17d195e787b10ef0aeadbac",
+    "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+    "packages": {
+      "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+      "transformers": "5.14.1",
+      "fla-core": "0.6.0"
+    },
+    "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+    "previous_history_primary_passed": false
+  },
+  "interpretation": "Test a new exploratory current-value observation with counterbalanced value identities: do redundant and novel final writes yield different current-value accuracy despite the same final executable state? Preserve the failed historical-preservation primary from the previous protocol; this study is not a replacement success criterion.",
+  "analysis_source_sha256": "76537e10f94d52fa4b4fc471b38e2776a35503d09f88f1bd93e34f3237f23b0b"
+}

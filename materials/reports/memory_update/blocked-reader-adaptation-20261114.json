@@ -1,0 +1,575 @@
+{
+  "status": "completed_and_audited",
+  "analysis_source_sha256": "715c7d41305946406b3d7894c42d48e0806e5c44adf30a8661895eb423eb0294",
+  "arms": [
+    {
+      "path": "/media/990Pro/Code/SAS/runs/memory_update/blocked-reader-question_only-trained-20261114-01",
+      "manifest_sha256": "76ca2c28cf9fbc914b6cf02fd86911f7bb1867d7bc6e4ed6a7b38ab71e5ef9dd",
+      "checkpoint_sha256": "deaa9f1d176bb4388e14473087a86f2852f03e5d0219c0b1c529122e1590aba8",
+      "token_policy": "question",
+      "initial_state_sha256": "44ebb8784799d6d68369fc7953ccfa42429b30109fbe8cbd43aaa1d8d1b2ea8f",
+      "data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+      "tokenized_input_answer_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a",
+      "reader_registry_sha256": "e1f77655a674e820283aed70fd24c58878b94e10e0b6f04868f31f7507dc2c4b",
+      "parameters": 689216,
+      "steps": 64,
+      "training_loss_first": 4.460931301116943,
+      "training_loss_last": 1.4516629576683044,
+      "metrics": {
+        "validation": {
+          "native": {
+            "metrics": [
+              {
+                "family": "copy",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.8703684012095136
+              },
+              {
+                "family": "copy",
+                "role": "target_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.749768932660421
+              },
+              {
+                "family": "copy",
+                "role": "target_initial",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.786153336366018
+              },
+              {
+                "family": "overwrite",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0,
+                "answer_nll": 2.695207754770915
+              },
+              {
+                "family": "overwrite",
+                "role": "target_current",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0,
+                "answer_nll": 2.5286344289779663
+              },
+              {
+                "family": "overwrite",
+                "role": "target_initial",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0,
+                "answer_nll": 2.684067726135254
+              }
+            ],
+            "joint_all_three_correct": [
+              {
+                "family": "copy",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0
+              },
+              {
+                "family": "overwrite",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0
+              }
+            ]
+          },
+          "adapted": {
+            "metrics": [
+              {
+                "family": "copy",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.284412205219269
+              },
+              {
+                "family": "copy",
+                "role": "target_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.092304507891337
+              },
+              {
+                "family": "copy",
+                "role": "target_initial",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.0586360494295755
+              },
+              {
+                "family": "overwrite",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0,
+                "answer_nll": 2.1766672134399414
+              },
+              {
+                "family": "overwrite",
+                "role": "target_current",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0,
+                "answer_nll": 2.0580691496531167
+              },
+              {
+                "family": "overwrite",
+                "role": "target_initial",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0,
+                "answer_nll": 1.8927454948425293
+              }
+            ],
+            "joint_all_three_correct": [
+              {
+                "family": "copy",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0
+              },
+              {
+                "family": "overwrite",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0
+              }
+            ]
+          }
+        },
+        "test": {
+          "native": {
+            "metrics": [
+              {
+                "family": "copy",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 16,
+                "accuracy": 0,
+                "answer_nll": 2.7054399251937866
+              },
+              {
+                "family": "copy",
+                "role": "target_current",
+                "correct": 0,
+                "count": 16,
+                "accuracy": 0,
+                "answer_nll": 2.841140021880468
+              },
+              {
+                "family": "copy",
+                "role": "target_initial",
+                "correct": 0,
+                "count": 16,
+                "accuracy": 0,
+                "answer_nll": 2.7758736312389374
+              },
+              {
+                "family": "overwrite",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.35349573691686
+              },
+              {
+                "family": "overwrite",
+                "role": "target_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.588995556036631
+              },
+              {
+                "family": "overwrite",
+                "role": "target_initial",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.7404446999231973
+              }
+            ],
+            "joint_all_three_correct": [
+              {
+                "family": "copy",
+                "correct": 0,
+                "count": 16,
+                "accuracy": 0
+              },
+              {
+                "family": "overwrite",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0
+              }
+            ]
+          },
+          "adapted": {
+            "metrics": [
+              {
+                "family": "copy",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 16,
+                "accuracy": 0,
+                "answer_nll": 2.175543228785197
+              },
+              {
+                "family": "copy",
+                "role": "target_current",
+                "correct": 0,
+                "count": 16,
+                "accuracy": 0,
+                "answer_nll": 2.1144065658251443
+              },
+              {
+                "family": "copy",
+                "role": "target_initial",
+                "correct": 1,
+                "count": 16,
+                "accuracy": 0.0625,
+                "answer_nll": 1.9945236643155415
+              },
+              {
+                "family": "overwrite",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.0465441942214966
+              },
+              {
+                "family": "overwrite",
+                "role": "target_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.1092639366785684
+              },
+              {
+                "family": "overwrite",
+                "role": "target_initial",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 1.9682040611902873
+              }
+            ],
+            "joint_all_three_correct": [
+              {
+                "family": "copy",
+                "correct": 0,
+                "count": 16,
+                "accuracy": 0
+              },
+              {
+                "family": "overwrite",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "/media/990Pro/Code/SAS/runs/memory_update/blocked-reader-all_tokens-trained-20261114-01",
+      "manifest_sha256": "831fb5c43449112f02ccdc9cc6fe0c72986bf3b41fbaf861841f31c6564cd987",
+      "checkpoint_sha256": "31ac8a4a71fe9072555521a40d325342e7a7f0d57f2d6d32f3cb4922663b0b5c",
+      "token_policy": "all",
+      "initial_state_sha256": "44ebb8784799d6d68369fc7953ccfa42429b30109fbe8cbd43aaa1d8d1b2ea8f",
+      "data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+      "tokenized_input_answer_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a",
+      "reader_registry_sha256": "e1f77655a674e820283aed70fd24c58878b94e10e0b6f04868f31f7507dc2c4b",
+      "parameters": 689216,
+      "steps": 64,
+      "training_loss_first": 4.460931301116943,
+      "training_loss_last": 1.5151357650756836,
+      "metrics": {
+        "validation": {
+          "native": {
+            "metrics": [
+              {
+                "family": "copy",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.8703684012095136
+              },
+              {
+                "family": "copy",
+                "role": "target_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.749768932660421
+              },
+              {
+                "family": "copy",
+                "role": "target_initial",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.786153336366018
+              },
+              {
+                "family": "overwrite",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0,
+                "answer_nll": 2.695207754770915
+              },
+              {
+                "family": "overwrite",
+                "role": "target_current",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0,
+                "answer_nll": 2.5286344289779663
+              },
+              {
+                "family": "overwrite",
+                "role": "target_initial",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0,
+                "answer_nll": 2.684067726135254
+              }
+            ],
+            "joint_all_three_correct": [
+              {
+                "family": "copy",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0
+              },
+              {
+                "family": "overwrite",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0
+              }
+            ]
+          },
+          "adapted": {
+            "metrics": [
+              {
+                "family": "copy",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.20287162065506
+              },
+              {
+                "family": "copy",
+                "role": "target_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.143446226914724
+              },
+              {
+                "family": "copy",
+                "role": "target_initial",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 1.9725098013877869
+              },
+              {
+                "family": "overwrite",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0,
+                "answer_nll": 2.025520443916321
+              },
+              {
+                "family": "overwrite",
+                "role": "target_current",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0,
+                "answer_nll": 2.022208094596863
+              },
+              {
+                "family": "overwrite",
+                "role": "target_initial",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0,
+                "answer_nll": 1.9924761454264321
+              }
+            ],
+            "joint_all_three_correct": [
+              {
+                "family": "copy",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0
+              },
+              {
+                "family": "overwrite",
+                "correct": 0,
+                "count": 4,
+                "accuracy": 0
+              }
+            ]
+          }
+        },
+        "test": {
+          "native": {
+            "metrics": [
+              {
+                "family": "copy",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 16,
+                "accuracy": 0,
+                "answer_nll": 2.7054399251937866
+              },
+              {
+                "family": "copy",
+                "role": "target_current",
+                "correct": 0,
+                "count": 16,
+                "accuracy": 0,
+                "answer_nll": 2.841140021880468
+              },
+              {
+                "family": "copy",
+                "role": "target_initial",
+                "correct": 0,
+                "count": 16,
+                "accuracy": 0,
+                "answer_nll": 2.7758736312389374
+              },
+              {
+                "family": "overwrite",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.35349573691686
+              },
+              {
+                "family": "overwrite",
+                "role": "target_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.588995556036631
+              },
+              {
+                "family": "overwrite",
+                "role": "target_initial",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.7404446999231973
+              }
+            ],
+            "joint_all_three_correct": [
+              {
+                "family": "copy",
+                "correct": 0,
+                "count": 16,
+                "accuracy": 0
+              },
+              {
+                "family": "overwrite",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0
+              }
+            ]
+          },
+          "adapted": {
+            "metrics": [
+              {
+                "family": "copy",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 16,
+                "accuracy": 0,
+                "answer_nll": 2.1740159591039023
+              },
+              {
+                "family": "copy",
+                "role": "target_current",
+                "correct": 0,
+                "count": 16,
+                "accuracy": 0,
+                "answer_nll": 2.1130793591340384
+              },
+              {
+                "family": "copy",
+                "role": "target_initial",
+                "correct": 0,
+                "count": 16,
+                "accuracy": 0,
+                "answer_nll": 1.8747754196325939
+              },
+              {
+                "family": "overwrite",
+                "role": "protected_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.0792724887530007
+              },
+              {
+                "family": "overwrite",
+                "role": "target_current",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 2.0096208453178406
+              },
+              {
+                "family": "overwrite",
+                "role": "target_initial",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0,
+                "answer_nll": 1.8976462880770366
+              }
+            ],
+            "joint_all_three_correct": [
+              {
+                "family": "copy",
+                "correct": 0,
+                "count": 16,
+                "accuracy": 0
+              },
+              {
+                "family": "overwrite",
+                "correct": 0,
+                "count": 8,
+                "accuracy": 0
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "interpretation": "One fixed initialization and reused diagnostic cases. Question-only success is constructive recoverability through adapted computation; all-token gains change both recurrent and attention prefix paths. Failure does not establish absent information, state capacity limits or GDN write damage. No semantic shared-controller architecture claim."
+}

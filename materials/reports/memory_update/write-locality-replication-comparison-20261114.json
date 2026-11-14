@@ -1,0 +1,5702 @@
+{
+  "status": "completed_native_locality_replication_comparison",
+  "audit_report_sha256": "580b1ec27758479eddfd1b5e55e2091de283f4de0f338fc2119bab5dd34771c9",
+  "analysis_source_sha256": "9368b8a80fc0949c134dfa394a4cee11dcf8a0bb7226f66d9cb0de1958291f31",
+  "native_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "cohorts": {
+    "discovery": {
+      "source_run": "/media/990Pro/Code/SAS/runs/memory_update/write-locality-load-20261114-01",
+      "manifest_sha256": "8588af35b666ae846e496b6a7e8fae4fc0d559d9cc08ede08b2c72b0f1aa1768",
+      "seeds": [
+        97000,
+        97001,
+        97002,
+        97003
+      ],
+      "metrics": {
+        "examples": 576,
+        "correct": 528,
+        "cell_role_counts": [
+          {
+            "active_accounts": 8,
+            "cell": "A0_C0",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.039613482619946204
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A0_C0",
+            "role": "protected_current",
+            "correct": 15,
+            "examples": 16,
+            "answer_nll": 0.19859947574635348
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A0_C0",
+            "role": "target_initial",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.02793289259231339
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A1_C0",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.14381818162898222
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A1_C0",
+            "role": "protected_current",
+            "correct": 15,
+            "examples": 16,
+            "answer_nll": 0.22912253191073736
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A1_C0",
+            "role": "target_initial",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.11115172148371737
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A0_C1",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.04789157390284041
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A0_C1",
+            "role": "protected_current",
+            "correct": 15,
+            "examples": 16,
+            "answer_nll": 0.20371459672848383
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A0_C1",
+            "role": "target_initial",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.03127444403556486
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A1_C1",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.14255287715544304
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A1_C1",
+            "role": "protected_current",
+            "correct": 15,
+            "examples": 16,
+            "answer_nll": 0.21916258645554385
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A1_C1",
+            "role": "target_initial",
+            "correct": 15,
+            "examples": 16,
+            "answer_nll": 0.12840536360939345
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A0_C0",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.07354777321840326
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A0_C0",
+            "role": "protected_current",
+            "correct": 13,
+            "examples": 16,
+            "answer_nll": 0.3377828641484181
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A0_C0",
+            "role": "target_initial",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.04829481251848241
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A1_C0",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.1403195963551601
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A1_C0",
+            "role": "protected_current",
+            "correct": 12,
+            "examples": 16,
+            "answer_nll": 0.3708256756265958
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A1_C0",
+            "role": "target_initial",
+            "correct": 14,
+            "examples": 16,
+            "answer_nll": 0.21231146156787872
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A0_C1",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.07964939158409834
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A0_C1",
+            "role": "protected_current",
+            "correct": 13,
+            "examples": 16,
+            "answer_nll": 0.3444812490294377
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A0_C1",
+            "role": "target_initial",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.05027000528449813
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A1_C1",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.12995569594204426
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A1_C1",
+            "role": "protected_current",
+            "correct": 11,
+            "examples": 16,
+            "answer_nll": 0.3764340728521347
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A1_C1",
+            "role": "target_initial",
+            "correct": 13,
+            "examples": 16,
+            "answer_nll": 0.23402246336142224
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A0_C0",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.12864238023757935
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A0_C0",
+            "role": "protected_current",
+            "correct": 12,
+            "examples": 16,
+            "answer_nll": 0.3036204067369302
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A0_C0",
+            "role": "target_initial",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.07925104823273917
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A1_C0",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.17160169035196304
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A1_C0",
+            "role": "protected_current",
+            "correct": 12,
+            "examples": 16,
+            "answer_nll": 0.32923900460203487
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A1_C0",
+            "role": "target_initial",
+            "correct": 13,
+            "examples": 16,
+            "answer_nll": 0.2791724434743325
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A0_C1",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.13184958385924497
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A0_C1",
+            "role": "protected_current",
+            "correct": 13,
+            "examples": 16,
+            "answer_nll": 0.32972699279586476
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A0_C1",
+            "role": "target_initial",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.07817488947572808
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A1_C1",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.16277125477790833
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A1_C1",
+            "role": "protected_current",
+            "correct": 12,
+            "examples": 16,
+            "answer_nll": 0.3669511501987775
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A1_C1",
+            "role": "target_initial",
+            "correct": 11,
+            "examples": 16,
+            "answer_nll": 0.30425255559384823
+          }
+        ],
+        "preservation_contrasts": [
+          {
+            "active_accounts": 8,
+            "axis": "A",
+            "fixed_other_bit": 0,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 15,
+            "candidate_correct": 15,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 15,
+            "both_wrong": 1,
+            "mean_nll_candidate_minus_reference": 0.030523056164383888,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 15,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "A",
+            "fixed_other_bit": 0,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.08321882889140397,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "target_current",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.008278091282894213,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 15,
+            "candidate_correct": 15,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 15,
+            "both_wrong": 1,
+            "mean_nll_candidate_minus_reference": 0.005115120982130372,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 15,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.00334155144325147,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "A",
+            "fixed_other_bit": 1,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 15,
+            "candidate_correct": 15,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 15,
+            "both_wrong": 1,
+            "mean_nll_candidate_minus_reference": 0.015447989727060006,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 15,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "A",
+            "fixed_other_bit": 1,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 15,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 15,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.09713091957382858,
+            "regressed_case_ids": [
+              "write-locality-s97002-a008-v2"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97002"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 16,
+              "rate": 0.0625
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "target_current",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": -0.0012653044735391919,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 15,
+            "candidate_correct": 15,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 15,
+            "both_wrong": 1,
+            "mean_nll_candidate_minus_reference": -0.009959945455193513,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 15,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 15,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 15,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.017253642125676077,
+            "regressed_case_ids": [
+              "write-locality-s97002-a008-v2"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97002"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 16,
+              "rate": 0.0625
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "A",
+            "fixed_other_bit": 0,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 13,
+            "candidate_correct": 12,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 12,
+            "both_wrong": 3,
+            "mean_nll_candidate_minus_reference": 0.033042811478177704,
+            "regressed_case_ids": [
+              "write-locality-s97000-a032-v2"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97000"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 13,
+              "rate": 0.07692307692307693
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "A",
+            "fixed_other_bit": 0,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 14,
+            "rescued": 0,
+            "regressed": 2,
+            "both_correct": 14,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.1640166490493963,
+            "regressed_case_ids": [
+              "write-locality-s97002-a032-v2",
+              "write-locality-s97003-a032-v1"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97002",
+              "write-locality-s97003"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 2,
+              "baseline_correct": 16,
+              "rate": 0.125
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "target_current",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.00610161836569508,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 13,
+            "candidate_correct": 13,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 13,
+            "both_wrong": 3,
+            "mean_nll_candidate_minus_reference": 0.006698384881019597,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 13,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.001975192766015727,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "A",
+            "fixed_other_bit": 1,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 13,
+            "candidate_correct": 11,
+            "rescued": 0,
+            "regressed": 2,
+            "both_correct": 11,
+            "both_wrong": 3,
+            "mean_nll_candidate_minus_reference": 0.031952823822697,
+            "regressed_case_ids": [
+              "write-locality-s97000-a032-v2",
+              "write-locality-s97003-a032-v1"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97000",
+              "write-locality-s97003"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 2,
+              "baseline_correct": 13,
+              "rate": 0.15384615384615385
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "A",
+            "fixed_other_bit": 1,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 13,
+            "rescued": 0,
+            "regressed": 3,
+            "both_correct": 13,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.18375245807692409,
+            "regressed_case_ids": [
+              "write-locality-s97001-a032-v1",
+              "write-locality-s97002-a032-v2",
+              "write-locality-s97003-a032-v1"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97001",
+              "write-locality-s97002",
+              "write-locality-s97003"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 3,
+              "baseline_correct": 16,
+              "rate": 0.1875
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "target_current",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": -0.010363900413115818,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 12,
+            "candidate_correct": 11,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 11,
+            "both_wrong": 4,
+            "mean_nll_candidate_minus_reference": 0.0056083972255388925,
+            "regressed_case_ids": [
+              "write-locality-s97003-a032-v1"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97003"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 12,
+              "rate": 0.08333333333333333
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 14,
+            "candidate_correct": 13,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 13,
+            "both_wrong": 2,
+            "mean_nll_candidate_minus_reference": 0.021711001793543502,
+            "regressed_case_ids": [
+              "write-locality-s97001-a032-v1"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97001"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 14,
+              "rate": 0.07142857142857142
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "A",
+            "fixed_other_bit": 0,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 12,
+            "candidate_correct": 12,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 12,
+            "both_wrong": 4,
+            "mean_nll_candidate_minus_reference": 0.025618597865104675,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 12,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "A",
+            "fixed_other_bit": 0,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 13,
+            "rescued": 0,
+            "regressed": 3,
+            "both_correct": 13,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.19992139524159333,
+            "regressed_case_ids": [
+              "write-locality-s97002-a128-v2",
+              "write-locality-s97003-a128-v1",
+              "write-locality-s97003-a128-v2"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97002",
+              "write-locality-s97003"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 3,
+              "baseline_correct": 16,
+              "rate": 0.1875
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "target_current",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.00320720362166564,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 12,
+            "candidate_correct": 13,
+            "rescued": 1,
+            "regressed": 0,
+            "both_correct": 12,
+            "both_wrong": 3,
+            "mean_nll_candidate_minus_reference": 0.026106586058934525,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [
+              "write-locality-s97000-a128-v1"
+            ],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 12,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": -0.0010761587570110958,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "A",
+            "fixed_other_bit": 1,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 13,
+            "candidate_correct": 12,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 12,
+            "both_wrong": 3,
+            "mean_nll_candidate_minus_reference": 0.03722415740291278,
+            "regressed_case_ids": [
+              "write-locality-s97000-a128-v1"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97000"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 13,
+              "rate": 0.07692307692307693
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "A",
+            "fixed_other_bit": 1,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 11,
+            "rescued": 0,
+            "regressed": 5,
+            "both_correct": 11,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.22607766611812016,
+            "regressed_case_ids": [
+              "write-locality-s97000-a128-v1",
+              "write-locality-s97001-a128-v2",
+              "write-locality-s97002-a128-v2",
+              "write-locality-s97003-a128-v1",
+              "write-locality-s97003-a128-v2"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97000",
+              "write-locality-s97001",
+              "write-locality-s97002",
+              "write-locality-s97003"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 5,
+              "baseline_correct": 16,
+              "rate": 0.3125
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "target_current",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": -0.008830435574054715,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 12,
+            "candidate_correct": 12,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 12,
+            "both_wrong": 4,
+            "mean_nll_candidate_minus_reference": 0.03771214559674263,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 12,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 13,
+            "candidate_correct": 11,
+            "rescued": 0,
+            "regressed": 2,
+            "both_correct": 11,
+            "both_wrong": 3,
+            "mean_nll_candidate_minus_reference": 0.02508011211951574,
+            "regressed_case_ids": [
+              "write-locality-s97000-a128-v1",
+              "write-locality-s97001-a128-v2"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97000",
+              "write-locality-s97001"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 2,
+              "baseline_correct": 13,
+              "rate": 0.15384615384615385
+            }
+          }
+        ],
+        "target_A_update_pairs": [
+          {
+            "active_accounts": 8,
+            "fixed_C_bit": 0,
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.10420469900903602,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "fixed_C_bit": 1,
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.09466130325260262,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 32,
+            "fixed_C_bit": 0,
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.06677182313675682,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 32,
+            "fixed_C_bit": 1,
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.05030630435794592,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 128,
+            "fixed_C_bit": 0,
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.0429593101143837,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 128,
+            "fixed_C_bit": 1,
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.03092167091866334,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          }
+        ],
+        "functional_units_by_load": [
+          {
+            "active_accounts": 8,
+            "individual": {
+              "correct": 187,
+              "units": 192
+            },
+            "all_three_roles": {
+              "correct": 59,
+              "units": 64
+            },
+            "all_four_values": {
+              "correct": 43,
+              "units": 48
+            },
+            "all_twelve_cell_role_readouts": {
+              "correct": 14,
+              "units": 16
+            },
+            "all_48_value_cell_role_readouts": {
+              "correct": 2,
+              "units": 4
+            }
+          },
+          {
+            "active_accounts": 32,
+            "individual": {
+              "correct": 172,
+              "units": 192
+            },
+            "all_three_roles": {
+              "correct": 46,
+              "units": 64
+            },
+            "all_four_values": {
+              "correct": 33,
+              "units": 48
+            },
+            "all_twelve_cell_role_readouts": {
+              "correct": 10,
+              "units": 16
+            },
+            "all_48_value_cell_role_readouts": {
+              "correct": 0,
+              "units": 4
+            }
+          },
+          {
+            "active_accounts": 128,
+            "individual": {
+              "correct": 169,
+              "units": 192
+            },
+            "all_three_roles": {
+              "correct": 44,
+              "units": 64
+            },
+            "all_four_values": {
+              "correct": 27,
+              "units": 48
+            },
+            "all_twelve_cell_role_readouts": {
+              "correct": 9,
+              "units": 16
+            },
+            "all_48_value_cell_role_readouts": {
+              "correct": 0,
+              "units": 4
+            }
+          }
+        ],
+        "base_stream_results": [
+          {
+            "seed": 97000,
+            "active_accounts": 8,
+            "correct": 48,
+            "examples": 48,
+            "answer_nll": 0.10135445223810773
+          },
+          {
+            "seed": 97001,
+            "active_accounts": 8,
+            "correct": 48,
+            "examples": 48,
+            "answer_nll": 0.10046976358474542
+          },
+          {
+            "seed": 97002,
+            "active_accounts": 8,
+            "correct": 47,
+            "examples": 48,
+            "answer_nll": 0.11057759704999626
+          },
+          {
+            "seed": 97003,
+            "active_accounts": 8,
+            "correct": 44,
+            "examples": 48,
+            "answer_nll": 0.1953447630835904
+          },
+          {
+            "seed": 97000,
+            "active_accounts": 32,
+            "correct": 46,
+            "examples": 48,
+            "answer_nll": 0.17588534268240133
+          },
+          {
+            "seed": 97001,
+            "active_accounts": 32,
+            "correct": 39,
+            "examples": 48,
+            "answer_nll": 0.1896892736872865
+          },
+          {
+            "seed": 97002,
+            "active_accounts": 32,
+            "correct": 46,
+            "examples": 48,
+            "answer_nll": 0.16620192643151516
+          },
+          {
+            "seed": 97003,
+            "active_accounts": 32,
+            "correct": 41,
+            "examples": 48,
+            "answer_nll": 0.26752181102832157
+          },
+          {
+            "seed": 97000,
+            "active_accounts": 128,
+            "correct": 44,
+            "examples": 48,
+            "answer_nll": 0.24488544546895558
+          },
+          {
+            "seed": 97001,
+            "active_accounts": 128,
+            "correct": 43,
+            "examples": 48,
+            "answer_nll": 0.19461073335777554
+          },
+          {
+            "seed": 97002,
+            "active_accounts": 128,
+            "correct": 42,
+            "examples": 48,
+            "answer_nll": 0.17886162344883713
+          },
+          {
+            "seed": 97003,
+            "active_accounts": 128,
+            "correct": 40,
+            "examples": 48,
+            "answer_nll": 0.2700599978367488
+          }
+        ],
+        "screen_signal": {
+          "present": true,
+          "contrasts": [
+            {
+              "active_accounts": 32,
+              "axis": "A",
+              "fixed_other_bit": 0,
+              "role": "target_initial",
+              "units": 16,
+              "reference_correct": 16,
+              "candidate_correct": 14,
+              "rescued": 0,
+              "regressed": 2,
+              "both_correct": 14,
+              "both_wrong": 0,
+              "mean_nll_candidate_minus_reference": 0.1640166490493963,
+              "regressed_case_ids": [
+                "write-locality-s97002-a032-v2",
+                "write-locality-s97003-a032-v1"
+              ],
+              "regressed_base_streams": [
+                "write-locality-s97002",
+                "write-locality-s97003"
+              ],
+              "rescued_case_ids": [],
+              "secondary_baseline_correct_regression_rate": {
+                "regressed": 2,
+                "baseline_correct": 16,
+                "rate": 0.125
+              }
+            },
+            {
+              "active_accounts": 32,
+              "axis": "A",
+              "fixed_other_bit": 1,
+              "role": "protected_current",
+              "units": 16,
+              "reference_correct": 13,
+              "candidate_correct": 11,
+              "rescued": 0,
+              "regressed": 2,
+              "both_correct": 11,
+              "both_wrong": 3,
+              "mean_nll_candidate_minus_reference": 0.031952823822697,
+              "regressed_case_ids": [
+                "write-locality-s97000-a032-v2",
+                "write-locality-s97003-a032-v1"
+              ],
+              "regressed_base_streams": [
+                "write-locality-s97000",
+                "write-locality-s97003"
+              ],
+              "rescued_case_ids": [],
+              "secondary_baseline_correct_regression_rate": {
+                "regressed": 2,
+                "baseline_correct": 13,
+                "rate": 0.15384615384615385
+              }
+            },
+            {
+              "active_accounts": 32,
+              "axis": "A",
+              "fixed_other_bit": 1,
+              "role": "target_initial",
+              "units": 16,
+              "reference_correct": 16,
+              "candidate_correct": 13,
+              "rescued": 0,
+              "regressed": 3,
+              "both_correct": 13,
+              "both_wrong": 0,
+              "mean_nll_candidate_minus_reference": 0.18375245807692409,
+              "regressed_case_ids": [
+                "write-locality-s97001-a032-v1",
+                "write-locality-s97002-a032-v2",
+                "write-locality-s97003-a032-v1"
+              ],
+              "regressed_base_streams": [
+                "write-locality-s97001",
+                "write-locality-s97002",
+                "write-locality-s97003"
+              ],
+              "rescued_case_ids": [],
+              "secondary_baseline_correct_regression_rate": {
+                "regressed": 3,
+                "baseline_correct": 16,
+                "rate": 0.1875
+              }
+            },
+            {
+              "active_accounts": 128,
+              "axis": "A",
+              "fixed_other_bit": 0,
+              "role": "target_initial",
+              "units": 16,
+              "reference_correct": 16,
+              "candidate_correct": 13,
+              "rescued": 0,
+              "regressed": 3,
+              "both_correct": 13,
+              "both_wrong": 0,
+              "mean_nll_candidate_minus_reference": 0.19992139524159333,
+              "regressed_case_ids": [
+                "write-locality-s97002-a128-v2",
+                "write-locality-s97003-a128-v1",
+                "write-locality-s97003-a128-v2"
+              ],
+              "regressed_base_streams": [
+                "write-locality-s97002",
+                "write-locality-s97003"
+              ],
+              "rescued_case_ids": [],
+              "secondary_baseline_correct_regression_rate": {
+                "regressed": 3,
+                "baseline_correct": 16,
+                "rate": 0.1875
+              }
+            },
+            {
+              "active_accounts": 128,
+              "axis": "A",
+              "fixed_other_bit": 1,
+              "role": "target_initial",
+              "units": 16,
+              "reference_correct": 16,
+              "candidate_correct": 11,
+              "rescued": 0,
+              "regressed": 5,
+              "both_correct": 11,
+              "both_wrong": 0,
+              "mean_nll_candidate_minus_reference": 0.22607766611812016,
+              "regressed_case_ids": [
+                "write-locality-s97000-a128-v1",
+                "write-locality-s97001-a128-v2",
+                "write-locality-s97002-a128-v2",
+                "write-locality-s97003-a128-v1",
+                "write-locality-s97003-a128-v2"
+              ],
+              "regressed_base_streams": [
+                "write-locality-s97000",
+                "write-locality-s97001",
+                "write-locality-s97002",
+                "write-locality-s97003"
+              ],
+              "rescued_case_ids": [],
+              "secondary_baseline_correct_regression_rate": {
+                "regressed": 5,
+                "baseline_correct": 16,
+                "rate": 0.3125
+              }
+            },
+            {
+              "active_accounts": 128,
+              "axis": "C",
+              "fixed_other_bit": 1,
+              "role": "target_initial",
+              "units": 16,
+              "reference_correct": 13,
+              "candidate_correct": 11,
+              "rescued": 0,
+              "regressed": 2,
+              "both_correct": 11,
+              "both_wrong": 3,
+              "mean_nll_candidate_minus_reference": 0.02508011211951574,
+              "regressed_case_ids": [
+                "write-locality-s97000-a128-v1",
+                "write-locality-s97001-a128-v2"
+              ],
+              "regressed_base_streams": [
+                "write-locality-s97000",
+                "write-locality-s97001"
+              ],
+              "rescued_case_ids": [],
+              "secondary_baseline_correct_regression_rate": {
+                "regressed": 2,
+                "baseline_correct": 13,
+                "rate": 0.15384615384615385
+              }
+            }
+          ],
+          "definition": "The same axis, fixed-other-bit, role and load regresses in at least two distinct base streams. Multiple value siblings from one stream count once.",
+          "interpretation": "Descriptive development screen only; no significance, recurrent-damage or architecture-necessity claim."
+        }
+      },
+      "primary_by_base_stream": [
+        {
+          "primary": "unrelated_B_at32",
+          "seed": 97000,
+          "units": 4,
+          "reference_correct": 4,
+          "candidate_correct": 3,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 3,
+          "both_wrong": 0,
+          "mean_nll_candidate_minus_reference": 0.03251336763302484,
+          "regressed_case_ids": [
+            "write-locality-s97000-a032-v2"
+          ],
+          "regressed_base_streams": [
+            "write-locality-s97000"
+          ],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 1,
+            "baseline_correct": 4,
+            "rate": 0.25
+          }
+        },
+        {
+          "primary": "unrelated_B_at32",
+          "seed": 97001,
+          "units": 4,
+          "reference_correct": 2,
+          "candidate_correct": 2,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 2,
+          "both_wrong": 2,
+          "mean_nll_candidate_minus_reference": 0.04164099196592967,
+          "regressed_case_ids": [],
+          "regressed_base_streams": [],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 0,
+            "baseline_correct": 2,
+            "rate": 0.0
+          }
+        },
+        {
+          "primary": "unrelated_B_at32",
+          "seed": 97002,
+          "units": 4,
+          "reference_correct": 4,
+          "candidate_correct": 4,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 4,
+          "both_wrong": 0,
+          "mean_nll_candidate_minus_reference": 0.023615618546803788,
+          "regressed_case_ids": [],
+          "regressed_base_streams": [],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 0,
+            "baseline_correct": 4,
+            "rate": 0.0
+          }
+        },
+        {
+          "primary": "unrelated_B_at32",
+          "seed": 97003,
+          "units": 4,
+          "reference_correct": 3,
+          "candidate_correct": 2,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 2,
+          "both_wrong": 1,
+          "mean_nll_candidate_minus_reference": 0.030041317145029695,
+          "regressed_case_ids": [
+            "write-locality-s97003-a032-v1"
+          ],
+          "regressed_base_streams": [
+            "write-locality-s97003"
+          ],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 1,
+            "baseline_correct": 3,
+            "rate": 0.3333333333333333
+          }
+        },
+        {
+          "primary": "initial_A_at128",
+          "seed": 97000,
+          "units": 4,
+          "reference_correct": 4,
+          "candidate_correct": 3,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 3,
+          "both_wrong": 0,
+          "mean_nll_candidate_minus_reference": 0.22213258345921835,
+          "regressed_case_ids": [
+            "write-locality-s97000-a128-v1"
+          ],
+          "regressed_base_streams": [
+            "write-locality-s97000"
+          ],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 1,
+            "baseline_correct": 4,
+            "rate": 0.25
+          }
+        },
+        {
+          "primary": "initial_A_at128",
+          "seed": 97001,
+          "units": 4,
+          "reference_correct": 4,
+          "candidate_correct": 3,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 3,
+          "both_wrong": 0,
+          "mean_nll_candidate_minus_reference": 0.22362129762768745,
+          "regressed_case_ids": [
+            "write-locality-s97001-a128-v2"
+          ],
+          "regressed_base_streams": [
+            "write-locality-s97001"
+          ],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 1,
+            "baseline_correct": 4,
+            "rate": 0.25
+          }
+        },
+        {
+          "primary": "initial_A_at128",
+          "seed": 97002,
+          "units": 4,
+          "reference_correct": 4,
+          "candidate_correct": 3,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 3,
+          "both_wrong": 0,
+          "mean_nll_candidate_minus_reference": 0.13221193570643663,
+          "regressed_case_ids": [
+            "write-locality-s97002-a128-v2"
+          ],
+          "regressed_base_streams": [
+            "write-locality-s97002"
+          ],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 1,
+            "baseline_correct": 4,
+            "rate": 0.25
+          }
+        },
+        {
+          "primary": "initial_A_at128",
+          "seed": 97003,
+          "units": 4,
+          "reference_correct": 4,
+          "candidate_correct": 2,
+          "rescued": 0,
+          "regressed": 2,
+          "both_correct": 2,
+          "both_wrong": 0,
+          "mean_nll_candidate_minus_reference": 0.3263448476791382,
+          "regressed_case_ids": [
+            "write-locality-s97003-a128-v1",
+            "write-locality-s97003-a128-v2"
+          ],
+          "regressed_base_streams": [
+            "write-locality-s97003"
+          ],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 2,
+            "baseline_correct": 4,
+            "rate": 0.5
+          }
+        }
+      ],
+      "error_value_matches": {
+        "errors": 48,
+        "category_counts": {
+          "A_value_instead_of_B": 22,
+          "current_A_instead_of_initial_A": 14,
+          "C_value_instead_of_requested_value": 12
+        },
+        "role_counts": {
+          "protected_current": 34,
+          "target_initial": 14
+        },
+        "rows": [
+          {
+            "case_id": "write-locality-s97000-a032-v2",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97000,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "658",
+            "generated": "356\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "356",
+            "current_A": "452",
+            "initial_C": "710",
+            "current_C": "710"
+          },
+          {
+            "case_id": "write-locality-s97000-a032-v2",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97000,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "658",
+            "generated": "356\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "356",
+            "current_A": "452",
+            "initial_C": "710",
+            "current_C": "190"
+          },
+          {
+            "case_id": "write-locality-s97000-a128-v1",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97000,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "529",
+            "generated": "932\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "932",
+            "current_A": "932",
+            "initial_C": "885",
+            "current_C": "885"
+          },
+          {
+            "case_id": "write-locality-s97000-a128-v1",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97000,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "529",
+            "generated": "932\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "932",
+            "current_A": "746",
+            "initial_C": "885",
+            "current_C": "885"
+          },
+          {
+            "case_id": "write-locality-s97000-a128-v1",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97000,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "529",
+            "generated": "932\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "932",
+            "current_A": "746",
+            "initial_C": "885",
+            "current_C": "179"
+          },
+          {
+            "case_id": "write-locality-s97000-a128-v1",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97000,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "932",
+            "generated": "746\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "932",
+            "current_A": "746",
+            "initial_C": "885",
+            "current_C": "179"
+          },
+          {
+            "case_id": "write-locality-s97001-a032-v0",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97001,
+            "active_accounts": 32,
+            "value_version": 0,
+            "answer": "597",
+            "generated": "883\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "883",
+            "current_A": "883",
+            "initial_C": "863",
+            "current_C": "863"
+          },
+          {
+            "case_id": "write-locality-s97001-a032-v0",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97001,
+            "active_accounts": 32,
+            "value_version": 0,
+            "answer": "597",
+            "generated": "883\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "883",
+            "current_A": "255",
+            "initial_C": "863",
+            "current_C": "863"
+          },
+          {
+            "case_id": "write-locality-s97001-a032-v0",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97001,
+            "active_accounts": 32,
+            "value_version": 0,
+            "answer": "597",
+            "generated": "883\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "883",
+            "current_A": "883",
+            "initial_C": "863",
+            "current_C": "287"
+          },
+          {
+            "case_id": "write-locality-s97001-a032-v0",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97001,
+            "active_accounts": 32,
+            "value_version": 0,
+            "answer": "597",
+            "generated": "883\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "883",
+            "current_A": "255",
+            "initial_C": "863",
+            "current_C": "287"
+          },
+          {
+            "case_id": "write-locality-s97001-a032-v1",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97001,
+            "active_accounts": 32,
+            "value_version": 1,
+            "answer": "914",
+            "generated": "686\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "686",
+            "current_A": "686",
+            "initial_C": "134",
+            "current_C": "134"
+          },
+          {
+            "case_id": "write-locality-s97001-a032-v1",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97001,
+            "active_accounts": 32,
+            "value_version": 1,
+            "answer": "914",
+            "generated": "686\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "686",
+            "current_A": "326",
+            "initial_C": "134",
+            "current_C": "134"
+          },
+          {
+            "case_id": "write-locality-s97001-a032-v1",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97001,
+            "active_accounts": 32,
+            "value_version": 1,
+            "answer": "914",
+            "generated": "686\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "686",
+            "current_A": "686",
+            "initial_C": "134",
+            "current_C": "959"
+          },
+          {
+            "case_id": "write-locality-s97001-a032-v1",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97001,
+            "active_accounts": 32,
+            "value_version": 1,
+            "answer": "914",
+            "generated": "686\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "686",
+            "current_A": "326",
+            "initial_C": "134",
+            "current_C": "959"
+          },
+          {
+            "case_id": "write-locality-s97001-a032-v1",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97001,
+            "active_accounts": 32,
+            "value_version": 1,
+            "answer": "686",
+            "generated": "326\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "686",
+            "current_A": "326",
+            "initial_C": "134",
+            "current_C": "959"
+          },
+          {
+            "case_id": "write-locality-s97001-a128-v0",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97001,
+            "active_accounts": 128,
+            "value_version": 0,
+            "answer": "597",
+            "generated": "883\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "883",
+            "current_A": "883",
+            "initial_C": "863",
+            "current_C": "863"
+          },
+          {
+            "case_id": "write-locality-s97001-a128-v0",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97001,
+            "active_accounts": 128,
+            "value_version": 0,
+            "answer": "597",
+            "generated": "883\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "883",
+            "current_A": "255",
+            "initial_C": "863",
+            "current_C": "863"
+          },
+          {
+            "case_id": "write-locality-s97001-a128-v0",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97001,
+            "active_accounts": 128,
+            "value_version": 0,
+            "answer": "597",
+            "generated": "883\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "883",
+            "current_A": "883",
+            "initial_C": "863",
+            "current_C": "287"
+          },
+          {
+            "case_id": "write-locality-s97001-a128-v0",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97001,
+            "active_accounts": 128,
+            "value_version": 0,
+            "answer": "597",
+            "generated": "883\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "883",
+            "current_A": "255",
+            "initial_C": "863",
+            "current_C": "287"
+          },
+          {
+            "case_id": "write-locality-s97001-a128-v2",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97001,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "837",
+            "generated": "600\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "837",
+            "current_A": "600",
+            "initial_C": "980",
+            "current_C": "477"
+          },
+          {
+            "case_id": "write-locality-s97002-a008-v2",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97002,
+            "active_accounts": 8,
+            "value_version": 2,
+            "answer": "734",
+            "generated": "792\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "734",
+            "current_A": "792",
+            "initial_C": "886",
+            "current_C": "382"
+          },
+          {
+            "case_id": "write-locality-s97002-a032-v2",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97002,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "734",
+            "generated": "792\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "734",
+            "current_A": "792",
+            "initial_C": "886",
+            "current_C": "886"
+          },
+          {
+            "case_id": "write-locality-s97002-a032-v2",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97002,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "734",
+            "generated": "792\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "734",
+            "current_A": "792",
+            "initial_C": "886",
+            "current_C": "382"
+          },
+          {
+            "case_id": "write-locality-s97002-a128-v2",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97002,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "734",
+            "generated": "792\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "734",
+            "current_A": "792",
+            "initial_C": "886",
+            "current_C": "886"
+          },
+          {
+            "case_id": "write-locality-s97002-a128-v2",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97002,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "734",
+            "generated": "792\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "734",
+            "current_A": "792",
+            "initial_C": "886",
+            "current_C": "382"
+          },
+          {
+            "case_id": "write-locality-s97002-a128-v3",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97002,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "128",
+            "generated": "876\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "876",
+            "current_A": "876",
+            "initial_C": "242",
+            "current_C": "242"
+          },
+          {
+            "case_id": "write-locality-s97002-a128-v3",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97002,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "128",
+            "generated": "876\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "876",
+            "current_A": "675",
+            "initial_C": "242",
+            "current_C": "242"
+          },
+          {
+            "case_id": "write-locality-s97002-a128-v3",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97002,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "128",
+            "generated": "876\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "876",
+            "current_A": "876",
+            "initial_C": "242",
+            "current_C": "412"
+          },
+          {
+            "case_id": "write-locality-s97002-a128-v3",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97002,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "128",
+            "generated": "876\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "876",
+            "current_A": "675",
+            "initial_C": "242",
+            "current_C": "412"
+          },
+          {
+            "case_id": "write-locality-s97003-a008-v2",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97003,
+            "active_accounts": 8,
+            "value_version": 2,
+            "answer": "520",
+            "generated": "252\n",
+            "category": "C_value_instead_of_requested_value",
+            "initial_A": "229",
+            "current_A": "229",
+            "initial_C": "252",
+            "current_C": "252"
+          },
+          {
+            "case_id": "write-locality-s97003-a008-v2",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97003,
+            "active_accounts": 8,
+            "value_version": 2,
+            "answer": "520",
+            "generated": "252\n",
+            "category": "C_value_instead_of_requested_value",
+            "initial_A": "229",
+            "current_A": "142",
+            "initial_C": "252",
+            "current_C": "252"
+          },
+          {
+            "case_id": "write-locality-s97003-a008-v2",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97003,
+            "active_accounts": 8,
+            "value_version": 2,
+            "answer": "520",
+            "generated": "252\n",
+            "category": "C_value_instead_of_requested_value",
+            "initial_A": "229",
+            "current_A": "229",
+            "initial_C": "252",
+            "current_C": "451"
+          },
+          {
+            "case_id": "write-locality-s97003-a008-v2",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97003,
+            "active_accounts": 8,
+            "value_version": 2,
+            "answer": "520",
+            "generated": "252\n",
+            "category": "C_value_instead_of_requested_value",
+            "initial_A": "229",
+            "current_A": "142",
+            "initial_C": "252",
+            "current_C": "451"
+          },
+          {
+            "case_id": "write-locality-s97003-a032-v1",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97003,
+            "active_accounts": 32,
+            "value_version": 1,
+            "answer": "915",
+            "generated": "633\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "915",
+            "current_A": "633",
+            "initial_C": "402",
+            "current_C": "402"
+          },
+          {
+            "case_id": "write-locality-s97003-a032-v1",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97003,
+            "active_accounts": 32,
+            "value_version": 1,
+            "answer": "392",
+            "generated": "915\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "915",
+            "current_A": "633",
+            "initial_C": "402",
+            "current_C": "804"
+          },
+          {
+            "case_id": "write-locality-s97003-a032-v1",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97003,
+            "active_accounts": 32,
+            "value_version": 1,
+            "answer": "915",
+            "generated": "633\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "915",
+            "current_A": "633",
+            "initial_C": "402",
+            "current_C": "804"
+          },
+          {
+            "case_id": "write-locality-s97003-a032-v2",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97003,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "520",
+            "generated": "252\n",
+            "category": "C_value_instead_of_requested_value",
+            "initial_A": "229",
+            "current_A": "229",
+            "initial_C": "252",
+            "current_C": "252"
+          },
+          {
+            "case_id": "write-locality-s97003-a032-v2",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97003,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "520",
+            "generated": "252\n",
+            "category": "C_value_instead_of_requested_value",
+            "initial_A": "229",
+            "current_A": "142",
+            "initial_C": "252",
+            "current_C": "252"
+          },
+          {
+            "case_id": "write-locality-s97003-a032-v2",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97003,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "520",
+            "generated": "252\n",
+            "category": "C_value_instead_of_requested_value",
+            "initial_A": "229",
+            "current_A": "229",
+            "initial_C": "252",
+            "current_C": "451"
+          },
+          {
+            "case_id": "write-locality-s97003-a032-v2",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97003,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "520",
+            "generated": "252\n",
+            "category": "C_value_instead_of_requested_value",
+            "initial_A": "229",
+            "current_A": "142",
+            "initial_C": "252",
+            "current_C": "451"
+          },
+          {
+            "case_id": "write-locality-s97003-a128-v1",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97003,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "915",
+            "generated": "633\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "915",
+            "current_A": "633",
+            "initial_C": "402",
+            "current_C": "402"
+          },
+          {
+            "case_id": "write-locality-s97003-a128-v1",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97003,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "915",
+            "generated": "633\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "915",
+            "current_A": "633",
+            "initial_C": "402",
+            "current_C": "804"
+          },
+          {
+            "case_id": "write-locality-s97003-a128-v2",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97003,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "520",
+            "generated": "252\n",
+            "category": "C_value_instead_of_requested_value",
+            "initial_A": "229",
+            "current_A": "229",
+            "initial_C": "252",
+            "current_C": "252"
+          },
+          {
+            "case_id": "write-locality-s97003-a128-v2",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97003,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "520",
+            "generated": "252\n",
+            "category": "C_value_instead_of_requested_value",
+            "initial_A": "229",
+            "current_A": "142",
+            "initial_C": "252",
+            "current_C": "252"
+          },
+          {
+            "case_id": "write-locality-s97003-a128-v2",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97003,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "229",
+            "generated": "142\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "229",
+            "current_A": "142",
+            "initial_C": "252",
+            "current_C": "252"
+          },
+          {
+            "case_id": "write-locality-s97003-a128-v2",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97003,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "520",
+            "generated": "252\n",
+            "category": "C_value_instead_of_requested_value",
+            "initial_A": "229",
+            "current_A": "229",
+            "initial_C": "252",
+            "current_C": "451"
+          },
+          {
+            "case_id": "write-locality-s97003-a128-v2",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97003,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "520",
+            "generated": "252\n",
+            "category": "C_value_instead_of_requested_value",
+            "initial_A": "229",
+            "current_A": "142",
+            "initial_C": "252",
+            "current_C": "451"
+          },
+          {
+            "case_id": "write-locality-s97003-a128-v2",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97003,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "229",
+            "generated": "142\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "229",
+            "current_A": "142",
+            "initial_C": "252",
+            "current_C": "451"
+          }
+        ],
+        "interpretation": "Exact output-value matches describe entity/version behavior; they do not identify the causal storage or addressing pathway."
+      }
+    },
+    "replica": {
+      "source_run": "/media/990Pro/Code/SAS/runs/memory_update/write-locality-replication-20261114-01",
+      "manifest_sha256": "feaa1674dd9784e669203be3b5d05e109a9390e0010397d5a446db1d55c30f92",
+      "seeds": [
+        97100,
+        97101,
+        97102,
+        97103
+      ],
+      "metrics": {
+        "examples": 576,
+        "correct": 486,
+        "cell_role_counts": [
+          {
+            "active_accounts": 8,
+            "cell": "A0_C0",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.05226276294949154
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A0_C0",
+            "role": "protected_current",
+            "correct": 13,
+            "examples": 16,
+            "answer_nll": 0.37823642169435817
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A0_C0",
+            "role": "target_initial",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.06509779253974557
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A1_C0",
+            "role": "target_current",
+            "correct": 15,
+            "examples": 16,
+            "answer_nll": 0.1708652206386129
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A1_C0",
+            "role": "protected_current",
+            "correct": 13,
+            "examples": 16,
+            "answer_nll": 0.4019686685254176
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A1_C0",
+            "role": "target_initial",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.1809089488039414
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A0_C1",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.05676519211071233
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A0_C1",
+            "role": "protected_current",
+            "correct": 14,
+            "examples": 16,
+            "answer_nll": 0.35933770425617695
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A0_C1",
+            "role": "target_initial",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.06626931841795643
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A1_C1",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.15571148600429296
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A1_C1",
+            "role": "protected_current",
+            "correct": 14,
+            "examples": 16,
+            "answer_nll": 0.3834192408248782
+          },
+          {
+            "active_accounts": 8,
+            "cell": "A1_C1",
+            "role": "target_initial",
+            "correct": 15,
+            "examples": 16,
+            "answer_nll": 0.19854322572549185
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A0_C0",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.08993714690829317
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A0_C0",
+            "role": "protected_current",
+            "correct": 13,
+            "examples": 16,
+            "answer_nll": 0.3653034505744775
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A0_C0",
+            "role": "target_initial",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.10413956828415394
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A1_C0",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.1625897316262126
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A1_C0",
+            "role": "protected_current",
+            "correct": 11,
+            "examples": 16,
+            "answer_nll": 0.3798428451021512
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A1_C0",
+            "role": "target_initial",
+            "correct": 8,
+            "examples": 16,
+            "answer_nll": 0.4068826660513878
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A0_C1",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.08216262872641285
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A0_C1",
+            "role": "protected_current",
+            "correct": 12,
+            "examples": 16,
+            "answer_nll": 0.35925474638740224
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A0_C1",
+            "role": "target_initial",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.09954266498486201
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A1_C1",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.14433267309019962
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A1_C1",
+            "role": "protected_current",
+            "correct": 10,
+            "examples": 16,
+            "answer_nll": 0.3741929742197196
+          },
+          {
+            "active_accounts": 32,
+            "cell": "A1_C1",
+            "role": "target_initial",
+            "correct": 8,
+            "examples": 16,
+            "answer_nll": 0.41847705841064453
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A0_C0",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.16993747154871622
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A0_C0",
+            "role": "protected_current",
+            "correct": 10,
+            "examples": 16,
+            "answer_nll": 0.36475664128859836
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A0_C0",
+            "role": "target_initial",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.12311182729899883
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A1_C0",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.2328329235315323
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A1_C0",
+            "role": "protected_current",
+            "correct": 11,
+            "examples": 16,
+            "answer_nll": 0.3874635125199954
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A1_C0",
+            "role": "target_initial",
+            "correct": 6,
+            "examples": 16,
+            "answer_nll": 0.45587295293807983
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A0_C1",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.1763250626002749
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A0_C1",
+            "role": "protected_current",
+            "correct": 9,
+            "examples": 16,
+            "answer_nll": 0.39513058215379715
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A0_C1",
+            "role": "target_initial",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.1114978597809871
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A1_C1",
+            "role": "target_current",
+            "correct": 16,
+            "examples": 16,
+            "answer_nll": 0.22966702530781427
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A1_C1",
+            "role": "protected_current",
+            "correct": 10,
+            "examples": 16,
+            "answer_nll": 0.41498825574914616
+          },
+          {
+            "active_accounts": 128,
+            "cell": "A1_C1",
+            "role": "target_initial",
+            "correct": 6,
+            "examples": 16,
+            "answer_nll": 0.4391534465054671
+          }
+        ],
+        "preservation_contrasts": [
+          {
+            "active_accounts": 8,
+            "axis": "A",
+            "fixed_other_bit": 0,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 13,
+            "candidate_correct": 13,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 13,
+            "both_wrong": 3,
+            "mean_nll_candidate_minus_reference": 0.023732246831059452,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 13,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "A",
+            "fixed_other_bit": 0,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.11581115626419583,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "target_current",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.004502429161220788,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 13,
+            "candidate_correct": 14,
+            "rescued": 1,
+            "regressed": 0,
+            "both_correct": 13,
+            "both_wrong": 2,
+            "mean_nll_candidate_minus_reference": -0.018898717438181247,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [
+              "write-locality-s97102-a008-v3"
+            ],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 13,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.0011715258782108618,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "A",
+            "fixed_other_bit": 1,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 14,
+            "candidate_correct": 14,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 14,
+            "both_wrong": 2,
+            "mean_nll_candidate_minus_reference": 0.024081536568701267,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 14,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "A",
+            "fixed_other_bit": 1,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 15,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 15,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.1322739073075354,
+            "regressed_case_ids": [
+              "write-locality-s97103-a008-v0"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97103"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 16,
+              "rate": 0.0625
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "target_current",
+            "units": 16,
+            "reference_correct": 15,
+            "candidate_correct": 16,
+            "rescued": 1,
+            "regressed": 0,
+            "both_correct": 15,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": -0.015153734634319942,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [
+              "write-locality-s97101-a008-v0"
+            ],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 15,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 13,
+            "candidate_correct": 14,
+            "rescued": 1,
+            "regressed": 0,
+            "both_correct": 13,
+            "both_wrong": 2,
+            "mean_nll_candidate_minus_reference": -0.018549427700539432,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [
+              "write-locality-s97102-a008-v3"
+            ],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 13,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 8,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 15,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 15,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.017634276921550437,
+            "regressed_case_ids": [
+              "write-locality-s97103-a008-v0"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97103"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 16,
+              "rate": 0.0625
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "A",
+            "fixed_other_bit": 0,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 13,
+            "candidate_correct": 11,
+            "rescued": 0,
+            "regressed": 2,
+            "both_correct": 11,
+            "both_wrong": 3,
+            "mean_nll_candidate_minus_reference": 0.014539394527673721,
+            "regressed_case_ids": [
+              "write-locality-s97101-a032-v3",
+              "write-locality-s97102-a032-v3"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97101",
+              "write-locality-s97102"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 2,
+              "baseline_correct": 13,
+              "rate": 0.15384615384615385
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "A",
+            "fixed_other_bit": 0,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 8,
+            "rescued": 0,
+            "regressed": 8,
+            "both_correct": 8,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.30274309776723385,
+            "regressed_case_ids": [
+              "write-locality-s97100-a032-v0",
+              "write-locality-s97100-a032-v2",
+              "write-locality-s97100-a032-v3",
+              "write-locality-s97102-a032-v2",
+              "write-locality-s97103-a032-v0",
+              "write-locality-s97103-a032-v1",
+              "write-locality-s97103-a032-v2",
+              "write-locality-s97103-a032-v3"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97100",
+              "write-locality-s97102",
+              "write-locality-s97103"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 8,
+              "baseline_correct": 16,
+              "rate": 0.5
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "target_current",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": -0.007774518181880316,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 13,
+            "candidate_correct": 12,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 12,
+            "both_wrong": 3,
+            "mean_nll_candidate_minus_reference": -0.006048704187075303,
+            "regressed_case_ids": [
+              "write-locality-s97102-a032-v0"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97102"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 13,
+              "rate": 0.07692307692307693
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": -0.004596903299291929,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "A",
+            "fixed_other_bit": 1,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 12,
+            "candidate_correct": 10,
+            "rescued": 0,
+            "regressed": 2,
+            "both_correct": 10,
+            "both_wrong": 4,
+            "mean_nll_candidate_minus_reference": 0.014938227832317349,
+            "regressed_case_ids": [
+              "write-locality-s97101-a032-v3",
+              "write-locality-s97102-a032-v3"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97101",
+              "write-locality-s97102"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 2,
+              "baseline_correct": 12,
+              "rate": 0.16666666666666666
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "A",
+            "fixed_other_bit": 1,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 8,
+            "rescued": 0,
+            "regressed": 8,
+            "both_correct": 8,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.3189343934257825,
+            "regressed_case_ids": [
+              "write-locality-s97100-a032-v0",
+              "write-locality-s97100-a032-v1",
+              "write-locality-s97100-a032-v2",
+              "write-locality-s97100-a032-v3",
+              "write-locality-s97102-a032-v2",
+              "write-locality-s97103-a032-v0",
+              "write-locality-s97103-a032-v1",
+              "write-locality-s97103-a032-v2"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97100",
+              "write-locality-s97102",
+              "write-locality-s97103"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 8,
+              "baseline_correct": 16,
+              "rate": 0.5
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "target_current",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": -0.018257058536012966,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 11,
+            "candidate_correct": 10,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 10,
+            "both_wrong": 5,
+            "mean_nll_candidate_minus_reference": -0.005649870882431676,
+            "regressed_case_ids": [
+              "write-locality-s97102-a032-v0"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97102"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 11,
+              "rate": 0.09090909090909091
+            }
+          },
+          {
+            "active_accounts": 32,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 8,
+            "candidate_correct": 8,
+            "rescued": 1,
+            "regressed": 1,
+            "both_correct": 7,
+            "both_wrong": 7,
+            "mean_nll_candidate_minus_reference": 0.011594392359256743,
+            "regressed_case_ids": [
+              "write-locality-s97100-a032-v1"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97100"
+            ],
+            "rescued_case_ids": [
+              "write-locality-s97103-a032-v3"
+            ],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 8,
+              "rate": 0.125
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "A",
+            "fixed_other_bit": 0,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 10,
+            "candidate_correct": 11,
+            "rescued": 2,
+            "regressed": 1,
+            "both_correct": 9,
+            "both_wrong": 4,
+            "mean_nll_candidate_minus_reference": 0.022706871231397002,
+            "regressed_case_ids": [
+              "write-locality-s97102-a128-v1"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97102"
+            ],
+            "rescued_case_ids": [
+              "write-locality-s97100-a128-v1",
+              "write-locality-s97102-a128-v0"
+            ],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 10,
+              "rate": 0.1
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "A",
+            "fixed_other_bit": 0,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 6,
+            "rescued": 0,
+            "regressed": 10,
+            "both_correct": 6,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.332761125639081,
+            "regressed_case_ids": [
+              "write-locality-s97100-a128-v0",
+              "write-locality-s97100-a128-v2",
+              "write-locality-s97102-a128-v0",
+              "write-locality-s97102-a128-v1",
+              "write-locality-s97102-a128-v2",
+              "write-locality-s97102-a128-v3",
+              "write-locality-s97103-a128-v0",
+              "write-locality-s97103-a128-v1",
+              "write-locality-s97103-a128-v2",
+              "write-locality-s97103-a128-v3"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97100",
+              "write-locality-s97102",
+              "write-locality-s97103"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 10,
+              "baseline_correct": 16,
+              "rate": 0.625
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "target_current",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.006387591051558651,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 10,
+            "candidate_correct": 9,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 9,
+            "both_wrong": 6,
+            "mean_nll_candidate_minus_reference": 0.030373940865198755,
+            "regressed_case_ids": [
+              "write-locality-s97100-a128-v3"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97100"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 10,
+              "rate": 0.1
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "C",
+            "fixed_other_bit": 0,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": -0.01161396751801173,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "A",
+            "fixed_other_bit": 1,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 9,
+            "candidate_correct": 10,
+            "rescued": 2,
+            "regressed": 1,
+            "both_correct": 8,
+            "both_wrong": 5,
+            "mean_nll_candidate_minus_reference": 0.01985767359534901,
+            "regressed_case_ids": [
+              "write-locality-s97102-a128-v1"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97102"
+            ],
+            "rescued_case_ids": [
+              "write-locality-s97100-a128-v1",
+              "write-locality-s97100-a128-v3"
+            ],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 9,
+              "rate": 0.1111111111111111
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "A",
+            "fixed_other_bit": 1,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 6,
+            "rescued": 0,
+            "regressed": 10,
+            "both_correct": 6,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.32765558672448,
+            "regressed_case_ids": [
+              "write-locality-s97100-a128-v0",
+              "write-locality-s97100-a128-v2",
+              "write-locality-s97102-a128-v0",
+              "write-locality-s97102-a128-v1",
+              "write-locality-s97102-a128-v2",
+              "write-locality-s97102-a128-v3",
+              "write-locality-s97103-a128-v0",
+              "write-locality-s97103-a128-v1",
+              "write-locality-s97103-a128-v2",
+              "write-locality-s97103-a128-v3"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97100",
+              "write-locality-s97102",
+              "write-locality-s97103"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 10,
+              "baseline_correct": 16,
+              "rate": 0.625
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "target_current",
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": -0.0031658982237180045,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "protected_current",
+            "units": 16,
+            "reference_correct": 11,
+            "candidate_correct": 10,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 10,
+            "both_wrong": 5,
+            "mean_nll_candidate_minus_reference": 0.027524743229150765,
+            "regressed_case_ids": [
+              "write-locality-s97102-a128-v0"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97102"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 11,
+              "rate": 0.09090909090909091
+            }
+          },
+          {
+            "active_accounts": 128,
+            "axis": "C",
+            "fixed_other_bit": 1,
+            "role": "target_initial",
+            "units": 16,
+            "reference_correct": 6,
+            "candidate_correct": 6,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 6,
+            "both_wrong": 10,
+            "mean_nll_candidate_minus_reference": -0.01671950643261274,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 6,
+              "rate": 0.0
+            }
+          }
+        ],
+        "target_A_update_pairs": [
+          {
+            "active_accounts": 8,
+            "fixed_C_bit": 0,
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 15,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 15,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.11860245768912137,
+            "regressed_case_ids": [
+              "write-locality-s97101-a008-v0"
+            ],
+            "regressed_base_streams": [
+              "write-locality-s97101"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 16,
+              "rate": 0.0625
+            }
+          },
+          {
+            "active_accounts": 8,
+            "fixed_C_bit": 1,
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.09894629389358063,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 32,
+            "fixed_C_bit": 0,
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.07265258471791942,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 32,
+            "fixed_C_bit": 1,
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.06217004436378678,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 128,
+            "fixed_C_bit": 0,
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.06289545198281606,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          {
+            "active_accounts": 128,
+            "fixed_C_bit": 1,
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.0533419627075394,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          }
+        ],
+        "functional_units_by_load": [
+          {
+            "active_accounts": 8,
+            "individual": {
+              "correct": 180,
+              "units": 192
+            },
+            "all_three_roles": {
+              "correct": 53,
+              "units": 64
+            },
+            "all_four_values": {
+              "correct": 40,
+              "units": 48
+            },
+            "all_twelve_cell_role_readouts": {
+              "correct": 12,
+              "units": 16
+            },
+            "all_48_value_cell_role_readouts": {
+              "correct": 1,
+              "units": 4
+            }
+          },
+          {
+            "active_accounts": 32,
+            "individual": {
+              "correct": 158,
+              "units": 192
+            },
+            "all_three_roles": {
+              "correct": 35,
+              "units": 64
+            },
+            "all_four_values": {
+              "correct": 33,
+              "units": 48
+            },
+            "all_twelve_cell_role_readouts": {
+              "correct": 4,
+              "units": 16
+            },
+            "all_48_value_cell_role_readouts": {
+              "correct": 0,
+              "units": 4
+            }
+          },
+          {
+            "active_accounts": 128,
+            "individual": {
+              "correct": 148,
+              "units": 192
+            },
+            "all_three_roles": {
+              "correct": 31,
+              "units": 64
+            },
+            "all_four_values": {
+              "correct": 32,
+              "units": 48
+            },
+            "all_twelve_cell_role_readouts": {
+              "correct": 4,
+              "units": 16
+            },
+            "all_48_value_cell_role_readouts": {
+              "correct": 1,
+              "units": 4
+            }
+          }
+        ],
+        "base_stream_results": [
+          {
+            "seed": 97100,
+            "active_accounts": 8,
+            "correct": 48,
+            "examples": 48,
+            "answer_nll": 0.18313384749409226
+          },
+          {
+            "seed": 97101,
+            "active_accounts": 8,
+            "correct": 39,
+            "examples": 48,
+            "answer_nll": 0.3107085921284225
+          },
+          {
+            "seed": 97102,
+            "active_accounts": 8,
+            "correct": 46,
+            "examples": 48,
+            "answer_nll": 0.15986629854887724
+          },
+          {
+            "seed": 97103,
+            "active_accounts": 8,
+            "correct": 47,
+            "examples": 48,
+            "answer_nll": 0.16941992265896666
+          },
+          {
+            "seed": 97100,
+            "active_accounts": 32,
+            "correct": 41,
+            "examples": 48,
+            "answer_nll": 0.2127422025013301
+          },
+          {
+            "seed": 97101,
+            "active_accounts": 32,
+            "correct": 46,
+            "examples": 48,
+            "answer_nll": 0.1987842096326252
+          },
+          {
+            "seed": 97102,
+            "active_accounts": 32,
+            "correct": 42,
+            "examples": 48,
+            "answer_nll": 0.20047227050074273
+          },
+          {
+            "seed": 97103,
+            "active_accounts": 32,
+            "correct": 29,
+            "examples": 48,
+            "answer_nll": 0.38355403548727435
+          },
+          {
+            "seed": 97100,
+            "active_accounts": 128,
+            "correct": 41,
+            "examples": 48,
+            "answer_nll": 0.27552476473566556
+          },
+          {
+            "seed": 97101,
+            "active_accounts": 128,
+            "correct": 48,
+            "examples": 48,
+            "answer_nll": 0.18540104054328468
+          },
+          {
+            "seed": 97102,
+            "active_accounts": 128,
+            "correct": 31,
+            "examples": 48,
+            "answer_nll": 0.3053024211484525
+          },
+          {
+            "seed": 97103,
+            "active_accounts": 128,
+            "correct": 28,
+            "examples": 48,
+            "answer_nll": 0.4006842939803998
+          }
+        ],
+        "screen_signal": {
+          "present": true,
+          "contrasts": [
+            {
+              "active_accounts": 32,
+              "axis": "A",
+              "fixed_other_bit": 0,
+              "role": "protected_current",
+              "units": 16,
+              "reference_correct": 13,
+              "candidate_correct": 11,
+              "rescued": 0,
+              "regressed": 2,
+              "both_correct": 11,
+              "both_wrong": 3,
+              "mean_nll_candidate_minus_reference": 0.014539394527673721,
+              "regressed_case_ids": [
+                "write-locality-s97101-a032-v3",
+                "write-locality-s97102-a032-v3"
+              ],
+              "regressed_base_streams": [
+                "write-locality-s97101",
+                "write-locality-s97102"
+              ],
+              "rescued_case_ids": [],
+              "secondary_baseline_correct_regression_rate": {
+                "regressed": 2,
+                "baseline_correct": 13,
+                "rate": 0.15384615384615385
+              }
+            },
+            {
+              "active_accounts": 32,
+              "axis": "A",
+              "fixed_other_bit": 0,
+              "role": "target_initial",
+              "units": 16,
+              "reference_correct": 16,
+              "candidate_correct": 8,
+              "rescued": 0,
+              "regressed": 8,
+              "both_correct": 8,
+              "both_wrong": 0,
+              "mean_nll_candidate_minus_reference": 0.30274309776723385,
+              "regressed_case_ids": [
+                "write-locality-s97100-a032-v0",
+                "write-locality-s97100-a032-v2",
+                "write-locality-s97100-a032-v3",
+                "write-locality-s97102-a032-v2",
+                "write-locality-s97103-a032-v0",
+                "write-locality-s97103-a032-v1",
+                "write-locality-s97103-a032-v2",
+                "write-locality-s97103-a032-v3"
+              ],
+              "regressed_base_streams": [
+                "write-locality-s97100",
+                "write-locality-s97102",
+                "write-locality-s97103"
+              ],
+              "rescued_case_ids": [],
+              "secondary_baseline_correct_regression_rate": {
+                "regressed": 8,
+                "baseline_correct": 16,
+                "rate": 0.5
+              }
+            },
+            {
+              "active_accounts": 32,
+              "axis": "A",
+              "fixed_other_bit": 1,
+              "role": "protected_current",
+              "units": 16,
+              "reference_correct": 12,
+              "candidate_correct": 10,
+              "rescued": 0,
+              "regressed": 2,
+              "both_correct": 10,
+              "both_wrong": 4,
+              "mean_nll_candidate_minus_reference": 0.014938227832317349,
+              "regressed_case_ids": [
+                "write-locality-s97101-a032-v3",
+                "write-locality-s97102-a032-v3"
+              ],
+              "regressed_base_streams": [
+                "write-locality-s97101",
+                "write-locality-s97102"
+              ],
+              "rescued_case_ids": [],
+              "secondary_baseline_correct_regression_rate": {
+                "regressed": 2,
+                "baseline_correct": 12,
+                "rate": 0.16666666666666666
+              }
+            },
+            {
+              "active_accounts": 32,
+              "axis": "A",
+              "fixed_other_bit": 1,
+              "role": "target_initial",
+              "units": 16,
+              "reference_correct": 16,
+              "candidate_correct": 8,
+              "rescued": 0,
+              "regressed": 8,
+              "both_correct": 8,
+              "both_wrong": 0,
+              "mean_nll_candidate_minus_reference": 0.3189343934257825,
+              "regressed_case_ids": [
+                "write-locality-s97100-a032-v0",
+                "write-locality-s97100-a032-v1",
+                "write-locality-s97100-a032-v2",
+                "write-locality-s97100-a032-v3",
+                "write-locality-s97102-a032-v2",
+                "write-locality-s97103-a032-v0",
+                "write-locality-s97103-a032-v1",
+                "write-locality-s97103-a032-v2"
+              ],
+              "regressed_base_streams": [
+                "write-locality-s97100",
+                "write-locality-s97102",
+                "write-locality-s97103"
+              ],
+              "rescued_case_ids": [],
+              "secondary_baseline_correct_regression_rate": {
+                "regressed": 8,
+                "baseline_correct": 16,
+                "rate": 0.5
+              }
+            },
+            {
+              "active_accounts": 128,
+              "axis": "A",
+              "fixed_other_bit": 0,
+              "role": "target_initial",
+              "units": 16,
+              "reference_correct": 16,
+              "candidate_correct": 6,
+              "rescued": 0,
+              "regressed": 10,
+              "both_correct": 6,
+              "both_wrong": 0,
+              "mean_nll_candidate_minus_reference": 0.332761125639081,
+              "regressed_case_ids": [
+                "write-locality-s97100-a128-v0",
+                "write-locality-s97100-a128-v2",
+                "write-locality-s97102-a128-v0",
+                "write-locality-s97102-a128-v1",
+                "write-locality-s97102-a128-v2",
+                "write-locality-s97102-a128-v3",
+                "write-locality-s97103-a128-v0",
+                "write-locality-s97103-a128-v1",
+                "write-locality-s97103-a128-v2",
+                "write-locality-s97103-a128-v3"
+              ],
+              "regressed_base_streams": [
+                "write-locality-s97100",
+                "write-locality-s97102",
+                "write-locality-s97103"
+              ],
+              "rescued_case_ids": [],
+              "secondary_baseline_correct_regression_rate": {
+                "regressed": 10,
+                "baseline_correct": 16,
+                "rate": 0.625
+              }
+            },
+            {
+              "active_accounts": 128,
+              "axis": "A",
+              "fixed_other_bit": 1,
+              "role": "target_initial",
+              "units": 16,
+              "reference_correct": 16,
+              "candidate_correct": 6,
+              "rescued": 0,
+              "regressed": 10,
+              "both_correct": 6,
+              "both_wrong": 0,
+              "mean_nll_candidate_minus_reference": 0.32765558672448,
+              "regressed_case_ids": [
+                "write-locality-s97100-a128-v0",
+                "write-locality-s97100-a128-v2",
+                "write-locality-s97102-a128-v0",
+                "write-locality-s97102-a128-v1",
+                "write-locality-s97102-a128-v2",
+                "write-locality-s97102-a128-v3",
+                "write-locality-s97103-a128-v0",
+                "write-locality-s97103-a128-v1",
+                "write-locality-s97103-a128-v2",
+                "write-locality-s97103-a128-v3"
+              ],
+              "regressed_base_streams": [
+                "write-locality-s97100",
+                "write-locality-s97102",
+                "write-locality-s97103"
+              ],
+              "rescued_case_ids": [],
+              "secondary_baseline_correct_regression_rate": {
+                "regressed": 10,
+                "baseline_correct": 16,
+                "rate": 0.625
+              }
+            }
+          ],
+          "definition": "The same axis, fixed-other-bit, role and load regresses in at least two distinct base streams. Multiple value siblings from one stream count once.",
+          "interpretation": "Descriptive development screen only; no significance, recurrent-damage or architecture-necessity claim."
+        }
+      },
+      "primary_by_base_stream": [
+        {
+          "primary": "unrelated_B_at32",
+          "seed": 97100,
+          "units": 4,
+          "reference_correct": 4,
+          "candidate_correct": 4,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 4,
+          "both_wrong": 0,
+          "mean_nll_candidate_minus_reference": -0.01782504220803579,
+          "regressed_case_ids": [],
+          "regressed_base_streams": [],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 0,
+            "baseline_correct": 4,
+            "rate": 0.0
+          }
+        },
+        {
+          "primary": "unrelated_B_at32",
+          "seed": 97101,
+          "units": 4,
+          "reference_correct": 4,
+          "candidate_correct": 3,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 3,
+          "both_wrong": 0,
+          "mean_nll_candidate_minus_reference": 0.03293169538180033,
+          "regressed_case_ids": [
+            "write-locality-s97101-a032-v3"
+          ],
+          "regressed_base_streams": [
+            "write-locality-s97101"
+          ],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 1,
+            "baseline_correct": 4,
+            "rate": 0.25
+          }
+        },
+        {
+          "primary": "unrelated_B_at32",
+          "seed": 97102,
+          "units": 4,
+          "reference_correct": 3,
+          "candidate_correct": 2,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 2,
+          "both_wrong": 1,
+          "mean_nll_candidate_minus_reference": 0.020817185441652925,
+          "regressed_case_ids": [
+            "write-locality-s97102-a032-v3"
+          ],
+          "regressed_base_streams": [
+            "write-locality-s97102"
+          ],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 1,
+            "baseline_correct": 3,
+            "rate": 0.3333333333333333
+          }
+        },
+        {
+          "primary": "unrelated_B_at32",
+          "seed": 97103,
+          "units": 4,
+          "reference_correct": 1,
+          "candidate_correct": 1,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 1,
+          "both_wrong": 3,
+          "mean_nll_candidate_minus_reference": 0.02382907271385193,
+          "regressed_case_ids": [],
+          "regressed_base_streams": [],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 0,
+            "baseline_correct": 1,
+            "rate": 0.0
+          }
+        },
+        {
+          "primary": "initial_A_at128",
+          "seed": 97100,
+          "units": 4,
+          "reference_correct": 4,
+          "candidate_correct": 2,
+          "rescued": 0,
+          "regressed": 2,
+          "both_correct": 2,
+          "both_wrong": 0,
+          "mean_nll_candidate_minus_reference": 0.22999254738291103,
+          "regressed_case_ids": [
+            "write-locality-s97100-a128-v0",
+            "write-locality-s97100-a128-v2"
+          ],
+          "regressed_base_streams": [
+            "write-locality-s97100"
+          ],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 2,
+            "baseline_correct": 4,
+            "rate": 0.5
+          }
+        },
+        {
+          "primary": "initial_A_at128",
+          "seed": 97101,
+          "units": 4,
+          "reference_correct": 4,
+          "candidate_correct": 4,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 4,
+          "both_wrong": 0,
+          "mean_nll_candidate_minus_reference": 0.13283002376556396,
+          "regressed_case_ids": [],
+          "regressed_base_streams": [],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 0,
+            "baseline_correct": 4,
+            "rate": 0.0
+          }
+        },
+        {
+          "primary": "initial_A_at128",
+          "seed": 97102,
+          "units": 4,
+          "reference_correct": 4,
+          "candidate_correct": 0,
+          "rescued": 0,
+          "regressed": 4,
+          "both_correct": 0,
+          "both_wrong": 0,
+          "mean_nll_candidate_minus_reference": 0.43752295648058254,
+          "regressed_case_ids": [
+            "write-locality-s97102-a128-v0",
+            "write-locality-s97102-a128-v1",
+            "write-locality-s97102-a128-v2",
+            "write-locality-s97102-a128-v3"
+          ],
+          "regressed_base_streams": [
+            "write-locality-s97102"
+          ],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 4,
+            "baseline_correct": 4,
+            "rate": 1.0
+          }
+        },
+        {
+          "primary": "initial_A_at128",
+          "seed": 97103,
+          "units": 4,
+          "reference_correct": 4,
+          "candidate_correct": 0,
+          "rescued": 0,
+          "regressed": 4,
+          "both_correct": 0,
+          "both_wrong": 0,
+          "mean_nll_candidate_minus_reference": 0.5102768192688624,
+          "regressed_case_ids": [
+            "write-locality-s97103-a128-v0",
+            "write-locality-s97103-a128-v1",
+            "write-locality-s97103-a128-v2",
+            "write-locality-s97103-a128-v3"
+          ],
+          "regressed_base_streams": [
+            "write-locality-s97103"
+          ],
+          "rescued_case_ids": [],
+          "secondary_baseline_correct_regression_rate": {
+            "regressed": 4,
+            "baseline_correct": 4,
+            "rate": 1.0
+          }
+        }
+      ],
+      "error_value_matches": {
+        "errors": 90,
+        "category_counts": {
+          "current_A_instead_of_initial_A": 37,
+          "A_value_instead_of_B": 45,
+          "other_output": 1,
+          "another_record_literal": 7
+        },
+        "role_counts": {
+          "target_initial": 37,
+          "protected_current": 52,
+          "target_current": 1
+        },
+        "rows": [
+          {
+            "case_id": "write-locality-s97100-a032-v0",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97100,
+            "active_accounts": 32,
+            "value_version": 0,
+            "answer": "534",
+            "generated": "251\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "534",
+            "current_A": "251",
+            "initial_C": "441",
+            "current_C": "441"
+          },
+          {
+            "case_id": "write-locality-s97100-a032-v0",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97100,
+            "active_accounts": 32,
+            "value_version": 0,
+            "answer": "534",
+            "generated": "251\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "534",
+            "current_A": "251",
+            "initial_C": "441",
+            "current_C": "493"
+          },
+          {
+            "case_id": "write-locality-s97100-a032-v1",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97100,
+            "active_accounts": 32,
+            "value_version": 1,
+            "answer": "667",
+            "generated": "104\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "667",
+            "current_A": "104",
+            "initial_C": "580",
+            "current_C": "992"
+          },
+          {
+            "case_id": "write-locality-s97100-a032-v2",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97100,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "991",
+            "generated": "841\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "991",
+            "current_A": "841",
+            "initial_C": "638",
+            "current_C": "638"
+          },
+          {
+            "case_id": "write-locality-s97100-a032-v2",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97100,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "991",
+            "generated": "841\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "991",
+            "current_A": "841",
+            "initial_C": "638",
+            "current_C": "326"
+          },
+          {
+            "case_id": "write-locality-s97100-a032-v3",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97100,
+            "active_accounts": 32,
+            "value_version": 3,
+            "answer": "975",
+            "generated": "893\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "975",
+            "current_A": "893",
+            "initial_C": "291",
+            "current_C": "291"
+          },
+          {
+            "case_id": "write-locality-s97100-a032-v3",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97100,
+            "active_accounts": 32,
+            "value_version": 3,
+            "answer": "975",
+            "generated": "893\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "975",
+            "current_A": "893",
+            "initial_C": "291",
+            "current_C": "908"
+          },
+          {
+            "case_id": "write-locality-s97100-a128-v0",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97100,
+            "active_accounts": 128,
+            "value_version": 0,
+            "answer": "534",
+            "generated": "251\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "534",
+            "current_A": "251",
+            "initial_C": "441",
+            "current_C": "441"
+          },
+          {
+            "case_id": "write-locality-s97100-a128-v0",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97100,
+            "active_accounts": 128,
+            "value_version": 0,
+            "answer": "534",
+            "generated": "251\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "534",
+            "current_A": "251",
+            "initial_C": "441",
+            "current_C": "493"
+          },
+          {
+            "case_id": "write-locality-s97100-a128-v1",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97100,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "979",
+            "generated": "667\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "667",
+            "current_A": "667",
+            "initial_C": "580",
+            "current_C": "580"
+          },
+          {
+            "case_id": "write-locality-s97100-a128-v1",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97100,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "979",
+            "generated": "667\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "667",
+            "current_A": "667",
+            "initial_C": "580",
+            "current_C": "992"
+          },
+          {
+            "case_id": "write-locality-s97100-a128-v2",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97100,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "991",
+            "generated": "841\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "991",
+            "current_A": "841",
+            "initial_C": "638",
+            "current_C": "638"
+          },
+          {
+            "case_id": "write-locality-s97100-a128-v2",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97100,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "991",
+            "generated": "841\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "991",
+            "current_A": "841",
+            "initial_C": "638",
+            "current_C": "326"
+          },
+          {
+            "case_id": "write-locality-s97100-a128-v3",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97100,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "840",
+            "generated": "975\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "975",
+            "current_A": "975",
+            "initial_C": "291",
+            "current_C": "908"
+          },
+          {
+            "case_id": "write-locality-s97101-a008-v0",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97101,
+            "active_accounts": 8,
+            "value_version": 0,
+            "answer": "833",
+            "generated": "240\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "240",
+            "current_A": "240",
+            "initial_C": "670",
+            "current_C": "670"
+          },
+          {
+            "case_id": "write-locality-s97101-a008-v0",
+            "variant": "A1_C0",
+            "role": "target_current",
+            "seed": 97101,
+            "active_accounts": 8,
+            "value_version": 0,
+            "answer": "136",
+            "generated": "240\n",
+            "category": "other_output",
+            "initial_A": "240",
+            "current_A": "136",
+            "initial_C": "670",
+            "current_C": "670"
+          },
+          {
+            "case_id": "write-locality-s97101-a008-v0",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97101,
+            "active_accounts": 8,
+            "value_version": 0,
+            "answer": "833",
+            "generated": "240\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "240",
+            "current_A": "136",
+            "initial_C": "670",
+            "current_C": "670"
+          },
+          {
+            "case_id": "write-locality-s97101-a008-v0",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97101,
+            "active_accounts": 8,
+            "value_version": 0,
+            "answer": "833",
+            "generated": "240\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "240",
+            "current_A": "240",
+            "initial_C": "670",
+            "current_C": "688"
+          },
+          {
+            "case_id": "write-locality-s97101-a008-v0",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97101,
+            "active_accounts": 8,
+            "value_version": 0,
+            "answer": "833",
+            "generated": "240\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "240",
+            "current_A": "136",
+            "initial_C": "670",
+            "current_C": "688"
+          },
+          {
+            "case_id": "write-locality-s97101-a008-v3",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97101,
+            "active_accounts": 8,
+            "value_version": 3,
+            "answer": "959",
+            "generated": "827\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "827",
+            "current_A": "827",
+            "initial_C": "664",
+            "current_C": "664"
+          },
+          {
+            "case_id": "write-locality-s97101-a008-v3",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97101,
+            "active_accounts": 8,
+            "value_version": 3,
+            "answer": "959",
+            "generated": "827\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "827",
+            "current_A": "148",
+            "initial_C": "664",
+            "current_C": "664"
+          },
+          {
+            "case_id": "write-locality-s97101-a008-v3",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97101,
+            "active_accounts": 8,
+            "value_version": 3,
+            "answer": "959",
+            "generated": "827\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "827",
+            "current_A": "827",
+            "initial_C": "664",
+            "current_C": "211"
+          },
+          {
+            "case_id": "write-locality-s97101-a008-v3",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97101,
+            "active_accounts": 8,
+            "value_version": 3,
+            "answer": "959",
+            "generated": "827\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "827",
+            "current_A": "148",
+            "initial_C": "664",
+            "current_C": "211"
+          },
+          {
+            "case_id": "write-locality-s97101-a032-v3",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97101,
+            "active_accounts": 32,
+            "value_version": 3,
+            "answer": "959",
+            "generated": "827\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "827",
+            "current_A": "148",
+            "initial_C": "664",
+            "current_C": "664"
+          },
+          {
+            "case_id": "write-locality-s97101-a032-v3",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97101,
+            "active_accounts": 32,
+            "value_version": 3,
+            "answer": "959",
+            "generated": "827\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "827",
+            "current_A": "148",
+            "initial_C": "664",
+            "current_C": "211"
+          },
+          {
+            "case_id": "write-locality-s97102-a008-v3",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97102,
+            "active_accounts": 8,
+            "value_version": 3,
+            "answer": "568",
+            "generated": "953\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "953",
+            "current_A": "953",
+            "initial_C": "782",
+            "current_C": "782"
+          },
+          {
+            "case_id": "write-locality-s97102-a008-v3",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97102,
+            "active_accounts": 8,
+            "value_version": 3,
+            "answer": "568",
+            "generated": "953\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "953",
+            "current_A": "746",
+            "initial_C": "782",
+            "current_C": "782"
+          },
+          {
+            "case_id": "write-locality-s97102-a032-v0",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97102,
+            "active_accounts": 32,
+            "value_version": 0,
+            "answer": "364",
+            "generated": "899\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "899",
+            "current_A": "899",
+            "initial_C": "392",
+            "current_C": "996"
+          },
+          {
+            "case_id": "write-locality-s97102-a032-v0",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97102,
+            "active_accounts": 32,
+            "value_version": 0,
+            "answer": "364",
+            "generated": "899\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "899",
+            "current_A": "265",
+            "initial_C": "392",
+            "current_C": "996"
+          },
+          {
+            "case_id": "write-locality-s97102-a032-v2",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97102,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "443",
+            "generated": "111\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "443",
+            "current_A": "111",
+            "initial_C": "334",
+            "current_C": "334"
+          },
+          {
+            "case_id": "write-locality-s97102-a032-v2",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97102,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "443",
+            "generated": "111\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "443",
+            "current_A": "111",
+            "initial_C": "334",
+            "current_C": "329"
+          },
+          {
+            "case_id": "write-locality-s97102-a032-v3",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97102,
+            "active_accounts": 32,
+            "value_version": 3,
+            "answer": "568",
+            "generated": "953\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "953",
+            "current_A": "746",
+            "initial_C": "782",
+            "current_C": "782"
+          },
+          {
+            "case_id": "write-locality-s97102-a032-v3",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97102,
+            "active_accounts": 32,
+            "value_version": 3,
+            "answer": "568",
+            "generated": "953\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "953",
+            "current_A": "746",
+            "initial_C": "782",
+            "current_C": "134"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v0",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 0,
+            "answer": "364",
+            "generated": "894\n",
+            "category": "another_record_literal",
+            "initial_A": "899",
+            "current_A": "899",
+            "initial_C": "392",
+            "current_C": "392"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v0",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 0,
+            "answer": "899",
+            "generated": "265\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "899",
+            "current_A": "265",
+            "initial_C": "392",
+            "current_C": "392"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v0",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 0,
+            "answer": "364",
+            "generated": "894\n",
+            "category": "another_record_literal",
+            "initial_A": "899",
+            "current_A": "899",
+            "initial_C": "392",
+            "current_C": "996"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v0",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 0,
+            "answer": "364",
+            "generated": "894\n",
+            "category": "another_record_literal",
+            "initial_A": "899",
+            "current_A": "265",
+            "initial_C": "392",
+            "current_C": "996"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v0",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 0,
+            "answer": "899",
+            "generated": "265\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "899",
+            "current_A": "265",
+            "initial_C": "392",
+            "current_C": "996"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v1",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "148",
+            "generated": "719\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "719",
+            "current_A": "525",
+            "initial_C": "448",
+            "current_C": "448"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v1",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "719",
+            "generated": "525\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "719",
+            "current_A": "525",
+            "initial_C": "448",
+            "current_C": "448"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v1",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "148",
+            "generated": "719\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "719",
+            "current_A": "525",
+            "initial_C": "448",
+            "current_C": "162"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v1",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "719",
+            "generated": "525\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "719",
+            "current_A": "525",
+            "initial_C": "448",
+            "current_C": "162"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v2",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "443",
+            "generated": "111\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "443",
+            "current_A": "111",
+            "initial_C": "334",
+            "current_C": "334"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v2",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "443",
+            "generated": "111\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "443",
+            "current_A": "111",
+            "initial_C": "334",
+            "current_C": "329"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v3",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "568",
+            "generated": "953\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "953",
+            "current_A": "953",
+            "initial_C": "782",
+            "current_C": "782"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v3",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "568",
+            "generated": "953\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "953",
+            "current_A": "746",
+            "initial_C": "782",
+            "current_C": "782"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v3",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "953",
+            "generated": "746\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "953",
+            "current_A": "746",
+            "initial_C": "782",
+            "current_C": "782"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v3",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "568",
+            "generated": "953\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "953",
+            "current_A": "953",
+            "initial_C": "782",
+            "current_C": "134"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v3",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "568",
+            "generated": "953\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "953",
+            "current_A": "746",
+            "initial_C": "782",
+            "current_C": "134"
+          },
+          {
+            "case_id": "write-locality-s97102-a128-v3",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97102,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "953",
+            "generated": "746\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "953",
+            "current_A": "746",
+            "initial_C": "782",
+            "current_C": "134"
+          },
+          {
+            "case_id": "write-locality-s97103-a008-v0",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 8,
+            "value_version": 0,
+            "answer": "444",
+            "generated": "464\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "444",
+            "current_A": "464",
+            "initial_C": "828",
+            "current_C": "882"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v0",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 0,
+            "answer": "444",
+            "generated": "464\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "444",
+            "current_A": "464",
+            "initial_C": "828",
+            "current_C": "828"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v0",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 0,
+            "answer": "444",
+            "generated": "464\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "444",
+            "current_A": "464",
+            "initial_C": "828",
+            "current_C": "882"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v1",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 1,
+            "answer": "385",
+            "generated": "783\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "783",
+            "current_A": "783",
+            "initial_C": "929",
+            "current_C": "929"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v1",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 1,
+            "answer": "385",
+            "generated": "298\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "783",
+            "current_A": "298",
+            "initial_C": "929",
+            "current_C": "929"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v1",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 1,
+            "answer": "783",
+            "generated": "298\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "783",
+            "current_A": "298",
+            "initial_C": "929",
+            "current_C": "929"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v1",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 1,
+            "answer": "385",
+            "generated": "783\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "783",
+            "current_A": "783",
+            "initial_C": "929",
+            "current_C": "147"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v1",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 1,
+            "answer": "385",
+            "generated": "298\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "783",
+            "current_A": "298",
+            "initial_C": "929",
+            "current_C": "147"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v1",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 1,
+            "answer": "783",
+            "generated": "298\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "783",
+            "current_A": "298",
+            "initial_C": "929",
+            "current_C": "147"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v2",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "397",
+            "generated": "138\n",
+            "category": "another_record_literal",
+            "initial_A": "155",
+            "current_A": "155",
+            "initial_C": "572",
+            "current_C": "572"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v2",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "397",
+            "generated": "138\n",
+            "category": "another_record_literal",
+            "initial_A": "155",
+            "current_A": "696",
+            "initial_C": "572",
+            "current_C": "572"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v2",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "155",
+            "generated": "696\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "155",
+            "current_A": "696",
+            "initial_C": "572",
+            "current_C": "572"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v2",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "397",
+            "generated": "138\n",
+            "category": "another_record_literal",
+            "initial_A": "155",
+            "current_A": "155",
+            "initial_C": "572",
+            "current_C": "268"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v2",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "397",
+            "generated": "138\n",
+            "category": "another_record_literal",
+            "initial_A": "155",
+            "current_A": "696",
+            "initial_C": "572",
+            "current_C": "268"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v2",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 2,
+            "answer": "155",
+            "generated": "696\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "155",
+            "current_A": "696",
+            "initial_C": "572",
+            "current_C": "268"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v3",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 3,
+            "answer": "478",
+            "generated": "982\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "982",
+            "current_A": "982",
+            "initial_C": "988",
+            "current_C": "988"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v3",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 3,
+            "answer": "478",
+            "generated": "982\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "982",
+            "current_A": "367",
+            "initial_C": "988",
+            "current_C": "988"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v3",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 3,
+            "answer": "982",
+            "generated": "367\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "982",
+            "current_A": "367",
+            "initial_C": "988",
+            "current_C": "988"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v3",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 3,
+            "answer": "478",
+            "generated": "982\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "982",
+            "current_A": "982",
+            "initial_C": "988",
+            "current_C": "204"
+          },
+          {
+            "case_id": "write-locality-s97103-a032-v3",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 32,
+            "value_version": 3,
+            "answer": "478",
+            "generated": "982\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "982",
+            "current_A": "367",
+            "initial_C": "988",
+            "current_C": "204"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v0",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 0,
+            "answer": "444",
+            "generated": "464\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "444",
+            "current_A": "464",
+            "initial_C": "828",
+            "current_C": "828"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v0",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 0,
+            "answer": "444",
+            "generated": "464\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "444",
+            "current_A": "464",
+            "initial_C": "828",
+            "current_C": "882"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v1",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "385",
+            "generated": "783\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "783",
+            "current_A": "783",
+            "initial_C": "929",
+            "current_C": "929"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v1",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "385",
+            "generated": "783\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "783",
+            "current_A": "298",
+            "initial_C": "929",
+            "current_C": "929"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v1",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "783",
+            "generated": "298\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "783",
+            "current_A": "298",
+            "initial_C": "929",
+            "current_C": "929"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v1",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "385",
+            "generated": "783\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "783",
+            "current_A": "783",
+            "initial_C": "929",
+            "current_C": "147"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v1",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "385",
+            "generated": "783\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "783",
+            "current_A": "298",
+            "initial_C": "929",
+            "current_C": "147"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v1",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 1,
+            "answer": "783",
+            "generated": "298\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "783",
+            "current_A": "298",
+            "initial_C": "929",
+            "current_C": "147"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v2",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "397",
+            "generated": "155\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "155",
+            "current_A": "155",
+            "initial_C": "572",
+            "current_C": "572"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v2",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "397",
+            "generated": "155\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "155",
+            "current_A": "696",
+            "initial_C": "572",
+            "current_C": "572"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v2",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "155",
+            "generated": "696\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "155",
+            "current_A": "696",
+            "initial_C": "572",
+            "current_C": "572"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v2",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "397",
+            "generated": "155\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "155",
+            "current_A": "155",
+            "initial_C": "572",
+            "current_C": "268"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v2",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "397",
+            "generated": "155\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "155",
+            "current_A": "696",
+            "initial_C": "572",
+            "current_C": "268"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v2",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 2,
+            "answer": "155",
+            "generated": "696\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "155",
+            "current_A": "696",
+            "initial_C": "572",
+            "current_C": "268"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v3",
+            "variant": "A0_C0",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "478",
+            "generated": "982\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "982",
+            "current_A": "982",
+            "initial_C": "988",
+            "current_C": "988"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v3",
+            "variant": "A1_C0",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "478",
+            "generated": "982\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "982",
+            "current_A": "367",
+            "initial_C": "988",
+            "current_C": "988"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v3",
+            "variant": "A1_C0",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "982",
+            "generated": "367\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "982",
+            "current_A": "367",
+            "initial_C": "988",
+            "current_C": "988"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v3",
+            "variant": "A0_C1",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "478",
+            "generated": "982\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "982",
+            "current_A": "982",
+            "initial_C": "988",
+            "current_C": "204"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v3",
+            "variant": "A1_C1",
+            "role": "protected_current",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "478",
+            "generated": "982\n",
+            "category": "A_value_instead_of_B",
+            "initial_A": "982",
+            "current_A": "367",
+            "initial_C": "988",
+            "current_C": "204"
+          },
+          {
+            "case_id": "write-locality-s97103-a128-v3",
+            "variant": "A1_C1",
+            "role": "target_initial",
+            "seed": 97103,
+            "active_accounts": 128,
+            "value_version": 3,
+            "answer": "982",
+            "generated": "367\n",
+            "category": "current_A_instead_of_initial_A",
+            "initial_A": "982",
+            "current_A": "367",
+            "initial_C": "988",
+            "current_C": "204"
+          }
+        ],
+        "interpretation": "Exact output-value matches describe entity/version behavior; they do not identify the causal storage or addressing pathway."
+      }
+    }
+  },
+  "primary_comparison": [
+    {
+      "id": "unrelated_B_at32",
+      "active_accounts": 32,
+      "role": "protected_current",
+      "discovery": {
+        "active_accounts": 32,
+        "axis": "A",
+        "fixed_other_bit": 1,
+        "role": "protected_current",
+        "units": 16,
+        "reference_correct": 13,
+        "candidate_correct": 11,
+        "rescued": 0,
+        "regressed": 2,
+        "both_correct": 11,
+        "both_wrong": 3,
+        "mean_nll_candidate_minus_reference": 0.031952823822697,
+        "regressed_case_ids": [
+          "write-locality-s97000-a032-v2",
+          "write-locality-s97003-a032-v1"
+        ],
+        "regressed_base_streams": [
+          "write-locality-s97000",
+          "write-locality-s97003"
+        ],
+        "rescued_case_ids": [],
+        "secondary_baseline_correct_regression_rate": {
+          "regressed": 2,
+          "baseline_correct": 13,
+          "rate": 0.15384615384615385
+        }
+      },
+      "replica": {
+        "id": "unrelated_B_at32",
+        "active_accounts": 32,
+        "axis": "A",
+        "fixed_other_bit": 1,
+        "role": "protected_current",
+        "units": 16,
+        "reference_correct": 12,
+        "candidate_correct": 10,
+        "rescued": 0,
+        "regressed": 2,
+        "both_correct": 10,
+        "both_wrong": 4,
+        "mean_nll_candidate_minus_reference": 0.014938227832317349,
+        "regressed_case_ids": [
+          "write-locality-s97101-a032-v3",
+          "write-locality-s97102-a032-v3"
+        ],
+        "regressed_base_streams": [
+          "write-locality-s97101",
+          "write-locality-s97102"
+        ],
+        "rescued_case_ids": [],
+        "secondary_baseline_correct_regression_rate": {
+          "regressed": 2,
+          "baseline_correct": 12,
+          "rate": 0.16666666666666666
+        },
+        "recurs": true
+      }
+    },
+    {
+      "id": "initial_A_at128",
+      "active_accounts": 128,
+      "role": "target_initial",
+      "discovery": {
+        "active_accounts": 128,
+        "axis": "A",
+        "fixed_other_bit": 1,
+        "role": "target_initial",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 11,
+        "rescued": 0,
+        "regressed": 5,
+        "both_correct": 11,
+        "both_wrong": 0,
+        "mean_nll_candidate_minus_reference": 0.22607766611812016,
+        "regressed_case_ids": [
+          "write-locality-s97000-a128-v1",
+          "write-locality-s97001-a128-v2",
+          "write-locality-s97002-a128-v2",
+          "write-locality-s97003-a128-v1",
+          "write-locality-s97003-a128-v2"
+        ],
+        "regressed_base_streams": [
+          "write-locality-s97000",
+          "write-locality-s97001",
+          "write-locality-s97002",
+          "write-locality-s97003"
+        ],
+        "rescued_case_ids": [],
+        "secondary_baseline_correct_regression_rate": {
+          "regressed": 5,
+          "baseline_correct": 16,
+          "rate": 0.3125
+        }
+      },
+      "replica": {
+        "id": "initial_A_at128",
+        "active_accounts": 128,
+        "axis": "A",
+        "fixed_other_bit": 1,
+        "role": "target_initial",
+        "units": 16,
+        "reference_correct": 16,
+        "candidate_correct": 6,
+        "rescued": 0,
+        "regressed": 10,
+        "both_correct": 6,
+        "both_wrong": 0,
+        "mean_nll_candidate_minus_reference": 0.32765558672448,
+        "regressed_case_ids": [
+          "write-locality-s97100-a128-v0",
+          "write-locality-s97100-a128-v2",
+          "write-locality-s97102-a128-v0",
+          "write-locality-s97102-a128-v1",
+          "write-locality-s97102-a128-v2",
+          "write-locality-s97102-a128-v3",
+          "write-locality-s97103-a128-v0",
+          "write-locality-s97103-a128-v1",
+          "write-locality-s97103-a128-v2",
+          "write-locality-s97103-a128-v3"
+        ],
+        "regressed_base_streams": [
+          "write-locality-s97100",
+          "write-locality-s97102",
+          "write-locality-s97103"
+        ],
+        "rescued_case_ids": [],
+        "secondary_baseline_correct_regression_rate": {
+          "regressed": 10,
+          "baseline_correct": 16,
+          "rate": 0.625
+        },
+        "recurs": true
+      }
+    }
+  ],
+  "event_path_gate_passed": true,
+  "interpretation": "Independent-seed replication under the same generator, four base streams per cohort. All tail pairs are evaluated within their own cohort. No case pairing across seeds, independent-n576 confidence, architecture or recurrent-destruction claim. Initial-A also differs in the availability of redundant recent old-value evidence."
+}

@@ -1,0 +1,10 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:03,  2.58it/s]Loading weights:   9%|▉         | 28/320 [00:00<00:03, 74.43it/s]Loading weights:  18%|█▊        | 59/320 [00:00<00:01, 137.65it/s]Loading weights:  29%|██▉       | 92/320 [00:00<00:01, 190.00it/s]Loading weights:  37%|███▋      | 119/320 [00:00<00:00, 207.48it/s]Loading weights:  46%|████▋     | 148/320 [00:00<00:00, 228.46it/s]Loading weights:  57%|█████▋    | 181/320 [00:01<00:00, 255.20it/s]Loading weights:  66%|██████▌   | 210/320 [00:01<00:00, 251.31it/s]Loading weights:  75%|███████▌  | 240/320 [00:01<00:00, 262.10it/s]Loading weights:  86%|████████▌ | 274/320 [00:01<00:00, 283.38it/s]Loading weights:  95%|█████████▌| 305/320 [00:01<00:00, 285.33it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 212.73it/s]
+{"event": "canonical_oracle_replication", "model": "gdn_question_only", "queries_per_regime": 6, "total": 18}
+{"event": "canonical_oracle_replication", "model": "gdn_question_only", "queries_per_regime": 12, "total": 18}
+{"event": "canonical_oracle_replication", "model": "gdn_question_only", "queries_per_regime": 18, "total": 18}
+{"event": "canonical_oracle_arm_complete", "model": "gdn_question_only", "new_readouts": 36}
+{"event": "canonical_oracle_replication", "model": "local_question", "queries_per_regime": 6, "total": 18}
+{"event": "canonical_oracle_replication", "model": "local_question", "queries_per_regime": 12, "total": 18}
+{"event": "canonical_oracle_replication", "model": "local_question", "queries_per_regime": 18, "total": 18}
+{"event": "canonical_oracle_arm_complete", "model": "local_question", "new_readouts": 36}

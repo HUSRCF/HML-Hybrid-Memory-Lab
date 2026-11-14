@@ -1,0 +1,28 @@
+{
+  "status": "planned_not_started",
+  "registered_utc": "2026-11-14T02:07:21.497405+00:00",
+  "training": false,
+  "model": "it",
+  "native_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-native-20261114-01",
+  "data_source": "/media/990Pro/Code/SAS/datasets/memory_update/paired-semantic-updates-v1",
+  "selection": {
+    "family": "accumulate",
+    "role": "target_current",
+    "variants": [
+      "control",
+      "treatment"
+    ]
+  },
+  "examples_per_condition": 16,
+  "conditions": [
+    "minimal_dependency_ledger",
+    "direct_arithmetic"
+  ],
+  "reader_policy": "full",
+  "requirements": [
+    "Use all 16 registered accumulate target readouts in original validation order, never a success-selected subset.",
+    "Rebuild only a one-account SET plus its one/two ADD operations; verify equality to original executable truth. Direct arithmetic uses the same base and operation amounts with an explicit integer expression.",
+    "Use frozen native IT and unrestricted greedy decoding. Original full-ledger outcomes are copied from the audited reference, not rerun. No adapter, oracle KV mask or training budget choice."
+  ],
+  "interpretation": "Task-competence controls. Rebuilding changes positions, context and recurrent computation; direct arithmetic changes the question. Differences cannot isolate memory damage, retrieval, or arithmetic competence in all settings. These controls do not alter the registered four-arm training data or budgets."
+}

@@ -1,0 +1,1478 @@
+{
+  "status": "completed_native_path_diagnostics_export",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-order-path-20261114-01",
+  "manifest_sha256": "29e5aa592247512f025c718d4d4d6c20ff2f77b0fa5eae951beb1bbeb88b9444",
+  "reader_policy": "full",
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "conditions": {
+    "canonical_natural": {
+      "recurrent_and_convolution": "canonical",
+      "kv": "canonical"
+    },
+    "permuted_natural": {
+      "recurrent_and_convolution": "permuted",
+      "kv": "permuted"
+    },
+    "canonical_state_permuted_kv": {
+      "recurrent_and_convolution": "canonical",
+      "kv": "permuted"
+    },
+    "permuted_state_canonical_kv": {
+      "recurrent_and_convolution": "permuted",
+      "kv": "canonical"
+    }
+  },
+  "functional": {
+    "counts": {
+      "canonical_natural": {
+        "individual": {
+          "correct": 385,
+          "units": 432
+        },
+        "four_values": {
+          "correct": 87,
+          "units": 108
+        },
+        "three_roles": {
+          "correct": 99,
+          "units": 144
+        },
+        "twelve_value_variant": {
+          "correct": 17,
+          "units": 36
+        },
+        "stable_unchanged_case_role": {
+          "correct": 86,
+          "units": 96
+        },
+        "stable_unchanged_four_values": {
+          "correct": 18,
+          "units": 24
+        },
+        "updated_target": {
+          "correct": 61,
+          "units": 96
+        },
+        "updated_target_except_add": {
+          "correct": 61,
+          "units": 80
+        }
+      },
+      "permuted_natural": {
+        "individual": {
+          "correct": 368,
+          "units": 432
+        },
+        "four_values": {
+          "correct": 80,
+          "units": 108
+        },
+        "three_roles": {
+          "correct": 88,
+          "units": 144
+        },
+        "twelve_value_variant": {
+          "correct": 15,
+          "units": 36
+        },
+        "stable_unchanged_case_role": {
+          "correct": 81,
+          "units": 96
+        },
+        "stable_unchanged_four_values": {
+          "correct": 15,
+          "units": 24
+        },
+        "updated_target": {
+          "correct": 61,
+          "units": 96
+        },
+        "updated_target_except_add": {
+          "correct": 61,
+          "units": 80
+        }
+      },
+      "canonical_state_permuted_kv": {
+        "individual": {
+          "correct": 370,
+          "units": 432
+        },
+        "four_values": {
+          "correct": 85,
+          "units": 108
+        },
+        "three_roles": {
+          "correct": 90,
+          "units": 144
+        },
+        "twelve_value_variant": {
+          "correct": 19,
+          "units": 36
+        },
+        "stable_unchanged_case_role": {
+          "correct": 84,
+          "units": 96
+        },
+        "stable_unchanged_four_values": {
+          "correct": 18,
+          "units": 24
+        },
+        "updated_target": {
+          "correct": 58,
+          "units": 96
+        },
+        "updated_target_except_add": {
+          "correct": 58,
+          "units": 80
+        }
+      },
+      "permuted_state_canonical_kv": {
+        "individual": {
+          "correct": 374,
+          "units": 432
+        },
+        "four_values": {
+          "correct": 83,
+          "units": 108
+        },
+        "three_roles": {
+          "correct": 89,
+          "units": 144
+        },
+        "twelve_value_variant": {
+          "correct": 16,
+          "units": 36
+        },
+        "stable_unchanged_case_role": {
+          "correct": 87,
+          "units": 96
+        },
+        "stable_unchanged_four_values": {
+          "correct": 19,
+          "units": 24
+        },
+        "updated_target": {
+          "correct": 55,
+          "units": 96
+        },
+        "updated_target_except_add": {
+          "correct": 55,
+          "units": 80
+        }
+      }
+    },
+    "versus_canonical_natural": {
+      "permuted_natural": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 385,
+          "candidate_correct": 368,
+          "rescued": 20,
+          "regressed": 37,
+          "both_correct": 348,
+          "both_wrong": 27,
+          "net_correct_change": -17
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 87,
+          "candidate_correct": 80,
+          "rescued": 11,
+          "regressed": 18,
+          "both_correct": 69,
+          "both_wrong": 10,
+          "net_correct_change": -7
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 99,
+          "candidate_correct": 88,
+          "rescued": 13,
+          "regressed": 24,
+          "both_correct": 75,
+          "both_wrong": 32,
+          "net_correct_change": -11
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 17,
+          "candidate_correct": 15,
+          "rescued": 3,
+          "regressed": 5,
+          "both_correct": 12,
+          "both_wrong": 16,
+          "net_correct_change": -2
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 86,
+          "candidate_correct": 81,
+          "rescued": 10,
+          "regressed": 15,
+          "both_correct": 71,
+          "both_wrong": 0,
+          "net_correct_change": -5
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 18,
+          "candidate_correct": 15,
+          "rescued": 4,
+          "regressed": 7,
+          "both_correct": 11,
+          "both_wrong": 2,
+          "net_correct_change": -3
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 61,
+          "candidate_correct": 61,
+          "rescued": 8,
+          "regressed": 8,
+          "both_correct": 53,
+          "both_wrong": 27,
+          "net_correct_change": 0
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 61,
+          "candidate_correct": 61,
+          "rescued": 8,
+          "regressed": 8,
+          "both_correct": 53,
+          "both_wrong": 11,
+          "net_correct_change": 0
+        }
+      },
+      "canonical_state_permuted_kv": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 385,
+          "candidate_correct": 370,
+          "rescued": 18,
+          "regressed": 33,
+          "both_correct": 352,
+          "both_wrong": 29,
+          "net_correct_change": -15
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 87,
+          "candidate_correct": 85,
+          "rescued": 12,
+          "regressed": 14,
+          "both_correct": 73,
+          "both_wrong": 9,
+          "net_correct_change": -2
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 99,
+          "candidate_correct": 90,
+          "rescued": 14,
+          "regressed": 23,
+          "both_correct": 76,
+          "both_wrong": 31,
+          "net_correct_change": -9
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 17,
+          "candidate_correct": 19,
+          "rescued": 6,
+          "regressed": 4,
+          "both_correct": 13,
+          "both_wrong": 13,
+          "net_correct_change": 2
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 86,
+          "candidate_correct": 84,
+          "rescued": 9,
+          "regressed": 11,
+          "both_correct": 75,
+          "both_wrong": 1,
+          "net_correct_change": -2
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 18,
+          "candidate_correct": 18,
+          "rescued": 5,
+          "regressed": 5,
+          "both_correct": 13,
+          "both_wrong": 1,
+          "net_correct_change": 0
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 61,
+          "candidate_correct": 58,
+          "rescued": 7,
+          "regressed": 10,
+          "both_correct": 51,
+          "both_wrong": 28,
+          "net_correct_change": -3
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 61,
+          "candidate_correct": 58,
+          "rescued": 7,
+          "regressed": 10,
+          "both_correct": 51,
+          "both_wrong": 12,
+          "net_correct_change": -3
+        }
+      },
+      "permuted_state_canonical_kv": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 385,
+          "candidate_correct": 374,
+          "rescued": 3,
+          "regressed": 14,
+          "both_correct": 371,
+          "both_wrong": 44,
+          "net_correct_change": -11
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 87,
+          "candidate_correct": 83,
+          "rescued": 2,
+          "regressed": 6,
+          "both_correct": 81,
+          "both_wrong": 19,
+          "net_correct_change": -4
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 99,
+          "candidate_correct": 89,
+          "rescued": 2,
+          "regressed": 12,
+          "both_correct": 87,
+          "both_wrong": 43,
+          "net_correct_change": -10
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 17,
+          "candidate_correct": 16,
+          "rescued": 1,
+          "regressed": 2,
+          "both_correct": 15,
+          "both_wrong": 18,
+          "net_correct_change": -1
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 86,
+          "candidate_correct": 87,
+          "rescued": 3,
+          "regressed": 2,
+          "both_correct": 84,
+          "both_wrong": 7,
+          "net_correct_change": 1
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 18,
+          "candidate_correct": 19,
+          "rescued": 2,
+          "regressed": 1,
+          "both_correct": 17,
+          "both_wrong": 4,
+          "net_correct_change": 1
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 61,
+          "candidate_correct": 55,
+          "rescued": 0,
+          "regressed": 6,
+          "both_correct": 55,
+          "both_wrong": 35,
+          "net_correct_change": -6
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 61,
+          "candidate_correct": 55,
+          "rescued": 0,
+          "regressed": 6,
+          "both_correct": 55,
+          "both_wrong": 19,
+          "net_correct_change": -6
+        }
+      }
+    },
+    "versus_permuted_natural": {
+      "canonical_natural": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 368,
+          "candidate_correct": 385,
+          "rescued": 37,
+          "regressed": 20,
+          "both_correct": 348,
+          "both_wrong": 27,
+          "net_correct_change": 17
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 80,
+          "candidate_correct": 87,
+          "rescued": 18,
+          "regressed": 11,
+          "both_correct": 69,
+          "both_wrong": 10,
+          "net_correct_change": 7
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 88,
+          "candidate_correct": 99,
+          "rescued": 24,
+          "regressed": 13,
+          "both_correct": 75,
+          "both_wrong": 32,
+          "net_correct_change": 11
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 15,
+          "candidate_correct": 17,
+          "rescued": 5,
+          "regressed": 3,
+          "both_correct": 12,
+          "both_wrong": 16,
+          "net_correct_change": 2
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 81,
+          "candidate_correct": 86,
+          "rescued": 15,
+          "regressed": 10,
+          "both_correct": 71,
+          "both_wrong": 0,
+          "net_correct_change": 5
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 15,
+          "candidate_correct": 18,
+          "rescued": 7,
+          "regressed": 4,
+          "both_correct": 11,
+          "both_wrong": 2,
+          "net_correct_change": 3
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 61,
+          "candidate_correct": 61,
+          "rescued": 8,
+          "regressed": 8,
+          "both_correct": 53,
+          "both_wrong": 27,
+          "net_correct_change": 0
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 61,
+          "candidate_correct": 61,
+          "rescued": 8,
+          "regressed": 8,
+          "both_correct": 53,
+          "both_wrong": 11,
+          "net_correct_change": 0
+        }
+      },
+      "canonical_state_permuted_kv": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 368,
+          "candidate_correct": 370,
+          "rescued": 8,
+          "regressed": 6,
+          "both_correct": 362,
+          "both_wrong": 56,
+          "net_correct_change": 2
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 80,
+          "candidate_correct": 85,
+          "rescued": 6,
+          "regressed": 1,
+          "both_correct": 79,
+          "both_wrong": 22,
+          "net_correct_change": 5
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 88,
+          "candidate_correct": 90,
+          "rescued": 4,
+          "regressed": 2,
+          "both_correct": 86,
+          "both_wrong": 52,
+          "net_correct_change": 2
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 15,
+          "candidate_correct": 19,
+          "rescued": 4,
+          "regressed": 0,
+          "both_correct": 15,
+          "both_wrong": 17,
+          "net_correct_change": 4
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 81,
+          "candidate_correct": 84,
+          "rescued": 5,
+          "regressed": 2,
+          "both_correct": 79,
+          "both_wrong": 10,
+          "net_correct_change": 3
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 15,
+          "candidate_correct": 18,
+          "rescued": 4,
+          "regressed": 1,
+          "both_correct": 14,
+          "both_wrong": 5,
+          "net_correct_change": 3
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 61,
+          "candidate_correct": 58,
+          "rescued": 1,
+          "regressed": 4,
+          "both_correct": 57,
+          "both_wrong": 34,
+          "net_correct_change": -3
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 61,
+          "candidate_correct": 58,
+          "rescued": 1,
+          "regressed": 4,
+          "both_correct": 57,
+          "both_wrong": 18,
+          "net_correct_change": -3
+        }
+      },
+      "permuted_state_canonical_kv": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 368,
+          "candidate_correct": 374,
+          "rescued": 34,
+          "regressed": 28,
+          "both_correct": 340,
+          "both_wrong": 30,
+          "net_correct_change": 6
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 80,
+          "candidate_correct": 83,
+          "rescued": 15,
+          "regressed": 12,
+          "both_correct": 68,
+          "both_wrong": 13,
+          "net_correct_change": 3
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 88,
+          "candidate_correct": 89,
+          "rescued": 17,
+          "regressed": 16,
+          "both_correct": 72,
+          "both_wrong": 39,
+          "net_correct_change": 1
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 15,
+          "candidate_correct": 16,
+          "rescued": 3,
+          "regressed": 2,
+          "both_correct": 13,
+          "both_wrong": 18,
+          "net_correct_change": 1
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 81,
+          "candidate_correct": 87,
+          "rescued": 15,
+          "regressed": 9,
+          "both_correct": 72,
+          "both_wrong": 0,
+          "net_correct_change": 6
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 15,
+          "candidate_correct": 19,
+          "rescued": 7,
+          "regressed": 3,
+          "both_correct": 12,
+          "both_wrong": 2,
+          "net_correct_change": 4
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 61,
+          "candidate_correct": 55,
+          "rescued": 5,
+          "regressed": 11,
+          "both_correct": 50,
+          "both_wrong": 30,
+          "net_correct_change": -6
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 61,
+          "candidate_correct": 55,
+          "rescued": 5,
+          "regressed": 11,
+          "both_correct": 50,
+          "both_wrong": 14,
+          "net_correct_change": -6
+        }
+      }
+    },
+    "target_updates_by_family": {
+      "canonical_natural": {
+        "accumulate": {
+          "correct": 0,
+          "examples": 16
+        },
+        "copy": {
+          "correct": 4,
+          "examples": 16
+        },
+        "dependent_swap": {
+          "correct": 15,
+          "examples": 16
+        },
+        "duplicate_set": {
+          "correct": 16,
+          "examples": 16
+        },
+        "independent_swap": {
+          "correct": 12,
+          "examples": 16
+        },
+        "overwrite": {
+          "correct": 14,
+          "examples": 16
+        }
+      },
+      "permuted_natural": {
+        "accumulate": {
+          "correct": 0,
+          "examples": 16
+        },
+        "copy": {
+          "correct": 4,
+          "examples": 16
+        },
+        "dependent_swap": {
+          "correct": 16,
+          "examples": 16
+        },
+        "duplicate_set": {
+          "correct": 10,
+          "examples": 16
+        },
+        "independent_swap": {
+          "correct": 16,
+          "examples": 16
+        },
+        "overwrite": {
+          "correct": 15,
+          "examples": 16
+        }
+      },
+      "canonical_state_permuted_kv": {
+        "accumulate": {
+          "correct": 0,
+          "examples": 16
+        },
+        "copy": {
+          "correct": 0,
+          "examples": 16
+        },
+        "dependent_swap": {
+          "correct": 16,
+          "examples": 16
+        },
+        "duplicate_set": {
+          "correct": 10,
+          "examples": 16
+        },
+        "independent_swap": {
+          "correct": 16,
+          "examples": 16
+        },
+        "overwrite": {
+          "correct": 16,
+          "examples": 16
+        }
+      },
+      "permuted_state_canonical_kv": {
+        "accumulate": {
+          "correct": 0,
+          "examples": 16
+        },
+        "copy": {
+          "correct": 2,
+          "examples": 16
+        },
+        "dependent_swap": {
+          "correct": 15,
+          "examples": 16
+        },
+        "duplicate_set": {
+          "correct": 15,
+          "examples": 16
+        },
+        "independent_swap": {
+          "correct": 12,
+          "examples": 16
+        },
+        "overwrite": {
+          "correct": 11,
+          "examples": 16
+        }
+      }
+    }
+  },
+  "role_counts": {
+    "canonical_natural": {
+      "target_current": {
+        "correct": 109,
+        "examples": 144
+      },
+      "protected_current": {
+        "correct": 133,
+        "examples": 144
+      },
+      "target_initial": {
+        "correct": 143,
+        "examples": 144
+      }
+    },
+    "permuted_natural": {
+      "target_current": {
+        "correct": 106,
+        "examples": 144
+      },
+      "protected_current": {
+        "correct": 143,
+        "examples": 144
+      },
+      "target_initial": {
+        "correct": 119,
+        "examples": 144
+      }
+    },
+    "canonical_state_permuted_kv": {
+      "target_current": {
+        "correct": 103,
+        "examples": 144
+      },
+      "protected_current": {
+        "correct": 143,
+        "examples": 144
+      },
+      "target_initial": {
+        "correct": 124,
+        "examples": 144
+      }
+    },
+    "permuted_state_canonical_kv": {
+      "target_current": {
+        "correct": 103,
+        "examples": 144
+      },
+      "protected_current": {
+        "correct": 129,
+        "examples": 144
+      },
+      "target_initial": {
+        "correct": 142,
+        "examples": 144
+      }
+    }
+  },
+  "full_prefill_calibration": {
+    "canonical": {
+      "full_prefill_source": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-native-20261114-01/validation.native.jsonl",
+      "full_prefill_sha256": "304446134237796eb76d5f85fbbc7ae50e653a3794ec756712002e502ef58b09",
+      "full_to_cached": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 384,
+          "candidate_correct": 385,
+          "rescued": 2,
+          "regressed": 1,
+          "both_correct": 383,
+          "both_wrong": 46,
+          "net_correct_change": 1
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 86,
+          "candidate_correct": 87,
+          "rescued": 2,
+          "regressed": 1,
+          "both_correct": 85,
+          "both_wrong": 20,
+          "net_correct_change": 1
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 98,
+          "candidate_correct": 99,
+          "rescued": 2,
+          "regressed": 1,
+          "both_correct": 97,
+          "both_wrong": 44,
+          "net_correct_change": 1
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 17,
+          "candidate_correct": 17,
+          "rescued": 1,
+          "regressed": 1,
+          "both_correct": 16,
+          "both_wrong": 18,
+          "net_correct_change": 0
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 86,
+          "candidate_correct": 86,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 86,
+          "both_wrong": 10,
+          "net_correct_change": 0
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 18,
+          "candidate_correct": 18,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 18,
+          "both_wrong": 6,
+          "net_correct_change": 0
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 62,
+          "candidate_correct": 61,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 61,
+          "both_wrong": 34,
+          "net_correct_change": -1
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 62,
+          "candidate_correct": 61,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 61,
+          "both_wrong": 18,
+          "net_correct_change": -1
+        }
+      },
+      "nll_mean_absolute_difference": 0.006714137630712493,
+      "nll_max_absolute_difference": 0.07907978693644191
+    },
+    "permuted": {
+      "full_prefill_source": "/media/990Pro/Code/SAS/runs/memory_update/initial-order-control-20261114-01/native.jsonl",
+      "full_prefill_sha256": "8a555ca1091ed9da237a06a8cc1fc486c355b1cbba58b6b8f08d9102baa5953e",
+      "full_to_cached": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 367,
+          "candidate_correct": 368,
+          "rescued": 2,
+          "regressed": 1,
+          "both_correct": 366,
+          "both_wrong": 63,
+          "net_correct_change": 1
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 81,
+          "candidate_correct": 80,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 80,
+          "both_wrong": 27,
+          "net_correct_change": -1
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 88,
+          "candidate_correct": 88,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 88,
+          "both_wrong": 56,
+          "net_correct_change": 0
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 15,
+          "candidate_correct": 15,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 15,
+          "both_wrong": 21,
+          "net_correct_change": 0
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 81,
+          "candidate_correct": 81,
+          "rescued": 1,
+          "regressed": 1,
+          "both_correct": 80,
+          "both_wrong": 14,
+          "net_correct_change": 0
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 16,
+          "candidate_correct": 15,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 15,
+          "both_wrong": 8,
+          "net_correct_change": -1
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 60,
+          "candidate_correct": 61,
+          "rescued": 1,
+          "regressed": 0,
+          "both_correct": 60,
+          "both_wrong": 35,
+          "net_correct_change": 1
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 60,
+          "candidate_correct": 61,
+          "rescued": 1,
+          "regressed": 0,
+          "both_correct": 60,
+          "both_wrong": 19,
+          "net_correct_change": 1
+        }
+      },
+      "nll_mean_absolute_difference": 0.009923136647917148,
+      "nll_max_absolute_difference": 0.09765632947285963
+    }
+  },
+  "mean_nll_contrasts": {
+    "recurrent_permuted_minus_canonical_at_canonical_kv": 0.031081483537693404,
+    "recurrent_permuted_minus_canonical_at_permuted_kv": -0.005379533021492354,
+    "kv_permuted_minus_canonical_at_canonical_state": 0.11063308053776438,
+    "kv_permuted_minus_canonical_at_permuted_state": 0.07417206397857862,
+    "interaction_difference_in_differences": -0.03646101655918576
+  },
+  "base_stream_contrasts": [
+    {
+      "base_case_id": "paired-validation-accumulate-000",
+      "readouts": 36,
+      "means": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.06102767974759141,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.010255806872414206,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.10476987393296978,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.03348638731296417,
+        "interaction_difference_in_differences": -0.07128348662000561
+      }
+    },
+    {
+      "base_case_id": "paired-validation-accumulate-001",
+      "readouts": 36,
+      "means": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.0814294643027501,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.042356203965566754,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.242941480535255,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.11915581226693812,
+        "interaction_difference_in_differences": -0.12378566826831687
+      }
+    },
+    {
+      "base_case_id": "paired-validation-copy-000",
+      "readouts": 36,
+      "means": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.07812745195675504,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.029909743685965186,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.13215452405900038,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.024117328416280163,
+        "interaction_difference_in_differences": -0.10803719564272021
+      }
+    },
+    {
+      "base_case_id": "paired-validation-copy-001",
+      "readouts": 36,
+      "means": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.007592539622068947,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.03412061265704257,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.09134660972954912,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.0496334574504376,
+        "interaction_difference_in_differences": -0.041713152279111515
+      }
+    },
+    {
+      "base_case_id": "paired-validation-dependent_swap-000",
+      "readouts": 36,
+      "means": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.014055014105030786,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": 0.03152060998534715,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.0597257898878996,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.07719138576821596,
+        "interaction_difference_in_differences": 0.017465595880316362
+      }
+    },
+    {
+      "base_case_id": "paired-validation-dependent_swap-001",
+      "readouts": 36,
+      "means": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.036295730189454777,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.007538117330383375,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.11501297718603853,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.07117912966620038,
+        "interaction_difference_in_differences": -0.043833847519838154
+      }
+    },
+    {
+      "base_case_id": "paired-validation-duplicate_set-000",
+      "readouts": 36,
+      "means": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.010479639517143365,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": 0.00863080233749416,
+        "kv_permuted_minus_canonical_at_canonical_state": -0.0031721771056591372,
+        "kv_permuted_minus_canonical_at_permuted_state": -0.005021014285308342,
+        "interaction_difference_in_differences": -0.0018488371796492051
+      }
+    },
+    {
+      "base_case_id": "paired-validation-duplicate_set-001",
+      "readouts": 36,
+      "means": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.006609937482237539,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.005976183615900845,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.29216760928587365,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.27958148818773526,
+        "interaction_difference_in_differences": -0.012586121098138383
+      }
+    },
+    {
+      "base_case_id": "paired-validation-independent_swap-000",
+      "readouts": 36,
+      "means": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.04106727037233887,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": 0.038842456984437175,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.03375635996322941,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.03153154657532771,
+        "interaction_difference_in_differences": -0.0022248133879016973
+      }
+    },
+    {
+      "base_case_id": "paired-validation-independent_swap-001",
+      "readouts": 36,
+      "means": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.0029510094879057107,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.018378152063599346,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.15895579000762491,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.13762662845611986,
+        "interaction_difference_in_differences": -0.021329161551505056
+      }
+    },
+    {
+      "base_case_id": "paired-validation-overwrite-000",
+      "readouts": 36,
+      "means": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.017780170310288668,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": 0.005343094675077328,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.02210299794872602,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.00966592231351468,
+        "interaction_difference_in_differences": -0.01243707563521134
+      }
+    },
+    {
+      "base_case_id": "paired-validation-overwrite-001",
+      "readouts": 36,
+      "means": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.015561895358755634,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.0003565400493917612,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.07783513102266523,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.06191669561451784,
+        "interaction_difference_in_differences": -0.015918435408147392
+      }
+    }
+  ],
+  "family_role_contrasts": [
+    {
+      "family": "accumulate",
+      "role": "protected_current",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.14487481551865736,
+        "permuted_natural": 0.07364739322414,
+        "canonical_state_permuted_kv": 0.08587125393872459,
+        "permuted_state_canonical_kv": 0.1537020421690411
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.008827226650383733,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.01222386071458459,
+        "kv_permuted_minus_canonical_at_canonical_state": -0.059003561579932765,
+        "kv_permuted_minus_canonical_at_permuted_state": -0.0800546489449011,
+        "interaction_difference_in_differences": -0.021051087364968323
+      }
+    },
+    {
+      "family": "accumulate",
+      "role": "target_current",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.9504895959722085,
+        "permuted_natural": 1.3214955648614302,
+        "canonical_state_permuted_kv": 1.3696809108886454,
+        "permuted_state_canonical_kv": 1.1325576690336068
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.18206807306139833,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.04818534602721527,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.41919131491643685,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.18893789582782325,
+        "interaction_difference_in_differences": -0.2302534190886136
+      }
+    },
+    {
+      "family": "accumulate",
+      "role": "target_initial",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.01828224601275805,
+        "permuted_natural": 0.16115271486341953,
+        "canonical_state_permuted_kv": 0.17966152437859112,
+        "permuted_state_canonical_kv": 0.041072662376488246
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.022790416363730196,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.01850880951517158,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.16137927836583307,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.12008005248693128,
+        "interaction_difference_in_differences": -0.04129922587890178
+      }
+    },
+    {
+      "family": "copy",
+      "role": "protected_current",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.37576030670768684,
+        "permuted_natural": 0.3705752309825685,
+        "canonical_state_permuted_kv": 0.3647992147339715,
+        "permuted_state_canonical_kv": 0.3802967390252484
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.004536432317561567,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": 0.0057760162485970415,
+        "kv_permuted_minus_canonical_at_canonical_state": -0.010961091973715363,
+        "kv_permuted_minus_canonical_at_permuted_state": -0.009721508042679888,
+        "interaction_difference_in_differences": 0.0012395839310354719
+      }
+    },
+    {
+      "family": "copy",
+      "role": "target_current",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.46872159999070895,
+        "permuted_natural": 0.6093185482960608,
+        "canonical_state_permuted_kv": 0.7055796608328819,
+        "permuted_state_canonical_kv": 0.6066538734982411
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.13793227350753215,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.09626111253682111,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.23685806084217295,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.002664674797819707,
+        "interaction_difference_in_differences": -0.23419338604435325
+      }
+    },
+    {
+      "family": "copy",
+      "role": "target_initial",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.04429209720627922,
+        "permuted_natural": 0.1480863907943583,
+        "canonical_state_permuted_kv": 0.1536468290206459,
+        "permuted_state_canonical_kv": 0.03040337874942149
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": -0.013888718456857733,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.0055604382262875625,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.10935473181436667,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.11768301204493684,
+        "interaction_difference_in_differences": 0.008328280230570171
+      }
+    },
+    {
+      "family": "dependent_swap",
+      "role": "protected_current",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.25631487969723016,
+        "permuted_natural": 0.16735125871168244,
+        "canonical_state_permuted_kv": 0.14037470509194666,
+        "permuted_state_canonical_kv": 0.3238480531920989
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.0675331734948688,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": 0.02697655361973577,
+        "kv_permuted_minus_canonical_at_canonical_state": -0.11594017460528347,
+        "kv_permuted_minus_canonical_at_permuted_state": -0.1564967944804165,
+        "interaction_difference_in_differences": -0.04055661987513304
+      }
+    },
+    {
+      "family": "dependent_swap",
+      "role": "target_current",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.15435892690180075,
+        "permuted_natural": 0.26714398753311897,
+        "canonical_state_permuted_kv": 0.2491607367992401,
+        "permuted_state_canonical_kv": 0.1706281236062447
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.01626919670444396,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": 0.017983250733878884,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.09480180989743935,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.09651586392687427,
+        "interaction_difference_in_differences": 0.001714054029434924
+      }
+    },
+    {
+      "family": "dependent_swap",
+      "role": "target_initial",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.07523854066514306,
+        "permuted_natural": 0.34949899061272544,
+        "canonical_state_permuted_kv": 0.3584850559838944,
+        "permuted_state_canonical_kv": 0.06696228690755864
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": -0.008276253757584425,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.008986065371168995,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.28324651531875134,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.28253670370516676,
+        "interaction_difference_in_differences": -0.0007098116135845704
+      }
+    },
+    {
+      "family": "duplicate_set",
+      "role": "protected_current",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.13859416399565008,
+        "permuted_natural": 0.103287638992899,
+        "canonical_state_permuted_kv": 0.08830027892771694,
+        "permuted_state_canonical_kv": 0.16341505613591936
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.024820892140269276,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": 0.014987360065182049,
+        "kv_permuted_minus_canonical_at_canonical_state": -0.050293885067933135,
+        "kv_permuted_minus_canonical_at_permuted_state": -0.06012741714302036,
+        "interaction_difference_in_differences": -0.009833532075087227
+      }
+    },
+    {
+      "family": "duplicate_set",
+      "role": "target_current",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.11980989834086762,
+        "permuted_natural": 0.4214870213634438,
+        "canonical_state_permuted_kv": 0.4251094979958402,
+        "permuted_state_canonical_kv": 0.1277695135730836
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.007959615232215986,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.003622476632396372,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.30529959965497255,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.2937175077903602,
+        "interaction_difference_in_differences": -0.011582091864612357
+      }
+    },
+    {
+      "family": "duplicate_set",
+      "role": "target_initial",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.05323552791055085,
+        "permuted_natural": 0.22434000624343753,
+        "canonical_state_permuted_kv": 0.23172296159383324,
+        "permuted_state_canonical_kv": 0.04608938603713694
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": -0.007146141873413905,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.007382955350395704,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.17848743368328238,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.1782506202063006,
+        "interaction_difference_in_differences": -0.0002368134769817999
+      }
+    },
+    {
+      "family": "independent_swap",
+      "role": "protected_current",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.17935417530437311,
+        "permuted_natural": 0.2031259665058719,
+        "canonical_state_permuted_kv": 0.1829628406299485,
+        "permuted_state_canonical_kv": 0.233148117032316
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.05379394172794289,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": 0.02016312587592337,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.003608665325575406,
+        "kv_permuted_minus_canonical_at_permuted_state": -0.03002215052644412,
+        "interaction_difference_in_differences": -0.033630815852019526
+      }
+    },
+    {
+      "family": "independent_swap",
+      "role": "target_current",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.1812916882853541,
+        "permuted_natural": 0.29908303254180485,
+        "canonical_state_permuted_kv": 0.2922462427781688,
+        "permuted_state_canonical_kv": 0.20061489748251107
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.01932320919715695,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": 0.006836789763636052,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.11095455449281467,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.09846813505929378,
+        "interaction_difference_in_differences": -0.0124864194335209
+      }
+    },
+    {
+      "family": "independent_swap",
+      "role": "target_initial",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.08558982487819675,
+        "permuted_natural": 0.2637913717577855,
+        "canonical_state_permuted_kv": 0.26009483001608813,
+        "permuted_state_canonical_kv": 0.07850009374346377
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": -0.0070897311347329775,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": 0.003696541741697317,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.1745050051378914,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.18529127801432171,
+        "interaction_difference_in_differences": 0.010786272876430292
+      }
+    },
+    {
+      "family": "overwrite",
+      "role": "protected_current",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.1928230601673325,
+        "permuted_natural": 0.2007264540427261,
+        "canonical_state_permuted_kv": 0.2142998841073778,
+        "permuted_state_canonical_kv": 0.22942056051558918
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.03659750034825669,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": -0.013573430064651703,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.021476823940045305,
+        "kv_permuted_minus_canonical_at_permuted_state": -0.028694106472863093,
+        "interaction_difference_in_differences": -0.0501709304129084
+      }
+    },
+    {
+      "family": "overwrite",
+      "role": "target_current",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.11030170769016776,
+        "permuted_natural": 0.17270292869458595,
+        "canonical_state_permuted_kv": 0.1656864240972532,
+        "permuted_state_canonical_kv": 0.12546435689243177
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": 0.01516264920226402,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": 0.007016504597332742,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.055384716407085456,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.04723857180215418,
+        "interaction_difference_in_differences": -0.008146144604931278
+      }
+    },
+    {
+      "family": "overwrite",
+      "role": "target_initial",
+      "readouts": 24,
+      "gold_nll": {
+        "canonical_natural": 0.049636534285835095,
+        "permuted_natural": 0.13671894480163851,
+        "canonical_state_permuted_kv": 0.12268218739579122,
+        "permuted_state_canonical_kv": 0.047889483238880835
+      },
+      "contrasts": {
+        "recurrent_permuted_minus_canonical_at_canonical_kv": -0.0017470510469542611,
+        "recurrent_permuted_minus_canonical_at_permuted_kv": 0.014036757405847311,
+        "kv_permuted_minus_canonical_at_canonical_state": 0.07304565310995612,
+        "kv_permuted_minus_canonical_at_permuted_state": 0.08882946156275769,
+        "interaction_difference_in_differences": 0.01578380845280157
+      }
+    }
+  ],
+  "interpretation": "Reused-validation pathway diagnostic, not untouched confirmation. Natural prefix orders are semantically equivalent but their representations differ; mixed caches can be out of distribution and need not correspond to a realizable prefix. Functional rescue does not prove unique storage, ordinary write damage, or a new semantic interface. No absence-of-information claim from a failed transplant. This export is descriptive analysis of the complete registered cohort, including all families and roles. Gray plot points summarize 36 related readouts per underlying stream; they are not confidence intervals or 432 independent observations. Cache-source interactions are not semantic-complementarity or architecture-improvement estimates.",
+  "audit_report_sha256": "c28b1c576b3a240803658569e83c186923e38cfd6196409e7c097e2efa687561",
+  "analysis_source_sha256": "77f63845dd6300baf7f5385a8b599f874ec055ad24594b11217e97acabe06857"
+}

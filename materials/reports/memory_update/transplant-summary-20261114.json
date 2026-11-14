@@ -1,0 +1,5691 @@
+{
+  "status": "completed",
+  "rows": 552,
+  "case_ids": [
+    "overwrite-s11-n8",
+    "overwrite-s29-n8",
+    "overwrite-s11-n64",
+    "overwrite-s29-n64"
+  ],
+  "verification": {
+    "self_transplant_equal": true,
+    "all_path_matches_donor_max_nll_error": 0.0
+  },
+  "aggregates": [
+    {
+      "group": "0",
+      "path": "both",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.0013730979214112001,
+      "mean_abs_recipient_nll_delta": 0.005865752076109248,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "0",
+      "path": "both",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.0009350657152632858,
+      "mean_abs_recipient_nll_delta": 0.008602704387158152,
+      "mean_donor_log_odds_delta": 0.14501227298751473,
+      "prediction_changes": 0
+    },
+    {
+      "group": "0",
+      "path": "both",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.018212315665247537,
+      "mean_abs_recipient_nll_delta": 0.022773203478815653,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "0",
+      "path": "kv",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.0021439380943775194,
+      "mean_abs_recipient_nll_delta": 0.0053245114783446006,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "0",
+      "path": "kv",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.0008399630896747095,
+      "mean_abs_recipient_nll_delta": 0.007067791031052666,
+      "mean_donor_log_odds_delta": 0.05392725905403495,
+      "prediction_changes": 0
+    },
+    {
+      "group": "0",
+      "path": "kv",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.007620220150177675,
+      "mean_abs_recipient_nll_delta": 0.01038963759007553,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "0",
+      "path": "recurrent",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.002557362119356795,
+      "mean_abs_recipient_nll_delta": 0.0077832477788130445,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.007826502745350206,
+      "mean_abs_recipient_nll_delta": 0.01193523282806078,
+      "mean_donor_log_odds_delta": 0.009840784594416618,
+      "prediction_changes": 0
+    },
+    {
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.012553821550682185,
+      "mean_abs_recipient_nll_delta": 0.01723199888753394,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "1",
+      "path": "both",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.002395059292515116,
+      "mean_abs_recipient_nll_delta": 0.010467426851391794,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "1",
+      "path": "both",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.11692708125337958,
+      "mean_abs_recipient_nll_delta": 0.11692708125337958,
+      "mean_donor_log_odds_delta": 0.9372831736691296,
+      "prediction_changes": 3
+    },
+    {
+      "group": "1",
+      "path": "both",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.04295118859348197,
+      "mean_abs_recipient_nll_delta": 0.0464133183316638,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "1",
+      "path": "kv",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.0018459862718979503,
+      "mean_abs_recipient_nll_delta": 0.005806875104705496,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "1",
+      "path": "kv",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.09479051160936555,
+      "mean_abs_recipient_nll_delta": 0.0963003841849665,
+      "mean_donor_log_odds_delta": 0.6764812641777098,
+      "prediction_changes": 2
+    },
+    {
+      "group": "1",
+      "path": "kv",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.04437176859937608,
+      "mean_abs_recipient_nll_delta": 0.0461097815229247,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "1",
+      "path": "recurrent",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.0025975611060857755,
+      "mean_abs_recipient_nll_delta": 0.006292174880703291,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.004295553856839734,
+      "mean_abs_recipient_nll_delta": 0.005812191249181824,
+      "mean_donor_log_odds_delta": 0.08231922658160329,
+      "prediction_changes": 0
+    },
+    {
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.010282685824980336,
+      "mean_abs_recipient_nll_delta": 0.01161289292698105,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "2",
+      "path": "both",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.0038692237188418703,
+      "mean_abs_recipient_nll_delta": 0.006119467938939732,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "2",
+      "path": "both",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.13402740734939775,
+      "mean_abs_recipient_nll_delta": 0.14411465032026172,
+      "mean_donor_log_odds_delta": 1.2218530871905386,
+      "prediction_changes": 3
+    },
+    {
+      "group": "2",
+      "path": "both",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.026472541891659294,
+      "mean_abs_recipient_nll_delta": 0.04533692658878863,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "2",
+      "path": "kv",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.0012725113580624326,
+      "mean_abs_recipient_nll_delta": 0.005075649047891305,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "2",
+      "path": "kv",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.1301410022812585,
+      "mean_abs_recipient_nll_delta": 0.13782495927686492,
+      "mean_donor_log_odds_delta": 1.0039925943128765,
+      "prediction_changes": 3
+    },
+    {
+      "group": "2",
+      "path": "kv",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.02739307261072099,
+      "mean_abs_recipient_nll_delta": 0.03365843207575381,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "2",
+      "path": "recurrent",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.000467134018739066,
+      "mean_abs_recipient_nll_delta": 0.003470840553442641,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.013932164603223402,
+      "mean_abs_recipient_nll_delta": 0.02417019677037995,
+      "mean_donor_log_odds_delta": 0.14402149943634868,
+      "prediction_changes": 0
+    },
+    {
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.009855666120226184,
+      "mean_abs_recipient_nll_delta": 0.011824851622804998,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "3",
+      "path": "both",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.0016364591817061127,
+      "mean_abs_recipient_nll_delta": 0.01868114496270816,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "3",
+      "path": "both",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.1134221963584423,
+      "mean_abs_recipient_nll_delta": 0.1134221963584423,
+      "mean_donor_log_odds_delta": 2.158541690558195,
+      "prediction_changes": 3
+    },
+    {
+      "group": "3",
+      "path": "both",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.009859681983167924,
+      "mean_abs_recipient_nll_delta": 0.012610881666963296,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "3",
+      "path": "kv",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": -4.953891038894653e-05,
+      "mean_abs_recipient_nll_delta": 0.0030107361574967725,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "3",
+      "path": "kv",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.08849397829423349,
+      "mean_abs_recipient_nll_delta": 0.08849397829423349,
+      "mean_donor_log_odds_delta": 1.6798338601365685,
+      "prediction_changes": 3
+    },
+    {
+      "group": "3",
+      "path": "kv",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.005903682050605614,
+      "mean_abs_recipient_nll_delta": 0.006424848300715286,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "3",
+      "path": "recurrent",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.0014077176650365182,
+      "mean_abs_recipient_nll_delta": 0.01840048655867577,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.0013188629721601832,
+      "mean_abs_recipient_nll_delta": 0.01909431784103314,
+      "mean_donor_log_odds_delta": 0.27414733450859785,
+      "prediction_changes": 0
+    },
+    {
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.0045263615126411106,
+      "mean_abs_recipient_nll_delta": 0.01199676872541507,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "4",
+      "path": "both",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.002763263881206517,
+      "mean_abs_recipient_nll_delta": 0.0038542213539282466,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "4",
+      "path": "both",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.21048080548644066,
+      "mean_abs_recipient_nll_delta": 0.21048080548644066,
+      "mean_donor_log_odds_delta": 3.6600536070764065,
+      "prediction_changes": 3
+    },
+    {
+      "group": "4",
+      "path": "both",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.008582296237970391,
+      "mean_abs_recipient_nll_delta": 0.012841935347144803,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "4",
+      "path": "kv",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.002021304642160734,
+      "mean_abs_recipient_nll_delta": 0.0038518899430831244,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "4",
+      "path": "kv",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.2128602773882449,
+      "mean_abs_recipient_nll_delta": 0.2128602773882449,
+      "mean_donor_log_odds_delta": 3.6073568570427597,
+      "prediction_changes": 3
+    },
+    {
+      "group": "4",
+      "path": "kv",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.010402165741349258,
+      "mean_abs_recipient_nll_delta": 0.013614476736014087,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "4",
+      "path": "recurrent",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.0031540468335151724,
+      "mean_abs_recipient_nll_delta": 0.004042940835158035,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.0002586847792069144,
+      "mean_abs_recipient_nll_delta": 0.001093481356898948,
+      "mean_donor_log_odds_delta": -0.004098588600754738,
+      "prediction_changes": 0
+    },
+    {
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.00024083186872303833,
+      "mean_abs_recipient_nll_delta": 0.0033536484309782608,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "5",
+      "path": "both",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.0020323886225620926,
+      "mean_abs_recipient_nll_delta": 0.0044236909598112115,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "5",
+      "path": "both",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.0017191621785362565,
+      "mean_abs_recipient_nll_delta": 0.0024288045242428736,
+      "mean_donor_log_odds_delta": 0.2732659736648202,
+      "prediction_changes": 0
+    },
+    {
+      "group": "5",
+      "path": "both",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.00023062348676224987,
+      "mean_abs_recipient_nll_delta": 0.0021406111773103415,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "5",
+      "path": "kv",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.0010331707696119947,
+      "mean_abs_recipient_nll_delta": 0.0015389285981655164,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "5",
+      "path": "kv",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.00019321559617916403,
+      "mean_abs_recipient_nll_delta": 0.0009632976725697507,
+      "mean_donor_log_odds_delta": 0.2817907175049186,
+      "prediction_changes": 0
+    },
+    {
+      "group": "5",
+      "path": "kv",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.000691132231925923,
+      "mean_abs_recipient_nll_delta": 0.0009236620583881916,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "5",
+      "path": "recurrent",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.0024178307503461855,
+      "mean_abs_recipient_nll_delta": 0.004056430732210478,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.00015387032181025267,
+      "mean_abs_recipient_nll_delta": 0.0010247326766451134,
+      "mean_donor_log_odds_delta": 0.0518232760950923,
+      "prediction_changes": 0
+    },
+    {
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -3.6656235655145824e-05,
+      "mean_abs_recipient_nll_delta": 0.0006986143998801737,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "all",
+      "path": "both",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.0,
+      "mean_abs_recipient_nll_delta": 0.020738913367191955,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "all",
+      "path": "both",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 1.992759536486119,
+      "mean_abs_recipient_nll_delta": 1.992759536486119,
+      "mean_donor_log_odds_delta": 11.956557218916714,
+      "prediction_changes": 6
+    },
+    {
+      "group": "all",
+      "path": "both",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.0,
+      "mean_abs_recipient_nll_delta": 0.0636602439917624,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "all",
+      "path": "kv",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.0022947999338308947,
+      "mean_abs_recipient_nll_delta": 0.005585440744956337,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "all",
+      "path": "kv",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 1.7984515808833141,
+      "mean_abs_recipient_nll_delta": 1.7984515808833141,
+      "mean_donor_log_odds_delta": 11.323171222116798,
+      "prediction_changes": 6
+    },
+    {
+      "group": "all",
+      "path": "kv",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.033026103473578886,
+      "mean_abs_recipient_nll_delta": 0.06001926686925192,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "all",
+      "path": "recurrent",
+      "role": "protected_current",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.0022947999338308947,
+      "mean_abs_recipient_nll_delta": 0.01589491963386536,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_current",
+      "count": 8,
+      "mean_recipient_nll_delta": 0.016820709997167192,
+      "mean_abs_recipient_nll_delta": 0.02595531987026335,
+      "mean_donor_log_odds_delta": 0.633385996799916,
+      "prediction_changes": 0
+    },
+    {
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_initial",
+      "count": 8,
+      "mean_recipient_nll_delta": -0.033026103473578886,
+      "mean_abs_recipient_nll_delta": 0.036038347287103534,
+      "mean_donor_log_odds_delta": 0.0,
+      "prediction_changes": 0
+    }
+  ],
+  "individual": [
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.024416801830132805,
+      "donor_log_odds_delta": 1.4108148738741875,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.014017780621846526,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.004898348823189735,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.2556993439793587,
+      "donor_log_odds_delta": 12.14819499105215,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.009241123994191497,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.04007777633766333,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.27468107889095944,
+      "donor_log_odds_delta": 12.388499461114407,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.03186349074045819,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.07778551243245602,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.003930193682511646,
+      "donor_log_odds_delta": 0.263783760368824,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.017341752847035707,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.0014725898702939349,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.00285465270280838,
+      "donor_log_odds_delta": 0.4688729867339134,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0011177857716878348,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.0006969949851433439,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.010926355918248497,
+      "donor_log_odds_delta": 0.8536523282527924,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.012908299763997377,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.0009861728176474571,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0004139517744382211,
+      "donor_log_odds_delta": 0.21174222975969315,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0012868642807006836,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.001064327235023181,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.09356718013683955,
+      "donor_log_odds_delta": 1.53830137103796,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.008326878150304168,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.005644155666232109,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.12620672335227331,
+      "donor_log_odds_delta": 1.2215414270758629,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0143965482711792,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.008455865706006685,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0019461760918299369,
+      "donor_log_odds_delta": 0.23205198347568512,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0032607316970825195,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0026760101318359375,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.032805345952510834,
+      "donor_log_odds_delta": 2.254096694290638,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0005377332369486676,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0028637709716955815,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0633889411886533,
+      "donor_log_odds_delta": 2.6525443717837334,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0018886526425679617,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.009072701757152876,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0046769678592681885,
+      "donor_log_odds_delta": 0.7495073974132538,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.019318183263142913,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0019320932527383174,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.001477154592672985,
+      "donor_log_odds_delta": 2.8663594499230385,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0019673407077789307,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 8.391775190830231e-05,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.004917110006014507,
+      "donor_log_odds_delta": 3.6991757303476334,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.020092646280924498,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.002034097909927368,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0002600153287251779,
+      "donor_log_odds_delta": -0.027639329433441162,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.004858980576197325,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.00018522143363952637,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0028849442799886056,
+      "donor_log_odds_delta": 7.210394620895386,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.006425927082697541,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.00017887415985266397,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.002692913015683491,
+      "donor_log_odds_delta": 7.194831058382988,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.003305365641911806,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.00015369616448879242,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.00011356920003890991,
+      "donor_log_odds_delta": 0.20465684682130814,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.001918792724609375,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -5.493623514970115e-05,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.00021103521188100063,
+      "donor_log_odds_delta": 0.7907484620809555,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0015846490859985352,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 2.5315831104914636e-05,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.00020722548166910923,
+      "donor_log_odds_delta": 0.73143470287323,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0032715797424316406,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.00027555848161379525,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.06111975510915124,
+      "donor_log_odds_delta": 0.24030447006225586,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.022622366746266692,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.037707736094792686,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 3.408963918685913,
+      "donor_log_odds_delta": 10.97768458724022,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.017845710118611663,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.07288716360926628,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 3.8548187414805093,
+      "donor_log_odds_delta": 12.388499461114407,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.03186349074045819,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.07778551243245602,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0195414622624715,
+      "donor_log_odds_delta": -0.13847839832305908,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0069329539934794016,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.009425386786460876,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.007085601488749149,
+      "donor_log_odds_delta": 0.008927702903747559,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0068395137786865234,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.00548139214515686,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.003277420997619629,
+      "donor_log_odds_delta": -0.011825501918792725,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.007352272669474275,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.011706704894701644,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.009666919708251953,
+      "donor_log_odds_delta": 0.02218008041381836,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.007493873437245696,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.002267599105834961,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.08489247163136804,
+      "donor_log_odds_delta": 0.4045759439468384,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0085269610087077,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.062282636761665344,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0788895686467489,
+      "donor_log_odds_delta": 0.43562614917755127,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.019126335779825865,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.06491712108254433,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.001174847284952818,
+      "donor_log_odds_delta": -0.021602153778076172,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0056230227152506695,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.004177302122116089,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.22190968195597333,
+      "donor_log_odds_delta": 0.8266756534576416,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.005938053131103516,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.04810882359743118,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.18210542201995855,
+      "donor_log_odds_delta": 0.5840417742729187,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.02263339360555014,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.05598491181929906,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.046566128730773926,
+      "donor_log_odds_delta": 0.22906744480133057,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.01906702915827435,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.011296619971593216,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.16300968329111737,
+      "donor_log_odds_delta": 0.6073940992355347,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0007834831873575754,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.015098700920740768,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.2324759960174561,
+      "donor_log_odds_delta": 0.8305634260177612,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.01723875602086386,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.022796223560969033,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.002406557401021303,
+      "donor_log_odds_delta": 0.0070032477378845215,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0026874939600626535,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.010464290777842208,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.45157027244567877,
+      "donor_log_odds_delta": 1.608554720878601,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0006889104843139648,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.01596234242121379,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.4557911554972331,
+      "donor_log_odds_delta": 1.6108115911483765,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0028423865636189594,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.01565627257029216,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0018506447474161414,
+      "donor_log_odds_delta": -0.0031919479370117188,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 2.185503641755071e-06,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.00012433528900146484,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0026186704635620117,
+      "donor_log_odds_delta": -0.014714181423187256,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.00043050448099773986,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -2.5322039922073825e-05,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0022592147191365375,
+      "donor_log_odds_delta": 0.0065975189208984375,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.001658618450164795,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.008815576632817582,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.046805926909049354,
+      "donor_log_odds_delta": 2.1139056347310543,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.02376977602640787,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.007150626430908839,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.49394924814502394,
+      "donor_log_odds_delta": 13.327882271260023,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0018312434355417795,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.025703508406877518,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.5663349566360315,
+      "donor_log_odds_delta": 13.508570950478315,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.025544693072636918,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "all",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.12858378514647484,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.004891504844029743,
+      "donor_log_odds_delta": 0.42205747961997986,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0166252652804057,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -8.409656584262848e-05,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0002602674067020416,
+      "donor_log_odds_delta": -0.0427081398665905,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.008747011423110962,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -3.373374541600603e-05,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.006124199678500492,
+      "donor_log_odds_delta": 0.6567736305296421,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.010741273562113463,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "0",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.00011484324932098389,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0020574890077114105,
+      "donor_log_odds_delta": 0.21172838285565376,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.022380918264389038,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0005165307472149525,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.03887636338671049,
+      "donor_log_odds_delta": 0.5936722420156002,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.013045817613601685,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0013078960279623662,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.06141203517715137,
+      "donor_log_odds_delta": 0.8783403001725674,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.017209023237228394,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "1",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.005392653246720632,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.007509813954432804,
+      "donor_log_odds_delta": 0.4513433761894703,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.00875409444173178,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.004776687050859134,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.012947751830021541,
+      "donor_log_odds_delta": 0.3606186918914318,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0032057861487070904,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0030443227539459867,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.05253004406889279,
+      "donor_log_odds_delta": 2.0195896439254284,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.007112324237823486,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "2",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.012797733147939045,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.00619148959716161,
+      "donor_log_odds_delta": 0.6379954740405083,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.026281793912251786,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0030974683662255602,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0002697010835011806,
+      "donor_log_odds_delta": 1.9863132536411285,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0004735191663106375,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.000629502659042676,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.007970248659451801,
+      "donor_log_odds_delta": 2.8536321967840195,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.027064164479573563,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "3",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.003004695599277814,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -4.992137352625471e-05,
+      "donor_log_odds_delta": -0.07484916597604752,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.006969700256983458,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.00043566711246967316,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0008621675272782649,
+      "donor_log_odds_delta": 5.50756086781621,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0118408203125,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0005979115764300023,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0015183215339978542,
+      "donor_log_odds_delta": 5.732049681246281,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.013913134733835875,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "4",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.00060018648703893,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0003408665458361302,
+      "donor_log_odds_delta": 0.09574291855096817,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.00945154825846356,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.00039226623872915846,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 6.922831137975115e-05,
+      "donor_log_odds_delta": 0.4470498785376549,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.007098337014516204,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -7.158766190213869e-07,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.00034288565317789656,
+      "donor_log_odds_delta": 0.37652719020843506,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.009805252154668181,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "control",
+      "group": "5",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.00040887730817000013,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.012156148751576779,
+      "donor_log_odds_delta": 0.18068867921829224,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.023713449637095138,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.1028802767395973,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 3.2786927421887717,
+      "donor_log_odds_delta": 11.394665315747261,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0017749170462290492,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.121433158715566,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 3.9365220268567405,
+      "donor_log_odds_delta": 13.508570950478315,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.025544693072636918,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.12858378514647484,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.007613221804300907,
+      "donor_log_odds_delta": 0.06165659427642822,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.005950669447580978,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.026379426320393876,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.000514904657999693,
+      "donor_log_odds_delta": 0.06186485290527344,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.003521730502446488,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.024341771999994904,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.001196742057800293,
+      "donor_log_odds_delta": 0.05826866626739502,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0028177599112192836,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.04474245508511861,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.004213273525238037,
+      "donor_log_odds_delta": -0.004694759845733643,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0009522736072540283,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.026386042435963944,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.05214895804723102,
+      "donor_log_odds_delta": 0.8019787669181824,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.008305609226226807,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.10923203577597936,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.08820774157841998,
+      "donor_log_odds_delta": 1.1117080450057983,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.001705944538116455,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.10863649348417917,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.013182004292806027,
+      "donor_log_odds_delta": -0.2438504695892334,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.003974099953969315,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.04361917575200398,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.24976299206415814,
+      "donor_log_odds_delta": 1.5587650537490845,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.012861957152684539,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.08212854464848834,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.2176947792371114,
+      "donor_log_odds_delta": 1.5001484155654907,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0057131946086883545,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.10958316922187804,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.008839726448059082,
+      "donor_log_odds_delta": 0.03749895095825195,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.03424646457036336,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.01813938220342,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.17859556277592975,
+      "donor_log_odds_delta": 1.0741692185401917,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.009183893601099655,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.009304960568745926,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.2107571959495544,
+      "donor_log_odds_delta": 1.1697158217430115,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.03686742981274922,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.020435521999994904,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0009713371594747278,
+      "donor_log_odds_delta": 0.010388076305389404,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.012424578269322722,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0029598871866862164,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.48701343933741253,
+      "donor_log_odds_delta": 1.840994656085968,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.006455868482589722,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.02356738845507303,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.4833016594250997,
+      "donor_log_odds_delta": 1.7820813059806824,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.008256425460179656,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.011493792136510209,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0018444657325744629,
+      "donor_log_odds_delta": 0.007201969623565674,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.010499924421310425,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.00020060936609905822,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.002049247423807743,
+      "donor_log_odds_delta": -0.0020521879196166992,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0014749765396118164,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.00021758675575256348,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0009612838427225379,
+      "donor_log_odds_delta": -0.0005211234092712402,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.007865021626154586,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n8",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.0004304846127827777,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.014954467614491783,
+      "donor_log_odds_delta": 0.04737502336502075,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.015406454602877304,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.0120101198554039,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.3310743421316147,
+      "donor_log_odds_delta": 10.080178692936897,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0012174993753433228,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.04219136883815129,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.4338400612274806,
+      "donor_log_odds_delta": 10.424174085259438,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.01365816593170166,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.04761488487323125,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.022013728817303978,
+      "donor_log_odds_delta": -0.36929531395435333,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0004901289939880371,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.01829750587542852,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.022056659062703446,
+      "donor_log_odds_delta": 0.32639431953430176,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.004015515247980751,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0055962776144345625,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.00284112493197123,
+      "donor_log_odds_delta": 0.06245860457420349,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0050623168547948155,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.014513693749904633,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.003752718369166054,
+      "donor_log_odds_delta": 0.21621420979499817,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.005641991893450424,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0002819175521532706,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.005555108189582825,
+      "donor_log_odds_delta": 0.12989725172519684,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.00019540886084238457,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.015240926295518875,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0031548788150151594,
+      "donor_log_odds_delta": 0.3412088304758072,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.006562381982803345,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.013292084137598673,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.017257737616697945,
+      "donor_log_odds_delta": -0.19267573207616806,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.00013998150825500488,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.00042404482762018955,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.024494066834449768,
+      "donor_log_odds_delta": -0.3000742644071579,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.001099705696105957,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0018553808331489563,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.029946451385815937,
+      "donor_log_odds_delta": -0.41197051107883453,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.001253316799799599,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.008064712087313332,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.021215652426083878,
+      "donor_log_odds_delta": 0.5627419203519821,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.005749255418777466,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.005328774452209473,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.00345592200756073,
+      "donor_log_odds_delta": 2.8338083177804947,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0005046675602595058,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0013712445894877127,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.029187366366386414,
+      "donor_log_odds_delta": 3.6048050075769424,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.00530531505743663,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.004321582615375519,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0020639250675837176,
+      "donor_log_odds_delta": 0.07220320403575897,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0018471976121266706,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0005180761218070984,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.028218373656272888,
+      "donor_log_odds_delta": 4.499146297574043,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0015006611744562831,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.009706253806749977,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0249011367559433,
+      "donor_log_odds_delta": 4.670118525624275,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0012341588735580444,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.011450623472531639,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0027563770612080915,
+      "donor_log_odds_delta": 0.11502057313919067,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.001912792523701988,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.00045609722534815586,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0015131284793218,
+      "donor_log_odds_delta": 0.4249638468027115,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -7.877747217811815e-06,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0006872167189915963,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.001473327477773033,
+      "donor_log_odds_delta": 0.4601389765739441,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.003108978271484375,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0002604847153027841,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.011899411678314209,
+      "donor_log_odds_delta": 0.3439953923225403,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.014875665307044983,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.005423516035079956,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 3.0101384917894998,
+      "donor_log_odds_delta": 10.376799061894417,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0017482886711756435,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.05962500472863515,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 3.0408846338589988,
+      "donor_log_odds_delta": 10.424174085259438,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.01365816593170166,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.04761488487323125,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.015600462754567473,
+      "donor_log_odds_delta": -0.16497951745986938,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0044696678717931135,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.018712709347407028,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0016089677810668945,
+      "donor_log_odds_delta": 0.017287015914916992,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.011127760012944542,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.013051941990852349,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.010342578093210847,
+      "donor_log_odds_delta": 0.1277591586112976,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.004290213187535606,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.01824355125427246,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0036194721857706613,
+      "donor_log_odds_delta": 0.00704503059387207,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0015909125407536778,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0011904537677764893,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.15712390343348187,
+      "donor_log_odds_delta": 1.2759187817573547,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0009331405162811279,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.03997110823790232,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.20582236846288043,
+      "donor_log_odds_delta": 1.5461100339889526,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.005185465017954506,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.03995234022537867,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.06816208362579346,
+      "donor_log_odds_delta": 0.6166179180145264,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0017771224180857317,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.007431482275327042,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.24675383170445758,
+      "donor_log_odds_delta": 1.5847536325454712,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.001749406258265182,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.05044866104920705,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.297964870929718,
+      "donor_log_odds_delta": 1.8542304635047913,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.00028406580289204453,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.05517223601539929,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0030024846394856863,
+      "donor_log_odds_delta": 0.12120914459228516,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.004345188538233437,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.011404275894165039,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.16897143920262653,
+      "donor_log_odds_delta": 1.0635449290275574,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0008992254734039307,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.012023975451787308,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.23636943101882935,
+      "donor_log_odds_delta": 1.4901520609855652,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.005387653907140091,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.02269393702348073,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0009635289510091238,
+      "donor_log_odds_delta": -0.008865594863891602,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.00012480715910593437,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.004173715909322098,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.3221655488014221,
+      "donor_log_odds_delta": 1.5567361116409302,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0008964141209920201,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.025493790705998734,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.3104190627733866,
+      "donor_log_odds_delta": 1.5386351943016052,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.00022383530934651924,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.026519636313120522,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0005214611689249582,
+      "donor_log_odds_delta": -0.00761568546295166,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0030678013960520403,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0014745245377222743,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.00046165784200033477,
+      "donor_log_odds_delta": 0.0073130130767822266,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 7.862846056620743e-05,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.004382799069086701,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.01387043793996176,
+      "donor_log_odds_delta": 0.13058209419250488,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0040749957164128645,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s11-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.0041249493757883615,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.00942782312631607,
+      "donor_log_odds_delta": 0.3411670997738838,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.011491070191065475,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.06859653691450754,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.29311251640319824,
+      "donor_log_odds_delta": 11.116147577762604,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.01062650978565216,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.04898282388846079,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.39586255947748816,
+      "donor_log_odds_delta": 11.504984378814697,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.011889303723971054,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "all",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0006567935148874965,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0010815784335136414,
+      "donor_log_odds_delta": 0.11017575114965439,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.006893754005432129,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.05649093290170033,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.00482746958732605,
+      "donor_log_odds_delta": -0.26805010437965393,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.005185047785441085,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.025387768944104508,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.013442362348238628,
+      "donor_log_odds_delta": -0.4842224270105362,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0034979979197184152,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "0",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.0743740809460481,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.00025634219249089443,
+      "donor_log_odds_delta": 0.10036695748567581,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.005296895901362092,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.04177042841911315,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0004843821128209455,
+      "donor_log_odds_delta": -1.300051435828209,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.004908621311187744,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.07915238663554192,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.04099073012669881,
+      "donor_log_odds_delta": 0.0001551508903503418,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.011576046546300248,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "1",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.07476953541239102,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.010512386759122215,
+      "donor_log_odds_delta": -0.13804446160793304,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0016872684160868373,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.008720939358075455,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.006241761147975922,
+      "donor_log_odds_delta": 0.00149642676115036,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.011631399393081665,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.017297963301340744,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.010402520497639976,
+      "donor_log_odds_delta": -0.038747310638427734,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.005247796575228378,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "2",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.045522391796112074,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.00036294758319854736,
+      "donor_log_odds_delta": 0.3369753509759903,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.01827706396579743,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.025252242883046463,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.004511252045631405,
+      "donor_log_odds_delta": 1.9063245505094528,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.004965792099634811,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.001437107721964509,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0010020981232325213,
+      "donor_log_odds_delta": 2.4995787888765335,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.01848816871643067,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "3",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.023956572016080216,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0007573043306668623,
+      "donor_log_odds_delta": -0.011797212064266205,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.00014187395572662354,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.001735597848892212,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.009095109999179837,
+      "donor_log_odds_delta": 4.898894064128399,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0004351238409678049,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0025450785954793387,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.009686944385369618,
+      "donor_log_odds_delta": 5.008941642940044,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.00022682547569274902,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "4",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.004987746477127075,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.000439750651518505,
+      "donor_log_odds_delta": -0.000371299684047699,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0009627938270568848,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.0012041926383972168,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.00022517641385396206,
+      "donor_log_odds_delta": 0.6010697782039642,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 7.078051567077637e-06,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.002047628164291382,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.00023646901051203525,
+      "donor_log_odds_delta": 0.47941697388887405,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0009700705607732091,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "control",
+      "group": "5",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.0011953512827555246,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.026862223943074554,
+      "donor_log_odds_delta": 0.3888368010520935,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.001262793938318893,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.04963961740334829,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 3.3159820437431335,
+      "donor_log_odds_delta": 11.163817279040813,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0003982335329055786,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.06925333042939504,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 3.4391322334607444,
+      "donor_log_odds_delta": 11.504984378814697,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.011889303723971054,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "all",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.0006567935148874965,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.020809710025787354,
+      "donor_log_odds_delta": -0.10619407892227173,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.003561789790789291,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.0069933434327443394,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.017333805561065674,
+      "donor_log_odds_delta": -0.14117056131362915,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.002041727304458618,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.008527219295501709,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0206708510716756,
+      "donor_log_odds_delta": -0.10276627540588379,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.00025588274002075195,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "0",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.017504125833511353,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.02251736323038736,
+      "donor_log_odds_delta": -0.10602831840515137,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.005693669120470687,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.01942584415276845,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.33775470654169726,
+      "donor_log_odds_delta": 1.9675571918487549,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.002212564150492355,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.05604710678259532,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.33073260386784875,
+      "donor_log_odds_delta": 1.9635754525661469,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.007977669437726341,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "1",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.05589045335849126,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.07361652453740439,
+      "donor_log_odds_delta": 0.4483315348625183,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.002550403277079269,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.022773171464602157,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.3076842427253723,
+      "donor_log_odds_delta": 1.7456088662147522,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0035811513662338257,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.0635199894507726,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.29888417323430383,
+      "donor_log_odds_delta": 1.614987850189209,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0048229992389678955,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "2",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.0664975568652153,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.061899145444234194,
+      "donor_log_odds_delta": -0.48181700706481934,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.019918913642565414,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.019523292779922485,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.1876611113548279,
+      "donor_log_odds_delta": 1.1007570624351501,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.005307967464129135,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.01144937674204509,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.18469812472661337,
+      "donor_log_odds_delta": 1.1207104921340942,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.019005025426546737,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "3",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": 0.0016444226106007848,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.0012752612431844168,
+      "donor_log_odds_delta": 0.0007680654525756836,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0032888948917388916,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.006356731057167053,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.40107236305872607,
+      "donor_log_odds_delta": 1.7365735173225403,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0025713940461476598,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.030864174167315163,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.39553525050481164,
+      "donor_log_odds_delta": 1.7429598569869995,
+      "prediction_changed": true
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.0008316387732823644,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "4",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.031873529156049095,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_current",
+      "recipient_answer_nll_delta": -0.0003307263056437082,
+      "donor_log_odds_delta": 0.003142833709716797,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "recurrent",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.004635607202847794,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "recurrent",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.0016819536685943604,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "kv",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 0.000558237234751402,
+      "donor_log_odds_delta": -5.2869319915771484e-05,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "kv",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": 0.0016293774048487392,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "kv",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -2.7120113372802734e-06,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "both",
+      "role": "target_current",
+      "recipient_answer_nll_delta": 7.959206899008087e-05,
+      "donor_log_odds_delta": 0.001951456069946289,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "both",
+      "role": "protected_current",
+      "recipient_answer_nll_delta": -0.00463501115640004,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    },
+    {
+      "case_id": "overwrite-s29-n64",
+      "recipient": "treatment",
+      "group": "5",
+      "path": "both",
+      "role": "target_initial",
+      "recipient_answer_nll_delta": -0.0016136070092519078,
+      "donor_log_odds_delta": 0.0,
+      "prediction_changed": false
+    }
+  ],
+  "natural_full_cached_max_candidate_nll_error": 0.1481456756591797,
+  "natural_full_cached_mean_candidate_nll_error": 0.028315279782853215,
+  "interpretation": "Effects of unnatural mixed caches. Path attribution is provisional; small effects must be compared with numerical discrepancies. Not evidence that joint training is necessary."
+}

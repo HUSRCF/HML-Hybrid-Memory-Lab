@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "registered_before_event_diagnostic_inference",
+  "registered_utc": "2026-11-14T06:44:19.736467+00:00",
+  "base_protocol": "configs/semantic_write_locality_event_paths_plan.json",
+  "base_protocol_sha256": "e180ebbb62f8a81775a838e29eb43225d991ba10866eb46722aa8fe8a20e7d40",
+  "purpose": "Check that improved invariant readouts under cache interventions do not merely result from reverting the legitimate update of A.",
+  "scope": "All original dataset/stratum/value/base-stream/cache-combination units, not just repaired cases. Preserve the original384 primary preservation readouts and192 oracle-history controls.",
+  "companion_query": "For each of the384 primary mixed/natural conditions, also ask A-current using the identical mixed pre-question cache and its own isolated fork. Do not carry query/answer state from the preservation readout.",
+  "scoring": "Generate once without answer constraints, maximum12 new tokens. Store exact correctness and gold3-digit NLL for both the natural left-world and right-world A-current truths. For A-axis strata these truths differ, so report both rather than assigning a unique natural truth to a mixed cache. For the C-axis stratum they coincide. Never choose the better truth per observation.",
+  "calibration": "For every natural endpoint, compare the companion cached readout with its own stored full-prefill reference and own-world truth. Any right-world score for a left endpoint is a secondary explicit counterfactual score, not a new baseline failure.",
+  "joint_report": "For each intervention versus the natural right endpoint, report preservation rescues/regressions alongside right-world A-current rescues/regressions and joint both-correct counts. Separate cases where restoring the invariant answer also loses the legitimate current update.",
+  "counts": {
+    "primary_preservation_readouts": 384,
+    "companion_current_A_readouts": 384,
+    "oracle_history_readouts": 192,
+    "natural_endpoint_calibrations_including_companions": 384,
+    "prescribed_self_and_all_path_replays": 48
+  },
+  "historical_query_caveat": "The A0 tail repeats the old A value near the question; A1 replaces that redundant recent evidence with the new value. Initial-A regression alone can reflect version selection or removal of redundant recent evidence, not irreversible destruction. Protected B has identical evidence and age across every tail cell and remains the cleaner unrelated-fact test.",
+  "interpretation": "These remain localization controls rather than a proposed repair method. Keep the prior mixed-cache compatibility caveat, replication gate, all-row reporting and architecture baselines.",
+  "implementation_status": "Addendum only; no event-path data generation or model inference has occurred."
+}

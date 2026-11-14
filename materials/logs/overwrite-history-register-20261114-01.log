@@ -1,0 +1,2 @@
+{"event": "complete_prior384_query_audit_reexecuted", "prior_history_primary_passed": false}
+{"status": "registered_before_inference", "counts": {"examples": 384, "value_cases": 32, "same_final_pairs": 64, "natural_prefixes": 128, "base_streams": 8, "cohorts": 2, "active_accounts": 128, "four_value_query_groups": 96}, "prompt_tokens": [2865], "registry_sha256": "84c8cd5bf6ea828190b9f8b2d3ca5ae936cb6d9ad6e261422481f7f200cceff0"}

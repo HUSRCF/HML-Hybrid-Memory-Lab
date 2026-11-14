@@ -1,0 +1,2 @@
+{"status": "completed_native_event_path_export", "readouts": 1200, "cohort_strata": 6}
+{'final_pngs_identical_to_visually_verified_bytes': {'write-locality-event-paths-diagnostics-20261114.png': True, 'write-locality-event-paths-diagnostics-20261114-commit.png': True}}

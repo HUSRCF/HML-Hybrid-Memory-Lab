@@ -1,0 +1,12 @@
+{
+  "source_audit_sha256": "abb5808dfd3fc5081c62ccca4ad82ed8fa0d0d5fb3dfcabd05f37b30f5c5dd32",
+  "source_manifest_sha256": "055d2210afbf202e6b1d75ffe2d8698b0e2914d397bef6aeb399d1a1f73a1cc6",
+  "all32cells_retained": true,
+  "artifacts_sha256": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/question-path-mediation-comparison-20261115-01.png": "7f5db344b61060f9d50c7cbfb394428b9ac545e611d1d698c2413904f5c6b168",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/question-path-mediation-comparison-20261115-01.pdf": "29bc68ac05e463b3f0356bc5203b3fba0a79d7a000bc51472746c62662102781",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/question-path-mediation-comparison-20261115-01.json": "1927c34cc11e6cb9b994f5ad73465f03a750ad5a1b0da222da5567bc4216a04e",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/question-path-mediation-comparison-20261115-01.layout.json": "b5a16e27249565a82a2a4cce2f715b7e0bd86248f483c0d582136fcccca051b0",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/question-path-mediation-comparison-20261115-01.source.py": "e27116e86c9a2848df5676a8287f36712c246370e202c17cb9176ba683ef71ef"
+  }
+}

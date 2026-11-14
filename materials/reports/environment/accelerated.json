@@ -1,0 +1,162 @@
+{
+  "checked_at_utc": "2026-11-13T18:59:09.793489+00:00",
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 11.2.0]",
+  "executable": "/home/husrcf/anaconda3/bin/python",
+  "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+  "torch_runtime": "2.9.1+rocm7.2.0.git7e1940d4",
+  "hip": "7.2.26015-fc0010cf6a",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "triton": "3.5.1+rocm7.2.0.gita272dfa8",
+    "transformers": "5.14.1",
+    "accelerate": "1.14.0",
+    "huggingface-hub": "1.27.0",
+    "safetensors": "0.8.0",
+    "fla-core": "0.6.0",
+    "flash-linear-attention": "0.6.0",
+    "datasets": "4.8.5",
+    "pyarrow": "21.0.0",
+    "pandas": "2.3.3",
+    "numpy": "1.26.4"
+  },
+  "checkpoints": {
+    "it": {
+      "path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+      "config_sha256": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+      "shards": [
+        {
+          "file": "model.safetensors-00001-of-00001.safetensors",
+          "bytes": 4548221488,
+          "tensors": 632
+        }
+      ],
+      "layers": 24,
+      "layer_types": [
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention",
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention",
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention",
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention",
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention",
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention"
+      ],
+      "verification": "safetensors header length and index coverage; not a full-file checksum"
+    },
+    "base": {
+      "path": "/home/husrcf/Code/SAS/models/Qwen3.5-2B-Base",
+      "config_sha256": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+      "shards": [
+        {
+          "file": "model.safetensors-00001-of-00001.safetensors",
+          "bytes": 4548221488,
+          "tensors": 632
+        }
+      ],
+      "layers": 24,
+      "layer_types": [
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention",
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention",
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention",
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention",
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention",
+        "linear_attention",
+        "linear_attention",
+        "linear_attention",
+        "full_attention"
+      ],
+      "verification": "safetensors header length and index coverage; not a full-file checksum"
+    }
+  },
+  "smoke": {
+    "it": {
+      "status": "passed",
+      "mode": "auto",
+      "path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+      "class": "Qwen3_5ForCausalLM",
+      "text_parameters": 1881825088,
+      "vision_tower_loaded": false,
+      "prefill_and_cached_decode_finite": true,
+      "gdn_chunk_backend": "fla.ops.gated_delta_rule.chunk.chunk_gated_delta_rule",
+      "convolution_backend": "torch",
+      "generated_text": "4\n",
+      "elapsed_including_load_and_compile_seconds": 10.569,
+      "peak_allocated_GiB": 3.62,
+      "missing_text_keys": []
+    },
+    "base": {
+      "status": "passed",
+      "mode": "auto",
+      "path": "/home/husrcf/Code/SAS/models/Qwen3.5-2B-Base",
+      "class": "Qwen3_5ForCausalLM",
+      "text_parameters": 1881825088,
+      "vision_tower_loaded": false,
+      "prefill_and_cached_decode_finite": true,
+      "gdn_chunk_backend": "fla.ops.gated_delta_rule.chunk.chunk_gated_delta_rule",
+      "convolution_backend": "torch",
+      "generated_text": " Paris.\nA. True\nB",
+      "elapsed_including_load_and_compile_seconds": 3.018,
+      "peak_allocated_GiB": 3.62,
+      "missing_text_keys": []
+    }
+  },
+  "errors": {},
+  "data_runtime": {
+    "status": "passed",
+    "arrow_round_trip_rows": 1
+  },
+  "gpu": {
+    "name": "AMD Radeon AI PRO R9700",
+    "memory_GiB": 31.859,
+    "architecture": "gfx1201"
+  },
+  "kernels": {
+    "status": "passed",
+    "dtype": "bfloat16",
+    "shape": [
+      1,
+      64,
+      2,
+      128
+    ],
+    "chunk_max_abs_error": 6.103515625e-05,
+    "state_max_abs_error": 0.0005935877561569214,
+    "recurrent_max_abs_error": 1.52587890625e-05,
+    "backward_finite_nonzero": true,
+    "tolerance": {
+      "atol": 0.003,
+      "rtol": 0.03
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "protocol_version": 3,
+  "registered_utc": "2026-11-13T21:23:06.317519+00:00",
+  "evaluation_kind": "fixed_cohort_initialization_replication",
+  "seed_offset": 20000,
+  "copy_cases": 32,
+  "overwrite_cases": 16,
+  "modes": [
+    "all_s2718",
+    "question_s2718",
+    "all_s31415",
+    "question_s31415"
+  ],
+  "checkpoint_runs": {
+    "all_s2718": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-init2718-all-20261114-01",
+      "mode": "local"
+    },
+    "question_s2718": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-init2718-question-20261114-01",
+      "mode": "local"
+    },
+    "all_s31415": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-init31415-all-20261114-01",
+      "mode": "local"
+    },
+    "question_s31415": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-init31415-question-20261114-01",
+      "mode": "local"
+    }
+  },
+  "paired_comparisons": [
+    [
+      "question_s2718",
+      "all_s2718"
+    ],
+    [
+      "question_s31415",
+      "all_s31415"
+    ]
+  ],
+  "expected_cases_sha256": "2787cf2d28d57db0f3ad4ed7fe249a809a9eb6f172871ceb800a8b91e663848b",
+  "notes": [
+    "The 50000..50047 cohort is intentionally reused as a fixed benchmark, not fresh data.",
+    "Evaluate all four prespecified new checkpoints; no tuning, seed selection or checkpoint selection.",
+    "The original 1701 results remain in the earlier timing run and are combined during audited analysis.",
+    "Keep questions/orders/initializations correlated within each case in uncertainty analysis."
+  ]
+}

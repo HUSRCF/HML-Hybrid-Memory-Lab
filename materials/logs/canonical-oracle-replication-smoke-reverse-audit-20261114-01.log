@@ -1,0 +1,1 @@
+{"status": "audited_canonical_oracle_smoke", "new_physical_readouts_audited": 72, "fresh_full_reference_readouts_audited": 36, "actual_masked_attention_checks": 20, "complete_prefix_and_historical_KV_proofs": 20}

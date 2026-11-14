@@ -1,0 +1,14 @@
+...E
+======================================================================
+ERROR: test_shared_preservation_repair_losing_current_update_is_not_joint_success (test_locality_control_panel.LocalityControlPanelTests.test_shared_preservation_repair_losing_current_update_is_not_joint_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/husrcf/Code/SAS/tests/test_locality_control_panel.py", line 59, in test_shared_preservation_repair_losing_current_update_is_not_joint_success
+    self.assertEqual(contrast['outcomes']['right']['all_roles_joint']['regressions'], 2)
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'regressions'
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.004s
+
+FAILED (errors=1)

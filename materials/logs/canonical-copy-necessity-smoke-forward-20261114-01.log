@@ -1,0 +1,34 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:04,  2.57it/s]Loading weights:  11%|█▏        | 36/320 [00:00<00:03, 93.77it/s]Loading weights:  20%|██        | 64/320 [00:00<00:01, 144.15it/s]Loading weights:  29%|██▉       | 92/320 [00:00<00:01, 177.91it/s]Loading weights:  37%|███▋      | 119/320 [00:00<00:00, 202.13it/s]Loading weights:  46%|████▋     | 148/320 [00:00<00:00, 223.24it/s]Loading weights:  57%|█████▋    | 181/320 [00:01<00:00, 253.25it/s]Loading weights:  66%|██████▌   | 210/320 [00:01<00:00, 246.61it/s]Loading weights:  78%|███████▊  | 248/320 [00:01<00:00, 278.21it/s]Loading weights:  87%|████████▋ | 278/320 [00:01<00:00, 267.03it/s]Loading weights:  96%|█████████▌| 306/320 [00:01<00:00, 268.36it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 212.18it/s]
+{"event": "canonical_copy_necessity", "model": "native", "queries_per_regime": 6, "total": 18}
+{"event": "canonical_copy_necessity", "model": "native", "queries_per_regime": 12, "total": 18}
+{"event": "canonical_copy_necessity", "model": "native", "queries_per_regime": 18, "total": 18}
+{"event": "canonical_necessity_arm_complete", "model": "native", "new_readouts": 54}
+{"event": "canonical_copy_necessity", "model": "shared", "queries_per_regime": 6, "total": 18}
+{"event": "canonical_copy_necessity", "model": "shared", "queries_per_regime": 12, "total": 18}
+{"event": "canonical_copy_necessity", "model": "shared", "queries_per_regime": 18, "total": 18}
+{"event": "canonical_necessity_arm_complete", "model": "shared", "new_readouts": 54}
+{"event": "canonical_copy_necessity", "model": "independent", "queries_per_regime": 6, "total": 18}
+{"event": "canonical_copy_necessity", "model": "independent", "queries_per_regime": 12, "total": 18}
+{"event": "canonical_copy_necessity", "model": "independent", "queries_per_regime": 18, "total": 18}
+{"event": "canonical_necessity_arm_complete", "model": "independent", "new_readouts": 54}
+{"event": "canonical_copy_necessity", "model": "local", "queries_per_regime": 6, "total": 18}
+{"event": "canonical_copy_necessity", "model": "local", "queries_per_regime": 12, "total": 18}
+{"event": "canonical_copy_necessity", "model": "local", "queries_per_regime": 18, "total": 18}
+{"event": "canonical_necessity_arm_complete", "model": "local", "new_readouts": 54}
+{"event": "canonical_copy_necessity", "model": "local_question", "queries_per_regime": 6, "total": 18}
+{"event": "canonical_copy_necessity", "model": "local_question", "queries_per_regime": 12, "total": 18}
+{"event": "canonical_copy_necessity", "model": "local_question", "queries_per_regime": 18, "total": 18}
+{"event": "canonical_necessity_arm_complete", "model": "local_question", "new_readouts": 54}
+{"event": "canonical_copy_necessity", "model": "attention_only", "queries_per_regime": 6, "total": 18}
+{"event": "canonical_copy_necessity", "model": "attention_only", "queries_per_regime": 12, "total": 18}
+{"event": "canonical_copy_necessity", "model": "attention_only", "queries_per_regime": 18, "total": 18}
+{"event": "canonical_necessity_arm_complete", "model": "attention_only", "new_readouts": 54}
+{"event": "canonical_copy_necessity", "model": "gdn_all_tokens", "queries_per_regime": 6, "total": 18}
+{"event": "canonical_copy_necessity", "model": "gdn_all_tokens", "queries_per_regime": 12, "total": 18}
+{"event": "canonical_copy_necessity", "model": "gdn_all_tokens", "queries_per_regime": 18, "total": 18}
+{"event": "canonical_necessity_arm_complete", "model": "gdn_all_tokens", "new_readouts": 54}
+{"event": "canonical_copy_necessity", "model": "gdn_question_only", "queries_per_regime": 6, "total": 18}
+{"event": "canonical_copy_necessity", "model": "gdn_question_only", "queries_per_regime": 12, "total": 18}
+{"event": "canonical_copy_necessity", "model": "gdn_question_only", "queries_per_regime": 18, "total": 18}
+{"event": "canonical_necessity_arm_complete", "model": "gdn_question_only", "new_readouts": 54}

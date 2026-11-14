@@ -1,0 +1,55 @@
+{
+  "status": "registered_before_inference",
+  "registered_utc": "2026-11-14T06:21:10.498589+00:00",
+  "model_inference": false,
+  "training": false,
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "reader_policy": "full",
+  "protocol_sha256": "f0f3d9311eccf72580e500ebf74d2e92e16933898ed59b3d96b8e4673ed25411",
+  "counts": {
+    "examples": 576,
+    "value_cases": 48,
+    "base_streams": 4,
+    "loads": [
+      8,
+      32,
+      128
+    ],
+    "prefixes_with_tail": 192,
+    "records_per_prefix": 162,
+    "four_value_query_groups": 144
+  },
+  "reference_gate": {
+    "report_path": "/media/990Pro/Code/SAS/artifacts/memory_update/gdn-question-timing-20261114.json",
+    "report_sha256": "1ea60978eeac9414ab0211d4e3ad668c080267724b00706fba9bcb745623825e",
+    "analysis_source_sha256": "87a06f9d398cfc8275ede9cf461820ddf9c2997495fc60c81e87c76af41625fc",
+    "manifest_sha256": "a4df590b2b104dd4a87c9ff7c38b82d2f45a6df67a5a02db3434b084108c67da",
+    "status": "completed_and_audited",
+    "reference_audits_reexecuted": false
+  },
+  "data_sha256": "4140aead1e9b0161253569c51e9f83761514d842c8e898888f4ad3e68f5f8795",
+  "registry_sha256": "bbc15474c4fd1d48e8effbd3cc7c59f7a5e88e0429221ff8edde839e36fc65c6",
+  "evaluation_keys_sha256": "25b61d59ee88b05374018427174c92168bffa3b6dccfb485f8bb2fce09beaf07",
+  "source_sha256": {
+    "configs/models.json": "c1ca82d887e5892dcb8238bcaeb55bada81607b6457cf0dbf273014f6ddb5305",
+    "sas_memory/write_locality_data.py": "ac4ebadc19ce69b527b1c78ca3ee9af7b775f2230a5d991295601186a3725aeb",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "sas_memory/calibration.py": "922499d57024c280f3ab93de1dac9ef4a3d611a216f2c1ae4af7fa7862ef7a06",
+    "scripts/prepare_write_locality_load_screen.py": "9d7700bc4d52f1f16b9392cceb8af6a43cc82cd9a42a7fdb2ada8a3dfbc9eab2",
+    "scripts/analyze_blocked_reader_adaptation.py": "a23c1d33644f906b1a521fdb44a68d5e6dff86f5c11e094387eaa3fb085f94f5",
+    "scripts/analyze_controller_trial.py": "aee986c912b7f3ada5de142978ef10793f16a7753ffdc8e33733682767137e41",
+    "scripts/run_controller_trial.py": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262"
+  },
+  "tokenizer_sha256": {
+    "chat_template.jinja": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+    "config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c"
+  },
+  "checkpoint_sha256": {
+    "model.safetensors-00001-of-00001.safetensors": "aa33250c4fc64891ddfaba3a314fd9542ea371843c387178b425fbcc5ed680b1"
+  },
+  "interpretation": "Test whether semantically unrelated value updates cause functional losses as the number of simultaneously active facts increases, while holding record count and audited token positions fixed. This is a native-model diagnostic for the hybrid-block update question, not a new architecture or confirmation study."
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "status": "registered_before_diagnostic_data_and_inference",
+  "registered_utc": "2026-11-14T06:41:35.931483+00:00",
+  "profile": "matched_semantic_tail_recurrent_conv_vs_kv_diagnostic",
+  "purpose": "Localize the repeated functional preservation symptoms without assuming irreversible write damage or a need for shared controllers.",
+  "replication_protocol": "configs/semantic_write_locality_replication_plan.json",
+  "replication_protocol_sha256": "cc321076e4c16df135c506fabf5e9c1edbdf09408899444a6b93289676fecb1f",
+  "gate": "Require complete independently audited576-answer replica and report both primary outcomes first. Execute this diagnostic only if at least one primary recurs on at least two distinct new streams. No method training follows automatically.",
+  "datasets": {
+    "discovery": "/media/990Pro/Code/SAS/datasets/memory_update/fixed-length-write-locality-load-v1",
+    "replica": "/media/990Pro/Code/SAS/datasets/memory_update/fixed-length-write-locality-replication-v1"
+  },
+  "discovery_audit_sha256": "47e1835173dea129230ebe48cff6ee5c3aa59b82eff34322899a0a0319b47e83",
+  "reader_policy": "full except separately labeled oracle-history controls",
+  "training": false,
+  "adapters": false,
+  "model_key": "it",
+  "local_files_only": true,
+  "strata": [
+    {
+      "id": "unrelated_B_at32",
+      "active_accounts": 32,
+      "axis": "A",
+      "fixed_other_bit": 1,
+      "role": "protected_current",
+      "left_cell": "A0_C1",
+      "right_cell": "A1_C1"
+    },
+    {
+      "id": "initial_A_at128",
+      "active_accounts": 128,
+      "axis": "A",
+      "fixed_other_bit": 1,
+      "role": "target_initial",
+      "left_cell": "A0_C1",
+      "right_cell": "A1_C1"
+    },
+    {
+      "id": "unrelated_C_on_initial_A_at128",
+      "active_accounts": 128,
+      "axis": "C",
+      "fixed_other_bit": 1,
+      "role": "target_initial",
+      "left_cell": "A1_C0",
+      "right_cell": "A1_C1"
+    }
+  ],
+  "members": "Every base stream and every value version in each stratum, whether correct or wrong in discovery/replication. Each dataset has16 pairs per stratum and48 pair/role units; do not select only errors.",
+  "source_prefixes": "Construct each natural source from ledger tokens only, including the two tail records and excluding every question/answer token. Paired sources differ only at the registered three value digits. Verify equal lengths, query suffixes, gold answers and complete cache bookkeeping.",
+  "conditions": [
+    {
+      "recurrent_conv": "left",
+      "kv": "left"
+    },
+    {
+      "recurrent_conv": "right",
+      "kv": "right"
+    },
+    {
+      "recurrent_conv": "left",
+      "kv": "right"
+    },
+    {
+      "recurrent_conv": "right",
+      "kv": "left"
+    }
+  ],
+  "swap_scope": "All18 GDN recurrent states and their18 convolution caches versus all six Attention KV layers. Clone source tensors and preserve/validate all required cache metadata. No resetting, omitting convolution state, future tokens or source mutation.",
+  "readouts": "Use cached-question processing for every primary condition, unrestricted greedy maximum12 tokens and gold3-digit NLL. Compare both cached natural endpoints with their stored full-prefill observations instead of assuming BF16 full/cached equivalence.",
+  "counts": {
+    "datasets": 2,
+    "strata": 3,
+    "pairs_per_stratum_per_dataset": 16,
+    "mixed_and_natural_readouts": 384,
+    "natural_endpoint_calibration_observations": 192,
+    "unique_natural_prefixes_per_dataset": 80,
+    "oracle_history_readouts": 192,
+    "prescribed_self_and_all_path_replays": 48
+  },
+  "controls": "On the minimum/maximum pair identity in each dataset/stratum, replay both self-source and both all-path donor clones, with exact cache/metadata and cached-logit/NLL agreement. Observe actual cached historical access at all six Attention layers. Check source-cache immutability and loaded model-state hash/freeze before and after. Report physical prefills and repeated-prefix fingerprints if sources are recomputed.",
+  "oracle_history_control": "For each natural source, preserve its entire ledger computation and historical recurrent/conv/KV tensors, but at question time expose only instruction tokens and the exact supporting record: index1 for B-current, index0 for A-initial. Keep question/answer causality. Verify sampled native pre-question prefix identity and actual question-time probabilities. Report every oracle result, including failures, without calling oracle recovery proof that recurrent damage is absent.",
+  "reports": "All strata, source combinations and individual paired transitions; cached-vs-full calibration; role-specific NLL effects and difference-in-differences; complete value/base-stream counts; all oracle controls. Discovery and replica remain separate. Do not infer equivalence from equal totals or independent confidence from repeated readouts.",
+  "interpretation": "Mixed states/KV can be incompatible and outside natural execution distributions. A mediator effect shows a contribution under intervention; it does not prove semantic memory destruction, uniquely stored information or shared-interface necessity. Output matches to another entity/version are descriptive clues, not mechanistic attribution.",
+  "architecture_gate": "Only after reproducible localization should a method be registered and compared with query-stage, GDN-only, Attention-only, independent-controller and ordinary adaptation/data baselines while retaining the full order/COPY/history tasks.",
+  "implementation_status": "Protocol only; no event-path runner, cache mixing or oracle-readout inference yet."
+}

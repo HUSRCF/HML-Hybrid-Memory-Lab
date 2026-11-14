@@ -1,0 +1,17 @@
+{
+  "purpose": "CPU validation of actual tokenizer boundaries before matched temporal training",
+  "models": {
+    "it": {
+      "examples": 128,
+      "all_boundaries_exact": true,
+      "optimized_input_tokens": 74102,
+      "answer_tokens": 512
+    },
+    "base": {
+      "examples": 128,
+      "all_boundaries_exact": true,
+      "optimized_input_tokens": 72566,
+      "answer_tokens": 512
+    }
+  }
+}

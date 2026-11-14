@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "status": "registered_before_any_canonical_profile_model_inference",
+  "registered_utc": "2026-11-14T13:05:58.731428+00:00",
+  "base_protocol": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_plan.json",
+  "base_protocol_sha256": "fcba9df3ded485c71bb030cb6fb5ce755f255f2c51f6d320006368c27fa80407",
+  "purpose": "Repair diagnosed FP32 adapter-affine reproducibility before whole-record necessity evaluation. Keep the exact data, models, controls, hypotheses and decision thresholds; replace cross-profile reused references by freshly computed full-history references. No score-based threshold relaxation.",
+  "training": false,
+  "new_adapters": false,
+  "profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "profile_source": "scripts/stable_adapter_linears.py",
+  "profile_source_sha256": "99c57ff1ad4fe2722b4a260e62e3a63d69c2190acd9e710193a6fabe7617c670",
+  "native_backbone_dtype": "BF16 as before; no arithmetic wrapper on native model modules",
+  "adapter_parameter_storage": "Existing final frozen FP32 checkpoints, byte-identical and same dtype; no parameter update.",
+  "arithmetic": "Every nn.Linear belonging to the attached GroupController has its affine recomputed on FP64 input/weights, then rounds to FP32 before existing SiLU, scaling and BF16 delta conversion. Original FP32 affine output is discarded. Inference only. No native model module is wrapped.",
+  "reason": {
+    "failed_run_manifest": "/media/990Pro/Code/SAS/runs/memory_update/copy-evidence-necessity-smoke-20261114-01/manifest.json",
+    "failed_run_manifest_sha256": "a7bbfdc066f41fb2c06fdcc9afd6b2e3c5fc1a475bda1c0aba606e4bf3ec1e48",
+    "diagnostic": "/media/990Pro/Code/SAS/artifacts/memory_update/copy-arm-replay-diagnostic-20261114-01.json",
+    "diagnostic_sha256": "2b698889fe706c77fd86412ac007f608fe1eba4172a102db74f37656aac06cc9",
+    "finding": "Same native/adapter parameter bytes and same pre-group and encoder activations; first differing tensors are FP32 adapter output affines. Direct fixed-input matrix replay reproduces both failed projection output hashes. Maximum Q difference8.344650268554688e-7 produces23BF16-rounding changes; K3.5762786865234375e-7 produces4. Actual NLL differs0.4226212501525879 to0.44792552789052326 with same free generated answer. This does not identify a vendor-library defect.",
+    "canonical_numeric_fixture": "/media/990Pro/Code/SAS/artifacts/memory_update/attention-projection-fp64-canonical-20261114-01.json",
+    "canonical_numeric_fixture_sha256": "12207757f67d1633fb00eba57f191f083f23d9b9a2441b12fc5a23ca56e654d9",
+    "diagnostic_evidence": "20GPU layout/offset products agree exactly with CPUFP64 results rounded toFP32. These are numerical fixtures, not new task outcomes."
+  },
+  "data": {
+    "registered_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/copy-evidence-necessity-v1",
+    "manifest_sha256": "cc876c93333abc24f35d4e8497aec0e8aa09b3ceec30765800c29d543ec48de5",
+    "mask_registry_sha256": "e48ba67ed22f47c506d721f178b3174f27965d74f87c577b6c5ea7790720e497",
+    "change": "None: same336physical queries/432bindings permodel, both complete17token removals, same nearby unrelated controls, same8base streams."
+  },
+  "regimes": [
+    "full",
+    "remove_support",
+    "remove_matched_other"
+  ],
+  "counts": {
+    "models": 8,
+    "physical_queries_per_model_regime": 336,
+    "bindings_per_model_regime": 432,
+    "fresh_full_reference_readouts": 2688,
+    "masked_readouts": 5376,
+    "all_new_primary_readouts": 8064,
+    "all_new_related_bindings": 10368
+  },
+  "legacy_reference_policy": "Preserve all old FP32 results and audits, including their negative decisions, as recorded under their own execution. Do not require canonical NLLs to equal old FP32 NLLs and never mix the two arithmetic profiles in primary contrasts. Export all old-versus-canonical full-history differences descriptively.",
+  "smoke": {
+    "phase": "Operational only; no accuracy gate.",
+    "forward_models": "Same8registered models,18first/last-case physical queries each, all3regimes:432readouts.",
+    "reverse_models": "Repeat all432readouts with model order reversed. Same prompts, checkpoints, arithmetic and masks.",
+    "cross_order_gate": "Every corresponding full/masked readout must match exactly, including unrestricted generated text, gold answer NLL, greedy correctness and query token count; every sampled complete prefix hash must match. No tolerance, sample omission or success-score filtering.",
+    "per_run_controls": "Preserve previous complete memory/conv/KV/bookkeeping and logits checks,12historical K/V slices, actual6layer probabilities, hook cleanup, frozen tensor hashes, native detach replays and question-only native-prefix identity. Save canonical hook descriptions/call counts and verify native modules are untouched.",
+    "required_before_full": "Both independent432-query smoke audits and exact forward/reverse equivalence must complete before8064primary readouts."
+  },
+  "scientific_gate": "Exactly the original necessity gate, evaluated against freshly computed canonical full-history rows for both local_question and gdn_question_only. Matched-other current/history/unrelated-after counts and before joint success no lower than canonical full; positive signed current-after support-removal harm overall and in at least4of8streams, bothmodels required.",
+  "preserve_scope": "No new task data, favorable leaf/layer search, model scaling, router, environment, downloads or architecture training. Prior shared/history/repeat primaries remain failed. Oracle sufficiency stays a separate arithmetic-specific recorded result. The original masked-only full experiment was not started.",
+  "if_instability_persists": "Stop before primary inference, preserve diagnostic failures and further isolate numerical machinery. Do not reinterpret numerical variation as semantic memory interference."
+}

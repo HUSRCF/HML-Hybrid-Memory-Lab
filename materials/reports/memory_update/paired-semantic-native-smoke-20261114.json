@@ -1,0 +1,186 @@
+{
+  "status": "audited_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-native-smoke-20261114-01",
+  "manifest_sha256": "184ddc68da81478bdab55f7338ffaa49406650f16bd0d3cd79ae0388c0bcdb5b",
+  "records_audited": 36,
+  "metrics": {
+    "examples": 36,
+    "correct": 29,
+    "accuracy": 0.8055555555555556,
+    "answer_nll": 0.299141276131936,
+    "four_value_query_groups": {
+      "groups": 9,
+      "all_four_correct": 5,
+      "more_than_one_correct": 8,
+      "correct_per_group_histogram": {
+        "0": 1,
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 5
+      }
+    },
+    "joint_roles": {
+      "contexts": 12,
+      "all_three_correct": 6
+    },
+    "all_twelve_value_variant_groups": {
+      "groups": 3,
+      "all_twelve_correct": 0
+    },
+    "cells": [
+      {
+        "family": "copy",
+        "variant": "before",
+        "role": "protected_current",
+        "examples": 4,
+        "correct": 3,
+        "answer_nll": 0.35916514197985333,
+        "four_value_groups": 1,
+        "all_four_correct": 0
+      },
+      {
+        "family": "copy",
+        "variant": "before",
+        "role": "target_current",
+        "examples": 4,
+        "correct": 4,
+        "answer_nll": 0.00978024552265803,
+        "four_value_groups": 1,
+        "all_four_correct": 1
+      },
+      {
+        "family": "copy",
+        "variant": "before",
+        "role": "target_initial",
+        "examples": 4,
+        "correct": 4,
+        "answer_nll": 0.001994606611939768,
+        "four_value_groups": 1,
+        "all_four_correct": 1
+      },
+      {
+        "family": "copy",
+        "variant": "control",
+        "role": "protected_current",
+        "examples": 4,
+        "correct": 3,
+        "answer_nll": 0.5372644861539205,
+        "four_value_groups": 1,
+        "all_four_correct": 0
+      },
+      {
+        "family": "copy",
+        "variant": "control",
+        "role": "target_current",
+        "examples": 4,
+        "correct": 0,
+        "answer_nll": 0.8187208771705627,
+        "four_value_groups": 1,
+        "all_four_correct": 0
+      },
+      {
+        "family": "copy",
+        "variant": "control",
+        "role": "target_initial",
+        "examples": 4,
+        "correct": 4,
+        "answer_nll": 0.042475129167238876,
+        "four_value_groups": 1,
+        "all_four_correct": 1
+      },
+      {
+        "family": "copy",
+        "variant": "treatment",
+        "role": "protected_current",
+        "examples": 4,
+        "correct": 4,
+        "answer_nll": 0.45962169766426086,
+        "four_value_groups": 1,
+        "all_four_correct": 1
+      },
+      {
+        "family": "copy",
+        "variant": "treatment",
+        "role": "target_current",
+        "examples": 4,
+        "correct": 3,
+        "answer_nll": 0.4106036027272542,
+        "four_value_groups": 1,
+        "all_four_correct": 0
+      },
+      {
+        "family": "copy",
+        "variant": "treatment",
+        "role": "target_initial",
+        "examples": 4,
+        "correct": 4,
+        "answer_nll": 0.05264569818973541,
+        "four_value_groups": 1,
+        "all_four_correct": 1
+      }
+    ],
+    "before_after_preservation": [
+      {
+        "family": "copy",
+        "role": "protected_current",
+        "pairs": 8,
+        "before_correct": 6,
+        "after_correct": 7,
+        "regressions": 0,
+        "rescues": 1
+      },
+      {
+        "family": "copy",
+        "role": "target_initial",
+        "pairs": 8,
+        "before_correct": 8,
+        "after_correct": 8,
+        "regressions": 0,
+        "rescues": 0
+      }
+    ],
+    "preservation_regressions": [],
+    "order_pairs": [
+      {
+        "family": "copy",
+        "role": "protected_current",
+        "pairs": 4,
+        "gold_change_pairs": 0,
+        "both_correct": 3,
+        "control_correct": 3,
+        "treatment_correct": 4,
+        "valid_prediction_pairs": 4,
+        "predicted_change_pairs": 1,
+        "predicted_unchanged_pairs": 3
+      },
+      {
+        "family": "copy",
+        "role": "target_current",
+        "pairs": 4,
+        "gold_change_pairs": 4,
+        "both_correct": 0,
+        "control_correct": 0,
+        "treatment_correct": 3,
+        "valid_prediction_pairs": 4,
+        "predicted_change_pairs": 0,
+        "predicted_unchanged_pairs": 4
+      },
+      {
+        "family": "copy",
+        "role": "target_initial",
+        "pairs": 4,
+        "gold_change_pairs": 0,
+        "both_correct": 4,
+        "control_correct": 4,
+        "treatment_correct": 4,
+        "valid_prediction_pairs": 4,
+        "predicted_change_pairs": 0,
+        "predicted_unchanged_pairs": 4
+      }
+    ],
+    "interpretation": "Functional readout diagnostics. Equal/different wrong predictions are not semantic success. Before/after lengths, positions and downstream computation differ, so regressions do not isolate recurrent write damage."
+  },
+  "interpretation": "First mainline value-paired multi-entity baseline after carrier/readout calibration. It neither assumes recurrent-state damage nor presupposes a shared-interface advantage.",
+  "analysis_source_sha256": "ddbc998afe4cfdbca4b9245503bd75f419e74a4c136e2040ba540f80fae1d4c7"
+}

@@ -1,0 +1,327 @@
+{
+  "readout": {
+    "answer": "263",
+    "answer_nll": 0.4226212501525879,
+    "generated": "406\n",
+    "greedy_exact": false,
+    "query_tokens": 26
+  },
+  "layouts": {
+    "q": {
+      "input_stride": [
+        63150,
+        150,
+        1
+      ],
+      "weight_stride": [
+        150,
+        1
+      ],
+      "output_stride": [
+        862208,
+        2048,
+        1
+      ],
+      "input_offset": 0,
+      "weight_offset": 0,
+      "output_sha256": "ac994ff87d07400b3f607850f7481466be14caf34bc8443ce042699678e8d721",
+      "input_sha256": "42ff1a6cf3ca72992b81f7cab7e8b362434d347df5fc3eaa99466b8a5add549d"
+    },
+    "k": {
+      "input_stride": [
+        63150,
+        150,
+        1
+      ],
+      "weight_stride": [
+        150,
+        1
+      ],
+      "output_stride": [
+        215552,
+        512,
+        1
+      ],
+      "input_offset": 0,
+      "weight_offset": 0,
+      "output_sha256": "01b4b6389edb9a79cb3e00e5cb542bd46dfa48c6643828cef71ddf3a86febb99",
+      "input_sha256": "42ff1a6cf3ca72992b81f7cab7e8b362434d347df5fc3eaa99466b8a5add549d"
+    }
+  },
+  "trials": {
+    "q": [
+      {
+        "input_layout": "contiguous",
+        "weight_layout": "parameter",
+        "input_stride": [
+          63150,
+          150,
+          1
+        ],
+        "weight_stride": [
+          150,
+          1
+        ],
+        "sha256": "ac994ff87d07400b3f607850f7481466be14caf34bc8443ce042699678e8d721",
+        "matches_captured": true
+      },
+      {
+        "input_layout": "contiguous",
+        "weight_layout": "row_clone",
+        "input_stride": [
+          63150,
+          150,
+          1
+        ],
+        "weight_stride": [
+          150,
+          1
+        ],
+        "sha256": "ac994ff87d07400b3f607850f7481466be14caf34bc8443ce042699678e8d721",
+        "matches_captured": true
+      },
+      {
+        "input_layout": "contiguous",
+        "weight_layout": "column_clone",
+        "input_stride": [
+          63150,
+          150,
+          1
+        ],
+        "weight_stride": [
+          1,
+          2048
+        ],
+        "sha256": "33f36fee7d1b5fe2a816d663e44f87cefcb34f21a6de35a1561f93a17ddb84fa",
+        "matches_captured": false
+      },
+      {
+        "input_layout": "column",
+        "weight_layout": "parameter",
+        "input_stride": [
+          63150,
+          1,
+          421
+        ],
+        "weight_stride": [
+          150,
+          1
+        ],
+        "sha256": "ac994ff87d07400b3f607850f7481466be14caf34bc8443ce042699678e8d721",
+        "matches_captured": true
+      },
+      {
+        "input_layout": "column",
+        "weight_layout": "row_clone",
+        "input_stride": [
+          63150,
+          1,
+          421
+        ],
+        "weight_stride": [
+          150,
+          1
+        ],
+        "sha256": "ac994ff87d07400b3f607850f7481466be14caf34bc8443ce042699678e8d721",
+        "matches_captured": true
+      },
+      {
+        "input_layout": "column",
+        "weight_layout": "column_clone",
+        "input_stride": [
+          63150,
+          1,
+          421
+        ],
+        "weight_stride": [
+          1,
+          2048
+        ],
+        "sha256": "ac994ff87d07400b3f607850f7481466be14caf34bc8443ce042699678e8d721",
+        "matches_captured": true
+      },
+      {
+        "input_layout": "recorded",
+        "weight_layout": "parameter",
+        "input_stride": [
+          63150,
+          150,
+          1
+        ],
+        "weight_stride": [
+          150,
+          1
+        ],
+        "sha256": "ac994ff87d07400b3f607850f7481466be14caf34bc8443ce042699678e8d721",
+        "matches_captured": true
+      },
+      {
+        "input_layout": "recorded",
+        "weight_layout": "row_clone",
+        "input_stride": [
+          63150,
+          150,
+          1
+        ],
+        "weight_stride": [
+          150,
+          1
+        ],
+        "sha256": "ac994ff87d07400b3f607850f7481466be14caf34bc8443ce042699678e8d721",
+        "matches_captured": true
+      },
+      {
+        "input_layout": "recorded",
+        "weight_layout": "column_clone",
+        "input_stride": [
+          63150,
+          150,
+          1
+        ],
+        "weight_stride": [
+          1,
+          2048
+        ],
+        "sha256": "33f36fee7d1b5fe2a816d663e44f87cefcb34f21a6de35a1561f93a17ddb84fa",
+        "matches_captured": false
+      }
+    ],
+    "k": [
+      {
+        "input_layout": "contiguous",
+        "weight_layout": "parameter",
+        "input_stride": [
+          63150,
+          150,
+          1
+        ],
+        "weight_stride": [
+          150,
+          1
+        ],
+        "sha256": "01b4b6389edb9a79cb3e00e5cb542bd46dfa48c6643828cef71ddf3a86febb99",
+        "matches_captured": true
+      },
+      {
+        "input_layout": "contiguous",
+        "weight_layout": "row_clone",
+        "input_stride": [
+          63150,
+          150,
+          1
+        ],
+        "weight_stride": [
+          150,
+          1
+        ],
+        "sha256": "01b4b6389edb9a79cb3e00e5cb542bd46dfa48c6643828cef71ddf3a86febb99",
+        "matches_captured": true
+      },
+      {
+        "input_layout": "contiguous",
+        "weight_layout": "column_clone",
+        "input_stride": [
+          63150,
+          150,
+          1
+        ],
+        "weight_stride": [
+          1,
+          512
+        ],
+        "sha256": "ef7b67a021af8e404abde2cb28724dc091a4ca5891afd3e8f5af35e08cb53dde",
+        "matches_captured": false
+      },
+      {
+        "input_layout": "column",
+        "weight_layout": "parameter",
+        "input_stride": [
+          63150,
+          1,
+          421
+        ],
+        "weight_stride": [
+          150,
+          1
+        ],
+        "sha256": "01b4b6389edb9a79cb3e00e5cb542bd46dfa48c6643828cef71ddf3a86febb99",
+        "matches_captured": true
+      },
+      {
+        "input_layout": "column",
+        "weight_layout": "row_clone",
+        "input_stride": [
+          63150,
+          1,
+          421
+        ],
+        "weight_stride": [
+          150,
+          1
+        ],
+        "sha256": "01b4b6389edb9a79cb3e00e5cb542bd46dfa48c6643828cef71ddf3a86febb99",
+        "matches_captured": true
+      },
+      {
+        "input_layout": "column",
+        "weight_layout": "column_clone",
+        "input_stride": [
+          63150,
+          1,
+          421
+        ],
+        "weight_stride": [
+          1,
+          512
+        ],
+        "sha256": "01b4b6389edb9a79cb3e00e5cb542bd46dfa48c6643828cef71ddf3a86febb99",
+        "matches_captured": true
+      },
+      {
+        "input_layout": "recorded",
+        "weight_layout": "parameter",
+        "input_stride": [
+          63150,
+          150,
+          1
+        ],
+        "weight_stride": [
+          150,
+          1
+        ],
+        "sha256": "01b4b6389edb9a79cb3e00e5cb542bd46dfa48c6643828cef71ddf3a86febb99",
+        "matches_captured": true
+      },
+      {
+        "input_layout": "recorded",
+        "weight_layout": "row_clone",
+        "input_stride": [
+          63150,
+          150,
+          1
+        ],
+        "weight_stride": [
+          150,
+          1
+        ],
+        "sha256": "01b4b6389edb9a79cb3e00e5cb542bd46dfa48c6643828cef71ddf3a86febb99",
+        "matches_captured": true
+      },
+      {
+        "input_layout": "recorded",
+        "weight_layout": "column_clone",
+        "input_stride": [
+          63150,
+          150,
+          1
+        ],
+        "weight_stride": [
+          1,
+          512
+        ],
+        "sha256": "ef7b67a021af8e404abde2cb28724dc091a4ca5891afd3e8f5af35e08cb53dde",
+        "matches_captured": false
+      }
+    ]
+  }
+}

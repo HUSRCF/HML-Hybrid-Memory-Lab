@@ -1,0 +1,82 @@
+{
+  "status": "locked_before_data_preparation",
+  "question": "Does reading an unnecessary source version impair snapshot answers more than reading an unrelated fact after controlling extra-token budget, values and position?",
+  "training": false,
+  "new_base_seeds": {
+    "start_inclusive": 70000,
+    "stop_exclusive": 70024
+  },
+  "base_case_clusters": 24,
+  "dependency_depths": [
+    1,
+    2,
+    3
+  ],
+  "question_styles": [
+    "original",
+    "entity_first"
+  ],
+  "distractor_updates": "8/64 balanced over base facts; descriptive strata, not a causal duration comparison",
+  "program": [
+    "Initialize distinct target, source, intermediate and unrelated accounts; add background updates.",
+    "Execute the original-source-to-target snapshot COPY chain.",
+    "Append SET source = n and SET unrelated = n, using the same new integer n for both records.",
+    "Evaluate both orders of the two late SETs; the target's copied truth is unchanged."
+  ],
+  "readout_masks": {
+    "oracle": "Only the executable backward slice, plus prelude and causal query/answer tokens.",
+    "extra_source": "Oracle plus the late source SET.",
+    "extra_unrelated": "Oracle plus the late unrelated SET."
+  },
+  "checkpoints": [
+    "native",
+    "question_only_seed1701",
+    "question_only_seed2718",
+    "question_only_seed31415"
+  ],
+  "controls": [
+    "No optimization, failure selection or checkpoint selection on the new cohort.",
+    "Build and validate executable gold and all balanced conditions before model evaluation; freeze cases and token masks by hash.",
+    "Within each query, all masks use the identical complete original input and prefix computation.",
+    "Source/unrelated extras have identical assigned value and exact retained token count; swap their original late positions across paired variants.",
+    "All-history identity and restricted-prefix/cache checks for every checkpoint.",
+    "Report every depth, wording, late order, checkpoint and paired base-fact score. Bootstrap by base fact; do not count conditions, orders or seeds as independent facts."
+  ],
+  "limits": [
+    "Oracle identities remain diagnostics, not learned routing.",
+    "Late source/unrelated SETs are independent operations; do not treat this test alone as evidence of correct handling of dependent order changes.",
+    "Existing source-before-COPY controls test necessary order sensitivity; fresh positive-order controls must also precede any architecture claim.",
+    "Do not expand shared recurrent/attention controllers until readout-only and ordinary adaptation controls leave a demonstrated functional gap."
+  ],
+  "checkpoint_sources": {
+    "question_only_seed1701": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-question-trained-20261114-01",
+      "mode": "local",
+      "initialization_seed": 1701,
+      "checkpoint_sha256": "613d5d757584845332b0b03d03f4b444aa73afe6c8597abc68fb8b614ff80b69"
+    },
+    "question_only_seed2718": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-init2718-question-20261114-01",
+      "mode": "local",
+      "initialization_seed": 2718,
+      "checkpoint_sha256": "e1e0604011a4272293ff695da89f70b81a63b1f3cd7d8e458edff6b57cdb3509"
+    },
+    "question_only_seed31415": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-init31415-question-20261114-01",
+      "mode": "local",
+      "initialization_seed": 31415,
+      "checkpoint_sha256": "e1e117c0b5b83a8bec7b77195730f262e7b3c843b79f6bb9efc2a95835db93d9"
+    }
+  },
+  "registered_utc": "2026-11-13T22:47:20.787487+00:00",
+  "evaluation_regimes": [
+    "raw_full",
+    "oracle",
+    "extra_source",
+    "extra_unrelated"
+  ],
+  "notes": [
+    "Raw unrestricted readout is evaluated as an additional competence baseline.",
+    "Case metadata, dependency indices and gold values are never appended to the model input."
+  ]
+}

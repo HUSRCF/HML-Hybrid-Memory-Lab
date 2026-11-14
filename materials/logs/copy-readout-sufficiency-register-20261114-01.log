@@ -1,0 +1,2 @@
+{"event": "complete_source2688_query_audit_reexecuted"}
+{"status": "registered_before_inference", "counts": {"models": 8, "existing_cases": 48, "base_streams": 8, "physical_queries_per_model_regime": 336, "bindings_per_model_regime": 432, "new_physical_readouts": 5376, "new_reported_bindings": 6912, "reference_full_readouts": 2688, "total_reported_bindings_with_full": 10368}, "masks": 336, "record_token_budgets": [17, 38, 59, 80], "mask_registry_sha256": "de14fa807c4590c833297cd110504f643fff9e873ec0bb9626b1812d8d828bfa"}

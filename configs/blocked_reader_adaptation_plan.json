@@ -1,0 +1,53 @@
+{
+  "status": "planned_not_started",
+  "registered_utc": "2026-11-13T23:51:16.523098+00:00",
+  "question": "Can ordinary matched-budget adaptation recover answers from existing frozen prefix carriers, or does allowing prefix computation to adapt help under the same historical-KV restriction?",
+  "backbone": "it",
+  "group_index": 3,
+  "mode": "local",
+  "rank": 22,
+  "expected_trainable_parameters": 689216,
+  "initialization_seed": 1701,
+  "steps": 64,
+  "gradient_accumulation": 2,
+  "supervised_answer_tokens": 512,
+  "data_source": "/media/990Pro/Code/SAS/runs/memory_update/controller-question-trained-20261114-01",
+  "data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+  "tokenized_input_answer_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a",
+  "training_examples": 128,
+  "reader_policy": "records_blocked",
+  "arms": {
+    "question_only": {
+      "token_policy": "question",
+      "description": "Preserve pre-question KV/recurrent/convolution computation exactly; adapt only during question/answer processing."
+    },
+    "all_tokens": {
+      "token_policy": "all",
+      "description": "Same local targets/parameters; permit prefix as well as question/answer adaptation. Changes both recurrent/convolution state and attention/KV construction."
+    }
+  },
+  "initialization": "Start both controllers at the same zero-output initialization; do not warm-start from old trained controllers.",
+  "requirements": [
+    "Keep existing base Conda/runtime/backbone and every backbone parameter frozen. Save adapter weights only.",
+    "Use all the same 128 ordered original examples, answer labels, optimizer settings and 64 updates; do not add current benchmark cases to training.",
+    "Apply the records-blocked query/answer mask during every supervised forward and every cached evaluation step; prefix rows retain ordinary causal full attention.",
+    "Compare zero-init and detached restoration against native behavior under the identical reader policy, not against unmasked outputs.",
+    "Verify finite nonzero adapter gradients, no backbone gradients, and exact question-only prefix caches/logits after a nonzero update.",
+    "Keep gradient checkpointing disabled for current hook-based controllers.",
+    "Run a real-model safety smoke before training. Evaluate only final checkpoints; no benchmark-based checkpoint selection.",
+    "Report current, initial and protected readouts on the original held-out task grid; also report every condition of the reused 24-base-fact benchmark.",
+    "Audit actual masks, data/token/checkpoint/source hashes, parameter counts and optimizer-step logs for both arms."
+  ],
+  "interpretation": {
+    "question_only_success": "Constructive evidence that existing frozen prefix carriers contain usable task information under an adapted readout, not that the original frozen decoder already could recover it.",
+    "all_tokens_advantage": "Functional evidence that changing earlier computation helps for this budget/protocol; not isolated proof of GDN write damage, since prefix attention and KV construction also change.",
+    "both_fail": "Insufficient optimization/expressivity, distribution shift and missing information remain alternatives; no capacity impossibility claim.",
+    "deployment": "A blocked-reader probe is not yet a practical semantic router or an architecture contribution."
+  },
+  "evaluation_status": "The original test grid and 70000-series cohort are reused diagnostics. They are not new untouched architectural confirmation sets.",
+  "followups": [
+    "Replicate promising effects across the two other fixed initializations before a comparative claim.",
+    "Add fresh value/position-matched initial-fact and source-before/after-COPY controls with historical queries.",
+    "Compare ordinary augmentation/local adaptation and practical learned access with shared write/read co-design at matched cost before claiming architectural value."
+  ]
+}

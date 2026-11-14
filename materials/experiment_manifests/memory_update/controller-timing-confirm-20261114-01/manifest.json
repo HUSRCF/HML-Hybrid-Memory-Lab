@@ -1,0 +1,229 @@
+{
+  "status": "completed",
+  "started_utc": "2026-11-13T21:02:51.417924+00:00",
+  "config": {
+    "protocol_version": 2,
+    "registered_utc": "2026-11-13T21:02:51.220581+00:00",
+    "seed_offset": 20000,
+    "copy_cases": 32,
+    "overwrite_cases": 16,
+    "modes": [
+      "local_all",
+      "local_ledger",
+      "local_question"
+    ],
+    "checkpoint_runs": {
+      "local_all": {
+        "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-keys-pilot-20261114-01",
+        "mode": "local"
+      },
+      "local_ledger": {
+        "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-ledger-trained-20261114-01",
+        "mode": "local"
+      },
+      "local_question": {
+        "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-question-trained-20261114-01",
+        "mode": "local"
+      }
+    },
+    "comparison_reference": "local_question",
+    "excluded_case_files": [
+      "/media/990Pro/Code/SAS/runs/memory_update/controller-keys-confirm-20261114-01/cases.json"
+    ],
+    "expected_cases_sha256": "2787cf2d28d57db0f3ad4ed7fe249a809a9eb6f172871ceb800a8b91e663848b",
+    "notes": [
+      "Frozen checkpoints only; no tuning or checkpoint selection on these 48 new seeds (50000..50047).",
+      "Training inputs/answer tokens, seed, steps, optimizer, parameter count and architecture match; only training/evaluation token policy differs.",
+      "Question-only vs full adaptation is the primary comparison; no equivalence claim from a non-significant difference.",
+      "Verify actual question-only checkpoint preserves native ledger KV, recurrent/conv states and logits before scoring.",
+      "All findings still use a single training initialization."
+    ]
+  },
+  "training_config": {
+    "protocol_version": 1,
+    "model": "it",
+    "group_index": 3,
+    "initialization_seed": 1701,
+    "steps": 64,
+    "gradient_accumulation": 2,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "max_gradient_norm": 1.0,
+    "max_sequence_tokens": 1536,
+    "validation_copy_cases": 4,
+    "validation_overwrite_cases": 2,
+    "test_copy_cases": 8,
+    "test_overwrite_cases": 4,
+    "modes": {
+      "shared": 64,
+      "independent": 54,
+      "attention_only": 150,
+      "gdn_only": 84,
+      "local": 22
+    },
+    "notes": [
+      "Small feasibility trial, not a novelty or architecture claim.",
+      "Frozen IT backbone; existing conda base. No new environment or package installation.",
+      "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+      "No test-based hyperparameter selection; evaluate final checkpoint only.",
+      "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+      "Seed and entity namespaces are disjoint across train/validation/test.",
+      "Only three-digit answer and newline tokens receive supervised loss.",
+      "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets."
+    ],
+    "adapt_gdn_keys": true
+  },
+  "checkpoint_sources": {
+    "local_all": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-keys-pilot-20261114-01",
+      "mode": "local",
+      "config": {
+        "protocol_version": 1,
+        "model": "it",
+        "group_index": 3,
+        "initialization_seed": 1701,
+        "steps": 64,
+        "gradient_accumulation": 2,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "max_gradient_norm": 1.0,
+        "max_sequence_tokens": 1536,
+        "validation_copy_cases": 4,
+        "validation_overwrite_cases": 2,
+        "test_copy_cases": 8,
+        "test_overwrite_cases": 4,
+        "modes": {
+          "shared": 64,
+          "independent": 54,
+          "attention_only": 150,
+          "gdn_only": 84,
+          "local": 22
+        },
+        "notes": [
+          "Small feasibility trial, not a novelty or architecture claim.",
+          "Frozen IT backbone; existing conda base. No new environment or package installation.",
+          "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+          "No test-based hyperparameter selection; evaluate final checkpoint only.",
+          "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+          "Seed and entity namespaces are disjoint across train/validation/test.",
+          "Only three-digit answer and newline tokens receive supervised loss.",
+          "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets."
+        ],
+        "adapt_gdn_keys": true
+      },
+      "training_manifest_sha256": "d2dd578504a5355c4a0e5827fd40e9aed38b87e4c9fd22edddc197535fb6c3a1"
+    },
+    "local_ledger": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-ledger-trained-20261114-01",
+      "mode": "local",
+      "config": {
+        "protocol_version": 1,
+        "model": "it",
+        "group_index": 3,
+        "initialization_seed": 1701,
+        "steps": 64,
+        "gradient_accumulation": 2,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "max_gradient_norm": 1.0,
+        "max_sequence_tokens": 1536,
+        "validation_copy_cases": 4,
+        "validation_overwrite_cases": 2,
+        "test_copy_cases": 8,
+        "test_overwrite_cases": 4,
+        "modes": {
+          "local": 22
+        },
+        "notes": [
+          "Small feasibility trial, not a novelty or architecture claim.",
+          "Frozen IT backbone; existing conda base. No new environment or package installation.",
+          "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+          "No test-based hyperparameter selection; evaluate final checkpoint only.",
+          "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+          "Seed and entity namespaces are disjoint across train/validation/test.",
+          "Only three-digit answer and newline tokens receive supervised loss.",
+          "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets.",
+          "Mechanism control: train and evaluate with the same token-position policy, rather than disabling branches only after training.",
+          "Ordinary local low-rank adapter; identical seed, examples, steps, learning rate and parameter count to the all-token local checkpoint.",
+          "Ledger-only can alter both recurrent states and KV construction. Question-only preserves all pre-question computation. Neither is a GDN-only intervention."
+        ],
+        "adapt_gdn_keys": true,
+        "token_policy": "ledger"
+      },
+      "training_manifest_sha256": "4b092a4bf9004d0b66307d87206eb1421d9d2220a2a1d1fb76e88787b589a3c9"
+    },
+    "local_question": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-question-trained-20261114-01",
+      "mode": "local",
+      "config": {
+        "protocol_version": 1,
+        "model": "it",
+        "group_index": 3,
+        "initialization_seed": 1701,
+        "steps": 64,
+        "gradient_accumulation": 2,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "max_gradient_norm": 1.0,
+        "max_sequence_tokens": 1536,
+        "validation_copy_cases": 4,
+        "validation_overwrite_cases": 2,
+        "test_copy_cases": 8,
+        "test_overwrite_cases": 4,
+        "modes": {
+          "local": 22
+        },
+        "notes": [
+          "Small feasibility trial, not a novelty or architecture claim.",
+          "Frozen IT backbone; existing conda base. No new environment or package installation.",
+          "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+          "No test-based hyperparameter selection; evaluate final checkpoint only.",
+          "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+          "Seed and entity namespaces are disjoint across train/validation/test.",
+          "Only three-digit answer and newline tokens receive supervised loss.",
+          "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets.",
+          "Mechanism control: train and evaluate with the same token-position policy, rather than disabling branches only after training.",
+          "Ordinary local low-rank adapter; identical seed, examples, steps, learning rate and parameter count to the all-token local checkpoint.",
+          "Ledger-only can alter both recurrent states and KV construction. Question-only preserves all pre-question computation. Neither is a GDN-only intervention."
+        ],
+        "adapt_gdn_keys": true,
+        "token_policy": "question"
+      },
+      "training_manifest_sha256": "7889827f8a032c1dff9d9651eff55ab812ac34a1f0ef85a2b2ee871de6a79865"
+    }
+  },
+  "cases_sha256": "2787cf2d28d57db0f3ad4ed7fe249a809a9eb6f172871ceb800a8b91e663848b",
+  "completed_modes": [
+    "native",
+    "local_all",
+    "local_ledger",
+    "local_question"
+  ],
+  "checkpoint_sha256": {
+    "local_all": "3fa297b0fb279adb5f53e22483932e756ba08df71b3c29dc57831f896090c577",
+    "local_ledger": "8ae32f4396ef492ee8e1d1c146d397cce4908fc8a446cb1ab6a0e292c38275da",
+    "local_question": "613d5d757584845332b0b03d03f4b444aa73afe6c8597abc68fb8b614ff80b69"
+  },
+  "pre_question_cache_checks": {
+    "local_question": {
+      "case_id": "test-copy-s50000-n8",
+      "kv_recurrent_conv_and_logits_exact": true
+    }
+  },
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/controllers.py": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/metrics.py": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/stress_tasks.py": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "scripts/run_controller_trial.py": "69230ea519774a7d17bc890cfc5dae43069977d5add285a0bc9b75ff9f7d566f",
+    "scripts/run_controller_confirmation.py": "46a6703bd6d6f317c47d25a2500be63b0e1436ae3d1544a8e60966f9aa2f0028"
+  },
+  "training": false,
+  "interpretation": "Frozen-checkpoint fresh-seed confirmation; no test-based tuning.",
+  "completed_utc": "2026-11-13T21:11:16.585762+00:00"
+}

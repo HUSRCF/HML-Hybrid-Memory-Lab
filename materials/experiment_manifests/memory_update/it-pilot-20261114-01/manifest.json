@@ -1,0 +1,57 @@
+{
+  "started_utc": "2026-11-13T19:37:29.863208+00:00",
+  "model": "it",
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "backend": "auto",
+  "config": {
+    "protocol_version": 1,
+    "seeds": [
+      11,
+      29
+    ],
+    "distractor_updates": [
+      8,
+      64
+    ],
+    "families": [
+      "overwrite",
+      "independent_swap",
+      "dependent_swap",
+      "duplicate_set",
+      "accumulate",
+      "copy"
+    ],
+    "notes": [
+      "Pilot only; small samples cannot establish novelty or a causal mechanism.",
+      "Each question forks all recurrent, convolution, and KV states.",
+      "Greedy exact integer accuracy and answer NLL are distinct from candidate ranking.",
+      "Control and treatment share a prefix; token-length matching is reported, not assumed.",
+      "Initial-version queries do not ask about an ambiguous relative time."
+    ]
+  },
+  "cases_sha256": "c0db6bf0d801032b8d53b4d2d7a275683ae49db4ce49974aa8be1d75d23b9cf4",
+  "model_config_sha256": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "gpu": "AMD Radeon AI PRO R9700",
+  "python": "/home/husrcf/anaconda3/bin/python",
+  "training": false,
+  "generation": true,
+  "status": "completed",
+  "case_count": 24,
+  "prefill": "full",
+  "score_batch": false,
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/metrics.py": "1594cccf20e5b436b6fe2a22b5f0285ca2624e09b635c35917e806d0f36ee1e1",
+    "sas_memory/runtime.py": "2cc89f515964a0ddea8f15e0dfcd34dfd83ecf598a4040d2ec0e76015b505cef",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "scripts/run_diagnostics.py": "b13eaf737d0df07eb0d63c6ee02b936d27cf0e17c673fbb67116339b37b4eb19"
+  },
+  "elapsed_seconds": 141.04271354991943,
+  "peak_allocated_gib": 3.901440143585205,
+  "completed_utc": "2026-11-13T19:39:50.911112+00:00"
+}

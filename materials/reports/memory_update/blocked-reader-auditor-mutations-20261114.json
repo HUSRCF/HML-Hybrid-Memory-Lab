@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "mutation": "missing_microbatch_mask",
+      "rejected": true,
+      "reason": "Training loss/gradient invalid or a microbatch was not masked"
+    },
+    {
+      "mutation": "allowed_record_column",
+      "rejected": true,
+      "reason": "Evaluation mask/input changed or cached answer access unrestricted"
+    },
+    {
+      "mutation": "missing_evaluation_row",
+      "rejected": true,
+      "reason": "Missing evaluation rows: /tmp/sas-blocked-audit-yuijb91x/trial/local/test.jsonl"
+    }
+  ]
+}

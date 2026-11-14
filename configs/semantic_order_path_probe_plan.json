@@ -1,0 +1,65 @@
+{
+  "status": "registered_not_started",
+  "registered_utc": "2026-11-14T03:25:52.443429+00:00",
+  "purpose": "Localize native functional sensitivity to commuting initial updates across complete recurrent/convolution and historical KV paths, after the conventional augmentation baseline.",
+  "training": false,
+  "backbone": "it",
+  "reader_policy": "full",
+  "adapters": false,
+  "canonical_data_source": "/media/990Pro/Code/SAS/datasets/memory_update/paired-semantic-updates-v1",
+  "canonical_manifest_sha256": "f572ee457fbea4deb6135abeaa12d32094f0e1e66d7906192ab6c442a7ec8fcf",
+  "base_data_sha256": "9a58823c8348db79b5b20db418894ae51782d02d943dc2440365af66c6838791",
+  "permuted_data_source": "/media/990Pro/Code/SAS/datasets/memory_update/initial-order-derangement-v1",
+  "permuted_manifest_sha256": "33d25a3564b5b872227664da10d6c447bcd12fc17bb221b0c9df7dc8afc380d5",
+  "cases_sha256": "1125157f9d81f09a44958d77fa27ae82f252871af5b3f52b5a54cdb234fe662c",
+  "registry_sha256": "17b5b7c00fad7d43a0c367f5d08e069f4d1a3f678ab9bbbc1aa1b2f0597e9669",
+  "order_control_plan": "/home/husrcf/Code/SAS/configs/initial_order_control_plan.json",
+  "order_control_plan_sha256": "ab728f84c696c8c664217e86955935cbff5ffb3cdfa896e44f748750b6a27a22",
+  "full_reference_native_run": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-native-20261114-01",
+  "full_reference_order_run": "/media/990Pro/Code/SAS/runs/memory_update/initial-order-control-20261114-01",
+  "augmentation_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+  "augmentation_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+  "groups": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "conditions": {
+    "canonical_natural": {
+      "recurrent_and_convolution": "canonical",
+      "kv": "canonical"
+    },
+    "permuted_natural": {
+      "recurrent_and_convolution": "permuted",
+      "kv": "permuted"
+    },
+    "canonical_state_permuted_kv": {
+      "recurrent_and_convolution": "canonical",
+      "kv": "permuted"
+    },
+    "permuted_state_canonical_kv": {
+      "recurrent_and_convolution": "permuted",
+      "kv": "canonical"
+    }
+  },
+  "examples_per_condition": 432,
+  "query_readouts": 1728,
+  "unique_prefixes_per_order": 144,
+  "selection": "Every original validation example, in the same registered order. No selection by native error, augmentation outcome, model score or rescue ability.",
+  "generation": "Unrestricted greedy generation with the existing 12-token/newline/EOS rule. Gold-only teacher scoring provides NLL, never a forced-choice accuracy or an oracle KV mask.",
+  "gate": "Require independently audited completion of all four fixed-budget augmented controllers in both development orders, plus the original native/full order references; verify the augmentation plan digest. No new path-probe model inference before that gate.",
+  "requirements": [
+    "Reuse exactly the registered semantic cases and initial-record derangements. Current/initial truth, questions, query token IDs and absolute query positions must match between origins.",
+    "Compute complete natural prefix caches for both orders with full prefix prefill. Explicitly split at the ledger/question boundary for every primary natural and mixed readout. Reuse old full-prefill readouts only as separately labeled calibration comparisons; full and cached BF16 paths need not have identical answers or losses.",
+    "Use the existing matched-position transplant helper. Swap all eighteen recurrent matrices together with complete convolution state and required initialized/bookkeeping fields, or all six attention KV pairs. Fixed group set is all six quartets; no layer selection or learned repair.",
+    "All-path transplants must reproduce donor cache tensors, and self transplants must reproduce the recipient. Source caches must stay bitwise unchanged after every probe; each query/scoring/generation branch gets an isolated fork.",
+    "On the lexicographically first/last query keys, replay self and all-path donor readouts and require matching unrestricted generation and answer NLL within 1e-5. Observe actual nonzero historical attention at all six layers in all four cached conditions; expect cached rather than full-prefill observer calls.",
+    "Report all four full-cohort functional summaries and paired rescues/regressions, stable unchanged facts and ADD-separated targets. Report the full-vs-cached natural difference before attributing any cross-path rescue to recurrent or KV effects.",
+    "Report gold-NLL recurrent-source and KV-source contrasts and their difference-in-differences as descriptive counterfactual effects, with paired example identities. Do not treat mixed caches as natural model accuracy or a trained architecture.",
+    "Freeze every parameter, record source/model/package identities, and retain all 1728 raw free generations and NLLs. No retraining, extra capacity, evidence masks or post-result condition selection."
+  ],
+  "interpretation": "Reused-validation pathway diagnostic, not untouched confirmation. Natural prefix orders are semantically equivalent but their representations differ; mixed caches can be out of distribution and need not correspond to a realizable prefix. Functional rescue does not prove unique storage, ordinary write damage, or a new semantic interface. No absence-of-information claim from a failed transplant."
+}

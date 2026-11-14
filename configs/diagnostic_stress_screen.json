@@ -1,0 +1,11 @@
+{
+  "protocol_version": 2,
+  "seeds": [101, 103],
+  "distractor_updates": [64, 512],
+  "distractor_entities": [4, 128],
+  "families": ["overwrite"],
+  "notes": [
+    "Screening subset of diagnostic_stress.json; remaining seeds are reserved for confirmation.",
+    "Target values and final updates match across length and entity-load conditions."
+  ]
+}

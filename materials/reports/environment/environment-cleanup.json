@@ -1,0 +1,10 @@
+{
+  "selected_environment": "/home/husrcf/anaconda3",
+  "removed_paths": [
+    "/media/990Pro/Code/SAS/.venv",
+    "/media/990Pro/Code/SAS/.cache/uv"
+  ],
+  "free_space_increase_bytes": 668463104,
+  "triton_cache_preserved": true,
+  "project_venv_exists": false
+}

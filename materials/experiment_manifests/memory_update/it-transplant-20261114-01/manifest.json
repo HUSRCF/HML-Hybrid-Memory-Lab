@@ -1,0 +1,25 @@
+{
+  "status": "completed",
+  "model": "it",
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "started_utc": "2026-11-13T19:42:59.521394+00:00",
+  "case_ids": [
+    "overwrite-s11-n8",
+    "overwrite-s29-n8",
+    "overwrite-s11-n64",
+    "overwrite-s29-n64"
+  ],
+  "cases_sha256": "c0db6bf0d801032b8d53b4d2d7a275683ae49db4ce49974aa8be1d75d23b9cf4",
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/metrics.py": "1594cccf20e5b436b6fe2a22b5f0285ca2624e09b635c35917e806d0f36ee1e1",
+    "sas_memory/runtime.py": "2cc89f515964a0ddea8f15e0dfcd34dfd83ecf598a4040d2ec0e76015b505cef",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "scripts/run_cache_interventions.py": "78283b8fc5044023f0537201edae5b54bf8e54db9f5bcfae9a8562fc9bb326df"
+  },
+  "interpretation": "Cache transplants are unnatural counterfactuals, not task accuracy or a trained method.",
+  "rows": 552,
+  "elapsed_seconds": 212.58726262603886,
+  "completed_utc": "2026-11-13T19:46:32.109783+00:00"
+}

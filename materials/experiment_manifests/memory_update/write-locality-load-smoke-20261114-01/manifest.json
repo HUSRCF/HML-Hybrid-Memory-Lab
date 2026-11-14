@@ -1,0 +1,254 @@
+{
+  "status": "completed",
+  "started_utc": "2026-11-14T06:23:06.023170+00:00",
+  "training": false,
+  "adapters": false,
+  "smoke": true,
+  "reader_policy": "full",
+  "dataset": "/media/990Pro/Code/SAS/datasets/memory_update/fixed-length-write-locality-load-v1",
+  "dataset_manifest_sha256": "364999d6e60f93533cd32f6e33247cac6cac1bb77034189a26d471207a69bb68",
+  "protocol_sha256": "f0f3d9311eccf72580e500ebf74d2e92e16933898ed59b3d96b8e4673ed25411",
+  "reference_gate": {
+    "report_path": "/media/990Pro/Code/SAS/artifacts/memory_update/gdn-question-timing-20261114.json",
+    "report_sha256": "1ea60978eeac9414ab0211d4e3ad668c080267724b00706fba9bcb745623825e",
+    "analysis_source_sha256": "87a06f9d398cfc8275ede9cf461820ddf9c2997495fc60c81e87c76af41625fc",
+    "manifest_sha256": "a4df590b2b104dd4a87c9ff7c38b82d2f45a6df67a5a02db3434b084108c67da",
+    "status": "completed_and_audited",
+    "reference_audits_reexecuted": false
+  },
+  "smoke_gate": null,
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "safety_checks": [
+    {
+      "key": [
+        "write-locality-s97000-a008-v0",
+        "A0_C0",
+        "protected_current"
+      ],
+      "native_replay_exact": true,
+      "full_attention_weights": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.796875,
+          "max_record_mass": 0.9945165514945984
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.9140625,
+          "max_record_mass": 0.9889363646507263
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.8984375,
+          "max_record_mass": 0.9917987585067749
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.88671875,
+          "max_record_mass": 0.9989085793495178
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.66015625,
+          "max_record_mass": 0.9921778440475464
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.392578125,
+          "max_record_mass": 0.9807303547859192
+        }
+      }
+    },
+    {
+      "key": [
+        "write-locality-s97000-a128-v0",
+        "A1_C1",
+        "target_initial"
+      ],
+      "native_replay_exact": true,
+      "full_attention_weights": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.72265625,
+          "max_record_mass": 0.997148871421814
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.796875,
+          "max_record_mass": 0.975764811038971
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.765625,
+          "max_record_mass": 0.99265056848526
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.8671875,
+          "max_record_mass": 0.999738335609436
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.59375,
+          "max_record_mass": 0.9959884881973267
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.373046875,
+          "max_record_mass": 0.9598205089569092
+        }
+      }
+    }
+  ],
+  "generation_config_sha256": {},
+  "evaluated_keys": [
+    [
+      "write-locality-s97000-a008-v0",
+      "A0_C0",
+      "target_current"
+    ],
+    [
+      "write-locality-s97000-a008-v0",
+      "A0_C0",
+      "protected_current"
+    ],
+    [
+      "write-locality-s97000-a008-v0",
+      "A0_C0",
+      "target_initial"
+    ],
+    [
+      "write-locality-s97000-a008-v0",
+      "A1_C1",
+      "target_current"
+    ],
+    [
+      "write-locality-s97000-a008-v0",
+      "A1_C1",
+      "protected_current"
+    ],
+    [
+      "write-locality-s97000-a008-v0",
+      "A1_C1",
+      "target_initial"
+    ],
+    [
+      "write-locality-s97000-a128-v0",
+      "A0_C0",
+      "target_current"
+    ],
+    [
+      "write-locality-s97000-a128-v0",
+      "A0_C0",
+      "protected_current"
+    ],
+    [
+      "write-locality-s97000-a128-v0",
+      "A0_C0",
+      "target_initial"
+    ],
+    [
+      "write-locality-s97000-a128-v0",
+      "A1_C1",
+      "target_current"
+    ],
+    [
+      "write-locality-s97000-a128-v0",
+      "A1_C1",
+      "protected_current"
+    ],
+    [
+      "write-locality-s97000-a128-v0",
+      "A1_C1",
+      "target_initial"
+    ]
+  ],
+  "source_sha256": {
+    "configs/models.json": "c1ca82d887e5892dcb8238bcaeb55bada81607b6457cf0dbf273014f6ddb5305",
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/calibration.py": "922499d57024c280f3ab93de1dac9ef4a3d611a216f2c1ae4af7fa7862ef7a06",
+    "sas_memory/controllers.py": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9",
+    "sas_memory/counterbalance_data.py": "88e38ff2901e652335e23ff5decd4bb69d59481a58d27f7284b99fcdf47d176c",
+    "sas_memory/counterbalance_tasks.py": "914523e92d5d1e657646d0e6d179c86845af2605fc6f7d8ab34794181fd6bf1d",
+    "sas_memory/gdn_query_control.py": "b65468349959abd3ebe6a67562e720a13d1590aa37b58803b8cb0b98db026231",
+    "sas_memory/generalization_tasks.py": "697a6fdc1e9d448fdfd5b7fa6e22adca40477d35c6e70f7aaebf648ef8b608fd",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/kv_readout.py": "2927df0cfdaf4972287b83914092e2224eacfc3ccf9d0508e03a64e85e919b8b",
+    "sas_memory/metrics.py": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e",
+    "sas_memory/readout_controls.py": "c15b4e3d4f4de2ce09a3c559dae64be8d849f472d6b02b9f70dd165c2cf73afa",
+    "sas_memory/record_kv_ablation.py": "37c694da6bfb100fba6498df3a4b09ae89dde5181b55b1b17d80585e873f6093",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/semantic_metrics.py": "3f1383a7aed4d72558d567894532ddfa1486de690849c9eea0c73215aaca4efe",
+    "sas_memory/stress_tasks.py": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "sas_memory/write_locality_data.py": "ac4ebadc19ce69b527b1c78ca3ee9af7b775f2230a5d991295601186a3725aeb",
+    "sas_memory/write_locality_metrics.py": "86c0b90709f4fa6510c351ca3f8bfdbe45a613a7b4ac9cfda4bad816051e9299",
+    "scripts/analyze_blocked_reader_adaptation.py": "a23c1d33644f906b1a521fdb44a68d5e6dff86f5c11e094387eaa3fb085f94f5",
+    "scripts/analyze_controller_trial.py": "aee986c912b7f3ada5de142978ef10793f16a7753ffdc8e33733682767137e41",
+    "scripts/analyze_write_locality_load_screen.py": "43adbeb05d687c512654927768a7d01e69241dba91a00b8c008b12793d6a14dd",
+    "scripts/check_record_attention_weights.py": "952d6b00870e170ab6d3cf210b6d150a761c38133257782cc8e63a0d5a4af47f",
+    "scripts/prepare_write_locality_load_screen.py": "9d7700bc4d52f1f16b9392cceb8af6a43cc82cd9a42a7fdb2ada8a3dfbc9eab2",
+    "scripts/run_controller_trial.py": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262",
+    "scripts/run_oracle_kv_readout.py": "45f0cf4760af5fdfa42e473c80aa5dc6fbf04d0a71d23b7927b6310e06c8e886",
+    "scripts/run_write_locality_load_screen.py": "50cf643027299432d247e6fc2ed7cd9d43d5460a50e9d8cf0e29bdef71ced32f"
+  },
+  "decoding": {
+    "maximum_new_tokens": 12,
+    "candidate_restriction": false,
+    "gold_answer_nll_tokens": 3
+  },
+  "screen_signal_implementation": "Same axis/fixed-other-bit/role/load contrast regresses in at least two distinct base streams; value siblings count once.",
+  "python": "/home/husrcf/anaconda3/bin/python",
+  "gpu": "AMD Radeon AI PRO R9700",
+  "actual_eos_token_id": 248044,
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "weights_before": {
+    "sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+    "state_tensors": 321,
+    "state_bytes": 4780768896,
+    "parameters": 1881825088,
+    "all_parameters_frozen": true,
+    "no_parameter_gradients": true
+  },
+  "weights_after": {
+    "sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+    "state_tensors": 321,
+    "state_bytes": 4780768896,
+    "parameters": 1881825088,
+    "all_parameters_frozen": true,
+    "no_parameter_gradients": true
+  },
+  "hooks_restored": true,
+  "completed_utc": "2026-11-14T06:23:35.573266+00:00",
+  "result_sha256": "4387d69ea9aa88ce3965eb6c500ddc4d82953d87b684712177f657abf734973e"
+}

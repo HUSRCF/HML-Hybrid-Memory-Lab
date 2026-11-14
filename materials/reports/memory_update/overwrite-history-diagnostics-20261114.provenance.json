@@ -1,0 +1,43 @@
+{
+  "status": "complete_independently_audited_export_and_visually_verified_figure",
+  "verified_utc": "2026-11-14T10:35:10.077661+00:00",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/overwrite-history-20261114.json",
+  "source_audit_sha256": "ef369a7feb824d0696ad36c7cb14dfc5e51fd629570852724bc41514383881cf",
+  "source_manifest_sha256": "f73891ecb01d0ac2309dba100c7c3fc63bca1537ee8d2ff0522bcadacec4c6c3",
+  "dataset_manifest_sha256": "d783f7c3261a44f108db2dc7064772bc044a1570e1e89bfbef8e5f018d583330",
+  "registry_sha256": "84c8cd5bf6ea828190b9f8b2d3ca5ae936cb6d9ad6e261422481f7f200cceff0",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "analysis_source": "/home/husrcf/Code/SAS/scripts/export_semantic_overwrite_history.py",
+  "analysis_source_sha256": "f6a325665afc997effa8a2002ade271daa2046f258c2cd8b33344dce6afe61b6",
+  "files": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/overwrite-history-diagnostics-20261114.json": "0dadafb84ee710f75fe4d326fc625bf47ef1ff8fcb04ef4d547265f5c6d64fe7",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/overwrite-history-diagnostics-20261114.source.py": "f6a325665afc997effa8a2002ade271daa2046f258c2cd8b33344dce6afe61b6",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/overwrite-history-diagnostics-20261114.csv": "39d53561a2cc42a282a4005bdd64234f56f85fa5c6188437062293b933cde487",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/overwrite-history-diagnostics-20261114.png": "dc6041663ccca147f0f753ad09a36d60153a35e4b9a5f455efb5258f04e72005",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/overwrite-history-diagnostics-20261114.pdf": "aebf7aeb7f7d4b44cf9309e949b921f3ec443e0f41fec6726f9bec9f56194d01",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/overwrite-history-diagnostics-20261114-pairs.csv": "670335014cf546b79e438df05433e13814ffb013b23849ccc120c6af45f4a223"
+  },
+  "raw_csv_rows": 384,
+  "paired_csv_rows": 64,
+  "figure_image_checks": {
+    "size": [
+      2400,
+      1600
+    ],
+    "distinct_colors": 604,
+    "top_left": [
+      255,
+      255,
+      255
+    ]
+  },
+  "layout_checks": {
+    "outside_figure": [],
+    "annotation_overlaps_x_ticks": [
+      false,
+      false
+    ]
+  },
+  "visual_check": "Viewed final four-panel PNG; counts match all audited cells and pooled comparisons; raw/qualified losses, rescues, eligible denominators and positive base streams are readable. Rendered text bounding boxes lie within the figure, with no annotation/x-tick overlap.",
+  "decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
+}

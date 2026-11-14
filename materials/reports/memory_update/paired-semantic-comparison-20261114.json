@@ -1,0 +1,1002 @@
+{
+  "status": "completed_paired_comparison",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-controllers-20261114-01",
+  "training_manifest_sha256": "601e20a31826ea822da2810231cc5e18da74817adab4d17a10c4218c6c01e965",
+  "models": {
+    "native": {
+      "individual": {
+        "correct": 384,
+        "units": 432
+      },
+      "four_values": {
+        "correct": 86,
+        "units": 108
+      },
+      "three_roles": {
+        "correct": 98,
+        "units": 144
+      },
+      "twelve_value_variant": {
+        "correct": 17,
+        "units": 36
+      },
+      "stable_unchanged_case_role": {
+        "correct": 86,
+        "units": 96
+      },
+      "stable_unchanged_four_values": {
+        "correct": 18,
+        "units": 24
+      },
+      "updated_target": {
+        "correct": 62,
+        "units": 96
+      },
+      "updated_target_except_add": {
+        "correct": 62,
+        "units": 80
+      }
+    },
+    "shared": {
+      "individual": {
+        "correct": 429,
+        "units": 432
+      },
+      "four_values": {
+        "correct": 105,
+        "units": 108
+      },
+      "three_roles": {
+        "correct": 141,
+        "units": 144
+      },
+      "twelve_value_variant": {
+        "correct": 33,
+        "units": 36
+      },
+      "stable_unchanged_case_role": {
+        "correct": 96,
+        "units": 96
+      },
+      "stable_unchanged_four_values": {
+        "correct": 24,
+        "units": 24
+      },
+      "updated_target": {
+        "correct": 93,
+        "units": 96
+      },
+      "updated_target_except_add": {
+        "correct": 80,
+        "units": 80
+      }
+    },
+    "independent": {
+      "individual": {
+        "correct": 429,
+        "units": 432
+      },
+      "four_values": {
+        "correct": 106,
+        "units": 108
+      },
+      "three_roles": {
+        "correct": 141,
+        "units": 144
+      },
+      "twelve_value_variant": {
+        "correct": 34,
+        "units": 36
+      },
+      "stable_unchanged_case_role": {
+        "correct": 96,
+        "units": 96
+      },
+      "stable_unchanged_four_values": {
+        "correct": 24,
+        "units": 24
+      },
+      "updated_target": {
+        "correct": 93,
+        "units": 96
+      },
+      "updated_target_except_add": {
+        "correct": 80,
+        "units": 80
+      }
+    },
+    "local": {
+      "individual": {
+        "correct": 391,
+        "units": 432
+      },
+      "four_values": {
+        "correct": 95,
+        "units": 108
+      },
+      "three_roles": {
+        "correct": 103,
+        "units": 144
+      },
+      "twelve_value_variant": {
+        "correct": 23,
+        "units": 36
+      },
+      "stable_unchanged_case_role": {
+        "correct": 94,
+        "units": 96
+      },
+      "stable_unchanged_four_values": {
+        "correct": 23,
+        "units": 24
+      },
+      "updated_target": {
+        "correct": 57,
+        "units": 96
+      },
+      "updated_target_except_add": {
+        "correct": 56,
+        "units": 80
+      }
+    },
+    "local_question": {
+      "individual": {
+        "correct": 427,
+        "units": 432
+      },
+      "four_values": {
+        "correct": 105,
+        "units": 108
+      },
+      "three_roles": {
+        "correct": 139,
+        "units": 144
+      },
+      "twelve_value_variant": {
+        "correct": 33,
+        "units": 36
+      },
+      "stable_unchanged_case_role": {
+        "correct": 96,
+        "units": 96
+      },
+      "stable_unchanged_four_values": {
+        "correct": 24,
+        "units": 24
+      },
+      "updated_target": {
+        "correct": 91,
+        "units": 96
+      },
+      "updated_target_except_add": {
+        "correct": 80,
+        "units": 80
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "reference": "native",
+      "candidate": "shared",
+      "metrics": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 384,
+          "candidate_correct": 429,
+          "rescued": 45,
+          "regressed": 0,
+          "both_correct": 384,
+          "both_wrong": 3,
+          "net_correct_change": 45
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 86,
+          "candidate_correct": 105,
+          "rescued": 19,
+          "regressed": 0,
+          "both_correct": 86,
+          "both_wrong": 3,
+          "net_correct_change": 19
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 98,
+          "candidate_correct": 141,
+          "rescued": 43,
+          "regressed": 0,
+          "both_correct": 98,
+          "both_wrong": 3,
+          "net_correct_change": 43
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 17,
+          "candidate_correct": 33,
+          "rescued": 16,
+          "regressed": 0,
+          "both_correct": 17,
+          "both_wrong": 3,
+          "net_correct_change": 16
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 86,
+          "candidate_correct": 96,
+          "rescued": 10,
+          "regressed": 0,
+          "both_correct": 86,
+          "both_wrong": 0,
+          "net_correct_change": 10
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 18,
+          "candidate_correct": 24,
+          "rescued": 6,
+          "regressed": 0,
+          "both_correct": 18,
+          "both_wrong": 0,
+          "net_correct_change": 6
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 62,
+          "candidate_correct": 93,
+          "rescued": 31,
+          "regressed": 0,
+          "both_correct": 62,
+          "both_wrong": 3,
+          "net_correct_change": 31
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 62,
+          "candidate_correct": 80,
+          "rescued": 18,
+          "regressed": 0,
+          "both_correct": 62,
+          "both_wrong": 0,
+          "net_correct_change": 18
+        }
+      }
+    },
+    {
+      "reference": "native",
+      "candidate": "independent",
+      "metrics": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 384,
+          "candidate_correct": 429,
+          "rescued": 45,
+          "regressed": 0,
+          "both_correct": 384,
+          "both_wrong": 3,
+          "net_correct_change": 45
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 86,
+          "candidate_correct": 106,
+          "rescued": 20,
+          "regressed": 0,
+          "both_correct": 86,
+          "both_wrong": 2,
+          "net_correct_change": 20
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 98,
+          "candidate_correct": 141,
+          "rescued": 43,
+          "regressed": 0,
+          "both_correct": 98,
+          "both_wrong": 3,
+          "net_correct_change": 43
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 17,
+          "candidate_correct": 34,
+          "rescued": 17,
+          "regressed": 0,
+          "both_correct": 17,
+          "both_wrong": 2,
+          "net_correct_change": 17
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 86,
+          "candidate_correct": 96,
+          "rescued": 10,
+          "regressed": 0,
+          "both_correct": 86,
+          "both_wrong": 0,
+          "net_correct_change": 10
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 18,
+          "candidate_correct": 24,
+          "rescued": 6,
+          "regressed": 0,
+          "both_correct": 18,
+          "both_wrong": 0,
+          "net_correct_change": 6
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 62,
+          "candidate_correct": 93,
+          "rescued": 31,
+          "regressed": 0,
+          "both_correct": 62,
+          "both_wrong": 3,
+          "net_correct_change": 31
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 62,
+          "candidate_correct": 80,
+          "rescued": 18,
+          "regressed": 0,
+          "both_correct": 62,
+          "both_wrong": 0,
+          "net_correct_change": 18
+        }
+      }
+    },
+    {
+      "reference": "native",
+      "candidate": "local",
+      "metrics": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 384,
+          "candidate_correct": 391,
+          "rescued": 28,
+          "regressed": 21,
+          "both_correct": 363,
+          "both_wrong": 20,
+          "net_correct_change": 7
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 86,
+          "candidate_correct": 95,
+          "rescued": 13,
+          "regressed": 4,
+          "both_correct": 82,
+          "both_wrong": 9,
+          "net_correct_change": 9
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 98,
+          "candidate_correct": 103,
+          "rescued": 26,
+          "regressed": 21,
+          "both_correct": 77,
+          "both_wrong": 20,
+          "net_correct_change": 5
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 17,
+          "candidate_correct": 23,
+          "rescued": 9,
+          "regressed": 3,
+          "both_correct": 14,
+          "both_wrong": 10,
+          "net_correct_change": 6
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 86,
+          "candidate_correct": 94,
+          "rescued": 8,
+          "regressed": 0,
+          "both_correct": 86,
+          "both_wrong": 2,
+          "net_correct_change": 8
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 18,
+          "candidate_correct": 23,
+          "rescued": 5,
+          "regressed": 0,
+          "both_correct": 18,
+          "both_wrong": 1,
+          "net_correct_change": 5
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 62,
+          "candidate_correct": 57,
+          "rescued": 16,
+          "regressed": 21,
+          "both_correct": 41,
+          "both_wrong": 18,
+          "net_correct_change": -5
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 62,
+          "candidate_correct": 56,
+          "rescued": 15,
+          "regressed": 21,
+          "both_correct": 41,
+          "both_wrong": 3,
+          "net_correct_change": -6
+        }
+      }
+    },
+    {
+      "reference": "native",
+      "candidate": "local_question",
+      "metrics": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 384,
+          "candidate_correct": 427,
+          "rescued": 43,
+          "regressed": 0,
+          "both_correct": 384,
+          "both_wrong": 5,
+          "net_correct_change": 43
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 86,
+          "candidate_correct": 105,
+          "rescued": 19,
+          "regressed": 0,
+          "both_correct": 86,
+          "both_wrong": 3,
+          "net_correct_change": 19
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 98,
+          "candidate_correct": 139,
+          "rescued": 41,
+          "regressed": 0,
+          "both_correct": 98,
+          "both_wrong": 5,
+          "net_correct_change": 41
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 17,
+          "candidate_correct": 33,
+          "rescued": 16,
+          "regressed": 0,
+          "both_correct": 17,
+          "both_wrong": 3,
+          "net_correct_change": 16
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 86,
+          "candidate_correct": 96,
+          "rescued": 10,
+          "regressed": 0,
+          "both_correct": 86,
+          "both_wrong": 0,
+          "net_correct_change": 10
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 18,
+          "candidate_correct": 24,
+          "rescued": 6,
+          "regressed": 0,
+          "both_correct": 18,
+          "both_wrong": 0,
+          "net_correct_change": 6
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 62,
+          "candidate_correct": 91,
+          "rescued": 29,
+          "regressed": 0,
+          "both_correct": 62,
+          "both_wrong": 5,
+          "net_correct_change": 29
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 62,
+          "candidate_correct": 80,
+          "rescued": 18,
+          "regressed": 0,
+          "both_correct": 62,
+          "both_wrong": 0,
+          "net_correct_change": 18
+        }
+      }
+    },
+    {
+      "reference": "independent",
+      "candidate": "shared",
+      "metrics": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 429,
+          "candidate_correct": 429,
+          "rescued": 1,
+          "regressed": 1,
+          "both_correct": 428,
+          "both_wrong": 2,
+          "net_correct_change": 0
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 106,
+          "candidate_correct": 105,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 105,
+          "both_wrong": 2,
+          "net_correct_change": -1
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 141,
+          "candidate_correct": 141,
+          "rescued": 1,
+          "regressed": 1,
+          "both_correct": 140,
+          "both_wrong": 2,
+          "net_correct_change": 0
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 34,
+          "candidate_correct": 33,
+          "rescued": 0,
+          "regressed": 1,
+          "both_correct": 33,
+          "both_wrong": 2,
+          "net_correct_change": -1
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 96,
+          "candidate_correct": 96,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 96,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 24,
+          "candidate_correct": 24,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 24,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 93,
+          "candidate_correct": 93,
+          "rescued": 1,
+          "regressed": 1,
+          "both_correct": 92,
+          "both_wrong": 2,
+          "net_correct_change": 0
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 80,
+          "candidate_correct": 80,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 80,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        }
+      }
+    },
+    {
+      "reference": "local",
+      "candidate": "shared",
+      "metrics": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 391,
+          "candidate_correct": 429,
+          "rescued": 39,
+          "regressed": 1,
+          "both_correct": 390,
+          "both_wrong": 2,
+          "net_correct_change": 38
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 95,
+          "candidate_correct": 105,
+          "rescued": 10,
+          "regressed": 0,
+          "both_correct": 95,
+          "both_wrong": 3,
+          "net_correct_change": 10
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 103,
+          "candidate_correct": 141,
+          "rescued": 39,
+          "regressed": 1,
+          "both_correct": 102,
+          "both_wrong": 2,
+          "net_correct_change": 38
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 23,
+          "candidate_correct": 33,
+          "rescued": 10,
+          "regressed": 0,
+          "both_correct": 23,
+          "both_wrong": 3,
+          "net_correct_change": 10
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 94,
+          "candidate_correct": 96,
+          "rescued": 2,
+          "regressed": 0,
+          "both_correct": 94,
+          "both_wrong": 0,
+          "net_correct_change": 2
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 23,
+          "candidate_correct": 24,
+          "rescued": 1,
+          "regressed": 0,
+          "both_correct": 23,
+          "both_wrong": 0,
+          "net_correct_change": 1
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 57,
+          "candidate_correct": 93,
+          "rescued": 37,
+          "regressed": 1,
+          "both_correct": 56,
+          "both_wrong": 2,
+          "net_correct_change": 36
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 56,
+          "candidate_correct": 80,
+          "rescued": 24,
+          "regressed": 0,
+          "both_correct": 56,
+          "both_wrong": 0,
+          "net_correct_change": 24
+        }
+      }
+    },
+    {
+      "reference": "local_question",
+      "candidate": "shared",
+      "metrics": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 427,
+          "candidate_correct": 429,
+          "rescued": 4,
+          "regressed": 2,
+          "both_correct": 425,
+          "both_wrong": 1,
+          "net_correct_change": 2
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 105,
+          "candidate_correct": 105,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 105,
+          "both_wrong": 3,
+          "net_correct_change": 0
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 139,
+          "candidate_correct": 141,
+          "rescued": 4,
+          "regressed": 2,
+          "both_correct": 137,
+          "both_wrong": 1,
+          "net_correct_change": 2
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 33,
+          "candidate_correct": 33,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 33,
+          "both_wrong": 3,
+          "net_correct_change": 0
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 96,
+          "candidate_correct": 96,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 96,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 24,
+          "candidate_correct": 24,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 24,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 91,
+          "candidate_correct": 93,
+          "rescued": 4,
+          "regressed": 2,
+          "both_correct": 89,
+          "both_wrong": 1,
+          "net_correct_change": 2
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 80,
+          "candidate_correct": 80,
+          "rescued": 0,
+          "regressed": 0,
+          "both_correct": 80,
+          "both_wrong": 0,
+          "net_correct_change": 0
+        }
+      }
+    },
+    {
+      "reference": "local",
+      "candidate": "local_question",
+      "metrics": {
+        "individual": {
+          "units": 432,
+          "reference_correct": 391,
+          "candidate_correct": 427,
+          "rescued": 36,
+          "regressed": 0,
+          "both_correct": 391,
+          "both_wrong": 5,
+          "net_correct_change": 36
+        },
+        "four_values": {
+          "units": 108,
+          "reference_correct": 95,
+          "candidate_correct": 105,
+          "rescued": 10,
+          "regressed": 0,
+          "both_correct": 95,
+          "both_wrong": 3,
+          "net_correct_change": 10
+        },
+        "three_roles": {
+          "units": 144,
+          "reference_correct": 103,
+          "candidate_correct": 139,
+          "rescued": 36,
+          "regressed": 0,
+          "both_correct": 103,
+          "both_wrong": 5,
+          "net_correct_change": 36
+        },
+        "twelve_value_variant": {
+          "units": 36,
+          "reference_correct": 23,
+          "candidate_correct": 33,
+          "rescued": 10,
+          "regressed": 0,
+          "both_correct": 23,
+          "both_wrong": 3,
+          "net_correct_change": 10
+        },
+        "stable_unchanged_case_role": {
+          "units": 96,
+          "reference_correct": 94,
+          "candidate_correct": 96,
+          "rescued": 2,
+          "regressed": 0,
+          "both_correct": 94,
+          "both_wrong": 0,
+          "net_correct_change": 2
+        },
+        "stable_unchanged_four_values": {
+          "units": 24,
+          "reference_correct": 23,
+          "candidate_correct": 24,
+          "rescued": 1,
+          "regressed": 0,
+          "both_correct": 23,
+          "both_wrong": 0,
+          "net_correct_change": 1
+        },
+        "updated_target": {
+          "units": 96,
+          "reference_correct": 57,
+          "candidate_correct": 91,
+          "rescued": 34,
+          "regressed": 0,
+          "both_correct": 57,
+          "both_wrong": 5,
+          "net_correct_change": 34
+        },
+        "updated_target_except_add": {
+          "units": 80,
+          "reference_correct": 56,
+          "candidate_correct": 80,
+          "rescued": 24,
+          "regressed": 0,
+          "both_correct": 56,
+          "both_wrong": 0,
+          "net_correct_change": 24
+        }
+      }
+    }
+  ],
+  "target_update_by_family": {
+    "native": {
+      "accumulate": {
+        "correct": 0,
+        "examples": 16
+      },
+      "copy": {
+        "correct": 4,
+        "examples": 16
+      },
+      "dependent_swap": {
+        "correct": 16,
+        "examples": 16
+      },
+      "duplicate_set": {
+        "correct": 16,
+        "examples": 16
+      },
+      "independent_swap": {
+        "correct": 12,
+        "examples": 16
+      },
+      "overwrite": {
+        "correct": 14,
+        "examples": 16
+      }
+    },
+    "shared": {
+      "accumulate": {
+        "correct": 13,
+        "examples": 16
+      },
+      "copy": {
+        "correct": 16,
+        "examples": 16
+      },
+      "dependent_swap": {
+        "correct": 16,
+        "examples": 16
+      },
+      "duplicate_set": {
+        "correct": 16,
+        "examples": 16
+      },
+      "independent_swap": {
+        "correct": 16,
+        "examples": 16
+      },
+      "overwrite": {
+        "correct": 16,
+        "examples": 16
+      }
+    },
+    "independent": {
+      "accumulate": {
+        "correct": 13,
+        "examples": 16
+      },
+      "copy": {
+        "correct": 16,
+        "examples": 16
+      },
+      "dependent_swap": {
+        "correct": 16,
+        "examples": 16
+      },
+      "duplicate_set": {
+        "correct": 16,
+        "examples": 16
+      },
+      "independent_swap": {
+        "correct": 16,
+        "examples": 16
+      },
+      "overwrite": {
+        "correct": 16,
+        "examples": 16
+      }
+    },
+    "local": {
+      "accumulate": {
+        "correct": 1,
+        "examples": 16
+      },
+      "copy": {
+        "correct": 14,
+        "examples": 16
+      },
+      "dependent_swap": {
+        "correct": 16,
+        "examples": 16
+      },
+      "duplicate_set": {
+        "correct": 8,
+        "examples": 16
+      },
+      "independent_swap": {
+        "correct": 7,
+        "examples": 16
+      },
+      "overwrite": {
+        "correct": 11,
+        "examples": 16
+      }
+    },
+    "local_question": {
+      "accumulate": {
+        "correct": 11,
+        "examples": 16
+      },
+      "copy": {
+        "correct": 16,
+        "examples": 16
+      },
+      "dependent_swap": {
+        "correct": 16,
+        "examples": 16
+      },
+      "duplicate_set": {
+        "correct": 16,
+        "examples": 16
+      },
+      "independent_swap": {
+        "correct": 16,
+        "examples": 16
+      },
+      "overwrite": {
+        "correct": 16,
+        "examples": 16
+      }
+    }
+  },
+  "interpretation": "Single initialization and 12 underlying value-paired event families. Counts share cases; equal averages are not equivalence and a small gap is not superiority. Stable unchanged units require correct before/control/treatment answers, so making the before answer wrong cannot improve this metric. ADD is reported separately from other target updates. No isolated recurrent-write or semantic-interface claim.",
+  "audit_report_sha256": "83c91326d6e96c0fa2447516c4cc8fac4589d465b4c3ccfd811e5795470c9431",
+  "analysis_source_sha256": "871abbcc2fdb3c691e6a5af29f27b68eeef60f9a85de88a30045a054a82b2e75"
+}

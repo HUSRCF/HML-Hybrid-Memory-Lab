@@ -1,0 +1,763 @@
+{
+  "status": "completed",
+  "started_utc": "2026-11-13T23:44:38.246558+00:00",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/record-kv-ablation-20261114-01",
+  "manifest_sha256": "4a9a24fb2498f9df68e498898dab209fb5d19788065f810c44baf85881f07285",
+  "samples": [
+    {
+      "model": "native",
+      "case_id": "counterbalance-test-copy-s70000-n8-depth1-original",
+      "variant": "source_first",
+      "full_history": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.84375,
+          "max_record_mass": 0.9932783246040344
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.77734375,
+          "max_record_mass": 0.9918813109397888
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.89453125,
+          "max_record_mass": 0.9858729839324951
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.9375,
+          "max_record_mass": 0.9933317303657532
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.87109375,
+          "max_record_mass": 0.9781711101531982
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.5703125,
+          "max_record_mass": 0.9832587242126465
+        }
+      },
+      "records_blocked": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 9,
+          "query_rows": 36,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 9,
+          "query_rows": 36,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 9,
+          "query_rows": 36,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 9,
+          "query_rows": 36,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 9,
+          "query_rows": 36,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 9,
+          "query_rows": 36,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        }
+      },
+      "full_and_blocked_reference_replays_exact": true
+    },
+    {
+      "model": "native",
+      "case_id": "counterbalance-test-copy-s70000-n8-depth1-original",
+      "variant": "unrelated_first",
+      "full_history": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.84765625,
+          "max_record_mass": 0.9928207397460938
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.77734375,
+          "max_record_mass": 0.989142894744873
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.8984375,
+          "max_record_mass": 0.9848242402076721
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.9375,
+          "max_record_mass": 0.992820143699646
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.88671875,
+          "max_record_mass": 0.9791149497032166
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 32,
+          "max_record_probability": 0.5859375,
+          "max_record_mass": 0.9815114140510559
+        }
+      },
+      "records_blocked": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 12,
+          "query_rows": 39,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 12,
+          "query_rows": 39,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 12,
+          "query_rows": 39,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 12,
+          "query_rows": 39,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 12,
+          "query_rows": 39,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 12,
+          "query_rows": 39,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        }
+      },
+      "full_and_blocked_reference_replays_exact": true
+    },
+    {
+      "model": "native",
+      "case_id": "counterbalance-test-copy-s70023-n64-depth3-entity_first",
+      "variant": "source_first",
+      "full_history": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 33,
+          "max_record_probability": 0.89453125,
+          "max_record_mass": 0.981788158416748
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 33,
+          "max_record_probability": 0.8515625,
+          "max_record_mass": 0.9809502363204956
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 33,
+          "max_record_probability": 0.875,
+          "max_record_mass": 0.9795746803283691
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 33,
+          "max_record_probability": 0.796875,
+          "max_record_mass": 0.9956040382385254
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 33,
+          "max_record_probability": 0.9140625,
+          "max_record_mass": 0.9879672527313232
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 33,
+          "max_record_probability": 0.48828125,
+          "max_record_mass": 0.9778940081596375
+        }
+      },
+      "records_blocked": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 13,
+          "query_rows": 41,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 13,
+          "query_rows": 41,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 13,
+          "query_rows": 41,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 13,
+          "query_rows": 41,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 13,
+          "query_rows": 41,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 13,
+          "query_rows": 41,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        }
+      },
+      "full_and_blocked_reference_replays_exact": true
+    },
+    {
+      "model": "native",
+      "case_id": "counterbalance-test-copy-s70023-n64-depth3-entity_first",
+      "variant": "unrelated_first",
+      "full_history": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 33,
+          "max_record_probability": 0.78515625,
+          "max_record_mass": 0.9814388751983643
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 33,
+          "max_record_probability": 0.91015625,
+          "max_record_mass": 0.9787083268165588
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 33,
+          "max_record_probability": 0.84765625,
+          "max_record_mass": 0.9832557439804077
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 33,
+          "max_record_probability": 0.86328125,
+          "max_record_mass": 0.9954836368560791
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 33,
+          "max_record_probability": 0.78515625,
+          "max_record_mass": 0.9896677136421204
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 5,
+          "query_rows": 33,
+          "max_record_probability": 0.3203125,
+          "max_record_mass": 0.984745442867279
+        }
+      },
+      "records_blocked": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 13,
+          "query_rows": 41,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 13,
+          "query_rows": 41,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 13,
+          "query_rows": 41,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 13,
+          "query_rows": 41,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 13,
+          "query_rows": 41,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 13,
+          "query_rows": 41,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        }
+      },
+      "full_and_blocked_reference_replays_exact": true
+    },
+    {
+      "model": "question_only_seed1701",
+      "case_id": "counterbalance-test-copy-s70000-n8-depth1-original",
+      "variant": "source_first",
+      "full_history": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.7734375,
+          "max_record_mass": 0.9932783246040344
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.94140625,
+          "max_record_mass": 0.9918813109397888
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.89453125,
+          "max_record_mass": 0.9858729839324951
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.98046875,
+          "max_record_mass": 0.9987456202507019
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.85546875,
+          "max_record_mass": 0.9878117442131042
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.58203125,
+          "max_record_mass": 0.961023211479187
+        }
+      },
+      "records_blocked": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        }
+      },
+      "full_and_blocked_reference_replays_exact": true
+    },
+    {
+      "model": "question_only_seed1701",
+      "case_id": "counterbalance-test-copy-s70000-n8-depth1-original",
+      "variant": "unrelated_first",
+      "full_history": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.77734375,
+          "max_record_mass": 0.9928207397460938
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.9375,
+          "max_record_mass": 0.989142894744873
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.8984375,
+          "max_record_mass": 0.9848242402076721
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.96484375,
+          "max_record_mass": 0.9990386962890625
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.87109375,
+          "max_record_mass": 0.9888833165168762
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.58984375,
+          "max_record_mass": 0.9593619108200073
+        }
+      },
+      "records_blocked": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 31,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        }
+      },
+      "full_and_blocked_reference_replays_exact": true
+    },
+    {
+      "model": "question_only_seed1701",
+      "case_id": "counterbalance-test-copy-s70023-n64-depth3-entity_first",
+      "variant": "source_first",
+      "full_history": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.63671875,
+          "max_record_mass": 0.981788158416748
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.8984375,
+          "max_record_mass": 0.9809502363204956
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.75,
+          "max_record_mass": 0.9795746803283691
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.80078125,
+          "max_record_mass": 0.9996839761734009
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.9140625,
+          "max_record_mass": 0.9981705546379089
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.373046875,
+          "max_record_mass": 0.9900915026664734
+        }
+      },
+      "records_blocked": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        }
+      },
+      "full_and_blocked_reference_replays_exact": true
+    },
+    {
+      "model": "question_only_seed1701",
+      "case_id": "counterbalance-test-copy-s70023-n64-depth3-entity_first",
+      "variant": "unrelated_first",
+      "full_history": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.62890625,
+          "max_record_mass": 0.9814388751983643
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.90234375,
+          "max_record_mass": 0.9831156730651855
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.73828125,
+          "max_record_mass": 0.9832557439804077
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.78125,
+          "max_record_mass": 0.9998691082000732
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.91015625,
+          "max_record_mass": 0.997901439666748
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.3984375,
+          "max_record_mass": 0.9890286326408386
+        }
+      },
+      "records_blocked": {
+        "3": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "7": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "11": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "15": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "19": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        },
+        "23": {
+          "prefill_calls": 1,
+          "cached_calls": 4,
+          "query_rows": 32,
+          "max_record_probability": 0.0,
+          "max_record_mass": 0.0
+        }
+      },
+      "full_and_blocked_reference_replays_exact": true
+    }
+  ],
+  "source_sha256": "952d6b00870e170ab6d3cf210b6d150a761c38133257782cc8e63a0d5a4af47f",
+  "interpretation": "Direct eager softmax-weight inspection on first/last cases, both late orders, native and seed1701. Ledger columns must have exactly zero probability/mass on every observed question/scoring/generation forward, while unmasked controls are nonzero. This checks the access intervention, not isolated recurrent-state content.",
+  "completed_utc": "2026-11-13T23:44:52.628940+00:00"
+}

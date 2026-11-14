@@ -1,0 +1,5 @@
+fla-core==0.6.0
+flash-linear-attention==0.6.0
+datasets==4.8.5
+xxhash==4.1.0
+multiprocess==0.70.18

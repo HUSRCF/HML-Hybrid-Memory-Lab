@@ -1,0 +1,125 @@
+{
+  "status": "audited_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/copy-dependency-transfer-smoke-20261114-01",
+  "manifest_sha256": "17003a9d5c3af5fd1c089fa863c9ea748e9b0ec79264af5620a1b0535eb0d0b2",
+  "dataset_manifest_sha256": "0b98f840a84d90c4d2cea8412de08f9589957b229ee297b957ff8853cf6b7455",
+  "registry_sha256": "8fe7fa9310f7bcbc1d0643870cbc6494c21e7320dd60c8cbfd147c4d878f8c47",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "physical_readouts_audited": 144,
+  "reported_bindings_audited": 144,
+  "actual_attention_checks": 48,
+  "detached_native_replays": 48,
+  "native_prefix_identity_checks": 12,
+  "references": {
+    "previous_negative_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/overwrite-history-20261114.json",
+    "previous_negative_audit_sha256": "ef369a7feb824d0696ad36c7cb14dfc5e51fd629570852724bc41514383881cf",
+    "previous_repeat_primary_passed": false,
+    "previous_history_primary_passed": false,
+    "training": {
+      "shared": {
+        "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+        "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+        "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+        "checkpoint_sha256": "3ac57cfd86116dc712aacd14de526ccc3cb8f60c7348317fbacc16910914d8fc",
+        "checkpoint_state_sha256": "21037c2505371f50bf76cdf5411a3bcf28b3baf5fd83da932b0e4036e3c4f197",
+        "packages": {
+          "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+          "transformers": "5.14.1",
+          "fla-core": "0.6.0"
+        },
+        "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+        "reference_audit_reexecuted": false
+      },
+      "independent": {
+        "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+        "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+        "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+        "checkpoint_sha256": "e042e284b0bf7c32dc4f1340120f3e71d904b3ddc08ae5f5ebbc6c3b8d93823f",
+        "checkpoint_state_sha256": "9310721cd53ab3ae2070bd1274277cf3fd8976f9856818e5b7635e05a7473c41",
+        "packages": {
+          "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+          "transformers": "5.14.1",
+          "fla-core": "0.6.0"
+        },
+        "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+        "reference_audit_reexecuted": false
+      },
+      "local": {
+        "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+        "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+        "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+        "checkpoint_sha256": "776d5e1c35c5aa3ec8056fdaf4ad453b8a85d58d156d1448e2788ca2564c0e91",
+        "checkpoint_state_sha256": "6b4e1f1bb093786cefb17524646ead80e87f9b656107036460c52885ae8e0dfa",
+        "packages": {
+          "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+          "transformers": "5.14.1",
+          "fla-core": "0.6.0"
+        },
+        "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+        "reference_audit_reexecuted": false
+      },
+      "local_question": {
+        "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+        "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+        "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+        "checkpoint_sha256": "ee78264808d0a532188c61c78e68407e72551947941ebb977ab25864b600a848",
+        "checkpoint_state_sha256": "ade581c5ca7823f6d002ac766ed5fdce2ba5e625327b2a9bad38c4877f337dc3",
+        "packages": {
+          "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+          "transformers": "5.14.1",
+          "fla-core": "0.6.0"
+        },
+        "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+        "reference_audit_reexecuted": false
+      },
+      "attention_only": {
+        "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+        "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+        "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+        "checkpoint_sha256": "20d9827c1eec05f9ac425f96530df59bd899a3a3a2f4599e3cfcba494715dd61",
+        "checkpoint_state_sha256": "e644876521c780629d7358c585c4e48ec187b946fbc3307b77162f4bf6da69e0",
+        "packages": {
+          "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+          "transformers": "5.14.1",
+          "fla-core": "0.6.0"
+        },
+        "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+        "reference_audit_reexecuted": false
+      },
+      "gdn_all_tokens": {
+        "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+        "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+        "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+        "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+        "checkpoint_state_sha256": "cb5ddf299e0a0335c64a3815da0a26e18a7179df938731b8895c6e9b437de7e7",
+        "packages": {
+          "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+          "transformers": "5.14.1",
+          "fla-core": "0.6.0"
+        },
+        "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+        "reference_audit_reexecuted": false
+      },
+      "gdn_question_only": {
+        "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/gdn-question-timing-20261114.json",
+        "audit_sha256": "1ea60978eeac9414ab0211d4e3ad668c080267724b00706fba9bcb745623825e",
+        "manifest_sha256": "a4df590b2b104dd4a87c9ff7c38b82d2f45a6df67a5a02db3434b084108c67da",
+        "checkpoint_sha256": "5aeea3bc1679df153bb9e246426da580c37575d7292399edd9c21d98c5952662",
+        "checkpoint_state_sha256": "7f4cd348b4835d4760c92fa94cdd4564d2602149296b1449d67531cd7f9f7dee",
+        "packages": {
+          "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+          "transformers": "5.14.1",
+          "fla-core": "0.6.0"
+        },
+        "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+        "reference_audit_reexecuted": false
+      }
+    }
+  },
+  "metrics": {
+    "primary_evaluated": false,
+    "physical_queries_per_model": 18
+  },
+  "interpretation": "Seven fixed final432-step adapters and freshly rerun native model. Identical864short order-augmented training examples and budgets, near-matched parameter counts, one initialization; Attention-only has weaker teacher fit. Existing COPY data has observed native/older-adapter results: development transfer, not untouched confirmation, novelty or cross-path necessity.",
+  "analysis_source_sha256": "ae84f51b1036e3ef30c42eecce63ebf0c4787cdf321c4e4b177a56dbb6d54064"
+}

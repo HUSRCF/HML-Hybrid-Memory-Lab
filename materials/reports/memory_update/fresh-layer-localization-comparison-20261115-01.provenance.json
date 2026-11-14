@@ -1,0 +1,13 @@
+{
+  "status": "complete_posthoc_layer_figure",
+  "source_audit_sha256": "d58e1973ee787f925e953d44d74da16b08499161896afd96423c2c1de17d6f33",
+  "source_manifest_sha256": "cf0dc8a416e8266f99c515bbb855e23ef1fbd5cb2397b008f663133caaa72471",
+  "all56cells_retained": true,
+  "artifacts_sha256": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-layer-localization-comparison-20261115-01.png": "dd2fa89ae9b34b11d0a266ef02168fbc8a0ba268555d729a8ea4c8a32ef14015",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-layer-localization-comparison-20261115-01.pdf": "72db0c434c50e4016681baa68d6444920bc16fbc96e96e7048f2dd67911cd036",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-layer-localization-comparison-20261115-01.json": "ea2d59b5cf0b3c4a8f509a9c6e7fe18fb1c80faa6e5c30a35612103406a7cf91",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-layer-localization-comparison-20261115-01.layout.json": "9ae1ad8a5ea9bfb5472b211fae2fe38700c5e8685e146bb0c8806c6dad5d4861",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-layer-localization-comparison-20261115-01.source.py": "d7c6769754fe1d36c6b4666b0dc13c819b7efeaac86a57f99ac10c84d86238c9"
+  }
+}

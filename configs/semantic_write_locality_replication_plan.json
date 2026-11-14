@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "status": "registered_before_data_generation_and_inference",
+  "registered_utc": "2026-11-14T06:41:35.931483+00:00",
+  "profile": "fixed_length_write_locality_independent_seed_replication",
+  "purpose": "Replicate the observed native functional preservation regressions under the same fixed-length generation mechanism with four newly specified base seeds, before attributing them to recurrent write damage or training a new architecture.",
+  "source_protocol": "configs/semantic_write_locality_load_plan.json",
+  "source_protocol_sha256": "f0f3d9311eccf72580e500ebf74d2e92e16933898ed59b3d96b8e4673ed25411",
+  "discovery_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-load-20261114.json",
+  "discovery_audit_sha256": "47e1835173dea129230ebe48cff6ee5c3aa59b82eff34322899a0a0319b47e83",
+  "discovery_manifest_sha256": "8588af35b666ae846e496b6a7e8fae4fc0d559d9cc08ede08b2c72b0f1aa1768",
+  "development_grid": {
+    "base_seeds": [
+      97100,
+      97101,
+      97102,
+      97103
+    ],
+    "active_accounts": [
+      8,
+      32,
+      128
+    ],
+    "prefix_records": 160,
+    "value_versions": 4,
+    "tail_cells": [
+      "A0_C0",
+      "A1_C0",
+      "A0_C1",
+      "A1_C1"
+    ],
+    "query_roles": [
+      "target_current",
+      "protected_current",
+      "target_initial"
+    ],
+    "expected_free_answers": 576,
+    "expected_distinct_prefixes_with_tail": 192,
+    "independent_base_streams": 4,
+    "maximum_prompt_tokens": 4096,
+    "no_truncation": true
+  },
+  "model_config": "configs/models.json",
+  "model_key": "it",
+  "model_class": "Qwen3_5ForCausalLM",
+  "local_files_only": true,
+  "reader_policy": "full",
+  "training": false,
+  "adapters": false,
+  "model_inference_started": false,
+  "data_source": "/media/990Pro/Code/SAS/datasets/memory_update/fixed-length-write-locality-replication-v1",
+  "generation": {
+    "module": "sas_memory/write_locality_data.py",
+    "source_sha256": "ac4ebadc19ce69b527b1c78ca3ee9af7b775f2230a5d991295601186a3725aeb",
+    "functions": [
+      "build_data(plan)",
+      "validate_data(data,plan)",
+      "token_registry(data,plan,runtime)"
+    ],
+    "change": "Only the base seeds change. Preserve the existing namespace, schedules, record-index values,162-record prompts,four tail cells,four value versions,three roles and complete deterministic evaluation order.",
+    "orchestration": "Use explicit plan-aware registration and evaluation. Preserve the already audited discovery sources; do not relabel seeds or cases to pass discovery-specific checks."
+  },
+  "required_data_gate": "Before any replica-model inference, reconstruct and freeze all576 executable examples and token/record registrations, protocol/generator/runtime/tokenizer/checkpoint hashes. Verify identical2865-token prompts, causal positions, suffixes and value-only tail changes. Freeze the exact evaluation registry.",
+  "required_runtime_gate": "Use the unchanged local text-only eager BF16 native model, unrestricted greedy maximum12 tokens and gold3-digit NLL. Independently audit operational smoke first, actual six-layer history access, native replay and full loaded-state before/after hashes. No adapter or training.",
+  "primary_contrasts": [
+    {
+      "id": "unrelated_B_at32",
+      "active_accounts": 32,
+      "axis": "A",
+      "fixed_other_bit": 1,
+      "role": "protected_current",
+      "left_cell": "A0_C1",
+      "right_cell": "A1_C1"
+    },
+    {
+      "id": "initial_A_at128",
+      "active_accounts": 128,
+      "axis": "A",
+      "fixed_other_bit": 1,
+      "role": "target_initial",
+      "left_cell": "A0_C1",
+      "right_cell": "A1_C1"
+    }
+  ],
+  "primary_recurrence_rule": "Report each primary contrast separately. A primary contrast recurs only if its answer-invariant toggle regresses at least two distinct new base streams; four value siblings count once. Report baseline errors, rescues and all denominators. Passing either does not establish a damaged recurrent pathway.",
+  "secondary_reports": "Report the complete three-load/four-cell/three-role table and the same30 preservation contrasts, all target-update pairs, all-value functional units and four-stream cluster tables. Do not select only correct baselines or replace a failed primary with a secondary result.",
+  "interpretation": "Replication of a functional symptom under a fixed generator, not confirmation of a new architecture, unseen templates or a scientific novelty claim. No independent-n576 inference.",
+  "decision_rule": "If neither primary meets the recurrence rule, report nonreplication and defer new write-locality architecture training. If either recurs, execute only the separately registered aligned event-path diagnostic before considering a method.",
+  "implementation_status": "Protocol only; replica dataset, plan-aware runner and model inference not yet implemented/executed at registration."
+}

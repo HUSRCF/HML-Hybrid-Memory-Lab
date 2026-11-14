@@ -1,0 +1,766 @@
+{
+  "status": "descriptive_error_analysis",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/initial-order-control-20261114-01",
+  "manifest_sha256": "8f9fbc9bd4fd48a8ad274b5f827d0fddcedfef47c2bd898349a8e747dca5453d",
+  "models": {
+    "native": {
+      "examples": 432,
+      "both_wrong_same_number": 13,
+      "both_wrong_different_number_or_invalid": 15,
+      "unchanged_fact_readouts": 288,
+      "unchanged_fact_errors": 26,
+      "unchanged_fact_errors_matching_legacy_initial_slot": 9,
+      "unchanged_fact_regressions": 26,
+      "unchanged_fact_regressions_matching_legacy_initial_slot": 9
+    },
+    "shared": {
+      "examples": 432,
+      "both_wrong_same_number": 2,
+      "both_wrong_different_number_or_invalid": 0,
+      "unchanged_fact_readouts": 288,
+      "unchanged_fact_errors": 0,
+      "unchanged_fact_errors_matching_legacy_initial_slot": 0,
+      "unchanged_fact_regressions": 0,
+      "unchanged_fact_regressions_matching_legacy_initial_slot": 0
+    },
+    "independent": {
+      "examples": 432,
+      "both_wrong_same_number": 1,
+      "both_wrong_different_number_or_invalid": 0,
+      "unchanged_fact_readouts": 288,
+      "unchanged_fact_errors": 0,
+      "unchanged_fact_errors_matching_legacy_initial_slot": 0,
+      "unchanged_fact_regressions": 0,
+      "unchanged_fact_regressions_matching_legacy_initial_slot": 0
+    },
+    "local": {
+      "examples": 432,
+      "both_wrong_same_number": 19,
+      "both_wrong_different_number_or_invalid": 1,
+      "unchanged_fact_readouts": 288,
+      "unchanged_fact_errors": 10,
+      "unchanged_fact_errors_matching_legacy_initial_slot": 7,
+      "unchanged_fact_regressions": 10,
+      "unchanged_fact_regressions_matching_legacy_initial_slot": 7
+    },
+    "local_question": {
+      "examples": 432,
+      "both_wrong_same_number": 1,
+      "both_wrong_different_number_or_invalid": 0,
+      "unchanged_fact_readouts": 288,
+      "unchanged_fact_errors": 8,
+      "unchanged_fact_errors_matching_legacy_initial_slot": 0,
+      "unchanged_fact_regressions": 8,
+      "unchanged_fact_regressions_matching_legacy_initial_slot": 0
+    }
+  },
+  "unchanged_fact_errors": [
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-duplicate_set-001-v0",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "771",
+      "canonical_generated": "771\n",
+      "permuted_generated": "619\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E585",
+      "legacy_slot_initial_value": "632",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-copy-001-v0",
+        "control",
+        "target_initial"
+      ],
+      "gold": "604",
+      "canonical_generated": "604\n",
+      "permuted_generated": "232\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E627",
+      "legacy_slot_initial_value": "232",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-dependent_swap-001-v3",
+        "control",
+        "target_initial"
+      ],
+      "gold": "759",
+      "canonical_generated": "759\n",
+      "permuted_generated": "217\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E582",
+      "legacy_slot_initial_value": "253",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-independent_swap-001-v1",
+        "control",
+        "target_initial"
+      ],
+      "gold": "509",
+      "canonical_generated": "509\n",
+      "permuted_generated": "211\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E633",
+      "legacy_slot_initial_value": "224",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-dependent_swap-001-v2",
+        "control",
+        "target_initial"
+      ],
+      "gold": "653",
+      "canonical_generated": "653\n",
+      "permuted_generated": "415\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E582",
+      "legacy_slot_initial_value": "578",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-duplicate_set-000-v2",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "498",
+      "canonical_generated": "498\n",
+      "permuted_generated": "248\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E669",
+      "legacy_slot_initial_value": "248",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-duplicate_set-001-v2",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "783",
+      "canonical_generated": "783\n",
+      "permuted_generated": "242\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E585",
+      "legacy_slot_initial_value": "242",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-dependent_swap-001-v3",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "759",
+      "canonical_generated": "759\n",
+      "permuted_generated": "217\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E582",
+      "legacy_slot_initial_value": "253",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-copy-001-v1",
+        "control",
+        "target_initial"
+      ],
+      "gold": "759",
+      "canonical_generated": "759\n",
+      "permuted_generated": "655\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E627",
+      "legacy_slot_initial_value": "655",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-duplicate_set-001-v2",
+        "control",
+        "target_initial"
+      ],
+      "gold": "783",
+      "canonical_generated": "783\n",
+      "permuted_generated": "242\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E585",
+      "legacy_slot_initial_value": "242",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-overwrite-001-v0",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "771",
+      "canonical_generated": "771\n",
+      "permuted_generated": "378\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E565",
+      "legacy_slot_initial_value": "328",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-dependent_swap-001-v0",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "440",
+      "canonical_generated": "440\n",
+      "permuted_generated": "270\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E582",
+      "legacy_slot_initial_value": "522",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-independent_swap-001-v1",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "509",
+      "canonical_generated": "509\n",
+      "permuted_generated": "211\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E633",
+      "legacy_slot_initial_value": "224",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-overwrite-001-v3",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "513",
+      "canonical_generated": "513\n",
+      "permuted_generated": "303\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E565",
+      "legacy_slot_initial_value": "796",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-dependent_swap-001-v2",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "653",
+      "canonical_generated": "653\n",
+      "permuted_generated": "719\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E582",
+      "legacy_slot_initial_value": "578",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-independent_swap-000-v1",
+        "control",
+        "target_initial"
+      ],
+      "gold": "779",
+      "canonical_generated": "779\n",
+      "permuted_generated": "389\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E550",
+      "legacy_slot_initial_value": "389",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-dependent_swap-001-v1",
+        "control",
+        "target_initial"
+      ],
+      "gold": "397",
+      "canonical_generated": "397\n",
+      "permuted_generated": "454\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E582",
+      "legacy_slot_initial_value": "539",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-overwrite-000-v1",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "432",
+      "canonical_generated": "432\n",
+      "permuted_generated": "286\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E693",
+      "legacy_slot_initial_value": "234",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-duplicate_set-001-v0",
+        "before",
+        "target_initial"
+      ],
+      "gold": "771",
+      "canonical_generated": "771\n",
+      "permuted_generated": "649\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E585",
+      "legacy_slot_initial_value": "632",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-duplicate_set-001-v1",
+        "before",
+        "target_initial"
+      ],
+      "gold": "651",
+      "canonical_generated": "651\n",
+      "permuted_generated": "445\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E585",
+      "legacy_slot_initial_value": "445",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-dependent_swap-001-v0",
+        "control",
+        "target_initial"
+      ],
+      "gold": "440",
+      "canonical_generated": "440\n",
+      "permuted_generated": "270\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E582",
+      "legacy_slot_initial_value": "522",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-copy-001-v1",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "759",
+      "canonical_generated": "759\n",
+      "permuted_generated": "655\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E627",
+      "legacy_slot_initial_value": "655",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-dependent_swap-001-v1",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "397",
+      "canonical_generated": "397\n",
+      "permuted_generated": "454\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E582",
+      "legacy_slot_initial_value": "539",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-duplicate_set-001-v0",
+        "control",
+        "target_initial"
+      ],
+      "gold": "771",
+      "canonical_generated": "771\n",
+      "permuted_generated": "619\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E585",
+      "legacy_slot_initial_value": "632",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-dependent_swap-001-v0",
+        "before",
+        "target_initial"
+      ],
+      "gold": "440",
+      "canonical_generated": "440\n",
+      "permuted_generated": "270\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E582",
+      "legacy_slot_initial_value": "522",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "native",
+      "key": [
+        "paired-validation-independent_swap-000-v1",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "779",
+      "canonical_generated": "779\n",
+      "permuted_generated": "389\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E550",
+      "legacy_slot_initial_value": "389",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "local",
+      "key": [
+        "paired-validation-duplicate_set-001-v3",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "336",
+      "canonical_generated": "336\n",
+      "permuted_generated": "314\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E585",
+      "legacy_slot_initial_value": "314",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "local",
+      "key": [
+        "paired-validation-duplicate_set-001-v0",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "771",
+      "canonical_generated": "771\n",
+      "permuted_generated": "632\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E585",
+      "legacy_slot_initial_value": "632",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "local",
+      "key": [
+        "paired-validation-copy-000-v0",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "414",
+      "canonical_generated": "414\n",
+      "permuted_generated": "514\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E639",
+      "legacy_slot_initial_value": "578",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "local",
+      "key": [
+        "paired-validation-dependent_swap-001-v0",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "440",
+      "canonical_generated": "440\n",
+      "permuted_generated": "270\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E582",
+      "legacy_slot_initial_value": "522",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "local",
+      "key": [
+        "paired-validation-copy-000-v1",
+        "control",
+        "target_initial"
+      ],
+      "gold": "477",
+      "canonical_generated": "477\n",
+      "permuted_generated": "406\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E639",
+      "legacy_slot_initial_value": "406",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "local",
+      "key": [
+        "paired-validation-dependent_swap-001-v0",
+        "control",
+        "target_initial"
+      ],
+      "gold": "440",
+      "canonical_generated": "440\n",
+      "permuted_generated": "270\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E582",
+      "legacy_slot_initial_value": "522",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "local",
+      "key": [
+        "paired-validation-copy-001-v1",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "759",
+      "canonical_generated": "759\n",
+      "permuted_generated": "655\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E627",
+      "legacy_slot_initial_value": "655",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "local",
+      "key": [
+        "paired-validation-copy-000-v0",
+        "control",
+        "target_initial"
+      ],
+      "gold": "414",
+      "canonical_generated": "414\n",
+      "permuted_generated": "578\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E639",
+      "legacy_slot_initial_value": "578",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "local",
+      "key": [
+        "paired-validation-copy-000-v3",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "247",
+      "canonical_generated": "247\n",
+      "permuted_generated": "799\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E639",
+      "legacy_slot_initial_value": "799",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "local",
+      "key": [
+        "paired-validation-copy-000-v3",
+        "control",
+        "target_initial"
+      ],
+      "gold": "247",
+      "canonical_generated": "247\n",
+      "permuted_generated": "799\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E639",
+      "legacy_slot_initial_value": "799",
+      "matches_legacy_slot_value": true
+    },
+    {
+      "model": "local_question",
+      "key": [
+        "paired-validation-accumulate-000-v3",
+        "treatment",
+        "protected_current"
+      ],
+      "gold": "200",
+      "canonical_generated": "200\n",
+      "permuted_generated": "210\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 1,
+      "entity_now_in_legacy_slot": "E540",
+      "legacy_slot_initial_value": "471",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "local_question",
+      "key": [
+        "paired-validation-accumulate-000-v0",
+        "control",
+        "protected_current"
+      ],
+      "gold": "422",
+      "canonical_generated": "422\n",
+      "permuted_generated": "432\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 1,
+      "entity_now_in_legacy_slot": "E540",
+      "legacy_slot_initial_value": "282",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "local_question",
+      "key": [
+        "paired-validation-dependent_swap-001-v0",
+        "treatment",
+        "target_initial"
+      ],
+      "gold": "440",
+      "canonical_generated": "440\n",
+      "permuted_generated": "270\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E582",
+      "legacy_slot_initial_value": "522",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "local_question",
+      "key": [
+        "paired-validation-accumulate-000-v2",
+        "control",
+        "protected_current"
+      ],
+      "gold": "464",
+      "canonical_generated": "464\n",
+      "permuted_generated": "474\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 1,
+      "entity_now_in_legacy_slot": "E540",
+      "legacy_slot_initial_value": "544",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "local_question",
+      "key": [
+        "paired-validation-accumulate-000-v3",
+        "control",
+        "protected_current"
+      ],
+      "gold": "200",
+      "canonical_generated": "200\n",
+      "permuted_generated": "210\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 1,
+      "entity_now_in_legacy_slot": "E540",
+      "legacy_slot_initial_value": "471",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "local_question",
+      "key": [
+        "paired-validation-dependent_swap-001-v0",
+        "control",
+        "target_initial"
+      ],
+      "gold": "440",
+      "canonical_generated": "440\n",
+      "permuted_generated": "270\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E582",
+      "legacy_slot_initial_value": "522",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "local_question",
+      "key": [
+        "paired-validation-dependent_swap-001-v2",
+        "before",
+        "target_initial"
+      ],
+      "gold": "653",
+      "canonical_generated": "653\n",
+      "permuted_generated": "765\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E582",
+      "legacy_slot_initial_value": "578",
+      "matches_legacy_slot_value": false
+    },
+    {
+      "model": "local_question",
+      "key": [
+        "paired-validation-dependent_swap-001-v0",
+        "before",
+        "target_initial"
+      ],
+      "gold": "440",
+      "canonical_generated": "440\n",
+      "permuted_generated": "270\n",
+      "canonical_correct": true,
+      "legacy_initial_slot": 0,
+      "entity_now_in_legacy_slot": "E582",
+      "legacy_slot_initial_value": "522",
+      "matches_legacy_slot_value": false
+    }
+  ],
+  "interpretation": "Reused-validation description only. Legacy-slot matches count wrong numeric answers equal to the initial value now occupying the queried entity's old initial-record slot; no chance correction, significance or unique causal shortcut attribution. Other wrong answers and both-wrong changes are retained. Current target queries are excluded from slot matching because updates can change their truth.",
+  "audit_report_sha256": "17d1c2b00be013c76645e90dc1eb53d11e9450d0a3d2864873da113fdec8c482",
+  "analysis_source_sha256": "06422de0596bedb50e0d9cdc3a26498285bd837a37e6988317863d36a76a14fe"
+}

@@ -1,0 +1,85 @@
+{
+  "stage": "component_scope_runners_ready_real_model_safety_smoke_running",
+  "backbone": "it",
+  "group_index": 3,
+  "group_layer_indices": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "controller_input": "causal group-entry hidden state",
+  "gdn_targets": [
+    "in_proj_a",
+    "in_proj_b"
+  ],
+  "attention_targets": [
+    "q_proj query portion only",
+    "k_proj"
+  ],
+  "initialization": "zero residual output, exact native forward at initialization",
+  "modes": {
+    "shared": {
+      "rank": 128,
+      "estimated_trainable_parameters": 602112
+    },
+    "independent": {
+      "rank": 89,
+      "estimated_trainable_parameters": 600928
+    },
+    "attention_only": {
+      "rank": 128,
+      "estimated_trainable_parameters": 589824
+    },
+    "gdn_only": {
+      "rank": 281,
+      "estimated_trainable_parameters": 602464
+    }
+  },
+  "requirements": [
+    "Read actual local projection shapes and report parameter counts; estimates are not verification.",
+    "Keep attention output gates unchanged when adapting q_proj.",
+    "Adapt GDN gates before sigmoid/softplus so their ranges remain valid.",
+    "All backbone parameters remain frozen; save only controller weights.",
+    "No cross-time feedback or KV cache enlargement.",
+    "Verify zero-init identity, finite nonzero adapter gradients, and frozen-backbone gradients before training.",
+    "Use disjoint train/validation/test seeds and entity namespaces; do not train on pilot or confirmation cases.",
+    "Match optimized tokens and steps across modes; compare preservation and initial-version questions as well as target answers.",
+    "Parameter sharing alone is not evidence of a semantic interface or a new architecture."
+  ],
+  "selection_note": "Group 3 is a provisional mid/late starting point from the four-case overwrite transplant screen, not a demonstrated optimal location for COPY.",
+  "observed_parameter_counts": {
+    "shared": 602112,
+    "independent": 600928,
+    "attention_only": 589824,
+    "gdn_only": 602464,
+    "local": 609280
+  },
+  "full_key_config": "configs/controller_training_keys.json",
+  "full_key_observed_parameter_counts": {
+    "shared": 694272,
+    "independent": 696384,
+    "attention_only": 691200,
+    "gdn_only": 696192,
+    "local": 689216
+  },
+  "confirmation_config": "configs/controller_locked_confirmation.json",
+  "next_probe_plan": "configs/semantic_order_path_probe_plan.json",
+  "next_plan": "configs/semantic_single_path_controls_plan.json",
+  "post_capacity_decision": {
+    "fixed_schedule": "Finish both registered arms at 64/256/1024 and audit complete four-value families; do not tune on original tests or the 70000-series benchmark.",
+    "negative_interpretation": "No family recovery is a failed carrier/readout assay, not evidence that recurrent information is absent or semantic writes destroyed it. Do not escalate this generic capacity/budget probe again by default.",
+    "return_to_mainline": "Use value-paired multi-entity COPY/SET/version tasks with full historical access and controlled independent/dependent updates; separate task truth, input/position identity and functional preservation. Compare shared vs independent vs ordinary local adaptation at the same data/budget.",
+    "architecture_gate": "Require a reproducible shared-interface gain over independent/local controls and preserved historical/ordered readouts before adding evidence bypass or cross-time feedback.",
+    "scope": "Single-fact readout is a diagnostic, not a replacement for semantic hybrid-block co-design."
+  },
+  "post_semantic_acceptance_requirements": [
+    "Compare all four fixed-budget arms on full-history value-paired semantic readouts and matched errors; same accuracy is not functional equivalence.",
+    "Report ADD separately and require correct before/control/treatment for preservation rather than merely fewer regressions.",
+    "Before an architecture claim, rule out fixed initial-record positions and fixed query templates, and confirm on fresh event families/initializations.",
+    "Do not label functional regressions as GDN state damage without path-specific interventions and suitable controls."
+  ],
+  "last_completed_probe_plan": "configs/initial_order_control_plan.json",
+  "next_design": "Complete GDN-only/Attention-only parameter-scope controls at the same augmented-data budget, then the registered native recurrent/convolution-versus-KV cache-source diagnostic. Neither has started model work.",
+  "last_completed_training_plan": "configs/order_augmented_semantic_plan.json"
+}

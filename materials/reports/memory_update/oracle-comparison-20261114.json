@@ -1,0 +1,84 @@
+{
+  "comparison": [
+    {
+      "family": "accumulate",
+      "count": 8,
+      "native_correct": 0,
+      "oracle_correct": 2,
+      "oracle_errors": [
+        [
+          "accumulate-s11-n8",
+          "control",
+          "404",
+          "394"
+        ],
+        [
+          "accumulate-s11-n8",
+          "treatment",
+          "414",
+          "394"
+        ],
+        [
+          "accumulate-s29-n8",
+          "treatment",
+          "742",
+          "722"
+        ],
+        [
+          "accumulate-s11-n64",
+          "control",
+          "404",
+          "394"
+        ],
+        [
+          "accumulate-s11-n64",
+          "treatment",
+          "414",
+          "394"
+        ],
+        [
+          "accumulate-s29-n64",
+          "treatment",
+          "742",
+          "722"
+        ]
+      ]
+    },
+    {
+      "family": "copy",
+      "count": 8,
+      "native_correct": 2,
+      "oracle_correct": 8,
+      "oracle_errors": []
+    },
+    {
+      "family": "dependent_swap",
+      "count": 8,
+      "native_correct": 8,
+      "oracle_correct": 8,
+      "oracle_errors": []
+    },
+    {
+      "family": "duplicate_set",
+      "count": 8,
+      "native_correct": 6,
+      "oracle_correct": 8,
+      "oracle_errors": []
+    },
+    {
+      "family": "independent_swap",
+      "count": 8,
+      "native_correct": 6,
+      "oracle_correct": 8,
+      "oracle_errors": []
+    },
+    {
+      "family": "overwrite",
+      "count": 8,
+      "native_correct": 7,
+      "oracle_correct": 8,
+      "oracle_errors": []
+    }
+  ],
+  "warning": "Oracle filtering changes positions and model computation, not just retrieval."
+}

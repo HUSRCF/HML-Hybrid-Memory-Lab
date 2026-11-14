@@ -1,0 +1,1 @@
+{"status": "audited_smoke", "arms": {"shared": {"parameters": 694272, "status": "safety_passed"}, "independent": {"parameters": 696384, "status": "safety_passed"}, "local": {"parameters": 689216, "status": "safety_passed"}, "local_question": {"parameters": 689216, "status": "safety_passed"}}}

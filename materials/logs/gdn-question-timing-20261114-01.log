@@ -1,0 +1,22 @@
+{"event": "timing_reference_gates_passed", "cpu_threads": 4, "seconds": 406.3609774990473}
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:57,  1.80it/s]Loading weights:   8%|▊         | 25/320 [00:00<00:05, 50.23it/s]Loading weights:  12%|█▎        | 40/320 [00:00<00:03, 71.42it/s]Loading weights:  17%|█▋        | 55/320 [00:00<00:03, 88.16it/s]Loading weights:  25%|██▌       | 80/320 [00:00<00:01, 126.93it/s]Loading weights:  31%|███       | 98/320 [00:01<00:01, 128.75it/s]Loading weights:  40%|████      | 128/320 [00:01<00:01, 166.53it/s]Loading weights:  46%|████▋     | 148/320 [00:01<00:01, 154.59it/s]Loading weights:  54%|█████▍    | 174/320 [00:01<00:00, 180.27it/s]Loading weights:  62%|██████▏   | 199/320 [00:01<00:00, 189.92it/s]Loading weights:  69%|██████▉   | 220/320 [00:01<00:00, 193.24it/s]Loading weights:  75%|███████▌  | 241/320 [00:01<00:00, 184.84it/s]Loading weights:  82%|████████▏ | 261/320 [00:01<00:00, 184.65it/s]Loading weights:  88%|████████▊ | 282/320 [00:02<00:00, 190.38it/s]Loading weights:  95%|█████████▌| 305/320 [00:02<00:00, 198.31it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 144.21it/s]
+{"event": "training", "arm": "gdn_question", "step": 48, "loss": 0.008794354740530252}
+{"event": "training", "arm": "gdn_question", "step": 96, "loss": 0.0023703938350081444}
+{"event": "training", "arm": "gdn_question", "step": 144, "loss": 0.0017639634170336649}
+{"event": "training", "arm": "gdn_question", "step": 192, "loss": 0.0003408824559301138}
+{"event": "training", "arm": "gdn_question", "step": 240, "loss": 0.0009402196737937629}
+{"event": "training", "arm": "gdn_question", "step": 288, "loss": 0.0002809162833727896}
+{"event": "training", "arm": "gdn_question", "step": 336, "loss": 0.0003942888797610067}
+{"event": "training", "arm": "gdn_question", "step": 384, "loss": 0.00025187870778609067}
+{"event": "training", "arm": "gdn_question", "step": 432, "loss": 0.19596890467073536}
+{"event": "validation", "arm": "gdn_question", "examples": 108}
+{"event": "validation", "arm": "gdn_question", "examples": 216}
+{"event": "validation", "arm": "gdn_question", "examples": 324}
+{"event": "validation", "arm": "gdn_question", "examples": 432}
+{"event": "final_evaluated", "arm": "gdn_question", "correct": 427, "examples": 432}
+{"event": "permuted_validation", "arm": "gdn_question", "examples": 108}
+{"event": "permuted_validation", "arm": "gdn_question", "examples": 216}
+{"event": "permuted_validation", "arm": "gdn_question", "examples": 324}
+{"event": "permuted_validation", "arm": "gdn_question", "examples": 432}
+{"event": "permuted_evaluated", "arm": "gdn_question", "correct": 430, "examples": 432}

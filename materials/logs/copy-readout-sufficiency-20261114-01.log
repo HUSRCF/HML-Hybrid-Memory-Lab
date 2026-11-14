@@ -1,0 +1,90 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<00:41,  7.77it/s]Loading weights:   6%|▌         | 19/320 [00:00<00:03, 88.58it/s]Loading weights:  12%|█▎        | 40/320 [00:00<00:02, 136.97it/s]Loading weights:  17%|█▋        | 55/320 [00:00<00:01, 140.47it/s]Loading weights:  22%|██▏       | 71/320 [00:00<00:01, 144.49it/s]Loading weights:  29%|██▉       | 94/320 [00:00<00:01, 165.58it/s]Loading weights:  35%|███▍      | 111/320 [00:00<00:01, 163.39it/s]Loading weights:  41%|████▏     | 132/320 [00:00<00:01, 167.85it/s]Loading weights:  47%|████▋     | 151/320 [00:01<00:01, 168.95it/s]Loading weights:  54%|█████▍    | 172/320 [00:01<00:00, 166.46it/s]Loading weights:  61%|██████▏   | 196/320 [00:01<00:00, 185.91it/s]Loading weights:  67%|██████▋   | 215/320 [00:01<00:00, 177.28it/s]Loading weights:  73%|███████▎  | 234/320 [00:01<00:00, 179.86it/s]Loading weights:  79%|███████▉  | 253/320 [00:01<00:00, 170.17it/s]Loading weights:  85%|████████▍ | 271/320 [00:01<00:00, 172.58it/s]Loading weights:  91%|█████████ | 291/320 [00:01<00:00, 179.49it/s]Loading weights:  97%|█████████▋| 310/320 [00:01<00:00, 169.21it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 162.68it/s]
+{"event": "copy_readout", "model": "native", "queries_per_regime": 32, "total": 336}
+{"event": "copy_readout", "model": "native", "queries_per_regime": 64, "total": 336}
+{"event": "copy_readout", "model": "native", "queries_per_regime": 96, "total": 336}
+{"event": "copy_readout", "model": "native", "queries_per_regime": 128, "total": 336}
+{"event": "copy_readout", "model": "native", "queries_per_regime": 160, "total": 336}
+{"event": "copy_readout", "model": "native", "queries_per_regime": 192, "total": 336}
+{"event": "copy_readout", "model": "native", "queries_per_regime": 224, "total": 336}
+{"event": "copy_readout", "model": "native", "queries_per_regime": 256, "total": 336}
+{"event": "copy_readout", "model": "native", "queries_per_regime": 288, "total": 336}
+{"event": "copy_readout", "model": "native", "queries_per_regime": 320, "total": 336}
+{"event": "copy_readout_arm_complete", "model": "native", "readouts": 672}
+{"event": "copy_readout", "model": "shared", "queries_per_regime": 32, "total": 336}
+{"event": "copy_readout", "model": "shared", "queries_per_regime": 64, "total": 336}
+{"event": "copy_readout", "model": "shared", "queries_per_regime": 96, "total": 336}
+{"event": "copy_readout", "model": "shared", "queries_per_regime": 128, "total": 336}
+{"event": "copy_readout", "model": "shared", "queries_per_regime": 160, "total": 336}
+{"event": "copy_readout", "model": "shared", "queries_per_regime": 192, "total": 336}
+{"event": "copy_readout", "model": "shared", "queries_per_regime": 224, "total": 336}
+{"event": "copy_readout", "model": "shared", "queries_per_regime": 256, "total": 336}
+{"event": "copy_readout", "model": "shared", "queries_per_regime": 288, "total": 336}
+{"event": "copy_readout", "model": "shared", "queries_per_regime": 320, "total": 336}
+{"event": "copy_readout_arm_complete", "model": "shared", "readouts": 672}
+{"event": "copy_readout", "model": "independent", "queries_per_regime": 32, "total": 336}
+{"event": "copy_readout", "model": "independent", "queries_per_regime": 64, "total": 336}
+{"event": "copy_readout", "model": "independent", "queries_per_regime": 96, "total": 336}
+{"event": "copy_readout", "model": "independent", "queries_per_regime": 128, "total": 336}
+{"event": "copy_readout", "model": "independent", "queries_per_regime": 160, "total": 336}
+{"event": "copy_readout", "model": "independent", "queries_per_regime": 192, "total": 336}
+{"event": "copy_readout", "model": "independent", "queries_per_regime": 224, "total": 336}
+{"event": "copy_readout", "model": "independent", "queries_per_regime": 256, "total": 336}
+{"event": "copy_readout", "model": "independent", "queries_per_regime": 288, "total": 336}
+{"event": "copy_readout", "model": "independent", "queries_per_regime": 320, "total": 336}
+{"event": "copy_readout_arm_complete", "model": "independent", "readouts": 672}
+{"event": "copy_readout", "model": "local", "queries_per_regime": 32, "total": 336}
+{"event": "copy_readout", "model": "local", "queries_per_regime": 64, "total": 336}
+{"event": "copy_readout", "model": "local", "queries_per_regime": 96, "total": 336}
+{"event": "copy_readout", "model": "local", "queries_per_regime": 128, "total": 336}
+{"event": "copy_readout", "model": "local", "queries_per_regime": 160, "total": 336}
+{"event": "copy_readout", "model": "local", "queries_per_regime": 192, "total": 336}
+{"event": "copy_readout", "model": "local", "queries_per_regime": 224, "total": 336}
+{"event": "copy_readout", "model": "local", "queries_per_regime": 256, "total": 336}
+{"event": "copy_readout", "model": "local", "queries_per_regime": 288, "total": 336}
+{"event": "copy_readout", "model": "local", "queries_per_regime": 320, "total": 336}
+{"event": "copy_readout_arm_complete", "model": "local", "readouts": 672}
+{"event": "copy_readout", "model": "local_question", "queries_per_regime": 32, "total": 336}
+{"event": "copy_readout", "model": "local_question", "queries_per_regime": 64, "total": 336}
+{"event": "copy_readout", "model": "local_question", "queries_per_regime": 96, "total": 336}
+{"event": "copy_readout", "model": "local_question", "queries_per_regime": 128, "total": 336}
+{"event": "copy_readout", "model": "local_question", "queries_per_regime": 160, "total": 336}
+{"event": "copy_readout", "model": "local_question", "queries_per_regime": 192, "total": 336}
+{"event": "copy_readout", "model": "local_question", "queries_per_regime": 224, "total": 336}
+{"event": "copy_readout", "model": "local_question", "queries_per_regime": 256, "total": 336}
+{"event": "copy_readout", "model": "local_question", "queries_per_regime": 288, "total": 336}
+{"event": "copy_readout", "model": "local_question", "queries_per_regime": 320, "total": 336}
+{"event": "copy_readout_arm_complete", "model": "local_question", "readouts": 672}
+{"event": "copy_readout", "model": "attention_only", "queries_per_regime": 32, "total": 336}
+{"event": "copy_readout", "model": "attention_only", "queries_per_regime": 64, "total": 336}
+{"event": "copy_readout", "model": "attention_only", "queries_per_regime": 96, "total": 336}
+{"event": "copy_readout", "model": "attention_only", "queries_per_regime": 128, "total": 336}
+{"event": "copy_readout", "model": "attention_only", "queries_per_regime": 160, "total": 336}
+{"event": "copy_readout", "model": "attention_only", "queries_per_regime": 192, "total": 336}
+{"event": "copy_readout", "model": "attention_only", "queries_per_regime": 224, "total": 336}
+{"event": "copy_readout", "model": "attention_only", "queries_per_regime": 256, "total": 336}
+{"event": "copy_readout", "model": "attention_only", "queries_per_regime": 288, "total": 336}
+{"event": "copy_readout", "model": "attention_only", "queries_per_regime": 320, "total": 336}
+{"event": "copy_readout_arm_complete", "model": "attention_only", "readouts": 672}
+{"event": "copy_readout", "model": "gdn_all_tokens", "queries_per_regime": 32, "total": 336}
+{"event": "copy_readout", "model": "gdn_all_tokens", "queries_per_regime": 64, "total": 336}
+{"event": "copy_readout", "model": "gdn_all_tokens", "queries_per_regime": 96, "total": 336}
+{"event": "copy_readout", "model": "gdn_all_tokens", "queries_per_regime": 128, "total": 336}
+{"event": "copy_readout", "model": "gdn_all_tokens", "queries_per_regime": 160, "total": 336}
+{"event": "copy_readout", "model": "gdn_all_tokens", "queries_per_regime": 192, "total": 336}
+{"event": "copy_readout", "model": "gdn_all_tokens", "queries_per_regime": 224, "total": 336}
+{"event": "copy_readout", "model": "gdn_all_tokens", "queries_per_regime": 256, "total": 336}
+{"event": "copy_readout", "model": "gdn_all_tokens", "queries_per_regime": 288, "total": 336}
+{"event": "copy_readout", "model": "gdn_all_tokens", "queries_per_regime": 320, "total": 336}
+{"event": "copy_readout_arm_complete", "model": "gdn_all_tokens", "readouts": 672}
+{"event": "copy_readout", "model": "gdn_question_only", "queries_per_regime": 32, "total": 336}
+{"event": "copy_readout", "model": "gdn_question_only", "queries_per_regime": 64, "total": 336}
+{"event": "copy_readout", "model": "gdn_question_only", "queries_per_regime": 96, "total": 336}
+{"event": "copy_readout", "model": "gdn_question_only", "queries_per_regime": 128, "total": 336}
+{"event": "copy_readout", "model": "gdn_question_only", "queries_per_regime": 160, "total": 336}
+{"event": "copy_readout", "model": "gdn_question_only", "queries_per_regime": 192, "total": 336}
+{"event": "copy_readout", "model": "gdn_question_only", "queries_per_regime": 224, "total": 336}
+{"event": "copy_readout", "model": "gdn_question_only", "queries_per_regime": 256, "total": 336}
+{"event": "copy_readout", "model": "gdn_question_only", "queries_per_regime": 288, "total": 336}
+{"event": "copy_readout", "model": "gdn_question_only", "queries_per_regime": 320, "total": 336}
+{"event": "copy_readout_arm_complete", "model": "gdn_question_only", "readouts": 672}

@@ -1,0 +1,620 @@
+{
+  "status": "completed_and_audited_posthoc_question_path_mediation",
+  "operational_controls_passed": true,
+  "posthoc": true,
+  "selection_is_posthoc": true,
+  "independent_scientific_confirmation": false,
+  "can_change_primary_gates": false,
+  "no_accuracy_gate": true,
+  "full_generation_scored": false,
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/question-path-mediation-20261115-01",
+  "manifest_sha256": "055d2210afbf202e6b1d75ffe2d8698b0e2914d397bef6aeb399d1a1f73a1cc6",
+  "protocol_sha256": "f2eadecbeb209e95b2dc58f546853b548e6bb8a43e87063438508b8ef3f08146",
+  "prior_timing_audit_sha256": "17ca8a1279550fa5bc35c6795a7b0cb99709e495ef2395be560f93dd19ba032e",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "original_primary_gates_unchanged": {
+    "generic_shared_controller": {
+      "passed": false,
+      "comparators": {
+        "independent": {
+          "positive_overall": true,
+          "at_least_three_positive_streams": true,
+          "positive_at_every_depth": false
+        },
+        "local_question": {
+          "positive_overall": true,
+          "at_least_three_positive_streams": true,
+          "positive_at_every_depth": true
+        },
+        "gdn_question_only": {
+          "positive_overall": true,
+          "at_least_three_positive_streams": true,
+          "positive_at_every_depth": false
+        }
+      },
+      "scope": "Fixed fresh8stream natural full-history candidate screen. Generic shared latents do not implement explicit semantic constraints. Does not erase previous failed comparisons or establish an architecture contribution."
+    },
+    "frozen_prefix_sufficiency": {
+      "passed": false,
+      "model_checks": {
+        "local_question": {
+          "oracle_current_at_least90_of96": true,
+          "historical_after_no_lower_than_full": true,
+          "unrelated_after_no_lower_than_full": false,
+          "positive_net_current_repair": true,
+          "at_least_four_positive_base_streams": true
+        },
+        "gdn_question_only": {
+          "oracle_current_at_least90_of96": true,
+          "historical_after_no_lower_than_full": true,
+          "unrelated_after_no_lower_than_full": true,
+          "positive_net_current_repair": true,
+          "at_least_four_positive_base_streams": true
+        }
+      }
+    },
+    "whole_record_necessity": {
+      "passed": false,
+      "model_checks": {
+        "local_question": {
+          "other_current_after_no_lower_than_full": false,
+          "other_history_after_no_lower_than_full": true,
+          "other_unrelated_after_no_lower_than_full": true,
+          "other_before_joint_no_lower_than_full": true,
+          "positive_net_support_removal_loss": true,
+          "at_least_four_positive_loss_streams": true
+        },
+        "gdn_question_only": {
+          "other_current_after_no_lower_than_full": true,
+          "other_history_after_no_lower_than_full": true,
+          "other_unrelated_after_no_lower_than_full": true,
+          "other_before_joint_no_lower_than_full": true,
+          "positive_net_support_removal_loss": true,
+          "at_least_four_positive_loss_streams": true
+        }
+      }
+    }
+  },
+  "counts": {
+    "physical_first_token_readouts": 32,
+    "archived_full_vectors": 32,
+    "exact_prior_unpatched_references": 8,
+    "unmasked_oracle_patch_shams": 12,
+    "intervened_oracle_patch_readouts": 12,
+    "combined_path_exact_logit_closures": 4,
+    "actual_row_mask_and_prefix_KV_proofs": 32,
+    "actual_tensor_patch_receipts": 160,
+    "native_prefix_checks": 4,
+    "precontroller_native_anchors": 4,
+    "detached_native_replays": 8
+  },
+  "cases": [
+    {
+      "model": "local_question",
+      "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545",
+      "source_regime": "oracle",
+      "original_direction": "harm",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61007-n64-depth3-original",
+          "base_case_id": "test-copy-s61007-n64",
+          "seed": 61007,
+          "distractor_updates": 64,
+          "dependency_depth": 3,
+          "question_style": "original",
+          "variant": "treatment",
+          "role": "protected_current",
+          "physical_id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545"
+        }
+      ],
+      "gold_first_id": 22,
+      "fixed_competitor_id": 17,
+      "effects": {
+        "unmasked": {
+          "fixed_pair_margins": {
+            "none": 7.0,
+            "gdn_current_outputs": 7.0,
+            "question_kv": 7.0,
+            "both": 7.0
+          },
+          "gdn_output_effect": 0.0,
+          "question_kv_effect": 0.0,
+          "combined_effect": 0.0,
+          "patch_margin_difference_in_differences": 0.0,
+          "first_tokens": {
+            "none": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 29.75,
+              "non_gold_id": 17,
+              "non_gold_logit": 22.75,
+              "gold_margin": 7.0,
+              "logits_sha256": "eb3371950256d4c9bd5dadb7b2fc6c287f1621c2f788efca341b1ad0f35ecab9"
+            },
+            "gdn_current_outputs": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 29.75,
+              "non_gold_id": 17,
+              "non_gold_logit": 22.75,
+              "gold_margin": 7.0,
+              "logits_sha256": "eb3371950256d4c9bd5dadb7b2fc6c287f1621c2f788efca341b1ad0f35ecab9"
+            },
+            "question_kv": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 29.75,
+              "non_gold_id": 17,
+              "non_gold_logit": 22.75,
+              "gold_margin": 7.0,
+              "logits_sha256": "eb3371950256d4c9bd5dadb7b2fc6c287f1621c2f788efca341b1ad0f35ecab9"
+            },
+            "both": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 29.75,
+              "non_gold_id": 17,
+              "non_gold_logit": 22.75,
+              "gold_margin": 7.0,
+              "logits_sha256": "eb3371950256d4c9bd5dadb7b2fc6c287f1621c2f788efca341b1ad0f35ecab9"
+            }
+          }
+        },
+        "earlier_only_layer19": {
+          "fixed_pair_margins": {
+            "none": 7.875,
+            "gdn_current_outputs": 7.125,
+            "question_kv": 7.75,
+            "both": 7.0
+          },
+          "gdn_output_effect": -0.75,
+          "question_kv_effect": -0.125,
+          "combined_effect": -0.875,
+          "patch_margin_difference_in_differences": 0.0,
+          "first_tokens": {
+            "none": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 29.875,
+              "non_gold_id": 17,
+              "non_gold_logit": 22.0,
+              "gold_margin": 7.875,
+              "logits_sha256": "779814de8cd263d9a4b57c06bdc7c61d8697ba500c1f016dd962b39201d60a89"
+            },
+            "gdn_current_outputs": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 29.875,
+              "non_gold_id": 17,
+              "non_gold_logit": 22.75,
+              "gold_margin": 7.125,
+              "logits_sha256": "f0a182be87e70c3237a719bb9edaf5693dcd5ae1e8e5875ea59c2745f5c71dd6"
+            },
+            "question_kv": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 29.75,
+              "non_gold_id": 17,
+              "non_gold_logit": 22.0,
+              "gold_margin": 7.75,
+              "logits_sha256": "8c18913a5e5cda5b964be53702ec159a6dbe0b41ab3ae6aafa846db7a7617d20"
+            },
+            "both": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 29.75,
+              "non_gold_id": 17,
+              "non_gold_logit": 22.75,
+              "gold_margin": 7.0,
+              "logits_sha256": "eb3371950256d4c9bd5dadb7b2fc6c287f1621c2f788efca341b1ad0f35ecab9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "model": "local_question",
+      "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf",
+      "source_regime": "remove_matched_other",
+      "original_direction": "harm",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61000-n8-depth1-original",
+          "base_case_id": "test-copy-s61000-n8",
+          "seed": 61000,
+          "distractor_updates": 8,
+          "dependency_depth": 1,
+          "question_style": "original",
+          "variant": "control",
+          "role": "target_current",
+          "physical_id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf"
+        }
+      ],
+      "gold_first_id": 18,
+      "fixed_competitor_id": 19,
+      "effects": {
+        "unmasked": {
+          "fixed_pair_margins": {
+            "none": 0.125,
+            "gdn_current_outputs": 0.125,
+            "question_kv": 0.125,
+            "both": 0.125
+          },
+          "gdn_output_effect": 0.0,
+          "question_kv_effect": 0.0,
+          "combined_effect": 0.0,
+          "patch_margin_difference_in_differences": 0.0,
+          "first_tokens": {
+            "none": {
+              "argmax_id": 18,
+              "argmax_text": "3",
+              "gold_id": 18,
+              "gold_logit": 25.625,
+              "non_gold_id": 19,
+              "non_gold_logit": 25.5,
+              "gold_margin": 0.125,
+              "logits_sha256": "7ae9e7b8b337eb9e4d95a0639a03cf4a2b91260f82f64cd5f560c3580041e4ec"
+            },
+            "gdn_current_outputs": {
+              "argmax_id": 18,
+              "argmax_text": "3",
+              "gold_id": 18,
+              "gold_logit": 25.625,
+              "non_gold_id": 19,
+              "non_gold_logit": 25.5,
+              "gold_margin": 0.125,
+              "logits_sha256": "7ae9e7b8b337eb9e4d95a0639a03cf4a2b91260f82f64cd5f560c3580041e4ec"
+            },
+            "question_kv": {
+              "argmax_id": 18,
+              "argmax_text": "3",
+              "gold_id": 18,
+              "gold_logit": 25.625,
+              "non_gold_id": 19,
+              "non_gold_logit": 25.5,
+              "gold_margin": 0.125,
+              "logits_sha256": "7ae9e7b8b337eb9e4d95a0639a03cf4a2b91260f82f64cd5f560c3580041e4ec"
+            },
+            "both": {
+              "argmax_id": 18,
+              "argmax_text": "3",
+              "gold_id": 18,
+              "gold_logit": 25.625,
+              "non_gold_id": 19,
+              "non_gold_logit": 25.5,
+              "gold_margin": 0.125,
+              "logits_sha256": "7ae9e7b8b337eb9e4d95a0639a03cf4a2b91260f82f64cd5f560c3580041e4ec"
+            }
+          }
+        },
+        "earlier_only_layer19": {
+          "fixed_pair_margins": {
+            "none": 0.0,
+            "gdn_current_outputs": 0.125,
+            "question_kv": 0.0,
+            "both": 0.125
+          },
+          "gdn_output_effect": 0.125,
+          "question_kv_effect": 0.0,
+          "combined_effect": 0.125,
+          "patch_margin_difference_in_differences": 0.0,
+          "first_tokens": {
+            "none": {
+              "argmax_id": 18,
+              "argmax_text": "3",
+              "gold_id": 18,
+              "gold_logit": 25.5,
+              "non_gold_id": 19,
+              "non_gold_logit": 25.5,
+              "gold_margin": 0.0,
+              "logits_sha256": "dd494758aee3cc77ac7a0b712049345f75f58fa8eb0bcdc29fabad4092af8cbf"
+            },
+            "gdn_current_outputs": {
+              "argmax_id": 18,
+              "argmax_text": "3",
+              "gold_id": 18,
+              "gold_logit": 25.625,
+              "non_gold_id": 19,
+              "non_gold_logit": 25.5,
+              "gold_margin": 0.125,
+              "logits_sha256": "03ac570c6c231cf3bcad194d741a29ff788098b383128fbe877287c7d7a09790"
+            },
+            "question_kv": {
+              "argmax_id": 18,
+              "argmax_text": "3",
+              "gold_id": 18,
+              "gold_logit": 25.5,
+              "non_gold_id": 19,
+              "non_gold_logit": 25.5,
+              "gold_margin": 0.0,
+              "logits_sha256": "3c070680144e3f1e46d85e81c1e16bb9852b26b96aa9ed34716cce8d116f6829"
+            },
+            "both": {
+              "argmax_id": 18,
+              "argmax_text": "3",
+              "gold_id": 18,
+              "gold_logit": 25.625,
+              "non_gold_id": 19,
+              "non_gold_logit": 25.5,
+              "gold_margin": 0.125,
+              "logits_sha256": "7ae9e7b8b337eb9e4d95a0639a03cf4a2b91260f82f64cd5f560c3580041e4ec"
+            }
+          }
+        }
+      }
+    },
+    {
+      "model": "gdn_question_only",
+      "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532",
+      "source_regime": "remove_matched_other",
+      "original_direction": "repair",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61007-n64-depth2-entity_first",
+          "base_case_id": "test-copy-s61007-n64",
+          "seed": 61007,
+          "distractor_updates": 64,
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "variant": "treatment",
+          "role": "target_current",
+          "physical_id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532"
+        }
+      ],
+      "gold_first_id": 18,
+      "fixed_competitor_id": 22,
+      "effects": {
+        "unmasked": {
+          "fixed_pair_margins": {
+            "none": -0.125,
+            "gdn_current_outputs": -0.125,
+            "question_kv": -0.125,
+            "both": -0.125
+          },
+          "gdn_output_effect": 0.0,
+          "question_kv_effect": 0.0,
+          "combined_effect": 0.0,
+          "patch_margin_difference_in_differences": 0.0,
+          "first_tokens": {
+            "none": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 18,
+              "gold_logit": 25.625,
+              "non_gold_id": 22,
+              "non_gold_logit": 25.75,
+              "gold_margin": -0.125,
+              "logits_sha256": "e73adf674db4c61243617307be4f0fb3263187a304355cb122450df32d6973e0"
+            },
+            "gdn_current_outputs": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 18,
+              "gold_logit": 25.625,
+              "non_gold_id": 22,
+              "non_gold_logit": 25.75,
+              "gold_margin": -0.125,
+              "logits_sha256": "e73adf674db4c61243617307be4f0fb3263187a304355cb122450df32d6973e0"
+            },
+            "question_kv": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 18,
+              "gold_logit": 25.625,
+              "non_gold_id": 22,
+              "non_gold_logit": 25.75,
+              "gold_margin": -0.125,
+              "logits_sha256": "e73adf674db4c61243617307be4f0fb3263187a304355cb122450df32d6973e0"
+            },
+            "both": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 18,
+              "gold_logit": 25.625,
+              "non_gold_id": 22,
+              "non_gold_logit": 25.75,
+              "gold_margin": -0.125,
+              "logits_sha256": "e73adf674db4c61243617307be4f0fb3263187a304355cb122450df32d6973e0"
+            }
+          }
+        },
+        "earlier_only_layer19": {
+          "fixed_pair_margins": {
+            "none": 0.0,
+            "gdn_current_outputs": -0.125,
+            "question_kv": -0.125,
+            "both": -0.125
+          },
+          "gdn_output_effect": -0.125,
+          "question_kv_effect": -0.125,
+          "combined_effect": -0.125,
+          "patch_margin_difference_in_differences": 0.125,
+          "first_tokens": {
+            "none": {
+              "argmax_id": 18,
+              "argmax_text": "3",
+              "gold_id": 18,
+              "gold_logit": 25.75,
+              "non_gold_id": 22,
+              "non_gold_logit": 25.75,
+              "gold_margin": 0.0,
+              "logits_sha256": "16a05d37ebc63e79cf9f6c7258fd79f785431545feb84b8da743424fdb19bf84"
+            },
+            "gdn_current_outputs": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 18,
+              "gold_logit": 25.625,
+              "non_gold_id": 22,
+              "non_gold_logit": 25.75,
+              "gold_margin": -0.125,
+              "logits_sha256": "cb5dec778c774fe6ea1917f7150c363ed9e14d8a5acf9bd66b2bdaed64ccbcae"
+            },
+            "question_kv": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 18,
+              "gold_logit": 25.625,
+              "non_gold_id": 22,
+              "non_gold_logit": 25.75,
+              "gold_margin": -0.125,
+              "logits_sha256": "0bd7b07dcce66bf3f8b843728c1c3d50b31eb5157ef880dccfdaa8497c20b2e9"
+            },
+            "both": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 18,
+              "gold_logit": 25.625,
+              "non_gold_id": 22,
+              "non_gold_logit": 25.75,
+              "gold_margin": -0.125,
+              "logits_sha256": "e73adf674db4c61243617307be4f0fb3263187a304355cb122450df32d6973e0"
+            }
+          }
+        }
+      }
+    },
+    {
+      "model": "gdn_question_only",
+      "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd",
+      "source_regime": "remove_matched_other",
+      "original_direction": "harm",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61007-n64-depth3-original",
+          "base_case_id": "test-copy-s61007-n64",
+          "seed": 61007,
+          "distractor_updates": 64,
+          "dependency_depth": 3,
+          "question_style": "original",
+          "variant": "control",
+          "role": "target_current",
+          "physical_id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd"
+        }
+      ],
+      "gold_first_id": 22,
+      "fixed_competitor_id": 18,
+      "effects": {
+        "unmasked": {
+          "fixed_pair_margins": {
+            "none": 0.5,
+            "gdn_current_outputs": 0.5,
+            "question_kv": 0.5,
+            "both": 0.5
+          },
+          "gdn_output_effect": 0.0,
+          "question_kv_effect": 0.0,
+          "combined_effect": 0.0,
+          "patch_margin_difference_in_differences": 0.0,
+          "first_tokens": {
+            "none": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 26.25,
+              "non_gold_id": 18,
+              "non_gold_logit": 25.75,
+              "gold_margin": 0.5,
+              "logits_sha256": "05b0c2c4cfb41b938b6ac9f38070a815f0bb8c7be1533811ea8de39879415fba"
+            },
+            "gdn_current_outputs": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 26.25,
+              "non_gold_id": 18,
+              "non_gold_logit": 25.75,
+              "gold_margin": 0.5,
+              "logits_sha256": "05b0c2c4cfb41b938b6ac9f38070a815f0bb8c7be1533811ea8de39879415fba"
+            },
+            "question_kv": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 26.25,
+              "non_gold_id": 18,
+              "non_gold_logit": 25.75,
+              "gold_margin": 0.5,
+              "logits_sha256": "05b0c2c4cfb41b938b6ac9f38070a815f0bb8c7be1533811ea8de39879415fba"
+            },
+            "both": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 26.25,
+              "non_gold_id": 18,
+              "non_gold_logit": 25.75,
+              "gold_margin": 0.5,
+              "logits_sha256": "05b0c2c4cfb41b938b6ac9f38070a815f0bb8c7be1533811ea8de39879415fba"
+            }
+          }
+        },
+        "earlier_only_layer19": {
+          "fixed_pair_margins": {
+            "none": 0.125,
+            "gdn_current_outputs": 0.5,
+            "question_kv": 0.125,
+            "both": 0.5
+          },
+          "gdn_output_effect": 0.375,
+          "question_kv_effect": 0.0,
+          "combined_effect": 0.375,
+          "patch_margin_difference_in_differences": 0.0,
+          "first_tokens": {
+            "none": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 26.25,
+              "non_gold_id": 18,
+              "non_gold_logit": 26.125,
+              "gold_margin": 0.125,
+              "logits_sha256": "34ecabf62d15cba5415002eeba66bef1a3c6f8136c02745a26d119be0c8f974f"
+            },
+            "gdn_current_outputs": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 26.25,
+              "non_gold_id": 18,
+              "non_gold_logit": 25.75,
+              "gold_margin": 0.5,
+              "logits_sha256": "8911c7a30109548deaab095fd179f14e450cfd16f6f5aa703137bb3e27ba7a00"
+            },
+            "question_kv": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 26.25,
+              "non_gold_id": 18,
+              "non_gold_logit": 26.125,
+              "gold_margin": 0.125,
+              "logits_sha256": "6fb9b7914635c4cf3625f841984c3dc88a580c3e866722942372ade6a621a5ea"
+            },
+            "both": {
+              "argmax_id": 22,
+              "argmax_text": "7",
+              "gold_id": 22,
+              "gold_logit": 26.25,
+              "non_gold_id": 18,
+              "non_gold_logit": 25.75,
+              "gold_margin": 0.5,
+              "logits_sha256": "05b0c2c4cfb41b938b6ac9f38070a815f0bb8c7be1533811ea8de39879415fba"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "interpretation": "Oracle patches diagnose GDN branch outputs versus earlier-question Attention23 K/V in four reused cases. GDN outputs include recurrence, convolution, gates, normalization and projection; output patching does not identify recurrent storage loss or repair state writes. Combined first-logit closure is an operator control, not a deployable method, future-state preservation, full-answer result or architecture contribution.",
+  "analysis_source_sha256": "d25119a0e86852c25ba8d26b2b884095362e05de16a5f7103ab9f2543833fd2e"
+}

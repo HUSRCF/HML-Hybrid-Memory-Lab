@@ -1,0 +1,98 @@
+{
+  "status": "registered_not_started",
+  "registered_utc": "2026-11-14T03:53:51.397014+00:00",
+  "purpose": "Complete the proposal's GDN-only and Attention-only controls at the same conventional order-augmentation budget before asserting that joint adaptation is needed.",
+  "backbone": "it",
+  "group_index": 3,
+  "initialization_seed": 1701,
+  "reader_policy": "full",
+  "adapt_gdn_keys": true,
+  "data_source": "/media/990Pro/Code/SAS/datasets/memory_update/paired-semantic-order-augmented-v1",
+  "data_sha256": "3ccaa5be8591fc896646a50991aaa86f5f722e00e76a198449791d3caa992b0f",
+  "registry_sha256": "9147f9f76334ebda3ad503f17603c3d06be630fae72b0dd930d5029ae877c55e",
+  "tokenized_input_answer_sha256": "8f286e49883583b97d4bf48822ea4663bd2cc3f5979f2031eef4c0b583cb3d1f",
+  "native_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-native-20261114-01",
+  "arms": {
+    "gdn_only": {
+      "mode": "gdn_only",
+      "rank": 84,
+      "token_policy": "all",
+      "parameters": 696192
+    },
+    "attention_only": {
+      "mode": "attention_only",
+      "rank": 150,
+      "token_policy": "all",
+      "parameters": 691200
+    }
+  },
+  "unique_training_examples": 864,
+  "gradient_accumulation": 2,
+  "maximum_optimizer_steps": 432,
+  "checkpoint_steps": [
+    144,
+    288,
+    432
+  ],
+  "evaluation_steps": [
+    432
+  ],
+  "learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "max_gradient_norm": 1.0,
+  "max_input_tokens": 832,
+  "optimized_input_token_budgets": {
+    "144": 176667,
+    "288": 355305,
+    "432": 527808
+  },
+  "supervised_answer_token_budgets": {
+    "144": 1152,
+    "288": 2304,
+    "432": 3456
+  },
+  "objective": "Only gold numeric-answer plus newline LM cross-entropy, identical for all arms. No auxiliary consistency loss or external scope labels.",
+  "gate": "Require independent complete audit of the four ordinary-order-augmented controllers in both development orders. Verify fixed augmentation plan/manifest, unchanged data/token budgets and backbone packages. Run both new real-model safety controls with actual parameter counts before schedule training.",
+  "requirements": [
+    "Use exactly the registered ordinary order-augmented dataset and the same 864-example ordered pass: 432 optimizer steps, 527808 input tokens and 3456 supervised answer tokens per mode. Same frozen IT backbone, group 3, answer-only LM loss, learning rate, clipping, weight decay and initialization seed.",
+    "GDN-only adapts the three selected GDN key/gate projections without a direct Attention projection adapter. Attention-only adapts the selected Attention Q/K projections without direct GDN projection adapters. Retain native attention output gates and cache dimensions.",
+    "Verify actual ranks, projection shapes and parameter counts with the loaded model. Fresh zero-output initialization must reproduce native logits, adapter gradients must be finite and nonzero, and backbone gradients must stay absent. Discard scratch safety updates and reset seed before training.",
+    "Checkpoint adapter/AdamW/RNG at 144/288/432; only final weights get both full 432-example development validations. Measure final teacher fit on all 864 training examples independently from free generation. No checkpoint or hyperparameter selection on validation outcomes.",
+    "Verify sampled six-layer actual full historical access, unchanged evaluation weights/RNG and exact sampled native restoration after detach. All-token modes do not claim native-prefix identity.",
+    "Independently audit training identities/token budgets, all checkpoints and both raw evaluation cohorts. Compare both new scopes against all four previously audited augmented controls using paired individual and joint answers, stable unchanged facts and ADD-separated updates.",
+    "Do not infer logical necessity of joint semantic control from a small score gap or an underfit one-path model. Establish adequate teacher fit and retain fresh event streams/templates/initializations for any later claim."
+  ],
+  "interpretation": "Two necessary scope controls for the proposed hybrid-block co-design, not new architectures. Same augmented data, ordered identities, optimizer, seed, steps and two already-observed development orders as the four-arm reference. Parameter counts are near-matched; ranks and feature allocations differ. Changing only one parameter pathway can still affect downstream hidden states and other memory layers. Any success weakens a claim that both selected component types must be adapted; failure alone does not establish unique memory storage or semantic write damage. No fresh-confirmation or universal-superiority claim.",
+  "profile": "single_path_semantic_controls",
+  "base_data_sha256": "9a58823c8348db79b5b20db418894ae51782d02d943dc2440365af66c6838791",
+  "data_manifest_sha256": "f5b90214f92710085b208e96d2af98db5d4cc7547a2e518a34e8dec1616de32d",
+  "training_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-controllers-20261114-01",
+  "order_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/initial-order-control-20261114-01",
+  "original_training_plan_sha256": "52f0db3fe5e6635eb19380856c5792940e9d31124fe29f0543544ad505aed587",
+  "order_control_plan": "/home/husrcf/Code/SAS/configs/initial_order_control_plan.json",
+  "order_control_plan_sha256": "ab728f84c696c8c664217e86955935cbff5ffb3cdfa896e44f748750b6a27a22",
+  "evaluation_conditions": [
+    "canonical",
+    "initial_record_derangement"
+  ],
+  "augmentation": {
+    "seed_offset": 991003,
+    "canonical_train_stream_indices": [
+      0,
+      3
+    ],
+    "deranged_train_stream_indices": [
+      1,
+      2
+    ],
+    "canonical_train_examples": 432,
+    "deranged_train_examples": 432,
+    "all_four_siblings_share_order": true
+  },
+  "native_reference_manifest_sha256": "2b9580bea17bad9a6e6569da2c071fa549271114663580e0c7dc514ee8df22a3",
+  "training_reference_manifest_sha256": "601e20a31826ea822da2810231cc5e18da74817adab4d17a10c4218c6c01e965",
+  "order_reference_manifest_sha256": "8f9fbc9bd4fd48a8ad274b5f827d0fddcedfef47c2bd898349a8e747dca5453d",
+  "augmentation_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+  "augmentation_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+  "augmentation_reference_manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe"
+}

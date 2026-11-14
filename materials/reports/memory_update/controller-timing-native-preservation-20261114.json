@@ -1,0 +1,18 @@
+{
+  "control_vs_before": [
+    "test-copy-s50004-n8",
+    "test-copy-s50007-n64",
+    "test-copy-s50022-n8",
+    "test-copy-s50031-n64"
+  ],
+  "treatment_vs_before": [
+    "test-copy-s50007-n64",
+    "test-copy-s50022-n8"
+  ],
+  "treatment_vs_control": [],
+  "control_vs_treatment": [
+    "test-copy-s50004-n8",
+    "test-copy-s50023-n64",
+    "test-copy-s50031-n64"
+  ]
+}

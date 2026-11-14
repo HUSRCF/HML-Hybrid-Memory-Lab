@@ -1,0 +1,32 @@
+{
+  "status": "audited_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/write-locality-replication-smoke-20261114-01",
+  "manifest_sha256": "0774fd18d0e37209f1fea07b49c25e178bba6476b25771ac8175826ac90c5a0d",
+  "records_audited": 12,
+  "dataset_manifest_sha256": "367dae3466df3f797b1a4222173b84773960523ca12a55ce372c7c536348bfca",
+  "data_sha256": "a32c572c17219876a58512a9fefe640097beeb97ad3d3c6d34303f1f058c9cf6",
+  "registry_sha256": "5a319c4bd6f0f77759e8bf292283e69f6967d90d84d5914d5dd735fb32d5833a",
+  "protocol_sha256": "cc321076e4c16df135c506fabf5e9c1edbdf09408899444a6b93289676fecb1f",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "metrics": {
+    "examples": 12,
+    "correct": 11,
+    "screen_signal_evaluated": false
+  },
+  "reference_gate": {
+    "report_path": "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-load-20261114.json",
+    "report_sha256": "47e1835173dea129230ebe48cff6ee5c3aa59b82eff34322899a0a0319b47e83",
+    "manifest_sha256": "8588af35b666ae846e496b6a7e8fae4fc0d559d9cc08ede08b2c72b0f1aa1768",
+    "status": "completed_and_audited"
+  },
+  "interpretation": "Replicate the observed native functional preservation regressions under the same fixed-length generation mechanism with four newly specified base seeds, before attributing them to recurrent write damage or training a new architecture.",
+  "analysis_source_sha256": "314486a345281970503bc61ad3e102d192589e8844ab6385a2fac7f4181ad89d",
+  "audit_engine_source_sha256": "43adbeb05d687c512654927768a7d01e69241dba91a00b8c008b12793d6a14dd",
+  "provider_source_sha256": "b34538ae6aaeb5f7cc4c0b4c53e9f83c60a069f807b5df81f897db8b683c29ec",
+  "primary_recurrence": null
+}

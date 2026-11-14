@@ -1,0 +1,4933 @@
+{
+  "status": "complete_native_no_repeat_history_export",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/history-no-repeat-20261114.json",
+  "source_audit_sha256": "16a21e91ea563cb753d3744cbe3d869c9bbbe32b42bfc065c8ea2759ccf0bb47",
+  "source_manifest_sha256": "92bead97e90577fd678794a1b4d8279d298386fff17d195e787b10ef0aeadbac",
+  "dataset_manifest_sha256": "d73205d16b25e4d65bac701a26f29cd45844aa1297c65bcbc30d8538b11d3226",
+  "registry_sha256": "b7b14510934d2ca8e976d562567e4f33de9bc799d982914ea6e577128b2e3207",
+  "analysis_source_sha256": "c3166ee92bdaab0d2560c68150d106aa6099338b20f8766b60134658ce54ce91",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "metrics": {
+    "examples": 384,
+    "correct": 365,
+    "cohort_load_results": [
+      {
+        "cohort": "discovery",
+        "active_accounts": 32,
+        "pairs": 16,
+        "counts": {
+          "hold_middle": {
+            "target_initial": {
+              "correct": 16,
+              "examples": 16,
+              "answer_nll": 0.09141994019349416
+            },
+            "target_current": {
+              "correct": 13,
+              "examples": 16,
+              "answer_nll": 0.24132848531007767
+            },
+            "other_current": {
+              "correct": 16,
+              "examples": 16,
+              "answer_nll": 0.2777649958928426
+            },
+            "all_roles_joint": {
+              "correct": 13,
+              "examples": 16
+            }
+          },
+          "update_new": {
+            "target_initial": {
+              "correct": 16,
+              "examples": 16,
+              "answer_nll": 0.0980682799903055
+            },
+            "target_current": {
+              "correct": 15,
+              "examples": 16,
+              "answer_nll": 0.23219049163162708
+            },
+            "other_current": {
+              "correct": 16,
+              "examples": 16,
+              "answer_nll": 0.31247005549569923
+            },
+            "all_roles_joint": {
+              "correct": 15,
+              "examples": 16
+            }
+          }
+        },
+        "paired_roles": {
+          "target_initial": {
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.00664833979681134,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          "target_current": {
+            "units": 16,
+            "reference_correct": 13,
+            "candidate_correct": 15,
+            "rescued": 3,
+            "regressed": 1,
+            "both_correct": 12,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": -0.009137993678450581,
+            "regressed_case_ids": [
+              "history-no-repeat-s97400-a032-v1"
+            ],
+            "regressed_base_streams": [
+              "history-no-repeat-s97400"
+            ],
+            "rescued_case_ids": [
+              "history-no-repeat-s97400-a032-v2",
+              "history-no-repeat-s97401-a032-v0",
+              "history-no-repeat-s97401-a032-v3"
+            ],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 13,
+              "rate": 0.07692307692307693
+            }
+          },
+          "other_current": {
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.03470505960285663,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          }
+        },
+        "commit_qualified_regression_cases": [],
+        "commit_qualified_regression_base_streams": [],
+        "unqualified_regression_cases": [],
+        "all_current_correct_both_worlds": 12,
+        "baseline_historical_floor": false,
+        "descriptive_two_stream_signal": false,
+        "primary": false
+      },
+      {
+        "cohort": "discovery",
+        "active_accounts": 128,
+        "pairs": 16,
+        "counts": {
+          "hold_middle": {
+            "target_initial": {
+              "correct": 16,
+              "examples": 16,
+              "answer_nll": 0.13985802698880434
+            },
+            "target_current": {
+              "correct": 14,
+              "examples": 16,
+              "answer_nll": 0.24949941163261732
+            },
+            "other_current": {
+              "correct": 15,
+              "examples": 16,
+              "answer_nll": 0.22380688538153967
+            },
+            "all_roles_joint": {
+              "correct": 13,
+              "examples": 16
+            }
+          },
+          "update_new": {
+            "target_initial": {
+              "correct": 15,
+              "examples": 16,
+              "answer_nll": 0.18537914846092463
+            },
+            "target_current": {
+              "correct": 16,
+              "examples": 16,
+              "answer_nll": 0.16869375482201576
+            },
+            "other_current": {
+              "correct": 15,
+              "examples": 16,
+              "answer_nll": 0.2751586679369211
+            },
+            "all_roles_joint": {
+              "correct": 14,
+              "examples": 16
+            }
+          }
+        },
+        "paired_roles": {
+          "target_initial": {
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 15,
+            "rescued": 0,
+            "regressed": 1,
+            "both_correct": 15,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.04552112147212028,
+            "regressed_case_ids": [
+              "history-no-repeat-s97400-a128-v3"
+            ],
+            "regressed_base_streams": [
+              "history-no-repeat-s97400"
+            ],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 1,
+              "baseline_correct": 16,
+              "rate": 0.0625
+            }
+          },
+          "target_current": {
+            "units": 16,
+            "reference_correct": 14,
+            "candidate_correct": 16,
+            "rescued": 2,
+            "regressed": 0,
+            "both_correct": 14,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": -0.08080565681060155,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [
+              "history-no-repeat-s97401-a128-v2",
+              "history-no-repeat-s97401-a128-v3"
+            ],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 14,
+              "rate": 0.0
+            }
+          },
+          "other_current": {
+            "units": 16,
+            "reference_correct": 15,
+            "candidate_correct": 15,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 15,
+            "both_wrong": 1,
+            "mean_nll_candidate_minus_reference": 0.05135178255538146,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 15,
+              "rate": 0.0
+            }
+          }
+        },
+        "commit_qualified_regression_cases": [
+          "history-no-repeat-s97400-a128-v3"
+        ],
+        "commit_qualified_regression_base_streams": [
+          "history-no-repeat-s97400"
+        ],
+        "unqualified_regression_cases": [],
+        "all_current_correct_both_worlds": 13,
+        "baseline_historical_floor": false,
+        "descriptive_two_stream_signal": false,
+        "primary": true
+      },
+      {
+        "cohort": "replica",
+        "active_accounts": 32,
+        "pairs": 16,
+        "counts": {
+          "hold_middle": {
+            "target_initial": {
+              "correct": 16,
+              "examples": 16,
+              "answer_nll": 0.0666086576723804
+            },
+            "target_current": {
+              "correct": 11,
+              "examples": 16,
+              "answer_nll": 0.26138229047258693
+            },
+            "other_current": {
+              "correct": 16,
+              "examples": 16,
+              "answer_nll": 0.20533074562748274
+            },
+            "all_roles_joint": {
+              "correct": 11,
+              "examples": 16
+            }
+          },
+          "update_new": {
+            "target_initial": {
+              "correct": 16,
+              "examples": 16,
+              "answer_nll": 0.07654586566301684
+            },
+            "target_current": {
+              "correct": 16,
+              "examples": 16,
+              "answer_nll": 0.17140290467068553
+            },
+            "other_current": {
+              "correct": 16,
+              "examples": 16,
+              "answer_nll": 0.23593797720968723
+            },
+            "all_roles_joint": {
+              "correct": 16,
+              "examples": 16
+            }
+          }
+        },
+        "paired_roles": {
+          "target_initial": {
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.009937207990636425,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          "target_current": {
+            "units": 16,
+            "reference_correct": 11,
+            "candidate_correct": 16,
+            "rescued": 5,
+            "regressed": 0,
+            "both_correct": 11,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": -0.08997938580190142,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [
+              "history-no-repeat-s97501-a032-v1",
+              "history-no-repeat-s97501-a032-v2",
+              "history-no-repeat-s97501-a032-v3",
+              "history-no-repeat-s97502-a032-v1",
+              "history-no-repeat-s97502-a032-v2"
+            ],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 11,
+              "rate": 0.0
+            }
+          },
+          "other_current": {
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.030607231582204488,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          }
+        },
+        "commit_qualified_regression_cases": [],
+        "commit_qualified_regression_base_streams": [],
+        "unqualified_regression_cases": [],
+        "all_current_correct_both_worlds": 11,
+        "baseline_historical_floor": false,
+        "descriptive_two_stream_signal": false,
+        "primary": false
+      },
+      {
+        "cohort": "replica",
+        "active_accounts": 128,
+        "pairs": 16,
+        "counts": {
+          "hold_middle": {
+            "target_initial": {
+              "correct": 16,
+              "examples": 16,
+              "answer_nll": 0.08218214583272736
+            },
+            "target_current": {
+              "correct": 12,
+              "examples": 16,
+              "answer_nll": 0.252131387591362
+            },
+            "other_current": {
+              "correct": 15,
+              "examples": 16,
+              "answer_nll": 0.2201195452362299
+            },
+            "all_roles_joint": {
+              "correct": 12,
+              "examples": 16
+            }
+          },
+          "update_new": {
+            "target_initial": {
+              "correct": 16,
+              "examples": 16,
+              "answer_nll": 0.09777911628286044
+            },
+            "target_current": {
+              "correct": 16,
+              "examples": 16,
+              "answer_nll": 0.1334357464996477
+            },
+            "other_current": {
+              "correct": 16,
+              "examples": 16,
+              "answer_nll": 0.2537758455922206
+            },
+            "all_roles_joint": {
+              "correct": 16,
+              "examples": 16
+            }
+          }
+        },
+        "paired_roles": {
+          "target_initial": {
+            "units": 16,
+            "reference_correct": 16,
+            "candidate_correct": 16,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 16,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.015596970450133087,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 16,
+              "rate": 0.0
+            }
+          },
+          "target_current": {
+            "units": 16,
+            "reference_correct": 12,
+            "candidate_correct": 16,
+            "rescued": 4,
+            "regressed": 0,
+            "both_correct": 12,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": -0.11869564109171431,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [
+              "history-no-repeat-s97500-a128-v3",
+              "history-no-repeat-s97501-a128-v1",
+              "history-no-repeat-s97501-a128-v3",
+              "history-no-repeat-s97502-a128-v2"
+            ],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 12,
+              "rate": 0.0
+            }
+          },
+          "other_current": {
+            "units": 16,
+            "reference_correct": 15,
+            "candidate_correct": 16,
+            "rescued": 1,
+            "regressed": 0,
+            "both_correct": 15,
+            "both_wrong": 0,
+            "mean_nll_candidate_minus_reference": 0.03365630035599072,
+            "regressed_case_ids": [],
+            "regressed_base_streams": [],
+            "rescued_case_ids": [
+              "history-no-repeat-s97500-a128-v3"
+            ],
+            "secondary_baseline_correct_regression_rate": {
+              "regressed": 0,
+              "baseline_correct": 15,
+              "rate": 0.0
+            }
+          }
+        },
+        "commit_qualified_regression_cases": [],
+        "commit_qualified_regression_base_streams": [],
+        "unqualified_regression_cases": [],
+        "all_current_correct_both_worlds": 12,
+        "baseline_historical_floor": false,
+        "descriptive_two_stream_signal": false,
+        "primary": true
+      }
+    ],
+    "base_stream_results": [
+      {
+        "cohort": "discovery",
+        "active_accounts": 32,
+        "base_stream_id": "history-no-repeat-s97400",
+        "examples": 24,
+        "correct": 22,
+        "all_four_values_roles_worlds_correct": false,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 4
+        },
+        "qualified_regression_cases": []
+      },
+      {
+        "cohort": "discovery",
+        "active_accounts": 32,
+        "base_stream_id": "history-no-repeat-s97401",
+        "examples": 24,
+        "correct": 22,
+        "all_four_values_roles_worlds_correct": false,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 4
+        },
+        "qualified_regression_cases": []
+      },
+      {
+        "cohort": "discovery",
+        "active_accounts": 32,
+        "base_stream_id": "history-no-repeat-s97402",
+        "examples": 24,
+        "correct": 24,
+        "all_four_values_roles_worlds_correct": true,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 4
+        },
+        "qualified_regression_cases": []
+      },
+      {
+        "cohort": "discovery",
+        "active_accounts": 32,
+        "base_stream_id": "history-no-repeat-s97403",
+        "examples": 24,
+        "correct": 24,
+        "all_four_values_roles_worlds_correct": true,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 4
+        },
+        "qualified_regression_cases": []
+      },
+      {
+        "cohort": "discovery",
+        "active_accounts": 128,
+        "base_stream_id": "history-no-repeat-s97400",
+        "examples": 24,
+        "correct": 23,
+        "all_four_values_roles_worlds_correct": false,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 3
+        },
+        "qualified_regression_cases": [
+          "history-no-repeat-s97400-a128-v3"
+        ]
+      },
+      {
+        "cohort": "discovery",
+        "active_accounts": 128,
+        "base_stream_id": "history-no-repeat-s97401",
+        "examples": 24,
+        "correct": 20,
+        "all_four_values_roles_worlds_correct": false,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 4
+        },
+        "qualified_regression_cases": []
+      },
+      {
+        "cohort": "discovery",
+        "active_accounts": 128,
+        "base_stream_id": "history-no-repeat-s97402",
+        "examples": 24,
+        "correct": 24,
+        "all_four_values_roles_worlds_correct": true,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 4
+        },
+        "qualified_regression_cases": []
+      },
+      {
+        "cohort": "discovery",
+        "active_accounts": 128,
+        "base_stream_id": "history-no-repeat-s97403",
+        "examples": 24,
+        "correct": 24,
+        "all_four_values_roles_worlds_correct": true,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 4
+        },
+        "qualified_regression_cases": []
+      },
+      {
+        "cohort": "replica",
+        "active_accounts": 32,
+        "base_stream_id": "history-no-repeat-s97500",
+        "examples": 24,
+        "correct": 24,
+        "all_four_values_roles_worlds_correct": true,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 4
+        },
+        "qualified_regression_cases": []
+      },
+      {
+        "cohort": "replica",
+        "active_accounts": 32,
+        "base_stream_id": "history-no-repeat-s97501",
+        "examples": 24,
+        "correct": 21,
+        "all_four_values_roles_worlds_correct": false,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 4
+        },
+        "qualified_regression_cases": []
+      },
+      {
+        "cohort": "replica",
+        "active_accounts": 32,
+        "base_stream_id": "history-no-repeat-s97502",
+        "examples": 24,
+        "correct": 22,
+        "all_four_values_roles_worlds_correct": false,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 4
+        },
+        "qualified_regression_cases": []
+      },
+      {
+        "cohort": "replica",
+        "active_accounts": 32,
+        "base_stream_id": "history-no-repeat-s97503",
+        "examples": 24,
+        "correct": 24,
+        "all_four_values_roles_worlds_correct": true,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 4
+        },
+        "qualified_regression_cases": []
+      },
+      {
+        "cohort": "replica",
+        "active_accounts": 128,
+        "base_stream_id": "history-no-repeat-s97500",
+        "examples": 24,
+        "correct": 22,
+        "all_four_values_roles_worlds_correct": false,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 4
+        },
+        "qualified_regression_cases": []
+      },
+      {
+        "cohort": "replica",
+        "active_accounts": 128,
+        "base_stream_id": "history-no-repeat-s97501",
+        "examples": 24,
+        "correct": 22,
+        "all_four_values_roles_worlds_correct": false,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 4
+        },
+        "qualified_regression_cases": []
+      },
+      {
+        "cohort": "replica",
+        "active_accounts": 128,
+        "base_stream_id": "history-no-repeat-s97502",
+        "examples": 24,
+        "correct": 23,
+        "all_four_values_roles_worlds_correct": false,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 4
+        },
+        "qualified_regression_cases": []
+      },
+      {
+        "cohort": "replica",
+        "active_accounts": 128,
+        "base_stream_id": "history-no-repeat-s97503",
+        "examples": 24,
+        "correct": 24,
+        "all_four_values_roles_worlds_correct": true,
+        "historical_by_world": {
+          "hold_middle": 4,
+          "update_new": 4
+        },
+        "qualified_regression_cases": []
+      }
+    ],
+    "individual_pairs": [
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97400",
+        "base_case_id": "history-no-repeat-s97400-a032",
+        "seed": 97400,
+        "active_accounts": 32,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97400-a032-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "172",
+                "generated": "172\n",
+                "greedy_exact": true,
+                "answer_nll": 0.19160062074661255
+              },
+              "target_current": {
+                "answer": "327",
+                "generated": "327\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2934856613477071
+              },
+              "other_current": {
+                "answer": "822",
+                "generated": "822\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2566922108332316
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "172",
+                "generated": "172\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2107282280921936
+              },
+              "target_current": {
+                "answer": "453",
+                "generated": "453\n",
+                "greedy_exact": true,
+                "answer_nll": 0.25693045059839886
+              },
+              "other_current": {
+                "answer": "822",
+                "generated": "822\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3312147259712219
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97400",
+        "base_case_id": "history-no-repeat-s97400-a032",
+        "seed": 97400,
+        "active_accounts": 32,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97400-a032-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "710",
+                "generated": "710\n",
+                "greedy_exact": true,
+                "answer_nll": 0.23361810048421225
+              },
+              "target_current": {
+                "answer": "432",
+                "generated": "432\n",
+                "greedy_exact": true,
+                "answer_nll": 0.22399799029032388
+              },
+              "other_current": {
+                "answer": "272",
+                "generated": "272\n",
+                "greedy_exact": true,
+                "answer_nll": 0.20568356911341348
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "710",
+                "generated": "710\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2158083120981852
+              },
+              "target_current": {
+                "answer": "500",
+                "generated": "407\n",
+                "greedy_exact": false,
+                "answer_nll": 0.7087847391764323
+              },
+              "other_current": {
+                "answer": "272",
+                "generated": "272\n",
+                "greedy_exact": true,
+                "answer_nll": 0.252299169699351
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97400",
+        "base_case_id": "history-no-repeat-s97400-a032",
+        "seed": 97400,
+        "active_accounts": 32,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97400-a032-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "368",
+                "generated": "368\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14444199204444885
+              },
+              "target_current": {
+                "answer": "593",
+                "generated": "414\n",
+                "greedy_exact": false,
+                "answer_nll": 0.5569195747375488
+              },
+              "other_current": {
+                "answer": "522",
+                "generated": "522\n",
+                "greedy_exact": true,
+                "answer_nll": 0.45766715208689374
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "368",
+                "generated": "368\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1732927362124125
+              },
+              "target_current": {
+                "answer": "164",
+                "generated": "164\n",
+                "greedy_exact": true,
+                "answer_nll": 0.4260193904240926
+              },
+              "other_current": {
+                "answer": "522",
+                "generated": "522\n",
+                "greedy_exact": true,
+                "answer_nll": 0.46712549527486164
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97400",
+        "base_case_id": "history-no-repeat-s97400-a032",
+        "seed": 97400,
+        "active_accounts": 32,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97400-a032-v3",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "402",
+                "generated": "402\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1580297350883484
+              },
+              "target_current": {
+                "answer": "882",
+                "generated": "882\n",
+                "greedy_exact": true,
+                "answer_nll": 0.12125153342882793
+              },
+              "other_current": {
+                "answer": "820",
+                "generated": "820\n",
+                "greedy_exact": true,
+                "answer_nll": 0.26684802770614624
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "402",
+                "generated": "402\n",
+                "greedy_exact": true,
+                "answer_nll": 0.20437012116114298
+              },
+              "target_current": {
+                "answer": "262",
+                "generated": "262\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3751228253046672
+              },
+              "other_current": {
+                "answer": "820",
+                "generated": "820\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3162505825360616
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97400",
+        "base_case_id": "history-no-repeat-s97400-a128",
+        "seed": 97400,
+        "active_accounts": 128,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97400-a128-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "172",
+                "generated": "172\n",
+                "greedy_exact": true,
+                "answer_nll": 0.28482113281885785
+              },
+              "target_current": {
+                "answer": "327",
+                "generated": "327\n",
+                "greedy_exact": true,
+                "answer_nll": 0.27558034658432007
+              },
+              "other_current": {
+                "answer": "822",
+                "generated": "822\n",
+                "greedy_exact": true,
+                "answer_nll": 0.20747709274291992
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "172",
+                "generated": "172\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3985993067423503
+              },
+              "target_current": {
+                "answer": "453",
+                "generated": "453\n",
+                "greedy_exact": true,
+                "answer_nll": 0.19091161092122397
+              },
+              "other_current": {
+                "answer": "822",
+                "generated": "822\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2874769369761149
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97400",
+        "base_case_id": "history-no-repeat-s97400-a128",
+        "seed": 97400,
+        "active_accounts": 128,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97400-a128-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "710",
+                "generated": "710\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3026926914850871
+              },
+              "target_current": {
+                "answer": "432",
+                "generated": "432\n",
+                "greedy_exact": true,
+                "answer_nll": 0.23882087071736655
+              },
+              "other_current": {
+                "answer": "272",
+                "generated": "272\n",
+                "greedy_exact": true,
+                "answer_nll": 0.13470208644866943
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "710",
+                "generated": "710\n",
+                "greedy_exact": true,
+                "answer_nll": 0.36341150601704914
+              },
+              "target_current": {
+                "answer": "500",
+                "generated": "500\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1993547280629476
+              },
+              "other_current": {
+                "answer": "272",
+                "generated": "272\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1614370048046112
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97400",
+        "base_case_id": "history-no-repeat-s97400-a128",
+        "seed": 97400,
+        "active_accounts": 128,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97400-a128-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "368",
+                "generated": "368\n",
+                "greedy_exact": true,
+                "answer_nll": 0.28025273482004803
+              },
+              "target_current": {
+                "answer": "593",
+                "generated": "593\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2708447178204854
+              },
+              "other_current": {
+                "answer": "522",
+                "generated": "522\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1924151579538981
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "368",
+                "generated": "368\n",
+                "greedy_exact": true,
+                "answer_nll": 0.4130639632542928
+              },
+              "target_current": {
+                "answer": "164",
+                "generated": "164\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1976101597150167
+              },
+              "other_current": {
+                "answer": "522",
+                "generated": "522\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2457163135210673
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97400",
+        "base_case_id": "history-no-repeat-s97400-a128",
+        "seed": 97400,
+        "active_accounts": 128,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97400-a128-v3",
+        "history_regressed": true,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": true,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "402",
+                "generated": "402\n",
+                "greedy_exact": true,
+                "answer_nll": 0.22280575831731161
+              },
+              "target_current": {
+                "answer": "882",
+                "generated": "882\n",
+                "greedy_exact": true,
+                "answer_nll": 0.07480880618095398
+              },
+              "other_current": {
+                "answer": "820",
+                "generated": "820\n",
+                "greedy_exact": true,
+                "answer_nll": 0.16678418715794882
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "402",
+                "generated": "262\n",
+                "greedy_exact": false,
+                "answer_nll": 0.39709365367889404
+              },
+              "target_current": {
+                "answer": "262",
+                "generated": "262\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1562312146027883
+              },
+              "other_current": {
+                "answer": "820",
+                "generated": "820\n",
+                "greedy_exact": true,
+                "answer_nll": 0.23094143470128378
+              }
+            },
+            "historical_error_numeric_matches": [
+              "current_A"
+            ],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97401",
+        "base_case_id": "history-no-repeat-s97401-a032",
+        "seed": 97401,
+        "active_accounts": 32,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97401-a032-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "383",
+                "generated": "383\n",
+                "greedy_exact": true,
+                "answer_nll": 0.07478111485640208
+              },
+              "target_current": {
+                "answer": "822",
+                "generated": "383\n",
+                "greedy_exact": false,
+                "answer_nll": 0.2698276837666829
+              },
+              "other_current": {
+                "answer": "391",
+                "generated": "391\n",
+                "greedy_exact": true,
+                "answer_nll": 0.12080517411231995
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "383",
+                "generated": "383\n",
+                "greedy_exact": true,
+                "answer_nll": 0.08802887797355652
+              },
+              "target_current": {
+                "answer": "655",
+                "generated": "655\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1759445071220398
+              },
+              "other_current": {
+                "answer": "391",
+                "generated": "391\n",
+                "greedy_exact": true,
+                "answer_nll": 0.190110445022583
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97401",
+        "base_case_id": "history-no-repeat-s97401-a032",
+        "seed": 97401,
+        "active_accounts": 32,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97401-a032-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "646",
+                "generated": "646\n",
+                "greedy_exact": true,
+                "answer_nll": 0.06880804896354675
+              },
+              "target_current": {
+                "answer": "715",
+                "generated": "715\n",
+                "greedy_exact": true,
+                "answer_nll": 0.18126652638117471
+              },
+              "other_current": {
+                "answer": "130",
+                "generated": "130\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3944828510284424
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "646",
+                "generated": "646\n",
+                "greedy_exact": true,
+                "answer_nll": 0.08571117122968037
+              },
+              "target_current": {
+                "answer": "302",
+                "generated": "302\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2175873319307963
+              },
+              "other_current": {
+                "answer": "130",
+                "generated": "130\n",
+                "greedy_exact": true,
+                "answer_nll": 0.46496768792470294
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97401",
+        "base_case_id": "history-no-repeat-s97401-a032",
+        "seed": 97401,
+        "active_accounts": 32,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97401-a032-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "327",
+                "generated": "327\n",
+                "greedy_exact": true,
+                "answer_nll": 0.06526083747545879
+              },
+              "target_current": {
+                "answer": "552",
+                "generated": "552\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2789448102315267
+              },
+              "other_current": {
+                "answer": "876",
+                "generated": "876\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1548716127872467
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "327",
+                "generated": "327\n",
+                "greedy_exact": true,
+                "answer_nll": 0.08580596248308818
+              },
+              "target_current": {
+                "answer": "777",
+                "generated": "777\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14023202657699585
+              },
+              "other_current": {
+                "answer": "876",
+                "generated": "876\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1715099016825358
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97401",
+        "base_case_id": "history-no-repeat-s97401-a032",
+        "seed": 97401,
+        "active_accounts": 32,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97401-a032-v3",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "844",
+                "generated": "844\n",
+                "greedy_exact": true,
+                "answer_nll": 0.08433971802393596
+              },
+              "target_current": {
+                "answer": "675",
+                "generated": "844\n",
+                "greedy_exact": false,
+                "answer_nll": 0.3021494746208191
+              },
+              "other_current": {
+                "answer": "828",
+                "generated": "828\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1356792449951172
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "844",
+                "generated": "844\n",
+                "greedy_exact": true,
+                "answer_nll": 0.08837232987085979
+              },
+              "target_current": {
+                "answer": "104",
+                "generated": "104\n",
+                "greedy_exact": true,
+                "answer_nll": 0.27661581834157306
+              },
+              "other_current": {
+                "answer": "828",
+                "generated": "828\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14730835954348245
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97401",
+        "base_case_id": "history-no-repeat-s97401-a128",
+        "seed": 97401,
+        "active_accounts": 128,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97401-a128-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "383",
+                "generated": "383\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14009402195612589
+              },
+              "target_current": {
+                "answer": "822",
+                "generated": "822\n",
+                "greedy_exact": true,
+                "answer_nll": 0.267142911752065
+              },
+              "other_current": {
+                "answer": "391",
+                "generated": "391\n",
+                "greedy_exact": true,
+                "answer_nll": 0.26249150435129803
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "383",
+                "generated": "383\n",
+                "greedy_exact": true,
+                "answer_nll": 0.17437837521235147
+              },
+              "target_current": {
+                "answer": "655",
+                "generated": "655\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14799279967943826
+              },
+              "other_current": {
+                "answer": "391",
+                "generated": "391\n",
+                "greedy_exact": true,
+                "answer_nll": 0.32018957535425824
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97401",
+        "base_case_id": "history-no-repeat-s97401-a128",
+        "seed": 97401,
+        "active_accounts": 128,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97401-a128-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "646",
+                "generated": "646\n",
+                "greedy_exact": true,
+                "answer_nll": 0.16506080826123556
+              },
+              "target_current": {
+                "answer": "715",
+                "generated": "715\n",
+                "greedy_exact": true,
+                "answer_nll": 0.22832651933034262
+              },
+              "other_current": {
+                "answer": "130",
+                "generated": "811\n",
+                "greedy_exact": false,
+                "answer_nll": 0.4229806264241536
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "646",
+                "generated": "646\n",
+                "greedy_exact": true,
+                "answer_nll": 0.18263399600982666
+              },
+              "target_current": {
+                "answer": "302",
+                "generated": "302\n",
+                "greedy_exact": true,
+                "answer_nll": 0.21204678217569986
+              },
+              "other_current": {
+                "answer": "130",
+                "generated": "811\n",
+                "greedy_exact": false,
+                "answer_nll": 0.5089868704477946
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97401",
+        "base_case_id": "history-no-repeat-s97401-a128",
+        "seed": 97401,
+        "active_accounts": 128,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97401-a128-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "327",
+                "generated": "327\n",
+                "greedy_exact": true,
+                "answer_nll": 0.12634957830111185
+              },
+              "target_current": {
+                "answer": "552",
+                "generated": "647\n",
+                "greedy_exact": false,
+                "answer_nll": 0.47015154361724854
+              },
+              "other_current": {
+                "answer": "876",
+                "generated": "876\n",
+                "greedy_exact": true,
+                "answer_nll": 0.13388450940450033
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "327",
+                "generated": "327\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1200265884399414
+              },
+              "target_current": {
+                "answer": "777",
+                "generated": "777\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14143595099449158
+              },
+              "other_current": {
+                "answer": "876",
+                "generated": "876\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14095049103101095
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97401",
+        "base_case_id": "history-no-repeat-s97401-a128",
+        "seed": 97401,
+        "active_accounts": 128,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97401-a128-v3",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "844",
+                "generated": "844\n",
+                "greedy_exact": true,
+                "answer_nll": 0.13024366895357767
+              },
+              "target_current": {
+                "answer": "675",
+                "generated": "883\n",
+                "greedy_exact": false,
+                "answer_nll": 0.38461506366729736
+              },
+              "other_current": {
+                "answer": "828",
+                "generated": "828\n",
+                "greedy_exact": true,
+                "answer_nll": 0.13615886370340982
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "844",
+                "generated": "844\n",
+                "greedy_exact": true,
+                "answer_nll": 0.16296807924906412
+              },
+              "target_current": {
+                "answer": "104",
+                "generated": "104\n",
+                "greedy_exact": true,
+                "answer_nll": 0.29622689882914227
+              },
+              "other_current": {
+                "answer": "828",
+                "generated": "828\n",
+                "greedy_exact": true,
+                "answer_nll": 0.16944871346155801
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97402",
+        "base_case_id": "history-no-repeat-s97402-a032",
+        "seed": 97402,
+        "active_accounts": 32,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97402-a032-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "119",
+                "generated": "119\n",
+                "greedy_exact": true,
+                "answer_nll": 0.043357292811075844
+              },
+              "target_current": {
+                "answer": "518",
+                "generated": "518\n",
+                "greedy_exact": true,
+                "answer_nll": 0.21017718315124512
+              },
+              "other_current": {
+                "answer": "526",
+                "generated": "526\n",
+                "greedy_exact": true,
+                "answer_nll": 0.21767393747965494
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "119",
+                "generated": "119\n",
+                "greedy_exact": true,
+                "answer_nll": 0.038599866131941475
+              },
+              "target_current": {
+                "answer": "764",
+                "generated": "764\n",
+                "greedy_exact": true,
+                "answer_nll": 0.10930569966634114
+              },
+              "other_current": {
+                "answer": "526",
+                "generated": "526\n",
+                "greedy_exact": true,
+                "answer_nll": 0.31649090846379596
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97402",
+        "base_case_id": "history-no-repeat-s97402-a032",
+        "seed": 97402,
+        "active_accounts": 32,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97402-a032-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "348",
+                "generated": "348\n",
+                "greedy_exact": true,
+                "answer_nll": 0.04354586203893026
+              },
+              "target_current": {
+                "answer": "675",
+                "generated": "675\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1506108045578003
+              },
+              "other_current": {
+                "answer": "345",
+                "generated": "345\n",
+                "greedy_exact": true,
+                "answer_nll": 0.22569239139556885
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "348",
+                "generated": "348\n",
+                "greedy_exact": true,
+                "answer_nll": 0.030764472981293995
+              },
+              "target_current": {
+                "answer": "406",
+                "generated": "406\n",
+                "greedy_exact": true,
+                "answer_nll": 0.08020635445912679
+              },
+              "other_current": {
+                "answer": "345",
+                "generated": "345\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2538899978001912
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97402",
+        "base_case_id": "history-no-repeat-s97402-a032",
+        "seed": 97402,
+        "active_accounts": 32,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97402-a032-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "900",
+                "generated": "900\n",
+                "greedy_exact": true,
+                "answer_nll": 0.06062039236227671
+              },
+              "target_current": {
+                "answer": "777",
+                "generated": "777\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1256392498811086
+              },
+              "other_current": {
+                "answer": "315",
+                "generated": "315\n",
+                "greedy_exact": true,
+                "answer_nll": 0.28778942426045734
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "900",
+                "generated": "900\n",
+                "greedy_exact": true,
+                "answer_nll": 0.03320143868525823
+              },
+              "target_current": {
+                "answer": "214",
+                "generated": "214\n",
+                "greedy_exact": true,
+                "answer_nll": 0.13710495829582214
+              },
+              "other_current": {
+                "answer": "315",
+                "generated": "315\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3127048810323079
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97402",
+        "base_case_id": "history-no-repeat-s97402-a032",
+        "seed": 97402,
+        "active_accounts": 32,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97402-a032-v3",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "713",
+                "generated": "713\n",
+                "greedy_exact": true,
+                "answer_nll": 0.07440192997455597
+              },
+              "target_current": {
+                "answer": "582",
+                "generated": "582\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2620396614074707
+              },
+              "other_current": {
+                "answer": "467",
+                "generated": "467\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3452886740366618
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "713",
+                "generated": "713\n",
+                "greedy_exact": true,
+                "answer_nll": 0.05806821584701538
+              },
+              "target_current": {
+                "answer": "163",
+                "generated": "163\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1398863991101583
+              },
+              "other_current": {
+                "answer": "467",
+                "generated": "467\n",
+                "greedy_exact": true,
+                "answer_nll": 0.35778772830963135
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97402",
+        "base_case_id": "history-no-repeat-s97402-a128",
+        "seed": 97402,
+        "active_accounts": 128,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97402-a128-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "119",
+                "generated": "119\n",
+                "greedy_exact": true,
+                "answer_nll": 0.06550451119740804
+              },
+              "target_current": {
+                "answer": "518",
+                "generated": "518\n",
+                "greedy_exact": true,
+                "answer_nll": 0.23071851332982382
+              },
+              "other_current": {
+                "answer": "526",
+                "generated": "526\n",
+                "greedy_exact": true,
+                "answer_nll": 0.17230321963628134
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "119",
+                "generated": "119\n",
+                "greedy_exact": true,
+                "answer_nll": 0.08515855669975281
+              },
+              "target_current": {
+                "answer": "764",
+                "generated": "764\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14637374877929688
+              },
+              "other_current": {
+                "answer": "526",
+                "generated": "526\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3160674571990967
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97402",
+        "base_case_id": "history-no-repeat-s97402-a128",
+        "seed": 97402,
+        "active_accounts": 128,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97402-a128-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "348",
+                "generated": "348\n",
+                "greedy_exact": true,
+                "answer_nll": 0.04434118171532949
+              },
+              "target_current": {
+                "answer": "675",
+                "generated": "675\n",
+                "greedy_exact": true,
+                "answer_nll": 0.25782930850982666
+              },
+              "other_current": {
+                "answer": "345",
+                "generated": "345\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14496912558873495
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "348",
+                "generated": "348\n",
+                "greedy_exact": true,
+                "answer_nll": 0.057486255963643394
+              },
+              "target_current": {
+                "answer": "406",
+                "generated": "406\n",
+                "greedy_exact": true,
+                "answer_nll": 0.149051566918691
+              },
+              "other_current": {
+                "answer": "345",
+                "generated": "345\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14682929714520773
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97402",
+        "base_case_id": "history-no-repeat-s97402-a128",
+        "seed": 97402,
+        "active_accounts": 128,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97402-a128-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "900",
+                "generated": "900\n",
+                "greedy_exact": true,
+                "answer_nll": 0.06092211107412974
+              },
+              "target_current": {
+                "answer": "777",
+                "generated": "777\n",
+                "greedy_exact": true,
+                "answer_nll": 0.23177762826283774
+              },
+              "other_current": {
+                "answer": "315",
+                "generated": "315\n",
+                "greedy_exact": true,
+                "answer_nll": 0.16336401303609213
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "900",
+                "generated": "900\n",
+                "greedy_exact": true,
+                "answer_nll": 0.08243681987126668
+              },
+              "target_current": {
+                "answer": "214",
+                "generated": "214\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1276116669178009
+              },
+              "other_current": {
+                "answer": "315",
+                "generated": "315\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1788758635520935
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97402",
+        "base_case_id": "history-no-repeat-s97402-a128",
+        "seed": 97402,
+        "active_accounts": 128,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97402-a128-v3",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "713",
+                "generated": "713\n",
+                "greedy_exact": true,
+                "answer_nll": 0.10965352257092793
+              },
+              "target_current": {
+                "answer": "582",
+                "generated": "582\n",
+                "greedy_exact": true,
+                "answer_nll": 0.27007176478703815
+              },
+              "other_current": {
+                "answer": "467",
+                "generated": "467\n",
+                "greedy_exact": true,
+                "answer_nll": 0.18686328331629434
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "713",
+                "generated": "713\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1428266167640686
+              },
+              "target_current": {
+                "answer": "163",
+                "generated": "163\n",
+                "greedy_exact": true,
+                "answer_nll": 0.15657368302345276
+              },
+              "other_current": {
+                "answer": "467",
+                "generated": "467\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2243757645289103
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97403",
+        "base_case_id": "history-no-repeat-s97403-a032",
+        "seed": 97403,
+        "active_accounts": 32,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97403-a032-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "332",
+                "generated": "332\n",
+                "greedy_exact": true,
+                "answer_nll": 0.042466228206952415
+              },
+              "target_current": {
+                "answer": "922",
+                "generated": "922\n",
+                "greedy_exact": true,
+                "answer_nll": 0.20085889101028442
+              },
+              "other_current": {
+                "answer": "308",
+                "generated": "308\n",
+                "greedy_exact": true,
+                "answer_nll": 0.29717745383580524
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "332",
+                "generated": "332\n",
+                "greedy_exact": true,
+                "answer_nll": 0.0473105659087499
+              },
+              "target_current": {
+                "answer": "982",
+                "generated": "982\n",
+                "greedy_exact": true,
+                "answer_nll": 0.15114319324493408
+              },
+              "other_current": {
+                "answer": "308",
+                "generated": "308\n",
+                "greedy_exact": true,
+                "answer_nll": 0.30208609501520794
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97403",
+        "base_case_id": "history-no-repeat-s97403-a032",
+        "seed": 97403,
+        "active_accounts": 32,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97403-a032-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "791",
+                "generated": "791\n",
+                "greedy_exact": true,
+                "answer_nll": 0.04219194253285726
+              },
+              "target_current": {
+                "answer": "590",
+                "generated": "590\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2510674794514974
+              },
+              "other_current": {
+                "answer": "113",
+                "generated": "113\n",
+                "greedy_exact": true,
+                "answer_nll": 0.34862542152404785
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "791",
+                "generated": "791\n",
+                "greedy_exact": true,
+                "answer_nll": 0.059016019105911255
+              },
+              "target_current": {
+                "answer": "442",
+                "generated": "442\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14868648846944174
+              },
+              "other_current": {
+                "answer": "113",
+                "generated": "113\n",
+                "greedy_exact": true,
+                "answer_nll": 0.36015236377716064
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97403",
+        "base_case_id": "history-no-repeat-s97403-a032",
+        "seed": 97403,
+        "active_accounts": 32,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97403-a032-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "906",
+                "generated": "906\n",
+                "greedy_exact": true,
+                "answer_nll": 0.10137370228767395
+              },
+              "target_current": {
+                "answer": "269",
+                "generated": "269\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2100059986114502
+              },
+              "other_current": {
+                "answer": "118",
+                "generated": "118\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3409889141718547
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "906",
+                "generated": "906\n",
+                "greedy_exact": true,
+                "answer_nll": 0.0999453067779541
+              },
+              "target_current": {
+                "answer": "392",
+                "generated": "392\n",
+                "greedy_exact": true,
+                "answer_nll": 0.19020046790440878
+              },
+              "other_current": {
+                "answer": "118",
+                "generated": "118\n",
+                "greedy_exact": true,
+                "answer_nll": 0.349078893661499
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97403",
+        "base_case_id": "history-no-repeat-s97403-a032",
+        "seed": 97403,
+        "active_accounts": 32,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97403-a032-v3",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "738",
+                "generated": "738\n",
+                "greedy_exact": true,
+                "answer_nll": 0.03388152519861857
+              },
+              "target_current": {
+                "answer": "911",
+                "generated": "911\n",
+                "greedy_exact": true,
+                "answer_nll": 0.22301324208577475
+              },
+              "other_current": {
+                "answer": "496",
+                "generated": "496\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3882738749186198
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "738",
+                "generated": "738\n",
+                "greedy_exact": true,
+                "answer_nll": 0.05006885528564453
+              },
+              "target_current": {
+                "answer": "504",
+                "generated": "504\n",
+                "greedy_exact": true,
+                "answer_nll": 0.18127721548080444
+              },
+              "other_current": {
+                "answer": "496",
+                "generated": "496\n",
+                "greedy_exact": true,
+                "answer_nll": 0.40654365221659344
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97403",
+        "base_case_id": "history-no-repeat-s97403-a128",
+        "seed": 97403,
+        "active_accounts": 128,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97403-a128-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "332",
+                "generated": "332\n",
+                "greedy_exact": true,
+                "answer_nll": 0.06574246287345886
+              },
+              "target_current": {
+                "answer": "922",
+                "generated": "922\n",
+                "greedy_exact": true,
+                "answer_nll": 0.19124621152877808
+              },
+              "other_current": {
+                "answer": "308",
+                "generated": "308\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2731621464093526
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "332",
+                "generated": "332\n",
+                "greedy_exact": true,
+                "answer_nll": 0.07597462832927704
+              },
+              "target_current": {
+                "answer": "982",
+                "generated": "982\n",
+                "greedy_exact": true,
+                "answer_nll": 0.18266314268112183
+              },
+              "other_current": {
+                "answer": "308",
+                "generated": "308\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2813759446144104
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97403",
+        "base_case_id": "history-no-repeat-s97403-a128",
+        "seed": 97403,
+        "active_accounts": 128,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97403-a128-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "791",
+                "generated": "791\n",
+                "greedy_exact": true,
+                "answer_nll": 0.05880536139011383
+              },
+              "target_current": {
+                "answer": "590",
+                "generated": "590\n",
+                "greedy_exact": true,
+                "answer_nll": 0.19349688291549683
+              },
+              "other_current": {
+                "answer": "113",
+                "generated": "113\n",
+                "greedy_exact": true,
+                "answer_nll": 0.29117174943288165
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "791",
+                "generated": "791\n",
+                "greedy_exact": true,
+                "answer_nll": 0.086189866065979
+              },
+              "target_current": {
+                "answer": "442",
+                "generated": "442\n",
+                "greedy_exact": true,
+                "answer_nll": 0.09927720824877422
+              },
+              "other_current": {
+                "answer": "113",
+                "generated": "113\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3537966012954712
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97403",
+        "base_case_id": "history-no-repeat-s97403-a128",
+        "seed": 97403,
+        "active_accounts": 128,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97403-a128-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "906",
+                "generated": "906\n",
+                "greedy_exact": true,
+                "answer_nll": 0.13435582319895426
+              },
+              "target_current": {
+                "answer": "269",
+                "generated": "269\n",
+                "greedy_exact": true,
+                "answer_nll": 0.16244879364967346
+              },
+              "other_current": {
+                "answer": "118",
+                "generated": "118\n",
+                "greedy_exact": true,
+                "answer_nll": 0.36354021231333417
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "906",
+                "generated": "906\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1478117803732554
+              },
+              "target_current": {
+                "answer": "392",
+                "generated": "392\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1627336045106252
+              },
+              "other_current": {
+                "answer": "118",
+                "generated": "118\n",
+                "greedy_exact": true,
+                "answer_nll": 0.4269849856694539
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "discovery",
+        "base_stream_id": "history-no-repeat-s97403",
+        "base_case_id": "history-no-repeat-s97403-a128",
+        "seed": 97403,
+        "active_accounts": 128,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97403-a128-v3",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "738",
+                "generated": "738\n",
+                "greedy_exact": true,
+                "answer_nll": 0.04608306288719177
+              },
+              "target_current": {
+                "answer": "911",
+                "generated": "911\n",
+                "greedy_exact": true,
+                "answer_nll": 0.24411070346832275
+              },
+              "other_current": {
+                "answer": "496",
+                "generated": "496\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3286423881848653
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "738",
+                "generated": "738\n",
+                "greedy_exact": true,
+                "answer_nll": 0.07600638270378113
+              },
+              "target_current": {
+                "answer": "504",
+                "generated": "504\n",
+                "greedy_exact": true,
+                "answer_nll": 0.13300531109174094
+              },
+              "other_current": {
+                "answer": "496",
+                "generated": "496\n",
+                "greedy_exact": true,
+                "answer_nll": 0.4090854326883952
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97500",
+        "base_case_id": "history-no-repeat-s97500-a032",
+        "seed": 97500,
+        "active_accounts": 32,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97500-a032-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "637",
+                "generated": "637\n",
+                "greedy_exact": true,
+                "answer_nll": 0.043554852406183876
+              },
+              "target_current": {
+                "answer": "159",
+                "generated": "159\n",
+                "greedy_exact": true,
+                "answer_nll": 0.29319103558858234
+              },
+              "other_current": {
+                "answer": "662",
+                "generated": "662\n",
+                "greedy_exact": true,
+                "answer_nll": 0.09000105659166972
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "637",
+                "generated": "637\n",
+                "greedy_exact": true,
+                "answer_nll": 0.05137554804484049
+              },
+              "target_current": {
+                "answer": "605",
+                "generated": "605\n",
+                "greedy_exact": true,
+                "answer_nll": 0.06803999841213226
+              },
+              "other_current": {
+                "answer": "662",
+                "generated": "662\n",
+                "greedy_exact": true,
+                "answer_nll": 0.08491065104802449
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97500",
+        "base_case_id": "history-no-repeat-s97500-a032",
+        "seed": 97500,
+        "active_accounts": 32,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97500-a032-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "974",
+                "generated": "974\n",
+                "greedy_exact": true,
+                "answer_nll": 0.027472272515296936
+              },
+              "target_current": {
+                "answer": "814",
+                "generated": "814\n",
+                "greedy_exact": true,
+                "answer_nll": 0.13942684729894003
+              },
+              "other_current": {
+                "answer": "741",
+                "generated": "741\n",
+                "greedy_exact": true,
+                "answer_nll": 0.18835822741190592
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "974",
+                "generated": "974\n",
+                "greedy_exact": true,
+                "answer_nll": 0.03340571870406469
+              },
+              "target_current": {
+                "answer": "270",
+                "generated": "270\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2677640914916992
+              },
+              "other_current": {
+                "answer": "741",
+                "generated": "741\n",
+                "greedy_exact": true,
+                "answer_nll": 0.19724059104919434
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97500",
+        "base_case_id": "history-no-repeat-s97500-a032",
+        "seed": 97500,
+        "active_accounts": 32,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97500-a032-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "325",
+                "generated": "325\n",
+                "greedy_exact": true,
+                "answer_nll": 0.044963533679644264
+              },
+              "target_current": {
+                "answer": "225",
+                "generated": "225\n",
+                "greedy_exact": true,
+                "answer_nll": 0.17875160773595175
+              },
+              "other_current": {
+                "answer": "889",
+                "generated": "889\n",
+                "greedy_exact": true,
+                "answer_nll": 0.12296269337336223
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "325",
+                "generated": "325\n",
+                "greedy_exact": true,
+                "answer_nll": 0.032966541747252144
+              },
+              "target_current": {
+                "answer": "440",
+                "generated": "440\n",
+                "greedy_exact": true,
+                "answer_nll": 0.20127020279566446
+              },
+              "other_current": {
+                "answer": "889",
+                "generated": "889\n",
+                "greedy_exact": true,
+                "answer_nll": 0.15600414077440897
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97500",
+        "base_case_id": "history-no-repeat-s97500-a032",
+        "seed": 97500,
+        "active_accounts": 32,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97500-a032-v3",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "869",
+                "generated": "869\n",
+                "greedy_exact": true,
+                "answer_nll": 0.019179490705331165
+              },
+              "target_current": {
+                "answer": "561",
+                "generated": "561\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3087961673736572
+              },
+              "other_current": {
+                "answer": "526",
+                "generated": "526\n",
+                "greedy_exact": true,
+                "answer_nll": 0.28781543175379437
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "869",
+                "generated": "869\n",
+                "greedy_exact": true,
+                "answer_nll": 0.02572624882062276
+              },
+              "target_current": {
+                "answer": "343",
+                "generated": "343\n",
+                "greedy_exact": true,
+                "answer_nll": 0.33456675211588544
+              },
+              "other_current": {
+                "answer": "526",
+                "generated": "526\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3259412844975789
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97500",
+        "base_case_id": "history-no-repeat-s97500-a128",
+        "seed": 97500,
+        "active_accounts": 128,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97500-a128-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "637",
+                "generated": "637\n",
+                "greedy_exact": true,
+                "answer_nll": 0.10278254747390747
+              },
+              "target_current": {
+                "answer": "159",
+                "generated": "159\n",
+                "greedy_exact": true,
+                "answer_nll": 0.22068663438161215
+              },
+              "other_current": {
+                "answer": "662",
+                "generated": "662\n",
+                "greedy_exact": true,
+                "answer_nll": 0.10763317346572876
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "637",
+                "generated": "637\n",
+                "greedy_exact": true,
+                "answer_nll": 0.09366116921106975
+              },
+              "target_current": {
+                "answer": "605",
+                "generated": "605\n",
+                "greedy_exact": true,
+                "answer_nll": 0.0576626310745875
+              },
+              "other_current": {
+                "answer": "662",
+                "generated": "662\n",
+                "greedy_exact": true,
+                "answer_nll": 0.12034552296002705
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97500",
+        "base_case_id": "history-no-repeat-s97500-a128",
+        "seed": 97500,
+        "active_accounts": 128,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97500-a128-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "974",
+                "generated": "974\n",
+                "greedy_exact": true,
+                "answer_nll": 0.08993953466415405
+              },
+              "target_current": {
+                "answer": "814",
+                "generated": "814\n",
+                "greedy_exact": true,
+                "answer_nll": 0.13643166422843933
+              },
+              "other_current": {
+                "answer": "741",
+                "generated": "741\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2415056824684143
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "974",
+                "generated": "974\n",
+                "greedy_exact": true,
+                "answer_nll": 0.09142054120699565
+              },
+              "target_current": {
+                "answer": "270",
+                "generated": "270\n",
+                "greedy_exact": true,
+                "answer_nll": 0.12581950426101685
+              },
+              "other_current": {
+                "answer": "741",
+                "generated": "741\n",
+                "greedy_exact": true,
+                "answer_nll": 0.24651962518692017
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97500",
+        "base_case_id": "history-no-repeat-s97500-a128",
+        "seed": 97500,
+        "active_accounts": 128,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97500-a128-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "325",
+                "generated": "325\n",
+                "greedy_exact": true,
+                "answer_nll": 0.09114450216293335
+              },
+              "target_current": {
+                "answer": "225",
+                "generated": "225\n",
+                "greedy_exact": true,
+                "answer_nll": 0.13139953215916952
+              },
+              "other_current": {
+                "answer": "889",
+                "generated": "889\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14296791950861612
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "325",
+                "generated": "325\n",
+                "greedy_exact": true,
+                "answer_nll": 0.11203166842460632
+              },
+              "target_current": {
+                "answer": "440",
+                "generated": "440\n",
+                "greedy_exact": true,
+                "answer_nll": 0.15070966879526773
+              },
+              "other_current": {
+                "answer": "889",
+                "generated": "889\n",
+                "greedy_exact": true,
+                "answer_nll": 0.18298834562301636
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97500",
+        "base_case_id": "history-no-repeat-s97500-a128",
+        "seed": 97500,
+        "active_accounts": 128,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97500-a128-v3",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "869",
+                "generated": "869\n",
+                "greedy_exact": true,
+                "answer_nll": 0.0537533164024353
+              },
+              "target_current": {
+                "answer": "561",
+                "generated": "880\n",
+                "greedy_exact": false,
+                "answer_nll": 0.37257178624471027
+              },
+              "other_current": {
+                "answer": "526",
+                "generated": "839\n",
+                "greedy_exact": false,
+                "answer_nll": 0.4725430409113566
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "869",
+                "generated": "869\n",
+                "greedy_exact": true,
+                "answer_nll": 0.06054159998893738
+              },
+              "target_current": {
+                "answer": "343",
+                "generated": "343\n",
+                "greedy_exact": true,
+                "answer_nll": 0.19722370306650797
+              },
+              "other_current": {
+                "answer": "526",
+                "generated": "526\n",
+                "greedy_exact": true,
+                "answer_nll": 0.45737143357594806
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97501",
+        "base_case_id": "history-no-repeat-s97501-a032",
+        "seed": 97501,
+        "active_accounts": 32,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97501-a032-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "962",
+                "generated": "962\n",
+                "greedy_exact": true,
+                "answer_nll": 0.05504391094048818
+              },
+              "target_current": {
+                "answer": "289",
+                "generated": "289\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2241229216257731
+              },
+              "other_current": {
+                "answer": "742",
+                "generated": "742\n",
+                "greedy_exact": true,
+                "answer_nll": 0.21238948901494345
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "962",
+                "generated": "962\n",
+                "greedy_exact": true,
+                "answer_nll": 0.07139556109905243
+              },
+              "target_current": {
+                "answer": "791",
+                "generated": "791\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14656001329421997
+              },
+              "other_current": {
+                "answer": "742",
+                "generated": "742\n",
+                "greedy_exact": true,
+                "answer_nll": 0.23700674374898276
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97501",
+        "base_case_id": "history-no-repeat-s97501-a032",
+        "seed": 97501,
+        "active_accounts": 32,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97501-a032-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "812",
+                "generated": "812\n",
+                "greedy_exact": true,
+                "answer_nll": 0.021587175627549488
+              },
+              "target_current": {
+                "answer": "422",
+                "generated": "812\n",
+                "greedy_exact": false,
+                "answer_nll": 0.3511581818262736
+              },
+              "other_current": {
+                "answer": "961",
+                "generated": "961\n",
+                "greedy_exact": true,
+                "answer_nll": 0.15545754631360373
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "812",
+                "generated": "812\n",
+                "greedy_exact": true,
+                "answer_nll": 0.048901721835136414
+              },
+              "target_current": {
+                "answer": "807",
+                "generated": "807\n",
+                "greedy_exact": true,
+                "answer_nll": 0.03180501610040665
+              },
+              "other_current": {
+                "answer": "961",
+                "generated": "961\n",
+                "greedy_exact": true,
+                "answer_nll": 0.17170451084772745
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97501",
+        "base_case_id": "history-no-repeat-s97501-a032",
+        "seed": 97501,
+        "active_accounts": 32,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97501-a032-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "333",
+                "generated": "333\n",
+                "greedy_exact": true,
+                "answer_nll": 0.014124215890963873
+              },
+              "target_current": {
+                "answer": "530",
+                "generated": "333\n",
+                "greedy_exact": false,
+                "answer_nll": 0.3575538396835327
+              },
+              "other_current": {
+                "answer": "172",
+                "generated": "172\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3025744557380676
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "333",
+                "generated": "333\n",
+                "greedy_exact": true,
+                "answer_nll": 0.0144472507139047
+              },
+              "target_current": {
+                "answer": "870",
+                "generated": "870\n",
+                "greedy_exact": true,
+                "answer_nll": 0.11695213119188945
+              },
+              "other_current": {
+                "answer": "172",
+                "generated": "172\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3206666310628255
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97501",
+        "base_case_id": "history-no-repeat-s97501-a032",
+        "seed": 97501,
+        "active_accounts": 32,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97501-a032-v3",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "226",
+                "generated": "226\n",
+                "greedy_exact": true,
+                "answer_nll": 0.020812335113684338
+              },
+              "target_current": {
+                "answer": "468",
+                "generated": "226\n",
+                "greedy_exact": false,
+                "answer_nll": 0.3512219985326131
+              },
+              "other_current": {
+                "answer": "615",
+                "generated": "615\n",
+                "greedy_exact": true,
+                "answer_nll": 0.19111682971318564
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "226",
+                "generated": "226\n",
+                "greedy_exact": true,
+                "answer_nll": 0.02214691291252772
+              },
+              "target_current": {
+                "answer": "750",
+                "generated": "750\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1916977564493815
+              },
+              "other_current": {
+                "answer": "615",
+                "generated": "615\n",
+                "greedy_exact": true,
+                "answer_nll": 0.24201065301895142
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97501",
+        "base_case_id": "history-no-repeat-s97501-a128",
+        "seed": 97501,
+        "active_accounts": 128,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97501-a128-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "962",
+                "generated": "962\n",
+                "greedy_exact": true,
+                "answer_nll": 0.07549730936686198
+              },
+              "target_current": {
+                "answer": "289",
+                "generated": "289\n",
+                "greedy_exact": true,
+                "answer_nll": 0.21667114893595377
+              },
+              "other_current": {
+                "answer": "742",
+                "generated": "742\n",
+                "greedy_exact": true,
+                "answer_nll": 0.24810991684595743
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "962",
+                "generated": "962\n",
+                "greedy_exact": true,
+                "answer_nll": 0.10755139589309692
+              },
+              "target_current": {
+                "answer": "791",
+                "generated": "791\n",
+                "greedy_exact": true,
+                "answer_nll": 0.16143005092938742
+              },
+              "other_current": {
+                "answer": "742",
+                "generated": "742\n",
+                "greedy_exact": true,
+                "answer_nll": 0.24563761552174887
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97501",
+        "base_case_id": "history-no-repeat-s97501-a128",
+        "seed": 97501,
+        "active_accounts": 128,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97501-a128-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "812",
+                "generated": "812\n",
+                "greedy_exact": true,
+                "answer_nll": 0.04809879759947459
+              },
+              "target_current": {
+                "answer": "422",
+                "generated": "812\n",
+                "greedy_exact": false,
+                "answer_nll": 0.36365997791290283
+              },
+              "other_current": {
+                "answer": "961",
+                "generated": "961\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14554724097251892
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "812",
+                "generated": "812\n",
+                "greedy_exact": true,
+                "answer_nll": 0.09130969643592834
+              },
+              "target_current": {
+                "answer": "807",
+                "generated": "807\n",
+                "greedy_exact": true,
+                "answer_nll": 0.02498667687177658
+              },
+              "other_current": {
+                "answer": "961",
+                "generated": "961\n",
+                "greedy_exact": true,
+                "answer_nll": 0.18721290429433188
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97501",
+        "base_case_id": "history-no-repeat-s97501-a128",
+        "seed": 97501,
+        "active_accounts": 128,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97501-a128-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "333",
+                "generated": "333\n",
+                "greedy_exact": true,
+                "answer_nll": 0.019538837174574535
+              },
+              "target_current": {
+                "answer": "530",
+                "generated": "530\n",
+                "greedy_exact": true,
+                "answer_nll": 0.34267179171244305
+              },
+              "other_current": {
+                "answer": "172",
+                "generated": "172\n",
+                "greedy_exact": true,
+                "answer_nll": 0.329586664835612
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "333",
+                "generated": "333\n",
+                "greedy_exact": true,
+                "answer_nll": 0.026645978291829426
+              },
+              "target_current": {
+                "answer": "870",
+                "generated": "870\n",
+                "greedy_exact": true,
+                "answer_nll": 0.10322680075963338
+              },
+              "other_current": {
+                "answer": "172",
+                "generated": "172\n",
+                "greedy_exact": true,
+                "answer_nll": 0.41386401653289795
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97501",
+        "base_case_id": "history-no-repeat-s97501-a128",
+        "seed": 97501,
+        "active_accounts": 128,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97501-a128-v3",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "226",
+                "generated": "226\n",
+                "greedy_exact": true,
+                "answer_nll": 0.02360286811987559
+              },
+              "target_current": {
+                "answer": "468",
+                "generated": "226\n",
+                "greedy_exact": false,
+                "answer_nll": 0.4116528431574504
+              },
+              "other_current": {
+                "answer": "615",
+                "generated": "615\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2851962447166443
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "226",
+                "generated": "226\n",
+                "greedy_exact": true,
+                "answer_nll": 0.028605548044045765
+              },
+              "target_current": {
+                "answer": "750",
+                "generated": "750\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2326869567235311
+              },
+              "other_current": {
+                "answer": "615",
+                "generated": "615\n",
+                "greedy_exact": true,
+                "answer_nll": 0.33802878856658936
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97502",
+        "base_case_id": "history-no-repeat-s97502-a032",
+        "seed": 97502,
+        "active_accounts": 32,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97502-a032-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "232",
+                "generated": "232\n",
+                "greedy_exact": true,
+                "answer_nll": 0.09526398777961731
+              },
+              "target_current": {
+                "answer": "245",
+                "generated": "245\n",
+                "greedy_exact": true,
+                "answer_nll": 0.0848212440808614
+              },
+              "other_current": {
+                "answer": "928",
+                "generated": "928\n",
+                "greedy_exact": true,
+                "answer_nll": 0.28106532494227093
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "232",
+                "generated": "232\n",
+                "greedy_exact": true,
+                "answer_nll": 0.08744624257087708
+              },
+              "target_current": {
+                "answer": "324",
+                "generated": "324\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2308286428451538
+              },
+              "other_current": {
+                "answer": "928",
+                "generated": "928\n",
+                "greedy_exact": true,
+                "answer_nll": 0.26756932338078815
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97502",
+        "base_case_id": "history-no-repeat-s97502-a032",
+        "seed": 97502,
+        "active_accounts": 32,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97502-a032-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "172",
+                "generated": "172\n",
+                "greedy_exact": true,
+                "answer_nll": 0.05172276496887207
+              },
+              "target_current": {
+                "answer": "575",
+                "generated": "172\n",
+                "greedy_exact": false,
+                "answer_nll": 0.38269662857055664
+              },
+              "other_current": {
+                "answer": "122",
+                "generated": "122\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1656579871972402
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "172",
+                "generated": "172\n",
+                "greedy_exact": true,
+                "answer_nll": 0.06085452437400818
+              },
+              "target_current": {
+                "answer": "406",
+                "generated": "406\n",
+                "greedy_exact": true,
+                "answer_nll": 0.27276410659154254
+              },
+              "other_current": {
+                "answer": "122",
+                "generated": "122\n",
+                "greedy_exact": true,
+                "answer_nll": 0.21684926748275757
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97502",
+        "base_case_id": "history-no-repeat-s97502-a032",
+        "seed": 97502,
+        "active_accounts": 32,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97502-a032-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "283",
+                "generated": "283\n",
+                "greedy_exact": true,
+                "answer_nll": 0.027559682726860046
+              },
+              "target_current": {
+                "answer": "323",
+                "generated": "283\n",
+                "greedy_exact": false,
+                "answer_nll": 0.3940599759419759
+              },
+              "other_current": {
+                "answer": "559",
+                "generated": "559\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2910617192586263
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "283",
+                "generated": "283\n",
+                "greedy_exact": true,
+                "answer_nll": 0.017918641368548077
+              },
+              "target_current": {
+                "answer": "976",
+                "generated": "976\n",
+                "greedy_exact": true,
+                "answer_nll": 0.23941946029663086
+              },
+              "other_current": {
+                "answer": "559",
+                "generated": "559\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3799533446629842
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97502",
+        "base_case_id": "history-no-repeat-s97502-a032",
+        "seed": 97502,
+        "active_accounts": 32,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97502-a032-v3",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "379",
+                "generated": "379\n",
+                "greedy_exact": true,
+                "answer_nll": 0.09360702832539876
+              },
+              "target_current": {
+                "answer": "297",
+                "generated": "297\n",
+                "greedy_exact": true,
+                "answer_nll": 0.18483392397562662
+              },
+              "other_current": {
+                "answer": "181",
+                "generated": "181\n",
+                "greedy_exact": true,
+                "answer_nll": 0.26498907804489136
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "379",
+                "generated": "379\n",
+                "greedy_exact": true,
+                "answer_nll": 0.0883030394713084
+              },
+              "target_current": {
+                "answer": "629",
+                "generated": "629\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14535539348920187
+              },
+              "other_current": {
+                "answer": "181",
+                "generated": "181\n",
+                "greedy_exact": true,
+                "answer_nll": 0.28401537736256915
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97502",
+        "base_case_id": "history-no-repeat-s97502-a128",
+        "seed": 97502,
+        "active_accounts": 128,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97502-a128-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "232",
+                "generated": "232\n",
+                "greedy_exact": true,
+                "answer_nll": 0.12724825739860535
+              },
+              "target_current": {
+                "answer": "245",
+                "generated": "245\n",
+                "greedy_exact": true,
+                "answer_nll": 0.06092844406763712
+              },
+              "other_current": {
+                "answer": "928",
+                "generated": "928\n",
+                "greedy_exact": true,
+                "answer_nll": 0.25612203280131024
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "232",
+                "generated": "232\n",
+                "greedy_exact": true,
+                "answer_nll": 0.15624308586120605
+              },
+              "target_current": {
+                "answer": "324",
+                "generated": "324\n",
+                "greedy_exact": true,
+                "answer_nll": 0.18091034889221191
+              },
+              "other_current": {
+                "answer": "928",
+                "generated": "928\n",
+                "greedy_exact": true,
+                "answer_nll": 0.28299293915430707
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97502",
+        "base_case_id": "history-no-repeat-s97502-a128",
+        "seed": 97502,
+        "active_accounts": 128,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97502-a128-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "172",
+                "generated": "172\n",
+                "greedy_exact": true,
+                "answer_nll": 0.10198971629142761
+              },
+              "target_current": {
+                "answer": "575",
+                "generated": "575\n",
+                "greedy_exact": true,
+                "answer_nll": 0.37143345673878986
+              },
+              "other_current": {
+                "answer": "122",
+                "generated": "122\n",
+                "greedy_exact": true,
+                "answer_nll": 0.19368310769399008
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "172",
+                "generated": "172\n",
+                "greedy_exact": true,
+                "answer_nll": 0.12168651819229126
+              },
+              "target_current": {
+                "answer": "406",
+                "generated": "406\n",
+                "greedy_exact": true,
+                "answer_nll": 0.15978380044301352
+              },
+              "other_current": {
+                "answer": "122",
+                "generated": "122\n",
+                "greedy_exact": true,
+                "answer_nll": 0.23693962891896567
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97502",
+        "base_case_id": "history-no-repeat-s97502-a128",
+        "seed": 97502,
+        "active_accounts": 128,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97502-a128-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": false,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": false,
+            "roles": {
+              "target_initial": {
+                "answer": "283",
+                "generated": "283\n",
+                "greedy_exact": true,
+                "answer_nll": 0.034933129946390785
+              },
+              "target_current": {
+                "answer": "323",
+                "generated": "283\n",
+                "greedy_exact": false,
+                "answer_nll": 0.35150758425394696
+              },
+              "other_current": {
+                "answer": "559",
+                "generated": "559\n",
+                "greedy_exact": true,
+                "answer_nll": 0.09560840328534444
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "283",
+                "generated": "283\n",
+                "greedy_exact": true,
+                "answer_nll": 0.02782236784696579
+              },
+              "target_current": {
+                "answer": "976",
+                "generated": "976\n",
+                "greedy_exact": true,
+                "answer_nll": 0.17679888010025024
+              },
+              "other_current": {
+                "answer": "559",
+                "generated": "559\n",
+                "greedy_exact": true,
+                "answer_nll": 0.13826176524162292
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97502",
+        "base_case_id": "history-no-repeat-s97502-a128",
+        "seed": 97502,
+        "active_accounts": 128,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97502-a128-v3",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "379",
+                "generated": "379\n",
+                "greedy_exact": true,
+                "answer_nll": 0.11587323745091756
+              },
+              "target_current": {
+                "answer": "297",
+                "generated": "297\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14362933238347372
+              },
+              "other_current": {
+                "answer": "181",
+                "generated": "181\n",
+                "greedy_exact": true,
+                "answer_nll": 0.16866391897201538
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "379",
+                "generated": "379\n",
+                "greedy_exact": true,
+                "answer_nll": 0.10717834035555522
+              },
+              "target_current": {
+                "answer": "629",
+                "generated": "629\n",
+                "greedy_exact": true,
+                "answer_nll": 0.10814177989959717
+              },
+              "other_current": {
+                "answer": "181",
+                "generated": "181\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1809589465459188
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97503",
+        "base_case_id": "history-no-repeat-s97503-a032",
+        "seed": 97503,
+        "active_accounts": 32,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97503-a032-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "781",
+                "generated": "781\n",
+                "greedy_exact": true,
+                "answer_nll": 0.08365446329116821
+              },
+              "target_current": {
+                "answer": "866",
+                "generated": "866\n",
+                "greedy_exact": true,
+                "answer_nll": 0.12984736760457358
+              },
+              "other_current": {
+                "answer": "268",
+                "generated": "268\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2056493361790975
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "781",
+                "generated": "781\n",
+                "greedy_exact": true,
+                "answer_nll": 0.0882710615793864
+              },
+              "target_current": {
+                "answer": "897",
+                "generated": "897\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14223140478134155
+              },
+              "other_current": {
+                "answer": "268",
+                "generated": "268\n",
+                "greedy_exact": true,
+                "answer_nll": 0.21974076827367148
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97503",
+        "base_case_id": "history-no-repeat-s97503-a032",
+        "seed": 97503,
+        "active_accounts": 32,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97503-a032-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "718",
+                "generated": "718\n",
+                "greedy_exact": true,
+                "answer_nll": 0.13890178998311362
+              },
+              "target_current": {
+                "answer": "541",
+                "generated": "541\n",
+                "greedy_exact": true,
+                "answer_nll": 0.30849287907282513
+              },
+              "other_current": {
+                "answer": "834",
+                "generated": "834\n",
+                "greedy_exact": true,
+                "answer_nll": 0.09933146834373474
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "718",
+                "generated": "718\n",
+                "greedy_exact": true,
+                "answer_nll": 0.18923954168955484
+              },
+              "target_current": {
+                "answer": "603",
+                "generated": "603\n",
+                "greedy_exact": true,
+                "answer_nll": 0.09937495986620586
+              },
+              "other_current": {
+                "answer": "834",
+                "generated": "834\n",
+                "greedy_exact": true,
+                "answer_nll": 0.13494435946146646
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97503",
+        "base_case_id": "history-no-repeat-s97503-a032",
+        "seed": 97503,
+        "active_accounts": 32,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97503-a032-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "975",
+                "generated": "975\n",
+                "greedy_exact": true,
+                "answer_nll": 0.16072543462117514
+              },
+              "target_current": {
+                "answer": "225",
+                "generated": "225\n",
+                "greedy_exact": true,
+                "answer_nll": 0.252047061920166
+              },
+              "other_current": {
+                "answer": "148",
+                "generated": "148\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2868340015411377
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "975",
+                "generated": "975\n",
+                "greedy_exact": true,
+                "answer_nll": 0.13741091887156168
+              },
+              "target_current": {
+                "answer": "828",
+                "generated": "828\n",
+                "greedy_exact": true,
+                "answer_nll": 0.13702974716822305
+              },
+              "other_current": {
+                "answer": "148",
+                "generated": "148\n",
+                "greedy_exact": true,
+                "answer_nll": 0.36852391560872394
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97503",
+        "base_case_id": "history-no-repeat-s97503-a032",
+        "seed": 97503,
+        "active_accounts": 32,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97503-a032-v3",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "373",
+                "generated": "373\n",
+                "greedy_exact": true,
+                "answer_nll": 0.16756558418273926
+              },
+              "target_current": {
+                "answer": "476",
+                "generated": "476\n",
+                "greedy_exact": true,
+                "answer_nll": 0.24109496672948202
+              },
+              "other_current": {
+                "answer": "870",
+                "generated": "870\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14002728462219238
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "373",
+                "generated": "373\n",
+                "greedy_exact": true,
+                "answer_nll": 0.25492437680562335
+              },
+              "target_current": {
+                "answer": "339",
+                "generated": "339\n",
+                "greedy_exact": true,
+                "answer_nll": 0.11678679784138997
+              },
+              "other_current": {
+                "answer": "870",
+                "generated": "870\n",
+                "greedy_exact": true,
+                "answer_nll": 0.16792607307434082
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97503",
+        "base_case_id": "history-no-repeat-s97503-a128",
+        "seed": 97503,
+        "active_accounts": 128,
+        "value_version": 0,
+        "case_id": "history-no-repeat-s97503-a128-v0",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "781",
+                "generated": "781\n",
+                "greedy_exact": true,
+                "answer_nll": 0.0584757129351298
+              },
+              "target_current": {
+                "answer": "866",
+                "generated": "866\n",
+                "greedy_exact": true,
+                "answer_nll": 0.12183700998624165
+              },
+              "other_current": {
+                "answer": "268",
+                "generated": "268\n",
+                "greedy_exact": true,
+                "answer_nll": 0.20101507504781088
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "781",
+                "generated": "781\n",
+                "greedy_exact": true,
+                "answer_nll": 0.09356466929117839
+              },
+              "target_current": {
+                "answer": "897",
+                "generated": "897\n",
+                "greedy_exact": true,
+                "answer_nll": 0.12672092517217
+              },
+              "other_current": {
+                "answer": "268",
+                "generated": "268\n",
+                "greedy_exact": true,
+                "answer_nll": 0.27226710319519043
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97503",
+        "base_case_id": "history-no-repeat-s97503-a128",
+        "seed": 97503,
+        "active_accounts": 128,
+        "value_version": 1,
+        "case_id": "history-no-repeat-s97503-a128-v1",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "718",
+                "generated": "718\n",
+                "greedy_exact": true,
+                "answer_nll": 0.08463328083356221
+              },
+              "target_current": {
+                "answer": "541",
+                "generated": "541\n",
+                "greedy_exact": true,
+                "answer_nll": 0.31668180227279663
+              },
+              "other_current": {
+                "answer": "834",
+                "generated": "834\n",
+                "greedy_exact": true,
+                "answer_nll": 0.12144514918327332
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "718",
+                "generated": "718\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1419961154460907
+              },
+              "target_current": {
+                "answer": "603",
+                "generated": "603\n",
+                "greedy_exact": true,
+                "answer_nll": 0.09171201785405476
+              },
+              "other_current": {
+                "answer": "834",
+                "generated": "834\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14906411369641623
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97503",
+        "base_case_id": "history-no-repeat-s97503-a128",
+        "seed": 97503,
+        "active_accounts": 128,
+        "value_version": 2,
+        "case_id": "history-no-repeat-s97503-a128-v2",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "975",
+                "generated": "975\n",
+                "greedy_exact": true,
+                "answer_nll": 0.1803206205368042
+              },
+              "target_current": {
+                "answer": "225",
+                "generated": "225\n",
+                "greedy_exact": true,
+                "answer_nll": 0.14448334773381552
+              },
+              "other_current": {
+                "answer": "148",
+                "generated": "148\n",
+                "greedy_exact": true,
+                "answer_nll": 0.36214327812194824
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "975",
+                "generated": "975\n",
+                "greedy_exact": true,
+                "answer_nll": 0.18093180656433105
+              },
+              "target_current": {
+                "answer": "828",
+                "generated": "828\n",
+                "greedy_exact": true,
+                "answer_nll": 0.11450851957003276
+              },
+              "other_current": {
+                "answer": "148",
+                "generated": "148\n",
+                "greedy_exact": true,
+                "answer_nll": 0.3710695107777913
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      },
+      {
+        "cohort": "replica",
+        "base_stream_id": "history-no-repeat-s97503",
+        "base_case_id": "history-no-repeat-s97503-a128",
+        "seed": 97503,
+        "active_accounts": 128,
+        "value_version": 3,
+        "case_id": "history-no-repeat-s97503-a128-v3",
+        "history_regressed": false,
+        "history_rescued": false,
+        "all_current_correct_both_worlds": true,
+        "commit_qualified_history_regression": false,
+        "worlds": {
+          "hold_middle": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "373",
+                "generated": "373\n",
+                "greedy_exact": true,
+                "answer_nll": 0.10708266496658325
+              },
+              "target_current": {
+                "answer": "476",
+                "generated": "476\n",
+                "greedy_exact": true,
+                "answer_nll": 0.32785584529240924
+              },
+              "other_current": {
+                "answer": "870",
+                "generated": "870\n",
+                "greedy_exact": true,
+                "answer_nll": 0.15014187494913736
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          },
+          "update_new": {
+            "all_roles_joint": true,
+            "roles": {
+              "target_initial": {
+                "answer": "373",
+                "generated": "373\n",
+                "greedy_exact": true,
+                "answer_nll": 0.12327535947163899
+              },
+              "target_current": {
+                "answer": "339",
+                "generated": "339\n",
+                "greedy_exact": true,
+                "answer_nll": 0.12264967958132426
+              },
+              "other_current": {
+                "answer": "870",
+                "generated": "870\n",
+                "greedy_exact": true,
+                "answer_nll": 0.2368912696838379
+              }
+            },
+            "historical_error_numeric_matches": [],
+            "historical_output_is_integer": true
+          }
+        }
+      }
+    ],
+    "primary_signal": {
+      "present_in_both_cohorts": false,
+      "cohort_qualified_base_streams": {
+        "discovery": [
+          "history-no-repeat-s97400"
+        ],
+        "replica": []
+      },
+      "cohort_baseline_floor": {
+        "discovery": false,
+        "replica": false
+      },
+      "definition": "At128accounts in each cohort, history regresses in at least two distinct streams while current A/C remain correct in both worlds. Descriptive replication gate, not significance."
+    },
+    "interpretation": "Initial evidence occurs once in the same distant position and common prefix; both final A values differ from the initial answer. A remaining functional effect does not isolate recurrent-state damage or justify shared-interface necessity. Low hold-world history competence limits absence claims. Related value siblings/roles/worlds are not independent observations."
+  },
+  "posthoc_error_numeric_matches": {
+    "counts": [
+      {
+        "role": "target_current",
+        "world": "update_new",
+        "matches": [],
+        "errors": 1
+      },
+      {
+        "role": "target_current",
+        "world": "hold_middle",
+        "matches": [],
+        "errors": 4
+      },
+      {
+        "role": "target_initial",
+        "world": "update_new",
+        "matches": [
+          "new_A"
+        ],
+        "errors": 1
+      },
+      {
+        "role": "target_current",
+        "world": "hold_middle",
+        "matches": [
+          "initial_A"
+        ],
+        "errors": 10
+      },
+      {
+        "role": "other_current",
+        "world": "hold_middle",
+        "matches": [],
+        "errors": 2
+      },
+      {
+        "role": "other_current",
+        "world": "update_new",
+        "matches": [],
+        "errors": 1
+      }
+    ],
+    "interpretation": "Post-hoc numeric-output matches, not inferred mechanisms; all original primary decisions are unchanged."
+  },
+  "interpretation": "Test whether natural historical-A update regressions persist after removing the original no-op control shortcut that repeated the initial answer near the question. This is a native diagnostic before any new semantic update architecture, not a claim that previous B regressions were invalid."
+}

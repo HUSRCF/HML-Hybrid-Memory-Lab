@@ -1,0 +1,7 @@
+# Small additions to the existing Conda base; install with --no-deps.
+fla-core==0.6.0
+flash-linear-attention==0.6.0
+datasets==4.8.5
+xxhash==4.1.0
+# This version accepts the existing dill 0.4.0.
+multiprocess==0.70.18

@@ -1,0 +1,32 @@
+{
+  "status": "completed_with_fresh_confirmation",
+  "registered_utc": "2026-11-13T20:48:38.949662+00:00",
+  "motivation": "Pilot post-training token masking confounds learned joint behavior with disablement distribution shift. Retrain each token policy from its own zero-initialized controller.",
+  "frozen_full_token_reference": "runs/memory_update/controller-keys-pilot-20261114-01/local",
+  "configs": [
+    "configs/controller_training_ledger.json",
+    "configs/controller_training_question.json"
+  ],
+  "comparison": "Local full-token vs ledger-only trained vs question-only trained, same architecture/data/optimizer/initialization/parameter count.",
+  "decision_rule": "If question-only matched training achieves comparable joint current/initial/protected competence, changes to pre-question memory formation are not necessary for that observed competence on these tasks.",
+  "limits": [
+    "All token policies use future-answer loss; no ground-truth dependency labels are supplied.",
+    "This separates temporal adaptation locations, not recurrent vs KV paths.",
+    "One initialization remains a pilot; no equivalence claim from failure to find a difference.",
+    "Evaluate first on the same development cases; any confirmatory extension must be locked separately."
+  ],
+  "expected_data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+  "parameters_per_controller": 689216,
+  "development_joint": {
+    "local_all": "16/16",
+    "local_ledger": "15/16",
+    "local_question": "16/16"
+  },
+  "new_confirmation_config": "configs/controller_timing_locked_confirmation.json",
+  "confirmation_joint": {
+    "native": "24/64",
+    "local_all": "62/64",
+    "local_ledger": "63/64",
+    "local_question": "64/64"
+  }
+}

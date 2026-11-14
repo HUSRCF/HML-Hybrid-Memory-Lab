@@ -1,0 +1,190 @@
+{
+  "status": "validated_before_inference",
+  "registered_utc": "2026-11-13T23:30:01.961077+00:00",
+  "plan_sha256": "8d12f7777adf02ac5930212b733e909d78393fb06045dc45e1d57aee4b0adc87",
+  "cases_sha256": "94a77ba1ca2731da60b7d5f9d0b4e2e9142b24ea18017b4b8f837253c2ca3619",
+  "registry_sha256": "1923718547a23b1ebff345d7a68d05b1a098b43011ff637ec1b43d91460aa6b5",
+  "reference_manifest_sha256": "2a1f2abe6b54c818fad4f9b0f3ba94314feb6e7e2147670887c8f3036b219979",
+  "reference_audit_sha256": "a2123f24b4675acd3c03abc35f19bb14b7ce36a41b16a990c35429323afa79af",
+  "reference_result_sha256": {
+    "native": {
+      "raw_full": "84ad457896977b93fc6d4fe34773f6efc2f4bded31817fcac1552cb7b2fc5233",
+      "oracle": "06e9ece11af457fd919644f9e5fc91b6f09bc5fc2a16ca31d122222a129624bb"
+    },
+    "question_only_seed1701": {
+      "raw_full": "c5ff5a1811de41c6e45d7f3ddc1e83a2863bc0f4cce588a2c7f5eea8c745e3d4",
+      "oracle": "38358355dbe39202c7fe18c54d6273b97b9935ea5bdd3a83607373246d33406e"
+    },
+    "question_only_seed2718": {
+      "raw_full": "fc04c76506106c8164cca30dc8b5166ced546fa1873638292e92409d6e4a23aa",
+      "oracle": "b6762e83b755a1776169ba7c87c38d79d478c1ab9e2004973dc9a491433adaca"
+    },
+    "question_only_seed31415": {
+      "raw_full": "58a57608cd778f75b00429732690c7b916bbebcab1334b1156ebed41b97a18b5",
+      "oracle": "853369084a63e79aa143cc18ac559a0b6c06c8dd5cb3174ae1eda6d1a3e3353e"
+    }
+  },
+  "checkpoint_sources": {
+    "question_only_seed1701": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-question-trained-20261114-01",
+      "mode": "local",
+      "initialization_seed": 1701,
+      "checkpoint_sha256": "613d5d757584845332b0b03d03f4b444aa73afe6c8597abc68fb8b614ff80b69",
+      "config": {
+        "protocol_version": 1,
+        "model": "it",
+        "group_index": 3,
+        "initialization_seed": 1701,
+        "steps": 64,
+        "gradient_accumulation": 2,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "max_gradient_norm": 1.0,
+        "max_sequence_tokens": 1536,
+        "validation_copy_cases": 4,
+        "validation_overwrite_cases": 2,
+        "test_copy_cases": 8,
+        "test_overwrite_cases": 4,
+        "modes": {
+          "local": 22
+        },
+        "notes": [
+          "Small feasibility trial, not a novelty or architecture claim.",
+          "Frozen IT backbone; existing conda base. No new environment or package installation.",
+          "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+          "No test-based hyperparameter selection; evaluate final checkpoint only.",
+          "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+          "Seed and entity namespaces are disjoint across train/validation/test.",
+          "Only three-digit answer and newline tokens receive supervised loss.",
+          "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets.",
+          "Mechanism control: train and evaluate with the same token-position policy, rather than disabling branches only after training.",
+          "Ordinary local low-rank adapter; identical seed, examples, steps, learning rate and parameter count to the all-token local checkpoint.",
+          "Ledger-only can alter both recurrent states and KV construction. Question-only preserves all pre-question computation. Neither is a GDN-only intervention."
+        ],
+        "adapt_gdn_keys": true,
+        "token_policy": "question"
+      },
+      "training_manifest_sha256": "7889827f8a032c1dff9d9651eff55ab812ac34a1f0ef85a2b2ee871de6a79865",
+      "training_data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+      "training_tokens_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a"
+    },
+    "question_only_seed2718": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-init2718-question-20261114-01",
+      "mode": "local",
+      "initialization_seed": 2718,
+      "checkpoint_sha256": "e1e0604011a4272293ff695da89f70b81a63b1f3cd7d8e458edff6b57cdb3509",
+      "config": {
+        "protocol_version": 1,
+        "model": "it",
+        "group_index": 3,
+        "initialization_seed": 2718,
+        "steps": 64,
+        "gradient_accumulation": 2,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "max_gradient_norm": 1.0,
+        "max_sequence_tokens": 1536,
+        "validation_copy_cases": 4,
+        "validation_overwrite_cases": 2,
+        "test_copy_cases": 8,
+        "test_overwrite_cases": 4,
+        "modes": {
+          "local": 22
+        },
+        "notes": [
+          "Small feasibility trial, not a novelty or architecture claim.",
+          "Frozen IT backbone; existing conda base. No new environment or package installation.",
+          "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+          "No test-based hyperparameter selection; evaluate final checkpoint only.",
+          "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+          "Seed and entity namespaces are disjoint across train/validation/test.",
+          "Only three-digit answer and newline tokens receive supervised loss.",
+          "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets.",
+          "Mechanism control: train and evaluate with the same token-position policy, rather than disabling branches only after training.",
+          "Ordinary local low-rank adapter; identical seed, examples, steps, learning rate and parameter count to the all-token local checkpoint.",
+          "Ledger-only can alter both recurrent states and KV construction. Question-only preserves all pre-question computation. Neither is a GDN-only intervention.",
+          "Prespecified initialization replication: same local architecture, 128 ordered examples and optimization settings; only initialization seed and token policy vary.",
+          "Evaluate every final checkpoint; do not select seeds or checkpoints using the fixed evaluation cohort."
+        ],
+        "adapt_gdn_keys": true,
+        "token_policy": "question"
+      },
+      "training_manifest_sha256": "780fe2da09d2cf4d8c178d6bd894240afcce6ea33cdcd280f28dfdbff652dc97",
+      "training_data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+      "training_tokens_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a"
+    },
+    "question_only_seed31415": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-init31415-question-20261114-01",
+      "mode": "local",
+      "initialization_seed": 31415,
+      "checkpoint_sha256": "e1e117c0b5b83a8bec7b77195730f262e7b3c843b79f6bb9efc2a95835db93d9",
+      "config": {
+        "protocol_version": 1,
+        "model": "it",
+        "group_index": 3,
+        "initialization_seed": 31415,
+        "steps": 64,
+        "gradient_accumulation": 2,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "max_gradient_norm": 1.0,
+        "max_sequence_tokens": 1536,
+        "validation_copy_cases": 4,
+        "validation_overwrite_cases": 2,
+        "test_copy_cases": 8,
+        "test_overwrite_cases": 4,
+        "modes": {
+          "local": 22
+        },
+        "notes": [
+          "Small feasibility trial, not a novelty or architecture claim.",
+          "Frozen IT backbone; existing conda base. No new environment or package installation.",
+          "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+          "No test-based hyperparameter selection; evaluate final checkpoint only.",
+          "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+          "Seed and entity namespaces are disjoint across train/validation/test.",
+          "Only three-digit answer and newline tokens receive supervised loss.",
+          "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets.",
+          "Mechanism control: train and evaluate with the same token-position policy, rather than disabling branches only after training.",
+          "Ordinary local low-rank adapter; identical seed, examples, steps, learning rate and parameter count to the all-token local checkpoint.",
+          "Ledger-only can alter both recurrent states and KV construction. Question-only preserves all pre-question computation. Neither is a GDN-only intervention.",
+          "Prespecified initialization replication: same local architecture, 128 ordered examples and optimization settings; only initialization seed and token policy vary.",
+          "Evaluate every final checkpoint; do not select seeds or checkpoints using the fixed evaluation cohort."
+        ],
+        "adapt_gdn_keys": true,
+        "token_policy": "question"
+      },
+      "training_manifest_sha256": "50b11556e71ca15128d016e86af9ff5fe520fab8b37334a54278ecf3e56d4c3b",
+      "training_data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+      "training_tokens_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a"
+    }
+  },
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "tokenizer_sha256": {
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c"
+  },
+  "contexts": 288,
+  "prelude_tokens": [
+    85
+  ],
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/controllers.py": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9",
+    "sas_memory/counterbalance_data.py": "88e38ff2901e652335e23ff5decd4bb69d59481a58d27f7284b99fcdf47d176c",
+    "sas_memory/counterbalance_tasks.py": "914523e92d5d1e657646d0e6d179c86845af2605fc6f7d8ab34794181fd6bf1d",
+    "sas_memory/generalization_tasks.py": "697a6fdc1e9d448fdfd5b7fa6e22adca40477d35c6e70f7aaebf648ef8b608fd",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/kv_readout.py": "2927df0cfdaf4972287b83914092e2224eacfc3ccf9d0508e03a64e85e919b8b",
+    "sas_memory/metrics.py": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e",
+    "sas_memory/readout_controls.py": "c15b4e3d4f4de2ce09a3c559dae64be8d849f472d6b02b9f70dd165c2cf73afa",
+    "sas_memory/record_kv_ablation.py": "37c694da6bfb100fba6498df3a4b09ae89dde5181b55b1b17d80585e873f6093",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/stress_tasks.py": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "scripts/prepare_record_kv_ablation.py": "38cea0c556beaf49edf7e8ab46d20da06e8a81dccb857a06e5799fe2902f4309",
+    "scripts/analyze_readout_counterbalance.py": "858d4f0b06b52ede34e2d9de290be63262a7f13d5105d55bd8f91826924e17be"
+  }
+}

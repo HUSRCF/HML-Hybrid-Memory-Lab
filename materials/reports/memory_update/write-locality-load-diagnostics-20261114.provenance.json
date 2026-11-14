@@ -1,0 +1,24 @@
+{
+  "status": "source_reports_and_visually_checked_figure_recorded",
+  "recorded_utc": "2026-11-14T06:49:19.405458+00:00",
+  "files_sha256": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-load-20261114.json": "47e1835173dea129230ebe48cff6ee5c3aa59b82eff34322899a0a0319b47e83",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-load-20261114.source.py": "43adbeb05d687c512654927768a7d01e69241dba91a00b8c008b12793d6a14dd",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-load-diagnostics-20261114.json": "20c0b543ebb1c542e8e535817c0a336c7152a8f42817b0e777fcf76cff6ba8c0",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-load-diagnostics-20261114.source.py": "d00eee2d8d51650108862b3d359dfe0206fb770c007c56f8eb0c4b64660dcd5b",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-load-diagnostics-20261114.csv": "ec7ac4f54e3e56be2abc777eccc794f51a4c1b49e3aeb6444e5ea29eac5296cf",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-load-diagnostics-20261114.png": "7083319044b1a3735de32d556ed494e60cd4f2e14bda51122369941576f52432",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-load-diagnostics-20261114.pdf": "49f3f250357659d2ecfc6e20c5146988b2014c5a37c1b184aff870749c52137f",
+    "/home/husrcf/Code/SAS/configs/semantic_write_locality_load_plan.json": "f0f3d9311eccf72580e500ebf74d2e92e16933898ed59b3d96b8e4673ed25411",
+    "/home/husrcf/Code/SAS/configs/semantic_write_locality_replication_plan.json": "cc321076e4c16df135c506fabf5e9c1edbdf09408899444a6b93289676fecb1f",
+    "/home/husrcf/Code/SAS/configs/semantic_write_locality_event_paths_plan.json": "e180ebbb62f8a81775a838e29eb43225d991ba10866eb46722aa8fe8a20e7d40",
+    "/home/husrcf/Code/SAS/configs/semantic_write_locality_event_paths_addendum.json": "a17cf6b406fc6ffa5b623bc1d9bbf7ecb9e76c03aba55541864a29e0f5003b87",
+    "/home/husrcf/Code/SAS/configs/semantic_write_locality_event_paths_commit_guard.json": "ba85327bc97c5a6698e3337b1315a66875c340017d5b3ffeb7cc2e05b6ca9fac"
+  },
+  "analysis_source_sha256": "d00eee2d8d51650108862b3d359dfe0206fb770c007c56f8eb0c4b64660dcd5b",
+  "manifest_sha256": "8588af35b666ae846e496b6a7e8fae4fc0d559d9cc08ede08b2c72b0f1aa1768",
+  "dataset_manifest_sha256": "364999d6e60f93533cd32f6e33247cac6cac1bb77034189a26d471207a69bb68",
+  "actual_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "visual_inspection": "Viewed the final exported PNG. All three query roles, four tail-cell colors, three matched-length loads and raw counts are legible without overlap. The figure exposes baseline B errors and includes the four-related-stream limitation.",
+  "interpretation": "576 native readouts independently audited. Replication/event-path protocols are registered only; no replica or event-path model inference."
+}

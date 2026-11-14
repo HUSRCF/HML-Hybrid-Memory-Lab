@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/blocked-reader-budget-calibration-20261114-01",
+  "checks": [
+    {
+      "mutation": "wrong_optimizer_step_with_valid_hash",
+      "rejected": true,
+      "reason": "Saved optimizer moment step disagrees with checkpoint"
+    },
+    {
+      "mutation": "opened_record_column_with_valid_hash",
+      "rejected": true,
+      "reason": "Training-fit identities, masks, teacher labels or cached calls changed"
+    }
+  ]
+}

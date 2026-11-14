@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "status": "protocol_registered_data_and_runner_not_implemented",
+  "registered_utc": "2026-11-14T05:58:13+00:00",
+  "profile": "fixed_length_semantic_write_locality_load_screen",
+  "purpose": "Test whether semantically unrelated value updates cause functional losses as the number of simultaneously active facts increases, while holding record count and audited token positions fixed. This is a native-model diagnostic for the hybrid-block update question, not a new architecture or confirmation study.",
+  "model_config": "configs/models.json",
+  "model_key": "it",
+  "model_class": "Qwen3_5ForCausalLM",
+  "local_files_only": true,
+  "reader_policy": "full",
+  "training": false,
+  "adapters": false,
+  "model_inference_started": false,
+  "gate": {
+    "required_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/gdn-question-timing-20261114.json",
+    "required_status": "completed_and_audited",
+    "required_validation_records": 864,
+    "required_teacher_train_records": 864,
+    "required_paired_initialization_verified": true,
+    "data_registration": "Before any new model inference, freeze a separate dataset manifest containing data, registry, tokenizer, implementation and this protocol's hashes. Verify executable truths, all prescribed token alignments and all paired identities."
+  },
+  "development_grid": {
+    "base_seeds": [97000, 97001, 97002, 97003],
+    "active_accounts": [8, 32, 128],
+    "prefix_records": 160,
+    "value_versions": 4,
+    "tail_cells": ["A0_C0", "A1_C0", "A0_C1", "A1_C1"],
+    "query_roles": ["target_current", "protected_current", "target_initial"],
+    "expected_free_answers": 576,
+    "expected_distinct_prefixes_with_tail": 192,
+    "independent_base_streams": 4,
+    "maximum_prompt_tokens": 4096,
+    "no_truncation": true
+  },
+  "prefix_construction": {
+    "entity_namespace": "E700 through E899, exactly three decimal digits after E",
+    "entity_rng": "For each base seed, random.Random(base_seed) shuffles the fixed ordered 200-name namespace once. Its first three names are A, B and C in every load and value condition.",
+    "schedule_rng": "random.Random(base_seed + 310003 + active_accounts)",
+    "records_0_1_2": "SET A old_A; SET B old_B; SET C old_C. These positions stay identical across loads.",
+    "remaining_records": "Use exactly the first active_accounts-3 names after A,B,C in the entity permutation. Concatenate independently shuffled permutations of these names using schedule_rng until there are 157 targets, then truncate to 157. Emit one SET per target. Every registered active account appears; none of these records writes A, B or C.",
+    "values_rng": "random.Random(base_seed + 410009)",
+    "value_assignment": "Sample 4*162 distinct integers from range(100,1000). For value version v, take its contiguous 162-integer slice. The first 160 entries supply the corresponding prefix record values, entry160 is new_A and entry161 is new_C. Reuse this exact record-index value schedule at all loads. old_A,old_B,old_C are entries0,1,2.",
+    "interpretation": "The query-related facts have the same ages, slots, names and values at all loads. The number and recurrence of distractor account identities changes. A load contrast alone does not isolate state capacity from changes in input representations."
+  },
+  "tail_construction": {
+    "records": 2,
+    "record_160": "SET A old_A when A0, otherwise SET A new_A",
+    "record_161": "SET C old_C when C0, otherwise SET C new_C",
+    "semantic_baseline": "A0_C0 repeats the currently effective values. It is a semantic no-op, not skipped neural computation.",
+    "controlled_difference": "For a fixed base seed, load and value version, all four cells have identical operation types, target identities, record count, queries, causal positions and prompt lengths. Toggling A or C changes only the registered three value-digit tokens at that tail record.",
+    "truth": "target_current depends only on the A bit; protected_current for B and target_initial for A remain unchanged in all four cells. Toggling C must preserve every registered query answer."
+  },
+  "required_data_audits": [
+    "Every example's answer is recomputed by the existing executable SET interpreter; no LLM labels.",
+    "Every load has exactly160 prefix and2 tail records and exactly the prescribed number of distinct active accounts.",
+    "The four value siblings have identical questions, entity identities, operation schedules and token positions, with four distinct answers for each fixed tail cell and query role.",
+    "Within every base-seed/value/role pairing, all loads and tail cells have equal prompt lengths and identical query token suffixes. Tail toggles differ only in the prescribed three isolated digit tokens.",
+    "A and B first occur at slots0 and1 respectively, and no distractor operation modifies A,B,C. Every record boundary and value span is token-registered.",
+    "No prompt exceeds4096 tokens; failure aborts registration without dropping long examples or changing the grid after inference.",
+    "No existing confirmation cohort or70000-series examples are consumed. These four newly specified base streams are explicitly development diagnostics."
+  ],
+  "evaluation": {
+    "runtime": "Reuse the existing text-only local eager BF16 runtime and account-ledger instructions; every natural full-reader query is processed by the unmodified hybrid model.",
+    "primary_readout": "Unrestricted greedy generation, maximum12 new tokens, stop on newline or EOS. Save complete decoded output and parse with the existing exact-answer criterion. No gold candidate restriction.",
+    "secondary_readout": "Gold three-digit answer NLL with the same fixed answer tokenization; report separately from free accuracy.",
+    "required_controls": "Frozen backbone checks before/after, no adapters or training, actual history access at all six Attention layers on prescribed first/last identities, complete raw rows and source hashes. Determine the exact ordered evaluation registry before inference.",
+    "primary_reports": [
+      "All576 answer outcomes and denominators, by registered load, tail cell and role.",
+      "For both C-bit values, paired A0-to-A1 rescues/regressions for protected_current and target_initial, plus correct target-current updates.",
+      "For both A-bit values, paired C0-to-C1 rescues/regressions for all three answer-invariant roles.",
+      "Joint update-and-preservation success and complete four-value sibling success; do not filter to initially correct examples for the main table.",
+      "Keep baseline-correct conditional regression rates secondary, with every numerator/denominator and all baseline failures visible.",
+      "Give all four base-stream results and treat their value siblings, loads and query roles as related observations. No independent-n576 confidence claim.",
+      "Report NLL shifts continuously without treating a tiny probability change as semantic memory damage."
+    ]
+  },
+  "decision_rules": {
+    "screen_signal": "An answer-invariant tail toggle produces a correct-to-incorrect free-answer regression in at least two of the four base streams at a registered load. This is a descriptive development screen, not a significance test or confirmed causal mechanism.",
+    "if_signal_absent": "Record that this fixed-length load screen does not supply the missing motivation for semantic write-locality co-design. Do not initiate B/C structures or expand load thresholds only to manufacture a failure. Keep any NLL-only observations descriptive.",
+    "if_signal_present": "Before training another architecture, register a separate replication and event-level state/KV diagnostic with aligned natural controls. A natural functional regression does not by itself locate damage in GDN, exclude Attention addressing, or prove a shared controller is necessary.",
+    "architecture_gate": "Any later shared controller must still beat independent controllers, single-component adaptations and ordinary data/local adaptation at matched budgets while retaining required order, COPY snapshot and historical-query competence. This SET-only screen does not replace those existing semantic tests."
+  },
+  "implementation_status": "Protocol only. No new dataset generated, no runner implemented, no model inference and no scheduled training for this screen at registration."
+}

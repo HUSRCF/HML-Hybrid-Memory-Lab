@@ -1,0 +1,427 @@
+{
+  "models": {
+    "native": {
+      "metrics": [
+        {
+          "family": "copy",
+          "role": "protected_current",
+          "correct": 16,
+          "count": 16,
+          "accuracy": 1,
+          "answer_nll": 0.2822176069021225
+        },
+        {
+          "family": "copy",
+          "role": "target_current",
+          "correct": 7,
+          "count": 16,
+          "accuracy": 0.4375,
+          "answer_nll": 0.625162715713183
+        },
+        {
+          "family": "copy",
+          "role": "target_initial",
+          "correct": 16,
+          "count": 16,
+          "accuracy": 1,
+          "answer_nll": 0.12856522761285305
+        },
+        {
+          "family": "overwrite",
+          "role": "protected_current",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 0.13321803758541742
+        },
+        {
+          "family": "overwrite",
+          "role": "target_current",
+          "correct": 7,
+          "count": 8,
+          "accuracy": 0.875,
+          "answer_nll": 0.1491392234650751
+        },
+        {
+          "family": "overwrite",
+          "role": "target_initial",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 0.0806920810136944
+        }
+      ],
+      "joint_all_three_correct": [
+        {
+          "family": "copy",
+          "correct": 7,
+          "count": 16,
+          "accuracy": 0.4375
+        },
+        {
+          "family": "overwrite",
+          "correct": 7,
+          "count": 8,
+          "accuracy": 0.875
+        }
+      ]
+    },
+    "shared": {
+      "metrics": [
+        {
+          "family": "copy",
+          "role": "protected_current",
+          "correct": 16,
+          "count": 16,
+          "accuracy": 1,
+          "answer_nll": 0.0016976096376311034
+        },
+        {
+          "family": "copy",
+          "role": "target_current",
+          "correct": 16,
+          "count": 16,
+          "accuracy": 1,
+          "answer_nll": 0.05537491396535188
+        },
+        {
+          "family": "copy",
+          "role": "target_initial",
+          "correct": 13,
+          "count": 16,
+          "accuracy": 0.8125,
+          "answer_nll": 0.09554903981431077
+        },
+        {
+          "family": "overwrite",
+          "role": "protected_current",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 0.0006889673531986773
+        },
+        {
+          "family": "overwrite",
+          "role": "target_current",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 0.001067856399458833
+        },
+        {
+          "family": "overwrite",
+          "role": "target_initial",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 0.004214517165867922
+        }
+      ],
+      "joint_all_three_correct": [
+        {
+          "family": "copy",
+          "correct": 13,
+          "count": 16,
+          "accuracy": 0.8125
+        },
+        {
+          "family": "overwrite",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1
+        }
+      ],
+      "parameters": 694272,
+      "training_seconds": 15.015274708159268,
+      "peak_allocated_gib": 4.799276828765869
+    },
+    "independent": {
+      "metrics": [
+        {
+          "family": "copy",
+          "role": "protected_current",
+          "correct": 16,
+          "count": 16,
+          "accuracy": 1,
+          "answer_nll": 0.001792649340738232
+        },
+        {
+          "family": "copy",
+          "role": "target_current",
+          "correct": 16,
+          "count": 16,
+          "accuracy": 1,
+          "answer_nll": 0.045466291844301544
+        },
+        {
+          "family": "copy",
+          "role": "target_initial",
+          "correct": 13,
+          "count": 16,
+          "accuracy": 0.8125,
+          "answer_nll": 0.07777060694449271
+        },
+        {
+          "family": "overwrite",
+          "role": "protected_current",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 0.0007159444867284037
+        },
+        {
+          "family": "overwrite",
+          "role": "target_current",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 0.0008360046582917372
+        },
+        {
+          "family": "overwrite",
+          "role": "target_initial",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 0.006554336432600394
+        }
+      ],
+      "joint_all_three_correct": [
+        {
+          "family": "copy",
+          "correct": 13,
+          "count": 16,
+          "accuracy": 0.8125
+        },
+        {
+          "family": "overwrite",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1
+        }
+      ],
+      "parameters": 696384,
+      "training_seconds": 14.38895160285756,
+      "peak_allocated_gib": 4.7943339347839355
+    },
+    "attention_only": {
+      "metrics": [
+        {
+          "family": "copy",
+          "role": "protected_current",
+          "correct": 16,
+          "count": 16,
+          "accuracy": 1,
+          "answer_nll": 0.06914099600786965
+        },
+        {
+          "family": "copy",
+          "role": "target_current",
+          "correct": 13,
+          "count": 16,
+          "accuracy": 0.8125,
+          "answer_nll": 0.3240843253831069
+        },
+        {
+          "family": "copy",
+          "role": "target_initial",
+          "correct": 12,
+          "count": 16,
+          "accuracy": 0.75,
+          "answer_nll": 0.10708906439443429
+        },
+        {
+          "family": "overwrite",
+          "role": "protected_current",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 0.03840198080676297
+        },
+        {
+          "family": "overwrite",
+          "role": "target_current",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 0.03604900029798349
+        },
+        {
+          "family": "overwrite",
+          "role": "target_initial",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 0.04022530823325118
+        }
+      ],
+      "joint_all_three_correct": [
+        {
+          "family": "copy",
+          "correct": 9,
+          "count": 16,
+          "accuracy": 0.5625
+        },
+        {
+          "family": "overwrite",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1
+        }
+      ],
+      "parameters": 691200,
+      "training_seconds": 12.132679036119953,
+      "peak_allocated_gib": 4.485931396484375
+    },
+    "gdn_only": {
+      "metrics": [
+        {
+          "family": "copy",
+          "role": "protected_current",
+          "correct": 16,
+          "count": 16,
+          "accuracy": 1,
+          "answer_nll": 0.004193809863257532
+        },
+        {
+          "family": "copy",
+          "role": "target_current",
+          "correct": 15,
+          "count": 16,
+          "accuracy": 0.9375,
+          "answer_nll": 0.06524373210656147
+        },
+        {
+          "family": "copy",
+          "role": "target_initial",
+          "correct": 13,
+          "count": 16,
+          "accuracy": 0.8125,
+          "answer_nll": 0.10086239365045913
+        },
+        {
+          "family": "overwrite",
+          "role": "protected_current",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 0.0012248431254799168
+        },
+        {
+          "family": "overwrite",
+          "role": "target_current",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 0.0013844639421828713
+        },
+        {
+          "family": "overwrite",
+          "role": "target_initial",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 0.0018162732643152897
+        }
+      ],
+      "joint_all_three_correct": [
+        {
+          "family": "copy",
+          "correct": 12,
+          "count": 16,
+          "accuracy": 0.75
+        },
+        {
+          "family": "overwrite",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1
+        }
+      ],
+      "parameters": 696192,
+      "training_seconds": 15.477348496904597,
+      "peak_allocated_gib": 4.782089710235596
+    },
+    "local": {
+      "metrics": [
+        {
+          "family": "copy",
+          "role": "protected_current",
+          "correct": 16,
+          "count": 16,
+          "accuracy": 1,
+          "answer_nll": 0.00010604867626777074
+        },
+        {
+          "family": "copy",
+          "role": "target_current",
+          "correct": 16,
+          "count": 16,
+          "accuracy": 1,
+          "answer_nll": 0.02746030427200215
+        },
+        {
+          "family": "copy",
+          "role": "target_initial",
+          "correct": 16,
+          "count": 16,
+          "accuracy": 1,
+          "answer_nll": 0.0003018553379661171
+        },
+        {
+          "family": "overwrite",
+          "role": "protected_current",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 6.845656207588036e-05
+        },
+        {
+          "family": "overwrite",
+          "role": "target_current",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 4.655947122955695e-05
+        },
+        {
+          "family": "overwrite",
+          "role": "target_initial",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1,
+          "answer_nll": 0.0015818806881118994
+        }
+      ],
+      "joint_all_three_correct": [
+        {
+          "family": "copy",
+          "correct": 16,
+          "count": 16,
+          "accuracy": 1
+        },
+        {
+          "family": "overwrite",
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1
+        }
+      ],
+      "parameters": 689216,
+      "training_seconds": 14.891001065028831,
+      "peak_allocated_gib": 4.791295051574707
+    }
+  },
+  "runs": [
+    {
+      "path": "/media/990Pro/Code/SAS/runs/memory_update/controller-keys-pilot-20261114-01",
+      "data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+      "steps": 64,
+      "optimized_input_tokens": 74102,
+      "supervised_answer_tokens": 512,
+      "model": "it",
+      "group_index": 3
+    }
+  ],
+  "interpretation": "Pilot; query pairs share cases. No significance or semantic-interface claim."
+}

@@ -1,0 +1,101 @@
+{
+  "native": {
+    "regressions": {
+      "control_vs_before": [
+        "test-copy-s40029-n64"
+      ],
+      "treatment_vs_before": [],
+      "treatment_vs_control": [],
+      "control_vs_treatment": [
+        "test-copy-s40029-n64"
+      ]
+    },
+    "error_cases": [
+      {
+        "case": "test-copy-s40008-n8",
+        "answers": {
+          "before": {
+            "gold": "731",
+            "raw": "414\n",
+            "exact": false
+          },
+          "control": {
+            "gold": "731",
+            "raw": "414\n",
+            "exact": false
+          },
+          "treatment": {
+            "gold": "731",
+            "raw": "414\n",
+            "exact": false
+          }
+        }
+      },
+      {
+        "case": "test-copy-s40029-n64",
+        "answers": {
+          "before": {
+            "gold": "364",
+            "raw": "364\n",
+            "exact": true
+          },
+          "control": {
+            "gold": "364",
+            "raw": "277\n",
+            "exact": false
+          },
+          "treatment": {
+            "gold": "364",
+            "raw": "364\n",
+            "exact": true
+          }
+        }
+      }
+    ]
+  },
+  "shared": {
+    "regressions": {
+      "control_vs_before": [],
+      "treatment_vs_before": [],
+      "treatment_vs_control": [],
+      "control_vs_treatment": []
+    },
+    "error_cases": []
+  },
+  "independent": {
+    "regressions": {
+      "control_vs_before": [],
+      "treatment_vs_before": [],
+      "treatment_vs_control": [],
+      "control_vs_treatment": []
+    },
+    "error_cases": []
+  },
+  "attention_only": {
+    "regressions": {
+      "control_vs_before": [],
+      "treatment_vs_before": [],
+      "treatment_vs_control": [],
+      "control_vs_treatment": []
+    },
+    "error_cases": []
+  },
+  "gdn_only": {
+    "regressions": {
+      "control_vs_before": [],
+      "treatment_vs_before": [],
+      "treatment_vs_control": [],
+      "control_vs_treatment": []
+    },
+    "error_cases": []
+  },
+  "local": {
+    "regressions": {
+      "control_vs_before": [],
+      "treatment_vs_before": [],
+      "treatment_vs_control": [],
+      "control_vs_treatment": []
+    },
+    "error_cases": []
+  }
+}

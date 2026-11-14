@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/gdn-query-capacity-20261114-01",
+  "checkpoint_sha256": "68d1e282f1e4df1bcbd1dbd2ae44b7557e226476090a8360e82f05b9e421f35a",
+  "positive_control_audited": true,
+  "mutations": {
+    "wrong_adamw_step_with_updated_hash": {
+      "status": "rejected",
+      "reason": "Invalid adapter/AdamW snapshot"
+    },
+    "opened_record_column_with_updated_hash": {
+      "status": "rejected",
+      "reason": "Evaluation mask/labels changed"
+    }
+  },
+  "source_sha256": "4862c3237c5e7c88a6080df1614ffa6618f5a11e4b5114a53096931a56d590d4"
+}

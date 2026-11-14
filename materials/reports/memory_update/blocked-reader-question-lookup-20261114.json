@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "training_examples": 128,
+  "unique_question_texts": 118,
+  "question_texts_with_conflicting_answers": 9,
+  "hindsight_question_text_lookup_correct": 118,
+  "interpretation": "Descriptive in-sample lookup chosen with hindsight using only exact question text; not a trained or deployable baseline. A high fit rate alone could exploit question identity and would not establish prefix-memory use. This is a ceiling for this restricted deterministic lookup class, not a universal bound on history-free models that can use positions or other signals.",
+  "followup": "Use matched counterfactual prefixes with identical question text and token positions but distinct correct answers; report complete-family correctness as well as individual answers."
+}

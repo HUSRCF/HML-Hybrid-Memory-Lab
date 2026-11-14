@@ -1,0 +1,13 @@
+{
+  "protocol_version": 1,
+  "seeds": [211, 223, 227, 229, 233, 239, 241, 251],
+  "distractor_updates": [8, 64],
+  "families": ["copy"],
+  "notes": [
+    "Confirmation after the two-seed pilot: all seeds are new.",
+    "COPY is a snapshot, so later source writes do not alter the destination.",
+    "Current destination, unrelated account and initial destination are evaluated.",
+    "Compare natural context with oracle program slicing before training adapters.",
+    "Protocol 1 target labels vary with duration; interpret duration comparisons across seeds, not as matched-value interventions."
+  ]
+}

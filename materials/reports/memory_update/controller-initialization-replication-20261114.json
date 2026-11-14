@@ -1,0 +1,567 @@
+{
+  "status": "completed",
+  "evaluation_kind": "fixed_cohort_initialization_replication",
+  "cases_sha256": "2787cf2d28d57db0f3ad4ed7fe249a809a9eb6f172871ceb800a8b91e663848b",
+  "initialization_seeds": [
+    1701,
+    2718,
+    31415
+  ],
+  "per_seed": {
+    "1701": {
+      "models": {
+        "all": {
+          "metrics": [
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.0004839174956903965
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "correct": 62,
+              "count": 64,
+              "accuracy": 0.96875,
+              "answer_nll": 0.03660729652688133
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.0001351323073019254
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 0.00016775500409949018
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 5.983497521810932e-05
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 0.00877339606896991
+            }
+          ],
+          "joint_all_three_correct": [
+            {
+              "family": "copy",
+              "correct": 62,
+              "count": 64,
+              "accuracy": 0.96875
+            },
+            {
+              "family": "overwrite",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1
+            }
+          ]
+        },
+        "question": {
+          "metrics": [
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.000565221697911511
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.004325541554104954
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.0001527177565776583
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 6.246347595606494e-05
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 6.818689356199077e-05
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 0.007759000065182893
+            }
+          ],
+          "joint_all_three_correct": [
+            {
+              "family": "copy",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1
+            },
+            {
+              "family": "overwrite",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1
+            }
+          ]
+        }
+      },
+      "question_minus_all": {
+        "difference": 0.03125,
+        "ci95": [
+          0,
+          0.078125
+        ],
+        "cases": 32,
+        "bootstrap_samples": 5000,
+        "unit": "case, averaging its two order variants",
+        "multiple_comparison_adjustment": false
+      },
+      "checks": {
+        "all": {
+          "run": "/media/990Pro/Code/SAS/runs/memory_update/controller-keys-pilot-20261114-01",
+          "parameters": 689216,
+          "training_token_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a"
+        },
+        "question": {
+          "run": "/media/990Pro/Code/SAS/runs/memory_update/controller-question-trained-20261114-01",
+          "parameters": 689216,
+          "training_token_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a"
+        }
+      }
+    },
+    "2718": {
+      "models": {
+        "all": {
+          "metrics": [
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.0003862891143550466
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.01934129478725784
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.00016959929649829064
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 0.00015206969199728823
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 4.995115326285789e-05
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "correct": 30,
+              "count": 32,
+              "accuracy": 0.9375,
+              "answer_nll": 0.04642617517572489
+            }
+          ],
+          "joint_all_three_correct": [
+            {
+              "family": "copy",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1
+            },
+            {
+              "family": "overwrite",
+              "correct": 30,
+              "count": 32,
+              "accuracy": 0.9375
+            }
+          ]
+        },
+        "question": {
+          "metrics": [
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.00037503396273071604
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.005484932958249071
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.0001790218235176629
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 6.982458099476692e-05
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 6.337759073934042e-05
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 0.012363198012053545
+            }
+          ],
+          "joint_all_three_correct": [
+            {
+              "family": "copy",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1
+            },
+            {
+              "family": "overwrite",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1
+            }
+          ]
+        }
+      },
+      "question_minus_all": {
+        "difference": 0,
+        "ci95": [
+          0,
+          0
+        ],
+        "cases": 32,
+        "bootstrap_samples": 5000,
+        "unit": "case, averaging its two order variants",
+        "multiple_comparison_adjustment": false
+      },
+      "checks": {
+        "all": {
+          "run": "/media/990Pro/Code/SAS/runs/memory_update/controller-init2718-all-20261114-01",
+          "parameters": 689216,
+          "training_token_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a"
+        },
+        "question": {
+          "run": "/media/990Pro/Code/SAS/runs/memory_update/controller-init2718-question-20261114-01",
+          "parameters": 689216,
+          "training_token_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a"
+        }
+      }
+    },
+    "31415": {
+      "models": {
+        "all": {
+          "metrics": [
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.00038763276249180006
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "correct": 63,
+              "count": 64,
+              "accuracy": 0.984375,
+              "answer_nll": 0.022041710942175996
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.0001437417955306349
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 0.0002441268177335587
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 8.958441117101756e-05
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "correct": 29,
+              "count": 32,
+              "accuracy": 0.90625,
+              "answer_nll": 0.09247750077042838
+            }
+          ],
+          "joint_all_three_correct": [
+            {
+              "family": "copy",
+              "correct": 63,
+              "count": 64,
+              "accuracy": 0.984375
+            },
+            {
+              "family": "overwrite",
+              "correct": 29,
+              "count": 32,
+              "accuracy": 0.90625
+            }
+          ]
+        },
+        "question": {
+          "metrics": [
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.0008084030433413621
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.0059159757956877
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1,
+              "answer_nll": 0.0002036031261620034
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 0.00010591079111084885
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 0.00011352830623915604
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1,
+              "answer_nll": 0.0006420146022871146
+            }
+          ],
+          "joint_all_three_correct": [
+            {
+              "family": "copy",
+              "correct": 64,
+              "count": 64,
+              "accuracy": 1
+            },
+            {
+              "family": "overwrite",
+              "correct": 32,
+              "count": 32,
+              "accuracy": 1
+            }
+          ]
+        }
+      },
+      "question_minus_all": {
+        "difference": 0.015625,
+        "ci95": [
+          0,
+          0.046875
+        ],
+        "cases": 32,
+        "bootstrap_samples": 5000,
+        "unit": "case, averaging its two order variants",
+        "multiple_comparison_adjustment": false
+      },
+      "checks": {
+        "all": {
+          "run": "/media/990Pro/Code/SAS/runs/memory_update/controller-init31415-all-20261114-01",
+          "parameters": 689216,
+          "training_token_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a"
+        },
+        "question": {
+          "run": "/media/990Pro/Code/SAS/runs/memory_update/controller-init31415-question-20261114-01",
+          "parameters": 689216,
+          "training_token_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a"
+        }
+      }
+    }
+  },
+  "mean_joint_accuracy": {
+    "all": 0.984375,
+    "question": 1
+  },
+  "fixed_seed_average_difference": {
+    "difference": 0.015625,
+    "ci95": [
+      0,
+      0.04166666666666667
+    ],
+    "cases": 32,
+    "bootstrap_samples": 5000,
+    "unit": "case, averaging two orders and the fixed prespecified training seeds",
+    "multiple_comparison_adjustment": false
+  },
+  "native_replay_max_nll_error": 0.0,
+  "inputs": [
+    {
+      "run": "/media/990Pro/Code/SAS/runs/memory_update/controller-timing-confirm-20261114-01",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/controller-initialization-replication-20261114-audits/controller-timing-confirm-20261114-01.json",
+      "audit_sha256": "35c6637091e3d26fe7d5c97d36e649ef10db38d24a1cef92f8409540f9cb0b82"
+    },
+    {
+      "run": "/media/990Pro/Code/SAS/runs/memory_update/controller-initialization-eval-20261114-01",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/controller-initialization-replication-20261114-audits/controller-initialization-eval-20261114-01.json",
+      "audit_sha256": "873a189dc6aa22b77f18726fe87437f62c84fe41a11d18350fb8b959aa6f7d73"
+    }
+  ],
+  "analysis_config": {
+    "registered_utc": "2026-11-13T21:23:29.804003+00:00",
+    "training_plan": "configs/controller_initialization_replication.json",
+    "evaluation_config": "configs/controller_replication_evaluation.json",
+    "initialization_seeds": [
+      1701,
+      2718,
+      31415
+    ],
+    "parameters_per_controller": 689216,
+    "training_data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+    "tokenized_input_answer_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a",
+    "runs": [
+      {
+        "path": "/media/990Pro/Code/SAS/runs/memory_update/controller-timing-confirm-20261114-01",
+        "pairs": [
+          {
+            "seed": 1701,
+            "all": "local_all",
+            "question": "local_question"
+          }
+        ]
+      },
+      {
+        "path": "/media/990Pro/Code/SAS/runs/memory_update/controller-initialization-eval-20261114-01",
+        "pairs": [
+          {
+            "seed": 2718,
+            "all": "all_s2718",
+            "question": "question_s2718"
+          },
+          {
+            "seed": 31415,
+            "all": "all_s31415",
+            "question": "question_s31415"
+          }
+        ]
+      }
+    ],
+    "uncertainty": "Describe each seed separately; a case bootstrap of the fixed three-seed average is conditional on these seeds and is not a population-over-initializations confidence interval."
+  },
+  "interpretation": "Every seed reported. Case bootstrap is conditional on these few training seeds; do not treat repeated seeds/orders/questions as independent cases or infer equivalence/general architecture superiority.",
+  "analysis_source_sha256": {
+    "scripts/analyze_initialization_replication.py": "c800b3e67fc3ef999664c5fe75db854d26eb59494158f2854d41508ffce3635d",
+    "scripts/analyze_controller_confirmation.py": "276429452f704b2e3498fd6a7308b50cc560b641c8cadd136831694a47c63669",
+    "scripts/analyze_controller_ablations.py": "fa0a5a77c0b625f31c13244e3389eb1b6d92b30201b56668efe94c0a06a03675",
+    "scripts/analyze_controller_trial.py": "aee986c912b7f3ada5de142978ef10793f16a7753ffdc8e33733682767137e41",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "configs/controller_replication_analysis.json": "bab20343594d484b5762556aac7620be88a3a3513236cc9a55f9f60830e1b1fc"
+  }
+}

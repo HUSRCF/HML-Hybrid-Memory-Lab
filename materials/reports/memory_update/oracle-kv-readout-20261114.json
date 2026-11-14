@@ -1,0 +1,688 @@
+{
+  "status": "completed",
+  "cases": 48,
+  "base_cases": 8,
+  "models": {
+    "native": {
+      "regimes": {
+        "raw_full": {
+          "correct": 10,
+          "count": 96,
+          "accuracy": 0.10416666666666667,
+          "answer_nll": 0.970278438180685
+        },
+        "oracle_kv": {
+          "correct": 44,
+          "count": 96,
+          "accuracy": 0.4583333333333333,
+          "answer_nll": 0.5342698935419321
+        },
+        "slice_rebuilt": {
+          "correct": 96,
+          "count": 96,
+          "accuracy": 1,
+          "answer_nll": 0.08783353718333982
+        }
+      },
+      "kv_vs_raw_paired": {
+        "raw_correct": 10,
+        "rescued": 36,
+        "regressed": 2
+      },
+      "kv_minus_raw": {
+        "difference": 0.35416666666666663,
+        "ci95": [
+          0.17708333333333331,
+          0.5520833333333333
+        ],
+        "cases": 8,
+        "bootstrap_samples": 5000,
+        "unit": "base_case_id, averaging all six depth/wording conditions and both orders",
+        "multiple_comparison_adjustment": false
+      },
+      "by_variant": {
+        "control": {
+          "raw_full": {
+            "correct": 2,
+            "count": 48,
+            "accuracy": 0.041666666666666664,
+            "answer_nll": 1.040475747651524
+          },
+          "oracle_kv": {
+            "correct": 17,
+            "count": 48,
+            "accuracy": 0.3541666666666667,
+            "answer_nll": 0.5732581259475814
+          },
+          "slice_rebuilt": {
+            "correct": 48,
+            "count": 48,
+            "accuracy": 1,
+            "answer_nll": 0.08363883581478149
+          }
+        },
+        "treatment": {
+          "raw_full": {
+            "correct": 8,
+            "count": 48,
+            "accuracy": 0.16666666666666666,
+            "answer_nll": 0.9000811287098461
+          },
+          "oracle_kv": {
+            "correct": 27,
+            "count": 48,
+            "accuracy": 0.5625,
+            "answer_nll": 0.4952816611362828
+          },
+          "slice_rebuilt": {
+            "correct": 48,
+            "count": 48,
+            "accuracy": 1,
+            "answer_nll": 0.09202823855189814
+          }
+        }
+      },
+      "by_condition": [
+        {
+          "dependency_depth": 1,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 2,
+              "count": 16,
+              "accuracy": 0.125,
+              "answer_nll": 0.7691733414928118
+            },
+            "oracle_kv": {
+              "correct": 13,
+              "count": 16,
+              "accuracy": 0.8125,
+              "answer_nll": 0.4401843398809433
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.025850573554635048
+            }
+          }
+        },
+        {
+          "dependency_depth": 1,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 6,
+              "count": 16,
+              "accuracy": 0.375,
+              "answer_nll": 0.6165413856506348
+            },
+            "oracle_kv": {
+              "correct": 13,
+              "count": 16,
+              "accuracy": 0.8125,
+              "answer_nll": 0.39827559267481166
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.013212301962388059
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 0,
+              "count": 16,
+              "accuracy": 0,
+              "answer_nll": 1.0774502207835515
+            },
+            "oracle_kv": {
+              "correct": 7,
+              "count": 16,
+              "accuracy": 0.4375,
+              "answer_nll": 0.5797131061553955
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.1236320436000824
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 1,
+              "count": 16,
+              "accuracy": 0.0625,
+              "answer_nll": 1.0129008640845616
+            },
+            "oracle_kv": {
+              "correct": 7,
+              "count": 16,
+              "accuracy": 0.4375,
+              "answer_nll": 0.5568715333938599
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.1374657147874435
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 0,
+              "count": 16,
+              "accuracy": 0,
+              "answer_nll": 1.1763472606738408
+            },
+            "oracle_kv": {
+              "correct": 1,
+              "count": 16,
+              "accuracy": 0.0625,
+              "answer_nll": 0.6314753393332163
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.09709346170226733
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 1,
+              "count": 16,
+              "accuracy": 0.0625,
+              "answer_nll": 1.1692575563987095
+            },
+            "oracle_kv": {
+              "correct": 3,
+              "count": 16,
+              "accuracy": 0.1875,
+              "answer_nll": 0.5990994498133659
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.12974712749322256
+            }
+          }
+        }
+      ]
+    },
+    "local_all": {
+      "regimes": {
+        "raw_full": {
+          "correct": 41,
+          "count": 96,
+          "accuracy": 0.4270833333333333,
+          "answer_nll": 0.8461994061791402
+        },
+        "oracle_kv": {
+          "correct": 96,
+          "count": 96,
+          "accuracy": 1,
+          "answer_nll": 0.0022674769649408213
+        },
+        "slice_rebuilt": {
+          "correct": 96,
+          "count": 96,
+          "accuracy": 1,
+          "answer_nll": 0.002364432212440685
+        }
+      },
+      "kv_vs_raw_paired": {
+        "raw_correct": 41,
+        "rescued": 55,
+        "regressed": 0
+      },
+      "kv_minus_raw": {
+        "difference": 0.5729166666666666,
+        "ci95": [
+          0.4375,
+          0.7083333333333334
+        ],
+        "cases": 8,
+        "bootstrap_samples": 5000,
+        "unit": "base_case_id, averaging all six depth/wording conditions and both orders",
+        "multiple_comparison_adjustment": false
+      },
+      "by_variant": {
+        "control": {
+          "raw_full": {
+            "correct": 16,
+            "count": 48,
+            "accuracy": 0.3333333333333333,
+            "answer_nll": 0.8172882869289929
+          },
+          "oracle_kv": {
+            "correct": 48,
+            "count": 48,
+            "accuracy": 1,
+            "answer_nll": 0.0027434715696775434
+          },
+          "slice_rebuilt": {
+            "correct": 48,
+            "count": 48,
+            "accuracy": 1,
+            "answer_nll": 0.002279365831074958
+          }
+        },
+        "treatment": {
+          "raw_full": {
+            "correct": 25,
+            "count": 48,
+            "accuracy": 0.5208333333333334,
+            "answer_nll": 0.8751105254292876
+          },
+          "oracle_kv": {
+            "correct": 48,
+            "count": 48,
+            "accuracy": 1,
+            "answer_nll": 0.0017914823602040997
+          },
+          "slice_rebuilt": {
+            "correct": 48,
+            "count": 48,
+            "accuracy": 1,
+            "answer_nll": 0.002449498593806412
+          }
+        }
+      },
+      "by_condition": [
+        {
+          "dependency_depth": 1,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 11,
+              "count": 16,
+              "accuracy": 0.6875,
+              "answer_nll": 0.20991278530649046
+            },
+            "oracle_kv": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.00029579715737781953
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.00014598193896138886
+            }
+          }
+        },
+        {
+          "dependency_depth": 1,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 15,
+              "count": 16,
+              "accuracy": 0.9375,
+              "answer_nll": 0.03861137713647622
+            },
+            "oracle_kv": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0002938554225693224
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0002019153859388704
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 5,
+              "count": 16,
+              "accuracy": 0.3125,
+              "answer_nll": 0.9827725311430792
+            },
+            "oracle_kv": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0035044634472190714
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.001349735484836856
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 8,
+              "count": 16,
+              "accuracy": 0.5,
+              "answer_nll": 0.7866484965149235
+            },
+            "oracle_kv": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0014158025514916517
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.00039487560267540783
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 0,
+              "count": 16,
+              "accuracy": 0,
+              "answer_nll": 1.634994034965833
+            },
+            "oracle_kv": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.004852645501766044
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.008106451268152645
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 2,
+              "count": 16,
+              "accuracy": 0.125,
+              "answer_nll": 1.424257212008039
+            },
+            "oracle_kv": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0032422977092210203
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.003987633594078943
+            }
+          }
+        }
+      ]
+    },
+    "local_question": {
+      "regimes": {
+        "raw_full": {
+          "correct": 53,
+          "count": 96,
+          "accuracy": 0.5520833333333334,
+          "answer_nll": 0.5389716551256546
+        },
+        "oracle_kv": {
+          "correct": 96,
+          "count": 96,
+          "accuracy": 1,
+          "answer_nll": 0.0011382961779923385
+        },
+        "slice_rebuilt": {
+          "correct": 96,
+          "count": 96,
+          "accuracy": 1,
+          "answer_nll": 0.0010595904084564406
+        }
+      },
+      "kv_vs_raw_paired": {
+        "raw_correct": 53,
+        "rescued": 43,
+        "regressed": 0
+      },
+      "kv_minus_raw": {
+        "difference": 0.4479166666666667,
+        "ci95": [
+          0.3229166666666667,
+          0.59375
+        ],
+        "cases": 8,
+        "bootstrap_samples": 5000,
+        "unit": "base_case_id, averaging all six depth/wording conditions and both orders",
+        "multiple_comparison_adjustment": false
+      },
+      "by_variant": {
+        "control": {
+          "raw_full": {
+            "correct": 24,
+            "count": 48,
+            "accuracy": 0.5,
+            "answer_nll": 0.4804035360971789
+          },
+          "oracle_kv": {
+            "correct": 48,
+            "count": 48,
+            "accuracy": 1,
+            "answer_nll": 0.0010771508409056372
+          },
+          "slice_rebuilt": {
+            "correct": 48,
+            "count": 48,
+            "accuracy": 1,
+            "answer_nll": 0.0010388040995571322
+          }
+        },
+        "treatment": {
+          "raw_full": {
+            "correct": 29,
+            "count": 48,
+            "accuracy": 0.6041666666666666,
+            "answer_nll": 0.5975397741541302
+          },
+          "oracle_kv": {
+            "correct": 48,
+            "count": 48,
+            "accuracy": 1,
+            "answer_nll": 0.0011994415150790398
+          },
+          "slice_rebuilt": {
+            "correct": 48,
+            "count": 48,
+            "accuracy": 1,
+            "answer_nll": 0.001080376717355749
+          }
+        }
+      },
+      "by_condition": [
+        {
+          "dependency_depth": 1,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 14,
+              "count": 16,
+              "accuracy": 0.875,
+              "answer_nll": 0.09162039427549948
+            },
+            "oracle_kv": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.00028533521557013347
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.00015440307834069245
+            }
+          }
+        },
+        {
+          "dependency_depth": 1,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.003222034210921265
+            },
+            "oracle_kv": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.00025271172914168954
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.00016389027344606197
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 7,
+              "count": 16,
+              "accuracy": 0.4375,
+              "answer_nll": 0.6439096503114948
+            },
+            "oracle_kv": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0015212828754253376
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.002126811547592903
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 8,
+              "count": 16,
+              "accuracy": 0.5,
+              "answer_nll": 0.530014183789414
+            },
+            "oracle_kv": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0009832576070039067
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0005569396156109482
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 2,
+              "count": 16,
+              "accuracy": 0.125,
+              "answer_nll": 1.0851290225982666
+            },
+            "oracle_kv": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0022096716735783653
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0025685530999908224
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 6,
+              "count": 16,
+              "accuracy": 0.375,
+              "answer_nll": 0.8799346455683311
+            },
+            "oracle_kv": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0015775179672345985
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0007869448357572159
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/oracle-kv-readout-20261114-01",
+  "manifest_sha256": "d663beec98a8c4f333bbce8e3be66af4f3c158d4275374b4ff10d60e7db7750d",
+  "interpretation": "Exploratory oracle intervention at all full-attention layers during questions/answers, with full prefix computation retained. It is not a learned/efficient selector or evidence that recurrence alone lost the answer. One initialization and eight base cases; clustered intervals are conditional and unadjusted."
+}

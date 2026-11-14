@@ -1,0 +1,82 @@
+{
+  "status": "completed",
+  "started_utc": "2026-11-13T21:41:42.117635+00:00",
+  "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-question-trained-20261114-01",
+  "mode": "local",
+  "checkpoint_sha256": "613d5d757584845332b0b03d03f4b444aa73afe6c8597abc68fb8b614ff80b69",
+  "data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+  "completed_ablations": [
+    "all_enabled",
+    "gdn_keys_only",
+    "gdn_gates_only",
+    "attention_and_gdn_keys",
+    "attention_and_gdn_gates",
+    "all_disabled"
+  ],
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/controllers.py": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9",
+    "sas_memory/generalization_tasks.py": "e4c8ad0b6611378192d2772c3f73775eb339259647b6081f8bf2da4bc8b0eacb",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/metrics.py": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/stress_tasks.py": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "scripts/run_controller_trial.py": "69230ea519774a7d17bc890cfc5dae43069977d5add285a0bc9b75ff9f7d566f",
+    "scripts/run_controller_ablations.py": "a811bb0e93fc69cf098b79eb18579ff77b50d1b5390c21d0c8c3d3ae4f9368d2"
+  },
+  "interpretation": "Post-training branch interventions; disablement is not matched-budget retraining.",
+  "temporal": false,
+  "gdn_components": true,
+  "planned_ablations": {
+    "all_enabled": [
+      "gdn_0_a",
+      "gdn_0_b",
+      "gdn_0_key",
+      "gdn_1_a",
+      "gdn_1_b",
+      "gdn_1_key",
+      "gdn_2_a",
+      "gdn_2_b",
+      "gdn_2_key",
+      "attention_q_proj",
+      "attention_k_proj"
+    ],
+    "gdn_keys_only": [
+      "gdn_0_key",
+      "gdn_1_key",
+      "gdn_2_key"
+    ],
+    "gdn_gates_only": [
+      "gdn_0_a",
+      "gdn_0_b",
+      "gdn_1_a",
+      "gdn_1_b",
+      "gdn_2_a",
+      "gdn_2_b"
+    ],
+    "attention_and_gdn_keys": [
+      "attention_q_proj",
+      "attention_k_proj",
+      "gdn_0_key",
+      "gdn_1_key",
+      "gdn_2_key"
+    ],
+    "attention_and_gdn_gates": [
+      "attention_q_proj",
+      "attention_k_proj",
+      "gdn_0_a",
+      "gdn_0_b",
+      "gdn_1_a",
+      "gdn_1_b",
+      "gdn_2_a",
+      "gdn_2_b"
+    ],
+    "all_disabled": []
+  },
+  "all_enabled_max_nll_replay_error": 0.0,
+  "all_disabled_max_nll_replay_error": 0.0,
+  "completed_utc": "2026-11-13T21:44:55.999660+00:00"
+}

@@ -1,0 +1,15 @@
+test_absolute_row_timing_inactive_rows_and_selected_suppression_required (tests.test_fresh_token_timing.TimingAuditTests.test_absolute_row_timing_inactive_rows_and_selected_suppression_required) ... ok
+test_actual_registered_scope_keeps_all32references_all_layers_and_repair (tests.test_fresh_token_timing.TimingAuditTests.test_actual_registered_scope_keeps_all32references_all_layers_and_repair) ... ok
+test_complete_preceding_question_memory_and_only_final_layer_identity_required (tests.test_fresh_token_timing.TimingAuditTests.test_complete_preceding_question_memory_and_only_final_layer_identity_required) ... ok
+test_even_consistent_small_first_logit_drift_cannot_replace_prior_reference (tests.test_fresh_token_timing.TimingAuditTests.test_even_consistent_small_first_logit_drift_cannot_replace_prior_reference) ... ok
+test_missing_case_condition_timing_or_probability_layer_is_rejected (tests.test_fresh_token_timing.TimingAuditTests.test_missing_case_condition_timing_or_probability_layer_is_rejected) ... ok
+test_unselected_or_other_question_probabilities_may_change (tests.test_fresh_token_timing.TimingAuditTests.test_unselected_or_other_question_probabilities_may_change) ... ok
+test_actual_selected_and_other_question_probabilities_are_observed_separately (tests.test_fresh_token_timing.TimingHookTests.test_actual_selected_and_other_question_probabilities_are_observed_separately) ... ok
+test_all_history_identity_invalid_timing_and_exception_cleanup (tests.test_fresh_token_timing.TimingHookTests.test_all_history_identity_invalid_timing_and_exception_cleanup) ... ok
+test_last_token_mask_preserves_preceding_question_and_cached_answer_row (tests.test_fresh_token_timing.TimingHookTests.test_last_token_mask_preserves_preceding_question_and_cached_answer_row) ... ok
+test_only_registered_question_rows_are_masked_and_future_rows_are_natural (tests.test_fresh_token_timing.TimingHookTests.test_only_registered_question_rows_are_masked_and_future_rows_are_natural) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 12.897s
+
+OK

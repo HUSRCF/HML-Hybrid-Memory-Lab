@@ -1,0 +1,78 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<03:06,  1.71it/s]Loading weights:   8%|▊         | 25/320 [00:00<00:06, 48.09it/s]Loading weights:  13%|█▎        | 41/320 [00:00<00:03, 71.49it/s]Loading weights:  19%|█▉        | 61/320 [00:00<00:02, 101.65it/s]Loading weights:  25%|██▌       | 80/320 [00:01<00:02, 117.55it/s]Loading weights:  31%|███       | 99/320 [00:01<00:01, 132.14it/s]Loading weights:  40%|████      | 128/320 [00:01<00:01, 168.02it/s]Loading weights:  46%|████▋     | 148/320 [00:01<00:01, 168.58it/s]Loading weights:  53%|█████▎    | 171/320 [00:01<00:00, 182.37it/s]Loading weights:  61%|██████    | 195/320 [00:01<00:00, 191.65it/s]Loading weights:  68%|██████▊   | 216/320 [00:01<00:00, 188.09it/s]Loading weights:  74%|███████▍  | 238/320 [00:01<00:00, 190.14it/s]Loading weights:  81%|████████  | 258/320 [00:01<00:00, 180.02it/s]Loading weights:  87%|████████▋ | 279/320 [00:02<00:00, 186.50it/s]Loading weights:  95%|█████████▍| 303/320 [00:02<00:00, 180.08it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 142.97it/s]
+{"event": "training", "arm": "shared", "step": 48, "loss": 0.0020611609797924757}
+{"event": "training", "arm": "shared", "step": 96, "loss": 0.0027101495943497866}
+{"event": "training", "arm": "shared", "step": 144, "loss": 0.0008641302119940519}
+{"event": "training", "arm": "shared", "step": 192, "loss": 0.0003617066686274484}
+{"event": "training", "arm": "shared", "step": 240, "loss": 0.0012456057011149824}
+{"event": "training", "arm": "shared", "step": 288, "loss": 0.00035315619606990367}
+{"event": "training", "arm": "shared", "step": 336, "loss": 0.0002574893551354762}
+{"event": "training", "arm": "shared", "step": 384, "loss": 0.0001468635855417233}
+{"event": "training", "arm": "shared", "step": 432, "loss": 0.24437162982212612}
+{"event": "validation", "arm": "shared", "examples": 108}
+{"event": "validation", "arm": "shared", "examples": 216}
+{"event": "validation", "arm": "shared", "examples": 324}
+{"event": "validation", "arm": "shared", "examples": 432}
+{"event": "final_evaluated", "arm": "shared", "correct": 429, "examples": 432}
+{"event": "permuted_validation", "arm": "shared", "examples": 108}
+{"event": "permuted_validation", "arm": "shared", "examples": 216}
+{"event": "permuted_validation", "arm": "shared", "examples": 324}
+{"event": "permuted_validation", "arm": "shared", "examples": 432}
+{"event": "permuted_evaluated", "arm": "shared", "correct": 428, "examples": 432}
+{"event": "training", "arm": "independent", "step": 48, "loss": 0.0015194321749731898}
+{"event": "training", "arm": "independent", "step": 96, "loss": 0.002375685522565618}
+{"event": "training", "arm": "independent", "step": 144, "loss": 0.0014436753408517689}
+{"event": "training", "arm": "independent", "step": 192, "loss": 0.0002969456108985469}
+{"event": "training", "arm": "independent", "step": 240, "loss": 0.0007555641641374677}
+{"event": "training", "arm": "independent", "step": 288, "loss": 0.000182010538992472}
+{"event": "training", "arm": "independent", "step": 336, "loss": 0.0007445357186952606}
+{"event": "training", "arm": "independent", "step": 384, "loss": 0.0002437154034851119}
+{"event": "training", "arm": "independent", "step": 432, "loss": 0.2582694367010845}
+{"event": "validation", "arm": "independent", "examples": 108}
+{"event": "validation", "arm": "independent", "examples": 216}
+{"event": "validation", "arm": "independent", "examples": 324}
+{"event": "validation", "arm": "independent", "examples": 432}
+{"event": "final_evaluated", "arm": "independent", "correct": 429, "examples": 432}
+{"event": "permuted_validation", "arm": "independent", "examples": 108}
+{"event": "permuted_validation", "arm": "independent", "examples": 216}
+{"event": "permuted_validation", "arm": "independent", "examples": 324}
+{"event": "permuted_validation", "arm": "independent", "examples": 432}
+{"event": "permuted_evaluated", "arm": "independent", "correct": 428, "examples": 432}
+{"event": "training", "arm": "local", "step": 48, "loss": 0.0004349796799942851}
+{"event": "training", "arm": "local", "step": 96, "loss": 0.0001852925997809507}
+{"event": "training", "arm": "local", "step": 144, "loss": 0.0006301524490481825}
+{"event": "training", "arm": "local", "step": 192, "loss": 9.351222615805455e-05}
+{"event": "training", "arm": "local", "step": 240, "loss": 7.64690776122734e-05}
+{"event": "training", "arm": "local", "step": 288, "loss": 1.4230300962481124e-05}
+{"event": "training", "arm": "local", "step": 336, "loss": 0.00010073707016999833}
+{"event": "training", "arm": "local", "step": 384, "loss": 0.00012199746106489329}
+{"event": "training", "arm": "local", "step": 432, "loss": 0.6301736633722612}
+{"event": "validation", "arm": "local", "examples": 108}
+{"event": "validation", "arm": "local", "examples": 216}
+{"event": "validation", "arm": "local", "examples": 324}
+{"event": "validation", "arm": "local", "examples": 432}
+{"event": "final_evaluated", "arm": "local", "correct": 428, "examples": 432}
+{"event": "permuted_validation", "arm": "local", "examples": 108}
+{"event": "permuted_validation", "arm": "local", "examples": 216}
+{"event": "permuted_validation", "arm": "local", "examples": 324}
+{"event": "permuted_validation", "arm": "local", "examples": 432}
+{"event": "permuted_evaluated", "arm": "local", "correct": 427, "examples": 432}
+{"event": "training", "arm": "local_question", "step": 48, "loss": 0.0005238356243353337}
+{"event": "training", "arm": "local_question", "step": 96, "loss": 4.754754809255246e-05}
+{"event": "training", "arm": "local_question", "step": 144, "loss": 2.6299725959688658e-05}
+{"event": "training", "arm": "local_question", "step": 192, "loss": 0.00010142221435671672}
+{"event": "training", "arm": "local_question", "step": 240, "loss": 0.0002603711327537894}
+{"event": "training", "arm": "local_question", "step": 288, "loss": 0.00020729483185277786}
+{"event": "training", "arm": "local_question", "step": 336, "loss": 5.5295568017754704e-05}
+{"event": "training", "arm": "local_question", "step": 384, "loss": 0.0002492316998541355}
+{"event": "training", "arm": "local_question", "step": 432, "loss": 0.2790546924661612}
+{"event": "validation", "arm": "local_question", "examples": 108}
+{"event": "validation", "arm": "local_question", "examples": 216}
+{"event": "validation", "arm": "local_question", "examples": 324}
+{"event": "validation", "arm": "local_question", "examples": 432}
+{"event": "final_evaluated", "arm": "local_question", "correct": 428, "examples": 432}
+{"event": "permuted_validation", "arm": "local_question", "examples": 108}
+{"event": "permuted_validation", "arm": "local_question", "examples": 216}
+{"event": "permuted_validation", "arm": "local_question", "examples": 324}
+{"event": "permuted_validation", "arm": "local_question", "examples": 432}
+{"event": "permuted_evaluated", "arm": "local_question", "correct": 418, "examples": 432}

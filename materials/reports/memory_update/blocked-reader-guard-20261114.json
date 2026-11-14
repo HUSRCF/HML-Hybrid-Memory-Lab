@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "arm": "question_only",
+      "unsupported_policy_rejected_before_output": true
+    },
+    {
+      "arm": "all_tokens",
+      "unsupported_policy_rejected_before_output": true
+    }
+  ]
+}

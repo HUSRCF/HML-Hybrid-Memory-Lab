@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "shape": [
+    1,
+    128,
+    2,
+    128
+  ],
+  "losses": {
+    "torch": 7.897464456618764e-06,
+    "fla": 7.79253605287522e-06
+  },
+  "comparisons": {
+    "query": {
+      "relative_l2_error": 0.0069570052437484264,
+      "cosine": 0.9999788403511047,
+      "max_abs_error": 2.9802322387695312e-08,
+      "finite": true
+    },
+    "key": {
+      "relative_l2_error": 0.0071948133409023285,
+      "cosine": 0.9999770522117615,
+      "max_abs_error": 2.9802322387695312e-08,
+      "finite": true
+    },
+    "value": {
+      "relative_l2_error": 0.005387404002249241,
+      "cosine": 0.9999855160713196,
+      "max_abs_error": 1.4901161193847656e-08,
+      "finite": true
+    },
+    "g": {
+      "relative_l2_error": 0.004619688261300325,
+      "cosine": 0.999993622303009,
+      "max_abs_error": 2.2033169955193443e-08,
+      "finite": true
+    },
+    "beta": {
+      "relative_l2_error": 0.005839439108967781,
+      "cosine": 0.9999829530715942,
+      "max_abs_error": 1.4901161193847656e-08,
+      "finite": true
+    }
+  },
+  "tolerance": {
+    "relative_l2_error": 0.03,
+    "cosine_min": 0.995
+  },
+  "scope": "Two chunks, normalized q/k, gradients for q/k/v/decay/write gates and final recurrent state."
+}

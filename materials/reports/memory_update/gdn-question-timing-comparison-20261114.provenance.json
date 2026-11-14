@@ -1,0 +1,17 @@
+{
+  "status": "source_reports_and_visually_checked_figure_recorded",
+  "recorded_utc": "2026-11-14T06:08:25.209114+00:00",
+  "files_sha256": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/gdn-question-timing-20261114.json": "1ea60978eeac9414ab0211d4e3ad668c080267724b00706fba9bcb745623825e",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/gdn-question-timing-20261114.source.py": "87a06f9d398cfc8275ede9cf461820ddf9c2997495fc60c81e87c76af41625fc",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/gdn-question-timing-comparison-20261114.json": "742b776113eea7568d7875c25930cf5d8ecaf471433777597ceed03bf831932c",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/gdn-question-timing-comparison-20261114.source.py": "804ddf6949107a35e07fdfbbe70f348a54b9c9643cb0dfe1a295fbdb2a8c78b3",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/gdn-question-timing-comparison-20261114.png": "a7ff9eec0465dd50d78b5bab7e371ca587305ba45f10183aeb65b8002546fe87",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/gdn-question-timing-comparison-20261114.pdf": "4c5f209c4dd0aaf532b0eaf0053942aa2806545aa4360449d99a8002469d7588"
+  },
+  "analysis_source_sha256": "804ddf6949107a35e07fdfbbe70f348a54b9c9643cb0dfe1a295fbdb2a8c78b3",
+  "manifest_sha256": "a4df590b2b104dd4a87c9ff7c38b82d2f45a6df67a5a02db3434b084108c67da",
+  "reference_manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+  "paired_initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+  "visual_inspection": "Viewed the exported PNG; all three panels, two adaptation-timing labels, raw-count annotations, common zero-baseline percentage axes and twelve-stream limitation caption are legible without overlap."
+}

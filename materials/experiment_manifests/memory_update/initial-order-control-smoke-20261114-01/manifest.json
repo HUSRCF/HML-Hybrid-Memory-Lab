@@ -1,0 +1,5338 @@
+{
+  "status": "completed",
+  "started_utc": "2026-11-14T02:44:03.673774+00:00",
+  "training": false,
+  "smoke": true,
+  "pid": 4077254,
+  "plan_sha256": "02d5a8a047119f35ae94a82373af0aa4a0e6bac243556490c7b2bf954b7ab375",
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/calibration.py": "922499d57024c280f3ab93de1dac9ef4a3d611a216f2c1ae4af7fa7862ef7a06",
+    "sas_memory/controllers.py": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9",
+    "sas_memory/counterbalance_data.py": "88e38ff2901e652335e23ff5decd4bb69d59481a58d27f7284b99fcdf47d176c",
+    "sas_memory/counterbalance_tasks.py": "914523e92d5d1e657646d0e6d179c86845af2605fc6f7d8ab34794181fd6bf1d",
+    "sas_memory/gdn_query_control.py": "b65468349959abd3ebe6a67562e720a13d1590aa37b58803b8cb0b98db026231",
+    "sas_memory/generalization_tasks.py": "697a6fdc1e9d448fdfd5b7fa6e22adca40477d35c6e70f7aaebf648ef8b608fd",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/kv_readout.py": "2927df0cfdaf4972287b83914092e2224eacfc3ccf9d0508e03a64e85e919b8b",
+    "sas_memory/metrics.py": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e",
+    "sas_memory/readout_controls.py": "c15b4e3d4f4de2ce09a3c559dae64be8d849f472d6b02b9f70dd165c2cf73afa",
+    "sas_memory/record_kv_ablation.py": "37c694da6bfb100fba6498df3a4b09ae89dde5181b55b1b17d80585e873f6093",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/semantic_metrics.py": "3f1383a7aed4d72558d567894532ddfa1486de690849c9eea0c73215aaca4efe",
+    "sas_memory/stress_tasks.py": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "scripts/run_initial_order_control.py": "70bc7cb91f534ba4c837b85c413684669a64ed26290d3f3f32dff3b5d3c4dc8e",
+    "scripts/analyze_initial_order_control.py": "7e4fe503fd34ea7c81915c97b5ee5fa9c6e67105bda9c685e6733e85d8625240",
+    "scripts/prepare_initial_order_control.py": "b34346ad0f90e7bd22539e9fc308259ef230d2385f288e61c1b991cd6e0ebc3b",
+    "scripts/analyze_paired_semantic_controllers.py": "1796fd3d055d159c716dfa88e8925a52c98714baa12e9e2849fc5115cbffc23d",
+    "scripts/analyze_paired_semantic_probe.py": "ddbc998afe4cfdbca4b9245503bd75f419e74a4c136e2040ba540f80fae1d4c7",
+    "scripts/prepare_paired_semantic_updates.py": "27cf1b60a66f9aebaa4b6ce519344bf45930f1b9bf2dde3998e6d59fcb2356fa",
+    "scripts/compare_paired_semantic_controllers.py": "871abbcc2fdb3c691e6a5af29f27b68eeef60f9a85de88a30045a054a82b2e75",
+    "scripts/analyze_blocked_reader_adaptation.py": "a23c1d33644f906b1a521fdb44a68d5e6dff86f5c11e094387eaa3fb085f94f5",
+    "scripts/analyze_controller_trial.py": "aee986c912b7f3ada5de142978ef10793f16a7753ffdc8e33733682767137e41",
+    "scripts/run_controller_trial.py": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262",
+    "scripts/run_controller_confirmation.py": "6d141354bb268f4e389cdffab823a5010241062cd161820f1078eba6bc28c5de",
+    "scripts/run_oracle_kv_readout.py": "45f0cf4760af5fdfa42e473c80aa5dc6fbf04d0a71d23b7927b6310e06c8e886",
+    "scripts/check_record_attention_weights.py": "952d6b00870e170ab6d3cf210b6d150a761c38133257782cc8e63a0d5a4af47f",
+    "scripts/run_blocked_reader_budget_calibration.py": "e691b8573f872788e958133fc52248cbe40d85e20218c08552948b1f061cb6ab"
+  },
+  "training_reference_audit": {
+    "status": "completed_and_audited",
+    "source_run": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-controllers-20261114-01",
+    "manifest_sha256": "601e20a31826ea822da2810231cc5e18da74817adab4d17a10c4218c6c01e965",
+    "arms": {
+      "shared": {
+        "parameters": 694272,
+        "checkpoints_audited": 3,
+        "metrics": {
+          "examples": 432,
+          "correct": 429,
+          "accuracy": 0.9930555555555556,
+          "answer_nll": 0.008140873856510316,
+          "four_value_query_groups": {
+            "groups": 108,
+            "all_four_correct": 105,
+            "more_than_one_correct": 108,
+            "correct_per_group_histogram": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 3,
+              "4": 105
+            }
+          },
+          "joint_roles": {
+            "contexts": 144,
+            "all_three_correct": 141
+          },
+          "all_twelve_value_variant_groups": {
+            "groups": 36,
+            "all_twelve_correct": 33
+          },
+          "cells": [
+            {
+              "family": "accumulate",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.8728769545220228e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 5.94849016124499e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.7293370749248425e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00012579311320829825,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 6,
+              "answer_nll": 0.20038089326893288,
+              "four_value_groups": 2,
+              "all_four_correct": 0
+            },
+            {
+              "family": "accumulate",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 4.666896469037359e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00020845631782625182,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 7,
+              "answer_nll": 0.20938755944371223,
+              "four_value_groups": 2,
+              "all_four_correct": 1
+            },
+            {
+              "family": "accumulate",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 4.1568225242372137e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 7.267631584303065e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 3.2771700261946535e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.272882905648051e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00022690521533756206,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.004693844268331304,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00016755390424805228,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00014967409333621617,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.005148526911701386,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 7.127790407442565e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00013247475665896977,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 5.046298792876769e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 3.723083606625247e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.000132694237739391,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.004141530918180555,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0005971859536657576,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00014327032962076677,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.005849558341045243,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0005221912051638355,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 6.417399345082231e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 4.3708619159588125e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 3.0387739874034498e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 6.0479236102158516e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0011037946860597003,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 7.169466425693827e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 4.6285107600851916e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00017803626178647391,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0001389538968699829,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00011427610631168743,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 4.237739085510839e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.7188972429333564e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00015855839198290292,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0030456909153144807,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00010958885983806492,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0001294098677438645,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0007496390244341455,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 7.39873376005562e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00010208114508714061,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 3.040262633173067e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.90963907900732e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00011244470351812197,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 3.285135608166456e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.8629470155768406e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 8.631461105323979e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0003199103472676749,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0001782214458216913,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            }
+          ],
+          "before_after_preservation": [
+            {
+              "family": "accumulate",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "accumulate",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "dependent_swap",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "dependent_swap",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "duplicate_set",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "duplicate_set",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "independent_swap",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "independent_swap",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "pairs": 8,
+              "before_correct": 8,
+              "after_correct": 8,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            }
+          ],
+          "preservation_regressions": [],
+          "order_pairs": [
+            {
+              "family": "accumulate",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "accumulate",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 5,
+              "control_correct": 6,
+              "treatment_correct": 7,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 8,
+              "predicted_unchanged_pairs": 0
+            },
+            {
+              "family": "accumulate",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 8,
+              "predicted_unchanged_pairs": 0
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "dependent_swap",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "dependent_swap",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 8,
+              "predicted_unchanged_pairs": 0
+            },
+            {
+              "family": "dependent_swap",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "duplicate_set",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "duplicate_set",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "duplicate_set",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "independent_swap",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "independent_swap",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "independent_swap",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 8,
+              "predicted_unchanged_pairs": 0
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            }
+          ],
+          "interpretation": "Functional readout diagnostics. Equal/different wrong predictions are not semantic success. Before/after lengths, positions and downstream computation differ, so regressions do not isolate recurrent write damage."
+        },
+        "teacher_train_fit": {
+          "examples": 864,
+          "teacher_loss_including_newline": 0.0038914720042818635,
+          "teacher_numeric_tokens_correct": 2591,
+          "teacher_numeric_tokens": 2592,
+          "teacher_newline_correct": 864
+        },
+        "evaluation_summary_sha256": "d590eb62a23e220fa3a15e9b0555e4a2eab1f623e3e412d6bfa77b5cc93aa8d1"
+      },
+      "independent": {
+        "parameters": 696384,
+        "checkpoints_audited": 3,
+        "metrics": {
+          "examples": 432,
+          "correct": 429,
+          "accuracy": 0.9930555555555556,
+          "answer_nll": 0.007468051557751736,
+          "four_value_query_groups": {
+            "groups": 108,
+            "all_four_correct": 106,
+            "more_than_one_correct": 108,
+            "correct_per_group_histogram": {
+              "0": 0,
+              "1": 0,
+              "2": 1,
+              "3": 1,
+              "4": 106
+            }
+          },
+          "joint_roles": {
+            "contexts": 144,
+            "all_three_correct": 141
+          },
+          "all_twelve_value_variant_groups": {
+            "groups": 36,
+            "all_twelve_correct": 34
+          },
+          "cells": [
+            {
+              "family": "accumulate",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.3488793582752503e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 7.254765326554964e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.7760035057629768e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00010846873313615409,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 7,
+              "answer_nll": 0.11200797255150974,
+              "four_value_groups": 2,
+              "all_four_correct": 1
+            },
+            {
+              "family": "accumulate",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 7.30888868929469e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0032834898738656193,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 6,
+              "answer_nll": 0.24766562568644682,
+              "four_value_groups": 2,
+              "all_four_correct": 1
+            },
+            {
+              "family": "accumulate",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 7.519008280117608e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 7.669112649940264e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.3210591128493736e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.7071537664984742e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00013951241999166086,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.004118947258878809,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 8.639239058538806e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 9.21667348544967e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.006473527789542762,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 4.989200776132444e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00013951701051458562,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 4.671305032388773e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 3.21553510123825e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 8.264580962228744e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.004865532805221544,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0002711893193918513,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 8.640010128146969e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.006437904206298602,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00026653391190241865,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 5.7414362951628085e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 3.431152132786034e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.2778514903620817e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 5.145453087607166e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0020641381306631956,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 7.233891195331428e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 4.5156515322256986e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0005224219700418568,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0001744223354762653,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0001284296564942148,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 3.505634003886371e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.102016416453504e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00011925345703881855,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.009461341115335623,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 6.590464802987601e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00011797401384683326,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0025371722537480914,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 5.265268100629328e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00010238813062339129,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.711450497372425e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.3940739993122406e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00010493100535313715,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 3.0164156366178453e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.299205849946399e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 7.745457514829468e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0005377157879896307,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00012120631739283756,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            }
+          ],
+          "before_after_preservation": [
+            {
+              "family": "accumulate",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "accumulate",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "dependent_swap",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "dependent_swap",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "duplicate_set",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "duplicate_set",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "independent_swap",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "independent_swap",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "pairs": 8,
+              "before_correct": 8,
+              "after_correct": 8,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            }
+          ],
+          "preservation_regressions": [],
+          "order_pairs": [
+            {
+              "family": "accumulate",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "accumulate",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 5,
+              "control_correct": 7,
+              "treatment_correct": 6,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 8,
+              "predicted_unchanged_pairs": 0
+            },
+            {
+              "family": "accumulate",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 8,
+              "predicted_unchanged_pairs": 0
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "dependent_swap",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "dependent_swap",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 8,
+              "predicted_unchanged_pairs": 0
+            },
+            {
+              "family": "dependent_swap",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "duplicate_set",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "duplicate_set",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "duplicate_set",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "independent_swap",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "independent_swap",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "independent_swap",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 8,
+              "predicted_unchanged_pairs": 0
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            }
+          ],
+          "interpretation": "Functional readout diagnostics. Equal/different wrong predictions are not semantic success. Before/after lengths, positions and downstream computation differ, so regressions do not isolate recurrent write damage."
+        },
+        "teacher_train_fit": {
+          "examples": 864,
+          "teacher_loss_including_newline": 0.002333968084014015,
+          "teacher_numeric_tokens_correct": 2591,
+          "teacher_numeric_tokens": 2592,
+          "teacher_newline_correct": 864
+        },
+        "evaluation_summary_sha256": "f71a1c9b35960f582dbaa9b3e0d7532eeb9eba356981642067ce5f78c78f59db"
+      },
+      "local": {
+        "parameters": 689216,
+        "checkpoints_audited": 3,
+        "metrics": {
+          "examples": 432,
+          "correct": 391,
+          "accuracy": 0.9050925925925926,
+          "answer_nll": 0.09410359328375094,
+          "four_value_query_groups": {
+            "groups": 108,
+            "all_four_correct": 95,
+            "more_than_one_correct": 99,
+            "correct_per_group_histogram": {
+              "0": 8,
+              "1": 1,
+              "2": 2,
+              "3": 2,
+              "4": 95
+            }
+          },
+          "joint_roles": {
+            "contexts": 144,
+            "all_three_correct": 103
+          },
+          "all_twelve_value_variant_groups": {
+            "groups": 36,
+            "all_twelve_correct": 23
+          },
+          "cells": [
+            {
+              "family": "accumulate",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0001368228325494177,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0002642076306074159,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00010577100632265986,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.000496157573555441,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 1,
+              "answer_nll": 0.633842783048749,
+              "four_value_groups": 2,
+              "all_four_correct": 0
+            },
+            {
+              "family": "accumulate",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0004689892327102522,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0006584338480024599,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 0,
+              "answer_nll": 0.552044190466404,
+              "four_value_groups": 2,
+              "all_four_correct": 0
+            },
+            {
+              "family": "accumulate",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00026300793009189266,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0002740303007158218,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0001339938559491808,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 6.532150867618232e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.007165931940714169,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0005561879273348799,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0019690742289337018,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0001678917760727927,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 6,
+              "answer_nll": 0.1522292186903845,
+              "four_value_groups": 2,
+              "all_four_correct": 1
+            },
+            {
+              "family": "copy",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0003932013035713074,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 6,
+              "answer_nll": 0.15590751920414428,
+              "four_value_groups": 2,
+              "all_four_correct": 1
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00015504457041970454,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 9.508805518028869e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0006445697654271498,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.011361883400240913,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00034519904875196517,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0005991732220233341,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.021470152287899207,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0003426203693379648,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00010229663863962439,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0004927828122163191,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00014731140799995046,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 6.849071905890014e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 4,
+              "answer_nll": 0.8565678086888511,
+              "four_value_groups": 2,
+              "all_four_correct": 1
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0005211765310377814,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 8.505257634775869e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 4,
+              "answer_nll": 0.3230485727035557,
+              "four_value_groups": 2,
+              "all_four_correct": 1
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0003180104698306726,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0002085542534283983,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0001618376718397485,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 8.39188769532484e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00016492994351816984,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 3,
+              "answer_nll": 1.2903059689948957,
+              "four_value_groups": 2,
+              "all_four_correct": 0
+            },
+            {
+              "family": "independent_swap",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0002668254407277952,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00018493770645970167,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 4,
+              "answer_nll": 0.6405435189759979,
+              "four_value_groups": 2,
+              "all_four_correct": 1
+            },
+            {
+              "family": "independent_swap",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00037507404582963016,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00028694676014614134,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00015259231440722942,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 7.031270433799364e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0019106055200002934,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.000261790048777281,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00010909533739322796,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0006228353552918027,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 3,
+              "answer_nll": 0.42204400066596764,
+              "four_value_groups": 2,
+              "all_four_correct": 0
+            },
+            {
+              "family": "overwrite",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0003323251342711349,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            }
+          ],
+          "before_after_preservation": [
+            {
+              "family": "accumulate",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "accumulate",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "dependent_swap",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 12,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 4
+            },
+            {
+              "family": "dependent_swap",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "duplicate_set",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "duplicate_set",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "independent_swap",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "independent_swap",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "pairs": 8,
+              "before_correct": 8,
+              "after_correct": 8,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            }
+          ],
+          "preservation_regressions": [],
+          "order_pairs": [
+            {
+              "family": "accumulate",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "accumulate",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 0,
+              "control_correct": 1,
+              "treatment_correct": 0,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 7,
+              "predicted_unchanged_pairs": 1
+            },
+            {
+              "family": "accumulate",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 6,
+              "control_correct": 8,
+              "treatment_correct": 6,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 6,
+              "predicted_unchanged_pairs": 2
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "dependent_swap",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "dependent_swap",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 8,
+              "predicted_unchanged_pairs": 0
+            },
+            {
+              "family": "dependent_swap",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "duplicate_set",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "duplicate_set",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 4,
+              "control_correct": 4,
+              "treatment_correct": 4,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 1,
+              "predicted_unchanged_pairs": 7
+            },
+            {
+              "family": "duplicate_set",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "independent_swap",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "independent_swap",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 3,
+              "control_correct": 3,
+              "treatment_correct": 4,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 2,
+              "predicted_unchanged_pairs": 6
+            },
+            {
+              "family": "independent_swap",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 3,
+              "control_correct": 8,
+              "treatment_correct": 3,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 5,
+              "predicted_unchanged_pairs": 3
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            }
+          ],
+          "interpretation": "Functional readout diagnostics. Equal/different wrong predictions are not semantic success. Before/after lengths, positions and downstream computation differ, so regressions do not isolate recurrent write damage."
+        },
+        "teacher_train_fit": {
+          "examples": 864,
+          "teacher_loss_including_newline": 0.048664089639340054,
+          "teacher_numeric_tokens_correct": 2528,
+          "teacher_numeric_tokens": 2592,
+          "teacher_newline_correct": 864
+        },
+        "evaluation_summary_sha256": "1455d81289f0fbb162f5109ff5c35ccf83ca59b94427dfcfea91621717da02d8"
+      },
+      "local_question": {
+        "parameters": 689216,
+        "checkpoints_audited": 3,
+        "metrics": {
+          "examples": 432,
+          "correct": 427,
+          "accuracy": 0.9884259259259259,
+          "answer_nll": 0.012175368286962203,
+          "four_value_query_groups": {
+            "groups": 108,
+            "all_four_correct": 105,
+            "more_than_one_correct": 107,
+            "correct_per_group_histogram": {
+              "0": 0,
+              "1": 1,
+              "2": 0,
+              "3": 2,
+              "4": 105
+            }
+          },
+          "joint_roles": {
+            "contexts": 144,
+            "all_three_correct": 139
+          },
+          "all_twelve_value_variant_groups": {
+            "groups": 36,
+            "all_twelve_correct": 33
+          },
+          "cells": [
+            {
+              "family": "accumulate",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 5.175632319757521e-06,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.3802957861723067e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 7.624340317609798e-06,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 7.787838012518478e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 6,
+              "answer_nll": 0.07743755291206374,
+              "four_value_groups": 2,
+              "all_four_correct": 0
+            },
+            {
+              "family": "accumulate",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 6.75370492899674e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.025312688854683074,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "accumulate",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 5,
+              "answer_nll": 0.525063494220376,
+              "four_value_groups": 2,
+              "all_four_correct": 1
+            },
+            {
+              "family": "accumulate",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.7945378658623667e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.585945922973527e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 8.225304137946901e-06,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 5.682268768699335e-06,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.562934181090289e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.02466928766928807,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.989248509441192e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 4.730282444143086e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0019351450227986788,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "copy",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.3354221487655497e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.0827999782729117e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.5124219582200263e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 8.488612820656272e-06,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.5576451611802138e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00042370336632302497,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.4034317902987823e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.4771826499782037e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.0007323474850030228,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "dependent_swap",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.459554063231432e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.9409565399873827e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.5471977121706004e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 9.243594907578275e-06,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 3.203404465542311e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00017322260161260297,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.3703873037229641e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 2.9815570921224815e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 4.776082323587616e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "duplicate_set",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.8740276270060956e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00021018318155559731,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.922169388990369e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 9.63595437042386e-06,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00034110690360951895,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 4.680636842143334e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.3053177705539081e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 0.00020429785051116292,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 3.997284041664292e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "independent_swap",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.7905687855090946e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "before",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.5407159897525464e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "before",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.4110920725822021e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "before",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.1448818781900627e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "control",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.5670275663145123e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "control",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.5337652977602072e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "control",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 1.0207086991916487e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "treatment",
+              "role": "protected_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 9.293162766728832e-06,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "treatment",
+              "role": "target_current",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 3.711204620534166e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            },
+            {
+              "family": "overwrite",
+              "variant": "treatment",
+              "role": "target_initial",
+              "examples": 8,
+              "correct": 8,
+              "answer_nll": 4.6166243540331685e-05,
+              "four_value_groups": 2,
+              "all_four_correct": 2
+            }
+          ],
+          "before_after_preservation": [
+            {
+              "family": "accumulate",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "accumulate",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "dependent_swap",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "dependent_swap",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "duplicate_set",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "duplicate_set",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "independent_swap",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "independent_swap",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "pairs": 8,
+              "before_correct": 8,
+              "after_correct": 8,
+              "regressions": 0,
+              "rescues": 0
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "pairs": 16,
+              "before_correct": 16,
+              "after_correct": 16,
+              "regressions": 0,
+              "rescues": 0
+            }
+          ],
+          "preservation_regressions": [],
+          "order_pairs": [
+            {
+              "family": "accumulate",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "accumulate",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 4,
+              "control_correct": 6,
+              "treatment_correct": 5,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 8,
+              "predicted_unchanged_pairs": 0
+            },
+            {
+              "family": "accumulate",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "copy",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "copy",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 8,
+              "predicted_unchanged_pairs": 0
+            },
+            {
+              "family": "copy",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "dependent_swap",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "dependent_swap",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 8,
+              "predicted_unchanged_pairs": 0
+            },
+            {
+              "family": "dependent_swap",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "duplicate_set",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "duplicate_set",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "duplicate_set",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "independent_swap",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "independent_swap",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "independent_swap",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "overwrite",
+              "role": "protected_current",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            },
+            {
+              "family": "overwrite",
+              "role": "target_current",
+              "pairs": 8,
+              "gold_change_pairs": 8,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 8,
+              "predicted_unchanged_pairs": 0
+            },
+            {
+              "family": "overwrite",
+              "role": "target_initial",
+              "pairs": 8,
+              "gold_change_pairs": 0,
+              "both_correct": 8,
+              "control_correct": 8,
+              "treatment_correct": 8,
+              "valid_prediction_pairs": 8,
+              "predicted_change_pairs": 0,
+              "predicted_unchanged_pairs": 8
+            }
+          ],
+          "interpretation": "Functional readout diagnostics. Equal/different wrong predictions are not semantic success. Before/after lengths, positions and downstream computation differ, so regressions do not isolate recurrent write damage."
+        },
+        "teacher_train_fit": {
+          "examples": 864,
+          "teacher_loss_including_newline": 0.003733843664154211,
+          "teacher_numeric_tokens_correct": 2586,
+          "teacher_numeric_tokens": 2592,
+          "teacher_newline_correct": 864
+        },
+        "evaluation_summary_sha256": "08a64934f2ab2aae6569c472ba133ce45d76cc11724e82b5e0e9f15ad5f7f3a1"
+      }
+    },
+    "validation_records_audited": 1728,
+    "teacher_train_records_audited": 3456,
+    "native_reference_metrics": {
+      "examples": 432,
+      "correct": 384,
+      "accuracy": 0.8888888888888888,
+      "answer_nll": 0.20064249647713703,
+      "four_value_query_groups": {
+        "groups": 108,
+        "all_four_correct": 86,
+        "more_than_one_correct": 100,
+        "correct_per_group_histogram": {
+          "0": 7,
+          "1": 1,
+          "2": 3,
+          "3": 11,
+          "4": 86
+        }
+      },
+      "joint_roles": {
+        "contexts": 144,
+        "all_three_correct": 98
+      },
+      "all_twelve_value_variant_groups": {
+        "groups": 36,
+        "all_twelve_correct": 17
+      },
+      "cells": [
+        {
+          "family": "accumulate",
+          "variant": "before",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.10029272859295209,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "accumulate",
+          "variant": "before",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.04382671268346409,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "accumulate",
+          "variant": "before",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.023107160697691143,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "accumulate",
+          "variant": "control",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.2082746836046378,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "accumulate",
+          "variant": "control",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 0,
+          "answer_nll": 1.5447532733281453,
+          "four_value_groups": 2,
+          "all_four_correct": 0
+        },
+        {
+          "family": "accumulate",
+          "variant": "control",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.015615121888307234,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "accumulate",
+          "variant": "treatment",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.12608028203248978,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "accumulate",
+          "variant": "treatment",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 0,
+          "answer_nll": 1.3004238605499268,
+          "four_value_groups": 2,
+          "all_four_correct": 0
+        },
+        {
+          "family": "accumulate",
+          "variant": "treatment",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.015554136441399653,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "copy",
+          "variant": "before",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 7,
+          "answer_nll": 0.24762954749166965,
+          "four_value_groups": 2,
+          "all_four_correct": 1
+        },
+        {
+          "family": "copy",
+          "variant": "before",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.01069509657099843,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "copy",
+          "variant": "before",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.0027314177714288235,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "copy",
+          "variant": "control",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 6,
+          "answer_nll": 0.4783085311452548,
+          "four_value_groups": 2,
+          "all_four_correct": 0
+        },
+        {
+          "family": "copy",
+          "variant": "control",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 0,
+          "answer_nll": 0.9198088844617208,
+          "four_value_groups": 2,
+          "all_four_correct": 0
+        },
+        {
+          "family": "copy",
+          "variant": "control",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.05180397443473339,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "copy",
+          "variant": "treatment",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.3986160730322202,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "copy",
+          "variant": "treatment",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 4,
+          "answer_nll": 0.4861610581477483,
+          "four_value_groups": 2,
+          "all_four_correct": 0
+        },
+        {
+          "family": "copy",
+          "variant": "treatment",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.0751284584403038,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "dependent_swap",
+          "variant": "before",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 4,
+          "answer_nll": 0.3823112069318692,
+          "four_value_groups": 2,
+          "all_four_correct": 1
+        },
+        {
+          "family": "dependent_swap",
+          "variant": "before",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.018460670408482354,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "dependent_swap",
+          "variant": "before",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.004875137431857486,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "dependent_swap",
+          "variant": "control",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 7,
+          "answer_nll": 0.19837896463771662,
+          "four_value_groups": 2,
+          "all_four_correct": 1
+        },
+        {
+          "family": "dependent_swap",
+          "variant": "control",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.2207079976797104,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "dependent_swap",
+          "variant": "control",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.11179504295190175,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "dependent_swap",
+          "variant": "treatment",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 7,
+          "answer_nll": 0.18734798518319926,
+          "four_value_groups": 2,
+          "all_four_correct": 1
+        },
+        {
+          "family": "dependent_swap",
+          "variant": "treatment",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.21567196026444435,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "dependent_swap",
+          "variant": "treatment",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.11583469125131766,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "duplicate_set",
+          "variant": "before",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 7,
+          "answer_nll": 0.17178874959548315,
+          "four_value_groups": 2,
+          "all_four_correct": 1
+        },
+        {
+          "family": "duplicate_set",
+          "variant": "before",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.013347609589497248,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "duplicate_set",
+          "variant": "before",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.0026392241513046124,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "duplicate_set",
+          "variant": "control",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.1466800762961308,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "duplicate_set",
+          "variant": "control",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.1988720272978147,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "duplicate_set",
+          "variant": "control",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.06781015545129776,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "duplicate_set",
+          "variant": "treatment",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.0935343752304713,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "duplicate_set",
+          "variant": "treatment",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.1433328197648128,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "duplicate_set",
+          "variant": "treatment",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.08604783813158672,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "independent_swap",
+          "variant": "before",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.15019894391298294,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "independent_swap",
+          "variant": "before",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.026345415661732357,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "independent_swap",
+          "variant": "before",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.00882518848326678,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "independent_swap",
+          "variant": "control",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.2035334731141726,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "independent_swap",
+          "variant": "control",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 7,
+          "answer_nll": 0.2436760999262333,
+          "four_value_groups": 2,
+          "all_four_correct": 1
+        },
+        {
+          "family": "independent_swap",
+          "variant": "control",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 7,
+          "answer_nll": 0.11527371142680447,
+          "four_value_groups": 2,
+          "all_four_correct": 1
+        },
+        {
+          "family": "independent_swap",
+          "variant": "treatment",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.19287018726269403,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "independent_swap",
+          "variant": "treatment",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 5,
+          "answer_nll": 0.26809265092015266,
+          "four_value_groups": 2,
+          "all_four_correct": 0
+        },
+        {
+          "family": "independent_swap",
+          "variant": "treatment",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 7,
+          "answer_nll": 0.1311609335243702,
+          "four_value_groups": 2,
+          "all_four_correct": 1
+        },
+        {
+          "family": "overwrite",
+          "variant": "before",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.16758186866839728,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "overwrite",
+          "variant": "before",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.008238514652475715,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "overwrite",
+          "variant": "before",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.005108890725144496,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "overwrite",
+          "variant": "control",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 6,
+          "answer_nll": 0.22064820428689322,
+          "four_value_groups": 2,
+          "all_four_correct": 1
+        },
+        {
+          "family": "overwrite",
+          "variant": "control",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.014763799961656332,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "overwrite",
+          "variant": "control",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.005915581248700619,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "overwrite",
+          "variant": "treatment",
+          "role": "protected_current",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.18068318193157515,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        },
+        {
+          "family": "overwrite",
+          "variant": "treatment",
+          "role": "target_current",
+          "examples": 8,
+          "correct": 6,
+          "answer_nll": 0.3132232700785001,
+          "four_value_groups": 2,
+          "all_four_correct": 1
+        },
+        {
+          "family": "overwrite",
+          "variant": "treatment",
+          "role": "target_initial",
+          "examples": 8,
+          "correct": 8,
+          "answer_nll": 0.15030736041565737,
+          "four_value_groups": 2,
+          "all_four_correct": 2
+        }
+      ],
+      "before_after_preservation": [
+        {
+          "family": "accumulate",
+          "role": "protected_current",
+          "pairs": 16,
+          "before_correct": 16,
+          "after_correct": 16,
+          "regressions": 0,
+          "rescues": 0
+        },
+        {
+          "family": "accumulate",
+          "role": "target_initial",
+          "pairs": 16,
+          "before_correct": 16,
+          "after_correct": 16,
+          "regressions": 0,
+          "rescues": 0
+        },
+        {
+          "family": "copy",
+          "role": "protected_current",
+          "pairs": 16,
+          "before_correct": 14,
+          "after_correct": 14,
+          "regressions": 1,
+          "rescues": 1
+        },
+        {
+          "family": "copy",
+          "role": "target_initial",
+          "pairs": 16,
+          "before_correct": 16,
+          "after_correct": 16,
+          "regressions": 0,
+          "rescues": 0
+        },
+        {
+          "family": "dependent_swap",
+          "role": "protected_current",
+          "pairs": 16,
+          "before_correct": 8,
+          "after_correct": 14,
+          "regressions": 0,
+          "rescues": 6
+        },
+        {
+          "family": "dependent_swap",
+          "role": "target_initial",
+          "pairs": 16,
+          "before_correct": 16,
+          "after_correct": 16,
+          "regressions": 0,
+          "rescues": 0
+        },
+        {
+          "family": "duplicate_set",
+          "role": "protected_current",
+          "pairs": 16,
+          "before_correct": 14,
+          "after_correct": 16,
+          "regressions": 0,
+          "rescues": 2
+        },
+        {
+          "family": "duplicate_set",
+          "role": "target_initial",
+          "pairs": 16,
+          "before_correct": 16,
+          "after_correct": 16,
+          "regressions": 0,
+          "rescues": 0
+        },
+        {
+          "family": "independent_swap",
+          "role": "protected_current",
+          "pairs": 16,
+          "before_correct": 16,
+          "after_correct": 16,
+          "regressions": 0,
+          "rescues": 0
+        },
+        {
+          "family": "independent_swap",
+          "role": "target_initial",
+          "pairs": 16,
+          "before_correct": 16,
+          "after_correct": 14,
+          "regressions": 2,
+          "rescues": 0
+        },
+        {
+          "family": "overwrite",
+          "role": "protected_current",
+          "pairs": 16,
+          "before_correct": 16,
+          "after_correct": 14,
+          "regressions": 2,
+          "rescues": 0
+        },
+        {
+          "family": "overwrite",
+          "role": "target_current",
+          "pairs": 8,
+          "before_correct": 8,
+          "after_correct": 8,
+          "regressions": 0,
+          "rescues": 0
+        },
+        {
+          "family": "overwrite",
+          "role": "target_initial",
+          "pairs": 16,
+          "before_correct": 16,
+          "after_correct": 16,
+          "regressions": 0,
+          "rescues": 0
+        }
+      ],
+      "preservation_regressions": [
+        {
+          "case_id": "paired-validation-copy-000-v1",
+          "base_case_id": "paired-validation-copy-000",
+          "family": "copy",
+          "value_version": 1,
+          "variant": "control",
+          "role": "protected_current",
+          "answer": "747",
+          "before_generated": "747\n",
+          "after_generated": "477\n"
+        },
+        {
+          "case_id": "paired-validation-independent_swap-000-v2",
+          "base_case_id": "paired-validation-independent_swap-000",
+          "family": "independent_swap",
+          "value_version": 2,
+          "variant": "control",
+          "role": "target_initial",
+          "answer": "353",
+          "before_generated": "353\n",
+          "after_generated": "371\n"
+        },
+        {
+          "case_id": "paired-validation-independent_swap-000-v2",
+          "base_case_id": "paired-validation-independent_swap-000",
+          "family": "independent_swap",
+          "value_version": 2,
+          "variant": "treatment",
+          "role": "target_initial",
+          "answer": "353",
+          "before_generated": "353\n",
+          "after_generated": "371\n"
+        },
+        {
+          "case_id": "paired-validation-overwrite-000-v0",
+          "base_case_id": "paired-validation-overwrite-000",
+          "family": "overwrite",
+          "value_version": 0,
+          "variant": "control",
+          "role": "protected_current",
+          "answer": "323",
+          "before_generated": "323\n",
+          "after_generated": "267\n"
+        },
+        {
+          "case_id": "paired-validation-overwrite-000-v1",
+          "base_case_id": "paired-validation-overwrite-000",
+          "family": "overwrite",
+          "value_version": 1,
+          "variant": "control",
+          "role": "protected_current",
+          "answer": "351",
+          "before_generated": "351\n",
+          "after_generated": "432\n"
+        }
+      ],
+      "order_pairs": [
+        {
+          "family": "accumulate",
+          "role": "protected_current",
+          "pairs": 8,
+          "gold_change_pairs": 0,
+          "both_correct": 8,
+          "control_correct": 8,
+          "treatment_correct": 8,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 0,
+          "predicted_unchanged_pairs": 8
+        },
+        {
+          "family": "accumulate",
+          "role": "target_current",
+          "pairs": 8,
+          "gold_change_pairs": 8,
+          "both_correct": 0,
+          "control_correct": 0,
+          "treatment_correct": 0,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 5,
+          "predicted_unchanged_pairs": 3
+        },
+        {
+          "family": "accumulate",
+          "role": "target_initial",
+          "pairs": 8,
+          "gold_change_pairs": 0,
+          "both_correct": 8,
+          "control_correct": 8,
+          "treatment_correct": 8,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 0,
+          "predicted_unchanged_pairs": 8
+        },
+        {
+          "family": "copy",
+          "role": "protected_current",
+          "pairs": 8,
+          "gold_change_pairs": 0,
+          "both_correct": 6,
+          "control_correct": 6,
+          "treatment_correct": 8,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 2,
+          "predicted_unchanged_pairs": 6
+        },
+        {
+          "family": "copy",
+          "role": "target_current",
+          "pairs": 8,
+          "gold_change_pairs": 8,
+          "both_correct": 0,
+          "control_correct": 0,
+          "treatment_correct": 4,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 3,
+          "predicted_unchanged_pairs": 5
+        },
+        {
+          "family": "copy",
+          "role": "target_initial",
+          "pairs": 8,
+          "gold_change_pairs": 0,
+          "both_correct": 8,
+          "control_correct": 8,
+          "treatment_correct": 8,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 0,
+          "predicted_unchanged_pairs": 8
+        },
+        {
+          "family": "dependent_swap",
+          "role": "protected_current",
+          "pairs": 8,
+          "gold_change_pairs": 0,
+          "both_correct": 7,
+          "control_correct": 7,
+          "treatment_correct": 7,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 1,
+          "predicted_unchanged_pairs": 7
+        },
+        {
+          "family": "dependent_swap",
+          "role": "target_current",
+          "pairs": 8,
+          "gold_change_pairs": 8,
+          "both_correct": 8,
+          "control_correct": 8,
+          "treatment_correct": 8,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 8,
+          "predicted_unchanged_pairs": 0
+        },
+        {
+          "family": "dependent_swap",
+          "role": "target_initial",
+          "pairs": 8,
+          "gold_change_pairs": 0,
+          "both_correct": 8,
+          "control_correct": 8,
+          "treatment_correct": 8,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 0,
+          "predicted_unchanged_pairs": 8
+        },
+        {
+          "family": "duplicate_set",
+          "role": "protected_current",
+          "pairs": 8,
+          "gold_change_pairs": 0,
+          "both_correct": 8,
+          "control_correct": 8,
+          "treatment_correct": 8,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 0,
+          "predicted_unchanged_pairs": 8
+        },
+        {
+          "family": "duplicate_set",
+          "role": "target_current",
+          "pairs": 8,
+          "gold_change_pairs": 0,
+          "both_correct": 8,
+          "control_correct": 8,
+          "treatment_correct": 8,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 0,
+          "predicted_unchanged_pairs": 8
+        },
+        {
+          "family": "duplicate_set",
+          "role": "target_initial",
+          "pairs": 8,
+          "gold_change_pairs": 0,
+          "both_correct": 8,
+          "control_correct": 8,
+          "treatment_correct": 8,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 0,
+          "predicted_unchanged_pairs": 8
+        },
+        {
+          "family": "independent_swap",
+          "role": "protected_current",
+          "pairs": 8,
+          "gold_change_pairs": 0,
+          "both_correct": 8,
+          "control_correct": 8,
+          "treatment_correct": 8,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 0,
+          "predicted_unchanged_pairs": 8
+        },
+        {
+          "family": "independent_swap",
+          "role": "target_current",
+          "pairs": 8,
+          "gold_change_pairs": 0,
+          "both_correct": 5,
+          "control_correct": 7,
+          "treatment_correct": 5,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 2,
+          "predicted_unchanged_pairs": 6
+        },
+        {
+          "family": "independent_swap",
+          "role": "target_initial",
+          "pairs": 8,
+          "gold_change_pairs": 0,
+          "both_correct": 7,
+          "control_correct": 7,
+          "treatment_correct": 7,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 0,
+          "predicted_unchanged_pairs": 8
+        },
+        {
+          "family": "overwrite",
+          "role": "protected_current",
+          "pairs": 8,
+          "gold_change_pairs": 0,
+          "both_correct": 6,
+          "control_correct": 6,
+          "treatment_correct": 8,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 2,
+          "predicted_unchanged_pairs": 6
+        },
+        {
+          "family": "overwrite",
+          "role": "target_current",
+          "pairs": 8,
+          "gold_change_pairs": 8,
+          "both_correct": 6,
+          "control_correct": 8,
+          "treatment_correct": 6,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 6,
+          "predicted_unchanged_pairs": 2
+        },
+        {
+          "family": "overwrite",
+          "role": "target_initial",
+          "pairs": 8,
+          "gold_change_pairs": 0,
+          "both_correct": 8,
+          "control_correct": 8,
+          "treatment_correct": 8,
+          "valid_prediction_pairs": 8,
+          "predicted_change_pairs": 0,
+          "predicted_unchanged_pairs": 8
+        }
+      ],
+      "interpretation": "Functional readout diagnostics. Equal/different wrong predictions are not semantic success. Before/after lengths, positions and downstream computation differ, so regressions do not isolate recurrent write damage."
+    },
+    "interpretation": "Same executable dependence data and LM loss control the training-data explanation. A failed generic shared bottleneck does not refute every possible semantic controller, and a gain does not establish a semantic interface. Question-only success would weaken the claim that changing prefix writes is required."
+  },
+  "completed_models": [
+    "native",
+    "shared",
+    "independent",
+    "local",
+    "local_question"
+  ],
+  "models": {
+    "native": {
+      "full_attention_checks": [
+        {
+          "key": [
+            "paired-validation-copy-001-v0",
+            "control",
+            "target_current"
+          ],
+          "weights": {
+            "3": {
+              "prefill_calls": 1,
+              "cached_calls": 5,
+              "query_rows": 32,
+              "max_record_probability": 0.82421875,
+              "max_record_mass": 0.9816226363182068
+            },
+            "7": {
+              "prefill_calls": 1,
+              "cached_calls": 5,
+              "query_rows": 32,
+              "max_record_probability": 0.74609375,
+              "max_record_mass": 0.991472601890564
+            },
+            "11": {
+              "prefill_calls": 1,
+              "cached_calls": 5,
+              "query_rows": 32,
+              "max_record_probability": 0.79296875,
+              "max_record_mass": 0.9913972616195679
+            },
+            "15": {
+              "prefill_calls": 1,
+              "cached_calls": 5,
+              "query_rows": 32,
+              "max_record_probability": 0.7890625,
+              "max_record_mass": 0.9982713460922241
+            },
+            "19": {
+              "prefill_calls": 1,
+              "cached_calls": 5,
+              "query_rows": 32,
+              "max_record_probability": 0.8671875,
+              "max_record_mass": 0.97974693775177
+            },
+            "23": {
+              "prefill_calls": 1,
+              "cached_calls": 5,
+              "query_rows": 32,
+              "max_record_probability": 0.470703125,
+              "max_record_mass": 0.980835497379303
+            }
+          }
+        },
+        {
+          "key": [
+            "paired-validation-copy-001-v3",
+            "control",
+            "target_current"
+          ],
+          "weights": {
+            "3": {
+              "prefill_calls": 1,
+              "cached_calls": 5,
+              "query_rows": 32,
+              "max_record_probability": 0.796875,
+              "max_record_mass": 0.9822883009910583
+            },
+            "7": {
+              "prefill_calls": 1,
+              "cached_calls": 5,
+              "query_rows": 32,
+              "max_record_probability": 0.8046875,
+              "max_record_mass": 0.9913082122802734
+            },
+            "11": {
+              "prefill_calls": 1,
+              "cached_calls": 5,
+              "query_rows": 32,
+              "max_record_probability": 0.85546875,
+              "max_record_mass": 0.9909348487854004
+            },
+            "15": {
+              "prefill_calls": 1,
+              "cached_calls": 5,
+              "query_rows": 32,
+              "max_record_probability": 0.80078125,
+              "max_record_mass": 0.9894099831581116
+            },
+            "19": {
+              "prefill_calls": 1,
+              "cached_calls": 5,
+              "query_rows": 32,
+              "max_record_probability": 0.875,
+              "max_record_mass": 0.9894000887870789
+            },
+            "23": {
+              "prefill_calls": 1,
+              "cached_calls": 5,
+              "query_rows": 32,
+              "max_record_probability": 0.4765625,
+              "max_record_mass": 0.9779577255249023
+            }
+          }
+        }
+      ],
+      "pre_question_prefix_checks": [],
+      "weights_unchanged": true,
+      "native_restore_exact": true,
+      "metrics": {
+        "examples": 4,
+        "correct": 0,
+        "operational_smoke_only": true
+      },
+      "results_sha256": "59fa5f98372fe62c780dbbe99451aa842a3e843ba26e68f0ec3c3281231ea623"
+    },
+    "shared": {
+      "full_attention_checks": [
+        {
+          "key": [
+            "paired-validation-copy-001-v0",
+            "control",
+            "target_current"
+          ],
+          "weights": {
+            "3": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.7890625,
+              "max_record_mass": 0.9816226363182068
+            },
+            "7": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.87109375,
+              "max_record_mass": 0.991472601890564
+            },
+            "11": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.79296875,
+              "max_record_mass": 0.9913972616195679
+            },
+            "15": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.84375,
+              "max_record_mass": 0.9993340969085693
+            },
+            "19": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.8125,
+              "max_record_mass": 0.9838808178901672
+            },
+            "23": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.48046875,
+              "max_record_mass": 0.9803466796875
+            }
+          }
+        },
+        {
+          "key": [
+            "paired-validation-copy-001-v3",
+            "control",
+            "target_current"
+          ],
+          "weights": {
+            "3": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.890625,
+              "max_record_mass": 0.9822883009910583
+            },
+            "7": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.86328125,
+              "max_record_mass": 0.9913082122802734
+            },
+            "11": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.55859375,
+              "max_record_mass": 0.9925142526626587
+            },
+            "15": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.8046875,
+              "max_record_mass": 1.0005910396575928
+            },
+            "19": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.80859375,
+              "max_record_mass": 0.9786815643310547
+            },
+            "23": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.478515625,
+              "max_record_mass": 0.9794189929962158
+            }
+          }
+        }
+      ],
+      "pre_question_prefix_checks": [],
+      "checkpoint": {
+        "mode": "shared",
+        "rank": 64,
+        "token_policy": "all",
+        "parameters": 694272,
+        "weights": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-controllers-20261114-01/shared/step-000432/controller.safetensors",
+        "weights_sha256": "3140f7f17304de6e568adb6169304558f569744d23a1f5ebb3acaa74bad19c3e"
+      },
+      "state_sha256_before": "97a44b92bf8c106a2f5c237bd001eba1f45964662619e0e0dbc7c9916a23651b",
+      "state_sha256_after": "97a44b92bf8c106a2f5c237bd001eba1f45964662619e0e0dbc7c9916a23651b",
+      "weights_unchanged": true,
+      "native_restore_exact": true,
+      "metrics": {
+        "examples": 4,
+        "correct": 4,
+        "operational_smoke_only": true
+      },
+      "results_sha256": "a134a4f37a971b17751d05c479450019aa9842a3799ac38df0b4898f8a2a066c"
+    },
+    "independent": {
+      "full_attention_checks": [
+        {
+          "key": [
+            "paired-validation-copy-001-v0",
+            "control",
+            "target_current"
+          ],
+          "weights": {
+            "3": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.7890625,
+              "max_record_mass": 0.9816226363182068
+            },
+            "7": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.87109375,
+              "max_record_mass": 0.991472601890564
+            },
+            "11": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.79296875,
+              "max_record_mass": 0.9913972616195679
+            },
+            "15": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.87890625,
+              "max_record_mass": 1.00078284740448
+            },
+            "19": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.84375,
+              "max_record_mass": 0.9906798601150513
+            },
+            "23": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.45703125,
+              "max_record_mass": 0.9793986082077026
+            }
+          }
+        },
+        {
+          "key": [
+            "paired-validation-copy-001-v3",
+            "control",
+            "target_current"
+          ],
+          "weights": {
+            "3": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.890625,
+              "max_record_mass": 0.9822883009910583
+            },
+            "7": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.86328125,
+              "max_record_mass": 0.9913082122802734
+            },
+            "11": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.55859375,
+              "max_record_mass": 0.9925142526626587
+            },
+            "15": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.80078125,
+              "max_record_mass": 0.9998344779014587
+            },
+            "19": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.83984375,
+              "max_record_mass": 0.9926507472991943
+            },
+            "23": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.484375,
+              "max_record_mass": 0.9759730100631714
+            }
+          }
+        }
+      ],
+      "pre_question_prefix_checks": [],
+      "checkpoint": {
+        "mode": "independent",
+        "rank": 54,
+        "token_policy": "all",
+        "parameters": 696384,
+        "weights": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-controllers-20261114-01/independent/step-000432/controller.safetensors",
+        "weights_sha256": "d07ecda3b22a66650af0382d94a2686619b0cfd3feea256596e2bfbecc517d94"
+      },
+      "state_sha256_before": "c7bb800b14b157be9b04dcd8b12e3fd534872752ce614a93cf3b7521e2770e92",
+      "state_sha256_after": "c7bb800b14b157be9b04dcd8b12e3fd534872752ce614a93cf3b7521e2770e92",
+      "weights_unchanged": true,
+      "native_restore_exact": true,
+      "metrics": {
+        "examples": 4,
+        "correct": 4,
+        "operational_smoke_only": true
+      },
+      "results_sha256": "db7b9a926c4c384ab276bc6aa7a3aacdb43f481899c33ed3c1fe5a041eb818be"
+    },
+    "local": {
+      "full_attention_checks": [
+        {
+          "key": [
+            "paired-validation-copy-001-v0",
+            "control",
+            "target_current"
+          ],
+          "weights": {
+            "3": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.7890625,
+              "max_record_mass": 0.9816226363182068
+            },
+            "7": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.87109375,
+              "max_record_mass": 0.991472601890564
+            },
+            "11": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.79296875,
+              "max_record_mass": 0.9913972616195679
+            },
+            "15": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.984375,
+              "max_record_mass": 1.0016039609909058
+            },
+            "19": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.828125,
+              "max_record_mass": 0.9773925542831421
+            },
+            "23": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.45703125,
+              "max_record_mass": 0.9860199689865112
+            }
+          }
+        },
+        {
+          "key": [
+            "paired-validation-copy-001-v3",
+            "control",
+            "target_current"
+          ],
+          "weights": {
+            "3": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.890625,
+              "max_record_mass": 0.9822883009910583
+            },
+            "7": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.86328125,
+              "max_record_mass": 0.9913082122802734
+            },
+            "11": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.55859375,
+              "max_record_mass": 0.9925142526626587
+            },
+            "15": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.98046875,
+              "max_record_mass": 1.0018112659454346
+            },
+            "19": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.7734375,
+              "max_record_mass": 0.982132077217102
+            },
+            "23": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.515625,
+              "max_record_mass": 0.9857383966445923
+            }
+          }
+        }
+      ],
+      "pre_question_prefix_checks": [],
+      "checkpoint": {
+        "mode": "local",
+        "rank": 22,
+        "token_policy": "all",
+        "parameters": 689216,
+        "weights": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-controllers-20261114-01/local/step-000432/controller.safetensors",
+        "weights_sha256": "99a462d0407a17540f04724cc01c62b99f77ff39fb8d6ab666785515c4782189"
+      },
+      "state_sha256_before": "7ebe55c687458dff77cc0540cfbe1ba87724594dc887acc4a5a0bc43475c7a95",
+      "state_sha256_after": "7ebe55c687458dff77cc0540cfbe1ba87724594dc887acc4a5a0bc43475c7a95",
+      "weights_unchanged": true,
+      "native_restore_exact": true,
+      "metrics": {
+        "examples": 4,
+        "correct": 4,
+        "operational_smoke_only": true
+      },
+      "results_sha256": "f34cfba098c00c56cea5f9c4576a65b94f4357da612a7f0d5b133fe14c4a5500"
+    },
+    "local_question": {
+      "full_attention_checks": [
+        {
+          "key": [
+            "paired-validation-copy-001-v0",
+            "control",
+            "target_current"
+          ],
+          "weights": {
+            "3": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.7890625,
+              "max_record_mass": 0.9816226363182068
+            },
+            "7": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.87109375,
+              "max_record_mass": 0.991472601890564
+            },
+            "11": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.79296875,
+              "max_record_mass": 0.9913972616195679
+            },
+            "15": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.91015625,
+              "max_record_mass": 1.0007147789001465
+            },
+            "19": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.90234375,
+              "max_record_mass": 0.9915902614593506
+            },
+            "23": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.5,
+              "max_record_mass": 0.9769574403762817
+            }
+          }
+        },
+        {
+          "key": [
+            "paired-validation-copy-001-v3",
+            "control",
+            "target_current"
+          ],
+          "weights": {
+            "3": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.890625,
+              "max_record_mass": 0.9822883009910583
+            },
+            "7": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.86328125,
+              "max_record_mass": 0.9913082122802734
+            },
+            "11": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.55859375,
+              "max_record_mass": 0.9925142526626587
+            },
+            "15": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.890625,
+              "max_record_mass": 1.0011342763900757
+            },
+            "19": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.86328125,
+              "max_record_mass": 0.9927729368209839
+            },
+            "23": {
+              "prefill_calls": 1,
+              "cached_calls": 4,
+              "query_rows": 31,
+              "max_record_probability": 0.482421875,
+              "max_record_mass": 0.9738202095031738
+            }
+          }
+        }
+      ],
+      "pre_question_prefix_checks": [
+        {
+          "case_id": "paired-validation-copy-001-v0",
+          "variant": "control",
+          "ledger_tokens": 803,
+          "kv_recurrent_conv_and_logits_exact": true
+        },
+        {
+          "case_id": "paired-validation-copy-001-v3",
+          "variant": "control",
+          "ledger_tokens": 803,
+          "kv_recurrent_conv_and_logits_exact": true
+        }
+      ],
+      "checkpoint": {
+        "mode": "local",
+        "rank": 22,
+        "token_policy": "question",
+        "parameters": 689216,
+        "weights": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-controllers-20261114-01/local_question/step-000432/controller.safetensors",
+        "weights_sha256": "571779120296928b2f025065714c14351260697e485abab642f1c7c6dccd4aee"
+      },
+      "state_sha256_before": "bd1994195c56860bb4dd26a36ce44b25f2be00ea046ae7dcf29ee4a5a5885d9b",
+      "state_sha256_after": "bd1994195c56860bb4dd26a36ce44b25f2be00ea046ae7dcf29ee4a5a5885d9b",
+      "weights_unchanged": true,
+      "native_restore_exact": true,
+      "metrics": {
+        "examples": 4,
+        "correct": 4,
+        "operational_smoke_only": true
+      },
+      "results_sha256": "48567c8829695a4820517210d7e8689450377cd54b01ca0218453a45a8367424"
+    }
+  },
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "python": "/home/husrcf/anaconda3/bin/python",
+  "gpu": "AMD Radeon AI PRO R9700",
+  "finished_utc": "2026-11-14T02:44:27.867809+00:00",
+  "frozen_parameters_and_no_gradients": true
+}

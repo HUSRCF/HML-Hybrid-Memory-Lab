@@ -1,0 +1,24 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<01:59,  2.67it/s]Loading weights:   9%|▉         | 28/320 [00:00<00:03, 75.84it/s]Loading weights:  19%|█▉        | 60/320 [00:00<00:01, 143.08it/s]Loading weights:  28%|██▊       | 89/320 [00:00<00:01, 183.61it/s]Loading weights:  37%|███▋      | 118/320 [00:00<00:00, 212.63it/s]Loading weights:  46%|████▌     | 147/320 [00:00<00:00, 230.42it/s]Loading weights:  54%|█████▍    | 174/320 [00:00<00:00, 240.96it/s]Loading weights:  64%|██████▍   | 204/320 [00:01<00:00, 252.85it/s]Loading weights:  74%|███████▍  | 237/320 [00:01<00:00, 268.66it/s]Loading weights:  83%|████████▎ | 266/320 [00:01<00:00, 267.81it/s]Loading weights:  94%|█████████▍| 300/320 [00:01<00:00, 282.07it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 213.16it/s]
+{"event": "canonical_oracle_replication", "model": "local_question", "queries_per_regime": 32, "total": 336}
+{"event": "canonical_oracle_replication", "model": "local_question", "queries_per_regime": 64, "total": 336}
+{"event": "canonical_oracle_replication", "model": "local_question", "queries_per_regime": 96, "total": 336}
+{"event": "canonical_oracle_replication", "model": "local_question", "queries_per_regime": 128, "total": 336}
+{"event": "canonical_oracle_replication", "model": "local_question", "queries_per_regime": 160, "total": 336}
+{"event": "canonical_oracle_replication", "model": "local_question", "queries_per_regime": 192, "total": 336}
+{"event": "canonical_oracle_replication", "model": "local_question", "queries_per_regime": 224, "total": 336}
+{"event": "canonical_oracle_replication", "model": "local_question", "queries_per_regime": 256, "total": 336}
+{"event": "canonical_oracle_replication", "model": "local_question", "queries_per_regime": 288, "total": 336}
+{"event": "canonical_oracle_replication", "model": "local_question", "queries_per_regime": 320, "total": 336}
+{"event": "canonical_oracle_arm_complete", "model": "local_question", "new_readouts": 672}
+{"event": "canonical_oracle_replication", "model": "gdn_question_only", "queries_per_regime": 32, "total": 336}
+{"event": "canonical_oracle_replication", "model": "gdn_question_only", "queries_per_regime": 64, "total": 336}
+{"event": "canonical_oracle_replication", "model": "gdn_question_only", "queries_per_regime": 96, "total": 336}
+{"event": "canonical_oracle_replication", "model": "gdn_question_only", "queries_per_regime": 128, "total": 336}
+{"event": "canonical_oracle_replication", "model": "gdn_question_only", "queries_per_regime": 160, "total": 336}
+{"event": "canonical_oracle_replication", "model": "gdn_question_only", "queries_per_regime": 192, "total": 336}
+{"event": "canonical_oracle_replication", "model": "gdn_question_only", "queries_per_regime": 224, "total": 336}
+{"event": "canonical_oracle_replication", "model": "gdn_question_only", "queries_per_regime": 256, "total": 336}
+{"event": "canonical_oracle_replication", "model": "gdn_question_only", "queries_per_regime": 288, "total": 336}
+{"event": "canonical_oracle_replication", "model": "gdn_question_only", "queries_per_regime": 320, "total": 336}
+{"event": "canonical_oracle_arm_complete", "model": "gdn_question_only", "new_readouts": 672}

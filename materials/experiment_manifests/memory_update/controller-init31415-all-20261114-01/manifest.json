@@ -1,0 +1,73 @@
+{
+  "status": "completed",
+  "stage": "training",
+  "started_utc": "2026-11-13T21:25:29.759852+00:00",
+  "config": {
+    "protocol_version": 1,
+    "model": "it",
+    "group_index": 3,
+    "initialization_seed": 31415,
+    "steps": 64,
+    "gradient_accumulation": 2,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "max_gradient_norm": 1.0,
+    "max_sequence_tokens": 1536,
+    "validation_copy_cases": 4,
+    "validation_overwrite_cases": 2,
+    "test_copy_cases": 8,
+    "test_overwrite_cases": 4,
+    "modes": {
+      "local": 22
+    },
+    "notes": [
+      "Small feasibility trial, not a novelty or architecture claim.",
+      "Frozen IT backbone; existing conda base. No new environment or package installation.",
+      "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+      "No test-based hyperparameter selection; evaluate final checkpoint only.",
+      "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+      "Seed and entity namespaces are disjoint across train/validation/test.",
+      "Only three-digit answer and newline tokens receive supervised loss.",
+      "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets.",
+      "Mechanism control: train and evaluate with the same token-position policy, rather than disabling branches only after training.",
+      "Ordinary local low-rank adapter; identical seed, examples, steps, learning rate and parameter count to the all-token local checkpoint.",
+      "Ledger-only can alter both recurrent states and KV construction. Question-only preserves all pre-question computation. Neither is a GDN-only intervention.",
+      "Prespecified initialization replication: same local architecture, 128 ordered examples and optimization settings; only initialization seed and token policy vary.",
+      "Evaluate every final checkpoint; do not select seeds or checkpoints using the fixed evaluation cohort."
+    ],
+    "adapt_gdn_keys": true,
+    "token_policy": "all"
+  },
+  "modes": [
+    "local"
+  ],
+  "data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+  "completed_modes": [
+    "local"
+  ],
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/controllers.py": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/metrics.py": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/stress_tasks.py": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "scripts/run_controller_trial.py": "69230ea519774a7d17bc890cfc5dae43069977d5add285a0bc9b75ff9f7d566f"
+  },
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "gpu": "AMD Radeon AI PRO R9700",
+  "python": "/home/husrcf/anaconda3/bin/python",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "optimized_input_tokens_per_mode": 74102,
+  "supervised_answer_tokens_per_mode": 512,
+  "max_input_tokens": 832,
+  "elapsed_seconds": 125.81439996417612,
+  "completed_utc": "2026-11-13T21:27:45.704732+00:00"
+}

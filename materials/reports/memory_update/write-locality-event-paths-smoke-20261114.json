@@ -1,0 +1,1667 @@
+{
+  "status": "audited_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/write-locality-event-paths-smoke-20261114-01",
+  "manifest_sha256": "64805934763fa6cb9d742a33dd07cf4bc3fee39e85aa6681f6a8b7f1502fbfb4",
+  "dataset_manifest_sha256": "fd8d7a0be96932d543f852aba12f832990a8f45665770046a82f6141bf5b7be8",
+  "registry_sha256": "7bbb5d141693f34bab31c553916bb4e579e7e2c7cfcf9726750030df00d1ed3b",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "readouts_audited": 96,
+  "calibrations_audited": 28,
+  "pairs_audited": 6,
+  "readout_counts": {
+    "cache_condition/preservation": 24,
+    "cache_condition/current_A": 24,
+    "oracle/preservation": 12,
+    "replay/preservation": 24,
+    "full_C_baseline/current_C": 4,
+    "cache_condition/current_C": 8
+  },
+  "physical_ledger_prefills": 12,
+  "unique_natural_prefixes": 10,
+  "source_KV_identity_pairs": 6,
+  "actual_attention_probability_checks": 36,
+  "metrics": {
+    "by_cohort_and_stratum": [
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_B_at32",
+        "pairs": 1,
+        "base_streams": [
+          "write-locality-s97000"
+        ],
+        "conditions": [
+          {
+            "condition": 0,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 1,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 2,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 3,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          }
+        ],
+        "oracle_vs_cached_natural": [
+          {
+            "side": "left",
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          },
+          {
+            "side": "right",
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          }
+        ],
+        "preservation_NLL_contrasts": {
+          "means": {
+            "recurrent_right_minus_left_at_left_KV": 0.011344542105992644,
+            "recurrent_right_minus_left_at_right_KV": 0.033398141463597625,
+            "KV_right_minus_left_at_left_recurrent": 0.0038212438424428397,
+            "KV_right_minus_left_at_right_recurrent": 0.02587484320004782,
+            "interaction_difference_in_differences": 0.02205359935760498
+          },
+          "individual_pairs": [
+            {
+              "case_id": "write-locality-s97000-a032-v0",
+              "seed": 97000,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.011344542105992644,
+              "recurrent_right_minus_left_at_right_KV": 0.033398141463597625,
+              "KV_right_minus_left_at_left_recurrent": 0.0038212438424428397,
+              "KV_right_minus_left_at_right_recurrent": 0.02587484320004782,
+              "interaction_difference_in_differences": 0.02205359935760498
+            }
+          ]
+        }
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "initial_A_at128",
+        "pairs": 1,
+        "base_streams": [
+          "write-locality-s97000"
+        ],
+        "conditions": [
+          {
+            "condition": 0,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 1,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 2,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 3,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          }
+        ],
+        "oracle_vs_cached_natural": [
+          {
+            "side": "left",
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          },
+          {
+            "side": "right",
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          }
+        ],
+        "preservation_NLL_contrasts": {
+          "means": {
+            "recurrent_right_minus_left_at_left_KV": 0.0014291206995646205,
+            "recurrent_right_minus_left_at_right_KV": 0.013408859570821108,
+            "KV_right_minus_left_at_left_recurrent": 0.20608584086100262,
+            "KV_right_minus_left_at_right_recurrent": 0.2180655797322591,
+            "interaction_difference_in_differences": 0.011979738871256487
+          },
+          "individual_pairs": [
+            {
+              "case_id": "write-locality-s97000-a128-v0",
+              "seed": 97000,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.0014291206995646205,
+              "recurrent_right_minus_left_at_right_KV": 0.013408859570821108,
+              "KV_right_minus_left_at_left_recurrent": 0.20608584086100262,
+              "KV_right_minus_left_at_right_recurrent": 0.2180655797322591,
+              "interaction_difference_in_differences": 0.011979738871256487
+            }
+          ]
+        }
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "pairs": 1,
+        "base_streams": [
+          "write-locality-s97000"
+        ],
+        "conditions": [
+          {
+            "condition": 0,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 1,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 2,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 3,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          }
+        ],
+        "oracle_vs_cached_natural": [
+          {
+            "side": "left",
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          },
+          {
+            "side": "right",
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          }
+        ],
+        "preservation_NLL_contrasts": {
+          "means": {
+            "recurrent_right_minus_left_at_left_KV": 0.006327072779337528,
+            "recurrent_right_minus_left_at_right_KV": 0.02283565203348792,
+            "KV_right_minus_left_at_left_recurrent": 0.0031290054321289062,
+            "KV_right_minus_left_at_right_recurrent": 0.019637584686279297,
+            "interaction_difference_in_differences": 0.01650857925415039
+          },
+          "individual_pairs": [
+            {
+              "case_id": "write-locality-s97000-a128-v0",
+              "seed": 97000,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.006327072779337528,
+              "recurrent_right_minus_left_at_right_KV": 0.02283565203348792,
+              "KV_right_minus_left_at_left_recurrent": 0.0031290054321289062,
+              "KV_right_minus_left_at_right_recurrent": 0.019637584686279297,
+              "interaction_difference_in_differences": 0.01650857925415039
+            }
+          ]
+        }
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_B_at32",
+        "pairs": 1,
+        "base_streams": [
+          "write-locality-s97100"
+        ],
+        "conditions": [
+          {
+            "condition": 0,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 1,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 2,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 3,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          }
+        ],
+        "oracle_vs_cached_natural": [
+          {
+            "side": "left",
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          },
+          {
+            "side": "right",
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          }
+        ],
+        "preservation_NLL_contrasts": {
+          "means": {
+            "recurrent_right_minus_left_at_left_KV": 0.01916317145029703,
+            "recurrent_right_minus_left_at_right_KV": 0.013622959454854339,
+            "KV_right_minus_left_at_left_recurrent": -0.045345346132914216,
+            "KV_right_minus_left_at_right_recurrent": -0.050885558128356906,
+            "interaction_difference_in_differences": -0.005540211995442718
+          },
+          "individual_pairs": [
+            {
+              "case_id": "write-locality-s97100-a032-v0",
+              "seed": 97100,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.01916317145029703,
+              "recurrent_right_minus_left_at_right_KV": 0.013622959454854339,
+              "KV_right_minus_left_at_left_recurrent": -0.045345346132914216,
+              "KV_right_minus_left_at_right_recurrent": -0.050885558128356906,
+              "interaction_difference_in_differences": -0.005540211995442718
+            }
+          ]
+        }
+      },
+      {
+        "cohort": "replica",
+        "stratum": "initial_A_at128",
+        "pairs": 1,
+        "base_streams": [
+          "write-locality-s97100"
+        ],
+        "conditions": [
+          {
+            "condition": 0,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              }
+            },
+            "preservation_rescue_but_right_update_failure": [
+              "write-locality-s97100-a128-v0"
+            ]
+          },
+          {
+            "condition": 1,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 2,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 3,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 1,
+                "rescued": 1,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 1,
+                "both_correct": 0,
+                "both_wrong": 0
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              }
+            },
+            "preservation_rescue_but_right_update_failure": [
+              "write-locality-s97100-a128-v0"
+            ]
+          }
+        ],
+        "oracle_vs_cached_natural": [
+          {
+            "side": "left",
+            "units": 1,
+            "reference_correct": 1,
+            "candidate_correct": 1,
+            "rescued": 0,
+            "regressed": 0,
+            "both_correct": 1,
+            "both_wrong": 0
+          },
+          {
+            "side": "right",
+            "units": 1,
+            "reference_correct": 0,
+            "candidate_correct": 1,
+            "rescued": 1,
+            "regressed": 0,
+            "both_correct": 0,
+            "both_wrong": 0
+          }
+        ],
+        "preservation_NLL_contrasts": {
+          "means": {
+            "recurrent_right_minus_left_at_left_KV": 0.02716219425201416,
+            "recurrent_right_minus_left_at_right_KV": -0.019188682238260923,
+            "KV_right_minus_left_at_left_recurrent": 0.2217550079027812,
+            "KV_right_minus_left_at_right_recurrent": 0.1754041314125061,
+            "interaction_difference_in_differences": -0.046350876490275084
+          },
+          "individual_pairs": [
+            {
+              "case_id": "write-locality-s97100-a128-v0",
+              "seed": 97100,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.02716219425201416,
+              "recurrent_right_minus_left_at_right_KV": -0.019188682238260923,
+              "KV_right_minus_left_at_left_recurrent": 0.2217550079027812,
+              "KV_right_minus_left_at_right_recurrent": 0.1754041314125061,
+              "interaction_difference_in_differences": -0.046350876490275084
+            }
+          ]
+        }
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "pairs": 1,
+        "base_streams": [
+          "write-locality-s97100"
+        ],
+        "conditions": [
+          {
+            "condition": 0,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 1,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 2,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          },
+          {
+            "condition": 3,
+            "versus_natural_right": {
+              "preservation": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              },
+              "current_A": {
+                "units": 1,
+                "reference_correct": 1,
+                "candidate_correct": 1,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 1,
+                "both_wrong": 0
+              },
+              "current_C": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              },
+              "all_roles_joint": {
+                "units": 1,
+                "reference_correct": 0,
+                "candidate_correct": 0,
+                "rescued": 0,
+                "regressed": 0,
+                "both_correct": 0,
+                "both_wrong": 1
+              }
+            },
+            "preservation_rescue_but_right_update_failure": []
+          }
+        ],
+        "oracle_vs_cached_natural": [
+          {
+            "side": "left",
+            "units": 1,
+            "reference_correct": 0,
+            "candidate_correct": 1,
+            "rescued": 1,
+            "regressed": 0,
+            "both_correct": 0,
+            "both_wrong": 0
+          },
+          {
+            "side": "right",
+            "units": 1,
+            "reference_correct": 0,
+            "candidate_correct": 1,
+            "rescued": 1,
+            "regressed": 0,
+            "both_correct": 0,
+            "both_wrong": 0
+          }
+        ],
+        "preservation_NLL_contrasts": {
+          "means": {
+            "recurrent_right_minus_left_at_left_KV": 0.05786019563674927,
+            "recurrent_right_minus_left_at_right_KV": -0.012612620989481627,
+            "KV_right_minus_left_at_left_recurrent": 0.03522731860478723,
+            "KV_right_minus_left_at_right_recurrent": -0.035245498021443666,
+            "interaction_difference_in_differences": -0.0704728166262309
+          },
+          "individual_pairs": [
+            {
+              "case_id": "write-locality-s97100-a128-v0",
+              "seed": 97100,
+              "value_version": 0,
+              "recurrent_right_minus_left_at_left_KV": 0.05786019563674927,
+              "recurrent_right_minus_left_at_right_KV": -0.012612620989481627,
+              "KV_right_minus_left_at_left_recurrent": 0.03522731860478723,
+              "KV_right_minus_left_at_right_recurrent": -0.035245498021443666,
+              "interaction_difference_in_differences": -0.0704728166262309
+            }
+          ]
+        }
+      }
+    ],
+    "cached_vs_full_calibration": [
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_B_at32",
+        "label": "preservation",
+        "side": "left",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.009659240643183381,
+        "max_absolute_nll_delta": 0.009659240643183381
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_B_at32",
+        "label": "current_A",
+        "side": "left",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.007891843716303512,
+        "max_absolute_nll_delta": 0.007891843716303512
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_B_at32",
+        "label": "preservation",
+        "side": "right",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.017659167448679625,
+        "max_absolute_nll_delta": 0.017659167448679625
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_B_at32",
+        "label": "current_A",
+        "side": "right",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.0038649042447407994,
+        "max_absolute_nll_delta": 0.0038649042447407994
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "initial_A_at128",
+        "label": "preservation",
+        "side": "left",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.0012361705303192139,
+        "max_absolute_nll_delta": 0.0012361705303192139
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "initial_A_at128",
+        "label": "current_A",
+        "side": "left",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.004173258940378816,
+        "max_absolute_nll_delta": 0.004173258940378816
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "initial_A_at128",
+        "label": "preservation",
+        "side": "right",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.009854356447855595,
+        "max_absolute_nll_delta": 0.009854356447855595
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "initial_A_at128",
+        "label": "current_A",
+        "side": "right",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.013065079847971617,
+        "max_absolute_nll_delta": 0.013065079847971617
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "preservation",
+        "side": "left",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.003953019777933775,
+        "max_absolute_nll_delta": 0.003953019777933775
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_A",
+        "side": "left",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.0024274786313374652,
+        "max_absolute_nll_delta": 0.0024274786313374652
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_C",
+        "side": "left",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.01305854320526123,
+        "max_absolute_nll_delta": 0.01305854320526123
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "preservation",
+        "side": "right",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.009854356447855595,
+        "max_absolute_nll_delta": 0.009854356447855595
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_A",
+        "side": "right",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.013065079847971617,
+        "max_absolute_nll_delta": 0.013065079847971617
+      },
+      {
+        "cohort": "discovery",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_C",
+        "side": "right",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.014171679814656557,
+        "max_absolute_nll_delta": 0.014171679814656557
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_B_at32",
+        "label": "preservation",
+        "side": "left",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.0021320581436157504,
+        "max_absolute_nll_delta": 0.0021320581436157504
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_B_at32",
+        "label": "current_A",
+        "side": "left",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.0008999357620875087,
+        "max_absolute_nll_delta": 0.0008999357620875087
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_B_at32",
+        "label": "preservation",
+        "side": "right",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.007979611555735289,
+        "max_absolute_nll_delta": 0.007979611555735289
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_B_at32",
+        "label": "current_A",
+        "side": "right",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.015312612056732178,
+        "max_absolute_nll_delta": 0.015312612056732178
+      },
+      {
+        "cohort": "replica",
+        "stratum": "initial_A_at128",
+        "label": "preservation",
+        "side": "left",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.0035099287827809744,
+        "max_absolute_nll_delta": 0.0035099287827809744
+      },
+      {
+        "cohort": "replica",
+        "stratum": "initial_A_at128",
+        "label": "current_A",
+        "side": "left",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.0034240881601969586,
+        "max_absolute_nll_delta": 0.0034240881601969586
+      },
+      {
+        "cohort": "replica",
+        "stratum": "initial_A_at128",
+        "label": "preservation",
+        "side": "right",
+        "units": 1,
+        "reference_correct": 0,
+        "candidate_correct": 0,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 0,
+        "both_wrong": 1,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.02214217185974121,
+        "max_absolute_nll_delta": 0.02214217185974121
+      },
+      {
+        "cohort": "replica",
+        "stratum": "initial_A_at128",
+        "label": "current_A",
+        "side": "right",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.005014320214589418,
+        "max_absolute_nll_delta": 0.005014320214589418
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "preservation",
+        "side": "left",
+        "units": 1,
+        "reference_correct": 0,
+        "candidate_correct": 0,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 0,
+        "both_wrong": 1,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.05295628309249878,
+        "max_absolute_nll_delta": 0.05295628309249878
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_A",
+        "side": "left",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.003109316031138093,
+        "max_absolute_nll_delta": 0.003109316031138093
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_C",
+        "side": "left",
+        "units": 1,
+        "reference_correct": 0,
+        "candidate_correct": 0,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 0,
+        "both_wrong": 1,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.029926379521687863,
+        "max_absolute_nll_delta": 0.029926379521687863
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "preservation",
+        "side": "right",
+        "units": 1,
+        "reference_correct": 0,
+        "candidate_correct": 0,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 0,
+        "both_wrong": 1,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.02214217185974121,
+        "max_absolute_nll_delta": 0.02214217185974121
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_A",
+        "side": "right",
+        "units": 1,
+        "reference_correct": 1,
+        "candidate_correct": 1,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 1,
+        "both_wrong": 0,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.005014320214589418,
+        "max_absolute_nll_delta": 0.005014320214589418
+      },
+      {
+        "cohort": "replica",
+        "stratum": "unrelated_C_on_initial_A_at128",
+        "label": "current_C",
+        "side": "right",
+        "units": 1,
+        "reference_correct": 0,
+        "candidate_correct": 0,
+        "rescued": 0,
+        "regressed": 0,
+        "both_correct": 0,
+        "both_wrong": 1,
+        "different_generation": 0,
+        "mean_absolute_nll_delta": 0.037767887115478516,
+        "max_absolute_nll_delta": 0.037767887115478516
+      }
+    ],
+    "world_scoring": "Every comparison above uses the fixed right-world truth. Left natural endpoints are explicit counterfactual scores for changed A/C, never a claimed own-world baseline failure. Calibration uses each endpoint's own-world truth.",
+    "NLL_interpretation": "Positive differences mean greater preservation-answer loss. Mixed caches can be incompatible; mediator effects do not prove semantic destruction or shared-controller necessity.",
+    "sampling": "Discovery and replica remain separate. Four value siblings share a base stream; no independent-readout confidence interval is asserted."
+  },
+  "analysis_source_sha256": "0e98f2a6630b088005eb979e4b09d7a9e68df43dc65998a17dc66ff4d3580d7c"
+}

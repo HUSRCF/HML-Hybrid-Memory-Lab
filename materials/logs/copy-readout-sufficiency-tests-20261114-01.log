@@ -1,0 +1,24 @@
+test_actual_six_layer_probabilities_and_cached_masking (tests.test_copy_readout_sufficiency.ReadoutSufficiencyTests.test_actual_six_layer_probabilities_and_cached_masking) ... ok
+test_all_actual_masks_and_equal_budgets (tests.test_copy_readout_sufficiency.ReadoutSufficiencyTests.test_all_actual_masks_and_equal_budgets) ... ok
+test_independent_grading_rejects_wrong_masks_and_missing_rows (tests.test_copy_readout_sufficiency.ReadoutSufficiencyTests.test_independent_grading_rejects_wrong_masks_and_missing_rows) ... ok
+test_independent_proof_audit_rejects_memory_or_probability_drift (tests.test_copy_readout_sufficiency.ReadoutSufficiencyTests.test_independent_proof_audit_rejects_memory_or_probability_drift) ... ok
+test_nearby_nonslice_control_deterministic_and_valid (tests.test_copy_readout_sufficiency.ReadoutSufficiencyTests.test_nearby_nonslice_control_deterministic_and_valid) ... 
+  test_nearby_nonslice_control_deterministic_and_valid (tests.test_copy_readout_sufficiency.ReadoutSufficiencyTests.test_nearby_nonslice_control_deterministic_and_valid) (bad=[True, True, False]) ... FAIL
+test_observer_failure_removes_all_hooks (tests.test_copy_readout_sufficiency.ReadoutSufficiencyTests.test_observer_failure_removes_all_hooks) ... ok
+test_prescribed_samples_cover_roles_depths_and_orders (tests.test_copy_readout_sufficiency.ReadoutSufficiencyTests.test_prescribed_samples_cover_roles_depths_and_orders) ... ok
+test_preservation_floor_losses_and_stream_coverage_required (tests.test_copy_readout_sufficiency.ReadoutSufficiencyTests.test_preservation_floor_losses_and_stream_coverage_required) ... ok
+test_sufficiency_and_address_specificity_are_separate (tests.test_copy_readout_sufficiency.ReadoutSufficiencyTests.test_sufficiency_and_address_specificity_are_separate) ... ok
+
+======================================================================
+FAIL: test_nearby_nonslice_control_deterministic_and_valid (tests.test_copy_readout_sufficiency.ReadoutSufficiencyTests.test_nearby_nonslice_control_deterministic_and_valid) (bad=[True, True, False])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/husrcf/Code/SAS/tests/test_copy_readout_sufficiency.py", line 81, in test_nearby_nonslice_control_deterministic_and_valid
+    with self.subTest(bad=bad), self.assertRaises(ValueError):
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 9 tests in 5.869s
+
+FAILED (failures=1)

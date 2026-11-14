@@ -1,0 +1,385 @@
+{
+  "status": "registered_before_targeted_replay",
+  "registered_utc": "2026-11-14T15:38:38.787909+00:00",
+  "objective": "Posthoc operational verification of every preservation-control correctness flip; no fresh scientific confirmation, architecture training or rescue of the failed primary gates.",
+  "completed_fresh_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-copy-confirmation-audit-20261114-01.json",
+  "completed_fresh_audit_sha256": "d28f7568ed6d1d6ddf8314e694c12f11b87b3a7544adeec27f82ce706268d2e9",
+  "completed_fresh_manifest_sha256": "9e6af5d3b0e045aece44a74ca2de94d8a64b548bc0b4cc20752706d8d8d09f3f",
+  "completed_fresh_run": "/media/990Pro/Code/SAS/runs/memory_update/fresh-copy-confirmation-20261114-01",
+  "control_change_report": "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-copy-confirmation-control-changes-20261114-02.json",
+  "control_change_report_sha256": "2ca880c0717e62dac3b1a4cc1d58c79d617721de218a7384155d24a1417c3fac",
+  "control_change_analysis_source_sha256": "36ff24db8191350dca267b3962118f325fc5fca4aca1b6c44eb53868e9ad00f4",
+  "dataset": "/media/990Pro/Code/SAS/datasets/memory_update/fresh-copy-memory-confirmation-v1",
+  "dataset_manifest_sha256": "9eff6d04307c32785000efb2b495ae6cf17ea3d24d28ff25f61a1778105c3a75",
+  "mask_registry_sha256": "c07223b733687060453d9ea5040c2003b512da3db70f09183cadd74a5d76d047",
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "precision_addendum_sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc",
+  "models": [
+    "local_question",
+    "gdn_question_only"
+  ],
+  "fixed_checkpoints": {
+    "local_question": {
+      "checkpoint_sha256": "ee78264808d0a532188c61c78e68407e72551947941ebb977ab25864b600a848",
+      "adapter_state_sha256_before": "ade581c5ca7823f6d002ac766ed5fdce2ba5e625327b2a9bad38c4877f337dc3",
+      "description": {
+        "mode": "local",
+        "rank": 22,
+        "group_index": 3,
+        "adapt_gdn_keys": true,
+        "layers": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "trainable_parameters": 689216,
+        "encoder_shapes": {
+          "gdn_0_a": [
+            22,
+            2048
+          ],
+          "gdn_0_b": [
+            22,
+            2048
+          ],
+          "gdn_0_key": [
+            22,
+            2048
+          ],
+          "gdn_1_a": [
+            22,
+            2048
+          ],
+          "gdn_1_b": [
+            22,
+            2048
+          ],
+          "gdn_1_key": [
+            22,
+            2048
+          ],
+          "gdn_2_a": [
+            22,
+            2048
+          ],
+          "gdn_2_b": [
+            22,
+            2048
+          ],
+          "gdn_2_key": [
+            22,
+            2048
+          ],
+          "attention_q_proj": [
+            22,
+            2048
+          ],
+          "attention_k_proj": [
+            22,
+            2048
+          ]
+        },
+        "output_shapes": {
+          "gdn_0_a": [
+            16,
+            22
+          ],
+          "gdn_0_b": [
+            16,
+            22
+          ],
+          "gdn_0_key": [
+            2048,
+            22
+          ],
+          "gdn_1_a": [
+            16,
+            22
+          ],
+          "gdn_1_b": [
+            16,
+            22
+          ],
+          "gdn_1_key": [
+            2048,
+            22
+          ],
+          "gdn_2_a": [
+            16,
+            22
+          ],
+          "gdn_2_b": [
+            16,
+            22
+          ],
+          "gdn_2_key": [
+            2048,
+            22
+          ],
+          "attention_q_proj": [
+            2048,
+            22
+          ],
+          "attention_k_proj": [
+            512,
+            22
+          ]
+        },
+        "input": "local projection hidden state",
+        "cache_expansion": false
+      }
+    },
+    "gdn_question_only": {
+      "checkpoint_sha256": "5aeea3bc1679df153bb9e246426da580c37575d7292399edd9c21d98c5952662",
+      "adapter_state_sha256_before": "7f4cd348b4835d4760c92fa94cdd4564d2602149296b1449d67531cd7f9f7dee",
+      "description": {
+        "mode": "gdn_only",
+        "rank": 84,
+        "group_index": 3,
+        "adapt_gdn_keys": true,
+        "layers": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "trainable_parameters": 696192,
+        "encoder_shapes": {
+          "gdn": [
+            84,
+            2048
+          ]
+        },
+        "output_shapes": {
+          "gdn_0_a": [
+            16,
+            84
+          ],
+          "gdn_0_b": [
+            16,
+            84
+          ],
+          "gdn_0_key": [
+            2048,
+            84
+          ],
+          "gdn_1_a": [
+            16,
+            84
+          ],
+          "gdn_1_b": [
+            16,
+            84
+          ],
+          "gdn_1_key": [
+            2048,
+            84
+          ],
+          "gdn_2_a": [
+            16,
+            84
+          ],
+          "gdn_2_b": [
+            16,
+            84
+          ],
+          "gdn_2_key": [
+            2048,
+            84
+          ]
+        },
+        "input": "detached causal group-entry hidden state",
+        "cache_expansion": false
+      }
+    }
+  },
+  "selection_rule": "Every exact-answer correctness flip for oracle non-target roles or matched-other removal in both preselected models. All current-target oracle observations and their repair contrasts remain in the primary export; none is relabeled here.",
+  "queries": [
+    {
+      "model": "local_question",
+      "regime": "oracle",
+      "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545",
+      "direction": "harm",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61007-n64-depth3-original",
+          "base_case_id": "test-copy-s61007-n64",
+          "seed": 61007,
+          "distractor_updates": 64,
+          "dependency_depth": 3,
+          "question_style": "original",
+          "variant": "treatment",
+          "role": "protected_current",
+          "physical_id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545"
+        }
+      ],
+      "expected_full": {
+        "answer": "784",
+        "answer_nll": 0.0005504336052884659,
+        "greedy_exact": true,
+        "generated": "784\n",
+        "query_tokens": 26
+      },
+      "expected_intervened": {
+        "answer": "784",
+        "answer_nll": 0.3970208565394084,
+        "greedy_exact": false,
+        "generated": "1584\n",
+        "query_tokens": 26
+      },
+      "registration_sha256": "07120353288aa0f0e88ea4579c4aff59d3c60e14575cfd1c0d57ef53a31bfa61",
+      "mask_registration_sha256": "a288ee5d195711654288d3882dea32fa3fcf3143cfb57f3dfc98da60ae25ee0f",
+      "keep_bits_sha256": "b79d50b8dd0081ab32f5a9c61aaeb6b149c66deadbe46c0830b2b3bb7ed9bd15"
+    },
+    {
+      "model": "local_question",
+      "regime": "remove_matched_other",
+      "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf",
+      "direction": "harm",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61000-n8-depth1-original",
+          "base_case_id": "test-copy-s61000-n8",
+          "seed": 61000,
+          "distractor_updates": 8,
+          "dependency_depth": 1,
+          "question_style": "original",
+          "variant": "control",
+          "role": "target_current",
+          "physical_id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf"
+        }
+      ],
+      "expected_full": {
+        "answer": "375",
+        "answer_nll": 0.3661286036173503,
+        "greedy_exact": true,
+        "generated": "375\n",
+        "query_tokens": 26
+      },
+      "expected_intervened": {
+        "answer": "375",
+        "answer_nll": 0.37673600514729816,
+        "greedy_exact": false,
+        "generated": "410\n",
+        "query_tokens": 26
+      },
+      "registration_sha256": "68b04873b34b699e62e929678e92d01fa5caec500fbc72683b85bc7fb36b097b",
+      "mask_registration_sha256": "dc020ee5fb586128bc482ef7f79d62b14fa63f5d7af344c4acce8afe909de8bc",
+      "keep_bits_sha256": "cac0ff11944c0d7042dab43c26c39890441130bc5c39c860bb330d35d0c581ff"
+    },
+    {
+      "model": "gdn_question_only",
+      "regime": "remove_matched_other",
+      "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532",
+      "direction": "repair",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61007-n64-depth2-entity_first",
+          "base_case_id": "test-copy-s61007-n64",
+          "seed": 61007,
+          "distractor_updates": 64,
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "variant": "treatment",
+          "role": "target_current",
+          "physical_id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532"
+        }
+      ],
+      "expected_full": {
+        "answer": "312",
+        "answer_nll": 0.32850344975789386,
+        "greedy_exact": false,
+        "generated": "703\n",
+        "query_tokens": 27
+      },
+      "expected_intervened": {
+        "answer": "312",
+        "answer_nll": 0.3067050576210022,
+        "greedy_exact": true,
+        "generated": "312\n",
+        "query_tokens": 27
+      },
+      "registration_sha256": "9972c05775f0fd9b4ffde0be7a1e7cb5e36a3f98660515baa0dfc47957173f8c",
+      "mask_registration_sha256": "05381dfa1be55a8e34ebe317fe4cd273e87b788e482d0b694103e83efb3c03e1",
+      "keep_bits_sha256": "fc2c6d686862b4455c17f16d8d58ad37596d63e871b373dbfcfcf494ec2e36e2"
+    },
+    {
+      "model": "gdn_question_only",
+      "regime": "remove_matched_other",
+      "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd",
+      "direction": "harm",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61007-n64-depth3-original",
+          "base_case_id": "test-copy-s61007-n64",
+          "seed": 61007,
+          "distractor_updates": 64,
+          "dependency_depth": 3,
+          "question_style": "original",
+          "variant": "control",
+          "role": "target_current",
+          "physical_id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd"
+        }
+      ],
+      "expected_full": {
+        "answer": "703",
+        "answer_nll": 0.5702381531397501,
+        "greedy_exact": true,
+        "generated": "703\n",
+        "query_tokens": 26
+      },
+      "expected_intervened": {
+        "answer": "703",
+        "answer_nll": 0.5652628739674886,
+        "greedy_exact": false,
+        "generated": "343\n",
+        "query_tokens": 26
+      },
+      "registration_sha256": "12def92728e9ca2b08ad9e8f2201c2cc5a38e53367b197e197ddbbb7dad5659c",
+      "mask_registration_sha256": "6efcb7868b19339fe10c81a7427efb97eb70f88dd960d288331c5e05b557650c",
+      "keep_bits_sha256": "2ae52f232f641025df8a0f43d17f81537f3b946656fe7fbbb82584fdb3cda473"
+    }
+  ],
+  "repeats": 3,
+  "query_order_within_model": [
+    "registered",
+    "reverse_registered",
+    "registered"
+  ],
+  "planned_recorded_readouts": 24,
+  "planned_unmasked_exact_repeats": 12,
+  "planned_all_history_exact_controls": 12,
+  "planned_actual_mask_probability_and_complete_prefix_proofs": 12,
+  "planned_question_only_native_prefix_checks": 4,
+  "planned_precontroller_native_anchors": 4,
+  "planned_detached_native_replays": 8,
+  "planned_total_measure_calls_including_controls": 60,
+  "runtime_sources": "Preserve all109completed fresh runtime sources; add only this plan, run_fresh_control_replay.py, analyze_fresh_control_replay.py and the pinned posthoc analysis source.",
+  "required_checks": [
+    "All four selected model/query/regime tuples including the rescue are retained with no substitutions.",
+    "Both original full and intervened five-field readouts replay exactly in all three repetitions; no numerical tolerance or majority vote.",
+    "Every repetition proves identical complete prefix memory and historicalKV slices and actual six-layer masked attention probabilities; all-history and unmasked controls match full exactly.",
+    "Each selected question-only controller prefix matches actual native recurrent, convolution,KV and bookkeeping state plus last-prefix logits.",
+    "Native and controller weights remain frozen with identical hashes; hooks restore; all four native anchors replay after both controller arms.",
+    "All current primary scientific gate results remain unchanged; stop and preserve evidence if any operational check fails."
+  ],
+  "prohibited": [
+    "new data generation",
+    "new training",
+    "new environment or model download",
+    "different checkpoints or ranks",
+    "changed masks or thresholds",
+    "sample substitution or resampling",
+    "calling this posthoc replay an independent scientific replication"
+  ],
+  "next_if_pass": "Treat the control flips as operationally reproduced changes in question-time evidence access; separately diagnose mechanism before proposing a semantic dependency architecture. Do not claim recurrent storage damage.",
+  "next_if_fail": "Preserve original and replay results; diagnose numerical or implementation consistency before interpreting mechanisms; never overwrite or silently repair the primary."
+}

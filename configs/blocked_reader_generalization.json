@@ -1,0 +1,15 @@
+{
+  "training_plan": "configs/blocked_reader_adaptation_plan.json",
+  "registered_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/record-kv-ablation-v1",
+  "cases_sha256": "94a77ba1ca2731da60b7d5f9d0b4e2e9142b24ea18017b4b8f837253c2ca3619",
+  "registry_sha256": "1923718547a23b1ebff345d7a68d05b1a098b43011ff637ec1b43d91460aa6b5",
+  "contexts_per_model": 288,
+  "reader_policy": "records_blocked",
+  "checkpoints": {
+    "question_only": "/media/990Pro/Code/SAS/runs/memory_update/blocked-reader-question_only-trained-20261114-01",
+    "all_tokens": "/media/990Pro/Code/SAS/runs/memory_update/blocked-reader-all_tokens-trained-20261114-01"
+  },
+  "evaluation_status": "Reused diagnostic cohort; only final step-64 checkpoints. Not untouched architectural confirmation.",
+  "training": false,
+  "interpretation": "Compare recoverability under ordinary question-only or all-token local adaptation with the same blocked historical reader. Prefix carriers include recurrent and convolution states built using normal hybrid prefix attention. Neither superiority nor failure isolates GDN write quality."
+}

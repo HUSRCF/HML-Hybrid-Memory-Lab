@@ -1,0 +1,15 @@
+{
+  "status": "independent_scope_prefix_safety_audited",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/gdn-question-timing-smoke-20261114-01",
+  "manifest_sha256": "a4261d8361c77e7f11183b45e3f4804dc0f18283ab88b154ad48a1b0fd93153e",
+  "parameters": 696192,
+  "paired_initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+  "native_prefix_exact_after_scratch_update": true,
+  "backbone_gradients_absent": true,
+  "intended_training_inputs_verified": 864,
+  "scheduled_training_completed": false,
+  "reference_audits_reexecuted": false,
+  "recorded_deep_reference_audits_sha256": "d58e5e51fa0c7d74e60be44ea8638cd5f6d6627b3623e5f1cab1986abcf0f8e5",
+  "interpretation": "Checks actual projection shapes/counts, finite gradients, zero-initial native identity and native prefix identity after one scratch update, with pinned source and intended token budgets. Reuses the complete deep reference audits performed by the smoke before model loading; does not independently re-execute those references or claim completed scheduled training.",
+  "analysis_source_sha256": "465465566815bb5c915c335015d8ad47c00a98bfad0d05aab7f7864091054685"
+}

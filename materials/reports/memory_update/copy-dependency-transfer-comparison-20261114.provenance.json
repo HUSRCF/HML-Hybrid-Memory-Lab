@@ -1,0 +1,154 @@
+{
+  "status": "complete_independently_audited_export_and_visually_verified_figure",
+  "verified_utc": "2026-11-14T11:15:56.782384+00:00",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/copy-dependency-transfer-20261114.json",
+  "source_audit_sha256": "5c36add35d1333ca61b378d212d59bc2cc694918e4143a35757fe51a9d3991de",
+  "source_manifest_sha256": "e15b55b10950d4ce21b7a19a8b13c46c5af2c3d6e5edd221bcceab3c4fa65149",
+  "dataset_manifest_sha256": "0b98f840a84d90c4d2cea8412de08f9589957b229ee297b957ff8853cf6b7455",
+  "registry_sha256": "8fe7fa9310f7bcbc1d0643870cbc6494c21e7320dd60c8cbfd147c4d878f8c47",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "analysis_source": "/home/husrcf/Code/SAS/scripts/export_copy_dependency_transfer.py",
+  "analysis_source_sha256": "cef8d336c42579dde1399d09cf7c3b7e939b3ecfafc2bc78de9c62b4732e9691",
+  "files": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/copy-dependency-transfer-comparison-20261114.json": "20b237241046eeec1b76bb888c75806e0ebc0b75fa8e8e1a26ec6a6446187a71",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/copy-dependency-transfer-comparison-20261114.source.py": "cef8d336c42579dde1399d09cf7c3b7e939b3ecfafc2bc78de9c62b4732e9691",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/copy-dependency-transfer-comparison-20261114.csv": "736e2fe762807e0a6da4ccd4bfcdf271fbd272b21180e600fbfff47f2da5f100",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/copy-dependency-transfer-comparison-20261114.png": "bea36226cb40771f72b3e02551ad29b78e6d6b5b3ee91a9bdb17b4c61ade8a1b",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/copy-dependency-transfer-comparison-20261114.pdf": "edfb96c00fd0ef694e6afbab4f0769eb5ccc7426aad398022abdf93bfb18ac00",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/copy-dependency-transfer-comparison-20261114.layout.json": "5bbdb19fcc98ac98f3c9d1c5c3c9a5134d4f62ad2c95608064a3e3749ec71b8e",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/copy-dependency-transfer-comparison-20261114-bindings.csv": "12227b9a1949190f231ad970ebd8c8e4ee6f3d967166fe02add36a574414b96d"
+  },
+  "unique_physical_csv_rows": 2688,
+  "related_binding_csv_rows": 3456,
+  "model_summary": {
+    "native": {
+      "physical_correct": 233,
+      "physical_queries": 336,
+      "binding_correct": 325,
+      "bindings": 432,
+      "both_order_targets_correct": 1,
+      "joint_six_after": 1,
+      "joint_all_nine": 1,
+      "before_all_correct": 42,
+      "cases": 48
+    },
+    "shared": {
+      "physical_correct": 278,
+      "physical_queries": 336,
+      "binding_correct": 374,
+      "bindings": 432,
+      "both_order_targets_correct": 17,
+      "joint_six_after": 14,
+      "joint_all_nine": 14,
+      "before_all_correct": 48,
+      "cases": 48
+    },
+    "independent": {
+      "physical_correct": 274,
+      "physical_queries": 336,
+      "binding_correct": 370,
+      "bindings": 432,
+      "both_order_targets_correct": 14,
+      "joint_six_after": 13,
+      "joint_all_nine": 13,
+      "before_all_correct": 48,
+      "cases": 48
+    },
+    "local": {
+      "physical_correct": 283,
+      "physical_queries": 336,
+      "binding_correct": 379,
+      "bindings": 432,
+      "both_order_targets_correct": 17,
+      "joint_six_after": 17,
+      "joint_all_nine": 17,
+      "before_all_correct": 48,
+      "cases": 48
+    },
+    "local_question": {
+      "physical_correct": 277,
+      "physical_queries": 336,
+      "binding_correct": 373,
+      "bindings": 432,
+      "both_order_targets_correct": 15,
+      "joint_six_after": 15,
+      "joint_all_nine": 15,
+      "before_all_correct": 48,
+      "cases": 48
+    },
+    "attention_only": {
+      "physical_correct": 275,
+      "physical_queries": 336,
+      "binding_correct": 371,
+      "bindings": 432,
+      "both_order_targets_correct": 4,
+      "joint_six_after": 4,
+      "joint_all_nine": 4,
+      "before_all_correct": 48,
+      "cases": 48
+    },
+    "gdn_all_tokens": {
+      "physical_correct": 275,
+      "physical_queries": 336,
+      "binding_correct": 371,
+      "bindings": 432,
+      "both_order_targets_correct": 12,
+      "joint_six_after": 12,
+      "joint_all_nine": 12,
+      "before_all_correct": 48,
+      "cases": 48
+    },
+    "gdn_question_only": {
+      "physical_correct": 277,
+      "physical_queries": 336,
+      "binding_correct": 373,
+      "bindings": 432,
+      "both_order_targets_correct": 13,
+      "joint_six_after": 13,
+      "joint_all_nine": 13,
+      "before_all_correct": 48,
+      "cases": 48
+    }
+  },
+  "figure_image_checks": {
+    "size": [
+      2720,
+      1920
+    ],
+    "distinct_colors": 1536,
+    "top_left": [
+      255,
+      255,
+      255
+    ]
+  },
+  "layout_checks": {
+    "actual_metrics_layout_checks": [
+      {
+        "outside_figure": [],
+        "net_axis_ylim": [
+          -5.0,
+          5.0
+        ]
+      },
+      {
+        "outside_figure": [],
+        "net_axis_ylim": [
+          -5.0,
+          5.0
+        ]
+      }
+    ],
+    "zero_effect_layout_checks_passed": true
+  },
+  "visual_check": "Viewed final four-panel PNG: all eight arm labels, both-order/current and six-answer joint counts, depth/wording grid, signed paired gains and losses, complete before/after preservation counts, denominators and reused-cohort caveats are readable and match the independent audit. All rendered text lies within the figure; zero-effect plot layout also verified.",
+  "verification": {
+    "complete_unit_suite_passed": 105,
+    "extra_positive_and_negative_candidate_gate_test_passed": true,
+    "native_prefix_identity_checks": 12,
+    "actual_attention_checks": 48,
+    "detached_native_replays": 48,
+    "native_and_adapter_weights_unchanged": true
+  },
+  "decision": "Shared candidate screen failed: joint14/48 versus independent13, local-all17, local-question15, GDN-all12, GDN-question13, Attention-only4 and native1. All required shared comparisons fail stream/depth checks. Keep prior failed history/repeat primaries. No architecture training or scaling triggered; distinguish evidence addressing from dependency execution with frozen memories before proposing write changes."
+}

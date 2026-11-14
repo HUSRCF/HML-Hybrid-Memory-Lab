@@ -1,0 +1,113 @@
+{
+  "status": "registered_before_training",
+  "registered_utc": "2026-11-14T03:10:46.611320+00:00",
+  "purpose": "Same-budget ordinary initial-record order augmentation against the original canonical training; generic shared bottleneck remains a feasibility baseline.",
+  "backbone": "it",
+  "group_index": 3,
+  "initialization_seed": 1701,
+  "reader_policy": "full",
+  "adapt_gdn_keys": true,
+  "data_source": "/media/990Pro/Code/SAS/datasets/memory_update/paired-semantic-order-augmented-v1",
+  "data_sha256": "3ccaa5be8591fc896646a50991aaa86f5f722e00e76a198449791d3caa992b0f",
+  "registry_sha256": "9147f9f76334ebda3ad503f17603c3d06be630fae72b0dd930d5029ae877c55e",
+  "tokenized_input_answer_sha256": "8f286e49883583b97d4bf48822ea4663bd2cc3f5979f2031eef4c0b583cb3d1f",
+  "native_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-native-20261114-01",
+  "arms": {
+    "shared": {
+      "mode": "shared",
+      "rank": 64,
+      "token_policy": "all",
+      "parameters": 694272
+    },
+    "independent": {
+      "mode": "independent",
+      "rank": 54,
+      "token_policy": "all",
+      "parameters": 696384
+    },
+    "local": {
+      "mode": "local",
+      "rank": 22,
+      "token_policy": "all",
+      "parameters": 689216
+    },
+    "local_question": {
+      "mode": "local",
+      "rank": 22,
+      "token_policy": "question",
+      "parameters": 689216
+    }
+  },
+  "unique_training_examples": 864,
+  "gradient_accumulation": 2,
+  "maximum_optimizer_steps": 432,
+  "checkpoint_steps": [
+    144,
+    288,
+    432
+  ],
+  "evaluation_steps": [
+    432
+  ],
+  "learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "max_gradient_norm": 1.0,
+  "max_input_tokens": 832,
+  "optimized_input_token_budgets": {
+    "144": 176667,
+    "288": 355305,
+    "432": 527808
+  },
+  "supervised_answer_token_budgets": {
+    "144": 1152,
+    "288": 2304,
+    "432": 3456
+  },
+  "objective": "Only gold numeric-answer plus newline LM cross-entropy, identical for all arms. No auxiliary consistency loss or external scope labels.",
+  "gate": "Require independent audit of the original native, four trained canonical arms, and all five frozen order-control models before any new training. Same model, packages, adapter shapes and initial state hashes; at least one native readout error.",
+  "requirements": [
+    "Preserve the exact original ordered list of 864 training identities, answers, query tokens/positions and per-example optimized input lengths. Deterministically derange only the first eight independent initial SETs for streams 1 and 2 of each task; retain canonical streams 0 and 3. Each task/length has one stream of each order.",
+    "Use the original frozen backbone, full history, exact same controller parameter allocations and initialization hashes, identical answer-only LM loss and optimizer settings. Each arm gets one pass, 432 steps, 527808 input tokens and 3456 supervised answer tokens. No consistency losses or oracle scope labels.",
+    "Run all four one-update safety controls before scheduled training; verify zero-init identity, adapter gradients, frozen backbone and sampled question-only prefix identity. Scratch safety updates are discarded; reset each fresh controller to the registered seed and verify its original initial-state hash.",
+    "Save adapter/AdamW/RNG checkpoints at 144/288/432. Evaluate only final weights on both complete 432-example development orders, with separate final teacher fit on all 864 augmented training examples. Do not select checkpoints or tune hyperparameters on these results.",
+    "Verify actual six-layer full historical access, unchanged evaluated adapter states/RNG, sampled native restoration after detach, and sampled short/long native-prefix identity for question-only in both development orders.",
+    "Compare exact paired functional answers, four values, three roles, stable unchanged facts and ADD-separated updates against original canonical-trained models in each evaluation condition. Equal totals may hide rescues/regressions.",
+    "If ordinary augmentation explains an improvement, attribute it to the conventional data intervention. Keep fresh templates, event streams and initializations untouched until a concrete method and confirmation budget are fixed."
+  ],
+  "interpretation": "One paired initialization and the same original train/validation event streams. Only half the training initial-record orders change; per-example positions/lengths/labels and all hyperparameters stay matched. Both already-observed validation orders are development diagnostics, not fresh confirmation. Neither an augmentation gain nor a generic shared bottleneck establishes a semantic interface or isolated recurrent-write damage. Shared must beat independent controllers under the same ordinary augmentation before architectural escalation.",
+  "profile": "ordinary_initial_order_augmentation",
+  "base_data_sha256": "9a58823c8348db79b5b20db418894ae51782d02d943dc2440365af66c6838791",
+  "data_manifest_sha256": "f5b90214f92710085b208e96d2af98db5d4cc7547a2e518a34e8dec1616de32d",
+  "training_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-controllers-20261114-01",
+  "order_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/initial-order-control-20261114-01",
+  "original_training_plan_sha256": "52f0db3fe5e6635eb19380856c5792940e9d31124fe29f0543544ad505aed587",
+  "order_control_plan": "/home/husrcf/Code/SAS/configs/initial_order_control_plan.json",
+  "order_control_plan_sha256": "ab728f84c696c8c664217e86955935cbff5ffb3cdfa896e44f748750b6a27a22",
+  "initial_state_sha256": {
+    "shared": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+    "independent": "02120c5c68629314f6cac9fc2e6adb4f4d3da57691e1d1c0bca711e62c2baf26",
+    "local": "44ebb8784799d6d68369fc7953ccfa42429b30109fbe8cbd43aaa1d8d1b2ea8f",
+    "local_question": "44ebb8784799d6d68369fc7953ccfa42429b30109fbe8cbd43aaa1d8d1b2ea8f"
+  },
+  "evaluation_conditions": [
+    "canonical",
+    "initial_record_derangement"
+  ],
+  "augmentation": {
+    "seed_offset": 991003,
+    "canonical_train_stream_indices": [
+      0,
+      3
+    ],
+    "deranged_train_stream_indices": [
+      1,
+      2
+    ],
+    "canonical_train_examples": 432,
+    "deranged_train_examples": 432,
+    "all_four_siblings_share_order": true
+  },
+  "native_reference_manifest_sha256": "2b9580bea17bad9a6e6569da2c071fa549271114663580e0c7dc514ee8df22a3",
+  "training_reference_manifest_sha256": "601e20a31826ea822da2810231cc5e18da74817adab4d17a10c4218c6c01e965",
+  "order_reference_manifest_sha256": "8f9fbc9bd4fd48a8ad274b5f827d0fddcedfef47c2bd898349a8e747dca5453d"
+}

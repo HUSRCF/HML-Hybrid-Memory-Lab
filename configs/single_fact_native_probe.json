@@ -1,0 +1,33 @@
+{
+  "status": "planned_not_started",
+  "registered_utc": "2026-11-14T01:02:37.691435+00:00",
+  "training": false,
+  "model": "it",
+  "model_inference_yet": false,
+  "data_source": "/media/990Pro/Code/SAS/datasets/memory_update/single-fact-counterfactual-v1",
+  "data_sha256": "d6fd626108ce99966336f952702cab0ff07f2c785b2c5de47fd773ed483d5388",
+  "registry_sha256": "2051fa90e62ec97150372aaee1cb7e6a0338ec3aa3dd225bb52e8e4a686f884f",
+  "conditions": [
+    "full_history",
+    "records_blocked"
+  ],
+  "splits": [
+    "train",
+    "validation"
+  ],
+  "models": [
+    "native"
+  ],
+  "examples": {
+    "train": 128,
+    "validation": 64
+  },
+  "primary_metric": "All four different-value siblings answered correctly by unrestricted greedy decoding; also report individual-answer accuracy.",
+  "requirements": [
+    "Verify executable truth and every registered token mask before inference.",
+    "Keep original input/positions and ordinary hybrid prefix processing; block every record-KV column only for question/answer rows, including cached scoring and generation.",
+    "Inspect actual blocked softmax probabilities and nonzero full-history controls at all six attention layers on sampled contexts, and verify prefix/historical-KV identity.",
+    "Audit raw free-generation correctness and complete four-sibling families for both splits/conditions; do not treat 25-percent per-answer lookup as evidence of memory use."
+  ],
+  "interpretation": "Immediate single-fact carrier/readout positive control, not a long-memory or semantic-update result. Within each family only three value-token IDs differ; question text, token positions, all other input IDs and allowed history columns match. A deterministic prefix-independent answer can get at most one of four siblings correct. Retained carriers include recurrent/convolution state built with normal hybrid prefix attention."
+}

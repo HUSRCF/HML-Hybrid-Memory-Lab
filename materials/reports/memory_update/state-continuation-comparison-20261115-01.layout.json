@@ -1,0 +1,333 @@
+{
+  "canvas_pixels": [
+    2196,
+    1368
+  ],
+  "all_text_inside": true,
+  "text_boxes": [
+    {
+      "text": "784 [correct]\nNLL 0.000550\nchange +0.000000",
+      "bounds": [
+        568.0925,
+        941.5,
+        771.4675,
+        1007.9000000000001
+      ]
+    },
+    {
+      "text": "784 [correct]\nNLL 0.000559\nchange +0.000008",
+      "bounds": [
+        853.5725,
+        941.5,
+        1056.9475,
+        1007.9000000000001
+      ]
+    },
+    {
+      "text": "784 [correct]\nNLL 0.000552\nchange +0.000002",
+      "bounds": [
+        1139.0525,
+        941.5,
+        1342.4275,
+        1007.9000000000001
+      ]
+    },
+    {
+      "text": "784 [correct]\nNLL 0.000550\nchange -0.000000",
+      "bounds": [
+        1429.595,
+        941.5,
+        1622.845,
+        1007.9000000000001
+      ]
+    },
+    {
+      "text": "784 [correct]\nNLL 0.000550\nchange +0.000000",
+      "bounds": [
+        1710.0125,
+        941.5,
+        1913.3875,
+        1007.9000000000001
+      ]
+    },
+    {
+      "text": "375 [correct]\nNLL 0.366129\nchange +0.000000",
+      "bounds": [
+        568.0925,
+        756.8199999999999,
+        771.4675,
+        823.22
+      ]
+    },
+    {
+      "text": "375 [correct]\nNLL 0.366133\nchange +0.000005",
+      "bounds": [
+        853.5725,
+        756.8199999999999,
+        1056.9475,
+        823.22
+      ]
+    },
+    {
+      "text": "375 [correct]\nNLL 0.359286\nchange -0.006842",
+      "bounds": [
+        1144.115,
+        756.8199999999999,
+        1337.365,
+        823.22
+      ]
+    },
+    {
+      "text": "375 [correct]\nNLL 0.359316\nchange -0.006813",
+      "bounds": [
+        1429.595,
+        756.8199999999999,
+        1622.845,
+        823.22
+      ]
+    },
+    {
+      "text": "375 [correct]\nNLL 0.366129\nchange +0.000000",
+      "bounds": [
+        1710.0125,
+        756.8199999999999,
+        1913.3875,
+        823.22
+      ]
+    },
+    {
+      "text": "703 [wrong]\nNLL 0.328503\nchange +0.000000",
+      "bounds": [
+        568.0925,
+        572.14,
+        771.4675,
+        638.5400000000001
+      ]
+    },
+    {
+      "text": "703 [wrong]\nNLL 0.330504\nchange +0.002000",
+      "bounds": [
+        853.5725,
+        572.14,
+        1056.9475,
+        638.5400000000001
+      ]
+    },
+    {
+      "text": "703 [wrong]\nNLL 0.328561\nchange +0.000057",
+      "bounds": [
+        1139.0525,
+        572.14,
+        1342.4275,
+        638.5400000000001
+      ]
+    },
+    {
+      "text": "703 [wrong]\nNLL 0.332509\nchange +0.004006",
+      "bounds": [
+        1424.5325,
+        572.14,
+        1627.9075,
+        638.5400000000001
+      ]
+    },
+    {
+      "text": "703 [wrong]\nNLL 0.328503\nchange +0.000000",
+      "bounds": [
+        1710.0125,
+        572.14,
+        1913.3875,
+        638.5400000000001
+      ]
+    },
+    {
+      "text": "703 [correct]\nNLL 0.570238\nchange +0.000000",
+      "bounds": [
+        568.0925,
+        387.4600000000001,
+        771.4675,
+        453.86000000000007
+      ]
+    },
+    {
+      "text": "703 [correct]\nNLL 0.599185\nchange +0.028946",
+      "bounds": [
+        853.5725,
+        387.4600000000001,
+        1056.9475,
+        453.86000000000007
+      ]
+    },
+    {
+      "text": "703 [correct]\nNLL 0.598968\nchange +0.028729",
+      "bounds": [
+        1139.0525,
+        387.4600000000001,
+        1342.4275,
+        453.86000000000007
+      ]
+    },
+    {
+      "text": "703 [correct]\nNLL 0.597142\nchange +0.026904",
+      "bounds": [
+        1424.5325,
+        387.4600000000001,
+        1627.9075,
+        453.86000000000007
+      ]
+    },
+    {
+      "text": "703 [correct]\nNLL 0.570238\nchange +0.000000",
+      "bounds": [
+        1710.0125,
+        387.4600000000001,
+        1913.3875,
+        453.86000000000007
+      ]
+    },
+    {
+      "text": "Unmasked\nreference",
+      "bounds": [
+        610.53,
+        1087.04,
+        729.03,
+        1136.6399999999999
+      ]
+    },
+    {
+      "text": "Both paths restored\nstate retained",
+      "bounds": [
+        843.885,
+        1087.04,
+        1066.635,
+        1136.6399999999999
+      ]
+    },
+    {
+      "text": "Restore\nconvolution",
+      "bounds": [
+        1175.4275,
+        1087.04,
+        1306.0525,
+        1136.6399999999999
+      ]
+    },
+    {
+      "text": "Restore\nrecurrent state",
+      "bounds": [
+        1442.47,
+        1087.04,
+        1609.97,
+        1136.6399999999999
+      ]
+    },
+    {
+      "text": "Restore\nboth states",
+      "bounds": [
+        1748.3875,
+        1087.04,
+        1875.0125,
+        1136.6399999999999
+      ]
+    },
+    {
+      "text": "LocalQ / oracle\noriginal harm / gold 784",
+      "bounds": [
+        236.78999999999996,
+        945.6,
+        507.03999999999996,
+        995.2
+      ]
+    },
+    {
+      "text": "LocalQ / remove_matched_other\noriginal harm / gold 375",
+      "bounds": [
+        142.41499999999996,
+        760.92,
+        507.03999999999996,
+        810.52
+      ]
+    },
+    {
+      "text": "GDNQ / remove_matched_other\noriginal repair / gold 312",
+      "bounds": [
+        149.03999999999996,
+        576.24,
+        507.03999999999996,
+        625.84
+      ]
+    },
+    {
+      "text": "GDNQ / remove_matched_other\noriginal harm / gold 703",
+      "bounds": [
+        149.03999999999996,
+        391.56000000000006,
+        507.03999999999996,
+        441.1600000000001
+      ]
+    },
+    {
+      "text": "Mean gold NLL change vs reference",
+      "bounds": [
+        2175.868,
+        517.8675000000001,
+        2194.868,
+        877.4925000000001
+      ]
+    },
+    {
+      "text": "−0.02895",
+      "bounds": [
+        2066.368,
+        371.5400000000001,
+        2165.868,
+        390.5400000000001
+      ]
+    },
+    {
+      "text": "0.00000",
+      "bounds": [
+        2066.368,
+        686.1800000000001,
+        2149.118,
+        705.1800000000001
+      ]
+    },
+    {
+      "text": "0.02895",
+      "bounds": [
+        2066.368,
+        1000.82,
+        2149.118,
+        1019.82
+      ]
+    },
+    {
+      "text": "After exact first-logit closure: do remaining GDN states affect the full answer?",
+      "bounds": [
+        464.875,
+        1268.6,
+        1731.125,
+        1299.6
+      ]
+    },
+    {
+      "text": "Four reused queries; identical complete K/V and starting logits in every condition.",
+      "bounds": [
+        527.04,
+        1198.84,
+        1552.915,
+        1222.84
+      ]
+    },
+    {
+      "text": "Only conv/recurrent caches in layers20-22 vary. All20 greedy answers and fixed-gold losses shown.\nRed: higher gold NLL. Blue: lower gold NLL. Color does not measure answer accuracy.\nOracle state restoration is a diagnostic; this is not independent confirmation or an architecture result.",
+      "bounds": [
+        527.04,
+        101.64000000000001,
+        1670.79,
+        177.84
+      ]
+    }
+  ]
+}

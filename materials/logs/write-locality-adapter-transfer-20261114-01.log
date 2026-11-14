@@ -1,0 +1,29 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<03:21,  1.58it/s]Loading weights:   7%|▋         | 23/320 [00:00<00:07, 41.81it/s]Loading weights:  13%|█▎        | 41/320 [00:00<00:04, 68.66it/s]Loading weights:  19%|█▉        | 60/320 [00:00<00:02, 93.10it/s]Loading weights:  25%|██▍       | 79/320 [00:01<00:02, 114.69it/s]Loading weights:  30%|███       | 96/320 [00:01<00:01, 125.91it/s]Loading weights:  36%|███▌      | 114/320 [00:01<00:01, 139.65it/s]Loading weights:  42%|████▏     | 133/320 [00:01<00:01, 149.86it/s]Loading weights:  47%|████▋     | 150/320 [00:01<00:01, 137.10it/s]Loading weights:  54%|█████▍    | 173/320 [00:01<00:00, 160.59it/s]Loading weights:  60%|██████    | 193/320 [00:01<00:00, 168.93it/s]Loading weights:  66%|██████▋   | 212/320 [00:01<00:00, 167.05it/s]Loading weights:  73%|███████▎  | 233/320 [00:01<00:00, 175.04it/s]Loading weights:  79%|███████▉  | 252/320 [00:02<00:00, 163.31it/s]Loading weights:  87%|████████▋ | 277/320 [00:02<00:00, 180.85it/s]Loading weights:  92%|█████████▎| 296/320 [00:02<00:00, 178.44it/s]Loading weights:  98%|█████████▊| 315/320 [00:02<00:00, 168.78it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 129.88it/s]
+{"event": "fixed_checkpoint_transfer", "model": "gdn_all_tokens", "completed": 32, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_all_tokens", "completed": 64, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_all_tokens", "completed": 96, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_all_tokens", "completed": 128, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_all_tokens", "completed": 160, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_all_tokens", "completed": 192, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_all_tokens", "completed": 224, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_all_tokens", "completed": 256, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_all_tokens", "completed": 288, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_all_tokens", "completed": 320, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_all_tokens", "completed": 352, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_all_tokens", "completed": 384, "total": 384}
+{"event": "timing_checkpoint_completed", "model": "gdn_all_tokens", "readouts": 384}
+{"event": "native_long_prefix_identity_passed", "model": "gdn_question_only", "prefixes": 20}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_question_only", "completed": 32, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_question_only", "completed": 64, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_question_only", "completed": 96, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_question_only", "completed": 128, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_question_only", "completed": 160, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_question_only", "completed": 192, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_question_only", "completed": 224, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_question_only", "completed": 256, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_question_only", "completed": 288, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_question_only", "completed": 320, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_question_only", "completed": 352, "total": 384}
+{"event": "fixed_checkpoint_transfer", "model": "gdn_question_only", "completed": 384, "total": 384}
+{"event": "timing_checkpoint_completed", "model": "gdn_question_only", "readouts": 384}

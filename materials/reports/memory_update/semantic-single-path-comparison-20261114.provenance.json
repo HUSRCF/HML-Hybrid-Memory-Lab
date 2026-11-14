@@ -1,0 +1,16 @@
+{
+  "status": "source_reports_and_visually_checked_figure_recorded",
+  "recorded_utc": "2026-11-14T04:46:36.460235+00:00",
+  "files_sha256": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.source.py": "054a489756e5d3ebcde89a98f89a179900d80a94fd45aaac085a937134a5eb85",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-comparison-20261114.json": "6f83a9f6f0a2723421bd221d57ee7de84a336894c196a8390d2d367be1b62e15",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-comparison-20261114.source.py": "9bced9944300b55b3ab85d077b30149a1eab469e0b564e1b923e3e3f98b88632",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-comparison-20261114.png": "4004a65027be5594d2db84e0b309e2dfe387553d836be3493554c0ab9b9c7624",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-comparison-20261114.pdf": "373a2b38fa5a4afd772635dcfaaa5173c9565e7715928524a2fb74eb217cb76b"
+  },
+  "analysis_source_sha256": "9bced9944300b55b3ab85d077b30149a1eab469e0b564e1b923e3e3f98b88632",
+  "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+  "augmentation_manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+  "visual_inspection": "Viewed the exported PNG; six model labels, raw-count annotations, axes and limitations are legible without overlap."
+}

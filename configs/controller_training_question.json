@@ -1,0 +1,34 @@
+{
+  "protocol_version": 1,
+  "model": "it",
+  "group_index": 3,
+  "initialization_seed": 1701,
+  "steps": 64,
+  "gradient_accumulation": 2,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "max_gradient_norm": 1.0,
+  "max_sequence_tokens": 1536,
+  "validation_copy_cases": 4,
+  "validation_overwrite_cases": 2,
+  "test_copy_cases": 8,
+  "test_overwrite_cases": 4,
+  "modes": {
+    "local": 22
+  },
+  "notes": [
+    "Small feasibility trial, not a novelty or architecture claim.",
+    "Frozen IT backbone; existing conda base. No new environment or package installation.",
+    "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+    "No test-based hyperparameter selection; evaluate final checkpoint only.",
+    "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+    "Seed and entity namespaces are disjoint across train/validation/test.",
+    "Only three-digit answer and newline tokens receive supervised loss.",
+    "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets.",
+    "Mechanism control: train and evaluate with the same token-position policy, rather than disabling branches only after training.",
+    "Ordinary local low-rank adapter; identical seed, examples, steps, learning rate and parameter count to the all-token local checkpoint.",
+    "Ledger-only can alter both recurrent states and KV construction. Question-only preserves all pre-question computation. Neither is a GDN-only intervention."
+  ],
+  "adapt_gdn_keys": true,
+  "token_policy": "question"
+}

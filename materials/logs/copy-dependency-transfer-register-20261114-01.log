@@ -1,0 +1,2 @@
+{"event": "prior_native384_audit_reexecuted_and_seven_checkpoints_verified"}
+{"status": "registered_before_inference", "counts": {"models": 8, "existing_cases": 48, "base_streams": 8, "reported_bindings_per_model": 432, "physical_queries_per_model": 336, "reported_bindings_total": 3456, "physical_queries_total": 2688}, "prompt_tokens": [383, 384, 421, 422, 442, 443, 463, 464, 1335, 1336, 1373, 1374, 1394, 1395, 1415, 1416], "registry_sha256": "8fe7fa9310f7bcbc1d0643870cbc6494c21e7320dd60c8cbfd147c4d878f8c47"}

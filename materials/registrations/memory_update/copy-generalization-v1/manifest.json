@@ -1,0 +1,33 @@
+{
+  "status": "cpu_validated_model_evaluation_not_started",
+  "created_utc": "2026-11-13T21:38:58.156385+00:00",
+  "cases": 48,
+  "base_cases": 8,
+  "questions": 432,
+  "seeds": [
+    60000,
+    60001,
+    60002,
+    60003,
+    60004,
+    60005,
+    60006,
+    60007
+  ],
+  "cases_sha256": "a995eea7d47b5b03423ccf17d7c26f65d4d873f7a7fc391821bcc03f563efba7",
+  "tokenizer_boundaries_exact": true,
+  "matched_order_ledger_lengths": 48,
+  "max_teacher_forced_tokens": 1419,
+  "source_sha256": {
+    "sas_memory/generalization_tasks.py": "e4c8ad0b6611378192d2772c3f73775eb339259647b6081f8bf2da4bc8b0eacb",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e"
+  },
+  "limitations": [
+    "Six conditions share each of eight base cases; pooled uncertainty must cluster by base_case_id.",
+    "Changing chain depth changes reasoning requirements and text length; it is not an isolated memory-duration manipulation.",
+    "Question order changes can test wording generalization, not independently prove position/gate causality.",
+    "Oracle slices preserve executable truth but change positions and recurrent computation."
+  ]
+}

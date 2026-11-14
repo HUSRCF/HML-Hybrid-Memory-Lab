@@ -1,0 +1,62 @@
+{
+  "status": "evaluation_and_analysis_complete",
+  "registered_utc": "2026-11-13T21:18:32.383427+00:00",
+  "initialization_seeds": [
+    1701,
+    2718,
+    31415
+  ],
+  "new_runs": [
+    {
+      "initialization_seed": 2718,
+      "token_policy": "all",
+      "config": "configs/controller_replication_2718_all.json",
+      "run": "runs/memory_update/controller-init2718-all-20261114-01"
+    },
+    {
+      "initialization_seed": 2718,
+      "token_policy": "question",
+      "config": "configs/controller_replication_2718_question.json",
+      "run": "runs/memory_update/controller-init2718-question-20261114-01"
+    },
+    {
+      "initialization_seed": 31415,
+      "token_policy": "all",
+      "config": "configs/controller_replication_31415_all.json",
+      "run": "runs/memory_update/controller-init31415-all-20261114-01"
+    },
+    {
+      "initialization_seed": 31415,
+      "token_policy": "question",
+      "config": "configs/controller_replication_31415_question.json",
+      "run": "runs/memory_update/controller-init31415-question-20261114-01"
+    }
+  ],
+  "reference_runs": {
+    "all": "runs/memory_update/controller-keys-pilot-20261114-01",
+    "question": "runs/memory_update/controller-question-trained-20261114-01"
+  },
+  "training_data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+  "tokenized_input_answer_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a",
+  "parameters": 689216,
+  "heldout_cohort": "runs/memory_update/controller-timing-confirm-20261114-01/cases.json",
+  "primary_metric": "COPY current, initial and protected readouts jointly correct for each order variant",
+  "comparison": "question vs all token policy, paired within each seed and case",
+  "analysis": [
+    "Report every initialization separately; average over the same cases and do not treat correlated seed/case/query rows as independent.",
+    "The evaluation cohort is intentionally reused as a fixed benchmark, not described as fresh data.",
+    "No hyperparameter changes, test-based selection, or equivalence claim from a non-significant difference.",
+    "Three initializations are a limited replication, not a broad architecture claim."
+  ],
+  "started_utc": "2026-11-13T21:21:00.786511+00:00",
+  "completed_runs": [
+    "runs/memory_update/controller-init2718-all-20261114-01",
+    "runs/memory_update/controller-init2718-question-20261114-01",
+    "runs/memory_update/controller-init31415-all-20261114-01",
+    "runs/memory_update/controller-init31415-question-20261114-01"
+  ],
+  "completed_training_utc": "2026-11-13T21:30:03.022253+00:00",
+  "evaluation_config": "configs/controller_replication_evaluation.json",
+  "analysis_config": "configs/controller_replication_analysis.json",
+  "result_artifact": "artifacts/memory_update/controller-initialization-replication-20261114.json"
+}

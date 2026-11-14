@@ -1,0 +1,58 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<01:59,  2.68it/s]Loading weights:  11%|█▏        | 36/320 [00:00<00:02, 95.83it/s]Loading weights:  20%|██        | 65/320 [00:00<00:01, 146.30it/s]Loading weights:  29%|██▉       | 94/320 [00:00<00:01, 183.34it/s]Loading weights:  38%|███▊      | 120/320 [00:00<00:00, 203.11it/s]Loading weights:  47%|████▋     | 151/320 [00:00<00:00, 228.63it/s]Loading weights:  57%|█████▋    | 183/320 [00:01<00:00, 254.60it/s]Loading weights:  66%|██████▌   | 211/320 [00:01<00:00, 252.03it/s]Loading weights:  75%|███████▌  | 240/320 [00:01<00:00, 260.12it/s]Loading weights:  85%|████████▌ | 272/320 [00:01<00:00, 275.99it/s]Loading weights:  95%|█████████▌| 305/320 [00:01<00:00, 284.09it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 213.01it/s]
+{"event": "layer_localization", "model": "local_question", "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545", "condition": "full", "rows": 1}
+{"event": "layer_localization", "model": "local_question", "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545", "condition": "all_layers", "rows": 2}
+{"event": "layer_localization", "model": "local_question", "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545", "condition": "only_layer_3", "rows": 3}
+{"event": "layer_localization", "model": "local_question", "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545", "condition": "only_layer_7", "rows": 4}
+{"event": "layer_localization", "model": "local_question", "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545", "condition": "only_layer_11", "rows": 5}
+{"event": "layer_localization", "model": "local_question", "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545", "condition": "only_layer_15", "rows": 6}
+{"event": "layer_localization", "model": "local_question", "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545", "condition": "only_layer_19", "rows": 7}
+{"event": "layer_localization", "model": "local_question", "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545", "condition": "only_layer_23", "rows": 8}
+{"event": "layer_localization", "model": "local_question", "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545", "condition": "all_except_layer_3", "rows": 9}
+{"event": "layer_localization", "model": "local_question", "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545", "condition": "all_except_layer_7", "rows": 10}
+{"event": "layer_localization", "model": "local_question", "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545", "condition": "all_except_layer_11", "rows": 11}
+{"event": "layer_localization", "model": "local_question", "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545", "condition": "all_except_layer_15", "rows": 12}
+{"event": "layer_localization", "model": "local_question", "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545", "condition": "all_except_layer_19", "rows": 13}
+{"event": "layer_localization", "model": "local_question", "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545", "condition": "all_except_layer_23", "rows": 14}
+{"event": "layer_localization", "model": "local_question", "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf", "condition": "full", "rows": 15}
+{"event": "layer_localization", "model": "local_question", "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf", "condition": "all_layers", "rows": 16}
+{"event": "layer_localization", "model": "local_question", "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf", "condition": "only_layer_3", "rows": 17}
+{"event": "layer_localization", "model": "local_question", "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf", "condition": "only_layer_7", "rows": 18}
+{"event": "layer_localization", "model": "local_question", "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf", "condition": "only_layer_11", "rows": 19}
+{"event": "layer_localization", "model": "local_question", "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf", "condition": "only_layer_15", "rows": 20}
+{"event": "layer_localization", "model": "local_question", "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf", "condition": "only_layer_19", "rows": 21}
+{"event": "layer_localization", "model": "local_question", "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf", "condition": "only_layer_23", "rows": 22}
+{"event": "layer_localization", "model": "local_question", "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf", "condition": "all_except_layer_3", "rows": 23}
+{"event": "layer_localization", "model": "local_question", "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf", "condition": "all_except_layer_7", "rows": 24}
+{"event": "layer_localization", "model": "local_question", "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf", "condition": "all_except_layer_11", "rows": 25}
+{"event": "layer_localization", "model": "local_question", "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf", "condition": "all_except_layer_15", "rows": 26}
+{"event": "layer_localization", "model": "local_question", "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf", "condition": "all_except_layer_19", "rows": 27}
+{"event": "layer_localization", "model": "local_question", "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf", "condition": "all_except_layer_23", "rows": 28}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532", "condition": "full", "rows": 1}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532", "condition": "all_layers", "rows": 2}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532", "condition": "only_layer_3", "rows": 3}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532", "condition": "only_layer_7", "rows": 4}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532", "condition": "only_layer_11", "rows": 5}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532", "condition": "only_layer_15", "rows": 6}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532", "condition": "only_layer_19", "rows": 7}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532", "condition": "only_layer_23", "rows": 8}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532", "condition": "all_except_layer_3", "rows": 9}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532", "condition": "all_except_layer_7", "rows": 10}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532", "condition": "all_except_layer_11", "rows": 11}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532", "condition": "all_except_layer_15", "rows": 12}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532", "condition": "all_except_layer_19", "rows": 13}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532", "condition": "all_except_layer_23", "rows": 14}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd", "condition": "full", "rows": 15}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd", "condition": "all_layers", "rows": 16}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd", "condition": "only_layer_3", "rows": 17}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd", "condition": "only_layer_7", "rows": 18}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd", "condition": "only_layer_11", "rows": 19}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd", "condition": "only_layer_15", "rows": 20}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd", "condition": "only_layer_19", "rows": 21}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd", "condition": "only_layer_23", "rows": 22}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd", "condition": "all_except_layer_3", "rows": 23}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd", "condition": "all_except_layer_7", "rows": 24}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd", "condition": "all_except_layer_11", "rows": 25}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd", "condition": "all_except_layer_15", "rows": 26}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd", "condition": "all_except_layer_19", "rows": 27}
+{"event": "layer_localization", "model": "gdn_question_only", "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd", "condition": "all_except_layer_23", "rows": 28}

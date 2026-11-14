@@ -1,0 +1,33 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:06,  2.52it/s]Loading weights:   9%|▉         | 28/320 [00:00<00:03, 73.26it/s]Loading weights:  19%|█▉        | 61/320 [00:00<00:01, 142.93it/s]Loading weights:  28%|██▊       | 90/320 [00:00<00:01, 183.83it/s]Loading weights:  37%|███▋      | 118/320 [00:00<00:00, 208.56it/s]Loading weights:  46%|████▌     | 147/320 [00:00<00:00, 225.92it/s]Loading weights:  54%|█████▍    | 174/320 [00:01<00:00, 234.24it/s]Loading weights:  64%|██████▍   | 204/320 [00:01<00:00, 248.01it/s]Loading weights:  74%|███████▍  | 238/320 [00:01<00:00, 267.64it/s]Loading weights:  83%|████████▎ | 267/320 [00:01<00:00, 264.82it/s]Loading weights:  93%|█████████▎| 298/320 [00:01<00:00, 272.71it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 209.23it/s]
+{"event": "copy_necessity", "model": "native", "queries_per_regime": 6, "total": 18}
+{"event": "copy_necessity", "model": "native", "queries_per_regime": 12, "total": 18}
+{"event": "copy_necessity", "model": "native", "queries_per_regime": 18, "total": 18}
+{"event": "copy_necessity_arm_complete", "model": "native", "readouts": 36}
+{"event": "copy_necessity", "model": "shared", "queries_per_regime": 6, "total": 18}
+{"event": "copy_necessity", "model": "shared", "queries_per_regime": 12, "total": 18}
+{"event": "copy_necessity", "model": "shared", "queries_per_regime": 18, "total": 18}
+{"event": "copy_necessity_arm_complete", "model": "shared", "readouts": 36}
+{"event": "copy_necessity", "model": "independent", "queries_per_regime": 6, "total": 18}
+{"event": "copy_necessity", "model": "independent", "queries_per_regime": 12, "total": 18}
+{"event": "copy_necessity", "model": "independent", "queries_per_regime": 18, "total": 18}
+{"event": "copy_necessity_arm_complete", "model": "independent", "readouts": 36}
+{"event": "copy_necessity", "model": "local", "queries_per_regime": 6, "total": 18}
+{"event": "copy_necessity", "model": "local", "queries_per_regime": 12, "total": 18}
+{"event": "copy_necessity", "model": "local", "queries_per_regime": 18, "total": 18}
+{"event": "copy_necessity_arm_complete", "model": "local", "readouts": 36}
+{"event": "copy_necessity", "model": "local_question", "queries_per_regime": 6, "total": 18}
+{"event": "copy_necessity", "model": "local_question", "queries_per_regime": 12, "total": 18}
+{"event": "copy_necessity", "model": "local_question", "queries_per_regime": 18, "total": 18}
+{"event": "copy_necessity_arm_complete", "model": "local_question", "readouts": 36}
+Traceback (most recent call last):
+  File "/home/husrcf/Code/SAS/scripts/run_copy_evidence_necessity.py", line 174, in <module>
+    main()
+  File "/home/husrcf/Code/SAS/scripts/run_copy_evidence_necessity.py", line 170, in main
+    execute(args, read_plan(), registered, source_plan, cases, registry, masks, rows, gate)
+  File "/home/husrcf/Code/SAS/scripts/run_copy_evidence_necessity.py", line 106, in execute
+    proof, actual = prove_and_measure(runtime, ledger, q, keeps, full[name][q["id"]])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/husrcf/Code/SAS/scripts/copy_readout_runtime.py", line 123, in prove_and_measure
+    raise ValueError(f"Actual unmasked reference readout changed: query={query['id']}, differences={differences}")
+ValueError: Actual unmasked reference readout changed: query=571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf, differences={'answer_nll': {'expected': 0.4226212501525879, 'actual': 0.44792552789052326}}

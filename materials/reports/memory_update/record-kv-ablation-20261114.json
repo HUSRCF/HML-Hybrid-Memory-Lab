@@ -1,0 +1,1355 @@
+{
+  "status": "completed",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/record-kv-ablation-20261114-01",
+  "analysis_source_sha256": "3b1aa704bbb0aad158a5c3013c36876b0aa6ad3bc717115f8b28e5b357f4e97a",
+  "manifest_sha256": "4a9a24fb2498f9df68e498898dab209fb5d19788065f810c44baf85881f07285",
+  "cases_sha256": "94a77ba1ca2731da60b7d5f9d0b4e2e9142b24ea18017b4b8f837253c2ca3619",
+  "registry_sha256": "1923718547a23b1ebff345d7a68d05b1a098b43011ff637ec1b43d91460aa6b5",
+  "base_cases": 24,
+  "contexts_per_model": 288,
+  "new_records_audited": 1152,
+  "checks": {
+    "registered_before_inference": true,
+    "boundary_only_masks_regenerated": true,
+    "all_ledger_record_columns_blocked": true,
+    "original_input_and_prefix_retained": true,
+    "short_and_long_raw_oracle_replays": true,
+    "cached_generation_always_masked": true,
+    "source_tokenizer_checkpoint_and_result_hashes": true
+  },
+  "interpretation": "Historical ledger-record KV is blocked only for question/answer rows in all six attention layers. Normal hybrid prefix computation, recurrent/convolution state, instruction KV and causal question/answer KV remain. This is not isolated GDN-matrix performance. Success can indicate usable information in remaining carriers; failure under a frozen perturbed readout does not establish absent information or memory damage. Dense eager masking is not an efficiency result. All queries here are post-COPY current-value queries; semantic-order and historical-version generalization remain separate requirements.",
+  "models": {
+    "native": {
+      "regimes": {
+        "raw_full": {
+          "correct": 5,
+          "count": 288,
+          "accuracy": 0.017361111111111112,
+          "answer_nll": 1.1027618040917095
+        },
+        "oracle": {
+          "correct": 93,
+          "count": 288,
+          "accuracy": 0.3229166666666667,
+          "answer_nll": 0.6055438684092628
+        },
+        "records_blocked": {
+          "correct": 0,
+          "count": 288,
+          "accuracy": 0,
+          "answer_nll": 2.698057224905049
+        }
+      },
+      "blocked_minus_full": {
+        "difference": -0.017361111111111112,
+        "ci95": [
+          -0.03819444444444444,
+          0
+        ],
+        "cases": 24,
+        "bootstrap_samples": 5000,
+        "unit": "base_case_id, averaging depth/wording/late-order variants",
+        "multiple_comparison_adjustment": false
+      },
+      "blocked_minus_oracle": {
+        "difference": -0.3229166666666667,
+        "ci95": [
+          -0.4583333333333333,
+          -0.19444444444444445
+        ],
+        "cases": 24,
+        "bootstrap_samples": 5000,
+        "unit": "base_case_id, averaging depth/wording/late-order variants",
+        "multiple_comparison_adjustment": false
+      },
+      "blocked_vs_full_paired": {
+        "right_correct": 5,
+        "regressions": 5,
+        "recoveries": 0
+      },
+      "blocked_vs_oracle_paired": {
+        "right_correct": 93,
+        "regressions": 93,
+        "recoveries": 0
+      },
+      "error_types": {
+        "raw_full": {
+          "target_initial_value": 210,
+          "other": 48,
+          "late_written_value": 25,
+          "correct": 5
+        },
+        "oracle": {
+          "correct": 93,
+          "other": 195
+        },
+        "records_blocked": {
+          "other": 288
+        }
+      },
+      "blocked_prediction_counts": {
+        "- E902: 0": 1,
+        "- Initial balance of E902: 0": 1,
+        "100000000000": 66,
+        "- Account E902: 0": 4,
+        "100": 7,
+        "-100": 40,
+        "-1": 1,
+        "1000000000": 45,
+        "- E857: 0": 3,
+        "- Initial balance of E857: 0": 1,
+        "- E792: 0": 6,
+        "- E792: 1000": 2,
+        "- E957: 0": 2,
+        "1000": 23,
+        "- Initial balance of E957: 0": 1,
+        "- E778: 0": 4,
+        "- E778: 1000": 1,
+        "- Account E778: 0": 1,
+        "- Initial balance of E705: 0": 2,
+        "- E705: 0": 1,
+        "- Initial balance of E896: 0": 2,
+        "- E896: 0": 4,
+        "- Account E896: 0": 1,
+        "- E896: 1000": 1,
+        "- E937: 0": 1,
+        "- Initial balance of E937: 0": 1,
+        "- Initial balance of E708: 0": 4,
+        "- E708: 0": 3,
+        "- Account E708: 0": 5,
+        "- Initial balance of E709: 0": 2,
+        "- E709: 0": 2,
+        "- Initial balance of E759: 0": 2,
+        "- E759: 0": 4,
+        "- Initial balance of E773: 0": 1,
+        "- Account E846: 0": 5,
+        "- E846: 0": 1,
+        "- Initial balance of E891: 0": 2,
+        "- E891: 1000": 3,
+        "- Account E891: 0": 1,
+        "- Account E783: 0": 4,
+        "- E783: 0": 1,
+        "- E783: 1000": 3,
+        "- Initial balance of E727: 0": 6,
+        "- Account E769: 0": 6,
+        "- E748: 0": 3,
+        "- Initial balance of E748: 0": 1,
+        "- Account E967: 0": 6,
+        "- Initial balance of E821: 0": 1
+      },
+      "blocked_query_target_id_echoes": 0,
+      "blocked_integer_format_outputs": 182,
+      "independent_late_order_consistency": {
+        "raw_full": {
+          "pairs": 144,
+          "both_correct": 2,
+          "both_incorrect": 141,
+          "correctness_disagreements": 1,
+          "generated_string_disagreements": 25,
+          "mean_absolute_answer_nll_difference": 0.053778136493983095
+        },
+        "oracle": {
+          "pairs": 144,
+          "both_correct": 36,
+          "both_incorrect": 87,
+          "correctness_disagreements": 21,
+          "generated_string_disagreements": 32,
+          "mean_absolute_answer_nll_difference": 0.026360807595429598
+        },
+        "records_blocked": {
+          "pairs": 144,
+          "both_correct": 0,
+          "both_incorrect": 144,
+          "correctness_disagreements": 0,
+          "generated_string_disagreements": 46,
+          "mean_absolute_answer_nll_difference": 0.027003231975767338
+        }
+      },
+      "by_condition": [
+        {
+          "dependency_depth": 1,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 0.988353634874026
+            },
+            "oracle": {
+              "correct": 21,
+              "count": 48,
+              "accuracy": 0.4375,
+              "answer_nll": 0.5754223184453117
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.6133547027905784
+            }
+          }
+        },
+        {
+          "dependency_depth": 1,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 2,
+              "count": 48,
+              "accuracy": 0.041666666666666664,
+              "answer_nll": 0.8572395087944137
+            },
+            "oracle": {
+              "correct": 26,
+              "count": 48,
+              "accuracy": 0.5416666666666666,
+              "answer_nll": 0.5637538300620185
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.753727522161272
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 1,
+              "count": 48,
+              "accuracy": 0.020833333333333332,
+              "answer_nll": 1.1780399911933475
+            },
+            "oracle": {
+              "correct": 14,
+              "count": 48,
+              "accuracy": 0.2916666666666667,
+              "answer_nll": 0.6085754690898789
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.625267674525579
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 1.1067825903495152
+            },
+            "oracle": {
+              "correct": 18,
+              "count": 48,
+              "accuracy": 0.375,
+              "answer_nll": 0.5939890137977071
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.7846374776628284
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 1.2433875517712698
+            },
+            "oracle": {
+              "correct": 4,
+              "count": 48,
+              "accuracy": 0.08333333333333333,
+              "answer_nll": 0.6551307853725221
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.6271058983272977
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 2,
+              "count": 48,
+              "accuracy": 0.041666666666666664,
+              "answer_nll": 1.2427675475676854
+            },
+            "oracle": {
+              "correct": 10,
+              "count": 48,
+              "accuracy": 0.20833333333333334,
+              "answer_nll": 0.6363917936881384
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.7842500739627414
+            }
+          }
+        }
+      ],
+      "by_late_order": {
+        "source_first": {
+          "raw_full": {
+            "correct": 2,
+            "count": 144,
+            "accuracy": 0.013888888888888888,
+            "answer_nll": 1.1269870187949251
+          },
+          "oracle": {
+            "correct": 52,
+            "count": 144,
+            "accuracy": 0.3611111111111111,
+            "answer_nll": 0.6012784231592108
+          },
+          "records_blocked": {
+            "correct": 0,
+            "count": 144,
+            "accuracy": 0,
+            "answer_nll": 2.696231633424759
+          }
+        },
+        "unrelated_first": {
+          "raw_full": {
+            "correct": 3,
+            "count": 144,
+            "accuracy": 0.020833333333333332,
+            "answer_nll": 1.0785365893884942
+          },
+          "oracle": {
+            "correct": 41,
+            "count": 144,
+            "accuracy": 0.2847222222222222,
+            "answer_nll": 0.6098093136593148
+          },
+          "records_blocked": {
+            "correct": 0,
+            "count": 144,
+            "accuracy": 0,
+            "answer_nll": 2.69988281638534
+          }
+        }
+      }
+    },
+    "question_only_seed1701": {
+      "regimes": {
+        "raw_full": {
+          "correct": 122,
+          "count": 288,
+          "accuracy": 0.4236111111111111,
+          "answer_nll": 0.7835483458609276
+        },
+        "oracle": {
+          "correct": 286,
+          "count": 288,
+          "accuracy": 0.9930555555555556,
+          "answer_nll": 0.004504780079548288
+        },
+        "records_blocked": {
+          "correct": 0,
+          "count": 288,
+          "accuracy": 0,
+          "answer_nll": 2.955069657829073
+        }
+      },
+      "blocked_minus_full": {
+        "difference": -0.4236111111111111,
+        "ci95": [
+          -0.4965277777777778,
+          -0.3645833333333333
+        ],
+        "cases": 24,
+        "bootstrap_samples": 5000,
+        "unit": "base_case_id, averaging depth/wording/late-order variants",
+        "multiple_comparison_adjustment": false
+      },
+      "blocked_minus_oracle": {
+        "difference": -0.9930555555555556,
+        "ci95": [
+          -1,
+          -0.9791666666666666
+        ],
+        "cases": 24,
+        "bootstrap_samples": 5000,
+        "unit": "base_case_id, averaging depth/wording/late-order variants",
+        "multiple_comparison_adjustment": false
+      },
+      "blocked_vs_full_paired": {
+        "right_correct": 122,
+        "regressions": 122,
+        "recoveries": 0
+      },
+      "blocked_vs_oracle_paired": {
+        "right_correct": 286,
+        "regressions": 286,
+        "recoveries": 0
+      },
+      "error_types": {
+        "raw_full": {
+          "correct": 122,
+          "target_initial_value": 84,
+          "other": 75,
+          "unrelated_initial_value": 6,
+          "late_written_value": 1
+        },
+        "oracle": {
+          "correct": 286,
+          "other": 2
+        },
+        "records_blocked": {
+          "other": 288
+        }
+      },
+      "blocked_prediction_counts": {
+        "902": 12,
+        "0": 27,
+        "857": 10,
+        "792": 12,
+        "957": 12,
+        "778": 12,
+        "705": 7,
+        "896": 13,
+        "937": 10,
+        "708": 20,
+        "8000": 1,
+        "8": 3,
+        "9000": 4,
+        "709": 4,
+        "759": 12,
+        "773": 12,
+        "846": 12,
+        "986": 12,
+        "891": 12,
+        "994": 12,
+        "783": 12,
+        "727": 12,
+        "769": 9,
+        "748": 12,
+        "967": 12,
+        "821": 12
+      },
+      "blocked_query_target_id_echoes": 253,
+      "blocked_integer_format_outputs": 288,
+      "independent_late_order_consistency": {
+        "raw_full": {
+          "pairs": 144,
+          "both_correct": 53,
+          "both_incorrect": 75,
+          "correctness_disagreements": 16,
+          "generated_string_disagreements": 22,
+          "mean_absolute_answer_nll_difference": 0.21469284935490038
+        },
+        "oracle": {
+          "pairs": 144,
+          "both_correct": 143,
+          "both_incorrect": 1,
+          "correctness_disagreements": 0,
+          "generated_string_disagreements": 0,
+          "mean_absolute_answer_nll_difference": 0.002329252530856778
+        },
+        "records_blocked": {
+          "pairs": 144,
+          "both_correct": 0,
+          "both_incorrect": 144,
+          "correctness_disagreements": 0,
+          "generated_string_disagreements": 9,
+          "mean_absolute_answer_nll_difference": 0.08104612650694673
+        }
+      },
+      "by_condition": [
+        {
+          "dependency_depth": 1,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 46,
+              "count": 48,
+              "accuracy": 0.9583333333333334,
+              "answer_nll": 0.03736378256467611
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.0005474969099547403
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.9017124904526606
+            }
+          }
+        },
+        {
+          "dependency_depth": 1,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 45,
+              "count": 48,
+              "accuracy": 0.9375,
+              "answer_nll": 0.0492662519055658
+            },
+            "oracle": {
+              "correct": 46,
+              "count": 48,
+              "accuracy": 0.9583333333333334,
+              "answer_nll": 0.022097060883121838
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 3.041646010345883
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 7,
+              "count": 48,
+              "accuracy": 0.14583333333333334,
+              "answer_nll": 1.0769938270871837
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.0013337481436287311
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.846328467130661
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 13,
+              "count": 48,
+              "accuracy": 0.2708333333333333,
+              "answer_nll": 0.7851127341725967
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.0007156100360185115
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 3.083128015200297
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 2,
+              "count": 48,
+              "accuracy": 0.041666666666666664,
+              "answer_nll": 1.4998214662902885
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.0015519270738069382
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.816384401586321
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 9,
+              "count": 48,
+              "accuracy": 0.1875,
+              "answer_nll": 1.2527320131452546
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.0007828374307589709
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 3.0412185622586145
+            }
+          }
+        }
+      ],
+      "by_late_order": {
+        "source_first": {
+          "raw_full": {
+            "correct": 53,
+            "count": 144,
+            "accuracy": 0.3680555555555556,
+            "answer_nll": 0.8864032465263774
+          },
+          "oracle": {
+            "correct": 143,
+            "count": 144,
+            "accuracy": 0.9930555555555556,
+            "answer_nll": 0.003394415823533092
+          },
+          "records_blocked": {
+            "correct": 0,
+            "count": 144,
+            "accuracy": 0,
+            "answer_nll": 2.9225521275290736
+          }
+        },
+        "unrelated_first": {
+          "raw_full": {
+            "correct": 69,
+            "count": 144,
+            "accuracy": 0.4791666666666667,
+            "answer_nll": 0.6806934451954779
+          },
+          "oracle": {
+            "correct": 143,
+            "count": 144,
+            "accuracy": 0.9930555555555556,
+            "answer_nll": 0.005615144335563484
+          },
+          "records_blocked": {
+            "correct": 0,
+            "count": 144,
+            "accuracy": 0,
+            "answer_nll": 2.987587188129072
+          }
+        }
+      }
+    },
+    "question_only_seed2718": {
+      "regimes": {
+        "raw_full": {
+          "correct": 101,
+          "count": 288,
+          "accuracy": 0.3506944444444444,
+          "answer_nll": 0.929381167405255
+        },
+        "oracle": {
+          "correct": 287,
+          "count": 288,
+          "accuracy": 0.9965277777777778,
+          "answer_nll": 0.004703183081582446
+        },
+        "records_blocked": {
+          "correct": 0,
+          "count": 288,
+          "accuracy": 0,
+          "answer_nll": 2.826541201383979
+        }
+      },
+      "blocked_minus_full": {
+        "difference": -0.3506944444444444,
+        "ci95": [
+          -0.4131944444444444,
+          -0.2986111111111111
+        ],
+        "cases": 24,
+        "bootstrap_samples": 5000,
+        "unit": "base_case_id, averaging depth/wording/late-order variants",
+        "multiple_comparison_adjustment": false
+      },
+      "blocked_minus_oracle": {
+        "difference": -0.9965277777777778,
+        "ci95": [
+          -1,
+          -0.9895833333333334
+        ],
+        "cases": 24,
+        "bootstrap_samples": 5000,
+        "unit": "base_case_id, averaging depth/wording/late-order variants",
+        "multiple_comparison_adjustment": false
+      },
+      "blocked_vs_full_paired": {
+        "right_correct": 101,
+        "regressions": 101,
+        "recoveries": 0
+      },
+      "blocked_vs_oracle_paired": {
+        "right_correct": 287,
+        "regressions": 287,
+        "recoveries": 0
+      },
+      "error_types": {
+        "raw_full": {
+          "correct": 101,
+          "target_initial_value": 105,
+          "other": 77,
+          "late_written_value": 2,
+          "unrelated_initial_value": 3
+        },
+        "oracle": {
+          "correct": 287,
+          "other": 1
+        },
+        "records_blocked": {
+          "other": 288
+        }
+      },
+      "blocked_prediction_counts": {
+        "902": 12,
+        "0": 23,
+        "857": 9,
+        "792": 12,
+        "957": 12,
+        "778": 12,
+        "705": 6,
+        "5000": 1,
+        "5050": 1,
+        "896": 13,
+        "937": 10,
+        "708": 20,
+        "8000": 1,
+        "8": 3,
+        "9000": 3,
+        "709": 8,
+        "759": 12,
+        "773": 12,
+        "846": 12,
+        "986": 12,
+        "891": 12,
+        "994": 12,
+        "783": 12,
+        "727": 12,
+        "769": 10,
+        "748": 12,
+        "967": 12,
+        "821": 12
+      },
+      "blocked_query_target_id_echoes": 256,
+      "blocked_integer_format_outputs": 288,
+      "independent_late_order_consistency": {
+        "raw_full": {
+          "pairs": 144,
+          "both_correct": 46,
+          "both_incorrect": 89,
+          "correctness_disagreements": 9,
+          "generated_string_disagreements": 17,
+          "mean_absolute_answer_nll_difference": 0.20730712859538608
+        },
+        "oracle": {
+          "pairs": 144,
+          "both_correct": 143,
+          "both_incorrect": 0,
+          "correctness_disagreements": 1,
+          "generated_string_disagreements": 1,
+          "mean_absolute_answer_nll_difference": 0.004912947141747281
+        },
+        "records_blocked": {
+          "pairs": 144,
+          "both_correct": 0,
+          "both_incorrect": 144,
+          "correctness_disagreements": 0,
+          "generated_string_disagreements": 9,
+          "mean_absolute_answer_nll_difference": 0.08929138823791787
+        }
+      },
+      "by_condition": [
+        {
+          "dependency_depth": 1,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 43,
+              "count": 48,
+              "accuracy": 0.8958333333333334,
+              "answer_nll": 0.10265130457022073
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.0004930369884985137
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.7771702309449515
+            }
+          }
+        },
+        {
+          "dependency_depth": 1,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 44,
+              "count": 48,
+              "accuracy": 0.9166666666666666,
+              "answer_nll": 0.08860148132731006
+            },
+            "oracle": {
+              "correct": 47,
+              "count": 48,
+              "accuracy": 0.9791666666666666,
+              "answer_nll": 0.022584148056820495
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.954079224003686
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 2,
+              "count": 48,
+              "accuracy": 0.041666666666666664,
+              "answer_nll": 1.3628129334085517
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.0015798816542276957
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.714740879005856
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 5,
+              "count": 48,
+              "accuracy": 0.10416666666666667,
+              "answer_nll": 0.9807855541714363
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.0006555348744667652
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.95483468969663
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 1.6643814452820354
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.002022915599809494
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.6636904378732047
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 7,
+              "count": 48,
+              "accuracy": 0.14583333333333334,
+              "answer_nll": 1.3770542856719759
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.0008835813156717146
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.8947317467795477
+            }
+          }
+        }
+      ],
+      "by_late_order": {
+        "source_first": {
+          "raw_full": {
+            "correct": 46,
+            "count": 144,
+            "accuracy": 0.3194444444444444,
+            "answer_nll": 1.0265848413454715
+          },
+          "oracle": {
+            "correct": 144,
+            "count": 144,
+            "accuracy": 1,
+            "answer_nll": 0.0022974241928413568
+          },
+          "records_blocked": {
+            "correct": 0,
+            "count": 144,
+            "accuracy": 0,
+            "answer_nll": 2.7908796579749495
+          }
+        },
+        "unrelated_first": {
+          "raw_full": {
+            "correct": 55,
+            "count": 144,
+            "accuracy": 0.3819444444444444,
+            "answer_nll": 0.8321774934650387
+          },
+          "oracle": {
+            "correct": 143,
+            "count": 144,
+            "accuracy": 0.9930555555555556,
+            "answer_nll": 0.007108941970323536
+          },
+          "records_blocked": {
+            "correct": 0,
+            "count": 144,
+            "accuracy": 0,
+            "answer_nll": 2.862202744793009
+          }
+        }
+      }
+    },
+    "question_only_seed31415": {
+      "regimes": {
+        "raw_full": {
+          "correct": 130,
+          "count": 288,
+          "accuracy": 0.4513888888888889,
+          "answer_nll": 0.6735971953506427
+        },
+        "oracle": {
+          "correct": 288,
+          "count": 288,
+          "accuracy": 1,
+          "answer_nll": 0.0013112394880307773
+        },
+        "records_blocked": {
+          "correct": 0,
+          "count": 288,
+          "accuracy": 0,
+          "answer_nll": 2.908945095759851
+        }
+      },
+      "blocked_minus_full": {
+        "difference": -0.4513888888888889,
+        "ci95": [
+          -0.5277777777777778,
+          -0.3819444444444444
+        ],
+        "cases": 24,
+        "bootstrap_samples": 5000,
+        "unit": "base_case_id, averaging depth/wording/late-order variants",
+        "multiple_comparison_adjustment": false
+      },
+      "blocked_minus_oracle": {
+        "difference": -1,
+        "ci95": [
+          -1,
+          -1
+        ],
+        "cases": 24,
+        "bootstrap_samples": 5000,
+        "unit": "base_case_id, averaging depth/wording/late-order variants",
+        "multiple_comparison_adjustment": false
+      },
+      "blocked_vs_full_paired": {
+        "right_correct": 130,
+        "regressions": 130,
+        "recoveries": 0
+      },
+      "blocked_vs_oracle_paired": {
+        "right_correct": 288,
+        "regressions": 288,
+        "recoveries": 0
+      },
+      "error_types": {
+        "raw_full": {
+          "correct": 130,
+          "other": 70,
+          "target_initial_value": 76,
+          "unrelated_initial_value": 8,
+          "late_written_value": 4
+        },
+        "oracle": {
+          "correct": 288
+        },
+        "records_blocked": {
+          "other": 288
+        }
+      },
+      "blocked_prediction_counts": {
+        "902": 11,
+        "2": 1,
+        "0": 93,
+        "857": 6,
+        "792": 11,
+        "957": 6,
+        "778": 12,
+        "705": 6,
+        "896": 12,
+        "937": 6,
+        "708": 16,
+        "709": 6,
+        "759": 12,
+        "773": 8,
+        "846": 9,
+        "986": 6,
+        "891": 12,
+        "994": 6,
+        "783": 10,
+        "727": 9,
+        "769": 6,
+        "748": 6,
+        "967": 6,
+        "821": 12
+      },
+      "blocked_query_target_id_echoes": 194,
+      "blocked_integer_format_outputs": 288,
+      "independent_late_order_consistency": {
+        "raw_full": {
+          "pairs": 144,
+          "both_correct": 56,
+          "both_incorrect": 70,
+          "correctness_disagreements": 18,
+          "generated_string_disagreements": 27,
+          "mean_absolute_answer_nll_difference": 0.23516114557033116
+        },
+        "oracle": {
+          "pairs": 144,
+          "both_correct": 144,
+          "both_incorrect": 0,
+          "correctness_disagreements": 0,
+          "generated_string_disagreements": 0,
+          "mean_absolute_answer_nll_difference": 0.00036792212705660386
+        },
+        "records_blocked": {
+          "pairs": 144,
+          "both_correct": 0,
+          "both_incorrect": 144,
+          "correctness_disagreements": 0,
+          "generated_string_disagreements": 10,
+          "mean_absolute_answer_nll_difference": 0.0658486485481262
+        }
+      },
+      "by_condition": [
+        {
+          "dependency_depth": 1,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 46,
+              "count": 48,
+              "accuracy": 0.9583333333333334,
+              "answer_nll": 0.03331504055758058
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.0007524172219240831
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.7789197829034595
+            }
+          }
+        },
+        {
+          "dependency_depth": 1,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 45,
+              "count": 48,
+              "accuracy": 0.9375,
+              "answer_nll": 0.04810739363084496
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.0027732310682040406
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 3.0364849236276417
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 8,
+              "count": 48,
+              "accuracy": 0.16666666666666666,
+              "answer_nll": 0.8645212529227138
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.0013487905202459337
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.7747497922844357
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 17,
+              "count": 48,
+              "accuracy": 0.3541666666666667,
+              "answer_nll": 0.6804013191010907
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.0008013321195095261
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 3.0862105555004544
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 4,
+              "count": 48,
+              "accuracy": 0.08333333333333333,
+              "answer_nll": 1.2967296627660592
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.001372100295460162
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 2.748015966680315
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 10,
+              "count": 48,
+              "accuracy": 0.20833333333333334,
+              "answer_nll": 1.1185085031255666
+            },
+            "oracle": {
+              "correct": 48,
+              "count": 48,
+              "accuracy": 1,
+              "answer_nll": 0.0008195657028409187
+            },
+            "records_blocked": {
+              "correct": 0,
+              "count": 48,
+              "accuracy": 0,
+              "answer_nll": 3.0292895535628
+            }
+          }
+        }
+      ],
+      "by_late_order": {
+        "source_first": {
+          "raw_full": {
+            "correct": 56,
+            "count": 144,
+            "accuracy": 0.3888888888888889,
+            "answer_nll": 0.7900022166330153
+          },
+          "oracle": {
+            "correct": 144,
+            "count": 144,
+            "accuracy": 1,
+            "answer_nll": 0.0011740829880485155
+          },
+          "records_blocked": {
+            "correct": 0,
+            "count": 144,
+            "accuracy": 0,
+            "answer_nll": 2.8908325786943787
+          }
+        },
+        "unrelated_first": {
+          "raw_full": {
+            "correct": 74,
+            "count": 144,
+            "accuracy": 0.5138888888888888,
+            "answer_nll": 0.5571921740682699
+          },
+          "oracle": {
+            "correct": 144,
+            "count": 144,
+            "accuracy": 1,
+            "answer_nll": 0.0014483959880130391
+          },
+          "records_blocked": {
+            "correct": 0,
+            "count": 144,
+            "accuracy": 0,
+            "answer_nll": 2.927057612825323
+          }
+        }
+      }
+    }
+  },
+  "target_answer_counts": {
+    "296": 12,
+    "392": 12,
+    "635": 12,
+    "600": 12,
+    "239": 12,
+    "427": 12,
+    "545": 12,
+    "439": 12,
+    "295": 12,
+    "273": 12,
+    "720": 12,
+    "627": 12,
+    "575": 12,
+    "428": 12,
+    "377": 12,
+    "416": 12,
+    "400": 12,
+    "219": 12,
+    "437": 12,
+    "482": 12,
+    "225": 12,
+    "431": 12,
+    "337": 12,
+    "737": 12
+  },
+  "largest_gold_answer_frequency": 12,
+  "fixed_three_initialization_average": {
+    "accuracy": {
+      "raw_full": 0.4085648148148148,
+      "oracle": 0.9965277777777778,
+      "records_blocked": 0
+    },
+    "blocked_minus_full": {
+      "difference": -0.4085648148148148,
+      "ci95": [
+        -0.47453703703703703,
+        -0.35185185185185186
+      ],
+      "cases": 24,
+      "bootstrap_samples": 5000,
+      "unit": "base_case_id, averaging depth/wording/orders and three fixed trained initializations",
+      "multiple_comparison_adjustment": false
+    },
+    "blocked_minus_oracle": {
+      "difference": -0.9965277777777778,
+      "ci95": [
+        -1,
+        -0.9895833333333334
+      ],
+      "cases": 24,
+      "bootstrap_samples": 5000,
+      "unit": "base_case_id, averaging depth/wording/orders and three fixed trained initializations",
+      "multiple_comparison_adjustment": false
+    }
+  }
+}

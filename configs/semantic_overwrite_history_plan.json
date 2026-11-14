@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "status": "registered_before_data_implementation_and_inference",
+  "registered_utc": "2026-11-14T10:04:05.631764+00:00",
+  "profile": "same_final_state_counterbalanced_overwrite_histories",
+  "purpose": "Test a new exploratory current-value observation with counterbalanced value identities: do redundant and novel final writes yield different current-value accuracy despite the same final executable state? Preserve the failed historical-preservation primary from the previous protocol; this study is not a replacement success criterion.",
+  "model_config": "configs/models.json",
+  "model_key": "it",
+  "model_class": "Qwen3_5ForCausalLM",
+  "local_files_only": true,
+  "reader_policy": "full",
+  "training": false,
+  "adapters": false,
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "reference": {
+    "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/history-no-repeat-20261114.json",
+    "audit_sha256": "16a21e91ea563cb753d3744cbe3d869c9bbbe32b42bfc065c8ea2759ccf0bb47",
+    "required_status": "completed_and_audited",
+    "required_readouts": 384,
+    "previous_registered_history_primary": "failed: discovery1qualified stream, replica0; baseline history16/16 in both128-account cohorts",
+    "exploratory_current_A_observation": {
+      "all_loads_hold": {
+        "correct": 50,
+        "examples": 64
+      },
+      "all_loads_novel": {
+        "correct": 63,
+        "examples": 64
+      },
+      "load128_hold_discovery": 14,
+      "load128_hold_replica": 12,
+      "load128_novel_discovery": 16,
+      "load128_novel_replica": 16,
+      "load128_denominator": 16,
+      "hold_errors_numerically_matching_initial_A": 10,
+      "scope": "Numeric-output matches are descriptive, not an attribution to storage damage. Repeated and novel values were not counterbalanced in the source study."
+    }
+  },
+  "cohorts": {
+    "discovery": [
+      97600,
+      97601,
+      97602,
+      97603
+    ],
+    "replica": [
+      97700,
+      97701,
+      97702,
+      97703
+    ]
+  },
+  "grid": {
+    "active_accounts": 128,
+    "prefix_records": 160,
+    "tail_records": 2,
+    "value_versions": 4,
+    "cells": [
+      "XX",
+      "XY",
+      "YX",
+      "YY"
+    ],
+    "query_roles": [
+      "target_initial",
+      "target_current",
+      "other_current"
+    ],
+    "case_values": 32,
+    "natural_prefixes": 128,
+    "full_prefill_queries": 384,
+    "queries_per_cohort": 192,
+    "same_final_value_pairs": 64,
+    "pairs_per_cohort": 32,
+    "independent_base_streams_per_cohort": 4,
+    "maximum_prompt_tokens": 4096,
+    "no_truncation": true
+  },
+  "construction": {
+    "entity_rng": "Shuffle E700..E899 with random.Random(base_seed); first three identities are A,B,C. All cells and value siblings use identical identities.",
+    "value_rng": "random.Random(base_seed+410009).sample(range(100,1000),4*162); contiguous162-value slice per value sibling. Initial I=values[0], X=values[3], Y=values[160], new_C=values[161]; all are distinct.",
+    "record_0": "SET A I, the only standalone SET value occurrence of I in every world.",
+    "records_1_2": "SET B values[1]; SET C values[2].",
+    "record_3": "SET A X for cells starting X; SET A Y for cells starting Y.",
+    "records_4_159": "156 SET distractor records, never A/B/C, using independently shuffled cycles of entities[3:128] from random.Random(base_seed+310003+128); record i uses values[i]. Every active account appears.",
+    "record_160": "SET A X for cells ending X; SET A Y for cells ending Y.",
+    "record_161": "SET C new_C in all four worlds.",
+    "repeat_cells": [
+      "XX",
+      "YY"
+    ],
+    "novel_cells": [
+      "YX",
+      "XY"
+    ],
+    "paired_contrasts": {
+      "final_X": {
+        "reference_novel": "YX",
+        "candidate_repeat": "XX"
+      },
+      "final_Y": {
+        "reference_novel": "XY",
+        "candidate_repeat": "YY"
+      }
+    },
+    "queries": "Unchanged native ledger instructions and exact initial-A/current-A/current-C questions. Condition labels X/Y/repeat/novel never appear in prompts.",
+    "truth": "For a fixed final value, both execute(initial) and execute(current) maps must be identical across repeat and novel worlds for ALL accounts, not merely the queried ones. Current A is the final X/Y, initial A is I, current C is new_C. Different intermediate histories are allowed; no equality of complete hidden states is required.",
+    "controlled_difference": "Within each same-final-value pair, the final A/C records, query and answer are byte/token-identical; the only changed tokens are the three isolated value digits at the earlier record3. Across final X/Y at fixed early value, only record160 digits change; current-A truth must change accordingly.",
+    "interpretation": "Counterbalancing prevents assigning all errors to a particular repeated answer code or comparing different gold numbers. Remaining effects may involve query formation, Attention, recurrent/convolution paths or ordinary pattern generalization; they do not establish irreversible memory damage or joint-interface necessity."
+  },
+  "data_audits": [
+    "Recompute all four worlds with the executable SET interpreter. Verify complete initial/current state-map equality within each same-final-value contrast and required current-A sensitivity across final X/Y.",
+    "Exactly160common-format prefix records and2tail records,128distinct active accounts, a single numeric I occurrence, no A/B/C distractor writes, both X/Y distinct from I.",
+    "Four value siblings have identical questions, entity/operation schedules and token boundaries and four distinct own-world answers for each role/cell.",
+    "All384questions have audited source, record and digit boundaries, fixed answer tokenization and no truncation. Same-final paired prompts differ only at record3 value digits; fixed-early final toggles differ only at record160 digits.",
+    "Freeze the full ordered registry and sources before inference; retain all cases, baseline failures, value siblings and guard failures. No error-only filtering or checkpoint selection.",
+    "New97600/97700 seed ranges were absent from configs/scripts/tests before registration; preserve the reserved70000-series cohort and every prior source artifact."
+  ],
+  "evaluation": {
+    "execution": "Existing local Qwen3.5-2B IT, same base environment, eager BF16, fresh full prefill for every physical query. No training, adapters, oracle address or mixed cache.",
+    "generation": "Unrestricted greedy, maximum12new tokens, newline/EOS stop; three-digit gold NLL separately. Same-final contrast compares identical gold token sequences.",
+    "smoke": "First lexicographic case/value in each cohort:2cases,8worlds,24queries. Operational coverage and runtime safety only, no performance gate.",
+    "safety": "Independent smoke audit before complete384queries. Pin actual model/tokenizer/config/runtime and source hashes; unchanged complete loaded-state hashes/no gradients; actual six-layer historical access and exact native readout replays on min/max case identities per cohort for all four cells, sampling current-A questions:16full checks/replays,8smoke.",
+    "primary_unit": "For each same-final pair, reference is novel and candidate is repeated. Raw repeat loss = reference-current-A-correct/candidate-wrong; rescue is the reverse. A qualified loss/rescue additionally requires initial A and current C correct in BOTH worlds.",
+    "stream_analysis": "Each base stream has4value siblings times2final identities =8paired current-value outcomes. Compute raw and qualified signed net losses(lost minus rescued) per stream and per cohort; keep all numerators/denominators and every case.",
+    "primary_gate": "In EACH cohort, novel-current-A baseline is at least24/32, raw net repeat loss is positive, qualified net repeat loss is positive, and qualified net repeat loss is positive in at least2distinct base streams. This is a descriptive replicated direction check, not statistical significance. Do not substitute one final-value identity or a filtered subgroup for this gate.",
+    "reporting": "All four cells, both final-value contrasts, all roles/joint outcomes, per-value/per-stream/paired outputs, all raw and qualified losses/rescues and NLL shifts. Report complete four-cell current-A sensitivity and preservation guards. Related value/cell/query outcomes are not independent trials.",
+    "if_absent": "Retain the failed historical primary and record that the new repeat-versus-novel observation did not survive the registered counterbalance. No threshold adjustment, additional load hunting or automatic architecture training.",
+    "if_present": "Register a separate mechanism diagnosis or frozen-checkpoint sufficiency comparison before any architecture training. The target remains semantic overwrite-history dependence in the existing hybrid block; shared control must still beat independent and ordinary question-stage controls under matched budgets."
+  },
+  "scope": "New hypothesis from a secondary observation, registered on entirely new streams. It supplements the earlier independence/order/COPY/history controls and does not turn their negative results into positive findings.",
+  "implementation_status": "Protocol only; data provider, frozen dataset, runner, auditor and model inference not started."
+}

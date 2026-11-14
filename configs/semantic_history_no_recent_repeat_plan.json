@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "status": "protocol_registered_before_data_implementation_and_inference",
+  "registered_utc": "2026-11-14T09:32:00.803631+00:00",
+  "profile": "historical_version_preservation_without_recent_initial_value_repeat",
+  "purpose": "Test whether natural historical-A update regressions persist after removing the original no-op control shortcut that repeated the initial answer near the question. This is a native diagnostic before any new semantic update architecture, not a claim that previous B regressions were invalid.",
+  "model_config": "configs/models.json",
+  "model_key": "it",
+  "model_class": "Qwen3_5ForCausalLM",
+  "local_files_only": true,
+  "reader_policy": "full",
+  "training": false,
+  "adapters": false,
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "gate": {
+    "required_control_panel_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-control-panel-20261114.json",
+    "required_control_panel_audit_sha256": "5e7c14141a335565fbb0187826ed9f60966770394ad674d745b33ba2ab4902e0",
+    "required_status": "completed_and_audited",
+    "required_physical_readouts": 1920,
+    "data_registration": "Freeze executable data, exact tokenizer identities, every record/value boundary, source snapshots and evaluation order before any new model inference. Preserve all old protocols and sources."
+  },
+  "cohorts": {
+    "discovery": [
+      97400,
+      97401,
+      97402,
+      97403
+    ],
+    "replica": [
+      97500,
+      97501,
+      97502,
+      97503
+    ]
+  },
+  "grid": {
+    "active_accounts": [
+      32,
+      128
+    ],
+    "prefix_records": 160,
+    "tail_records": 2,
+    "value_versions": 4,
+    "tail_cells": [
+      "hold_middle",
+      "update_new"
+    ],
+    "query_roles": [
+      "target_initial",
+      "target_current",
+      "other_current"
+    ],
+    "primary_active_accounts": 128,
+    "case_pairs_per_cohort_load": 16,
+    "all_case_pairs": 64,
+    "natural_prefixes": 128,
+    "full_prefill_queries": 384,
+    "full_prefill_queries_per_cohort": 192,
+    "independent_base_streams_per_cohort": 4,
+    "maximum_prompt_tokens": 4096,
+    "no_truncation": true
+  },
+  "construction": {
+    "entity_namespace": "E700 through E899; random.Random(base_seed) shuffles once. First three names are A,B,C at every load and value condition.",
+    "values_rng": "random.Random(base_seed + 410009).sample(range(100,1000),4*162); contiguous162-value slice per sibling. Reuse record-index values at both loads. All sampled values distinct.",
+    "record_0": "SET A values[0], the only occurrence of the historical target numeric value anywhere in either world.",
+    "record_1": "SET B values[1]. B is retained as a common account, not an additional query in this focused history test.",
+    "record_2": "SET C values[2].",
+    "record_3": "SET A values[3]. This common intermediate/current value differs from initial_A in every case.",
+    "records_4_through_159": "156 SET records on entities[3:active_accounts], never A,B,C. Concatenate independently shuffled cycles using random.Random(base_seed+310003+active_accounts), then truncate. Every active account appears. Record i uses values[i].",
+    "record_160": "SET A values[3] in hold_middle; SET A values[160] in update_new. Both values differ from values[0]. Only the three registered value-digit tokens may differ between worlds.",
+    "record_161": "SET C values[161] in BOTH worlds, retaining the legitimate other-account current-value update guard.",
+    "queries": {
+      "target_initial": "What was the initial balance of account A? Truth is values[0] in both worlds.",
+      "target_current": "What is the current balance of account A? Truth is values[3] or values[160], graded against its own world.",
+      "other_current": "What is the current balance of account C? Truth is values[161] in both worlds."
+    },
+    "prompt": "Use the unchanged existing native account-ledger instructions, renderer and full-prefill text-only IT runtime. A,B,C in query descriptions are replaced with actual account IDs. No extra explanation, oracle address or candidate restriction.",
+    "interpretation": "The initial-A fact has identical literal occurrence count, token age, location and complete common prefix in both final worlds. Both final current-A values differ from the initial answer, eliminating the former latest-value shortcut. The repeated middle value changes by design; a remaining functional regression still does not isolate recurrent-state damage from attention/representation effects."
+  },
+  "data_audits": [
+    "Recompute all truths with the executable SET interpreter; the initial answer appears numerically in exactly one record, at record0, in every source world.",
+    "Exactly160 common records and2 tail records; exactly the registered live-account load and all prescribed identities/positions.",
+    "Every sibling has four distinct answers for each role/world, and identical question IDs, operation/target schedule and boundaries.",
+    "For a fixed case/role, hold_middle and update_new have equal prompt lengths and identical tokens except the three isolated digits at record160. All loads have equal length and query suffix, fixed A/B/C positions, common initial/middle/new-A/new-C values and no A/B/C distractor writes.",
+    "The frozen registry retains all64pairs and384own-world questions, with no initially-correct or error-only filtering. Reject failed token/length/record audits without dropping examples.",
+    "The new seed ranges were absent from current configs/scripts/tests before registration. Do not consume the reserved70000-series confirmation cohort."
+  ],
+  "evaluation": {
+    "generation": "Unrestricted greedy generation, maximum12 new tokens, stop at newline/EOS; complete outputs, exact-answer grading, fixed three-digit gold NLL separately.",
+    "prefix_processing": "Full prefill for every query; compare only natural full-prefill worlds. No mixed caches, oracle slicing, adapters, checkpoint selection or training.",
+    "operational_smoke": "First lexicographic case/value per cohort/load:4pairs,8prefix worlds and24questions. Safety/coverage gate only; no accuracy threshold. Independent smoke audit before complete384-query evaluation.",
+    "safety": "Same existing base environment and local native model. Full loaded-state hashes before/after, no gradients/adapters, actual six-layer full-prefill/cached historical access on min/max pair identities per cohort/load, and exact duplicate native readout replay on the same prescribed historical queries. Full coverage16history observations/replays; smoke8.",
+    "reporting": "Both cohorts and both loads, all role/world accuracies and NLL, each of64paired transitions, current-A/current-C/joint success, every base stream and all four values. Report correct-to-incorrect transitions descriptively with all baseline failures/denominators visible; do not treat sibling readouts as independent samples.",
+    "primary_signal": "At128accounts in EACH cohort, historical-A correct hold_middle -> incorrect update_new transitions occur in at least two distinct base streams, with current_A and current_C correct in both worlds for those qualified transitions. Also report all unqualified transitions separately. This is a descriptive replication gate, not a statistical significance claim.",
+    "secondary_signal": "32-account outcomes and NLL shifts are secondary; they cannot replace a failed128-account primary.",
+    "floor_control": "If hold_middle initial-A accuracy is4/16or below in a cohort/load, flag limited baseline competence and avoid interpreting absent regressions as proof of preserved memory.",
+    "if_primary_absent": "Record that original history errors do not yet supply clean evidence for the proposed semantic update co-design. Distinguish a removed recency shortcut, low historical retrieval competence and genuine absence of the registered functional effect. Do not automatically train adapters, expand thresholds or scale models.",
+    "if_primary_present": "Register a subsequent event/path mechanism diagnosis with current-value commit guards before any new architecture. A remaining differential error alone does not establish shared-interface necessity."
+  },
+  "scope": "This focused SET-only check supplements earlier B/order/COPY/history controls and the complete fixed-checkpoint panel. It neither replaces them nor guarantees that the broad semantic-dependency architecture is impossible.",
+  "implementation_status": "Protocol only. New data provider, frozen dataset, runner, auditor and model inference have not started."
+}

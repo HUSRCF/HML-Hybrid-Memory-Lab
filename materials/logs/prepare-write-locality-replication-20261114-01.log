@@ -1,0 +1,2 @@
+{"event": "complete_discovery_audit_reexecuted", "records": 576}
+{"status": "registered_before_inference", "counts": {"examples": 576, "value_cases": 48, "base_streams": 4, "loads": [8, 32, 128], "prefixes_with_tail": 192, "records_per_prefix": 162, "four_value_query_groups": 144}, "seeds": [97100, 97101, 97102, 97103], "prompt_tokens": [2865], "data_sha256": "a32c572c17219876a58512a9fefe640097beeb97ad3d3c6d34303f1f058c9cf6", "registry_sha256": "5a319c4bd6f0f77759e8bf292283e69f6967d90d84d5914d5dd735fb32d5833a"}

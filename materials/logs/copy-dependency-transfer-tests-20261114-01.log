@@ -1,0 +1,13 @@
+test_all_three_control_comparisons_required (tests.test_copy_dependency_transfer.CopyTransferTests.test_all_three_control_comparisons_required) ... ok
+test_conflicting_gold_for_identical_prompt_is_rejected (tests.test_copy_dependency_transfer.CopyTransferTests.test_conflicting_gold_for_identical_prompt_is_rejected) ... ok
+test_deduplicate_only_complete_identical_before_prompts (tests.test_copy_dependency_transfer.CopyTransferTests.test_deduplicate_only_complete_identical_before_prompts) ... ok
+test_independent_grading_rejects_wrong_truth_or_filtered_rows (tests.test_copy_dependency_transfer.CopyTransferTests.test_independent_grading_rejects_wrong_truth_or_filtered_rows) ... ok
+test_losses_cancel_gains_and_every_depth_is_required (tests.test_copy_dependency_transfer.CopyTransferTests.test_losses_cancel_gains_and_every_depth_is_required) ... ok
+test_one_stream_many_conditions_cannot_pass (tests.test_copy_dependency_transfer.CopyTransferTests.test_one_stream_many_conditions_cannot_pass) ... ok
+test_preserve_original_cases_and_executable_order (tests.test_copy_dependency_transfer.CopyTransferTests.test_preserve_original_cases_and_executable_order) ... ok
+test_smoke_and_safety_keep_both_orders_and_boundaries (tests.test_copy_dependency_transfer.CopyTransferTests.test_smoke_and_safety_keep_both_orders_and_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.375s
+
+OK

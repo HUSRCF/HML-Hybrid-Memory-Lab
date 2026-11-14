@@ -1,0 +1,25 @@
+{
+  "status": "complete_audited_and_visually_verified",
+  "verified_utc": "2026-11-14T08:06:52.984119+00:00",
+  "source_audit_status": "completed_and_audited",
+  "figure_visually_verified": true,
+  "final_pngs_identical_to_verified_bytes": true,
+  "artifacts_sha256": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-event-paths-20261114.json": "8008396f5f4c4fddb579b4814237d4efe06f5cc3d355d5dafe76bcb4f271f577",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-event-paths-20261114.source.py": "0e98f2a6630b088005eb979e4b09d7a9e68df43dc65998a17dc66ff4d3580d7c",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-event-paths-diagnostics-20261114.json": "4c9f6592f6ddfc8844598fe5b4c4a092ad5e478764a288a3cadd51cf7764fb28",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-event-paths-diagnostics-20261114.source.py": "bb1f6af76840759f04c86a2cdf1c3b245e1a0fd072fdb7b2b8655e8170f66e89",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-event-paths-diagnostics-20261114.csv": "358764bf498c76761bbb20349939646d0eadb1460b6024ac6468c0b4a31cfa56",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-event-paths-diagnostics-20261114.png": "d7a341b5923b045bf02139306eea97d462762b306e168142f00dff4d8ab11388",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-event-paths-diagnostics-20261114.pdf": "d82aa99b21197381c7ae175fe41c6ea190c06ecf62a206b04427ef52eae8033b",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-event-paths-diagnostics-20261114-commit.png": "1264846d5a6daad7465790038d3b177ce42f23b9c188cd145f3371e8d71292b7",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-event-paths-diagnostics-20261114-commit.pdf": "7d9de7e127a82acd3bb56bdc7f2234988b1beea2a9e1ff504c42234aa9ff1680",
+    "/media/990Pro/Code/SAS/datasets/memory_update/fixed-length-write-locality-event-paths-v1/manifest.json": "fd8d7a0be96932d543f852aba12f832990a8f45665770046a82f6141bf5b7be8",
+    "/media/990Pro/Code/SAS/datasets/memory_update/fixed-length-write-locality-event-paths-v1/registry.json": "6b092b6c3a6d87e54b93cec22ddff6ba7aeba2c92fc286cc0c64357811812c31",
+    "configs/semantic_write_locality_event_paths_plan.json": "e180ebbb62f8a81775a838e29eb43225d991ba10866eb46722aa8fe8a20e7d40",
+    "configs/semantic_write_locality_event_paths_addendum.json": "a17cf6b406fc6ffa5b623bc1d9bbf7ecb9e76c03aba55541864a29e0f5003b87",
+    "configs/semantic_write_locality_event_paths_commit_guard.json": "ba85327bc97c5a6698e3337b1315a66875c340017d5b3ffeb7cc2e05b6ca9fac",
+    "configs/write_locality_adapter_transfer_plan.json": "847adbb277ae6440293cce349ed536bcbc2b91df0574e8f1d8068cfc6986457f"
+  },
+  "interpretation": "Two separate four-base-stream cohorts. Matched no-op/update worlds at identical positions, not chronological state rollback. Oracle controls supply an evidence address. No recurrent-damage absence or shared-controller necessity is claimed."
+}

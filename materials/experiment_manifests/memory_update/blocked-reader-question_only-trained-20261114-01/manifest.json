@@ -1,0 +1,78 @@
+{
+  "status": "completed",
+  "stage": "training",
+  "started_utc": "2026-11-14T00:02:31.334922+00:00",
+  "config": {
+    "protocol_version": 1,
+    "model": "it",
+    "group_index": 3,
+    "initialization_seed": 1701,
+    "steps": 64,
+    "gradient_accumulation": 2,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "max_gradient_norm": 1.0,
+    "max_sequence_tokens": 1536,
+    "validation_copy_cases": 4,
+    "validation_overwrite_cases": 2,
+    "test_copy_cases": 8,
+    "test_overwrite_cases": 4,
+    "modes": {
+      "local": 22
+    },
+    "notes": [
+      "Functional probe, not a new architecture or capacity-impossibility claim.",
+      "Use original ordered 128 examples/512 supervised tokens and frozen backbone; no training on diagnostic cohorts.",
+      "Same group/local rank and zero-output initialization in both token-policy arms.",
+      "Every query/answer forward blocks historical ledger-record KV; prefix processing remains causal and unrestricted.",
+      "Native zero-init/restoration checks must use the same blocked reader policy."
+    ],
+    "adapt_gdn_keys": true,
+    "token_policy": "question",
+    "reader_policy": "records_blocked"
+  },
+  "modes": [
+    "local"
+  ],
+  "data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+  "completed_modes": [
+    "local"
+  ],
+  "reader_policy": "records_blocked",
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/controllers.py": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9",
+    "sas_memory/counterbalance_data.py": "88e38ff2901e652335e23ff5decd4bb69d59481a58d27f7284b99fcdf47d176c",
+    "sas_memory/counterbalance_tasks.py": "914523e92d5d1e657646d0e6d179c86845af2605fc6f7d8ab34794181fd6bf1d",
+    "sas_memory/generalization_tasks.py": "697a6fdc1e9d448fdfd5b7fa6e22adca40477d35c6e70f7aaebf648ef8b608fd",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/kv_readout.py": "2927df0cfdaf4972287b83914092e2224eacfc3ccf9d0508e03a64e85e919b8b",
+    "sas_memory/metrics.py": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e",
+    "sas_memory/readout_controls.py": "c15b4e3d4f4de2ce09a3c559dae64be8d849f472d6b02b9f70dd165c2cf73afa",
+    "sas_memory/record_kv_ablation.py": "37c694da6bfb100fba6498df3a4b09ae89dde5181b55b1b17d80585e873f6093",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/stress_tasks.py": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "scripts/run_controller_trial.py": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262",
+    "scripts/check_record_attention_weights.py": "952d6b00870e170ab6d3cf210b6d150a761c38133257782cc8e63a0d5a4af47f"
+  },
+  "adaptation_plan_sha256": "cbdfa4da7ed5d636ae285d60620d862106582708ffbb62825e2536ce169ee20e",
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "gpu": "AMD Radeon AI PRO R9700",
+  "python": "/home/husrcf/anaconda3/bin/python",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "optimized_input_tokens_per_mode": 74102,
+  "supervised_answer_tokens_per_mode": 512,
+  "max_input_tokens": 832,
+  "tokenized_input_answer_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a",
+  "reader_registry_sha256": "e1f77655a674e820283aed70fd24c58878b94e10e0b6f04868f31f7507dc2c4b",
+  "reader_registry_fixed_utc": "2026-11-14T00:02:46.149667+00:00",
+  "elapsed_seconds": 147.78520309994929,
+  "completed_utc": "2026-11-14T00:05:08.919957+00:00"
+}

@@ -1,0 +1,1 @@
+{"status": "audited_smoke", "arms": {"gdn_only": {"parameters": 696192, "status": "scope_and_safety_passed"}, "attention_only": {"parameters": 691200, "status": "scope_and_safety_passed"}}}

@@ -1,0 +1,28 @@
+{
+  "status": "completed_and_audited",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-add-competence-20261114-01",
+  "manifest_sha256": "291e314c3f071d602927adf302c9bf21ca8429b08663b38d385a89b4622e16d3",
+  "metrics": {
+    "full_ledger_reference": {
+      "correct": 0,
+      "examples": 16
+    },
+    "minimal_dependency_ledger": {
+      "correct": 6,
+      "examples": 16,
+      "answer_nll": 0.6253963932394981
+    },
+    "direct_arithmetic": {
+      "correct": 13,
+      "examples": 16,
+      "answer_nll": 0.21150845491016904
+    }
+  },
+  "records_audited": 32,
+  "interpretation": "Task-competence controls. Rebuilding changes positions, context and recurrent computation; direct arithmetic changes the question. Differences cannot isolate memory damage, retrieval, or arithmetic competence in all settings. These controls do not alter the registered four-arm training data or budgets.",
+  "analysis_source_sha256": "9036aedc60be0351582853ddc1e340dea2e0ead05fab2fc4667f26bef3b4b368",
+  "result_file_sha256": {
+    "minimal_dependency_ledger": "52c2f0fc9c2f5b5a360885b2e4d2c52db30bc0621da161a3d1859ab7d1ee80db",
+    "direct_arithmetic": "27df10a79b07020eb311143fd753b27f6f29c3f4fa7463069a90413deab8fcd2"
+  }
+}

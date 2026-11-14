@@ -1,0 +1,29 @@
+{
+  "reference_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-generalization-20261114-01",
+  "expected_cases_sha256": "a995eea7d47b5b03423ccf17d7c26f65d4d873f7a7fc391821bcc03f563efba7",
+  "modes": [
+    "native",
+    "local_all",
+    "local_question"
+  ],
+  "variants": [
+    "control",
+    "treatment"
+  ],
+  "cluster_key": "base_case_id",
+  "strata": [
+    "dependency_depth",
+    "question_style"
+  ],
+  "selection_kind": "competing_versions",
+  "registered_utc": "2026-11-13T22:35:50.360369+00:00",
+  "control_validation": "/media/990Pro/Code/SAS/datasets/memory_update/copy-generalization-v1/readout-control-validation.json",
+  "control_validation_sha256": "6827739328c42faafd42c192235da2d9595d6e1c98f1a2d622d0c2fc2f42e05d",
+  "intervention": "Original-prefix question-only KV filtering. Keep executable backward-slice evidence plus two additional SET records.",
+  "notes": [
+    "All 96 queries; no training or model-failure selection.",
+    "competing_versions adds the target initial assignment and the unnecessary source version; matched_unrelated adds two unrelated SET records, choosing nearest available original positions.",
+    "Both controls retain all necessary evidence; original prompt and kept historical token counts match exactly. Positions and numeric contents of the extra records differ.",
+    "Oracle semantic identities are used in both controls. These are diagnostics, not learned selectors."
+  ]
+}

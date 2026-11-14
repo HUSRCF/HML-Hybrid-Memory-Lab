@@ -1,0 +1,644 @@
+{
+  "status": "completed_and_audited_posthoc_state_continuation",
+  "operational_controls_passed": true,
+  "posthoc": true,
+  "selection_is_posthoc": true,
+  "independent_scientific_confirmation": false,
+  "can_change_primary_gates": false,
+  "no_accuracy_gate": true,
+  "full_generation_scored": true,
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/state-continuation-20261115-01",
+  "manifest_sha256": "b1d4835bafe8b3953e559f30405e57253ca208a598136823cdcefb40aa4330ea",
+  "protocol_sha256": "62f2684e0ad9315facb2e56cec76633519b07b48ff496f4374530d355ee779d9",
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "original_primary_gates_unchanged": {
+    "generic_shared_controller": {
+      "passed": false,
+      "comparators": {
+        "independent": {
+          "positive_overall": true,
+          "at_least_three_positive_streams": true,
+          "positive_at_every_depth": false
+        },
+        "local_question": {
+          "positive_overall": true,
+          "at_least_three_positive_streams": true,
+          "positive_at_every_depth": true
+        },
+        "gdn_question_only": {
+          "positive_overall": true,
+          "at_least_three_positive_streams": true,
+          "positive_at_every_depth": false
+        }
+      },
+      "scope": "Fixed fresh8stream natural full-history candidate screen. Generic shared latents do not implement explicit semantic constraints. Does not erase previous failed comparisons or establish an architecture contribution."
+    },
+    "frozen_prefix_sufficiency": {
+      "passed": false,
+      "model_checks": {
+        "local_question": {
+          "oracle_current_at_least90_of96": true,
+          "historical_after_no_lower_than_full": true,
+          "unrelated_after_no_lower_than_full": false,
+          "positive_net_current_repair": true,
+          "at_least_four_positive_base_streams": true
+        },
+        "gdn_question_only": {
+          "oracle_current_at_least90_of96": true,
+          "historical_after_no_lower_than_full": true,
+          "unrelated_after_no_lower_than_full": true,
+          "positive_net_current_repair": true,
+          "at_least_four_positive_base_streams": true
+        }
+      }
+    },
+    "whole_record_necessity": {
+      "passed": false,
+      "model_checks": {
+        "local_question": {
+          "other_current_after_no_lower_than_full": false,
+          "other_history_after_no_lower_than_full": true,
+          "other_unrelated_after_no_lower_than_full": true,
+          "other_before_joint_no_lower_than_full": true,
+          "positive_net_support_removal_loss": true,
+          "at_least_four_positive_loss_streams": true
+        },
+        "gdn_question_only": {
+          "other_current_after_no_lower_than_full": true,
+          "other_history_after_no_lower_than_full": true,
+          "other_unrelated_after_no_lower_than_full": true,
+          "other_before_joint_no_lower_than_full": true,
+          "positive_net_support_removal_loss": true,
+          "at_least_four_positive_loss_streams": true
+        }
+      }
+    }
+  },
+  "counts": {
+    "exact_source_first_readouts": 32,
+    "cached_continuation_readouts": 20,
+    "archived_full_vectors": 112,
+    "actual_greedy_forwards": 60,
+    "actual_gold_forwards": 20,
+    "complete_KV_source_identity_fields": 48,
+    "complete_cache_origin_receipts": 960,
+    "exact_original_full_readout_references": 4,
+    "exact_restore_both_all_step_closures": 4,
+    "native_prefix_checks": 4,
+    "precontroller_native_anchors": 4,
+    "detached_native_replays": 8
+  },
+  "cases": [
+    {
+      "model": "local_question",
+      "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545",
+      "source_regime": "oracle",
+      "original_direction": "harm",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61007-n64-depth3-original",
+          "base_case_id": "test-copy-s61007-n64",
+          "seed": 61007,
+          "distractor_updates": 64,
+          "dependency_depth": 3,
+          "question_style": "original",
+          "variant": "treatment",
+          "role": "protected_current",
+          "physical_id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545"
+        }
+      ],
+      "readouts": {
+        "native_reference": {
+          "answer": "784",
+          "answer_nll": 0.0005504336052884659,
+          "greedy_exact": true,
+          "generated": "784\n",
+          "query_tokens": 26
+        },
+        "intervened_states": {
+          "answer": "784",
+          "answer_nll": 0.0005586176024128994,
+          "greedy_exact": true,
+          "generated": "784\n",
+          "query_tokens": 26
+        },
+        "restore_convolution": {
+          "answer": "784",
+          "answer_nll": 0.000552022752041618,
+          "greedy_exact": true,
+          "generated": "784\n",
+          "query_tokens": 26
+        },
+        "restore_recurrent": {
+          "answer": "784",
+          "answer_nll": 0.0005503143959989151,
+          "greedy_exact": true,
+          "generated": "784\n",
+          "query_tokens": 26
+        },
+        "restore_both": {
+          "answer": "784",
+          "answer_nll": 0.0005504336052884659,
+          "greedy_exact": true,
+          "generated": "784\n",
+          "query_tokens": 26
+        }
+      },
+      "mean_gold_losses": {
+        "native_reference": 0.0005504336052884659,
+        "intervened_states": 0.0005586176024128994,
+        "restore_convolution": 0.000552022752041618,
+        "restore_recurrent": 0.0005503143959989151,
+        "restore_both": 0.0005504336052884659
+      },
+      "convolution_restore_effect": -6.594850371281378e-06,
+      "recurrent_restore_effect": -8.303206413984299e-06,
+      "four_point_loss_contrast": 6.7140596608321595e-06,
+      "changed_answers_vs_native": {
+        "native_reference": false,
+        "intervened_states": false,
+        "restore_convolution": false,
+        "restore_recurrent": false,
+        "restore_both": false
+      },
+      "gold_losses": {
+        "native_reference": {
+          "nll_sum": 0.0016513008158653975,
+          "tokens": 3,
+          "nll_mean": 0.0005504336052884659,
+          "first_token_nll": 0.0014424645341932774,
+          "continuation_nll": 0.00020883632532786578,
+          "continuation_token_nlls": [
+            0.00019071667338721454,
+            1.811964830267243e-05
+          ]
+        },
+        "intervened_states": {
+          "nll_sum": 0.001675852807238698,
+          "tokens": 3,
+          "nll_mean": 0.0005586176024128994,
+          "first_token_nll": 0.0014424645341932774,
+          "continuation_nll": 0.00023338827304542065,
+          "continuation_token_nlls": [
+            0.00021622228086926043,
+            1.7165992176160216e-05
+          ]
+        },
+        "restore_convolution": {
+          "nll_sum": 0.001656068256124854,
+          "tokens": 3,
+          "nll_mean": 0.000552022752041618,
+          "first_token_nll": 0.0014424645341932774,
+          "continuation_nll": 0.00021360376558732241,
+          "continuation_token_nlls": [
+            0.00019560332293622196,
+            1.8000440832111053e-05
+          ]
+        },
+        "restore_recurrent": {
+          "nll_sum": 0.0016509431879967451,
+          "tokens": 3,
+          "nll_mean": 0.0005503143959989151,
+          "first_token_nll": 0.0014424645341932774,
+          "continuation_nll": 0.00020847859559580684,
+          "continuation_token_nlls": [
+            0.0001914318127091974,
+            1.704678470559884e-05
+          ]
+        },
+        "restore_both": {
+          "nll_sum": 0.0016513008158653975,
+          "tokens": 3,
+          "nll_mean": 0.0005504336052884659,
+          "first_token_nll": 0.0014424645341932774,
+          "continuation_nll": 0.00020883632532786578,
+          "continuation_token_nlls": [
+            0.00019071667338721454,
+            1.811964830267243e-05
+          ]
+        }
+      },
+      "gold_later_vector_exact_to_native": {
+        "native_reference": true,
+        "intervened_states": false,
+        "restore_convolution": false,
+        "restore_recurrent": false,
+        "restore_both": true
+      }
+    },
+    {
+      "model": "local_question",
+      "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf",
+      "source_regime": "remove_matched_other",
+      "original_direction": "harm",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61000-n8-depth1-original",
+          "base_case_id": "test-copy-s61000-n8",
+          "seed": 61000,
+          "distractor_updates": 8,
+          "dependency_depth": 1,
+          "question_style": "original",
+          "variant": "control",
+          "role": "target_current",
+          "physical_id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf"
+        }
+      ],
+      "readouts": {
+        "native_reference": {
+          "answer": "375",
+          "answer_nll": 0.3661286036173503,
+          "greedy_exact": true,
+          "generated": "375\n",
+          "query_tokens": 26
+        },
+        "intervened_states": {
+          "answer": "375",
+          "answer_nll": 0.3661333719889323,
+          "greedy_exact": true,
+          "generated": "375\n",
+          "query_tokens": 26
+        },
+        "restore_convolution": {
+          "answer": "375",
+          "answer_nll": 0.359286109606425,
+          "greedy_exact": true,
+          "generated": "375\n",
+          "query_tokens": 26
+        },
+        "restore_recurrent": {
+          "answer": "375",
+          "answer_nll": 0.3593158721923828,
+          "greedy_exact": true,
+          "generated": "375\n",
+          "query_tokens": 26
+        },
+        "restore_both": {
+          "answer": "375",
+          "answer_nll": 0.3661286036173503,
+          "greedy_exact": true,
+          "generated": "375\n",
+          "query_tokens": 26
+        }
+      },
+      "mean_gold_losses": {
+        "native_reference": 0.3661286036173503,
+        "intervened_states": 0.3661333719889323,
+        "restore_convolution": 0.359286109606425,
+        "restore_recurrent": 0.3593158721923828,
+        "restore_both": 0.3661286036173503
+      },
+      "convolution_restore_effect": -0.006847262382507324,
+      "recurrent_restore_effect": -0.006817499796549498,
+      "four_point_loss_contrast": 0.01365999380747479,
+      "changed_answers_vs_native": {
+        "native_reference": false,
+        "intervened_states": false,
+        "restore_convolution": false,
+        "restore_recurrent": false,
+        "restore_both": false
+      },
+      "gold_losses": {
+        "native_reference": {
+          "nll_sum": 1.0983858108520508,
+          "tokens": 3,
+          "nll_mean": 0.3661286036173503,
+          "first_token_nll": 0.8887271285057068,
+          "continuation_nll": 0.2096586674451828,
+          "continuation_token_nlls": [
+            0.2070535272359848,
+            0.0026051411405205727
+          ]
+        },
+        "intervened_states": {
+          "nll_sum": 1.0984001159667969,
+          "tokens": 3,
+          "nll_mean": 0.3661333719889323,
+          "first_token_nll": 0.8887271285057068,
+          "continuation_nll": 0.2096729427576065,
+          "continuation_token_nlls": [
+            0.2070535272359848,
+            0.0026194092351943254
+          ]
+        },
+        "restore_convolution": {
+          "nll_sum": 1.077858328819275,
+          "tokens": 3,
+          "nll_mean": 0.359286109606425,
+          "first_token_nll": 0.8887271285057068,
+          "continuation_nll": 0.18913115561008453,
+          "continuation_token_nlls": [
+            0.18651174008846283,
+            0.0026194092351943254
+          ]
+        },
+        "restore_recurrent": {
+          "nll_sum": 1.0779476165771484,
+          "tokens": 3,
+          "nll_mean": 0.3593158721923828,
+          "first_token_nll": 0.8887271285057068,
+          "continuation_nll": 0.18922051787376404,
+          "continuation_token_nlls": [
+            0.18660098314285278,
+            0.0026195282116532326
+          ]
+        },
+        "restore_both": {
+          "nll_sum": 1.0983858108520508,
+          "tokens": 3,
+          "nll_mean": 0.3661286036173503,
+          "first_token_nll": 0.8887271285057068,
+          "continuation_nll": 0.2096586674451828,
+          "continuation_token_nlls": [
+            0.2070535272359848,
+            0.0026051411405205727
+          ]
+        }
+      },
+      "gold_later_vector_exact_to_native": {
+        "native_reference": true,
+        "intervened_states": false,
+        "restore_convolution": false,
+        "restore_recurrent": false,
+        "restore_both": true
+      }
+    },
+    {
+      "model": "gdn_question_only",
+      "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532",
+      "source_regime": "remove_matched_other",
+      "original_direction": "repair",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61007-n64-depth2-entity_first",
+          "base_case_id": "test-copy-s61007-n64",
+          "seed": 61007,
+          "distractor_updates": 64,
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "variant": "treatment",
+          "role": "target_current",
+          "physical_id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532"
+        }
+      ],
+      "readouts": {
+        "native_reference": {
+          "answer": "312",
+          "answer_nll": 0.32850344975789386,
+          "greedy_exact": false,
+          "generated": "703\n",
+          "query_tokens": 27
+        },
+        "intervened_states": {
+          "answer": "312",
+          "answer_nll": 0.33050378163655597,
+          "greedy_exact": false,
+          "generated": "703\n",
+          "query_tokens": 27
+        },
+        "restore_convolution": {
+          "answer": "312",
+          "answer_nll": 0.3285609285036723,
+          "greedy_exact": false,
+          "generated": "703\n",
+          "query_tokens": 27
+        },
+        "restore_recurrent": {
+          "answer": "312",
+          "answer_nll": 0.3325090209643046,
+          "greedy_exact": false,
+          "generated": "703\n",
+          "query_tokens": 27
+        },
+        "restore_both": {
+          "answer": "312",
+          "answer_nll": 0.32850344975789386,
+          "greedy_exact": false,
+          "generated": "703\n",
+          "query_tokens": 27
+        }
+      },
+      "mean_gold_losses": {
+        "native_reference": 0.32850344975789386,
+        "intervened_states": 0.33050378163655597,
+        "restore_convolution": 0.3285609285036723,
+        "restore_recurrent": 0.3325090209643046,
+        "restore_both": 0.32850344975789386
+      },
+      "convolution_restore_effect": -0.0019428531328836707,
+      "recurrent_restore_effect": 0.0020052393277486535,
+      "four_point_loss_contrast": -0.0020627180735270922,
+      "changed_answers_vs_native": {
+        "native_reference": false,
+        "intervened_states": false,
+        "restore_convolution": false,
+        "restore_recurrent": false,
+        "restore_both": false
+      },
+      "gold_losses": {
+        "native_reference": {
+          "nll_sum": 0.9855103492736816,
+          "tokens": 3,
+          "nll_mean": 0.32850344975789386,
+          "first_token_nll": 0.888731062412262,
+          "continuation_nll": 0.09677928686141968,
+          "continuation_token_nlls": [
+            0.09386564791202545,
+            0.002913637086749077
+          ]
+        },
+        "intervened_states": {
+          "nll_sum": 0.991511344909668,
+          "tokens": 3,
+          "nll_mean": 0.33050378163655597,
+          "first_token_nll": 0.888731062412262,
+          "continuation_nll": 0.1027802973985672,
+          "continuation_token_nlls": [
+            0.09974685311317444,
+            0.0030334433540701866
+          ]
+        },
+        "restore_convolution": {
+          "nll_sum": 0.9856827855110168,
+          "tokens": 3,
+          "nll_mean": 0.3285609285036723,
+          "first_token_nll": 0.888731062412262,
+          "continuation_nll": 0.09695170819759369,
+          "continuation_token_nlls": [
+            0.09386716037988663,
+            0.0030845466535538435
+          ]
+        },
+        "restore_recurrent": {
+          "nll_sum": 0.9975270628929138,
+          "tokens": 3,
+          "nll_mean": 0.3325090209643046,
+          "first_token_nll": 0.888731062412262,
+          "continuation_nll": 0.10879600048065186,
+          "continuation_token_nlls": [
+            0.10572785139083862,
+            0.0030681462958455086
+          ]
+        },
+        "restore_both": {
+          "nll_sum": 0.9855103492736816,
+          "tokens": 3,
+          "nll_mean": 0.32850344975789386,
+          "first_token_nll": 0.888731062412262,
+          "continuation_nll": 0.09677928686141968,
+          "continuation_token_nlls": [
+            0.09386564791202545,
+            0.002913637086749077
+          ]
+        }
+      },
+      "gold_later_vector_exact_to_native": {
+        "native_reference": true,
+        "intervened_states": false,
+        "restore_convolution": false,
+        "restore_recurrent": false,
+        "restore_both": true
+      }
+    },
+    {
+      "model": "gdn_question_only",
+      "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd",
+      "source_regime": "remove_matched_other",
+      "original_direction": "harm",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61007-n64-depth3-original",
+          "base_case_id": "test-copy-s61007-n64",
+          "seed": 61007,
+          "distractor_updates": 64,
+          "dependency_depth": 3,
+          "question_style": "original",
+          "variant": "control",
+          "role": "target_current",
+          "physical_id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd"
+        }
+      ],
+      "readouts": {
+        "native_reference": {
+          "answer": "703",
+          "answer_nll": 0.5702381531397501,
+          "greedy_exact": true,
+          "generated": "703\n",
+          "query_tokens": 26
+        },
+        "intervened_states": {
+          "answer": "703",
+          "answer_nll": 0.599184513092041,
+          "greedy_exact": true,
+          "generated": "703\n",
+          "query_tokens": 26
+        },
+        "restore_convolution": {
+          "answer": "703",
+          "answer_nll": 0.5989676316579183,
+          "greedy_exact": true,
+          "generated": "703\n",
+          "query_tokens": 26
+        },
+        "restore_recurrent": {
+          "answer": "703",
+          "answer_nll": 0.5971417824427286,
+          "greedy_exact": true,
+          "generated": "703\n",
+          "query_tokens": 26
+        },
+        "restore_both": {
+          "answer": "703",
+          "answer_nll": 0.5702381531397501,
+          "greedy_exact": true,
+          "generated": "703\n",
+          "query_tokens": 26
+        }
+      },
+      "mean_gold_losses": {
+        "native_reference": 0.5702381531397501,
+        "intervened_states": 0.599184513092041,
+        "restore_convolution": 0.5989676316579183,
+        "restore_recurrent": 0.5971417824427286,
+        "restore_both": 0.5702381531397501
+      },
+      "convolution_restore_effect": -0.00021688143412268435,
+      "recurrent_restore_effect": -0.0020427306493123742,
+      "four_point_loss_contrast": -0.02668674786885583,
+      "changed_answers_vs_native": {
+        "native_reference": false,
+        "intervened_states": false,
+        "restore_convolution": false,
+        "restore_recurrent": false,
+        "restore_both": false
+      },
+      "gold_losses": {
+        "native_reference": {
+          "nll_sum": 1.7107144594192505,
+          "tokens": 3,
+          "nll_mean": 0.5702381531397501,
+          "first_token_nll": 0.5407201051712036,
+          "continuation_nll": 1.1699943542480469,
+          "continuation_token_nlls": [
+            1.1106014251708984,
+            0.05939295142889023
+          ]
+        },
+        "intervened_states": {
+          "nll_sum": 1.797553539276123,
+          "tokens": 3,
+          "nll_mean": 0.599184513092041,
+          "first_token_nll": 0.5407201051712036,
+          "continuation_nll": 1.2568334341049194,
+          "continuation_token_nlls": [
+            1.1967819929122925,
+            0.06005146726965904
+          ]
+        },
+        "restore_convolution": {
+          "nll_sum": 1.7969028949737549,
+          "tokens": 3,
+          "nll_mean": 0.5989676316579183,
+          "first_token_nll": 0.5407201051712036,
+          "continuation_nll": 1.2561827898025513,
+          "continuation_token_nlls": [
+            1.1961314678192139,
+            0.06005135551095009
+          ]
+        },
+        "restore_recurrent": {
+          "nll_sum": 1.791425347328186,
+          "tokens": 3,
+          "nll_mean": 0.5971417824427286,
+          "first_token_nll": 0.5407201051712036,
+          "continuation_nll": 1.2507052421569824,
+          "continuation_token_nlls": [
+            1.1913120746612549,
+            0.059393174946308136
+          ]
+        },
+        "restore_both": {
+          "nll_sum": 1.7107144594192505,
+          "tokens": 3,
+          "nll_mean": 0.5702381531397501,
+          "first_token_nll": 0.5407201051712036,
+          "continuation_nll": 1.1699943542480469,
+          "continuation_token_nlls": [
+            1.1106014251708984,
+            0.05939295142889023
+          ]
+        }
+      },
+      "gold_later_vector_exact_to_native": {
+        "native_reference": true,
+        "intervened_states": false,
+        "restore_convolution": false,
+        "restore_recurrent": false,
+        "restore_both": true
+      }
+    }
+  ],
+  "interpretation": "Conditional six-state cache cuts after oracle branch/KV first-logit closure in four reused cases. Complete K/V, all other tensors, bookkeeping and initial logits are fixed. Full-answer/loss differences concern these query-time states only; no original-prefix write damage, learned semantic scope, deployable method or architecture superiority is established. End this four-case localization series; further effectiveness claims require separately registered unseen streams.",
+  "analysis_source_sha256": "f3d18bcc57beb34f88ba2875de0331ad4efe600a2f24f442432533814dc0eaad"
+}

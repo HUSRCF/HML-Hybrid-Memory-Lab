@@ -1,0 +1,60 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<01:59,  2.67it/s]Loading weights:  11%|█         | 35/320 [00:00<00:03, 94.90it/s]Loading weights:  20%|█▉        | 63/320 [00:00<00:01, 145.88it/s]Loading weights:  29%|██▉       | 93/320 [00:00<00:01, 187.18it/s]Loading weights:  37%|███▋      | 119/320 [00:00<00:00, 206.56it/s]Loading weights:  46%|████▋     | 148/320 [00:00<00:00, 226.17it/s]Loading weights:  57%|█████▋    | 181/320 [00:00<00:00, 254.23it/s]Loading weights:  65%|██████▌   | 209/320 [00:01<00:00, 251.83it/s]Loading weights:  75%|███████▌  | 240/320 [00:01<00:00, 262.93it/s]Loading weights:  85%|████████▌ | 273/320 [00:01<00:00, 277.26it/s]Loading weights:  95%|█████████▌| 304/320 [00:01<00:00, 259.51it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 214.23it/s]
+{"event": "copy_necessity", "model": "native", "queries_per_regime": 6, "total": 18}
+{"event": "copy_necessity", "model": "native", "queries_per_regime": 12, "total": 18}
+{"event": "copy_necessity", "model": "native", "queries_per_regime": 18, "total": 18}
+{"event": "copy_necessity_arm_complete", "model": "native", "readouts": 36}
+{"event": "copy_necessity", "model": "shared", "queries_per_regime": 6, "total": 18}
+{"event": "copy_necessity", "model": "shared", "queries_per_regime": 12, "total": 18}
+{"event": "copy_necessity", "model": "shared", "queries_per_regime": 18, "total": 18}
+{"event": "copy_necessity_arm_complete", "model": "shared", "readouts": 36}
+{"event": "copy_necessity", "model": "independent", "queries_per_regime": 6, "total": 18}
+{"event": "copy_necessity", "model": "independent", "queries_per_regime": 12, "total": 18}
+{"event": "copy_necessity", "model": "independent", "queries_per_regime": 18, "total": 18}
+{"event": "copy_necessity_arm_complete", "model": "independent", "readouts": 36}
+{"event": "copy_necessity", "model": "local", "queries_per_regime": 6, "total": 18}
+{"event": "copy_necessity", "model": "local", "queries_per_regime": 12, "total": 18}
+{"event": "copy_necessity", "model": "local", "queries_per_regime": 18, "total": 18}
+{"event": "copy_necessity_arm_complete", "model": "local", "readouts": 36}
+{"event": "copy_necessity", "model": "local_question", "queries_per_regime": 6, "total": 18}
+{"event": "copy_necessity", "model": "local_question", "queries_per_regime": 12, "total": 18}
+{"event": "copy_necessity", "model": "local_question", "queries_per_regime": 18, "total": 18}
+{"event": "copy_necessity_arm_complete", "model": "local_question", "readouts": 36}
+{"stage": "immediate", "repeat": 0, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "immediate", "repeat": 1, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "immediate", "repeat": 2, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "warm_trace", "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "trace_entries": 150}
+{"stage": "synchronized", "repeat": 0, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "synchronized", "repeat": 1, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "synchronized", "repeat": 2, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "empty_cache", "repeat": 0, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "empty_cache", "repeat": 1, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "empty_cache", "repeat": 2, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "deterministic", "repeat": 0, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "deterministic", "repeat": 1, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "deterministic", "repeat": 2, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "fresh_controller", "repeat": 0, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "fresh_controller", "repeat": 1, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "fresh_controller", "repeat": 2, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "fresh_controller_trace", "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "trace_entries": 150}
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<01:31,  3.47it/s]Loading weights:   9%|▉         | 29/320 [00:00<00:03, 95.17it/s]Loading weights:  19%|█▉        | 61/320 [00:00<00:01, 165.44it/s]Loading weights:  29%|██▉       | 93/320 [00:00<00:01, 201.47it/s]Loading weights:  38%|███▊      | 120/320 [00:00<00:00, 221.70it/s]Loading weights:  47%|████▋     | 151/320 [00:00<00:00, 240.99it/s]Loading weights:  58%|█████▊    | 185/320 [00:00<00:00, 265.84it/s]Loading weights:  67%|██████▋   | 214/320 [00:01<00:00, 265.28it/s]Loading weights:  78%|███████▊  | 248/320 [00:01<00:00, 277.34it/s]Loading weights:  87%|████████▋ | 278/320 [00:01<00:00, 276.06it/s]Loading weights:  96%|█████████▌| 307/320 [00:01<00:00, 276.35it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 227.71it/s]
+{"stage": "fresh_model", "repeat": 0, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "fresh_model", "repeat": 1, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "fresh_model", "repeat": 2, "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "differences": {"answer_nll": {"expected": 0.4226212501525879, "actual": 0.44792552789052326}}}
+{"stage": "fresh_model_trace", "actual": {"answer": "263", "answer_nll": 0.44792552789052326, "generated": "406\n", "greedy_exact": false, "query_tokens": 26}, "trace_entries": 150}
+Traceback (most recent call last):
+  File "/home/husrcf/Code/SAS/scripts/diagnose_copy_arm_replay.py", line 139, in <module>
+    main()
+  File "/home/husrcf/Code/SAS/scripts/diagnose_copy_arm_replay.py", line 131, in main
+    runner.main()
+  File "/home/husrcf/Code/SAS/scripts/run_copy_evidence_necessity.py", line 170, in main
+    execute(args, read_plan(), registered, source_plan, cases, registry, masks, rows, gate)
+  File "/home/husrcf/Code/SAS/scripts/run_copy_evidence_necessity.py", line 106, in execute
+    proof, actual = prove_and_measure(runtime, ledger, q, keeps, full[name][q["id"]])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/husrcf/Code/SAS/scripts/diagnose_copy_arm_replay.py", line 73, in diagnose
+    return ORIGINAL(runtime, ledger, query, masks, expected_row)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/husrcf/Code/SAS/scripts/copy_readout_runtime.py", line 123, in prove_and_measure
+    raise ValueError(f"Actual unmasked reference readout changed: query={query['id']}, differences={differences}")
+ValueError: Actual unmasked reference readout changed: query=571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf, differences={'answer_nll': {'expected': 0.4226212501525879, 'actual': 0.44792552789052326}}

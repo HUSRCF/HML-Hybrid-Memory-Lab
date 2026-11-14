@@ -1,0 +1,1 @@
+{"cohorts": {"discovery": 528, "replica": 486}, "primary": {"unrelated_B_at32": {"reference": 12, "candidate": 10, "regressed": 2, "recurs": true}, "initial_A_at128": {"reference": 16, "candidate": 6, "regressed": 10, "recurs": true}}, "event_path_gate_passed": true}

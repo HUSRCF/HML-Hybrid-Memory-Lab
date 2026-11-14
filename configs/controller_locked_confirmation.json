@@ -1,0 +1,15 @@
+{
+  "protocol_version": 1,
+  "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-keys-pilot-20261114-01",
+  "seed_offset": 10000,
+  "copy_cases": 32,
+  "overwrite_cases": 16,
+  "modes": ["shared", "independent", "attention_only", "gdn_only", "local"],
+  "notes": [
+    "Frozen checkpoints only. No optimization, tuning or checkpoint selection on this confirmation set.",
+    "All 48 seeds (40000..40047) are distinct from train, validation and pilot test.",
+    "Native plus all five prespecified controls evaluated on the same cases.",
+    "Primary outcome: all current/initial/protected readouts correct for each ledger variant.",
+    "Queries share cases; aggregate uncertainty at case level."
+  ]
+}

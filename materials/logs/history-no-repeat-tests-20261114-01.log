@@ -1,0 +1,25 @@
+E
+======================================================================
+ERROR: test_history_no_repeat (unittest.loader._FailedTest.test_history_no_repeat)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_history_no_repeat
+Traceback (most recent call last):
+  File "/home/husrcf/anaconda3/lib/python3.12/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/husrcf/anaconda3/lib/python3.12/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "/home/husrcf/Code/SAS/tests/test_history_no_repeat.py", line 6, in <module>
+    from scripts.analyze_semantic_history_no_repeat import audit_rows
+  File "/home/husrcf/Code/SAS/scripts/analyze_semantic_history_no_repeat.py", line 16, in <module>
+    from scripts.history_no_repeat_metrics import summarize
+  File "/home/husrcf/Code/SAS/scripts/history_no_repeat_metrics.py", line 85
+    "qualified_regression_cases": [p["case_id"] for p in pairs if p["commit_qualified_history_regression"]})
+                                                                                                          ^
+SyntaxError: closing parenthesis '}' does not match opening parenthesis '['
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

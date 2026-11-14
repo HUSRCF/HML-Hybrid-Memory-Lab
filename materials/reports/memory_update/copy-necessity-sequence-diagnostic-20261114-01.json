@@ -1,0 +1,307 @@
+{
+  "results": [
+    {
+      "stage": "cold",
+      "repeat": 0,
+      "id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+      "expected": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "greedy_exact": false,
+        "generated": "406\n",
+        "query_tokens": 26
+      },
+      "actual": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "generated": "406\n",
+        "greedy_exact": false,
+        "query_tokens": 26
+      },
+      "diff": {}
+    },
+    {
+      "stage": "cold",
+      "repeat": 1,
+      "id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+      "expected": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "greedy_exact": false,
+        "generated": "406\n",
+        "query_tokens": 26
+      },
+      "actual": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "generated": "406\n",
+        "greedy_exact": false,
+        "query_tokens": 26
+      },
+      "diff": {}
+    },
+    {
+      "stage": "cold",
+      "repeat": 2,
+      "id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+      "expected": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "greedy_exact": false,
+        "generated": "406\n",
+        "query_tokens": 26
+      },
+      "actual": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "generated": "406\n",
+        "greedy_exact": false,
+        "query_tokens": 26
+      },
+      "diff": {}
+    },
+    {
+      "stage": "after_three_masked_queries_0",
+      "repeat": 0,
+      "id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+      "expected": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "greedy_exact": false,
+        "generated": "406\n",
+        "query_tokens": 26
+      },
+      "actual": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "generated": "406\n",
+        "greedy_exact": false,
+        "query_tokens": 26
+      },
+      "diff": {}
+    },
+    {
+      "stage": "after_three_masked_queries_0",
+      "repeat": 1,
+      "id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+      "expected": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "greedy_exact": false,
+        "generated": "406\n",
+        "query_tokens": 26
+      },
+      "actual": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "generated": "406\n",
+        "greedy_exact": false,
+        "query_tokens": 26
+      },
+      "diff": {}
+    },
+    {
+      "stage": "after_three_masked_queries_0",
+      "repeat": 2,
+      "id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+      "expected": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "greedy_exact": false,
+        "generated": "406\n",
+        "query_tokens": 26
+      },
+      "actual": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "generated": "406\n",
+        "greedy_exact": false,
+        "query_tokens": 26
+      },
+      "diff": {}
+    },
+    {
+      "stage": "after_three_masked_queries_1",
+      "repeat": 0,
+      "id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+      "expected": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "greedy_exact": false,
+        "generated": "406\n",
+        "query_tokens": 26
+      },
+      "actual": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "generated": "406\n",
+        "greedy_exact": false,
+        "query_tokens": 26
+      },
+      "diff": {}
+    },
+    {
+      "stage": "after_three_masked_queries_1",
+      "repeat": 1,
+      "id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+      "expected": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "greedy_exact": false,
+        "generated": "406\n",
+        "query_tokens": 26
+      },
+      "actual": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "generated": "406\n",
+        "greedy_exact": false,
+        "query_tokens": 26
+      },
+      "diff": {}
+    },
+    {
+      "stage": "after_three_masked_queries_1",
+      "repeat": 2,
+      "id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+      "expected": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "greedy_exact": false,
+        "generated": "406\n",
+        "query_tokens": 26
+      },
+      "actual": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "generated": "406\n",
+        "greedy_exact": false,
+        "query_tokens": 26
+      },
+      "diff": {}
+    },
+    {
+      "stage": "after_empty_cache",
+      "repeat": 0,
+      "id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+      "expected": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "greedy_exact": false,
+        "generated": "406\n",
+        "query_tokens": 26
+      },
+      "actual": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "generated": "406\n",
+        "greedy_exact": false,
+        "query_tokens": 26
+      },
+      "diff": {}
+    },
+    {
+      "stage": "after_empty_cache",
+      "repeat": 1,
+      "id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+      "expected": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "greedy_exact": false,
+        "generated": "406\n",
+        "query_tokens": 26
+      },
+      "actual": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "generated": "406\n",
+        "greedy_exact": false,
+        "query_tokens": 26
+      },
+      "diff": {}
+    },
+    {
+      "stage": "after_empty_cache",
+      "repeat": 2,
+      "id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+      "expected": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "greedy_exact": false,
+        "generated": "406\n",
+        "query_tokens": 26
+      },
+      "actual": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "generated": "406\n",
+        "greedy_exact": false,
+        "query_tokens": 26
+      },
+      "diff": {}
+    },
+    {
+      "stage": "deterministic",
+      "repeat": 0,
+      "id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+      "expected": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "greedy_exact": false,
+        "generated": "406\n",
+        "query_tokens": 26
+      },
+      "actual": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "generated": "406\n",
+        "greedy_exact": false,
+        "query_tokens": 26
+      },
+      "diff": {}
+    },
+    {
+      "stage": "deterministic",
+      "repeat": 1,
+      "id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+      "expected": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "greedy_exact": false,
+        "generated": "406\n",
+        "query_tokens": 26
+      },
+      "actual": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "generated": "406\n",
+        "greedy_exact": false,
+        "query_tokens": 26
+      },
+      "diff": {}
+    },
+    {
+      "stage": "deterministic",
+      "repeat": 2,
+      "id": "571aa66bb133a769f6f54a82e54ffe78da046507b55347a5946b46be66d593bf",
+      "expected": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "greedy_exact": false,
+        "generated": "406\n",
+        "query_tokens": 26
+      },
+      "actual": {
+        "answer": "263",
+        "answer_nll": 0.4226212501525879,
+        "generated": "406\n",
+        "greedy_exact": false,
+        "query_tokens": 26
+      },
+      "diff": {}
+    }
+  ],
+  "adapter_unchanged": true,
+  "float32_matmul_precision": "highest",
+  "allow_tf32": false
+}

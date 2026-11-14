@@ -1,0 +1,29 @@
+{
+  "protocol_version": 1,
+  "model": "it",
+  "group_index": 3,
+  "initialization_seed": 1701,
+  "steps": 64,
+  "gradient_accumulation": 2,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "max_gradient_norm": 1.0,
+  "max_sequence_tokens": 1536,
+  "validation_copy_cases": 4,
+  "validation_overwrite_cases": 2,
+  "test_copy_cases": 8,
+  "test_overwrite_cases": 4,
+  "modes": {
+    "local": 32
+  },
+  "notes": [
+    "Small feasibility trial, not a novelty or architecture claim.",
+    "Frozen IT backbone; existing conda base. No new environment or package installation.",
+    "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+    "No test-based hyperparameter selection; evaluate final checkpoint only.",
+    "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+    "Seed and entity namespaces are disjoint across train/validation/test.",
+    "Only three-digit answer and newline tokens receive supervised loss.",
+    "Prespecified ordinary LoRA-style control on the same projection targets, added to complete the baseline set; no hyperparameter search."
+  ]
+}

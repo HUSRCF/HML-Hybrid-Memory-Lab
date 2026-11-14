@@ -1,0 +1,21 @@
+{
+  "status": "audited_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/blocked-reader-budget-smoke-20261114-02",
+  "manifest_sha256": "dedecc03d5d67e7fc1de1a5081a0a2f476a4cb64c4a7538d9722f1d7d5c517f1",
+  "plan_sha256": "3d86833326b39f83184bc193a65a9bb5a23c71f3bf7f74bc67c037d3c34e804f",
+  "arms": {
+    "question": {
+      "safety_passed": true
+    },
+    "all": {
+      "safety_passed": true
+    }
+  },
+  "records_audited": 0,
+  "evaluated_splits": [
+    "train",
+    "validation"
+  ],
+  "interpretation": "One initialization, fixed repeated original training data and a reused validation split. Checkpoints and budgets were fixed before this run. No new test-cohort inference or checkpoint selection. Fitting these data does not establish semantic generalization or a new architecture; persistent failure leaves adapter/readout capacity and accessible information unresolved.",
+  "analysis_source_sha256": "c69fbd01e6a725c46c61cbc1c2f4c4783d7a3a6882a1909be92b3c91914d69cc"
+}

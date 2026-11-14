@@ -1,0 +1,623 @@
+{
+  "status": "registered_before_question_path_mediation_inference",
+  "registered_utc": "2026-11-14T16:53:15.231746+00:00",
+  "objective": "Separate final-token GDN branch-output and earlier-question Attention23 K/V routes after a fixed earlier-question Attention19 intervention. This is conditional output-path mediation, not recurrent-state-only editing or semantic write preservation.",
+  "posthoc": true,
+  "selection_is_posthoc": true,
+  "independent_scientific_confirmation": false,
+  "can_change_prior_gates": false,
+  "no_accuracy_gate": true,
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "precision_addendum_sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc",
+  "dataset": "/media/990Pro/Code/SAS/datasets/memory_update/fresh-copy-memory-confirmation-v1",
+  "dataset_manifest_sha256": "9eff6d04307c32785000efb2b495ae6cf17ea3d24d28ff25f61a1778105c3a75",
+  "mask_registry_sha256": "c07223b733687060453d9ea5040c2003b512da3db70f09183cadd74a5d76d047",
+  "models": [
+    "local_question",
+    "gdn_question_only"
+  ],
+  "fixed_checkpoints": {
+    "local_question": {
+      "checkpoint_sha256": "ee78264808d0a532188c61c78e68407e72551947941ebb977ab25864b600a848",
+      "adapter_state_sha256_before": "ade581c5ca7823f6d002ac766ed5fdce2ba5e625327b2a9bad38c4877f337dc3",
+      "description": {
+        "mode": "local",
+        "rank": 22,
+        "group_index": 3,
+        "adapt_gdn_keys": true,
+        "layers": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "trainable_parameters": 689216,
+        "encoder_shapes": {
+          "gdn_0_a": [
+            22,
+            2048
+          ],
+          "gdn_0_b": [
+            22,
+            2048
+          ],
+          "gdn_0_key": [
+            22,
+            2048
+          ],
+          "gdn_1_a": [
+            22,
+            2048
+          ],
+          "gdn_1_b": [
+            22,
+            2048
+          ],
+          "gdn_1_key": [
+            22,
+            2048
+          ],
+          "gdn_2_a": [
+            22,
+            2048
+          ],
+          "gdn_2_b": [
+            22,
+            2048
+          ],
+          "gdn_2_key": [
+            22,
+            2048
+          ],
+          "attention_q_proj": [
+            22,
+            2048
+          ],
+          "attention_k_proj": [
+            22,
+            2048
+          ]
+        },
+        "output_shapes": {
+          "gdn_0_a": [
+            16,
+            22
+          ],
+          "gdn_0_b": [
+            16,
+            22
+          ],
+          "gdn_0_key": [
+            2048,
+            22
+          ],
+          "gdn_1_a": [
+            16,
+            22
+          ],
+          "gdn_1_b": [
+            16,
+            22
+          ],
+          "gdn_1_key": [
+            2048,
+            22
+          ],
+          "gdn_2_a": [
+            16,
+            22
+          ],
+          "gdn_2_b": [
+            16,
+            22
+          ],
+          "gdn_2_key": [
+            2048,
+            22
+          ],
+          "attention_q_proj": [
+            2048,
+            22
+          ],
+          "attention_k_proj": [
+            512,
+            22
+          ]
+        },
+        "input": "local projection hidden state",
+        "cache_expansion": false
+      }
+    },
+    "gdn_question_only": {
+      "checkpoint_sha256": "5aeea3bc1679df153bb9e246426da580c37575d7292399edd9c21d98c5952662",
+      "adapter_state_sha256_before": "7f4cd348b4835d4760c92fa94cdd4564d2602149296b1449d67531cd7f9f7dee",
+      "description": {
+        "mode": "gdn_only",
+        "rank": 84,
+        "group_index": 3,
+        "adapt_gdn_keys": true,
+        "layers": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "trainable_parameters": 696192,
+        "encoder_shapes": {
+          "gdn": [
+            84,
+            2048
+          ]
+        },
+        "output_shapes": {
+          "gdn_0_a": [
+            16,
+            84
+          ],
+          "gdn_0_b": [
+            16,
+            84
+          ],
+          "gdn_0_key": [
+            2048,
+            84
+          ],
+          "gdn_1_a": [
+            16,
+            84
+          ],
+          "gdn_1_b": [
+            16,
+            84
+          ],
+          "gdn_1_key": [
+            2048,
+            84
+          ],
+          "gdn_2_a": [
+            16,
+            84
+          ],
+          "gdn_2_b": [
+            16,
+            84
+          ],
+          "gdn_2_key": [
+            2048,
+            84
+          ]
+        },
+        "input": "detached causal group-entry hidden state",
+        "cache_expansion": false
+      }
+    }
+  },
+  "queries": [
+    {
+      "model": "local_question",
+      "regime": "oracle",
+      "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545",
+      "direction": "harm",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61007-n64-depth3-original",
+          "base_case_id": "test-copy-s61007-n64",
+          "seed": 61007,
+          "distractor_updates": 64,
+          "dependency_depth": 3,
+          "question_style": "original",
+          "variant": "treatment",
+          "role": "protected_current",
+          "physical_id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545"
+        }
+      ],
+      "expected_full": {
+        "answer": "784",
+        "answer_nll": 0.0005504336052884659,
+        "greedy_exact": true,
+        "generated": "784\n",
+        "query_tokens": 26
+      },
+      "expected_intervened": {
+        "answer": "784",
+        "answer_nll": 0.3970208565394084,
+        "greedy_exact": false,
+        "generated": "1584\n",
+        "query_tokens": 26
+      },
+      "registration_sha256": "07120353288aa0f0e88ea4579c4aff59d3c60e14575cfd1c0d57ef53a31bfa61",
+      "mask_registration_sha256": "a288ee5d195711654288d3882dea32fa3fcf3143cfb57f3dfc98da60ae25ee0f",
+      "keep_bits_sha256": "b79d50b8dd0081ab32f5a9c61aaeb6b149c66deadbe46c0830b2b3bb7ed9bd15"
+    },
+    {
+      "model": "local_question",
+      "regime": "remove_matched_other",
+      "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf",
+      "direction": "harm",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61000-n8-depth1-original",
+          "base_case_id": "test-copy-s61000-n8",
+          "seed": 61000,
+          "distractor_updates": 8,
+          "dependency_depth": 1,
+          "question_style": "original",
+          "variant": "control",
+          "role": "target_current",
+          "physical_id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf"
+        }
+      ],
+      "expected_full": {
+        "answer": "375",
+        "answer_nll": 0.3661286036173503,
+        "greedy_exact": true,
+        "generated": "375\n",
+        "query_tokens": 26
+      },
+      "expected_intervened": {
+        "answer": "375",
+        "answer_nll": 0.37673600514729816,
+        "greedy_exact": false,
+        "generated": "410\n",
+        "query_tokens": 26
+      },
+      "registration_sha256": "68b04873b34b699e62e929678e92d01fa5caec500fbc72683b85bc7fb36b097b",
+      "mask_registration_sha256": "dc020ee5fb586128bc482ef7f79d62b14fa63f5d7af344c4acce8afe909de8bc",
+      "keep_bits_sha256": "cac0ff11944c0d7042dab43c26c39890441130bc5c39c860bb330d35d0c581ff"
+    },
+    {
+      "model": "gdn_question_only",
+      "regime": "remove_matched_other",
+      "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532",
+      "direction": "repair",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61007-n64-depth2-entity_first",
+          "base_case_id": "test-copy-s61007-n64",
+          "seed": 61007,
+          "distractor_updates": 64,
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "variant": "treatment",
+          "role": "target_current",
+          "physical_id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532"
+        }
+      ],
+      "expected_full": {
+        "answer": "312",
+        "answer_nll": 0.32850344975789386,
+        "greedy_exact": false,
+        "generated": "703\n",
+        "query_tokens": 27
+      },
+      "expected_intervened": {
+        "answer": "312",
+        "answer_nll": 0.3067050576210022,
+        "greedy_exact": true,
+        "generated": "312\n",
+        "query_tokens": 27
+      },
+      "registration_sha256": "9972c05775f0fd9b4ffde0be7a1e7cb5e36a3f98660515baa0dfc47957173f8c",
+      "mask_registration_sha256": "05381dfa1be55a8e34ebe317fe4cd273e87b788e482d0b694103e83efb3c03e1",
+      "keep_bits_sha256": "fc2c6d686862b4455c17f16d8d58ad37596d63e871b373dbfcfcf494ec2e36e2"
+    },
+    {
+      "model": "gdn_question_only",
+      "regime": "remove_matched_other",
+      "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd",
+      "direction": "harm",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61007-n64-depth3-original",
+          "base_case_id": "test-copy-s61007-n64",
+          "seed": 61007,
+          "distractor_updates": 64,
+          "dependency_depth": 3,
+          "question_style": "original",
+          "variant": "control",
+          "role": "target_current",
+          "physical_id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd"
+        }
+      ],
+      "expected_full": {
+        "answer": "703",
+        "answer_nll": 0.5702381531397501,
+        "greedy_exact": true,
+        "generated": "703\n",
+        "query_tokens": 26
+      },
+      "expected_intervened": {
+        "answer": "703",
+        "answer_nll": 0.5652628739674886,
+        "greedy_exact": false,
+        "generated": "343\n",
+        "query_tokens": 26
+      },
+      "registration_sha256": "12def92728e9ca2b08ad9e8f2201c2cc5a38e53367b197e197ddbbb7dad5659c",
+      "mask_registration_sha256": "6efcb7868b19339fe10c81a7427efb97eb70f88dd960d288331c5e05b557650c",
+      "keep_bits_sha256": "2ae52f232f641025df8a0f43d17f81537f3b946656fe7fbbb82584fdb3cda473"
+    }
+  ],
+  "attention_layers": [
+    3,
+    7,
+    11,
+    15,
+    19,
+    23
+  ],
+  "prior_timing_plan": "/home/husrcf/Code/SAS/configs/fresh_control_token_timing_plan.json",
+  "prior_timing_plan_sha256": "0e6bc1bd3cd6b619af3ee565b757d6a233827c4a6cd1936dd9bd36c63e7c112b",
+  "prior_timing_run": "/media/990Pro/Code/SAS/runs/memory_update/fresh-token-timing-20261115-01",
+  "prior_timing_manifest_sha256": "dbe7ed952b00f90e2274352c236ab53da7c69fc7c72f0143ee5da475f6a0fcc8",
+  "prior_timing_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-token-timing-audit-20261115-01.json",
+  "prior_timing_audit_sha256": "17ca8a1279550fa5bc35c6795a7b0cb99709e495ef2395be560f93dd19ba032e",
+  "preserved_runtime_source_count": 121,
+  "installed_modeling_source": "/home/husrcf/anaconda3/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py",
+  "installed_modeling_source_sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded",
+  "context_order": [
+    "unmasked",
+    "earlier_only_layer19"
+  ],
+  "contexts": {
+    "unmasked": {
+      "timing": "earlier_question_tokens",
+      "selected_layers": []
+    },
+    "earlier_only_layer19": {
+      "timing": "earlier_question_tokens",
+      "selected_layers": [
+        19
+      ]
+    }
+  },
+  "posthoc_cut_rationale": "The observed earlier-question-only layer19 intervention motivates a follow-up on its clean downstream terminal GDN20-22 and Attention23. All4queries, including3with unchanged first-token argmax under this intervention, are retained. This is not an independent or universal layer selection.",
+  "patch_order": [
+    "none",
+    "gdn_current_outputs",
+    "question_kv",
+    "both"
+  ],
+  "patches": {
+    "none": {
+      "gdn_current_outputs": [],
+      "question_kv": false
+    },
+    "gdn_current_outputs": {
+      "gdn_current_outputs": [
+        20,
+        21,
+        22
+      ],
+      "question_kv": false
+    },
+    "question_kv": {
+      "gdn_current_outputs": [],
+      "question_kv": true
+    },
+    "both": {
+      "gdn_current_outputs": [
+        20,
+        21,
+        22
+      ],
+      "question_kv": true
+    }
+  },
+  "gdn_patch_policy": "Use actual same-query unmasked full-prompt outputs of layers20,21,22 linear_attn as oracle activations. Replace only absolute row H+Q-1 after each complete GDN branch returns its output tensor; leave every other row untouched. Do not modify kernels, recurrent/conv cache writes or model parameters.",
+  "kv_patch_policy": "Use actual same-query unmasked Attention23 k_norm output before RoPE and v_proj output. Replace only absolute earlier-question rows H <= t < H+Q-1, preserving ledger rows and the final question row byte-exact to their current unpatched outputs. Position IDs and RoPE stay natural.",
+  "input_policy": "All original prompt token IDs, question-only controller policy, original keep bits and native positions remain fixed. Apply the earlier-question mask only at Attention19 in its intervened context. No future answer rows are processed in primary readouts.",
+  "physical_first_token_readouts": 32,
+  "exact_prior_unpatched_references": 8,
+  "unmasked_nonidentity_patch_shams": 12,
+  "intervened_nonidentity_patch_readouts": 12,
+  "prior_references": [
+    {
+      "model": "local_question",
+      "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545",
+      "context": "unmasked",
+      "timing": "complete_question",
+      "condition": "full",
+      "first_token": {
+        "argmax_id": 22,
+        "argmax_text": "7",
+        "gold_id": 22,
+        "gold_logit": 29.75,
+        "non_gold_id": 17,
+        "non_gold_logit": 22.75,
+        "gold_margin": 7.0,
+        "logits_sha256": "eb3371950256d4c9bd5dadb7b2fc6c287f1621c2f788efca341b1ad0f35ecab9"
+      },
+      "prefix_sha256": "40d78224ec42ecd22b2fcf390518b61ab45a9604cfc6b321ec65225e3ded9bef",
+      "full_question_cache_sha256": "badd4ee977f6b17c680e48812fa8e6fef974012c9a56486c4798b0ba353cb728",
+      "attention23_input_sha256": "379fbab00233b9f76b6e5ac3404eb8aaefe6c6dc5377ddb72eb80e0dcd86a147"
+    },
+    {
+      "model": "local_question",
+      "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545",
+      "context": "earlier_only_layer19",
+      "timing": "earlier_question_tokens",
+      "condition": "only_layer_19",
+      "first_token": {
+        "argmax_id": 22,
+        "argmax_text": "7",
+        "gold_id": 22,
+        "gold_logit": 29.875,
+        "non_gold_id": 17,
+        "non_gold_logit": 22.0,
+        "gold_margin": 7.875,
+        "logits_sha256": "779814de8cd263d9a4b57c06bdc7c61d8697ba500c1f016dd962b39201d60a89"
+      },
+      "prefix_sha256": "40d78224ec42ecd22b2fcf390518b61ab45a9604cfc6b321ec65225e3ded9bef",
+      "full_question_cache_sha256": "e6cd7ce3d7535bc8877f183331b8f296a28543bf946d53741571fc4cc30b53d4",
+      "attention23_input_sha256": "411943e24407e008856280adf6a99f7afbd79c80e8b74f7d0e7f7efc35b43e1e"
+    },
+    {
+      "model": "local_question",
+      "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf",
+      "context": "unmasked",
+      "timing": "complete_question",
+      "condition": "full",
+      "first_token": {
+        "argmax_id": 18,
+        "argmax_text": "3",
+        "gold_id": 18,
+        "gold_logit": 25.625,
+        "non_gold_id": 19,
+        "non_gold_logit": 25.5,
+        "gold_margin": 0.125,
+        "logits_sha256": "7ae9e7b8b337eb9e4d95a0639a03cf4a2b91260f82f64cd5f560c3580041e4ec"
+      },
+      "prefix_sha256": "012ac06f7b1c1df0890c3f4e831dd20fa8b562c07365d90e9a8e04c91752ed2f",
+      "full_question_cache_sha256": "bfdaeef82d2caec3ba9bad0e25fb4cfe112bab6b1d216be80e9d0eacc151f56b",
+      "attention23_input_sha256": "2559d44b363dbcbe2686df1386783d1c22ade81ff4cf5e4f49ece406c95c16d9"
+    },
+    {
+      "model": "local_question",
+      "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf",
+      "context": "earlier_only_layer19",
+      "timing": "earlier_question_tokens",
+      "condition": "only_layer_19",
+      "first_token": {
+        "argmax_id": 18,
+        "argmax_text": "3",
+        "gold_id": 18,
+        "gold_logit": 25.5,
+        "non_gold_id": 19,
+        "non_gold_logit": 25.5,
+        "gold_margin": 0.0,
+        "logits_sha256": "dd494758aee3cc77ac7a0b712049345f75f58fa8eb0bcdc29fabad4092af8cbf"
+      },
+      "prefix_sha256": "012ac06f7b1c1df0890c3f4e831dd20fa8b562c07365d90e9a8e04c91752ed2f",
+      "full_question_cache_sha256": "04934cad2aa75f69753c9ef38605dfe549739ccb074b3138144d5b8aa55715d2",
+      "attention23_input_sha256": "7eac9918bee376e7ddd3220bc5ab7da53ed6e0865a7defcde398fc325016c155"
+    },
+    {
+      "model": "gdn_question_only",
+      "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532",
+      "context": "unmasked",
+      "timing": "complete_question",
+      "condition": "full",
+      "first_token": {
+        "argmax_id": 22,
+        "argmax_text": "7",
+        "gold_id": 18,
+        "gold_logit": 25.625,
+        "non_gold_id": 22,
+        "non_gold_logit": 25.75,
+        "gold_margin": -0.125,
+        "logits_sha256": "e73adf674db4c61243617307be4f0fb3263187a304355cb122450df32d6973e0"
+      },
+      "prefix_sha256": "2cac8d367468a15519c86e870af7ced1a3346a71c98fc517f2c26a969efcf186",
+      "full_question_cache_sha256": "25e3a4615d5529bd86b37f82ae4051e7052c8e3863765a82db18d27947fd91df",
+      "attention23_input_sha256": "9ead72fd68a5170f42d8e51e876b64014cbfc4d092e62eba0140f8069a119191"
+    },
+    {
+      "model": "gdn_question_only",
+      "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532",
+      "context": "earlier_only_layer19",
+      "timing": "earlier_question_tokens",
+      "condition": "only_layer_19",
+      "first_token": {
+        "argmax_id": 18,
+        "argmax_text": "3",
+        "gold_id": 18,
+        "gold_logit": 25.75,
+        "non_gold_id": 22,
+        "non_gold_logit": 25.75,
+        "gold_margin": 0.0,
+        "logits_sha256": "16a05d37ebc63e79cf9f6c7258fd79f785431545feb84b8da743424fdb19bf84"
+      },
+      "prefix_sha256": "2cac8d367468a15519c86e870af7ced1a3346a71c98fc517f2c26a969efcf186",
+      "full_question_cache_sha256": "740112469bbbdc697889d33a94c751ce4385fb6633db9437912a25cb0c4e778e",
+      "attention23_input_sha256": "a23ff0fbaccd1810428a9f13a7d1045263cdfb3babca7f2d0e6577bc136c0b43"
+    },
+    {
+      "model": "gdn_question_only",
+      "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd",
+      "context": "unmasked",
+      "timing": "complete_question",
+      "condition": "full",
+      "first_token": {
+        "argmax_id": 22,
+        "argmax_text": "7",
+        "gold_id": 22,
+        "gold_logit": 26.25,
+        "non_gold_id": 18,
+        "non_gold_logit": 25.75,
+        "gold_margin": 0.5,
+        "logits_sha256": "05b0c2c4cfb41b938b6ac9f38070a815f0bb8c7be1533811ea8de39879415fba"
+      },
+      "prefix_sha256": "46f730bd557dc65e12ad0c45227b77abc872b318d4cbf66f5256b61e7b1b3961",
+      "full_question_cache_sha256": "390ec7ec86d18ab50c2b7012b7c6d913584f3e76192274411f284bc17167f6c5",
+      "attention23_input_sha256": "f54cf58f4f02ed555174675164a81f9a18318ac054544a303837fe06ba525a8e"
+    },
+    {
+      "model": "gdn_question_only",
+      "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd",
+      "context": "earlier_only_layer19",
+      "timing": "earlier_question_tokens",
+      "condition": "only_layer_19",
+      "first_token": {
+        "argmax_id": 22,
+        "argmax_text": "7",
+        "gold_id": 22,
+        "gold_logit": 26.25,
+        "non_gold_id": 18,
+        "non_gold_logit": 26.125,
+        "gold_margin": 0.125,
+        "logits_sha256": "34ecabf62d15cba5415002eeba66bef1a3c6f8136c02745a26d119be0c8f974f"
+      },
+      "prefix_sha256": "46f730bd557dc65e12ad0c45227b77abc872b318d4cbf66f5256b61e7b1b3961",
+      "full_question_cache_sha256": "a55552386328cc6c76231e8f4a810d34997c4c6ab902ad509e045040aece356c",
+      "attention23_input_sha256": "fda98461baec0f53ef78681239a657e3fed625b3afa8100e8e54bcdf7f4230be"
+    }
+  ],
+  "retained_case_directions": {
+    "harm": 3,
+    "repair": 1
+  },
+  "new_queries": 0,
+  "new_training": false,
+  "new_models": false,
+  "new_environment": false,
+  "full_generation_scored": false,
+  "save_full_first_logits": true,
+  "full_first_logits_policy": "Archive each32actual first-logit vector as FP32 values converted from the frozen BF16 output, exactly as in prior first_token reporting. This changes storage only; do not change native computation or the canonical adapter arithmetic.",
+  "fixed_competitor_policy": "For each query freeze gold first-token ID and strongest non-gold ID from its registered unmasked reference. Use archived full logits to report the same fixed-pair margin in every context/patch, even when the argmax or strongest alternative changes.",
+  "required_operational_controls": [
+    "Preserve all121sealed timing sources; use isolated new code and archive every runtime source.",
+    "All8unpatched first-token dictionaries, full-question cache and Attention23 input hashes must exactly replay the completed timing run. No tolerance.",
+    "All12unmasked nonidentity patches are oracle self-to-self shams and must preserve complete question cache, first logits and Attention23 input exactly to their unmasked reference.",
+    "Every selected tensor patch records actual target-row equality to its unmasked activation and exact equality of every untargeted row to the actual original output. No past-prefix or final-query-row retokenization.",
+    "Every condition preserves actual native ledger-prefix recurrent/conv/KV/bookkeeping state and prefix logits, plus all original historical ledger K/V slices.",
+    "The earlier-only Attention19 intervention must preserve actual layer20 final-row input to the same-query unmasked value. Record all6actual attention probability matrices by summaries and actual row-mask receipt/suppression at layer19.",
+    "GDN-current-output patches must restore the actual final-row input to Attention23, while earlier-row Attention23 inputs remain exact to their same-context unpatched reference. This blocks the current-token branch output, not recurrent-state updates.",
+    "Question-KV patches must restore earlier-question cached K/V at Attention23 exactly to unmasked values after natural RoPE; ledger and final-question K/V rows remain exact to their actual unpatched projection outputs. Attention23 input is unchanged by these internal K/V patches.",
+    "For GDN-only patches, all earlier-position K/V remains exact to the same-context unpatched full question. For combined patches, earlier-question Attention23 K/V and final-token Attention23 input are unmasked; prior ledger K/V is already unmasked.",
+    "All4combined patches in the intervened context must close both restored paths and reproduce unmasked first logits exactly. Do not require native full-question recurrent/conv cache equality: GDN cache writes are not patched.",
+    "Save all32full first-logit vectors and verify each full-vector hash and reported first-token values independently. Report all32fixed-competitor margins and their context-specific four-point patch effects.",
+    "Frozen native/adapter bytes and no gradients; original native anchors before controllers and after each detach; all hooks removed and all live/archived source hashes verified."
+  ],
+  "reports": [
+    "All32first-token dictionaries and complete vector hashes, all tensor patch receipts, cache/input proofs and all4retained cases.",
+    "Per case, compare GDN-output-only, question-KV-only and combined paths with both unpatched contexts. Report raw fixed-pair margins and argmax separately; never equate threshold crossing with semantic interaction.",
+    "Explicitly report that GDN branch outputs include recurrence, short convolution, gating, normalization and output projection. Output patching alone cannot identify compressed-state storage loss.",
+    "All interventions use oracle baseline activations and may produce unnatural combinations. They diagnose a conditional computational route; they are not a deployable method, learned controller, independent replication or architecture improvement."
+  ],
+  "prohibited": [
+    "No changing checkpoints, masks, layer cut or patch targets after outcomes.",
+    "No dropping a repair, harm or a case without an argmax change.",
+    "No new architecture training or prior gate relabeling.",
+    "No claiming that restoring first logits restores future autoregressive state or full-answer correctness."
+  ],
+  "next_if_controls_fail": "Stop and retain actual run/source. Diagnose operator or patch fidelity before interpreting any mechanism.",
+  "next_if_complete": "Use the measured branch/KV mediation to formulate a separate GDN-specific or semantic-dependency hypothesis. Do not keep expanding favorable posthoc cases or treat oracle patch success as the requested architecture contribution."
+}

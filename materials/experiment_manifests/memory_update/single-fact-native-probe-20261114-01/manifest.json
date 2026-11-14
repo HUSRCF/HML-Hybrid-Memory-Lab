@@ -1,0 +1,661 @@
+{
+  "status": "completed",
+  "started_utc": "2026-11-14T01:17:59.661711+00:00",
+  "training": false,
+  "smoke": false,
+  "plan_sha256": "a3b88ca98f2711369d159481dfee038a3c142d6ac667eddd9f302e2a28105feb",
+  "data_manifest_sha256": "5504281e5a71d16aca823a1c1445a021ef5bd80d3c7b3efe62f7e544beebe0d1",
+  "evaluated_case_ids": {
+    "train": [
+      "single-fact-train-g022-v1",
+      "single-fact-train-g006-v1",
+      "single-fact-train-g025-v2",
+      "single-fact-train-g011-v1",
+      "single-fact-train-g001-v2",
+      "single-fact-train-g028-v3",
+      "single-fact-train-g006-v0",
+      "single-fact-train-g011-v3",
+      "single-fact-train-g018-v1",
+      "single-fact-train-g031-v3",
+      "single-fact-train-g021-v2",
+      "single-fact-train-g031-v0",
+      "single-fact-train-g022-v3",
+      "single-fact-train-g031-v2",
+      "single-fact-train-g002-v1",
+      "single-fact-train-g004-v2",
+      "single-fact-train-g013-v2",
+      "single-fact-train-g021-v1",
+      "single-fact-train-g020-v0",
+      "single-fact-train-g017-v3",
+      "single-fact-train-g024-v0",
+      "single-fact-train-g016-v3",
+      "single-fact-train-g010-v3",
+      "single-fact-train-g014-v2",
+      "single-fact-train-g017-v1",
+      "single-fact-train-g012-v2",
+      "single-fact-train-g019-v0",
+      "single-fact-train-g016-v0",
+      "single-fact-train-g019-v1",
+      "single-fact-train-g010-v2",
+      "single-fact-train-g028-v1",
+      "single-fact-train-g025-v0",
+      "single-fact-train-g003-v1",
+      "single-fact-train-g018-v2",
+      "single-fact-train-g011-v2",
+      "single-fact-train-g005-v3",
+      "single-fact-train-g018-v0",
+      "single-fact-train-g008-v0",
+      "single-fact-train-g026-v2",
+      "single-fact-train-g029-v1",
+      "single-fact-train-g031-v1",
+      "single-fact-train-g029-v3",
+      "single-fact-train-g015-v2",
+      "single-fact-train-g008-v2",
+      "single-fact-train-g007-v0",
+      "single-fact-train-g012-v0",
+      "single-fact-train-g025-v3",
+      "single-fact-train-g019-v2",
+      "single-fact-train-g005-v1",
+      "single-fact-train-g016-v2",
+      "single-fact-train-g002-v2",
+      "single-fact-train-g009-v2",
+      "single-fact-train-g013-v3",
+      "single-fact-train-g030-v1",
+      "single-fact-train-g019-v3",
+      "single-fact-train-g006-v3",
+      "single-fact-train-g029-v0",
+      "single-fact-train-g030-v2",
+      "single-fact-train-g004-v3",
+      "single-fact-train-g014-v0",
+      "single-fact-train-g001-v0",
+      "single-fact-train-g023-v3",
+      "single-fact-train-g027-v0",
+      "single-fact-train-g013-v0",
+      "single-fact-train-g024-v1",
+      "single-fact-train-g003-v2",
+      "single-fact-train-g023-v0",
+      "single-fact-train-g020-v3",
+      "single-fact-train-g015-v1",
+      "single-fact-train-g015-v0",
+      "single-fact-train-g010-v0",
+      "single-fact-train-g005-v0",
+      "single-fact-train-g020-v1",
+      "single-fact-train-g030-v0",
+      "single-fact-train-g000-v0",
+      "single-fact-train-g028-v0",
+      "single-fact-train-g022-v0",
+      "single-fact-train-g012-v3",
+      "single-fact-train-g004-v0",
+      "single-fact-train-g006-v2",
+      "single-fact-train-g003-v0",
+      "single-fact-train-g015-v3",
+      "single-fact-train-g007-v3",
+      "single-fact-train-g001-v1",
+      "single-fact-train-g029-v2",
+      "single-fact-train-g024-v2",
+      "single-fact-train-g011-v0",
+      "single-fact-train-g027-v2",
+      "single-fact-train-g017-v2",
+      "single-fact-train-g002-v0",
+      "single-fact-train-g008-v1",
+      "single-fact-train-g007-v1",
+      "single-fact-train-g017-v0",
+      "single-fact-train-g000-v1",
+      "single-fact-train-g016-v1",
+      "single-fact-train-g021-v0",
+      "single-fact-train-g003-v3",
+      "single-fact-train-g009-v3",
+      "single-fact-train-g014-v1",
+      "single-fact-train-g005-v2",
+      "single-fact-train-g010-v1",
+      "single-fact-train-g023-v2",
+      "single-fact-train-g008-v3",
+      "single-fact-train-g025-v1",
+      "single-fact-train-g026-v3",
+      "single-fact-train-g012-v1",
+      "single-fact-train-g001-v3",
+      "single-fact-train-g027-v3",
+      "single-fact-train-g007-v2",
+      "single-fact-train-g002-v3",
+      "single-fact-train-g028-v2",
+      "single-fact-train-g026-v0",
+      "single-fact-train-g018-v3",
+      "single-fact-train-g014-v3",
+      "single-fact-train-g024-v3",
+      "single-fact-train-g004-v1",
+      "single-fact-train-g009-v0",
+      "single-fact-train-g021-v3",
+      "single-fact-train-g030-v3",
+      "single-fact-train-g026-v1",
+      "single-fact-train-g027-v1",
+      "single-fact-train-g023-v1",
+      "single-fact-train-g020-v2",
+      "single-fact-train-g000-v3",
+      "single-fact-train-g000-v2",
+      "single-fact-train-g009-v1",
+      "single-fact-train-g022-v2",
+      "single-fact-train-g013-v1"
+    ],
+    "validation": [
+      "single-fact-validation-g013-v0",
+      "single-fact-validation-g005-v1",
+      "single-fact-validation-g009-v3",
+      "single-fact-validation-g000-v1",
+      "single-fact-validation-g007-v0",
+      "single-fact-validation-g007-v3",
+      "single-fact-validation-g005-v0",
+      "single-fact-validation-g003-v3",
+      "single-fact-validation-g015-v3",
+      "single-fact-validation-g011-v2",
+      "single-fact-validation-g004-v1",
+      "single-fact-validation-g014-v3",
+      "single-fact-validation-g013-v1",
+      "single-fact-validation-g002-v0",
+      "single-fact-validation-g011-v0",
+      "single-fact-validation-g007-v1",
+      "single-fact-validation-g012-v1",
+      "single-fact-validation-g000-v3",
+      "single-fact-validation-g015-v2",
+      "single-fact-validation-g006-v1",
+      "single-fact-validation-g007-v2",
+      "single-fact-validation-g000-v2",
+      "single-fact-validation-g003-v0",
+      "single-fact-validation-g001-v3",
+      "single-fact-validation-g005-v3",
+      "single-fact-validation-g012-v0",
+      "single-fact-validation-g009-v0",
+      "single-fact-validation-g010-v3",
+      "single-fact-validation-g014-v2",
+      "single-fact-validation-g011-v1",
+      "single-fact-validation-g010-v1",
+      "single-fact-validation-g013-v2",
+      "single-fact-validation-g000-v0",
+      "single-fact-validation-g013-v3",
+      "single-fact-validation-g002-v1",
+      "single-fact-validation-g006-v2",
+      "single-fact-validation-g002-v3",
+      "single-fact-validation-g015-v0",
+      "single-fact-validation-g003-v1",
+      "single-fact-validation-g009-v2",
+      "single-fact-validation-g001-v2",
+      "single-fact-validation-g014-v1",
+      "single-fact-validation-g006-v3",
+      "single-fact-validation-g010-v0",
+      "single-fact-validation-g004-v2",
+      "single-fact-validation-g015-v1",
+      "single-fact-validation-g001-v1",
+      "single-fact-validation-g011-v3",
+      "single-fact-validation-g002-v2",
+      "single-fact-validation-g009-v1",
+      "single-fact-validation-g003-v2",
+      "single-fact-validation-g008-v0",
+      "single-fact-validation-g005-v2",
+      "single-fact-validation-g012-v3",
+      "single-fact-validation-g008-v2",
+      "single-fact-validation-g004-v0",
+      "single-fact-validation-g008-v3",
+      "single-fact-validation-g006-v0",
+      "single-fact-validation-g014-v0",
+      "single-fact-validation-g012-v2",
+      "single-fact-validation-g001-v0",
+      "single-fact-validation-g004-v3",
+      "single-fact-validation-g008-v1",
+      "single-fact-validation-g010-v2"
+    ]
+  },
+  "safety_checks": {
+    "train": [
+      {
+        "case_id": "single-fact-train-g000-v0",
+        "all_history_full_cache_and_logits_exact": true,
+        "all_history_scoring_and_greedy_exact": true,
+        "pre_question_kv_recurrent_conv_and_logits_exact": true,
+        "historical_kv_exact_in_full_prefill": true,
+        "historical_kv_fields_checked": 12,
+        "unrestricted_replay_max_nll_error": 0.0,
+        "all_history_hook_calls": {
+          "prefill": 2,
+          "cached": 5
+        },
+        "native_replay_after_mask_exact": true,
+        "full_weights": {
+          "3": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.75390625,
+            "max_record_mass": 0.9429264068603516
+          },
+          "7": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.890625,
+            "max_record_mass": 0.9486918449401855
+          },
+          "11": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.921875,
+            "max_record_mass": 0.9758498668670654
+          },
+          "15": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.96875,
+            "max_record_mass": 0.9920549392700195
+          },
+          "19": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.92578125,
+            "max_record_mass": 0.966625988483429
+          },
+          "23": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.64453125,
+            "max_record_mass": 0.7967872619628906
+          }
+        },
+        "blocked_weights": {
+          "3": {
+            "prefill_calls": 1,
+            "cached_calls": 12,
+            "query_rows": 39,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "7": {
+            "prefill_calls": 1,
+            "cached_calls": 12,
+            "query_rows": 39,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "11": {
+            "prefill_calls": 1,
+            "cached_calls": 12,
+            "query_rows": 39,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "15": {
+            "prefill_calls": 1,
+            "cached_calls": 12,
+            "query_rows": 39,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "19": {
+            "prefill_calls": 1,
+            "cached_calls": 12,
+            "query_rows": 39,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "23": {
+            "prefill_calls": 1,
+            "cached_calls": 12,
+            "query_rows": 39,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          }
+        }
+      },
+      {
+        "case_id": "single-fact-train-g031-v3",
+        "all_history_full_cache_and_logits_exact": true,
+        "all_history_scoring_and_greedy_exact": true,
+        "pre_question_kv_recurrent_conv_and_logits_exact": true,
+        "historical_kv_exact_in_full_prefill": true,
+        "historical_kv_fields_checked": 12,
+        "unrestricted_replay_max_nll_error": 0.0,
+        "all_history_hook_calls": {
+          "prefill": 2,
+          "cached": 5
+        },
+        "native_replay_after_mask_exact": true,
+        "full_weights": {
+          "3": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.8359375,
+            "max_record_mass": 0.9499082565307617
+          },
+          "7": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.83203125,
+            "max_record_mass": 0.9559535980224609
+          },
+          "11": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.9140625,
+            "max_record_mass": 0.9747006297111511
+          },
+          "15": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.984375,
+            "max_record_mass": 0.9927816987037659
+          },
+          "19": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.953125,
+            "max_record_mass": 0.9862849712371826
+          },
+          "23": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.63671875,
+            "max_record_mass": 0.8443126678466797
+          }
+        },
+        "blocked_weights": {
+          "3": {
+            "prefill_calls": 1,
+            "cached_calls": 12,
+            "query_rows": 39,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "7": {
+            "prefill_calls": 1,
+            "cached_calls": 12,
+            "query_rows": 39,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "11": {
+            "prefill_calls": 1,
+            "cached_calls": 12,
+            "query_rows": 39,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "15": {
+            "prefill_calls": 1,
+            "cached_calls": 12,
+            "query_rows": 39,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "19": {
+            "prefill_calls": 1,
+            "cached_calls": 12,
+            "query_rows": 39,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "23": {
+            "prefill_calls": 1,
+            "cached_calls": 12,
+            "query_rows": 39,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          }
+        }
+      }
+    ],
+    "validation": [
+      {
+        "case_id": "single-fact-validation-g000-v0",
+        "all_history_full_cache_and_logits_exact": true,
+        "all_history_scoring_and_greedy_exact": true,
+        "pre_question_kv_recurrent_conv_and_logits_exact": true,
+        "historical_kv_exact_in_full_prefill": true,
+        "historical_kv_fields_checked": 12,
+        "unrestricted_replay_max_nll_error": 0.0,
+        "all_history_hook_calls": {
+          "prefill": 2,
+          "cached": 5
+        },
+        "native_replay_after_mask_exact": true,
+        "full_weights": {
+          "3": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.75390625,
+            "max_record_mass": 0.9484043121337891
+          },
+          "7": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.84765625,
+            "max_record_mass": 0.9480514526367188
+          },
+          "11": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.890625,
+            "max_record_mass": 0.97503662109375
+          },
+          "15": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.98828125,
+            "max_record_mass": 0.9965990781784058
+          },
+          "19": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.94140625,
+            "max_record_mass": 0.9692943096160889
+          },
+          "23": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.640625,
+            "max_record_mass": 0.8106288909912109
+          }
+        },
+        "blocked_weights": {
+          "3": {
+            "prefill_calls": 1,
+            "cached_calls": 13,
+            "query_rows": 40,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "7": {
+            "prefill_calls": 1,
+            "cached_calls": 13,
+            "query_rows": 40,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "11": {
+            "prefill_calls": 1,
+            "cached_calls": 13,
+            "query_rows": 40,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "15": {
+            "prefill_calls": 1,
+            "cached_calls": 13,
+            "query_rows": 40,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "19": {
+            "prefill_calls": 1,
+            "cached_calls": 13,
+            "query_rows": 40,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "23": {
+            "prefill_calls": 1,
+            "cached_calls": 13,
+            "query_rows": 40,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          }
+        }
+      },
+      {
+        "case_id": "single-fact-validation-g015-v3",
+        "all_history_full_cache_and_logits_exact": true,
+        "all_history_scoring_and_greedy_exact": true,
+        "pre_question_kv_recurrent_conv_and_logits_exact": true,
+        "historical_kv_exact_in_full_prefill": true,
+        "historical_kv_fields_checked": 12,
+        "unrestricted_replay_max_nll_error": 0.0,
+        "all_history_hook_calls": {
+          "prefill": 2,
+          "cached": 5
+        },
+        "native_replay_after_mask_exact": true,
+        "full_weights": {
+          "3": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.859375,
+            "max_record_mass": 0.9543724060058594
+          },
+          "7": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.87890625,
+            "max_record_mass": 0.9613256454467773
+          },
+          "11": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.89453125,
+            "max_record_mass": 0.9736902713775635
+          },
+          "15": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.984375,
+            "max_record_mass": 0.9929463267326355
+          },
+          "19": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.921875,
+            "max_record_mass": 0.9574782848358154
+          },
+          "23": {
+            "prefill_calls": 1,
+            "cached_calls": 5,
+            "query_rows": 32,
+            "max_record_probability": 0.64453125,
+            "max_record_mass": 0.7913951873779297
+          }
+        },
+        "blocked_weights": {
+          "3": {
+            "prefill_calls": 1,
+            "cached_calls": 13,
+            "query_rows": 40,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "7": {
+            "prefill_calls": 1,
+            "cached_calls": 13,
+            "query_rows": 40,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "11": {
+            "prefill_calls": 1,
+            "cached_calls": 13,
+            "query_rows": 40,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "15": {
+            "prefill_calls": 1,
+            "cached_calls": 13,
+            "query_rows": 40,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "19": {
+            "prefill_calls": 1,
+            "cached_calls": 13,
+            "query_rows": 40,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          },
+          "23": {
+            "prefill_calls": 1,
+            "cached_calls": 13,
+            "query_rows": 40,
+            "max_record_probability": 0.0,
+            "max_record_mass": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "completed_splits": [
+    "train",
+    "validation"
+  ],
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/calibration.py": "922499d57024c280f3ab93de1dac9ef4a3d611a216f2c1ae4af7fa7862ef7a06",
+    "sas_memory/controllers.py": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9",
+    "sas_memory/counterbalance_data.py": "88e38ff2901e652335e23ff5decd4bb69d59481a58d27f7284b99fcdf47d176c",
+    "sas_memory/counterbalance_tasks.py": "914523e92d5d1e657646d0e6d179c86845af2605fc6f7d8ab34794181fd6bf1d",
+    "sas_memory/generalization_tasks.py": "697a6fdc1e9d448fdfd5b7fa6e22adca40477d35c6e70f7aaebf648ef8b608fd",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/kv_readout.py": "2927df0cfdaf4972287b83914092e2224eacfc3ccf9d0508e03a64e85e919b8b",
+    "sas_memory/metrics.py": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e",
+    "sas_memory/readout_controls.py": "c15b4e3d4f4de2ce09a3c559dae64be8d849f472d6b02b9f70dd165c2cf73afa",
+    "sas_memory/record_kv_ablation.py": "37c694da6bfb100fba6498df3a4b09ae89dde5181b55b1b17d80585e873f6093",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/stress_tasks.py": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "scripts/run_single_fact_probe.py": "a23624b4f13c463293868091c170d7c2cb8607e35e19b329071e6dd200956bb0",
+    "scripts/analyze_single_fact_probe.py": "41e5dcca6edfbcab09a8aeb9be5edb67b5e58dddc3c493148469b5aa4fd0d92a",
+    "scripts/prepare_single_fact_control.py": "4977a04116274667e1811f6393675ce069752c84eb5d55296baad9022f7573a1",
+    "scripts/analyze_blocked_reader_adaptation.py": "a23c1d33644f906b1a521fdb44a68d5e6dff86f5c11e094387eaa3fb085f94f5",
+    "scripts/analyze_controller_trial.py": "aee986c912b7f3ada5de142978ef10793f16a7753ffdc8e33733682767137e41",
+    "scripts/check_record_attention_weights.py": "952d6b00870e170ab6d3cf210b6d150a761c38133257782cc8e63a0d5a4af47f",
+    "scripts/run_controller_trial.py": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262",
+    "scripts/run_oracle_kv_readout.py": "45f0cf4760af5fdfa42e473c80aa5dc6fbf04d0a71d23b7927b6310e06c8e886"
+  },
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "python": "/home/husrcf/anaconda3/bin/python",
+  "gpu": "AMD Radeon AI PRO R9700",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "frozen_parameters_and_no_gradients": true,
+  "hooks_restored": true,
+  "completed_utc": "2026-11-14T01:20:52.525790+00:00"
+}

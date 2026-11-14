@@ -1,0 +1,162 @@
+{
+  "status": "posthoc_descriptive_output_format_not_gate",
+  "created_utc": "2026-11-14T14:10:49.235763+00:00",
+  "source_export": "/media/990Pro/Code/SAS/artifacts/memory_update/canonical-copy-necessity-comparison-20261114-01.json",
+  "source_export_sha256": "935a7329dd0a41116d57f3321644885ef00b4da456d861ea81d3b263ad8d9425",
+  "source_physical_csv_sha256": "3383c5649e028b89fa85b8dfb74fe449f9255d9821ecba8e16b6860a081aa86a",
+  "source_audit_sha256": "e6de2525297a1c2549b40a804e84e5b0c494ae964daf3625e92c24c88d9e0873",
+  "analysis_source_sha256": "c97a1771359dde3f819edf6bd465e993a31ee11322ffb7118c9f0ed8e4fca5a5",
+  "stats": {
+    "full": {
+      "native": {
+        "physical_observations": 336,
+        "greedy_correct": 233,
+        "integer_output": 336,
+        "unique_generated_strings": 30
+      },
+      "shared": {
+        "physical_observations": 336,
+        "greedy_correct": 278,
+        "integer_output": 336,
+        "unique_generated_strings": 36
+      },
+      "independent": {
+        "physical_observations": 336,
+        "greedy_correct": 276,
+        "integer_output": 336,
+        "unique_generated_strings": 44
+      },
+      "local": {
+        "physical_observations": 336,
+        "greedy_correct": 283,
+        "integer_output": 336,
+        "unique_generated_strings": 49
+      },
+      "local_question": {
+        "physical_observations": 336,
+        "greedy_correct": 277,
+        "integer_output": 336,
+        "unique_generated_strings": 54
+      },
+      "attention_only": {
+        "physical_observations": 336,
+        "greedy_correct": 275,
+        "integer_output": 336,
+        "unique_generated_strings": 29
+      },
+      "gdn_all_tokens": {
+        "physical_observations": 336,
+        "greedy_correct": 275,
+        "integer_output": 336,
+        "unique_generated_strings": 41
+      },
+      "gdn_question_only": {
+        "physical_observations": 336,
+        "greedy_correct": 276,
+        "integer_output": 336,
+        "unique_generated_strings": 47
+      }
+    },
+    "remove_support": {
+      "native": {
+        "physical_observations": 336,
+        "greedy_correct": 0,
+        "integer_output": 324,
+        "unique_generated_strings": 48
+      },
+      "shared": {
+        "physical_observations": 336,
+        "greedy_correct": 0,
+        "integer_output": 336,
+        "unique_generated_strings": 49
+      },
+      "independent": {
+        "physical_observations": 336,
+        "greedy_correct": 0,
+        "integer_output": 336,
+        "unique_generated_strings": 48
+      },
+      "local": {
+        "physical_observations": 336,
+        "greedy_correct": 0,
+        "integer_output": 336,
+        "unique_generated_strings": 72
+      },
+      "local_question": {
+        "physical_observations": 336,
+        "greedy_correct": 0,
+        "integer_output": 330,
+        "unique_generated_strings": 63
+      },
+      "attention_only": {
+        "physical_observations": 336,
+        "greedy_correct": 0,
+        "integer_output": 326,
+        "unique_generated_strings": 63
+      },
+      "gdn_all_tokens": {
+        "physical_observations": 336,
+        "greedy_correct": 0,
+        "integer_output": 331,
+        "unique_generated_strings": 53
+      },
+      "gdn_question_only": {
+        "physical_observations": 336,
+        "greedy_correct": 0,
+        "integer_output": 332,
+        "unique_generated_strings": 60
+      }
+    },
+    "remove_matched_other": {
+      "native": {
+        "physical_observations": 336,
+        "greedy_correct": 232,
+        "integer_output": 336,
+        "unique_generated_strings": 33
+      },
+      "shared": {
+        "physical_observations": 336,
+        "greedy_correct": 284,
+        "integer_output": 336,
+        "unique_generated_strings": 38
+      },
+      "independent": {
+        "physical_observations": 336,
+        "greedy_correct": 277,
+        "integer_output": 336,
+        "unique_generated_strings": 41
+      },
+      "local": {
+        "physical_observations": 336,
+        "greedy_correct": 284,
+        "integer_output": 336,
+        "unique_generated_strings": 48
+      },
+      "local_question": {
+        "physical_observations": 336,
+        "greedy_correct": 278,
+        "integer_output": 336,
+        "unique_generated_strings": 56
+      },
+      "attention_only": {
+        "physical_observations": 336,
+        "greedy_correct": 275,
+        "integer_output": 336,
+        "unique_generated_strings": 31
+      },
+      "gdn_all_tokens": {
+        "physical_observations": 336,
+        "greedy_correct": 277,
+        "integer_output": 336,
+        "unique_generated_strings": 41
+      },
+      "gdn_question_only": {
+        "physical_observations": 336,
+        "greedy_correct": 277,
+        "integer_output": 336,
+        "unique_generated_strings": 49
+      }
+    }
+  },
+  "interpretation": "Integer output is a format count, not answer correctness or information absence. These descriptive counts do not change the registered scientific decision."
+}

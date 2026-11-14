@@ -1,0 +1,102 @@
+{
+  "status": "registered_not_started",
+  "registered_utc": "2026-11-14T05:14:50.374250+00:00",
+  "purpose": "Test whether the well-fitting GDN-only adapter needs altered ledger memories, or can recover semantic updates while leaving the entire pre-question native prefix unchanged.",
+  "backbone": "it",
+  "group_index": 3,
+  "initialization_seed": 1701,
+  "reader_policy": "full",
+  "adapt_gdn_keys": true,
+  "data_source": "/media/990Pro/Code/SAS/datasets/memory_update/paired-semantic-order-augmented-v1",
+  "data_sha256": "3ccaa5be8591fc896646a50991aaa86f5f722e00e76a198449791d3caa992b0f",
+  "registry_sha256": "9147f9f76334ebda3ad503f17603c3d06be630fae72b0dd930d5029ae877c55e",
+  "tokenized_input_answer_sha256": "8f286e49883583b97d4bf48822ea4663bd2cc3f5979f2031eef4c0b583cb3d1f",
+  "native_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-native-20261114-01",
+  "arms": {
+    "gdn_question": {
+      "mode": "gdn_only",
+      "rank": 84,
+      "token_policy": "question",
+      "parameters": 696192
+    }
+  },
+  "unique_training_examples": 864,
+  "gradient_accumulation": 2,
+  "maximum_optimizer_steps": 432,
+  "checkpoint_steps": [
+    144,
+    288,
+    432
+  ],
+  "evaluation_steps": [
+    432
+  ],
+  "learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "max_gradient_norm": 1.0,
+  "max_input_tokens": 832,
+  "optimized_input_token_budgets": {
+    "144": 176667,
+    "288": 355305,
+    "432": 527808
+  },
+  "supervised_answer_token_budgets": {
+    "144": 1152,
+    "288": 2304,
+    "432": 3456
+  },
+  "objective": "Only gold numeric-answer plus newline LM cross-entropy, identical for all arms. No auxiliary consistency loss or external scope labels.",
+  "gate": "Require independent complete audit of the full native cache-source cohort and both matched component controls, including their four-arm augmentation references. Verify pinned data, plans, manifests, packages and initialization. Fresh real-model safety must reproduce native logits, restrict trainable projections to the same GDN scope, keep backbone gradients absent, and retain exact pre-question KV/recurrent/convolution/logit identity after the scratch update. Do not start any question-timing model inference before these gates.",
+  "requirements": [
+    "Use the identical frozen IT backbone, selected group3, rank84 GDN-only projection adapters and696192 parameters as the completed all-token GDN reference. Reconstruct the seed1701 initialization and require its actual weight fingerprint to equal the pinned all-token initial state. No direct Attention projection adapter.",
+    "Keep exactly the same registered864 augmented training examples in the same order, answer-plus-newline LM loss,432 optimizer updates with gradient accumulation2,527808 optimized input tokens and3456 supervised answer tokens. Same learning rate, clipping, weight decay and checkpoints144/288/432. No hyperparameter/checkpoint selection from development outcomes.",
+    "The sole intended intervention is token_policy=question. This includes question/suffix and answer processing; it permits new recurrent states and KV during those tokens. Before the registered ledger/question boundary, adapter outputs must be zero and all native prefix representations and memories must remain unchanged.",
+    "Discard scratch safety updates and reset initialization before scheduled training. Verify actual projection scope, count, finite nonzero adapter gradients and absent backbone gradients. Keep native Attention output gates and all cache dimensions.",
+    "Evaluate final step432 on all864 teacher-forced training examples and all432 unrestricted free answers in both canonical and permuted development orders. Record sampled actual six-layer full historical access, unchanged evaluation weights/RNG and native restoration after adapter detach.",
+    "After scheduled training, verify exact KV, complete recurrent/convolution cache and last-prefix-logit identity against the native model on the prescribed shortest/longest validation ledgers in each order. Record the checked identities and lengths. Question-phase adaptation is not a pure Q-projection intervention.",
+    "Independently audit all three adapter/AdamW/RNG checkpoints, training identities/token budgets, teacher fit, both raw validation cohorts and sampled prefix identity. Report paired all-token versus question-only changes in individual/joint answers, stable unchanged facts, historical/current roles and ADD-separated target updates.",
+    "A successful native-prefix control weakens a claim that prefix memory changes are needed for these full-reader tasks. A failed or worse-fitting control does not prove semantic write damage, lack of stored information or necessity of a shared hybrid controller."
+  ],
+  "interpretation": "Matched timing diagnostic on the same observed development cohort and paired seed, not a new architecture or untouched confirmation. The complete hybrid model and unrestricted historical Attention remain active. Keeping the ledger prefix native can establish sufficiency of later adaptation for tested functions, but does not isolate recurrent-state storage, exclude compensated state damage, or attribute gains uniquely to Attention queries. Training fit and all functional roles must be considered before interpreting a gap. No4B/9B scaling or new data/auxiliary supervision in this control.",
+  "profile": "gdn_question_timing_control",
+  "base_data_sha256": "9a58823c8348db79b5b20db418894ae51782d02d943dc2440365af66c6838791",
+  "data_manifest_sha256": "f5b90214f92710085b208e96d2af98db5d4cc7547a2e518a34e8dec1616de32d",
+  "training_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-controllers-20261114-01",
+  "order_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/initial-order-control-20261114-01",
+  "original_training_plan_sha256": "52f0db3fe5e6635eb19380856c5792940e9d31124fe29f0543544ad505aed587",
+  "order_control_plan": "/home/husrcf/Code/SAS/configs/initial_order_control_plan.json",
+  "order_control_plan_sha256": "ab728f84c696c8c664217e86955935cbff5ffb3cdfa896e44f748750b6a27a22",
+  "evaluation_conditions": [
+    "canonical",
+    "initial_record_derangement"
+  ],
+  "augmentation": {
+    "seed_offset": 991003,
+    "canonical_train_stream_indices": [
+      0,
+      3
+    ],
+    "deranged_train_stream_indices": [
+      1,
+      2
+    ],
+    "canonical_train_examples": 432,
+    "deranged_train_examples": 432,
+    "all_four_siblings_share_order": true
+  },
+  "native_reference_manifest_sha256": "2b9580bea17bad9a6e6569da2c071fa549271114663580e0c7dc514ee8df22a3",
+  "training_reference_manifest_sha256": "601e20a31826ea822da2810231cc5e18da74817adab4d17a10c4218c6c01e965",
+  "order_reference_manifest_sha256": "8f9fbc9bd4fd48a8ad274b5f827d0fddcedfef47c2bd898349a8e747dca5453d",
+  "augmentation_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+  "augmentation_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+  "augmentation_reference_manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+  "initial_state_sha256": {
+    "gdn_question": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295"
+  },
+  "component_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+  "component_reference_manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+  "component_reference_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+  "native_path_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-order-path-20261114-01",
+  "native_path_reference_manifest_sha256": "29e5aa592247512f025c718d4d4d6c20ff2f77b0fa5eae951beb1bbeb88b9444",
+  "native_path_plan_sha256": "b94c2bc7db129a544a40631a81c9570849c182f3a9719d8612330ab245f02b4a"
+}

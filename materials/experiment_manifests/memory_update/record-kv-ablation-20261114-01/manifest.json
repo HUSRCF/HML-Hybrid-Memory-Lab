@@ -1,0 +1,570 @@
+{
+  "status": "completed",
+  "started_utc": "2026-11-13T23:35:01.526885+00:00",
+  "training": false,
+  "smoke": false,
+  "data_path": "/media/990Pro/Code/SAS/datasets/memory_update/record-kv-ablation-v1",
+  "data_manifest_sha256": "ff2290c7e8af5724938bf8c492fcf364ebe54b9f431a6c8ba9e9a171f43d4177",
+  "cases_sha256": "94a77ba1ca2731da60b7d5f9d0b4e2e9142b24ea18017b4b8f837253c2ca3619",
+  "registry_sha256": "1923718547a23b1ebff345d7a68d05b1a098b43011ff637ec1b43d91460aa6b5",
+  "evaluated_case_ids": [
+    "counterbalance-test-copy-s70000-n8-depth1-original",
+    "counterbalance-test-copy-s70000-n8-depth1-entity_first",
+    "counterbalance-test-copy-s70000-n8-depth2-original",
+    "counterbalance-test-copy-s70000-n8-depth2-entity_first",
+    "counterbalance-test-copy-s70000-n8-depth3-original",
+    "counterbalance-test-copy-s70000-n8-depth3-entity_first",
+    "counterbalance-test-copy-s70001-n64-depth1-original",
+    "counterbalance-test-copy-s70001-n64-depth1-entity_first",
+    "counterbalance-test-copy-s70001-n64-depth2-original",
+    "counterbalance-test-copy-s70001-n64-depth2-entity_first",
+    "counterbalance-test-copy-s70001-n64-depth3-original",
+    "counterbalance-test-copy-s70001-n64-depth3-entity_first",
+    "counterbalance-test-copy-s70002-n8-depth1-original",
+    "counterbalance-test-copy-s70002-n8-depth1-entity_first",
+    "counterbalance-test-copy-s70002-n8-depth2-original",
+    "counterbalance-test-copy-s70002-n8-depth2-entity_first",
+    "counterbalance-test-copy-s70002-n8-depth3-original",
+    "counterbalance-test-copy-s70002-n8-depth3-entity_first",
+    "counterbalance-test-copy-s70003-n64-depth1-original",
+    "counterbalance-test-copy-s70003-n64-depth1-entity_first",
+    "counterbalance-test-copy-s70003-n64-depth2-original",
+    "counterbalance-test-copy-s70003-n64-depth2-entity_first",
+    "counterbalance-test-copy-s70003-n64-depth3-original",
+    "counterbalance-test-copy-s70003-n64-depth3-entity_first",
+    "counterbalance-test-copy-s70004-n8-depth1-original",
+    "counterbalance-test-copy-s70004-n8-depth1-entity_first",
+    "counterbalance-test-copy-s70004-n8-depth2-original",
+    "counterbalance-test-copy-s70004-n8-depth2-entity_first",
+    "counterbalance-test-copy-s70004-n8-depth3-original",
+    "counterbalance-test-copy-s70004-n8-depth3-entity_first",
+    "counterbalance-test-copy-s70005-n64-depth1-original",
+    "counterbalance-test-copy-s70005-n64-depth1-entity_first",
+    "counterbalance-test-copy-s70005-n64-depth2-original",
+    "counterbalance-test-copy-s70005-n64-depth2-entity_first",
+    "counterbalance-test-copy-s70005-n64-depth3-original",
+    "counterbalance-test-copy-s70005-n64-depth3-entity_first",
+    "counterbalance-test-copy-s70006-n8-depth1-original",
+    "counterbalance-test-copy-s70006-n8-depth1-entity_first",
+    "counterbalance-test-copy-s70006-n8-depth2-original",
+    "counterbalance-test-copy-s70006-n8-depth2-entity_first",
+    "counterbalance-test-copy-s70006-n8-depth3-original",
+    "counterbalance-test-copy-s70006-n8-depth3-entity_first",
+    "counterbalance-test-copy-s70007-n64-depth1-original",
+    "counterbalance-test-copy-s70007-n64-depth1-entity_first",
+    "counterbalance-test-copy-s70007-n64-depth2-original",
+    "counterbalance-test-copy-s70007-n64-depth2-entity_first",
+    "counterbalance-test-copy-s70007-n64-depth3-original",
+    "counterbalance-test-copy-s70007-n64-depth3-entity_first",
+    "counterbalance-test-copy-s70008-n8-depth1-original",
+    "counterbalance-test-copy-s70008-n8-depth1-entity_first",
+    "counterbalance-test-copy-s70008-n8-depth2-original",
+    "counterbalance-test-copy-s70008-n8-depth2-entity_first",
+    "counterbalance-test-copy-s70008-n8-depth3-original",
+    "counterbalance-test-copy-s70008-n8-depth3-entity_first",
+    "counterbalance-test-copy-s70009-n64-depth1-original",
+    "counterbalance-test-copy-s70009-n64-depth1-entity_first",
+    "counterbalance-test-copy-s70009-n64-depth2-original",
+    "counterbalance-test-copy-s70009-n64-depth2-entity_first",
+    "counterbalance-test-copy-s70009-n64-depth3-original",
+    "counterbalance-test-copy-s70009-n64-depth3-entity_first",
+    "counterbalance-test-copy-s70010-n8-depth1-original",
+    "counterbalance-test-copy-s70010-n8-depth1-entity_first",
+    "counterbalance-test-copy-s70010-n8-depth2-original",
+    "counterbalance-test-copy-s70010-n8-depth2-entity_first",
+    "counterbalance-test-copy-s70010-n8-depth3-original",
+    "counterbalance-test-copy-s70010-n8-depth3-entity_first",
+    "counterbalance-test-copy-s70011-n64-depth1-original",
+    "counterbalance-test-copy-s70011-n64-depth1-entity_first",
+    "counterbalance-test-copy-s70011-n64-depth2-original",
+    "counterbalance-test-copy-s70011-n64-depth2-entity_first",
+    "counterbalance-test-copy-s70011-n64-depth3-original",
+    "counterbalance-test-copy-s70011-n64-depth3-entity_first",
+    "counterbalance-test-copy-s70012-n8-depth1-original",
+    "counterbalance-test-copy-s70012-n8-depth1-entity_first",
+    "counterbalance-test-copy-s70012-n8-depth2-original",
+    "counterbalance-test-copy-s70012-n8-depth2-entity_first",
+    "counterbalance-test-copy-s70012-n8-depth3-original",
+    "counterbalance-test-copy-s70012-n8-depth3-entity_first",
+    "counterbalance-test-copy-s70013-n64-depth1-original",
+    "counterbalance-test-copy-s70013-n64-depth1-entity_first",
+    "counterbalance-test-copy-s70013-n64-depth2-original",
+    "counterbalance-test-copy-s70013-n64-depth2-entity_first",
+    "counterbalance-test-copy-s70013-n64-depth3-original",
+    "counterbalance-test-copy-s70013-n64-depth3-entity_first",
+    "counterbalance-test-copy-s70014-n8-depth1-original",
+    "counterbalance-test-copy-s70014-n8-depth1-entity_first",
+    "counterbalance-test-copy-s70014-n8-depth2-original",
+    "counterbalance-test-copy-s70014-n8-depth2-entity_first",
+    "counterbalance-test-copy-s70014-n8-depth3-original",
+    "counterbalance-test-copy-s70014-n8-depth3-entity_first",
+    "counterbalance-test-copy-s70015-n64-depth1-original",
+    "counterbalance-test-copy-s70015-n64-depth1-entity_first",
+    "counterbalance-test-copy-s70015-n64-depth2-original",
+    "counterbalance-test-copy-s70015-n64-depth2-entity_first",
+    "counterbalance-test-copy-s70015-n64-depth3-original",
+    "counterbalance-test-copy-s70015-n64-depth3-entity_first",
+    "counterbalance-test-copy-s70016-n8-depth1-original",
+    "counterbalance-test-copy-s70016-n8-depth1-entity_first",
+    "counterbalance-test-copy-s70016-n8-depth2-original",
+    "counterbalance-test-copy-s70016-n8-depth2-entity_first",
+    "counterbalance-test-copy-s70016-n8-depth3-original",
+    "counterbalance-test-copy-s70016-n8-depth3-entity_first",
+    "counterbalance-test-copy-s70017-n64-depth1-original",
+    "counterbalance-test-copy-s70017-n64-depth1-entity_first",
+    "counterbalance-test-copy-s70017-n64-depth2-original",
+    "counterbalance-test-copy-s70017-n64-depth2-entity_first",
+    "counterbalance-test-copy-s70017-n64-depth3-original",
+    "counterbalance-test-copy-s70017-n64-depth3-entity_first",
+    "counterbalance-test-copy-s70018-n8-depth1-original",
+    "counterbalance-test-copy-s70018-n8-depth1-entity_first",
+    "counterbalance-test-copy-s70018-n8-depth2-original",
+    "counterbalance-test-copy-s70018-n8-depth2-entity_first",
+    "counterbalance-test-copy-s70018-n8-depth3-original",
+    "counterbalance-test-copy-s70018-n8-depth3-entity_first",
+    "counterbalance-test-copy-s70019-n64-depth1-original",
+    "counterbalance-test-copy-s70019-n64-depth1-entity_first",
+    "counterbalance-test-copy-s70019-n64-depth2-original",
+    "counterbalance-test-copy-s70019-n64-depth2-entity_first",
+    "counterbalance-test-copy-s70019-n64-depth3-original",
+    "counterbalance-test-copy-s70019-n64-depth3-entity_first",
+    "counterbalance-test-copy-s70020-n8-depth1-original",
+    "counterbalance-test-copy-s70020-n8-depth1-entity_first",
+    "counterbalance-test-copy-s70020-n8-depth2-original",
+    "counterbalance-test-copy-s70020-n8-depth2-entity_first",
+    "counterbalance-test-copy-s70020-n8-depth3-original",
+    "counterbalance-test-copy-s70020-n8-depth3-entity_first",
+    "counterbalance-test-copy-s70021-n64-depth1-original",
+    "counterbalance-test-copy-s70021-n64-depth1-entity_first",
+    "counterbalance-test-copy-s70021-n64-depth2-original",
+    "counterbalance-test-copy-s70021-n64-depth2-entity_first",
+    "counterbalance-test-copy-s70021-n64-depth3-original",
+    "counterbalance-test-copy-s70021-n64-depth3-entity_first",
+    "counterbalance-test-copy-s70022-n8-depth1-original",
+    "counterbalance-test-copy-s70022-n8-depth1-entity_first",
+    "counterbalance-test-copy-s70022-n8-depth2-original",
+    "counterbalance-test-copy-s70022-n8-depth2-entity_first",
+    "counterbalance-test-copy-s70022-n8-depth3-original",
+    "counterbalance-test-copy-s70022-n8-depth3-entity_first",
+    "counterbalance-test-copy-s70023-n64-depth1-original",
+    "counterbalance-test-copy-s70023-n64-depth1-entity_first",
+    "counterbalance-test-copy-s70023-n64-depth2-original",
+    "counterbalance-test-copy-s70023-n64-depth2-entity_first",
+    "counterbalance-test-copy-s70023-n64-depth3-original",
+    "counterbalance-test-copy-s70023-n64-depth3-entity_first"
+  ],
+  "models": [
+    "native",
+    "question_only_seed1701",
+    "question_only_seed2718",
+    "question_only_seed31415"
+  ],
+  "completed_models": [
+    "native",
+    "question_only_seed1701",
+    "question_only_seed2718",
+    "question_only_seed31415"
+  ],
+  "checkpoint_sources": {
+    "question_only_seed1701": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-question-trained-20261114-01",
+      "mode": "local",
+      "initialization_seed": 1701,
+      "checkpoint_sha256": "613d5d757584845332b0b03d03f4b444aa73afe6c8597abc68fb8b614ff80b69",
+      "config": {
+        "protocol_version": 1,
+        "model": "it",
+        "group_index": 3,
+        "initialization_seed": 1701,
+        "steps": 64,
+        "gradient_accumulation": 2,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "max_gradient_norm": 1.0,
+        "max_sequence_tokens": 1536,
+        "validation_copy_cases": 4,
+        "validation_overwrite_cases": 2,
+        "test_copy_cases": 8,
+        "test_overwrite_cases": 4,
+        "modes": {
+          "local": 22
+        },
+        "notes": [
+          "Small feasibility trial, not a novelty or architecture claim.",
+          "Frozen IT backbone; existing conda base. No new environment or package installation.",
+          "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+          "No test-based hyperparameter selection; evaluate final checkpoint only.",
+          "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+          "Seed and entity namespaces are disjoint across train/validation/test.",
+          "Only three-digit answer and newline tokens receive supervised loss.",
+          "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets.",
+          "Mechanism control: train and evaluate with the same token-position policy, rather than disabling branches only after training.",
+          "Ordinary local low-rank adapter; identical seed, examples, steps, learning rate and parameter count to the all-token local checkpoint.",
+          "Ledger-only can alter both recurrent states and KV construction. Question-only preserves all pre-question computation. Neither is a GDN-only intervention."
+        ],
+        "adapt_gdn_keys": true,
+        "token_policy": "question"
+      },
+      "training_manifest_sha256": "7889827f8a032c1dff9d9651eff55ab812ac34a1f0ef85a2b2ee871de6a79865",
+      "training_data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+      "training_tokens_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a"
+    },
+    "question_only_seed2718": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-init2718-question-20261114-01",
+      "mode": "local",
+      "initialization_seed": 2718,
+      "checkpoint_sha256": "e1e0604011a4272293ff695da89f70b81a63b1f3cd7d8e458edff6b57cdb3509",
+      "config": {
+        "protocol_version": 1,
+        "model": "it",
+        "group_index": 3,
+        "initialization_seed": 2718,
+        "steps": 64,
+        "gradient_accumulation": 2,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "max_gradient_norm": 1.0,
+        "max_sequence_tokens": 1536,
+        "validation_copy_cases": 4,
+        "validation_overwrite_cases": 2,
+        "test_copy_cases": 8,
+        "test_overwrite_cases": 4,
+        "modes": {
+          "local": 22
+        },
+        "notes": [
+          "Small feasibility trial, not a novelty or architecture claim.",
+          "Frozen IT backbone; existing conda base. No new environment or package installation.",
+          "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+          "No test-based hyperparameter selection; evaluate final checkpoint only.",
+          "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+          "Seed and entity namespaces are disjoint across train/validation/test.",
+          "Only three-digit answer and newline tokens receive supervised loss.",
+          "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets.",
+          "Mechanism control: train and evaluate with the same token-position policy, rather than disabling branches only after training.",
+          "Ordinary local low-rank adapter; identical seed, examples, steps, learning rate and parameter count to the all-token local checkpoint.",
+          "Ledger-only can alter both recurrent states and KV construction. Question-only preserves all pre-question computation. Neither is a GDN-only intervention.",
+          "Prespecified initialization replication: same local architecture, 128 ordered examples and optimization settings; only initialization seed and token policy vary.",
+          "Evaluate every final checkpoint; do not select seeds or checkpoints using the fixed evaluation cohort."
+        ],
+        "adapt_gdn_keys": true,
+        "token_policy": "question"
+      },
+      "training_manifest_sha256": "780fe2da09d2cf4d8c178d6bd894240afcce6ea33cdcd280f28dfdbff652dc97",
+      "training_data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+      "training_tokens_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a"
+    },
+    "question_only_seed31415": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-init31415-question-20261114-01",
+      "mode": "local",
+      "initialization_seed": 31415,
+      "checkpoint_sha256": "e1e117c0b5b83a8bec7b77195730f262e7b3c843b79f6bb9efc2a95835db93d9",
+      "config": {
+        "protocol_version": 1,
+        "model": "it",
+        "group_index": 3,
+        "initialization_seed": 31415,
+        "steps": 64,
+        "gradient_accumulation": 2,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "max_gradient_norm": 1.0,
+        "max_sequence_tokens": 1536,
+        "validation_copy_cases": 4,
+        "validation_overwrite_cases": 2,
+        "test_copy_cases": 8,
+        "test_overwrite_cases": 4,
+        "modes": {
+          "local": 22
+        },
+        "notes": [
+          "Small feasibility trial, not a novelty or architecture claim.",
+          "Frozen IT backbone; existing conda base. No new environment or package installation.",
+          "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+          "No test-based hyperparameter selection; evaluate final checkpoint only.",
+          "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+          "Seed and entity namespaces are disjoint across train/validation/test.",
+          "Only three-digit answer and newline tokens receive supervised loss.",
+          "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets.",
+          "Mechanism control: train and evaluate with the same token-position policy, rather than disabling branches only after training.",
+          "Ordinary local low-rank adapter; identical seed, examples, steps, learning rate and parameter count to the all-token local checkpoint.",
+          "Ledger-only can alter both recurrent states and KV construction. Question-only preserves all pre-question computation. Neither is a GDN-only intervention.",
+          "Prespecified initialization replication: same local architecture, 128 ordered examples and optimization settings; only initialization seed and token policy vary.",
+          "Evaluate every final checkpoint; do not select seeds or checkpoints using the fixed evaluation cohort."
+        ],
+        "adapt_gdn_keys": true,
+        "token_policy": "question"
+      },
+      "training_manifest_sha256": "50b11556e71ca15128d016e86af9ff5fe520fab8b37334a54278ecf3e56d4c3b",
+      "training_data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+      "training_tokens_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a"
+    }
+  },
+  "safety_checks": {
+    "native": [
+      {
+        "case_id": "counterbalance-test-copy-s70000-n8-depth1-original",
+        "variant": "source_first",
+        "all_history_full_cache_and_logits_exact": true,
+        "all_history_scoring_and_greedy_exact": true,
+        "pre_question_kv_recurrent_conv_and_logits_exact": true,
+        "historical_kv_exact_in_full_prefill": true,
+        "historical_kv_fields_checked": 12,
+        "unrestricted_replay_max_nll_error": 0.0,
+        "all_history_hook_calls": {
+          "prefill": 2,
+          "cached": 5
+        }
+      },
+      {
+        "case_id": "counterbalance-test-copy-s70023-n64-depth3-entity_first",
+        "variant": "source_first",
+        "all_history_full_cache_and_logits_exact": true,
+        "all_history_scoring_and_greedy_exact": true,
+        "pre_question_kv_recurrent_conv_and_logits_exact": true,
+        "historical_kv_exact_in_full_prefill": true,
+        "historical_kv_fields_checked": 12,
+        "unrestricted_replay_max_nll_error": 0.0,
+        "all_history_hook_calls": {
+          "prefill": 2,
+          "cached": 5
+        }
+      }
+    ],
+    "question_only_seed1701": [
+      {
+        "case_id": "counterbalance-test-copy-s70000-n8-depth1-original",
+        "variant": "source_first",
+        "all_history_full_cache_and_logits_exact": true,
+        "all_history_scoring_and_greedy_exact": true,
+        "pre_question_kv_recurrent_conv_and_logits_exact": true,
+        "historical_kv_exact_in_full_prefill": true,
+        "historical_kv_fields_checked": 12,
+        "unrestricted_replay_max_nll_error": 0.0,
+        "all_history_hook_calls": {
+          "prefill": 2,
+          "cached": 4
+        }
+      },
+      {
+        "case_id": "counterbalance-test-copy-s70023-n64-depth3-entity_first",
+        "variant": "source_first",
+        "all_history_full_cache_and_logits_exact": true,
+        "all_history_scoring_and_greedy_exact": true,
+        "pre_question_kv_recurrent_conv_and_logits_exact": true,
+        "historical_kv_exact_in_full_prefill": true,
+        "historical_kv_fields_checked": 12,
+        "unrestricted_replay_max_nll_error": 0.0,
+        "all_history_hook_calls": {
+          "prefill": 2,
+          "cached": 4
+        }
+      }
+    ],
+    "question_only_seed2718": [
+      {
+        "case_id": "counterbalance-test-copy-s70000-n8-depth1-original",
+        "variant": "source_first",
+        "all_history_full_cache_and_logits_exact": true,
+        "all_history_scoring_and_greedy_exact": true,
+        "pre_question_kv_recurrent_conv_and_logits_exact": true,
+        "historical_kv_exact_in_full_prefill": true,
+        "historical_kv_fields_checked": 12,
+        "unrestricted_replay_max_nll_error": 0.0,
+        "all_history_hook_calls": {
+          "prefill": 2,
+          "cached": 4
+        }
+      },
+      {
+        "case_id": "counterbalance-test-copy-s70023-n64-depth3-entity_first",
+        "variant": "source_first",
+        "all_history_full_cache_and_logits_exact": true,
+        "all_history_scoring_and_greedy_exact": true,
+        "pre_question_kv_recurrent_conv_and_logits_exact": true,
+        "historical_kv_exact_in_full_prefill": true,
+        "historical_kv_fields_checked": 12,
+        "unrestricted_replay_max_nll_error": 0.0,
+        "all_history_hook_calls": {
+          "prefill": 2,
+          "cached": 4
+        }
+      }
+    ],
+    "question_only_seed31415": [
+      {
+        "case_id": "counterbalance-test-copy-s70000-n8-depth1-original",
+        "variant": "source_first",
+        "all_history_full_cache_and_logits_exact": true,
+        "all_history_scoring_and_greedy_exact": true,
+        "pre_question_kv_recurrent_conv_and_logits_exact": true,
+        "historical_kv_exact_in_full_prefill": true,
+        "historical_kv_fields_checked": 12,
+        "unrestricted_replay_max_nll_error": 0.0,
+        "all_history_hook_calls": {
+          "prefill": 2,
+          "cached": 4
+        }
+      },
+      {
+        "case_id": "counterbalance-test-copy-s70023-n64-depth3-entity_first",
+        "variant": "source_first",
+        "all_history_full_cache_and_logits_exact": true,
+        "all_history_scoring_and_greedy_exact": true,
+        "pre_question_kv_recurrent_conv_and_logits_exact": true,
+        "historical_kv_exact_in_full_prefill": true,
+        "historical_kv_fields_checked": 12,
+        "unrestricted_replay_max_nll_error": 0.0,
+        "all_history_hook_calls": {
+          "prefill": 2,
+          "cached": 4
+        }
+      }
+    ]
+  },
+  "native_prefix_checks": {
+    "native": [],
+    "question_only_seed1701": [
+      {
+        "case_id": "counterbalance-test-copy-s70000-n8-depth1-original",
+        "variant": "source_first",
+        "kv_recurrent_conv_and_logits_exact": true
+      },
+      {
+        "case_id": "counterbalance-test-copy-s70023-n64-depth3-entity_first",
+        "variant": "source_first",
+        "kv_recurrent_conv_and_logits_exact": true
+      }
+    ],
+    "question_only_seed2718": [
+      {
+        "case_id": "counterbalance-test-copy-s70000-n8-depth1-original",
+        "variant": "source_first",
+        "kv_recurrent_conv_and_logits_exact": true
+      },
+      {
+        "case_id": "counterbalance-test-copy-s70023-n64-depth3-entity_first",
+        "variant": "source_first",
+        "kv_recurrent_conv_and_logits_exact": true
+      }
+    ],
+    "question_only_seed31415": [
+      {
+        "case_id": "counterbalance-test-copy-s70000-n8-depth1-original",
+        "variant": "source_first",
+        "kv_recurrent_conv_and_logits_exact": true
+      },
+      {
+        "case_id": "counterbalance-test-copy-s70023-n64-depth3-entity_first",
+        "variant": "source_first",
+        "kv_recurrent_conv_and_logits_exact": true
+      }
+    ]
+  },
+  "oracle_replay": {
+    "native": [
+      {
+        "case_id": "counterbalance-test-copy-s70000-n8-depth1-original",
+        "variant": "source_first",
+        "max_nll_error": 0.0,
+        "greedy_exact_match": true
+      },
+      {
+        "case_id": "counterbalance-test-copy-s70023-n64-depth3-entity_first",
+        "variant": "source_first",
+        "max_nll_error": 0.0,
+        "greedy_exact_match": true
+      }
+    ],
+    "question_only_seed1701": [
+      {
+        "case_id": "counterbalance-test-copy-s70000-n8-depth1-original",
+        "variant": "source_first",
+        "max_nll_error": 0.0,
+        "greedy_exact_match": true
+      },
+      {
+        "case_id": "counterbalance-test-copy-s70023-n64-depth3-entity_first",
+        "variant": "source_first",
+        "max_nll_error": 0.0,
+        "greedy_exact_match": true
+      }
+    ],
+    "question_only_seed2718": [
+      {
+        "case_id": "counterbalance-test-copy-s70000-n8-depth1-original",
+        "variant": "source_first",
+        "max_nll_error": 0.0,
+        "greedy_exact_match": true
+      },
+      {
+        "case_id": "counterbalance-test-copy-s70023-n64-depth3-entity_first",
+        "variant": "source_first",
+        "max_nll_error": 0.0,
+        "greedy_exact_match": true
+      }
+    ],
+    "question_only_seed31415": [
+      {
+        "case_id": "counterbalance-test-copy-s70000-n8-depth1-original",
+        "variant": "source_first",
+        "max_nll_error": 0.0,
+        "greedy_exact_match": true
+      },
+      {
+        "case_id": "counterbalance-test-copy-s70023-n64-depth3-entity_first",
+        "variant": "source_first",
+        "max_nll_error": 0.0,
+        "greedy_exact_match": true
+      }
+    ]
+  },
+  "native_replay_after_detach": {
+    "question_only_seed1701": {
+      "max_nll_error": 0.0,
+      "greedy_exact_match": true,
+      "adapter_weights_unchanged": true
+    },
+    "question_only_seed2718": {
+      "max_nll_error": 0.0,
+      "greedy_exact_match": true,
+      "adapter_weights_unchanged": true
+    },
+    "question_only_seed31415": {
+      "max_nll_error": 0.0,
+      "greedy_exact_match": true,
+      "adapter_weights_unchanged": true
+    }
+  },
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/controllers.py": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9",
+    "sas_memory/counterbalance_data.py": "88e38ff2901e652335e23ff5decd4bb69d59481a58d27f7284b99fcdf47d176c",
+    "sas_memory/counterbalance_tasks.py": "914523e92d5d1e657646d0e6d179c86845af2605fc6f7d8ab34794181fd6bf1d",
+    "sas_memory/generalization_tasks.py": "697a6fdc1e9d448fdfd5b7fa6e22adca40477d35c6e70f7aaebf648ef8b608fd",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/kv_readout.py": "2927df0cfdaf4972287b83914092e2224eacfc3ccf9d0508e03a64e85e919b8b",
+    "sas_memory/metrics.py": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e",
+    "sas_memory/readout_controls.py": "c15b4e3d4f4de2ce09a3c559dae64be8d849f472d6b02b9f70dd165c2cf73afa",
+    "sas_memory/record_kv_ablation.py": "37c694da6bfb100fba6498df3a4b09ae89dde5181b55b1b17d80585e873f6093",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/stress_tasks.py": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "scripts/run_record_kv_ablation.py": "2346221ecf59f9b43f4e156913c8825a92660d9b387acb6d7da90fe150be400b",
+    "scripts/prepare_record_kv_ablation.py": "38cea0c556beaf49edf7e8ab46d20da06e8a81dccb857a06e5799fe2902f4309",
+    "scripts/run_oracle_kv_readout.py": "45f0cf4760af5fdfa42e473c80aa5dc6fbf04d0a71d23b7927b6310e06c8e886",
+    "scripts/run_controller_confirmation.py": "6d141354bb268f4e389cdffab823a5010241062cd161820f1078eba6bc28c5de",
+    "scripts/run_controller_trial.py": "69230ea519774a7d17bc890cfc5dae43069977d5add285a0bc9b75ff9f7d566f"
+  },
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "python": "/home/husrcf/anaconda3/bin/python",
+  "gpu": "AMD Radeon AI PRO R9700",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "completed_utc": "2026-11-13T23:42:12.964109+00:00"
+}

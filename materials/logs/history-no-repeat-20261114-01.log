@@ -1,0 +1,15 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<03:27,  1.54it/s]Loading weights:   7%|▋         | 22/320 [00:00<00:07, 38.34it/s]Loading weights:  13%|█▎        | 41/320 [00:00<00:04, 66.92it/s]Loading weights:  19%|█▉        | 61/320 [00:00<00:02, 94.70it/s]Loading weights:  25%|██▍       | 79/320 [00:01<00:02, 103.20it/s]Loading weights:  31%|███       | 98/320 [00:01<00:01, 123.19it/s]Loading weights:  37%|███▋      | 119/320 [00:01<00:01, 140.38it/s]Loading weights:  44%|████▍     | 140/320 [00:01<00:01, 152.60it/s]Loading weights:  49%|████▉     | 158/320 [00:01<00:01, 152.21it/s]Loading weights:  56%|█████▋    | 180/320 [00:01<00:00, 160.08it/s]Loading weights:  62%|██████▎   | 200/320 [00:01<00:00, 162.71it/s]Loading weights:  68%|██████▊   | 218/320 [00:01<00:00, 163.71it/s]Loading weights:  74%|███████▍  | 237/320 [00:02<00:00, 169.92it/s]Loading weights:  80%|███████▉  | 255/320 [00:02<00:00, 168.92it/s]Loading weights:  86%|████████▌ | 275/320 [00:02<00:00, 166.53it/s]Loading weights:  92%|█████████▏| 293/320 [00:02<00:00, 169.21it/s]Loading weights:  97%|█████████▋| 311/320 [00:02<00:00, 166.15it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 127.42it/s]
+{"event": "native_no_repeat_history", "completed": 32, "total": 384}
+{"event": "native_no_repeat_history", "completed": 64, "total": 384}
+{"event": "native_no_repeat_history", "completed": 96, "total": 384}
+{"event": "native_no_repeat_history", "completed": 128, "total": 384}
+{"event": "native_no_repeat_history", "completed": 160, "total": 384}
+{"event": "native_no_repeat_history", "completed": 192, "total": 384}
+{"event": "native_no_repeat_history", "completed": 224, "total": 384}
+{"event": "native_no_repeat_history", "completed": 256, "total": 384}
+{"event": "native_no_repeat_history", "completed": 288, "total": 384}
+{"event": "native_no_repeat_history", "completed": 320, "total": 384}
+{"event": "native_no_repeat_history", "completed": 352, "total": 384}
+{"event": "native_no_repeat_history", "completed": 384, "total": 384}
+{"event": "native_no_repeat_history_completed", "readouts": 384, "weights_identical": true}

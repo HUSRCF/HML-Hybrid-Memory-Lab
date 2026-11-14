@@ -1,0 +1,230 @@
+{
+  "status": "completed_and_audited_posthoc_control_replay",
+  "operational_replay_passed": true,
+  "posthoc": true,
+  "independent_scientific_confirmation": false,
+  "can_change_primary_gates": false,
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/fresh-control-replay-20261114-01",
+  "manifest_sha256": "eec1d834a35ba710c9b0b7edff0d79e23bc3677dc811b164138185307eb89637",
+  "protocol_sha256": "1a3ba5fa85c2547ab5e915f874fc27d9908ec8b05a844cbe6f4f13259b55b1c1",
+  "dataset_manifest_sha256": "9eff6d04307c32785000efb2b495ae6cf17ea3d24d28ff25f61a1778105c3a75",
+  "mask_registry_sha256": "c07223b733687060453d9ea5040c2003b512da3db70f09183cadd74a5d76d047",
+  "completed_fresh_audit_sha256": "d28f7568ed6d1d6ddf8314e694c12f11b87b3a7544adeec27f82ce706268d2e9",
+  "control_change_report_sha256": "2ca880c0717e62dac3b1a4cc1d58c79d617721de218a7384155d24a1417c3fac",
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "counts": {
+    "recorded_readouts": 24,
+    "trials": 12,
+    "unmasked_exact_repeats": 12,
+    "all_history_exact_controls": 12,
+    "actual_masked_attention_and_complete_prefix_proofs": 12,
+    "question_only_native_prefix_checks": 4,
+    "precontroller_native_anchors": 4,
+    "detached_native_replays": 8,
+    "measure_calls_including_controls": 60
+  },
+  "original_primary_gates_unchanged": {
+    "generic_shared_controller": {
+      "passed": false,
+      "comparators": {
+        "independent": {
+          "positive_overall": true,
+          "at_least_three_positive_streams": true,
+          "positive_at_every_depth": false
+        },
+        "local_question": {
+          "positive_overall": true,
+          "at_least_three_positive_streams": true,
+          "positive_at_every_depth": true
+        },
+        "gdn_question_only": {
+          "positive_overall": true,
+          "at_least_three_positive_streams": true,
+          "positive_at_every_depth": false
+        }
+      },
+      "scope": "Fixed fresh8stream natural full-history candidate screen. Generic shared latents do not implement explicit semantic constraints. Does not erase previous failed comparisons or establish an architecture contribution."
+    },
+    "frozen_prefix_sufficiency": {
+      "passed": false,
+      "model_checks": {
+        "local_question": {
+          "oracle_current_at_least90_of96": true,
+          "historical_after_no_lower_than_full": true,
+          "unrelated_after_no_lower_than_full": false,
+          "positive_net_current_repair": true,
+          "at_least_four_positive_base_streams": true
+        },
+        "gdn_question_only": {
+          "oracle_current_at_least90_of96": true,
+          "historical_after_no_lower_than_full": true,
+          "unrelated_after_no_lower_than_full": true,
+          "positive_net_current_repair": true,
+          "at_least_four_positive_base_streams": true
+        }
+      }
+    },
+    "whole_record_necessity": {
+      "passed": false,
+      "model_checks": {
+        "local_question": {
+          "other_current_after_no_lower_than_full": false,
+          "other_history_after_no_lower_than_full": true,
+          "other_unrelated_after_no_lower_than_full": true,
+          "other_before_joint_no_lower_than_full": true,
+          "positive_net_support_removal_loss": true,
+          "at_least_four_positive_loss_streams": true
+        },
+        "gdn_question_only": {
+          "other_current_after_no_lower_than_full": true,
+          "other_history_after_no_lower_than_full": true,
+          "other_unrelated_after_no_lower_than_full": true,
+          "other_before_joint_no_lower_than_full": true,
+          "positive_net_support_removal_loss": true,
+          "at_least_four_positive_loss_streams": true
+        }
+      }
+    }
+  },
+  "selected_changes": [
+    {
+      "model": "local_question",
+      "id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545",
+      "regime": "oracle",
+      "direction": "harm",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61007-n64-depth3-original",
+          "base_case_id": "test-copy-s61007-n64",
+          "seed": 61007,
+          "distractor_updates": 64,
+          "dependency_depth": 3,
+          "question_style": "original",
+          "variant": "treatment",
+          "role": "protected_current",
+          "physical_id": "485b681c10f7f40818232bf793a9b1ebfda69037ab8951fa1c7a86c51db4a545"
+        }
+      ],
+      "full": {
+        "answer": "784",
+        "answer_nll": 0.0005504336052884659,
+        "greedy_exact": true,
+        "generated": "784\n",
+        "query_tokens": 26
+      },
+      "intervened": {
+        "answer": "784",
+        "answer_nll": 0.3970208565394084,
+        "greedy_exact": false,
+        "generated": "1584\n",
+        "query_tokens": 26
+      },
+      "exact_repetitions": 3
+    },
+    {
+      "model": "local_question",
+      "id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf",
+      "regime": "remove_matched_other",
+      "direction": "harm",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61000-n8-depth1-original",
+          "base_case_id": "test-copy-s61000-n8",
+          "seed": 61000,
+          "distractor_updates": 8,
+          "dependency_depth": 1,
+          "question_style": "original",
+          "variant": "control",
+          "role": "target_current",
+          "physical_id": "4ce43fc11b1c02d6bbb0bdce041895155c8519b8ff80aa3d2f5019a3f3410edf"
+        }
+      ],
+      "full": {
+        "answer": "375",
+        "answer_nll": 0.3661286036173503,
+        "greedy_exact": true,
+        "generated": "375\n",
+        "query_tokens": 26
+      },
+      "intervened": {
+        "answer": "375",
+        "answer_nll": 0.37673600514729816,
+        "greedy_exact": false,
+        "generated": "410\n",
+        "query_tokens": 26
+      },
+      "exact_repetitions": 3
+    },
+    {
+      "model": "gdn_question_only",
+      "id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532",
+      "regime": "remove_matched_other",
+      "direction": "repair",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61007-n64-depth2-entity_first",
+          "base_case_id": "test-copy-s61007-n64",
+          "seed": 61007,
+          "distractor_updates": 64,
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "variant": "treatment",
+          "role": "target_current",
+          "physical_id": "7eede60ea5042f3852448be5a9d3182458fda139047ad1847545f4cd6cb83532"
+        }
+      ],
+      "full": {
+        "answer": "312",
+        "answer_nll": 0.32850344975789386,
+        "greedy_exact": false,
+        "generated": "703\n",
+        "query_tokens": 27
+      },
+      "intervened": {
+        "answer": "312",
+        "answer_nll": 0.3067050576210022,
+        "greedy_exact": true,
+        "generated": "312\n",
+        "query_tokens": 27
+      },
+      "exact_repetitions": 3
+    },
+    {
+      "model": "gdn_question_only",
+      "id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd",
+      "regime": "remove_matched_other",
+      "direction": "harm",
+      "bindings": [
+        {
+          "case_id": "test-copy-s61007-n64-depth3-original",
+          "base_case_id": "test-copy-s61007-n64",
+          "seed": 61007,
+          "distractor_updates": 64,
+          "dependency_depth": 3,
+          "question_style": "original",
+          "variant": "control",
+          "role": "target_current",
+          "physical_id": "e4cb0db441c6292129beac129deb2805adee371dfe53c315395954cae64d45cd"
+        }
+      ],
+      "full": {
+        "answer": "703",
+        "answer_nll": 0.5702381531397501,
+        "greedy_exact": true,
+        "generated": "703\n",
+        "query_tokens": 26
+      },
+      "intervened": {
+        "answer": "703",
+        "answer_nll": 0.5652628739674886,
+        "greedy_exact": false,
+        "generated": "343\n",
+        "query_tokens": 26
+      },
+      "exact_repetitions": 3
+    }
+  ],
+  "interpretation": "All3harms and1repair operationally replayed with original prefix memories. This reused-sample diagnostic neither repairs the failed original gates nor establishes recurrent storage loss, semantic dependency coordination or a new architecture.",
+  "analysis_source_sha256": "86fb56f58f6584c7897f3200c76097f1d7a244fc0d89baf0a80626951de0acd5"
+}

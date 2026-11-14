@@ -1,0 +1,255 @@
+{
+  "status": "completed",
+  "started_utc": "2026-11-13T21:55:34.124694+00:00",
+  "config": {
+    "status": "locked_for_frozen_evaluation",
+    "cases_file": "/media/990Pro/Code/SAS/datasets/memory_update/copy-generalization-v1/cases.json",
+    "expected_cases_sha256": "a995eea7d47b5b03423ccf17d7c26f65d4d873f7a7fc391821bcc03f563efba7",
+    "cluster_key": "base_case_id",
+    "strata": [
+      "dependency_depth",
+      "question_style"
+    ],
+    "checkpoints": [
+      "native",
+      "runs/memory_update/controller-keys-pilot-20261114-01/local",
+      "runs/memory_update/controller-question-trained-20261114-01/local"
+    ],
+    "oracle": "Backward slice for all current-value queries, with the same frozen checkpoints.",
+    "notes": [
+      "No training or adaptation on this cohort.",
+      "Only executable operation records and natural questions enter the model; condition/dependency labels are evaluation metadata.",
+      "Report every condition; compare current, initial, protected and joint readouts."
+    ],
+    "registered_utc": "2026-11-13T21:55:33.946818+00:00",
+    "task_protocol": "copy_generalization_v1",
+    "evaluation_kind": "heldout_depth_wording_generalization",
+    "modes": [
+      "local_all",
+      "local_question"
+    ],
+    "checkpoint_runs": {
+      "local_all": {
+        "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-keys-pilot-20261114-01",
+        "mode": "local"
+      },
+      "local_question": {
+        "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-question-trained-20261114-01",
+        "mode": "local"
+      }
+    },
+    "paired_comparisons": [
+      [
+        "local_question",
+        "native"
+      ],
+      [
+        "local_question",
+        "local_all"
+      ]
+    ],
+    "oracle_evaluation": {
+      "variants": [
+        "control",
+        "treatment"
+      ],
+      "roles": [
+        "target_current"
+      ]
+    },
+    "excluded_case_files": [
+      "/media/990Pro/Code/SAS/runs/memory_update/controller-keys-confirm-20261114-01/cases.json",
+      "/media/990Pro/Code/SAS/runs/memory_update/controller-timing-confirm-20261114-01/cases.json"
+    ]
+  },
+  "training_config": {
+    "protocol_version": 1,
+    "model": "it",
+    "group_index": 3,
+    "initialization_seed": 1701,
+    "steps": 64,
+    "gradient_accumulation": 2,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "max_gradient_norm": 1.0,
+    "max_sequence_tokens": 1536,
+    "validation_copy_cases": 4,
+    "validation_overwrite_cases": 2,
+    "test_copy_cases": 8,
+    "test_overwrite_cases": 4,
+    "modes": {
+      "shared": 64,
+      "independent": 54,
+      "attention_only": 150,
+      "gdn_only": 84,
+      "local": 22
+    },
+    "notes": [
+      "Small feasibility trial, not a novelty or architecture claim.",
+      "Frozen IT backbone; existing conda base. No new environment or package installation.",
+      "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+      "No test-based hyperparameter selection; evaluate final checkpoint only.",
+      "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+      "Seed and entity namespaces are disjoint across train/validation/test.",
+      "Only three-digit answer and newline tokens receive supervised loss.",
+      "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets."
+    ],
+    "adapt_gdn_keys": true
+  },
+  "checkpoint_sources": {
+    "local_all": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-keys-pilot-20261114-01",
+      "mode": "local",
+      "config": {
+        "protocol_version": 1,
+        "model": "it",
+        "group_index": 3,
+        "initialization_seed": 1701,
+        "steps": 64,
+        "gradient_accumulation": 2,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "max_gradient_norm": 1.0,
+        "max_sequence_tokens": 1536,
+        "validation_copy_cases": 4,
+        "validation_overwrite_cases": 2,
+        "test_copy_cases": 8,
+        "test_overwrite_cases": 4,
+        "modes": {
+          "shared": 64,
+          "independent": 54,
+          "attention_only": 150,
+          "gdn_only": 84,
+          "local": 22
+        },
+        "notes": [
+          "Small feasibility trial, not a novelty or architecture claim.",
+          "Frozen IT backbone; existing conda base. No new environment or package installation.",
+          "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+          "No test-based hyperparameter selection; evaluate final checkpoint only.",
+          "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+          "Seed and entity namespaces are disjoint across train/validation/test.",
+          "Only three-digit answer and newline tokens receive supervised loss.",
+          "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets."
+        ],
+        "adapt_gdn_keys": true
+      },
+      "training_manifest_sha256": "d2dd578504a5355c4a0e5827fd40e9aed38b87e4c9fd22edddc197535fb6c3a1"
+    },
+    "local_question": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-question-trained-20261114-01",
+      "mode": "local",
+      "config": {
+        "protocol_version": 1,
+        "model": "it",
+        "group_index": 3,
+        "initialization_seed": 1701,
+        "steps": 64,
+        "gradient_accumulation": 2,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "max_gradient_norm": 1.0,
+        "max_sequence_tokens": 1536,
+        "validation_copy_cases": 4,
+        "validation_overwrite_cases": 2,
+        "test_copy_cases": 8,
+        "test_overwrite_cases": 4,
+        "modes": {
+          "local": 22
+        },
+        "notes": [
+          "Small feasibility trial, not a novelty or architecture claim.",
+          "Frozen IT backbone; existing conda base. No new environment or package installation.",
+          "Same ordered microbatches, answer tokens and optimized steps for all modes.",
+          "No test-based hyperparameter selection; evaluate final checkpoint only.",
+          "No dependency labels, hidden future information or oracle summaries are fed to controllers.",
+          "Seed and entity namespaces are disjoint across train/validation/test.",
+          "Only three-digit answer and newline tokens receive supervised loss.",
+          "Full-direction variant: add only GDN key channels before native depthwise convolution; preserve query/value channels and native L2 normalization. All five modes use matched approximately 0.69M parameter budgets.",
+          "Mechanism control: train and evaluate with the same token-position policy, rather than disabling branches only after training.",
+          "Ordinary local low-rank adapter; identical seed, examples, steps, learning rate and parameter count to the all-token local checkpoint.",
+          "Ledger-only can alter both recurrent states and KV construction. Question-only preserves all pre-question computation. Neither is a GDN-only intervention."
+        ],
+        "adapt_gdn_keys": true,
+        "token_policy": "question"
+      },
+      "training_manifest_sha256": "7889827f8a032c1dff9d9651eff55ab812ac34a1f0ef85a2b2ee871de6a79865"
+    }
+  },
+  "cases_sha256": "a995eea7d47b5b03423ccf17d7c26f65d4d873f7a7fc391821bcc03f563efba7",
+  "completed_modes": [
+    "native",
+    "local_all",
+    "local_question"
+  ],
+  "checkpoint_sha256": {
+    "local_all": "3fa297b0fb279adb5f53e22483932e756ba08df71b3c29dc57831f896090c577",
+    "local_question": "613d5d757584845332b0b03d03f4b444aa73afe6c8597abc68fb8b614ff80b69"
+  },
+  "pre_question_cache_checks": {
+    "local_question": {
+      "case_id": "test-copy-s60000-n8-depth1-original",
+      "kv_recurrent_conv_and_logits_exact": true
+    }
+  },
+  "completed_oracle_modes": [
+    "native",
+    "local_all",
+    "local_question"
+  ],
+  "oracle_pre_question_cache_checks": {
+    "local_question": {
+      "case_id": "test-copy-s60000-n8-depth1-original",
+      "selected_event_count": 2,
+      "kv_recurrent_conv_and_logits_exact": true
+    }
+  },
+  "task_validation": {
+    "cases": 48,
+    "base_cases": 8,
+    "conditions": [
+      {
+        "dependency_depth": 1,
+        "question_style": "entity_first"
+      },
+      {
+        "dependency_depth": 1,
+        "question_style": "original"
+      },
+      {
+        "dependency_depth": 2,
+        "question_style": "entity_first"
+      },
+      {
+        "dependency_depth": 2,
+        "question_style": "original"
+      },
+      {
+        "dependency_depth": 3,
+        "question_style": "entity_first"
+      },
+      {
+        "dependency_depth": 3,
+        "question_style": "original"
+      }
+    ]
+  },
+  "source_sha256": {
+    "sas_memory/__init__.py": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3",
+    "sas_memory/controllers.py": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9",
+    "sas_memory/generalization_tasks.py": "e5a14672825b6255cf991f03994eec3e79bd0c88c23d49d5b3799d14c0e5c22c",
+    "sas_memory/interventions.py": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422",
+    "sas_memory/metrics.py": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2",
+    "sas_memory/oracle.py": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/stress_tasks.py": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "scripts/run_controller_trial.py": "69230ea519774a7d17bc890cfc5dae43069977d5add285a0bc9b75ff9f7d566f",
+    "scripts/run_controller_confirmation.py": "6d141354bb268f4e389cdffab823a5010241062cd161820f1078eba6bc28c5de"
+  },
+  "training": false,
+  "evaluation_kind": "heldout_depth_wording_generalization",
+  "interpretation": "Frozen checkpoints; no optimization or checkpoint selection on this cohort.",
+  "completed_utc": "2026-11-13T22:03:13.133599+00:00"
+}

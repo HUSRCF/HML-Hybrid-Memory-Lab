@@ -1,0 +1,14 @@
+{
+  "protocol_version": 2,
+  "seeds": [101, 103, 107, 109, 113, 127, 131, 137],
+  "distractor_updates": [64, 512],
+  "distractor_entities": [4, 128],
+  "families": ["overwrite"],
+  "notes": [
+    "Target values, initial facts and final updates are fixed across length/load conditions within each seed.",
+    "Control and treatment each append one equal-template assignment to different accounts.",
+    "Distractors never write the target or protected account, and never contain their answer values.",
+    "Entity load varies independently from update count; report observed unique entities as well as pool size.",
+    "Frozen-model diagnostic only; evidence from the whole hybrid is not proof of recurrent-state integrity."
+  ]
+}

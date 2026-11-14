@@ -1,0 +1,13 @@
+{
+  "protocol_version": 1,
+  "seeds": [11, 29],
+  "distractor_updates": [8, 64],
+  "families": ["overwrite", "independent_swap", "dependent_swap", "duplicate_set", "accumulate", "copy"],
+  "notes": [
+    "Pilot only; small samples cannot establish novelty or a causal mechanism.",
+    "Each question forks all recurrent, convolution, and KV states.",
+    "Greedy exact integer accuracy and answer NLL are distinct from candidate ranking.",
+    "Control and treatment share a prefix; token-length matching is reported, not assumed.",
+    "Initial-version queries do not ask about an ambiguous relative time."
+  ]
+}

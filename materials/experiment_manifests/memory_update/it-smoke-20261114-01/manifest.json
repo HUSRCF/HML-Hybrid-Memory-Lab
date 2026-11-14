@@ -1,0 +1,48 @@
+{
+  "started_utc": "2026-11-13T19:35:03.790050+00:00",
+  "model": "it",
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "backend": "auto",
+  "config": {
+    "protocol_version": 1,
+    "seeds": [
+      11,
+      29
+    ],
+    "distractor_updates": [
+      8,
+      64
+    ],
+    "families": [
+      "overwrite",
+      "independent_swap",
+      "dependent_swap",
+      "duplicate_set",
+      "accumulate",
+      "copy"
+    ],
+    "notes": [
+      "Pilot only; small samples cannot establish novelty or a causal mechanism.",
+      "Each question forks all recurrent, convolution, and KV states.",
+      "Greedy exact integer accuracy and answer NLL are distinct from candidate ranking.",
+      "Control and treatment share a prefix; token-length matching is reported, not assumed.",
+      "Initial-version queries do not ask about an ambiguous relative time."
+    ]
+  },
+  "cases_sha256": "c6c2b16987a0d5c88fd196c94b6eb16fc3be217ab6a330fb3a620852f43c2f1f",
+  "model_config_sha256": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "gpu": "AMD Radeon AI PRO R9700",
+  "python": "/home/husrcf/anaconda3/bin/python",
+  "training": false,
+  "generation": true,
+  "status": "completed",
+  "case_count": 1,
+  "elapsed_seconds": 22.597633011173457,
+  "peak_allocated_gib": 4.061683177947998,
+  "completed_utc": "2026-11-13T19:35:26.391980+00:00"
+}

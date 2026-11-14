@@ -1,0 +1,45 @@
+{
+  "status": "registered_before_inference",
+  "registered_utc": "2026-11-14T00:57:51.769655+00:00",
+  "training": false,
+  "model_inference": false,
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "python": "/home/husrcf/anaconda3/bin/python",
+  "counts": {
+    "train": {
+      "examples": 128,
+      "groups": 32,
+      "siblings_per_group": 4,
+      "question_text_lookup_correct_ceiling": 32
+    },
+    "validation": {
+      "examples": 64,
+      "groups": 16,
+      "siblings_per_group": 4,
+      "question_text_lookup_correct_ceiling": 16
+    }
+  },
+  "data_sha256": "d6fd626108ce99966336f952702cab0ff07f2c785b2c5de47fd773ed483d5388",
+  "registry_sha256": "2051fa90e62ec97150372aaee1cb7e6a0338ec3aa3dd225bb52e8e4a686f884f",
+  "tokenized_input_answer_sha256": "29b3e110ba6542f412aee8c804cc3bab11bdbaf0797a492119d847f9d443115e",
+  "supervised_training_answer_tokens": 512,
+  "source_sha256": {
+    "scripts/prepare_single_fact_control.py": "4977a04116274667e1811f6393675ce069752c84eb5d55296baad9022f7573a1",
+    "sas_memory/tasks.py": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17",
+    "sas_memory/training_data.py": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b",
+    "sas_memory/record_kv_ablation.py": "37c694da6bfb100fba6498df3a4b09ae89dde5181b55b1b17d80585e873f6093",
+    "sas_memory/runtime.py": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91",
+    "sas_memory/kv_readout.py": "2927df0cfdaf4972287b83914092e2224eacfc3ccf9d0508e03a64e85e919b8b",
+    "sas_memory/counterbalance_data.py": "88e38ff2901e652335e23ff5decd4bb69d59481a58d27f7284b99fcdf47d176c",
+    "scripts/analyze_blocked_reader_adaptation.py": "a23c1d33644f906b1a521fdb44a68d5e6dff86f5c11e094387eaa3fb085f94f5",
+    "scripts/run_controller_trial.py": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262"
+  },
+  "tokenizer_sha256": {
+    "chat_template.jinja": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+    "config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c"
+  },
+  "primary_metric": "All four different-value siblings answered correctly by unrestricted greedy decoding; also report individual-answer accuracy.",
+  "interpretation": "Immediate single-fact carrier/readout positive control, not a long-memory or semantic-update result. Within each family only three value-token IDs differ; question text, token positions, all other input IDs and allowed history columns match. A deterministic prefix-independent answer can get at most one of four siblings correct. Retained carriers include recurrent/convolution state built with normal hybrid prefix attention."
+}

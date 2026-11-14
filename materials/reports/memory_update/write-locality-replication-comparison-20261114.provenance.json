@@ -1,0 +1,16 @@
+{
+  "status": "exported_and_visually_verified",
+  "verified_utc": "2026-11-14T07:23:25.770460+00:00",
+  "figure_visually_verified": true,
+  "artifacts_sha256": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-replication-20261114.json": "580b1ec27758479eddfd1b5e55e2091de283f4de0f338fc2119bab5dd34771c9",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-replication-20261114.source.py": "314486a345281970503bc61ad3e102d192589e8844ab6385a2fac7f4181ad89d",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-replication-comparison-20261114.json": "523d6d8006ec7554a861f53929e56fe0b276aa83b1c4f18fefe415ebd45f1352",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-replication-comparison-20261114.source.py": "9368b8a80fc0949c134dfa394a4cee11dcf8a0bb7226f66d9cb0de1958291f31",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-replication-comparison-20261114.csv": "a76dc6a60a4f01739c99c1c0db48bf95f8e372180e07ab597a45d6f1fe0b6f83",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-replication-comparison-20261114.png": "f69abc7e4b97e3520446e0afcd6b898da3446d7001b4a9ada884315a3c4a0ae3",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-replication-comparison-20261114.pdf": "6337e553579eb5f7d1ae1739a31b3d4538aa98acace7ec9646fc805e16228a8e",
+    "configs/semantic_write_locality_replication_plan.json": "cc321076e4c16df135c506fabf5e9c1edbdf09408899444a6b93289676fecb1f"
+  },
+  "interpretation": "Two independent four-base-stream cohorts. Value siblings are related; no model training or recurrent-damage inference."
+}

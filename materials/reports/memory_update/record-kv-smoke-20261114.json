@@ -1,0 +1,20 @@
+{
+  "status": "audited_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/record-kv-smoke-20261114-01",
+  "manifest_sha256": "c6c0d0a80efb7cc4a22135232f7f81d5f99c8a92fb53bd76c2f719e7370a162e",
+  "cases_sha256": "94a77ba1ca2731da60b7d5f9d0b4e2e9142b24ea18017b4b8f837253c2ca3619",
+  "registry_sha256": "1923718547a23b1ebff345d7a68d05b1a098b43011ff637ec1b43d91460aa6b5",
+  "base_cases": 2,
+  "contexts_per_model": 4,
+  "new_records_audited": 16,
+  "checks": {
+    "registered_before_inference": true,
+    "boundary_only_masks_regenerated": true,
+    "all_ledger_record_columns_blocked": true,
+    "original_input_and_prefix_retained": true,
+    "short_and_long_raw_oracle_replays": true,
+    "cached_generation_always_masked": true,
+    "source_tokenizer_checkpoint_and_result_hashes": true
+  },
+  "interpretation": "Historical ledger-record KV is blocked only for question/answer rows in all six attention layers. Normal hybrid prefix computation, recurrent/convolution state, instruction KV and causal question/answer KV remain. This is not isolated GDN-matrix performance. Success can indicate usable information in remaining carriers; failure under a frozen perturbed readout does not establish absent information or memory damage. Dense eager masking is not an efficiency result. All queries here are post-COPY current-value queries; semantic-order and historical-version generalization remain separate requirements."
+}

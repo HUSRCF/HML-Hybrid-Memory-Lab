@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/husrcf/Code/SAS/scripts/export_fresh_layer_localization.py", line 98, in <module>
+    args = parser.parse_args(); export(args.audit, args.prefix)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/husrcf/Code/SAS/scripts/export_fresh_layer_localization.py", line 73, in export
+    raise ValueError(f'Figure text falls outside canvas: {item.get_text()}')
+ValueError: Figure text falls outside canvas: −10

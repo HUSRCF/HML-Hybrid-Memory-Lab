@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "status": "registered_before_new_mask_implementation_and_inference",
+  "registered_utc": "2026-11-14T11:22:06.475127+00:00",
+  "profile": "frozen_copy_memory_readout_sufficiency_with_equal_budget_nonslice_control",
+  "purpose": "Determine how many remaining COPY functional errors can be repaired by changing question-time historical KV access while preserving each fixed model original prefix computation, recurrent/convolution states, historical KV, prompt positions and all weights. Separate frozen-memory sufficiency from any extra advantage of oracle evidence addresses.",
+  "training": false,
+  "new_adapters": false,
+  "model_key": "it",
+  "model_class": "Qwen3_5ForCausalLM",
+  "local_files_only": true,
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "models": [
+    "native",
+    "shared",
+    "independent",
+    "local",
+    "local_question",
+    "attention_only",
+    "gdn_all_tokens",
+    "gdn_question_only"
+  ],
+  "source_transfer_plan": "/home/husrcf/Code/SAS/configs/copy_dependency_transfer_plan.json",
+  "source_transfer_plan_sha256": "84d864ce4ad6373059fc49a559a18b5b39d497bbcaa6544afef5bb6fb4888772",
+  "source_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/copy-dependency-transfer-v1",
+  "source_dataset_manifest_sha256": "0b98f840a84d90c4d2cea8412de08f9589957b229ee297b957ff8853cf6b7455",
+  "source_registry_sha256": "8fe7fa9310f7bcbc1d0643870cbc6494c21e7320dd60c8cbfd147c4d878f8c47",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/copy-dependency-transfer-20261114.json",
+  "source_audit_sha256": "5c36add35d1333ca61b378d212d59bc2cc694918e4143a35757fe51a9d3991de",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/copy-dependency-transfer-20261114-01",
+  "source_manifest_sha256": "e15b55b10950d4ce21b7a19a8b13c46c5af2c3d6e5edd221bcceab3c4fa65149",
+  "regimes": [
+    "oracle",
+    "nonslice"
+  ],
+  "baseline": "Reuse all2688sealed full-history physical readouts from the independently audited source, with actual unmasked and all-history-mask exact replays on prescribed samples. No baseline error filtering.",
+  "counts": {
+    "models": 8,
+    "existing_cases": 48,
+    "base_streams": 8,
+    "physical_queries_per_model_regime": 336,
+    "bindings_per_model_regime": 432,
+    "new_physical_readouts": 5376,
+    "new_reported_bindings": 6912,
+    "reference_full_readouts": 2688,
+    "total_reported_bindings_with_full": 10368
+  },
+  "oracle": "Compute executable backward evidence_slice for each own-world query. Keep prelude plus the whole original selected event-token spans at their original positions; suppress other historical columns only on question/answer rows at ALL6softmax layers. All original prefix-token computation and all GDN processing remain active.",
+  "nonslice": "Keep the same prelude and exactly the same number of record tokens as oracle, but choose only outside its event slice. Rank eligible original record-token positions by(min absolute token distance to any retained oracle-record token, token position), choose the first budget positions. This is a deterministic nearby equal-token control, possibly partial records. It is not assumed devoid of answer information because KV representations are contextualized.",
+  "data_checks": "Exact same336physical prompts and432bindings as source, all roles/orders/depths/wordings including before. Verify oracle events alone reproduce gold; mask lengths/prelude/counts/complement and deterministic controls; no new answer tokens, positions, entities or task data. Freeze actual per-query masks and sources before inference.",
+  "generation": {
+    "maximum_new_tokens": 12,
+    "candidate_restriction": false,
+    "gold_nll_tokens": 3,
+    "prefix_processing": "fresh full prefill for every physical query"
+  },
+  "safety": {
+    "smoke": "First and last original cases, every3variant/3role binding:18physical queries permodel/regime,288newreadouts. No performance threshold; independent complete smoke audit before5376fullreadouts.",
+    "sample_queries": "Existing6current-target safety IDs plus protected/initial queries for firstcase control and lastcase treatment:10distinct physical IDs permodel. Both regimes sampled, including cached generation.",
+    "prefix_proof": "Each sample: actual unmasked readout exactly replays source and all-history mask preserves full cache/bookkeeping/logits/readout. Each regime preserves complete ledger-prefix KV/recurrent/conv/bookkeeping and last-prefix logits, plus all12historical K/V tensor slices during full-question prefill. Actual six-layer softmax observation must show exactly zero suppressed probability/mass and nonzero kept-record access, with nonzero unmasked controls.",
+    "other_checks": "All newreadouts must exercise prefill and cached masks, with hook cleanup. Both question-only models preserve6distinct native prefixes each. After everyarm detach,10native exact replays. Pin source snapshots, checkpoint files, generation config, native full loaded-state hash and frozen unchanged adapter tensors."
+  },
+  "analysis": {
+    "unit": "8existing base_case_id streams; value, depth, wording, order and role observations are related. Reused development data, no significance or untouched-confirmation claim.",
+    "coverage": "All models,regimes,roles,orders,depths,wordings,before baselines; full/oracle/nonslice current-target counts and both-order pairs; joint six after-update and nineincludingbefore; paired gains AND losses perbase stream and depth. Do not substitute one favorable subset.",
+    "frozen_prefix_sufficiency_gate": "For EACH of local_question and gdn_question_only: oracle current-target-after correctness>=90/96; oracle historical-after and unrelated-after counts no lower than full; oracle versus full signed current-target gains positive overall AND in>=4distinct base streams. Both models required. Descriptive high-recovery gate, not proof of absent recurrent damage or a feasible router.",
+    "address_specific_gate": "Separately, for EACH question-only model oracle versus nonslice has positive signed current-target gains overall AND in>=4distinct streams. This gate is independent of frozen-prefix sufficiency: equal-budget control success can still support recoverability while weakening the need for exact program addresses.",
+    "if_recovery": "Report functional repair with unchanged prefix memories under an oracle readout intervention. It can compensate for damaged compressed memory via preserved KV and does not prove all recurrent facts intact or locate the original error in Attention-Q.",
+    "if_no_recovery": "Do not conclude information was destroyed: the restricted reader or frozen computation may be inadequate or out of distribution. No mask/budget/checkpoint/threshold tuning or automatic architecture training.",
+    "preserved_negatives": "Historical-preservation and repeated-write primaries, plus the generic shared-candidate transfer screen, remain failed regardless of this diagnostic."
+  },
+  "scope": "Oracle dense-eager diagnostic, not an efficient sparse kernel, learned selector, new architecture or evidence of novelty. All7adapters are existing final432step frozen checkpoints. Preserve original main question of semantic-dependency coordination; use recovery evidence to decide whether changing prefix writes is needed, without changing prior decisions."
+}

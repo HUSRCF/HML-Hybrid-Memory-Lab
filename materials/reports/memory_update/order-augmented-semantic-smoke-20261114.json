@@ -1,0 +1,28 @@
+{
+  "status": "audited_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-smoke-20261114-01",
+  "manifest_sha256": "ec5b3230bdffe35f021cd2db17773be8f113b9422fdf6054e450eb1e5716fda0",
+  "arms": {
+    "shared": {
+      "parameters": 694272,
+      "status": "safety_passed"
+    },
+    "independent": {
+      "parameters": 696384,
+      "status": "safety_passed"
+    },
+    "local": {
+      "parameters": 689216,
+      "status": "safety_passed"
+    },
+    "local_question": {
+      "parameters": 689216,
+      "status": "safety_passed"
+    }
+  },
+  "validation_records_audited": 0,
+  "teacher_train_records_audited": 0,
+  "initial_state_matches_reference": false,
+  "interpretation": "One paired initialization and the same original train/validation event streams. Only half the training initial-record orders change; per-example positions/lengths/labels and all hyperparameters stay matched. Both already-observed validation orders are development diagnostics, not fresh confirmation. Neither an augmentation gain nor a generic shared bottleneck establishes a semantic interface or isolated recurrent-write damage. Shared must beat independent controllers under the same ordinary augmentation before architectural escalation.",
+  "analysis_source_sha256": "1fa8975a87364c09403f15679dc0ffd6c1b493b3de6caa7753e508b88fa03b74"
+}

@@ -1,0 +1,143 @@
+{
+  "status": "audited_canonical_oracle_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/canonical-oracle-replication-smoke-reverse-20261114-01",
+  "manifest_sha256": "1b743729251aef452e108cc5ca29b522aaa7274883e79897ec7c391676480bbd",
+  "dataset_manifest_sha256": "8bf5509f07dd3a949bf914bd5fe63a4d117053d46f5c64be8de5995f0f583c37",
+  "mask_registry_sha256": "de14fa807c4590c833297cd110504f643fff9e873ec0bb9626b1812d8d828bfa",
+  "precision_addendum_sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc",
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "references": {
+    "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/copy-dependency-transfer-20261114.json",
+    "source_audit_sha256": "5c36add35d1333ca61b378d212d59bc2cc694918e4143a35757fe51a9d3991de",
+    "source_manifest_sha256": "e15b55b10950d4ce21b7a19a8b13c46c5af2c3d6e5edd221bcceab3c4fa65149",
+    "source_registry_sha256": "8fe7fa9310f7bcbc1d0643870cbc6494c21e7320dd60c8cbfd147c4d878f8c47",
+    "training": {
+      "shared": {
+        "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+        "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+        "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+        "checkpoint_sha256": "3ac57cfd86116dc712aacd14de526ccc3cb8f60c7348317fbacc16910914d8fc",
+        "checkpoint_state_sha256": "21037c2505371f50bf76cdf5411a3bcf28b3baf5fd83da932b0e4036e3c4f197",
+        "packages": {
+          "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+          "transformers": "5.14.1",
+          "fla-core": "0.6.0"
+        },
+        "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+        "reference_audit_reexecuted": false
+      },
+      "independent": {
+        "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+        "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+        "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+        "checkpoint_sha256": "e042e284b0bf7c32dc4f1340120f3e71d904b3ddc08ae5f5ebbc6c3b8d93823f",
+        "checkpoint_state_sha256": "9310721cd53ab3ae2070bd1274277cf3fd8976f9856818e5b7635e05a7473c41",
+        "packages": {
+          "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+          "transformers": "5.14.1",
+          "fla-core": "0.6.0"
+        },
+        "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+        "reference_audit_reexecuted": false
+      },
+      "local": {
+        "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+        "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+        "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+        "checkpoint_sha256": "776d5e1c35c5aa3ec8056fdaf4ad453b8a85d58d156d1448e2788ca2564c0e91",
+        "checkpoint_state_sha256": "6b4e1f1bb093786cefb17524646ead80e87f9b656107036460c52885ae8e0dfa",
+        "packages": {
+          "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+          "transformers": "5.14.1",
+          "fla-core": "0.6.0"
+        },
+        "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+        "reference_audit_reexecuted": false
+      },
+      "local_question": {
+        "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+        "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+        "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+        "checkpoint_sha256": "ee78264808d0a532188c61c78e68407e72551947941ebb977ab25864b600a848",
+        "checkpoint_state_sha256": "ade581c5ca7823f6d002ac766ed5fdce2ba5e625327b2a9bad38c4877f337dc3",
+        "packages": {
+          "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+          "transformers": "5.14.1",
+          "fla-core": "0.6.0"
+        },
+        "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+        "reference_audit_reexecuted": false
+      },
+      "attention_only": {
+        "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+        "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+        "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+        "checkpoint_sha256": "20d9827c1eec05f9ac425f96530df59bd899a3a3a2f4599e3cfcba494715dd61",
+        "checkpoint_state_sha256": "e644876521c780629d7358c585c4e48ec187b946fbc3307b77162f4bf6da69e0",
+        "packages": {
+          "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+          "transformers": "5.14.1",
+          "fla-core": "0.6.0"
+        },
+        "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+        "reference_audit_reexecuted": false
+      },
+      "gdn_all_tokens": {
+        "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+        "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+        "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+        "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+        "checkpoint_state_sha256": "cb5ddf299e0a0335c64a3815da0a26e18a7179df938731b8895c6e9b437de7e7",
+        "packages": {
+          "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+          "transformers": "5.14.1",
+          "fla-core": "0.6.0"
+        },
+        "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+        "reference_audit_reexecuted": false
+      },
+      "gdn_question_only": {
+        "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/gdn-question-timing-20261114.json",
+        "audit_sha256": "1ea60978eeac9414ab0211d4e3ad668c080267724b00706fba9bcb745623825e",
+        "manifest_sha256": "a4df590b2b104dd4a87c9ff7c38b82d2f45a6df67a5a02db3434b084108c67da",
+        "checkpoint_sha256": "5aeea3bc1679df153bb9e246426da580c37575d7292399edd9c21d98c5952662",
+        "checkpoint_state_sha256": "7f4cd348b4835d4760c92fa94cdd4564d2602149296b1449d67531cd7f9f7dee",
+        "packages": {
+          "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+          "transformers": "5.14.1",
+          "fla-core": "0.6.0"
+        },
+        "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+        "reference_audit_reexecuted": false
+      }
+    },
+    "prior_shared_candidate_passed": false,
+    "prior_repeat_and_history_primaries_passed": false,
+    "completed_canonical_necessity_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/canonical-copy-necessity-audit-20261114-01.json",
+    "completed_canonical_necessity_audit_sha256": "e6de2525297a1c2549b40a804e84e5b0c494ae964daf3625e92c24c88d9e0873",
+    "completed_canonical_necessity_manifest_sha256": "9b65a918880a68dd26a6e0be93af980c3b51d30710ad4b18b4c9decd9dc1bf5f",
+    "completed_canonical_necessity_passed": true
+  },
+  "model_order": [
+    "gdn_question_only",
+    "local_question"
+  ],
+  "new_physical_readouts_audited": 72,
+  "fresh_full_reference_readouts_audited": 36,
+  "new_masked_readouts_audited": 36,
+  "new_related_bindings_audited": 72,
+  "cross_profile_rows_in_primary": 0,
+  "native_anchors": 10,
+  "all_history_exact_controls": 20,
+  "actual_masked_attention_checks": 20,
+  "complete_prefix_and_historical_KV_proofs": 20,
+  "detached_native_exact_replays": 20,
+  "question_only_native_prefix_checks": 12,
+  "exact_completed_canonical_full_replays": 36,
+  "metrics": {
+    "primary_evaluated": false
+  },
+  "interpretation": "Same-corpus, same-checkpoint numerical-profile replication. Not a new architecture, feasible selector, independent-data validation, or proof that GDN has not lost information.",
+  "analysis_source_sha256": "91abed9e89d6df8888718c9dd3931d3c6026524e53477e9cc30ee8ebaa73dc7b"
+}

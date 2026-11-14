@@ -1,0 +1,29 @@
+{
+  "reference_run": "/media/990Pro/Code/SAS/runs/memory_update/controller-generalization-20261114-01",
+  "expected_cases_sha256": "a995eea7d47b5b03423ccf17d7c26f65d4d873f7a7fc391821bcc03f563efba7",
+  "modes": [
+    "local_question"
+  ],
+  "variants": [
+    "control",
+    "treatment"
+  ],
+  "cluster_key": "base_case_id",
+  "strata": [
+    "dependency_depth",
+    "question_style"
+  ],
+  "selection_kind": "source_other_only",
+  "registered_utc": "2026-11-13T23:09:05.254699+00:00",
+  "intervention": "Keep original full input and prefix. At question/answer positions, allow necessary evidence plus just one of the two previously bundled unnecessary SET records.",
+  "notes": [
+    "Exploratory decomposition after seed1701 showed no late-source accuracy penalty in the new equal-value/position-balanced cohort.",
+    "Use every existing 60000-series case and both COPY orders; no failure selection, optimization or checkpoint selection.",
+    "Target-initial and unnecessary-source records occupy different original positions and contain different values. This split identifies a component/interaction of the earlier bundled intervention, not an isolated causal semantic-version effect.",
+    "Freeze the same existing question-only seed1701 checkpoint. Reuse old oracle and both-extra scores with hash checks and explicit replay."
+  ],
+  "control_validation": "/media/990Pro/Code/SAS/datasets/memory_update/copy-generalization-v1/singleton-control-validation.json",
+  "control_validation_sha256": "d401a82e9bfcc4bd77c8d281800cbe7ce1eeff41aa7ab5cae2651eef8fbc0653",
+  "oracle_kv_reference": "/media/990Pro/Code/SAS/runs/memory_update/oracle-kv-readout-20261114-01",
+  "both_reference": "/media/990Pro/Code/SAS/runs/memory_update/oracle-kv-competing-20261114-01"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "mutation": "changed_mask_digest",
+      "rejected": true,
+      "expected_error": "Actual event selection/budget differs from registration"
+    },
+    {
+      "mutation": "failed_historical_kv_check",
+      "rejected": true,
+      "expected_error": "Mask identity verification failed"
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "status": "completed",
+  "cases": 48,
+  "base_cases": 8,
+  "models": {
+    "local_question": {
+      "regimes": {
+        "raw_full": {
+          "correct": 53,
+          "count": 96,
+          "accuracy": 0.5520833333333334,
+          "answer_nll": 0.5389716551256546
+        },
+        "oracle_kv": {
+          "correct": 92,
+          "count": 96,
+          "accuracy": 0.9583333333333334,
+          "answer_nll": 0.03793248886035548
+        },
+        "slice_rebuilt": {
+          "correct": 96,
+          "count": 96,
+          "accuracy": 1,
+          "answer_nll": 0.0010595904084564406
+        }
+      },
+      "kv_vs_raw_paired": {
+        "raw_correct": 53,
+        "rescued": 40,
+        "regressed": 1
+      },
+      "kv_minus_raw": {
+        "difference": 0.40625,
+        "ci95": [
+          0.2916666666666667,
+          0.53125
+        ],
+        "cases": 8,
+        "bootstrap_samples": 5000,
+        "unit": "base_case_id, averaging all six depth/wording conditions and both orders",
+        "multiple_comparison_adjustment": false
+      },
+      "by_variant": {
+        "control": {
+          "raw_full": {
+            "correct": 24,
+            "count": 48,
+            "accuracy": 0.5,
+            "answer_nll": 0.4804035360971789
+          },
+          "oracle_kv": {
+            "correct": 48,
+            "count": 48,
+            "accuracy": 1,
+            "answer_nll": 0.004908576376086178
+          },
+          "slice_rebuilt": {
+            "correct": 48,
+            "count": 48,
+            "accuracy": 1,
+            "answer_nll": 0.0010388040995571322
+          }
+        },
+        "treatment": {
+          "raw_full": {
+            "correct": 29,
+            "count": 48,
+            "accuracy": 0.6041666666666666,
+            "answer_nll": 0.5975397741541302
+          },
+          "oracle_kv": {
+            "correct": 44,
+            "count": 48,
+            "accuracy": 0.9166666666666666,
+            "answer_nll": 0.07095640134462479
+          },
+          "slice_rebuilt": {
+            "correct": 48,
+            "count": 48,
+            "accuracy": 1,
+            "answer_nll": 0.001080376717355749
+          }
+        }
+      },
+      "by_condition": [
+        {
+          "dependency_depth": 1,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 14,
+              "count": 16,
+              "accuracy": 0.875,
+              "answer_nll": 0.09162039427549948
+            },
+            "oracle_kv": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.004731265694014534
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.00015440307834069245
+            }
+          }
+        },
+        {
+          "dependency_depth": 1,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.003222034210921265
+            },
+            "oracle_kv": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.00046866781788897544
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.00016389027344606197
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 7,
+              "count": 16,
+              "accuracy": 0.4375,
+              "answer_nll": 0.6439096503114948
+            },
+            "oracle_kv": {
+              "correct": 14,
+              "count": 16,
+              "accuracy": 0.875,
+              "answer_nll": 0.0644990336926033
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.002126811547592903
+            }
+          }
+        },
+        {
+          "dependency_depth": 2,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 8,
+              "count": 16,
+              "accuracy": 0.5,
+              "answer_nll": 0.530014183789414
+            },
+            "oracle_kv": {
+              "correct": 15,
+              "count": 16,
+              "accuracy": 0.9375,
+              "answer_nll": 0.07226808345876634
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0005569396156109482
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "entity_first",
+          "regimes": {
+            "raw_full": {
+              "correct": 2,
+              "count": 16,
+              "accuracy": 0.125,
+              "answer_nll": 1.0851290225982666
+            },
+            "oracle_kv": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.028774158815698076
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0025685530999908224
+            }
+          }
+        },
+        {
+          "dependency_depth": 3,
+          "question_style": "original",
+          "regimes": {
+            "raw_full": {
+              "correct": 6,
+              "count": 16,
+              "accuracy": 0.375,
+              "answer_nll": 0.8799346455683311
+            },
+            "oracle_kv": {
+              "correct": 15,
+              "count": 16,
+              "accuracy": 0.9375,
+              "answer_nll": 0.05685372368316166
+            },
+            "slice_rebuilt": {
+              "correct": 16,
+              "count": 16,
+              "accuracy": 1,
+              "answer_nll": 0.0007869448357572159
+            }
+          }
+        }
+      ]
+    }
+  },
+  "selection_kind": "source_other_only",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/oracle-kv-source-other-20261114-01",
+  "manifest_sha256": "ada273338815b10c2627be50a77ab793c78cce896884d496f05fd943cdd0612d",
+  "interpretation": "Exploratory oracle intervention at all full-attention layers during questions/answers, with full prefix computation retained. It is not a learned/efficient selector or evidence that recurrence alone lost the answer. One initialization and eight base cases; clustered intervals are conditional and unadjusted."
+}

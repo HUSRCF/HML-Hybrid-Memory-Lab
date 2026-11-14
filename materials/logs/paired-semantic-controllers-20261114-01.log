@@ -1,0 +1,202 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<03:17,  1.62it/s]Loading weights:   8%|▊         | 26/320 [00:00<00:06, 46.98it/s]Loading weights:  13%|█▎        | 43/320 [00:00<00:03, 72.42it/s]Loading weights:  20%|██        | 64/320 [00:00<00:02, 102.80it/s]Loading weights:  25%|██▌       | 81/320 [00:01<00:02, 117.68it/s]Loading weights:  31%|███       | 99/320 [00:01<00:01, 133.20it/s]Loading weights:  37%|███▋      | 119/320 [00:01<00:01, 149.49it/s]Loading weights:  46%|████▌     | 146/320 [00:01<00:00, 176.25it/s]Loading weights:  52%|█████▏    | 166/320 [00:01<00:00, 177.94it/s]Loading weights:  58%|█████▊    | 186/320 [00:01<00:00, 174.92it/s]Loading weights:  64%|██████▍   | 205/320 [00:01<00:00, 177.46it/s]Loading weights:  70%|███████   | 225/320 [00:01<00:00, 183.36it/s]Loading weights:  78%|███████▊  | 250/320 [00:01<00:00, 202.26it/s]Loading weights:  85%|████████▍ | 271/320 [00:01<00:00, 202.14it/s]Loading weights:  91%|█████████▏| 292/320 [00:02<00:00, 191.14it/s]Loading weights:  98%|█████████▊| 312/320 [00:02<00:00, 179.44it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 140.99it/s]
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+a_grid_desc_m_ak_container_{448, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{448, 64}
+{"event": "training", "arm": "shared", "step": 48, "loss": 0.0015962941688485444}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+a_grid_desc_m_ak_container_{832, 32}
+b_grid_desc_n_bk_container_{64, 32}
+e_grid_desc_mblock_mperblock_nblock_nperblock_container_{832, 64}
+{"event": "training", "arm": "shared", "step": 96, "loss": 0.011292022769339383}
+{"event": "training", "arm": "shared", "step": 144, "loss": 0.0009812521893763915}
+{"event": "training", "arm": "shared", "step": 192, "loss": 0.0004451092390809208}
+{"event": "training", "arm": "shared", "step": 240, "loss": 0.00037314715154934675}
+{"event": "training", "arm": "shared", "step": 288, "loss": 0.00015374952636193484}
+{"event": "training", "arm": "shared", "step": 336, "loss": 0.00139667623443529}
+{"event": "training", "arm": "shared", "step": 384, "loss": 0.0002871539181796834}
+{"event": "training", "arm": "shared", "step": 432, "loss": 0.1930572246783413}
+{"event": "validation", "arm": "shared", "examples": 108}
+{"event": "validation", "arm": "shared", "examples": 216}
+{"event": "validation", "arm": "shared", "examples": 324}
+{"event": "validation", "arm": "shared", "examples": 432}
+{"event": "final_evaluated", "arm": "shared", "correct": 429, "examples": 432}
+{"event": "training", "arm": "independent", "step": 48, "loss": 0.001410903234500438}
+{"event": "training", "arm": "independent", "step": 96, "loss": 0.008880470297299325}
+{"event": "training", "arm": "independent", "step": 144, "loss": 0.0008987181354314089}
+{"event": "training", "arm": "independent", "step": 192, "loss": 0.0003118711756542325}
+{"event": "training", "arm": "independent", "step": 240, "loss": 0.00034292660711798817}
+{"event": "training", "arm": "independent", "step": 288, "loss": 0.00010623782509355806}
+{"event": "training", "arm": "independent", "step": 336, "loss": 0.0008206407073885202}
+{"event": "training", "arm": "independent", "step": 384, "loss": 0.0005405164411058649}
+{"event": "training", "arm": "independent", "step": 432, "loss": 0.18999661222915165}
+{"event": "validation", "arm": "independent", "examples": 108}
+{"event": "validation", "arm": "independent", "examples": 216}
+{"event": "validation", "arm": "independent", "examples": 324}
+{"event": "validation", "arm": "independent", "examples": 432}
+{"event": "final_evaluated", "arm": "independent", "correct": 429, "examples": 432}
+{"event": "training", "arm": "local", "step": 48, "loss": 0.00044441923091653734}
+{"event": "training", "arm": "local", "step": 96, "loss": 0.0013532808661693707}
+{"event": "training", "arm": "local", "step": 144, "loss": 0.00021573826961684972}
+{"event": "training", "arm": "local", "step": 192, "loss": 0.00022678558889310807}
+{"event": "training", "arm": "local", "step": 240, "loss": 0.0002714067086344585}
+{"event": "training", "arm": "local", "step": 288, "loss": 7.001700942055322e-05}
+{"event": "training", "arm": "local", "step": 336, "loss": 0.0006026012997608632}
+{"event": "training", "arm": "local", "step": 384, "loss": 0.00042316816688980907}
+{"event": "training", "arm": "local", "step": 432, "loss": 0.7773363131018414}
+{"event": "validation", "arm": "local", "examples": 108}
+{"event": "validation", "arm": "local", "examples": 216}
+{"event": "validation", "arm": "local", "examples": 324}
+{"event": "validation", "arm": "local", "examples": 432}
+{"event": "final_evaluated", "arm": "local", "correct": 391, "examples": 432}
+{"event": "training", "arm": "local_question", "step": 48, "loss": 0.0007900918717496097}
+{"event": "training", "arm": "local_question", "step": 96, "loss": 0.00030947912455303594}
+{"event": "training", "arm": "local_question", "step": 144, "loss": 6.688745634164661e-05}
+{"event": "training", "arm": "local_question", "step": 192, "loss": 0.0003586641978472471}
+{"event": "training", "arm": "local_question", "step": 240, "loss": 5.119745037518442e-05}
+{"event": "training", "arm": "local_question", "step": 288, "loss": 3.2244977774098516e-05}
+{"event": "training", "arm": "local_question", "step": 336, "loss": 0.0004233815889165271}
+{"event": "training", "arm": "local_question", "step": 384, "loss": 0.00037859464646317065}
+{"event": "training", "arm": "local_question", "step": 432, "loss": 0.5305495995398815}
+{"event": "validation", "arm": "local_question", "examples": 108}
+{"event": "validation", "arm": "local_question", "examples": 216}
+{"event": "validation", "arm": "local_question", "examples": 324}
+{"event": "validation", "arm": "local_question", "examples": 432}
+{"event": "final_evaluated", "arm": "local_question", "correct": 427, "examples": 432}

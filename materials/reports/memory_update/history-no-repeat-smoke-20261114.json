@@ -1,0 +1,38 @@
+{
+  "status": "audited_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/history-no-repeat-smoke-20261114-01",
+  "manifest_sha256": "0a809134ecb2914903636df723c2bddeeaa0ed6d6995efea12019e2c54dd3388",
+  "dataset_manifest_sha256": "d73205d16b25e4d65bac701a26f29cd45844aa1297c65bcbc30d8538b11d3226",
+  "data_sha256": "012bb371ae9c52d001ab46ede2416a5947a6f60170cf9dfd6d855338288bc44b",
+  "registry_sha256": "b7b14510934d2ca8e976d562567e4f33de9bc799d982914ea6e577128b2e3207",
+  "protocol_sha256": "849d7df7adca1f6ad78bae230f2faaf94eaff273f01d71898c9f1fea65af23c0",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "records_audited": 24,
+  "pairs_audited": 4,
+  "actual_attention_checks": 8,
+  "native_exact_replays": 8,
+  "metrics": {
+    "examples": 24,
+    "correct": 24,
+    "primary_signal_evaluated": false
+  },
+  "reference_gate": {
+    "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/write-locality-control-panel-20261114.json",
+    "audit_sha256": "5e7c14141a335565fbb0187826ed9f60966770394ad674d745b33ba2ab4902e0",
+    "manifest_sha256": "30c7b97bf163479aa015c563e199d2afbe6e27b702615fe9daffb20557c7f4d1",
+    "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+    "packages": {
+      "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+      "transformers": "5.14.1",
+      "fla-core": "0.6.0"
+    },
+    "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2"
+  },
+  "interpretation": "Test whether natural historical-A update regressions persist after removing the original no-op control shortcut that repeated the initial answer near the question. This is a native diagnostic before any new semantic update architecture, not a claim that previous B regressions were invalid.",
+  "analysis_source_sha256": "3aac7003e8f7aeb7ab5ef0f8bbe46d662987259bdab6045c11ff30d0d5664992"
+}

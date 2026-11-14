@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "registered_before_event_diagnostic_inference",
+  "registered_utc": "2026-11-14T06:47:19.968628+00:00",
+  "base_protocol": "configs/semantic_write_locality_event_paths_plan.json",
+  "base_protocol_sha256": "e180ebbb62f8a81775a838e29eb43225d991ba10866eb46722aa8fe8a20e7d40",
+  "A_current_addendum": "configs/semantic_write_locality_event_paths_addendum.json",
+  "A_current_addendum_sha256": "a17cf6b406fc6ffa5b623bc1d9bbf7ecb9e76c03aba55541864a29e0f5003b87",
+  "purpose": "The C-axis intervention must also retain the legitimate C update. Preserving A-initial while silently reverting C is not a successful semantic commit.",
+  "additional_companion": "In the C-axis stratum only, add a separately forked C-current query for every cache combination and every value/base stream in both datasets. Keep all previously registered A-current companions.",
+  "query_template": "What is the current balance of account {other_entity}?",
+  "truth": "Compute both natural source worlds with the frozen executable SET interpreter. Store left-world and right-world exact correctness and gold3-digit NLL separately; the C truth differs across the two worlds. Generate once without candidate constraints.",
+  "registration": "Before event-path inference, freeze these additional prompt/answer token IDs and ledger boundaries in its registry; do not add query or answer tokens to any source cache.",
+  "calibration": "Run a new native full-prefill C-current baseline for each natural source endpoint in the C-axis stratum, since the original discovery/replica grid does not contain C queries. Compare cached natural C-current with those baselines instead of assuming equality.",
+  "joint_report": "For C-axis interventions report preservation plus right-world A-current and right-world C-current jointly, and expose failures of the changed entity update. Left-endpoint right-world scores remain explicitly counterfactual.",
+  "additional_counts": {
+    "C_current_companion_readouts": 128,
+    "new_full_prefill_C_current_baselines": 64
+  },
+  "combined_counts": {
+    "primary_preservation_readouts": 384,
+    "A_current_companion_readouts": 384,
+    "C_current_companion_readouts": 128,
+    "oracle_history_readouts": 192,
+    "new_full_prefill_C_current_baselines": 64,
+    "cached_natural_endpoint_calibrations_including_companions": 448,
+    "prescribed_self_and_all_path_replays": 48
+  },
+  "implementation_status": "Protocol guard only. No replica or event-path model inference has occurred."
+}

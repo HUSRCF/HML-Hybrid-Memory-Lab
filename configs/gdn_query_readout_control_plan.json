@@ -1,0 +1,71 @@
+{
+  "status": "conditional_not_started",
+  "registered_utc": "2026-11-14T00:45:32.646001+00:00",
+  "trigger": "First run frozen native full/records-blocked same-question single-fact controls. Train matched query-capacity controls if needed to establish carrier readout, then return to value-paired multi-fact semantic updates. Single-fact success is not the research objective.",
+  "question": "Is the negative result constrained by missing direct GDN query adaptation rather than only too few optimization steps?",
+  "research_scope": "A matched-capacity diagnostic for the whole hybrid semantic write/read project, not a replacement architecture contribution.",
+  "backbone": "it",
+  "group_index": 3,
+  "layers": [
+    12,
+    13,
+    14
+  ],
+  "token_policy": "question",
+  "reader_policy": "records_blocked",
+  "targets": [
+    "GDN in_proj_qkv query channels before short convolution only"
+  ],
+  "rank": 56,
+  "hidden_size_from_local_config": 2048,
+  "query_channels_from_local_config": 2048,
+  "expected_trainable_parameters": 688128,
+  "baseline_trainable_parameters": 689216,
+  "relative_parameter_difference": -0.0015786052558269105,
+  "initialization_seed": 1701,
+  "zero_output_initialization": true,
+  "unique_training_examples": 128,
+  "gradient_accumulation": 2,
+  "checkpoint_steps": [
+    64,
+    256,
+    1024
+  ],
+  "learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "max_gradient_norm": 1.0,
+  "requirements": [
+    "Implement a separate opt-in controller; preserve the historical runtime and GroupController source so archived results remain replayable.",
+    "Verify actual projection shapes and parameter counts. Keep GDN K/V slices and all native projection outputs exact except the selected query residual; do not alter native attention output gates.",
+    "Preserve all pre-question KV, recurrent and convolution computation exactly at initialization and after nonzero updates, including sampled trained short/long prefixes.",
+    "Match the registered paired 128 examples, cyclic order, optimizer settings and fixed 64/256/1024 update budgets; use training and original validation only and no benchmark-based checkpoint selection.",
+    "Check finite nonzero query-adapter gradients and frozen-backbone gradients; observe actual zero record probabilities in teacher forcing and cached answers.",
+    "Save adapter/optimizer/RNG snapshots and hashes; compare every fixed checkpoint to the ordinary 689216-parameter question-only baseline, including initial and protected readouts.",
+    "No new Conda environment, package upgrades, model download or backbone checkpoint copies.",
+    "Paired siblings must differ only at the three registered fact-value token positions. A deterministic prefix-independent output can answer at most one of four; report family-level all-four success as well as per-answer accuracy."
+  ],
+  "interpretation": {
+    "success": "All-four sibling success with identical question tokens/positions supplies constructive evidence of prefix-conditioned information use through the retained hybrid carriers, beyond memorizing question identity. This is an immediate positive control, not long-memory or semantic-update generalization.",
+    "failure": "Still does not prove absent information; single-fact difficulty, query/control capacity, optimization and task distribution remain alternatives.",
+    "locality": "Changing a GDN query does not directly change that layer's contemporaneous K/V/gates, but changed outputs can alter downstream question-time states. This is not a pure read-only matrix probe."
+  },
+  "revised_utc": "2026-11-14T01:02:37.691131+00:00",
+  "legacy_budget_calibration": {
+    "data_source": "/media/990Pro/Code/SAS/runs/memory_update/controller-question-trained-20261114-01",
+    "data_sha256": "d44223c8ddfe04550bee52db1008719a2b4b046ccb5a55562e8958863d69c05c",
+    "tokenized_input_answer_sha256": "5e143cfa475fa4614959b9dba5acb875bd165ccf41cd4c235219cf1f24392d5a",
+    "baseline_run": "/media/990Pro/Code/SAS/runs/memory_update/blocked-reader-budget-calibration-20261114-01"
+  },
+  "data_source": "/media/990Pro/Code/SAS/datasets/memory_update/single-fact-counterfactual-v1",
+  "data_sha256": "d6fd626108ce99966336f952702cab0ff07f2c785b2c5de47fd773ed483d5388",
+  "tokenized_input_answer_sha256": "29b3e110ba6542f412aee8c804cc3bab11bdbaf0797a492119d847f9d443115e",
+  "dataset_registry_sha256": "2051fa90e62ec97150372aaee1cb7e6a0338ec3aa3dd225bb52e8e4a686f884f",
+  "primary_metric": "All four different-value siblings answered correctly by unrestricted greedy decoding; also report individual-answer accuracy.",
+  "matched_baseline": "Fresh zero-output ordinary local GroupController, rank 22, 689216 parameters, trained on the exact same paired positive-control inputs/order/budgets; do not warm-start the legacy adapters.",
+  "optimized_input_token_budgets": {
+    "64": 16768,
+    "256": 67072,
+    "1024": 268288
+  },
+  "evaluation_scope": "Training and validation positive-control data only; all four different-value siblings must be evaluated. No new original-test or 70000-series inference."
+}
