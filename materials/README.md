@@ -14,7 +14,7 @@ Native在完整历史为1/48，保留原始COPY的支持文本为48/48，完整�
 这些是特权能力控制：支持文本改变了前缀计算、Token与位置，不能唯一定位GDN损伤或关系组合。
 所有20个配置×条件及相关退化都保留，支持条件144种实际输入与原336任务ID分别报告；旧失败门槛不变。
 
-## Latest completed phase
+## Previous completed evidence-access phase
 
 [冻结历史状态的完整证据访问诊断](updates/trained-timing-evidence-access-20261115/README.md)
 已完成5040次正式读出、独立审计和215项测试。Oracle支持事件掩码使原Shared/all

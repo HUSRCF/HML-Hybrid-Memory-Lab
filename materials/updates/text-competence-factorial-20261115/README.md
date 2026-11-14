@@ -137,7 +137,7 @@ Native在保留原始COPY逻辑的support_text条件下达到48/48，三个深�
 
 ![全部二十个配置与条件](text-competence-factorial-figure-20261115-01.png)
 
-完整归档与远端发布回执将在完成后另行加入。
+完整归档与远端发布核验见文末。
 
 完整测试223项通过；额外的独立解释器核验1344份文本、16176对中间状态及1728个别名绑定。2880×1980图表已目视检查，未见裁切。6720条主CSV、1920条配对CSV及1680条交叉NLL CSV均逐条对照原始答案、损失或程序绑定验证。
 
@@ -152,3 +152,5 @@ Native在保留原始COPY逻辑的support_text条件下达到48/48，三个深�
 - [本地逐项验证回执](local_verification.json)
 - [本轮完整材料Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/text-competence-factorial-2026-11-15)
 - [已有训练检查点Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/matched-shared-training-timing-2026-11-15)
+
+远端发布完成：[发布核验回执](text-competence-factorial-publication-20261115-01.json)。3个GitHub资产的大小与SHA-256全部匹配，标签指向完整结果提交。三类CSV的Git字节均与导出一致，172份实际运行源码和独立真值核验所指数据字节仍未改变。

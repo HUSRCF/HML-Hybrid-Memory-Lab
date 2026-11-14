@@ -6547,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T23:03:51.893980+00:00",
+  "updated_utc": "2026-11-14T23:07:34.535552+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10651,7 +10651,7 @@
     "next_action": "Decide a complete-cohort competence or evidence-use control from the full results. No new architecture claim, scaleup or new training; any next inference needs its own preregistration."
   },
   "text_competence_factorial": {
-    "status": "complete_audited_exported_local_archive_verified_pending_remote_publication",
+    "status": "completed_independently_audited_all20cells_published_and_remote_verified",
     "plan": "configs/text_competence_factorial_plan.json",
     "plan_sha256": "fce95c001170418fdd485495d5cfde0120c89b751e136816fc8fc1d86621f00d",
     "data_source_count": 169,
@@ -10988,7 +10988,7 @@
     "no_scaleup_or_new_training_triggered": true,
     "conditional_competence_observed": true,
     "unique_GDN_damage_or_composition_attribution": false,
-    "next_action": "Snapshot and publish complete text controls; investigate contextual evidence-use/representation sensitivity before any architecture or scaleup claim.",
+    "next_action": "Register fixed-input/position controls for contextual representation and interference; do not infer universal composition incapacity or GDN injury, and do not trigger scaleup/new training.",
     "backup": {
       "status": "all_archive_members_byte_verified",
       "files_verified": 1717,
@@ -10997,6 +10997,15 @@
       "bytes": 15595589,
       "sha256": "287a3d37ac59ce569f99d1bc8bc5f1ece81b50b414e5386e6fac3224013d419f"
     },
-    "backup_manifest_sha256": "fe0af53690897051f708a712b2ef8804641d50c21aa8cf97c3a55d0b579afee7"
+    "backup_manifest_sha256": "fe0af53690897051f708a712b2ef8804641d50c21aa8cf97c3a55d0b579afee7",
+    "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/text-competence-factorial-publication-20261115-01.json",
+    "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/text-competence-factorial-2026-11-15",
+    "remote_assets_verified": 3,
+    "git_csv_rows_verified": 6720,
+    "paired_csv_rows_verified": 1920,
+    "factorial_csv_rows_verified": 1680,
+    "source_files_unchanged_after_publication": 172,
+    "all_phase_jobs_terminal": true,
+    "gdn_only_denotes_adapter_scope": true
   }
 }

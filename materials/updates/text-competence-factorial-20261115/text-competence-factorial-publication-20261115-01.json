@@ -1,0 +1,86 @@
+{
+  "status": "published_all3_remote_asset_sizes_and_sha256_verified",
+  "verified_utc": "2026-11-14T23:07:34.530394+00:00",
+  "repository": "HUSRCF/HML-Hybrid-Memory-Lab",
+  "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/text-competence-factorial-2026-11-15",
+  "release_id": 445657188,
+  "tag": "text-competence-factorial-2026-11-15",
+  "tag_commit": "6bec3a92369010ffb3a08520acc7c2c616e097a2",
+  "assets": [
+    {
+      "name": "text-competence-factorial-20261115.tar.gz",
+      "bytes": 15595589,
+      "sha256": "287a3d37ac59ce569f99d1bc8bc5f1ece81b50b414e5386e6fac3224013d419f",
+      "github_digest": "sha256:287a3d37ac59ce569f99d1bc8bc5f1ece81b50b414e5386e6fac3224013d419f",
+      "url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/download/text-competence-factorial-2026-11-15/text-competence-factorial-20261115.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "name": "file_manifest.json",
+      "bytes": 414605,
+      "sha256": "fe0af53690897051f708a712b2ef8804641d50c21aa8cf97c3a55d0b579afee7",
+      "github_digest": "sha256:fe0af53690897051f708a712b2ef8804641d50c21aa8cf97c3a55d0b579afee7",
+      "url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/download/text-competence-factorial-2026-11-15/file_manifest.json",
+      "state": "uploaded"
+    },
+    {
+      "name": "local_verification.json",
+      "bytes": 264,
+      "sha256": "e7ff63507c4e3043cf7f00d3aaf451ae04a1d5072b84a5d2210df78393cc665a",
+      "github_digest": "sha256:e7ff63507c4e3043cf7f00d3aaf451ae04a1d5072b84a5d2210df78393cc665a",
+      "url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/download/text-competence-factorial-2026-11-15/local_verification.json",
+      "state": "uploaded"
+    }
+  ],
+  "local_verification": {
+    "status": "all_archive_members_byte_verified",
+    "files_verified": 1717,
+    "archive_entries": 1718,
+    "archive": "text-competence-factorial-20261115.tar.gz",
+    "bytes": 15595589,
+    "sha256": "287a3d37ac59ce569f99d1bc8bc5f1ece81b50b414e5386e6fac3224013d419f"
+  },
+  "primary_readouts": 6720,
+  "related_bindings": 8640,
+  "primary_audit_sha256": "63e4688e7521ba17f7156f1f8167fa35f380d5a18be1b4d3bd0ba98df0af8310",
+  "all_main_csv_rows_verified": 6720,
+  "paired_loss_rows_independently_verified": 1920,
+  "factorial_loss_rows_independently_verified": 1680,
+  "git_csv_bytes_verified": [
+    {
+      "path": "materials/updates/text-competence-factorial-20261115/text-competence-factorial-figure-20261115-01.csv",
+      "bytes": 1512968,
+      "sha256": "5cace384261aaab82e0895fa74421e5137618bd417f49bd76a4fc0101eaa8076"
+    },
+    {
+      "path": "materials/updates/text-competence-factorial-20261115/text-competence-factorial-figure-20261115-01.factorial.csv",
+      "bytes": 172675,
+      "sha256": "da5782f071e7b690e19b7778f653b9daa0318bc77be08bb990fb2a07a29bf14f"
+    },
+    {
+      "path": "materials/updates/text-competence-factorial-20261115/text-competence-factorial-figure-20261115-01.pairs.csv",
+      "bytes": 480826,
+      "sha256": "5988b16a4367b16da1c705e40700c55e9013b079c82b4b611ece07feca2c7831"
+    }
+  ],
+  "live_and_archived_runtime_sources_unchanged": 172,
+  "independent_truth_crosscheck_sha256": "8c0ea363959a4d50a4154069e6da86881bd04a0af4bcc3ccbd28f18c5a89819a",
+  "independent_saved_text_registrations": 1344,
+  "independent_program_snapshot_pairs": 16176,
+  "independent_related_binding_checks": 1728,
+  "complete_tests_passed": 223,
+  "figure_visual_inspection": {
+    "width": 2880,
+    "height": 1980,
+    "clipping_observed": false
+  },
+  "prior_timing_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "all_previous_failed_criteria_unchanged": true,
+  "gdn_only_denotes_adapter_scope": true,
+  "architecture_effectiveness_claim": false,
+  "goal_status": "active"
+}
