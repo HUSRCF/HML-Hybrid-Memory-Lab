@@ -1,0 +1,20 @@
+{
+  "status": "all_twenty_cells_reproduced_from_actual_audited6720readouts",
+  "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/text-competence-factorial-audit-20261115-01.json",
+  "audit_sha256": "63e4688e7521ba17f7156f1f8167fa35f380d5a18be1b4d3bd0ba98df0af8310",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/text-competence-factorial-20261115-01",
+  "manifest_sha256": "cf0884e96d8566874c65beaf7b744362b8606a40bd50934c993582443fad1b77",
+  "dataset_manifest_sha256": "fca5d76d9456dfe834a6127c63100ab00cde71335845ed7eae99952d3b11931c",
+  "export_source_sha256": "b45960b1b372f86dc3f556df50f13d12a27c1d65a6f56b12b7cbae29a82a113e",
+  "output_sha256": {
+    "text-competence-factorial-figure-20261115-01.png": "fec9c34f84d877007142d8a9236bd3dbe10765738b77349ecf4bd475b67ea48c",
+    "text-competence-factorial-figure-20261115-01.pdf": "8a091fed43249ada8a6add494b07119212a696129c4a4aa3f24d6554ae06854d",
+    "text-competence-factorial-figure-20261115-01.csv": "5cace384261aaab82e0895fa74421e5137618bd417f49bd76a4fc0101eaa8076",
+    "text-competence-factorial-figure-20261115-01.pairs.csv": "5988b16a4367b16da1c705e40700c55e9013b079c82b4b611ece07feca2c7831",
+    "text-competence-factorial-figure-20261115-01.factorial.csv": "da5782f071e7b690e19b7778f653b9daa0318bc77be08bb990fb2a07a29bf14f",
+    "text-competence-factorial-figure-20261115-01.data.json": "e9117c8a0f714a63c67cd4ee2725531ab4d0d34c64e9c0d6b029412c36a2caf8",
+    "text-competence-factorial-figure-20261115-01.layout.json": "e1c5e2885a1a0bfca8d65a64c54ae81823a4bf74055f29df404a333a0a4da683",
+    "text-competence-factorial-figure-20261115-01.crosscheck.json": "529fc6f7d93ca5b52a5c6bdd64d1163a25201786b38880b8ae1045c6a57ba5c5",
+    "text-competence-factorial-figure-20261115-01.source.py": "b45960b1b372f86dc3f556df50f13d12a27c1d65a6f56b12b7cbae29a82a113e"
+  }
+}

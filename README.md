@@ -5,21 +5,20 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; the complete frozen-prefix evidence-access diagnostic is audited.**
-All 5,040 registered readouts and 215 regression tests passed their operational
-checks. Program-support masks raise the original shared arm from 14/48 to 48/48
-joint cases, and the question-trained/question-deployed arm from 15/48 to 46/48
-with all 56 history prefixes identical to native. GDN-only also reaches 46/48.
-These are explanatory results on a reused eight-stream cohort, not a new
-architecture success. All previous failed scientific gates remain failed.
-The equal-token nonslice control scores 0/336 for every arm and is a strong
-intervention with grammatical and evidence-availability confounds.
+**Status: active; the complete text-competence factorial diagnostic is audited.**
+All 6,720 registered readouts and 223 regression tests passed operational checks.
+Native rises from 1/48 joint cases on full history to 48/48 with original COPY
+logic on program-selected support text; compiling COPY to SET on full history
+reaches 21/48. These are privileged competence controls on a reused eight-stream
+cohort. Text, positions and prefix computation change; they do not uniquely
+localize GDN damage or establish a new architecture. All earlier failed
+scientific criteria remain failed. GDN-only means adapter scope; Attention stays.
 
-- [Current registered text-competence controls (223 tests; both 360-readout safety orders audited)](materials/updates/text-competence-factorial-20261115/README.md)
-- [Complete five-configuration, three-regime results](materials/updates/trained-timing-evidence-access-20261115/README.md)
-- [Previous 5,376-readout matched-training confirmation](materials/updates/trained-shared-timing-20261115/README.md)
+- [All twenty text-control cells, limitations and audit](materials/updates/text-competence-factorial-20261115/README.md)
+- [Previous frozen-prefix evidence-access diagnostic](materials/updates/trained-timing-evidence-access-20261115/README.md)
+- [Previous matched-training confirmation](materials/updates/trained-shared-timing-20261115/README.md)
 - [Research status and archived materials](materials/README.md)
-- [Registered evidence-access protocol](configs/trained_timing_evidence_access_plan.json)
+- [Registered text-control protocol](configs/text_competence_factorial_plan.json)
 - [Machine-readable progress](configs/experiment_progress.json)
 - [Full backup files](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases)
 

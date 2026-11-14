@@ -7,6 +7,13 @@
 实验使用 Qwen3.5-2B IT；不能将这些结果当作 Base 模型的实测结果，也尚未
 实现显式的共享语义依赖控制器。
 
+## New complete text competence controls
+
+[全部6720次文本交叉对照](updates/text-competence-factorial-20261115/README.md)及独立审计完成，223项测试通过。
+Native在完整历史为1/48，保留原始COPY的支持文本为48/48，完整历史COPY编译为SET时为21/48。
+这些是特权能力控制：支持文本改变了前缀计算、Token与位置，不能唯一定位GDN损伤或关系组合。
+所有20个配置×条件及相关退化都保留，支持条件144种实际输入与原336任务ID分别报告；旧失败门槛不变。
+
 ## Latest completed phase
 
 [冻结历史状态的完整证据访问诊断](updates/trained-timing-evidence-access-20261115/README.md)

@@ -6547,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T22:45:50.466241+00:00",
+  "updated_utc": "2026-11-14T23:03:51.893980+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10651,7 +10651,7 @@
     "next_action": "Decide a complete-cohort competence or evidence-use control from the full results. No new architecture claim, scaleup or new training; any next inference needs its own preregistration."
   },
   "text_competence_factorial": {
-    "status": "primary6720_running_after_both_exact_audited360_smokes",
+    "status": "complete_audited_exported_local_archive_verified_pending_remote_publication",
     "plan": "configs/text_competence_factorial_plan.json",
     "plan_sha256": "fce95c001170418fdd485495d5cfde0120c89b751e136816fc8fc1d86621f00d",
     "data_source_count": 169,
@@ -10695,6 +10695,308 @@
     "primary_runtime_sources_verified": 172,
     "primary_start_observation": "materials/updates/text-competence-factorial-20261115/primary-start-manifest.json",
     "independent_saved_truth_crosscheck": "all1344registrations_16176snapshots_1728aliasbindings_verified",
-    "independent_saved_truth_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/text-competence-factorial-truth-crosscheck-20261115-01.json"
+    "independent_saved_truth_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/text-competence-factorial-truth-crosscheck-20261115-01.json",
+    "primary_audit_sha256": "63e4688e7521ba17f7156f1f8167fa35f380d5a18be1b4d3bd0ba98df0af8310",
+    "readouts_audited": 6720,
+    "related_bindings_audited": 8640,
+    "all20_counts": {
+      "native": {
+        "full": {
+          "joint": 1,
+          "roles": [
+            13,
+            96,
+            92
+          ],
+          "original_tasks": 249,
+          "deduplicated": {
+            "unique_inputs": 336,
+            "correct": 249
+          }
+        },
+        "support_text": {
+          "joint": 48,
+          "roles": [
+            96,
+            96,
+            96
+          ],
+          "original_tasks": 336,
+          "deduplicated": {
+            "unique_inputs": 144,
+            "correct": 144
+          }
+        },
+        "compiled_full": {
+          "joint": 21,
+          "roles": [
+            47,
+            95,
+            96
+          ],
+          "original_tasks": 286,
+          "deduplicated": {
+            "unique_inputs": 336,
+            "correct": 286
+          }
+        },
+        "compiled_support": {
+          "joint": 48,
+          "roles": [
+            96,
+            96,
+            96
+          ],
+          "original_tasks": 336,
+          "deduplicated": {
+            "unique_inputs": 144,
+            "correct": 144
+          }
+        }
+      },
+      "shared": {
+        "full": {
+          "joint": 14,
+          "roles": [
+            45,
+            92,
+            96
+          ],
+          "original_tasks": 281,
+          "deduplicated": {
+            "unique_inputs": 336,
+            "correct": 281
+          }
+        },
+        "support_text": {
+          "joint": 47,
+          "roles": [
+            95,
+            96,
+            96
+          ],
+          "original_tasks": 335,
+          "deduplicated": {
+            "unique_inputs": 144,
+            "correct": 143
+          }
+        },
+        "compiled_full": {
+          "joint": 48,
+          "roles": [
+            96,
+            96,
+            96
+          ],
+          "original_tasks": 336,
+          "deduplicated": {
+            "unique_inputs": 336,
+            "correct": 336
+          }
+        },
+        "compiled_support": {
+          "joint": 48,
+          "roles": [
+            96,
+            96,
+            96
+          ],
+          "original_tasks": 336,
+          "deduplicated": {
+            "unique_inputs": 144,
+            "correct": 144
+          }
+        }
+      },
+      "shared_question_trained_all": {
+        "full": {
+          "joint": 15,
+          "roles": [
+            43,
+            93,
+            96
+          ],
+          "original_tasks": 280,
+          "deduplicated": {
+            "unique_inputs": 336,
+            "correct": 280
+          }
+        },
+        "support_text": {
+          "joint": 47,
+          "roles": [
+            95,
+            96,
+            96
+          ],
+          "original_tasks": 335,
+          "deduplicated": {
+            "unique_inputs": 144,
+            "correct": 143
+          }
+        },
+        "compiled_full": {
+          "joint": 48,
+          "roles": [
+            96,
+            96,
+            96
+          ],
+          "original_tasks": 336,
+          "deduplicated": {
+            "unique_inputs": 336,
+            "correct": 336
+          }
+        },
+        "compiled_support": {
+          "joint": 48,
+          "roles": [
+            96,
+            96,
+            96
+          ],
+          "original_tasks": 336,
+          "deduplicated": {
+            "unique_inputs": 144,
+            "correct": 144
+          }
+        }
+      },
+      "shared_question_trained_question": {
+        "full": {
+          "joint": 15,
+          "roles": [
+            39,
+            96,
+            96
+          ],
+          "original_tasks": 279,
+          "deduplicated": {
+            "unique_inputs": 336,
+            "correct": 279
+          }
+        },
+        "support_text": {
+          "joint": 47,
+          "roles": [
+            95,
+            96,
+            96
+          ],
+          "original_tasks": 335,
+          "deduplicated": {
+            "unique_inputs": 144,
+            "correct": 143
+          }
+        },
+        "compiled_full": {
+          "joint": 48,
+          "roles": [
+            96,
+            96,
+            96
+          ],
+          "original_tasks": 336,
+          "deduplicated": {
+            "unique_inputs": 336,
+            "correct": 336
+          }
+        },
+        "compiled_support": {
+          "joint": 48,
+          "roles": [
+            96,
+            96,
+            96
+          ],
+          "original_tasks": 336,
+          "deduplicated": {
+            "unique_inputs": 144,
+            "correct": 144
+          }
+        }
+      },
+      "gdn_all_tokens": {
+        "full": {
+          "joint": 16,
+          "roles": [
+            38,
+            96,
+            96
+          ],
+          "original_tasks": 278,
+          "deduplicated": {
+            "unique_inputs": 336,
+            "correct": 278
+          }
+        },
+        "support_text": {
+          "joint": 46,
+          "roles": [
+            94,
+            96,
+            96
+          ],
+          "original_tasks": 334,
+          "deduplicated": {
+            "unique_inputs": 144,
+            "correct": 142
+          }
+        },
+        "compiled_full": {
+          "joint": 45,
+          "roles": [
+            94,
+            95,
+            96
+          ],
+          "original_tasks": 333,
+          "deduplicated": {
+            "unique_inputs": 336,
+            "correct": 333
+          }
+        },
+        "compiled_support": {
+          "joint": 48,
+          "roles": [
+            96,
+            96,
+            96
+          ],
+          "original_tasks": 336,
+          "deduplicated": {
+            "unique_inputs": 144,
+            "correct": 144
+          }
+        }
+      }
+    },
+    "export_prefix": "/media/990Pro/Code/SAS/artifacts/memory_update/text-competence-factorial-figure-20261115-01",
+    "prior_timing_criteria_unchanged": {
+      "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+      "matched_question_positive_joint_gain_over_native": false,
+      "matched_question_no_all_trained_all_deployed_correct_regression": false
+    },
+    "figure_visual_inspection": {
+      "width": 2880,
+      "height": 1980,
+      "clipping_observed": false
+    },
+    "main_csv_rows_verified": 6720,
+    "paired_csv_rows_independently_verified": 1920,
+    "factorial_csv_rows_independently_verified": 1680,
+    "no_scaleup_or_new_training_triggered": true,
+    "conditional_competence_observed": true,
+    "unique_GDN_damage_or_composition_attribution": false,
+    "next_action": "Snapshot and publish complete text controls; investigate contextual evidence-use/representation sensitivity before any architecture or scaleup claim.",
+    "backup": {
+      "status": "all_archive_members_byte_verified",
+      "files_verified": 1717,
+      "archive_entries": 1718,
+      "archive": "text-competence-factorial-20261115.tar.gz",
+      "bytes": 15595589,
+      "sha256": "287a3d37ac59ce569f99d1bc8bc5f1ece81b50b414e5386e6fac3224013d419f"
+    },
+    "backup_manifest_sha256": "fe0af53690897051f708a712b2ef8804641d50c21aa8cf97c3a55d0b579afee7"
   }
 }
