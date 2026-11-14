@@ -6547,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T20:23:55.183032+00:00",
+  "updated_utc": "2026-11-14T20:29:50.119450+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10072,7 +10072,7 @@
   },
   "current_phase": "matched_shared_training_timing",
   "matched_shared_training_timing": {
-    "status": "training_audited_forward288_smoke_audited_reverse_order_verification_running",
+    "status": "both288_smokes_independently_audited_order_equivalence_running",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
     "plan_sha256": "027e1d8fcfde9478115e1d238b0528497e6285ca3b1a80086fe332389da5405f",
     "registered_utc": "2026-11-14T19:35:24.223581+00:00",
@@ -10209,6 +10209,22 @@
       },
       "actual_forward_receipts": 1512
     },
-    "confirmation_primary_evaluated": false
+    "confirmation_primary_evaluated": false,
+    "confirmation_reverse_smoke_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/trained-shared-timing-smoke-reverse-20261115-01.json",
+    "confirmation_reverse_smoke_audit_sha256": "48560aa3b9e960ea4909525f95821ed2d43fbc8877414dda06213c17d928adc5",
+    "confirmation_reverse_smoke_counts": {
+      "physical_readouts": 288,
+      "related_bindings": 288,
+      "native_before_attach_replays": 160,
+      "detached_native_replays": 160,
+      "attached_none_policy_identities": 150,
+      "question_native_prefix_checks": 30,
+      "shared_question_all_distinct_native_prefixes": {
+        "shared_ledger_trained_question": 6,
+        "shared_question_trained_question": 6,
+        "shared_question_timing": 6
+      },
+      "actual_forward_receipts": 1512
+    }
   }
 }
