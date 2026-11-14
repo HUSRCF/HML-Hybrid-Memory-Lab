@@ -1,0 +1,11 @@
+test_actual_full_prefill_gold_and_greedy_intervals_and_observer_cleanup (tests.test_unseen_shared_timing_runtime.TimingRuntimeTests.test_actual_full_prefill_gold_and_greedy_intervals_and_observer_cleanup) ... ok
+test_actual_projection_leakage_is_rejected_and_passive_hooks_removed (tests.test_unseen_shared_timing_runtime.TimingRuntimeTests.test_actual_projection_leakage_is_rejected_and_passive_hooks_removed) ... ok
+test_audit_rejects_position_gold_scope_and_greedy_mutations (tests.test_unseen_shared_timing_runtime.TimingRuntimeTests.test_audit_rejects_position_gold_scope_and_greedy_mutations) ... ok
+test_gold_only_eos_stop_and_single_token_gold_are_valid (tests.test_unseen_shared_timing_runtime.TimingRuntimeTests.test_gold_only_eos_stop_and_single_token_gold_are_valid) ... ok
+test_opposite_smokes_cannot_omit_or_change_any_readout (tests.test_unseen_shared_timing_runtime.TimingRuntimeTests.test_opposite_smokes_cannot_omit_or_change_any_readout) ... ok
+test_registered_metrics_reject_a_single_regression_despite_net_repair (tests.test_unseen_shared_timing_runtime.TimingRuntimeTests.test_registered_metrics_reject_a_single_regression_despite_net_repair) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.061s
+
+OK

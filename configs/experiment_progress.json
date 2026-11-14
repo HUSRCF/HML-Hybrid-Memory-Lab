@@ -6006,9 +6006,9 @@
     "provenance": "/media/990Pro/Code/SAS/artifacts/memory_update/overwrite-history-diagnostics-20261114.provenance.json",
     "branch_decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
   },
-  "last_completed_phase": "32source_replays_and20posthoc_state_continuations_completed_and_audited",
+  "last_completed_phase": "unseen_shared_timing3360full_answers_completed_and_audited_both_registered_criteria_failed",
   "next_research_step": {
-    "status": "both_smokes_independently_audited_exact_order_equivalence_passed_primary_running",
+    "status": "all3360readouts_completed_and_independently_audited_both_registered_criteria_failed",
     "plan": "/home/husrcf/Code/SAS/configs/unseen_shared_timing_plan.json",
     "plan_sha256": "1fe0317cb6ab1563d16ed44a1fa130dcb42453b7d96606bb6ba075d80c5b316a",
     "registered_utc": "2026-11-14T17:52:44.303688+00:00",
@@ -6027,10 +6027,9 @@
     "physical_full_answer_readouts": 3360,
     "preserved_runtime_sources": 129,
     "next_actions": [
-      "Implement independent new dataset/runner/auditor code without editing129sealed sources or mutating sealed module globals. Freeze one cohort62000-62007 and verify actual prior-input novelty, including fresh-copy-memory-confirmation-v1, before inference.",
-      "Retain all8natural strong baselines and add question-only/ledger-only schedules of the same frozen shared checkpoint. Verify complete native prefix states/logits for every distinct shared-question ledger; full Attention and original gold/greedy runtime remain unchanged.",
-      "Require two exact180readout forward/reverse operational smokes with scope/weight/native controls before3360primary full-answer readouts. Retain every4320related binding and all own-world failures/nulls; do not reuse favorable old cases.",
-      "Report same-checkpoint question-only preservation/regressions and gains versus native overall/everydepth/streams. Deployment timing ablation cannot by itself prove semantic write necessity. Explicit semantic-controller training needs a separate matched prospective plan."
+      "Preserve and publish all ten-arm outcomes, raw3360readouts,68native-prefix controls, full independent audit and figure, including failures/nulls.",
+      "Do not add further favorable cuts to either prior four-query localization or this cohort. Both registered timing criteria failed and all three earlier fresh-confirmation gates remain unchanged.",
+      "Before any new training, write a separate prospective matched-budget plan that distinguishes schedule-training mismatch from prefix utility and compares explicit dependency control against the stronger ordinary local adapter. No larger model, new environment or automatic training follows from this result."
     ],
     "dataset": "/media/990Pro/Code/SAS/datasets/memory_update/fresh-shared-timing-v1",
     "dataset_manifest_sha256": "3c94cdfcecf9175204de7cf7e47933196411047bc91f04ab406739a20129647a",
@@ -6056,7 +6055,84 @@
     "exact_cross_order_readouts": 180,
     "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/unseen-shared-timing-20261115-01",
     "primary_log": "/media/990Pro/Code/SAS/logs/unseen-shared-timing-primary-20261115-01.log",
-    "primary_completed": false
+    "primary_completed": true,
+    "primary_execution_completed": true,
+    "primary_audit_completed": true,
+    "primary_manifest_sha256": "65fd9fd8c52cd6b44de366a98d76f68b7699ec6905b83c58b5dd0e2a8c689ca0",
+    "actual_full_answer_readouts": 3360,
+    "shared_question_native_prefixes_verified": 56,
+    "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/unseen-shared-timing-audit-20261115-01.json",
+    "primary_audit_sha256": "a60381e1a81a41910a7cf6373117c43c082fd489db913db49d2053ac663005e9",
+    "operational_controls_passed": true,
+    "actual_counts": {
+      "physical_readouts": 3360,
+      "related_bindings": 4320,
+      "native_before_attach_replays": 100,
+      "detached_native_replays": 100,
+      "attached_none_policy_identities": 90,
+      "question_native_prefix_checks": 68,
+      "shared_question_all_distinct_native_prefixes": 56,
+      "actual_forward_receipts": 17472
+    },
+    "registered_criteria": {
+      "question_only_no_shared_correct_regression": false,
+      "question_only_positive_joint_gain_over_native": false
+    },
+    "shared_question_pointwise": {
+      "physical_queries": 336,
+      "reference_correct": 285,
+      "candidate_correct": 254,
+      "preserved": 252,
+      "regression": 33,
+      "repair": 2,
+      "both_wrong": 49,
+      "no_shared_correct_physical_regression": false
+    },
+    "joint_six_after_by_arm": {
+      "native": 0,
+      "shared": 17,
+      "shared_question_timing": 0,
+      "shared_ledger_timing": 9,
+      "independent": 15,
+      "local": 21,
+      "local_question": 13,
+      "attention_only": 8,
+      "gdn_all_tokens": 13,
+      "gdn_question_only": 15
+    },
+    "retained_first_export_failure": {
+      "log": "/media/990Pro/Code/SAS/logs/unseen-shared-timing-export-20261115-01.log",
+      "reason": "Plot-only role-name typo target_history; actual frozen benchmark role is target_initial. No figure was written. Corrected exporter is outside136sealed experiment sources; all data/results unchanged."
+    },
+    "interpretation": "Same all-token-trained shared checkpoint loses33previously correct physical answers (repairs2) under question-only timing; joint17/48 becomes0/48, prefix-only9/48. Local all-token baseline21/48 exceeds shared17/48. Timing deployment shift prevents inferring semantic write necessity or memory damage. No architecture claim or automatic training.",
+    "figure_prefix": "/media/990Pro/Code/SAS/artifacts/memory_update/unseen-shared-timing-comparison-20261115-01",
+    "figure_visually_verified": true,
+    "figure_pixels": [
+      2250,
+      1188
+    ],
+    "successful_export_log": "/media/990Pro/Code/SAS/logs/unseen-shared-timing-export-20261115-02.log",
+    "all_jobs_terminal": true,
+    "figure_artifact_sha256": {
+      "unseen-shared-timing-comparison-20261115-01.data.json": "8fdb519005453823392a71ad0fb56aa04da07148cf5aa0b6942e15712fb5319b",
+      "unseen-shared-timing-comparison-20261115-01.layout.json": "ff53d8ee72ee626302d7914326079f3cc626661f95462c3b608f76be68dcaf3b",
+      "unseen-shared-timing-comparison-20261115-01.source.py": "d570183389a9b8b5156e9b26e400bdc4a8940ac1dd4cb9ed3bf91a2e11d75150",
+      "unseen-shared-timing-comparison-20261115-01.provenance.json": "579aef618395c593cf8aae7cce009ec016a80dbe0341b2f49636964d770a1b10",
+      "unseen-shared-timing-comparison-20261115-01.csv": "7d606cd944e1d1b2cff5a9ec566b951f8de054d563543b1cba250b669b04f931",
+      "unseen-shared-timing-comparison-20261115-01.png": "cb03dc712f770aba2590401ad96bbe4e8ef057a0e18a841456622b29b318fd1c",
+      "unseen-shared-timing-comparison-20261115-01.pdf": "16860e960797b0d413720962f03c4d028d9cd3fa950fb477673eee3f49e27465"
+    },
+    "incremental_raw_archive": {
+      "status": "all_archive_members_verified",
+      "files": 618,
+      "archive_bytes": 3757341,
+      "archive_sha256": "8d318bb0ef62af3dd1d5d1ed8f400652923c6fd6fae81146f07c8011269f6a62",
+      "file_manifest_sha256": "d20babc04fe1a36a66e9050cd8c77fb0e15315d519388b08e519b214c953a00a",
+      "release_tag": "unseen-shared-timing-2026-11-15",
+      "archive_name": "unseen-shared-timing-20261115.tar.gz",
+      "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/unseen-shared-timing-2026-11-15",
+      "parent_release": "research-backup-2026-11-15"
+    }
   },
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
@@ -6438,7 +6514,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T18:58:56.578869+00:00",
+  "updated_utc": "2026-11-14T19:23:20.986585+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",

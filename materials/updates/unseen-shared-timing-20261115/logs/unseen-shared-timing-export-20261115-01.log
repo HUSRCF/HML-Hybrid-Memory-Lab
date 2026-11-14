@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/husrcf/Code/SAS/scripts/export_unseen_shared_timing.py", line 91, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/husrcf/Code/SAS/scripts/export_unseen_shared_timing.py", line 88, in main
+    args=parser.parse_args();print(json.dumps(export(args.audit,args.prefix)),flush=True)
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/husrcf/Code/SAS/scripts/export_unseen_shared_timing.py", line 50, in export
+    values=[sum(metrics['models'][n]['role_variant_counts'][role][v]['correct'] for v in ['control','treatment']) for n in ORDER]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/husrcf/Code/SAS/scripts/export_unseen_shared_timing.py", line 50, in <genexpr>
+    values=[sum(metrics['models'][n]['role_variant_counts'][role][v]['correct'] for v in ['control','treatment']) for n in ORDER]
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'target_history'

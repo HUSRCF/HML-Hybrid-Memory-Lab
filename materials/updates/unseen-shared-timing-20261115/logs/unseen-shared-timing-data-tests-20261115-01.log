@@ -1,0 +1,9 @@
+test_actual_references_preserve129sources_and_original_failed_gates (tests.test_unseen_shared_timing_data.UnseenTimingDataTests.test_actual_references_preserve129sources_and_original_failed_gates) ... ok
+test_checkpoint_baselines_schedules_and_primary_counts_cannot_be_reduced (tests.test_unseen_shared_timing_data.UnseenTimingDataTests.test_checkpoint_baselines_schedules_and_primary_counts_cannot_be_reduced) ... ok
+test_every_distinct_ledger_prefix_is_selected_once_without_question_filtering (tests.test_unseen_shared_timing_data.UnseenTimingDataTests.test_every_distinct_ledger_prefix_is_selected_once_without_question_filtering) ... ok
+test_fixed_grid_has_all_eight_new_streams_depths_styles_and_loads (tests.test_unseen_shared_timing_data.UnseenTimingDataTests.test_fixed_grid_has_all_eight_new_streams_depths_styles_and_loads) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 12.978s
+
+OK

@@ -1,0 +1,1 @@
+{"status": "completed_and_audited_unseen_shared_timing", "counts": {"physical_readouts": 3360, "related_bindings": 4320, "native_before_attach_replays": 100, "detached_native_replays": 100, "attached_none_policy_identities": 90, "question_native_prefix_checks": 68, "shared_question_all_distinct_native_prefixes": 56, "actual_forward_receipts": 17472}}

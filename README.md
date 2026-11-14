@@ -5,17 +5,18 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; resumed after verified backup and repository handoff.** The latest completed
-diagnostic contains 32 exact source replays and 20 full-answer state-restoration
-readouts, with 183 tests passed. All 20 generated answers remain equal to their
-respective unmasked references; this is not evidence of answer repair or an
-architecture improvement. The next unseen-stream experiment now has one registered,
-independently reconstructed cohort: eight new streams, 336 physical questions and
-56 distinct complete prefixes, with no prompt or prefix collisions against prior
-registered data. Its ten-arm runtime passed 193 regression tests; operational
-forward/reverse checks precede the registered primary evaluation.
+**Status: active; the unseen-stream timing experiment is completed and audited.**
+All 3,360 full-answer readouts and 193 regression tests completed. Both registered
+question-only criteria failed: the same shared checkpoint drops from 17/48 joint
+cases with all-token activation to 0/48 with question/answer-only activation,
+with 33 previously correct physical answers lost and two repaired. Ledger-only
+activation reaches 9/48; the ordinary local-adapter baseline reaches 21/48.
+All 56 question-only native prefixes are exact. These schedule effects do not
+establish semantic write necessity, recurrent memory damage or an architecture
+improvement. The earlier four-case state-restoration series remains closed.
 
 - [Research status and archived materials](materials/README.md)
+- [All ten timing results, audit and figure](materials/updates/unseen-shared-timing-20261115/README.md)
 - [Machine-readable progress](configs/experiment_progress.json)
 - [Next registered experiment](configs/unseen_shared_timing_plan.json)
 - [Full backup files](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases)
@@ -2808,3 +2809,11 @@ Any eventual explicit semantic-controller method requires a separate matched
 training plan; no new training is triggered. At registration the new data and
 runtime do not exist and no new-cohort inference has started. The broader
 research goal remains active.
+
+The subsequent unseen-stream run completed and passed its independent audit:
+3360 physical full-answer readouts, 4320 related bindings, 68 exact native-prefix
+checks and 17472 observed forwards. Both registered question-only criteria
+failed. All ten outcomes, the 33 regressions and two repairs, stronger local
+baseline, raw answer table, visualized counts and incremental raw snapshot are
+reported in [the completed phase](materials/updates/unseen-shared-timing-20261115/README.md).
+The broader goal remains active; this result does not trigger new training.

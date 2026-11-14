@@ -1,0 +1,11 @@
+{
+  "status": "all_archive_members_verified",
+  "files": 618,
+  "archive_bytes": 3757341,
+  "archive_sha256": "8d318bb0ef62af3dd1d5d1ed8f400652923c6fd6fae81146f07c8011269f6a62",
+  "file_manifest_sha256": "d20babc04fe1a36a66e9050cd8c77fb0e15315d519388b08e519b214c953a00a",
+  "release_tag": "unseen-shared-timing-2026-11-15",
+  "archive_name": "unseen-shared-timing-20261115.tar.gz",
+  "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/unseen-shared-timing-2026-11-15",
+  "parent_release": "research-backup-2026-11-15"
+}

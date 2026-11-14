@@ -1,0 +1,17 @@
+{
+  "status": "all_ten_arms_reproduced_from_actual_audited3360readouts",
+  "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/unseen-shared-timing-audit-20261115-01.json",
+  "audit_sha256": "a60381e1a81a41910a7cf6373117c43c082fd489db913db49d2053ac663005e9",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/unseen-shared-timing-20261115-01",
+  "manifest_sha256": "65fd9fd8c52cd6b44de366a98d76f68b7699ec6905b83c58b5dd0e2a8c689ca0",
+  "dataset_manifest_sha256": "3c94cdfcecf9175204de7cf7e47933196411047bc91f04ab406739a20129647a",
+  "export_source_sha256": "d570183389a9b8b5156e9b26e400bdc4a8940ac1dd4cb9ed3bf91a2e11d75150",
+  "output_sha256": {
+    "unseen-shared-timing-comparison-20261115-01.png": "cb03dc712f770aba2590401ad96bbe4e8ef057a0e18a841456622b29b318fd1c",
+    "unseen-shared-timing-comparison-20261115-01.pdf": "16860e960797b0d413720962f03c4d028d9cd3fa950fb477673eee3f49e27465",
+    "unseen-shared-timing-comparison-20261115-01.csv": "7d606cd944e1d1b2cff5a9ec566b951f8de054d563543b1cba250b669b04f931",
+    "unseen-shared-timing-comparison-20261115-01.data.json": "8fdb519005453823392a71ad0fb56aa04da07148cf5aa0b6942e15712fb5319b",
+    "unseen-shared-timing-comparison-20261115-01.layout.json": "ff53d8ee72ee626302d7914326079f3cc626661f95462c3b608f76be68dcaf3b",
+    "unseen-shared-timing-comparison-20261115-01.source.py": "d570183389a9b8b5156e9b26e400bdc4a8940ac1dd4cb9ed3bf91a2e11d75150"
+  }
+}

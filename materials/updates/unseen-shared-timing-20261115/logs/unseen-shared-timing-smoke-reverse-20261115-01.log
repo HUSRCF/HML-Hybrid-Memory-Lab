@@ -1,0 +1,42 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:02,  2.60it/s]Loading weights:  11%|█▏        | 36/320 [00:00<00:03, 93.94it/s]Loading weights:  20%|█▉        | 63/320 [00:00<00:01, 141.82it/s]Loading weights:  29%|██▉       | 92/320 [00:00<00:01, 183.32it/s]Loading weights:  37%|███▋      | 118/320 [00:00<00:01, 199.64it/s]Loading weights:  47%|████▋     | 151/320 [00:00<00:00, 232.99it/s]Loading weights:  58%|█████▊    | 185/320 [00:01<00:00, 257.14it/s]Loading weights:  67%|██████▋   | 214/320 [00:01<00:00, 258.95it/s]Loading weights:  78%|███████▊  | 248/320 [00:01<00:00, 278.05it/s]Loading weights:  87%|████████▋ | 278/320 [00:01<00:00, 275.57it/s]Loading weights:  96%|█████████▌| 307/320 [00:01<00:00, 278.09it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 214.92it/s]
+{"event": "unseen_shared_timing", "arm": "gdn_question_only", "queries": 6, "total": 18}
+{"event": "unseen_shared_timing", "arm": "gdn_question_only", "queries": 12, "total": 18}
+{"event": "unseen_shared_timing", "arm": "gdn_question_only", "queries": 18, "total": 18}
+{"event": "unseen_shared_timing_arm_complete", "arm": "gdn_question_only", "readouts": 18}
+{"event": "unseen_shared_timing", "arm": "gdn_all_tokens", "queries": 6, "total": 18}
+{"event": "unseen_shared_timing", "arm": "gdn_all_tokens", "queries": 12, "total": 18}
+{"event": "unseen_shared_timing", "arm": "gdn_all_tokens", "queries": 18, "total": 18}
+{"event": "unseen_shared_timing_arm_complete", "arm": "gdn_all_tokens", "readouts": 18}
+{"event": "unseen_shared_timing", "arm": "attention_only", "queries": 6, "total": 18}
+{"event": "unseen_shared_timing", "arm": "attention_only", "queries": 12, "total": 18}
+{"event": "unseen_shared_timing", "arm": "attention_only", "queries": 18, "total": 18}
+{"event": "unseen_shared_timing_arm_complete", "arm": "attention_only", "readouts": 18}
+{"event": "unseen_shared_timing", "arm": "local_question", "queries": 6, "total": 18}
+{"event": "unseen_shared_timing", "arm": "local_question", "queries": 12, "total": 18}
+{"event": "unseen_shared_timing", "arm": "local_question", "queries": 18, "total": 18}
+{"event": "unseen_shared_timing_arm_complete", "arm": "local_question", "readouts": 18}
+{"event": "unseen_shared_timing", "arm": "local", "queries": 6, "total": 18}
+{"event": "unseen_shared_timing", "arm": "local", "queries": 12, "total": 18}
+{"event": "unseen_shared_timing", "arm": "local", "queries": 18, "total": 18}
+{"event": "unseen_shared_timing_arm_complete", "arm": "local", "readouts": 18}
+{"event": "unseen_shared_timing", "arm": "independent", "queries": 6, "total": 18}
+{"event": "unseen_shared_timing", "arm": "independent", "queries": 12, "total": 18}
+{"event": "unseen_shared_timing", "arm": "independent", "queries": 18, "total": 18}
+{"event": "unseen_shared_timing_arm_complete", "arm": "independent", "readouts": 18}
+{"event": "unseen_shared_timing", "arm": "shared_ledger_timing", "queries": 6, "total": 18}
+{"event": "unseen_shared_timing", "arm": "shared_ledger_timing", "queries": 12, "total": 18}
+{"event": "unseen_shared_timing", "arm": "shared_ledger_timing", "queries": 18, "total": 18}
+{"event": "unseen_shared_timing_arm_complete", "arm": "shared_ledger_timing", "readouts": 18}
+{"event": "unseen_shared_timing", "arm": "shared_question_timing", "queries": 6, "total": 18}
+{"event": "unseen_shared_timing", "arm": "shared_question_timing", "queries": 12, "total": 18}
+{"event": "unseen_shared_timing", "arm": "shared_question_timing", "queries": 18, "total": 18}
+{"event": "unseen_shared_timing_arm_complete", "arm": "shared_question_timing", "readouts": 18}
+{"event": "unseen_shared_timing", "arm": "shared", "queries": 6, "total": 18}
+{"event": "unseen_shared_timing", "arm": "shared", "queries": 12, "total": 18}
+{"event": "unseen_shared_timing", "arm": "shared", "queries": 18, "total": 18}
+{"event": "unseen_shared_timing_arm_complete", "arm": "shared", "readouts": 18}
+{"event": "unseen_shared_timing", "arm": "native", "queries": 6, "total": 18}
+{"event": "unseen_shared_timing", "arm": "native", "queries": 12, "total": 18}
+{"event": "unseen_shared_timing", "arm": "native", "queries": 18, "total": 18}
+{"event": "unseen_shared_timing_arm_complete", "arm": "native", "readouts": 18}

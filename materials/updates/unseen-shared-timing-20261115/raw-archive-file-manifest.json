@@ -1,0 +1,2487 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-14T19:22:42.064733+00:00",
+  "status": "audited_incremental_snapshot",
+  "parent_release": "research-backup-2026-11-15",
+  "runtime_source_commit": "339eccf",
+  "storage_root": "/media/990Pro/Code/SAS",
+  "primary_readouts": 3360,
+  "registered_criteria": {
+    "question_only_no_shared_correct_regression": false,
+    "question_only_positive_joint_gain_over_native": false
+  },
+  "files": {
+    "README.md": {
+      "bytes": 574,
+      "sha256": "0eb1fbb1aca7cbb73b08a0ae703e595d9e80a31f55f4eef0987fec3882657491"
+    },
+    "artifacts/memory_update/unseen-shared-timing-audit-20261115-01.json": {
+      "bytes": 659732,
+      "sha256": "a60381e1a81a41910a7cf6373117c43c082fd489db913db49d2053ac663005e9"
+    },
+    "artifacts/memory_update/unseen-shared-timing-audit-20261115-01.source.py": {
+      "bytes": 16077,
+      "sha256": "36aead3df85c1f80e79ba73b56c8e07abdb4f6ed1269e4cf480cb31900879796"
+    },
+    "artifacts/memory_update/unseen-shared-timing-comparison-20261115-01.csv": {
+      "bytes": 484077,
+      "sha256": "7d606cd944e1d1b2cff5a9ec566b951f8de054d563543b1cba250b669b04f931"
+    },
+    "artifacts/memory_update/unseen-shared-timing-comparison-20261115-01.data.json": {
+      "bytes": 615611,
+      "sha256": "8fdb519005453823392a71ad0fb56aa04da07148cf5aa0b6942e15712fb5319b"
+    },
+    "artifacts/memory_update/unseen-shared-timing-comparison-20261115-01.layout.json": {
+      "bytes": 1288,
+      "sha256": "ff53d8ee72ee626302d7914326079f3cc626661f95462c3b608f76be68dcaf3b"
+    },
+    "artifacts/memory_update/unseen-shared-timing-comparison-20261115-01.pdf": {
+      "bytes": 23720,
+      "sha256": "16860e960797b0d413720962f03c4d028d9cd3fa950fb477673eee3f49e27465"
+    },
+    "artifacts/memory_update/unseen-shared-timing-comparison-20261115-01.png": {
+      "bytes": 162918,
+      "sha256": "cb03dc712f770aba2590401ad96bbe4e8ef057a0e18a841456622b29b318fd1c"
+    },
+    "artifacts/memory_update/unseen-shared-timing-comparison-20261115-01.provenance.json": {
+      "bytes": 1427,
+      "sha256": "579aef618395c593cf8aae7cce009ec016a80dbe0341b2f49636964d770a1b10"
+    },
+    "artifacts/memory_update/unseen-shared-timing-comparison-20261115-01.source.py": {
+      "bytes": 6561,
+      "sha256": "d570183389a9b8b5156e9b26e400bdc4a8940ac1dd4cb9ed3bf91a2e11d75150"
+    },
+    "artifacts/memory_update/unseen-shared-timing-data-audit-20261115-01.json": {
+      "bytes": 1163,
+      "sha256": "215ac9948e27c5e0034f9cd4d22df62c30108b5e11d1b7efd89d2afdf1eaa3d1"
+    },
+    "artifacts/memory_update/unseen-shared-timing-smoke-equivalence-20261115-01.json": {
+      "bytes": 16528,
+      "sha256": "6af373c0e13129d21724d5891d10b85d78edfcd07508db23b756d8dd503e62ff"
+    },
+    "artifacts/memory_update/unseen-shared-timing-smoke-equivalence-20261115-01.source.py": {
+      "bytes": 16077,
+      "sha256": "36aead3df85c1f80e79ba73b56c8e07abdb4f6ed1269e4cf480cb31900879796"
+    },
+    "artifacts/memory_update/unseen-shared-timing-smoke-forward-audit-20261115-01.json": {
+      "bytes": 4515,
+      "sha256": "4a475a534c2c2f5483f3704b0bda81e210b3adab04567f2dbdd72246ba60dc8f"
+    },
+    "artifacts/memory_update/unseen-shared-timing-smoke-forward-audit-20261115-01.source.py": {
+      "bytes": 16077,
+      "sha256": "36aead3df85c1f80e79ba73b56c8e07abdb4f6ed1269e4cf480cb31900879796"
+    },
+    "artifacts/memory_update/unseen-shared-timing-smoke-reverse-audit-20261115-01.json": {
+      "bytes": 4515,
+      "sha256": "fd151bd2555aa8656b40142dfb358d78d4b5e406088c25e3997daddc59eb1798"
+    },
+    "artifacts/memory_update/unseen-shared-timing-smoke-reverse-audit-20261115-01.source.py": {
+      "bytes": 16077,
+      "sha256": "36aead3df85c1f80e79ba73b56c8e07abdb4f6ed1269e4cf480cb31900879796"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/cases.json": {
+      "bytes": 406395,
+      "sha256": "6d25379ce3a0d01edad94ac63d6e334aa2eeb7c588769d0d05648d0b174a7a15"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/manifest.json": {
+      "bytes": 30469,
+      "sha256": "3c94cdfcecf9175204de7cf7e47933196411047bc91f04ab406739a20129647a"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/plan.json": {
+      "bytes": 21753,
+      "sha256": "1fe0317cb6ab1563d16ed44a1fa130dcb42453b7d96606bb6ba075d80c5b316a"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/prior_inputs.json": {
+      "bytes": 760214,
+      "sha256": "32935ca00bfc41a71e1a84596421d79dd2ba55514734746702fc21bd40333dd9"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/registry.json": {
+      "bytes": 535952,
+      "sha256": "457d5291775cf919ac42540c4d9317f4db0b12d3f2ab4a8dd6b5b47cd693d233"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/canonical_oracle_sufficiency_replication_plan.json": {
+      "bytes": 6772,
+      "sha256": "2444974c7a9e55e50cb60e132abd12b971c9c1e4903c5e827558bf6c3fd92c66"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/copy_dependency_transfer_plan.json": {
+      "bytes": 15490,
+      "sha256": "84d864ce4ad6373059fc49a559a18b5b39d497bbcaa6544afef5bb6fb4888772"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/copy_evidence_necessity_plan.json": {
+      "bytes": 7454,
+      "sha256": "fcba9df3ded485c71bb030cb6fb5ce755f255f2c51f6d320006368c27fa80407"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/copy_evidence_necessity_precision_addendum.json": {
+      "bytes": 5911,
+      "sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/copy_readout_sufficiency_plan.json": {
+      "bytes": 7587,
+      "sha256": "20c576579c9b076bc56d3f5dd66413ef955235033bf228afaa34fab0f9bb080b"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/fresh_control_change_replay_plan.json": {
+      "bytes": 13360,
+      "sha256": "1a3ba5fa85c2547ab5e915f874fc27d9908ec8b05a844cbe6f4f13259b55b1c1"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/fresh_control_layer_localization_plan.json": {
+      "bytes": 15678,
+      "sha256": "9cdde60299233fe414332f69d71c45fba8fa13a1a70717dc8bbf5f3333dceb1f"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/fresh_control_token_timing_plan.json": {
+      "bytes": 40051,
+      "sha256": "0e6bc1bd3cd6b619af3ee565b757d6a233827c4a6cd1936dd9bd36c63e7c112b"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/fresh_copy_memory_confirmation_plan.json": {
+      "bytes": 20967,
+      "sha256": "e310e4690db41d0c673c93f0785301bd8503c33cfd91c176416010ad672c54da"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/fresh_question_path_mediation_plan.json": {
+      "bytes": 25163,
+      "sha256": "f2eadecbeb209e95b2dc58f546853b548e6bb8a43e87063438508b8ef3f08146"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/fresh_state_continuation_plan.json": {
+      "bytes": 206537,
+      "sha256": "62f2684e0ad9315facb2e56cec76633519b07b48ff496f4374530d355ee779d9"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/models.json": {
+      "bytes": 112,
+      "sha256": "c1ca82d887e5892dcb8238bcaeb55bada81607b6457cf0dbf273014f6ddb5305"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/semantic_history_no_recent_repeat_plan.json": {
+      "bytes": 8651,
+      "sha256": "849d7df7adca1f6ad78bae230f2faaf94eaff273f01d71898c9f1fea65af23c0"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/semantic_overwrite_history_plan.json": {
+      "bytes": 9362,
+      "sha256": "a6f66f16f8e6f58ff140739727dbf2c2ee164749409b5ea4286d0a5eb66c247d"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/semantic_write_locality_event_paths_addendum.json": {
+      "bytes": 2792,
+      "sha256": "a17cf6b406fc6ffa5b623bc1d9bbf7ecb9e76c03aba55541864a29e0f5003b87"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/semantic_write_locality_event_paths_commit_guard.json": {
+      "bytes": 2522,
+      "sha256": "ba85327bc97c5a6698e3337b1315a66875c340017d5b3ffeb7cc2e05b6ca9fac"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/semantic_write_locality_event_paths_plan.json": {
+      "bytes": 5630,
+      "sha256": "e180ebbb62f8a81775a838e29eb43225d991ba10866eb46722aa8fe8a20e7d40"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/semantic_write_locality_load_plan.json": {
+      "bytes": 8375,
+      "sha256": "f0f3d9311eccf72580e500ebf74d2e92e16933898ed59b3d96b8e4673ed25411"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/semantic_write_locality_replication_plan.json": {
+      "bytes": 4892,
+      "sha256": "cc321076e4c16df135c506fabf5e9c1edbdf09408899444a6b93289676fecb1f"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/unseen_shared_timing_plan.json": {
+      "bytes": 21753,
+      "sha256": "1fe0317cb6ab1563d16ed44a1fa130dcb42453b7d96606bb6ba075d80c5b316a"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/write_locality_adapter_transfer_plan.json": {
+      "bytes": 7142,
+      "sha256": "847adbb277ae6440293cce349ed536bcbc2b91df0574e8f1d8068cfc6986457f"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/configs/write_locality_control_panel_plan.json": {
+      "bytes": 12401,
+      "sha256": "5e77a11a20437a4bc29802cb7923cbcf753cbb580b774c0228bc3eefc350d958"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/__init__.py": {
+      "bytes": 79,
+      "sha256": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/calibration.py": {
+      "bytes": 4308,
+      "sha256": "922499d57024c280f3ab93de1dac9ef4a3d611a216f2c1ae4af7fa7862ef7a06"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/controllers.py": {
+      "bytes": 8560,
+      "sha256": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/counterbalance_data.py": {
+      "bytes": 6710,
+      "sha256": "88e38ff2901e652335e23ff5decd4bb69d59481a58d27f7284b99fcdf47d176c"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/counterbalance_tasks.py": {
+      "bytes": 7489,
+      "sha256": "914523e92d5d1e657646d0e6d179c86845af2605fc6f7d8ab34794181fd6bf1d"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/gdn_query_control.py": {
+      "bytes": 5105,
+      "sha256": "b65468349959abd3ebe6a67562e720a13d1590aa37b58803b8cb0b98db026231"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/generalization_tasks.py": {
+      "bytes": 7110,
+      "sha256": "697a6fdc1e9d448fdfd5b7fa6e22adca40477d35c6e70f7aaebf648ef8b608fd"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/interventions.py": {
+      "bytes": 2784,
+      "sha256": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/kv_readout.py": {
+      "bytes": 4530,
+      "sha256": "2927df0cfdaf4972287b83914092e2224eacfc3ccf9d0508e03a64e85e919b8b"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/locality_replication.py": {
+      "bytes": 12985,
+      "sha256": "b34538ae6aaeb5f7cc4c0b4c53e9f83c60a069f807b5df81f897db8b683c29ec"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/metrics.py": {
+      "bytes": 2554,
+      "sha256": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/oracle.py": {
+      "bytes": 998,
+      "sha256": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/readout_controls.py": {
+      "bytes": 2183,
+      "sha256": "c15b4e3d4f4de2ce09a3c559dae64be8d849f472d6b02b9f70dd165c2cf73afa"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/record_kv_ablation.py": {
+      "bytes": 3494,
+      "sha256": "37c694da6bfb100fba6498df3a4b09ae89dde5181b55b1b17d80585e873f6093"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/runtime.py": {
+      "bytes": 11183,
+      "sha256": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/semantic_metrics.py": {
+      "bytes": 7622,
+      "sha256": "3f1383a7aed4d72558d567894532ddfa1486de690849c9eea0c73215aaca4efe"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/stress_tasks.py": {
+      "bytes": 2693,
+      "sha256": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/tasks.py": {
+      "bytes": 5923,
+      "sha256": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/training_data.py": {
+      "bytes": 2764,
+      "sha256": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/write_locality_data.py": {
+      "bytes": 16192,
+      "sha256": "ac4ebadc19ce69b527b1c78ca3ee9af7b775f2230a5d991295601186a3725aeb"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/sas_memory/write_locality_metrics.py": {
+      "bytes": 6057,
+      "sha256": "86c0b90709f4fa6510c351ca3f8bfdbe45a613a7b4ac9cfda4bad816051e9299"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_blocked_reader_adaptation.py": {
+      "bytes": 10971,
+      "sha256": "a23c1d33644f906b1a521fdb44a68d5e6dff86f5c11e094387eaa3fb085f94f5"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_canonical_adapter_check.py": {
+      "bytes": 6527,
+      "sha256": "841bc47e7d1d772d9a1cc4aa392ad742686f9ee042f01ae7bed7ad4fc4e4d794"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_canonical_copy_necessity.py": {
+      "bytes": 13421,
+      "sha256": "458fe78b017994cefb247c3a1e0ddace4197da4d2ba224cefdd2738264dacb28"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_canonical_oracle_replication.py": {
+      "bytes": 16113,
+      "sha256": "91abed9e89d6df8888718c9dd3931d3c6026524e53477e9cc30ee8ebaa73dc7b"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_controller_trial.py": {
+      "bytes": 9164,
+      "sha256": "aee986c912b7f3ada5de142978ef10793f16a7753ffdc8e33733682767137e41"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_copy_dependency_transfer.py": {
+      "bytes": 9130,
+      "sha256": "ae84f51b1036e3ef30c42eecce63ebf0c4787cdf321c4e4b177a56dbb6d54064"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_copy_evidence_necessity.py": {
+      "bytes": 12160,
+      "sha256": "4d5072229dbf92cd1e4a9bb73b7efb41ea0204781083644df8607a18929c92c7"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_copy_readout_sufficiency.py": {
+      "bytes": 12155,
+      "sha256": "e7c95288038784d354794e05f32dda7ddda58bb114dd19a183e6ff9439f03053"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_fresh_control_changes.py": {
+      "bytes": 4379,
+      "sha256": "36ff24db8191350dca267b3962118f325fc5fca4aca1b6c44eb53868e9ad00f4"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_fresh_control_replay.py": {
+      "bytes": 12829,
+      "sha256": "86fb56f58f6584c7897f3200c76097f1d7a244fc0d89baf0a80626951de0acd5"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_fresh_copy_confirmation.py": {
+      "bytes": 15413,
+      "sha256": "9c50ed2243cd5e773e04715d2c4bb3bb38686fa11bce65bb0ae86f7887cf34e5"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_fresh_layer_localization.py": {
+      "bytes": 17206,
+      "sha256": "0db8f4ff5e2cc9543e1bca2810f7116005769f5d042d03493596579f421b7c7d"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_fresh_token_timing.py": {
+      "bytes": 16827,
+      "sha256": "dfa8519bcb83eb1567d28ed33fdb31b98b2cf03008e2aa01eec00a468f55f9b2"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_question_path_mediation.py": {
+      "bytes": 18972,
+      "sha256": "d25119a0e86852c25ba8d26b2b884095362e05de16a5f7103ab9f2543833fd2e"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_semantic_history_no_repeat.py": {
+      "bytes": 8536,
+      "sha256": "3aac7003e8f7aeb7ab5ef0f8bbe46d662987259bdab6045c11ff30d0d5664992"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_semantic_overwrite_history.py": {
+      "bytes": 7655,
+      "sha256": "76537e10f94d52fa4b4fc471b38e2776a35503d09f88f1bd93e34f3237f23b0b"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_state_continuation.py": {
+      "bytes": 20118,
+      "sha256": "f3d18bcc57beb34f88ba2875de0331ad4efe600a2f24f442432533814dc0eaad"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_write_locality_adapter_transfer.py": {
+      "bytes": 9949,
+      "sha256": "6d6002133df41c24b71ac97ebaf7fdd7cad2feba8c3e7bbbdb51891aa3abc358"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_write_locality_control_panel.py": {
+      "bytes": 9310,
+      "sha256": "1845dc0b3ae41ee917320c2e4c800df88410b1944429c3d7f2a12eb770768a7b"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_write_locality_event_paths.py": {
+      "bytes": 18076,
+      "sha256": "0e98f2a6630b088005eb979e4b09d7a9e68df43dc65998a17dc66ff4d3580d7c"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_write_locality_load_screen.py": {
+      "bytes": 7644,
+      "sha256": "43adbeb05d687c512654927768a7d01e69241dba91a00b8c008b12793d6a14dd"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/analyze_write_locality_replication.py": {
+      "bytes": 2920,
+      "sha256": "314486a345281970503bc61ad3e102d192589e8844ab6385a2fac7f4181ad89d"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/canonical_necessity_common.py": {
+      "bytes": 6035,
+      "sha256": "656491b8fbb58a52cbcd3eef7476628cf3a6bc52dc7e66c295a01b5c62f2cabc"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/canonical_oracle_common.py": {
+      "bytes": 6872,
+      "sha256": "0c8e3e7eefb24564a13fde36200b1584790550808169f70e1451ce23fddd806f"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/canonical_oracle_metrics.py": {
+      "bytes": 4185,
+      "sha256": "07ac7dd9006a3bbc05a0bfe4e8413c35598e8e5b0fbe4cf30c692174106d7205"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/check_canonical_adapter_readout.py": {
+      "bytes": 7531,
+      "sha256": "663c23d9e0ef3ab09afdee54b91b2bf715a8c8ab76f1cd7d5a022b180a958ce1"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/check_record_attention_weights.py": {
+      "bytes": 8689,
+      "sha256": "952d6b00870e170ab6d3cf210b6d150a761c38133257782cc8e63a0d5a4af47f"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/compare_canonical_necessity_smokes.py": {
+      "bytes": 6021,
+      "sha256": "c89c8826a5de33a50cedbeb484d5a92313daa6d9936a8a5e2fa4914bc0acfed6"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/compare_canonical_oracle_smokes.py": {
+      "bytes": 5987,
+      "sha256": "0426b53ea235d50594804e300cf03d9a95d20259e7919fa79674d44a374fbff3"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/compare_fresh_copy_smokes.py": {
+      "bytes": 6177,
+      "sha256": "bd440072ffc54d5af3f42d7c474b4c06c63590599554d1c63f34523d3b56d946"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/copy_necessity_data.py": {
+      "bytes": 10892,
+      "sha256": "bd3b426cd7e1e30b59adc270d299d80aa095014a137b33189c1e59a21197c9e8"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/copy_necessity_metrics.py": {
+      "bytes": 2812,
+      "sha256": "f13335f4e37c51b5b26f97ab86b588715480bf9cdc1b3484b94344a21429817b"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/copy_readout_data.py": {
+      "bytes": 9340,
+      "sha256": "331c69ba57ffdca4cb5fe5a3d27e8f8577ca8365d090bdf4ea5769b21f0ec9ed"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/copy_readout_metrics.py": {
+      "bytes": 4274,
+      "sha256": "c5d29d0ed0d4a6a184daa562190ecf774241e68eea5d5d4ba0d94a969fce58eb"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/copy_readout_runtime.py": {
+      "bytes": 8704,
+      "sha256": "521f66cb509a614c3442c255a8bdf8a9fd94d4fa874e6b416b0a7258d4cbea62"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/copy_transfer_data.py": {
+      "bytes": 9522,
+      "sha256": "8168cf43a687c004469bc07cdf68f4edcb00e5e170db128bf7f58c93a718db9e"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/copy_transfer_metrics.py": {
+      "bytes": 5792,
+      "sha256": "5e90dfd18b4aa24d47109013eebe3d517a2cdba30db0b1c49ed39acc6af61369"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/fresh_copy_data.py": {
+      "bytes": 13415,
+      "sha256": "53bea45ed3429f8a92bcfdbbe56297dfc0291f72464bf4a17a8bad4ab9e88989"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/fresh_copy_metrics.py": {
+      "bytes": 2839,
+      "sha256": "b29dbc6312d27f8e6640452cef78baae7389bb317831cf161a74a7f6266bd671"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/fresh_copy_runtime.py": {
+      "bytes": 3253,
+      "sha256": "dfca521f1544f1c4f630dd973dd46fc3129df5c6d0adeeb25d2bcdfb94bd053c"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/fresh_layer_controls.py": {
+      "bytes": 9783,
+      "sha256": "7f88f1212e59a79ad50878c76bed1ac8de485f9e0e5bdbb8600bea9cf901ad90"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/fresh_timing_controls.py": {
+      "bytes": 13092,
+      "sha256": "6bb1a1cb073c43efb6b5a4753a574d0b33dfeade476b643313327d34566ea169"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/history_no_repeat_data.py": {
+      "bytes": 18353,
+      "sha256": "5914092a4aa17593a5beb6dbb4ff0fce015e9fc33a3c6ee05aad053069e8094e"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/history_no_repeat_metrics.py": {
+      "bytes": 7000,
+      "sha256": "7991334471ccb6e76fdd78b5bede316b27ee6db32a75134e0fcafd24147ac82f"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/locality_event_data.py": {
+      "bytes": 20175,
+      "sha256": "35d742c796722f1e8066b7d5a7ebfd858df93726209829514cadfc0874a5f59e"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/locality_event_runtime.py": {
+      "bytes": 7576,
+      "sha256": "e304ca3134a1be0c9008fa7ae6399323251e8f6e199693dc80ec127822c3cdc5"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/locality_panel_data.py": {
+      "bytes": 7081,
+      "sha256": "f7ea49ce27290d5ddaf760284a33c669beb185abd609d072ac5827d47b574cb1"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/locality_panel_metrics.py": {
+      "bytes": 5747,
+      "sha256": "a561933e5e2e0c60b367133e6818d2eb9c3411970bd667877c6d28cf33ca0229"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/locality_transfer_data.py": {
+      "bytes": 15691,
+      "sha256": "c15a04da6277f0373f282a28a5d484864f1df8677fef1f933a0774891146df72"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/locality_transfer_metrics.py": {
+      "bytes": 5477,
+      "sha256": "e1d849291261649788387783608f4aa7f8ba2dd9e6050e79092ac1c5e528eea6"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/overwrite_history_data.py": {
+      "bytes": 19069,
+      "sha256": "2d996c363c73d22afe3111723587836dbe8a05b791dbf9a2da761bd2a7e97c83"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/overwrite_history_metrics.py": {
+      "bytes": 8504,
+      "sha256": "79b6aaf21244085af9a0a60bb03d33de977a467926242a43935e42e64f6e1f49"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/prepare_copy_dependency_transfer.py": {
+      "bytes": 2725,
+      "sha256": "099e87a05105e00f034148d002f4f03ee206a97b3f8a69596b75dce3ecef798f"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/prepare_copy_evidence_necessity.py": {
+      "bytes": 2465,
+      "sha256": "2c404c9709e88642f551807f7362b44c108fa957ae79c35752870cc320ba0e36"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/prepare_copy_readout_sufficiency.py": {
+      "bytes": 2464,
+      "sha256": "18a95b7ecb446eb725bf97d7e0cf3adda772900b914b69bc2beccc504722dd23"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/prepare_fresh_copy_confirmation.py": {
+      "bytes": 3488,
+      "sha256": "d17a4cf243fc3a3063a6f8f1c47714db2d4c4d89f6c503b0b04f001b18f91c0e"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/prepare_semantic_history_no_repeat.py": {
+      "bytes": 3581,
+      "sha256": "46463bc367b512d6a847299c298b94450853b0e5455d6a85b07bf998c729584b"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/prepare_semantic_overwrite_history.py": {
+      "bytes": 3527,
+      "sha256": "fbf1905c676aa3e986db55d25fedd942c2dae3a0a5a9c786eba0f24daae3cc6f"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/prepare_unseen_shared_timing.py": {
+      "bytes": 3210,
+      "sha256": "fc0b9b15dd80921381db6d81b385869b240eed15a8d1e9f15e982a6055483e4f"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/prepare_write_locality_adapter_transfer.py": {
+      "bytes": 3598,
+      "sha256": "312b571023ca8e59045c03ef6a343090d78e8086737be3dd76acfa3b3d5301cd"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/prepare_write_locality_control_panel.py": {
+      "bytes": 3076,
+      "sha256": "5eef6a1b07f3a630a0d9ce6444e7e836d0af0a54481b138d3bad429973ded85f"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/prepare_write_locality_event_paths.py": {
+      "bytes": 3328,
+      "sha256": "6fce22ee2e152bbe9fef3262e33967589f585c9c1572bea18717b0c73302ace0"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/prepare_write_locality_load_screen.py": {
+      "bytes": 3102,
+      "sha256": "9d7700bc4d52f1f16b9392cceb8af6a43cc82cd9a42a7fdb2ada8a3dfbc9eab2"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/prepare_write_locality_replication.py": {
+      "bytes": 3895,
+      "sha256": "91e48536230e3b347fb83494612dde647c6f0e5eaf376db2e6fb00c2f6f720de"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/question_path_controls.py": {
+      "bytes": 12892,
+      "sha256": "ebde55bf45e7143a55806f2ff2fd2a41484313501ea0b36755fc6e5e556fcf61"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_canonical_copy_necessity.py": {
+      "bytes": 14655,
+      "sha256": "33b932ebaf5393a9b1a5d05d7dd6a06d288de90bf99a89fdf53172de93e63df2"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_canonical_oracle_replication.py": {
+      "bytes": 15382,
+      "sha256": "8d0354c918c5fe7d599ca2e0d624b03f43a51b60a441570cf6976e870bc42bde"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_controller_trial.py": {
+      "bytes": 26799,
+      "sha256": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_copy_dependency_transfer.py": {
+      "bytes": 12699,
+      "sha256": "7d085acf81de9acb34891695e3514e8c7aaf78621a2a95462497ffefd470e2b2"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_copy_evidence_necessity.py": {
+      "bytes": 12223,
+      "sha256": "80eb71f1b036a806020a78d0cd56299d3be4a44f14ec05f576a62b5550b0dfb6"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_copy_readout_sufficiency.py": {
+      "bytes": 12242,
+      "sha256": "1c75f0038b0595951715a829781716ff56186e005042e27dd9a733fe8fe01073"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_fresh_control_replay.py": {
+      "bytes": 20399,
+      "sha256": "b6833a30aeabe80deec174e99f2e42f68ddc0c39aacde85aa7c9eedb2be3a2b7"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_fresh_copy_confirmation.py": {
+      "bytes": 15051,
+      "sha256": "46aff58f5d48a8908dfea7ebe3acd503a931bc1bdabbe1cda65f1cb602e7f70d"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_fresh_layer_localization.py": {
+      "bytes": 21134,
+      "sha256": "a8f9f6a4bf7c803677b99723c3def383e989b9381c43d955bb43ee9fbdb4c8f1"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_fresh_token_timing.py": {
+      "bytes": 18100,
+      "sha256": "c78af0f21ffce58d955038aef2dd40680c387aa7c650c48a72e706c08147af6f"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_oracle_kv_readout.py": {
+      "bytes": 11096,
+      "sha256": "45f0cf4760af5fdfa42e473c80aa5dc6fbf04d0a71d23b7927b6310e06c8e886"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_question_path_mediation.py": {
+      "bytes": 21193,
+      "sha256": "59716f2d76c1c051333fa73833b374dcaef35d782fe551f30ad0dd03922c6377"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_semantic_history_no_repeat.py": {
+      "bytes": 9432,
+      "sha256": "052b40cc3ccf66eacc579595bfc81d0e74e80aeceb5ec2a3eb362470a077bb6f"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_semantic_overwrite_history.py": {
+      "bytes": 3612,
+      "sha256": "0c7004ee13b1874f7e4b4f0ec9b2646a6b7c879023d347fef83e13357bf80c72"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_state_continuation.py": {
+      "bytes": 21215,
+      "sha256": "544f007924dad2a0a766c3ca409f0167a5933818642af6ab2a4fd220d1d5206b"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_write_locality_adapter_transfer.py": {
+      "bytes": 13693,
+      "sha256": "a870e92d8db3f1559c26181364ed98a0139e0bd854bfb7a5b20579b64c749c85"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_write_locality_control_panel.py": {
+      "bytes": 3312,
+      "sha256": "42bb78264eed6dbe3d21252b5c72642d7706a93ea158055291a9e7eff289a468"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_write_locality_event_paths.py": {
+      "bytes": 15311,
+      "sha256": "6b575f2aee50fed0d38afd5df17698a8d6a31dbe6292ee4281b1966a967e5c09"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_write_locality_load_screen.py": {
+      "bytes": 9995,
+      "sha256": "50cf643027299432d247e6fc2ed7cd9d43d5460a50e9d8cf0e29bdef71ced32f"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/run_write_locality_replication.py": {
+      "bytes": 1826,
+      "sha256": "c34ae1209a7958fc9d7de21f58865701c409e26db012514a5e7f28f7fd927232"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/semantic_order_path_common.py": {
+      "bytes": 10061,
+      "sha256": "dd700ac39fb5c64639857b620acb273744bb639940867c2bf6744cce3f14ee67"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/stable_adapter_linears.py": {
+      "bytes": 2320,
+      "sha256": "99c57ff1ad4fe2722b4a260e62e3a63d69c2190acd9e710193a6fabe7617c670"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/state_continuation_controls.py": {
+      "bytes": 13191,
+      "sha256": "8e0fec22e097e2dd6294fa17311e6551ac18725bb20becbe3ee333e4dff71775"
+    },
+    "datasets/memory_update/fresh-shared-timing-v1/sources/scripts/unseen_shared_timing_data.py": {
+      "bytes": 9234,
+      "sha256": "9743f1faf6075f3dbdeb12f4bdfec230c8613a43b0fe9bd7a64add4436079492"
+    },
+    "logs/unseen-shared-timing-complete-tests-20261115-01.log": {
+      "bytes": 35319,
+      "sha256": "3cd08cb520eeb92385d9cb2e82dde4c64867d199451232fe8ae3998a03367a0f"
+    },
+    "logs/unseen-shared-timing-complete-tests-20261115-02.log": {
+      "bytes": 34376,
+      "sha256": "bec8208e04d51b1a1f0900b2f6351f76e544a9474f740a0c203e922c960090b2"
+    },
+    "logs/unseen-shared-timing-data-20261115-01.log": {
+      "bytes": 586,
+      "sha256": "40d08a13da2a213657c9880a69a79296e633c80906362fb059774f963cd61124"
+    },
+    "logs/unseen-shared-timing-data-tests-20261115-01.log": {
+      "bytes": 941,
+      "sha256": "98178a7806414c9e9bd0b3af5a239682ee3a79ae71d8414f87ad68828495c36e"
+    },
+    "logs/unseen-shared-timing-export-20261115-01.log": {
+      "bytes": 1102,
+      "sha256": "2e16004bd8c9c43590710b80ec604c09b657938fac54d1bf2bdc92b2a19bdf0b"
+    },
+    "logs/unseen-shared-timing-export-20261115-02.log": {
+      "bytes": 144,
+      "sha256": "39bf922afabf39ad48fea0a6e8ed7a5b17789ae3de25e109641eecc1e0e0f4d2"
+    },
+    "logs/unseen-shared-timing-primary-20261115-01.log": {
+      "bytes": 20543,
+      "sha256": "d07a8ba4227864e100e948ceea61fa284846929bf3c0859c9ee3af71bd15d808"
+    },
+    "logs/unseen-shared-timing-primary-audit-20261115-01.log": {
+      "bytes": 353,
+      "sha256": "9d2969a9c85d50c16e40c0fff5d6bdc6fcf22ba21c17c7c6e41126e364f7e791"
+    },
+    "logs/unseen-shared-timing-runtime-tests-20261115-01.log": {
+      "bytes": 1270,
+      "sha256": "eb85c37f7b2a1dbc1bcbfa47d3a6c2b1928d6d496e66cb98f35c911854b5930a"
+    },
+    "logs/unseen-shared-timing-smoke-equivalence-20261115-01.log": {
+      "bytes": 90,
+      "sha256": "a65b98805b6e2831048f9a769579674c394e37087d1548976598d70eb6189628"
+    },
+    "logs/unseen-shared-timing-smoke-forward-20261115-01.log": {
+      "bytes": 4701,
+      "sha256": "2eb98aff673f3d244c3401183d4e91102f627216d42af492aa8dd086fb43bbd8"
+    },
+    "logs/unseen-shared-timing-smoke-forward-audit-20261115-01.log": {
+      "bytes": 340,
+      "sha256": "7e98705cd0fce7be5d5157f6826e9f33fb18ffe3d1f82b9ede4c7e8490296a80"
+    },
+    "logs/unseen-shared-timing-smoke-reverse-20261115-01.log": {
+      "bytes": 4701,
+      "sha256": "3b553c884ade761e06c49262b0b17a3d7277a687529c6931bfc62208b27eb643"
+    },
+    "logs/unseen-shared-timing-smoke-reverse-audit-20261115-01.log": {
+      "bytes": 340,
+      "sha256": "7e98705cd0fce7be5d5157f6826e9f33fb18ffe3d1f82b9ede4c7e8490296a80"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/attention_only.jsonl": {
+      "bytes": 1457408,
+      "sha256": "91d7401b15754a22d9f1559882f1d554f3d111f7e03b075ea93a7053ec41891e"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/gdn_all_tokens.jsonl": {
+      "bytes": 3271351,
+      "sha256": "5a5bcb003772f904489872ad1cea4e47da57ac7cf65ca940d0a94c25d28db92a"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/gdn_question_only.jsonl": {
+      "bytes": 3273351,
+      "sha256": "980bfd9dde5a9e8a1c9aa0c711ab1677048bcc380c08f39f547073ff0983f434"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/independent.jsonl": {
+      "bytes": 3828143,
+      "sha256": "87061345681f58fc032fccd1dc0475da912d9ee7d6bb1642cf3a461a8883db97"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/installed_modeling_source.py": {
+      "bytes": 93139,
+      "sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/local.jsonl": {
+      "bytes": 3826127,
+      "sha256": "b4984bc45952e951b1cd33c9a11e2c3f4d7f94dbdb9cc90c4174f5df41d49c5b"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/local_question.jsonl": {
+      "bytes": 3829769,
+      "sha256": "b5b30fe827a89f0695be6a56416ce7cb8fa9e7a600c6a055809b6973de4ed6bf"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/manifest.json": {
+      "bytes": 2643731,
+      "sha256": "65fd9fd8c52cd6b44de366a98d76f68b7699ec6905b83c58b5dd0e2a8c689ca0"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/native.jsonl": {
+      "bytes": 1050119,
+      "sha256": "a837c5f33871078da5325a1168b7f59fd7c8e53e34d6ade67c0784fe50273e26"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/plan.json": {
+      "bytes": 21753,
+      "sha256": "1fe0317cb6ab1563d16ed44a1fa130dcb42453b7d96606bb6ba075d80c5b316a"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/precision_addendum.json": {
+      "bytes": 5911,
+      "sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/shared.jsonl": {
+      "bytes": 3826441,
+      "sha256": "57e3b7c11ba1aa278e7b195fbaf304b9ebea939441a758ebc5feebdffc67a196"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/shared_ledger_timing.jsonl": {
+      "bytes": 4565508,
+      "sha256": "0020fdc3e1db09e00d4d08228536c181604700aabeede9e870044318e1b02dbf"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/shared_question_timing.jsonl": {
+      "bytes": 3832412,
+      "sha256": "47ec5d789e2cd9d9ce29cd1cc0c2f7751c19c496cd11d6c4a35366ce62156413"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/canonical_oracle_sufficiency_replication_plan.json": {
+      "bytes": 6772,
+      "sha256": "2444974c7a9e55e50cb60e132abd12b971c9c1e4903c5e827558bf6c3fd92c66"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/copy_dependency_transfer_plan.json": {
+      "bytes": 15490,
+      "sha256": "84d864ce4ad6373059fc49a559a18b5b39d497bbcaa6544afef5bb6fb4888772"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/copy_evidence_necessity_plan.json": {
+      "bytes": 7454,
+      "sha256": "fcba9df3ded485c71bb030cb6fb5ce755f255f2c51f6d320006368c27fa80407"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/copy_evidence_necessity_precision_addendum.json": {
+      "bytes": 5911,
+      "sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/copy_readout_sufficiency_plan.json": {
+      "bytes": 7587,
+      "sha256": "20c576579c9b076bc56d3f5dd66413ef955235033bf228afaa34fab0f9bb080b"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/fresh_control_change_replay_plan.json": {
+      "bytes": 13360,
+      "sha256": "1a3ba5fa85c2547ab5e915f874fc27d9908ec8b05a844cbe6f4f13259b55b1c1"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/fresh_control_layer_localization_plan.json": {
+      "bytes": 15678,
+      "sha256": "9cdde60299233fe414332f69d71c45fba8fa13a1a70717dc8bbf5f3333dceb1f"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/fresh_control_token_timing_plan.json": {
+      "bytes": 40051,
+      "sha256": "0e6bc1bd3cd6b619af3ee565b757d6a233827c4a6cd1936dd9bd36c63e7c112b"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/fresh_copy_memory_confirmation_plan.json": {
+      "bytes": 20967,
+      "sha256": "e310e4690db41d0c673c93f0785301bd8503c33cfd91c176416010ad672c54da"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/fresh_question_path_mediation_plan.json": {
+      "bytes": 25163,
+      "sha256": "f2eadecbeb209e95b2dc58f546853b548e6bb8a43e87063438508b8ef3f08146"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/fresh_state_continuation_plan.json": {
+      "bytes": 206537,
+      "sha256": "62f2684e0ad9315facb2e56cec76633519b07b48ff496f4374530d355ee779d9"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/models.json": {
+      "bytes": 112,
+      "sha256": "c1ca82d887e5892dcb8238bcaeb55bada81607b6457cf0dbf273014f6ddb5305"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/semantic_history_no_recent_repeat_plan.json": {
+      "bytes": 8651,
+      "sha256": "849d7df7adca1f6ad78bae230f2faaf94eaff273f01d71898c9f1fea65af23c0"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/semantic_overwrite_history_plan.json": {
+      "bytes": 9362,
+      "sha256": "a6f66f16f8e6f58ff140739727dbf2c2ee164749409b5ea4286d0a5eb66c247d"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/semantic_write_locality_event_paths_addendum.json": {
+      "bytes": 2792,
+      "sha256": "a17cf6b406fc6ffa5b623bc1d9bbf7ecb9e76c03aba55541864a29e0f5003b87"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/semantic_write_locality_event_paths_commit_guard.json": {
+      "bytes": 2522,
+      "sha256": "ba85327bc97c5a6698e3337b1315a66875c340017d5b3ffeb7cc2e05b6ca9fac"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/semantic_write_locality_event_paths_plan.json": {
+      "bytes": 5630,
+      "sha256": "e180ebbb62f8a81775a838e29eb43225d991ba10866eb46722aa8fe8a20e7d40"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/semantic_write_locality_load_plan.json": {
+      "bytes": 8375,
+      "sha256": "f0f3d9311eccf72580e500ebf74d2e92e16933898ed59b3d96b8e4673ed25411"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/semantic_write_locality_replication_plan.json": {
+      "bytes": 4892,
+      "sha256": "cc321076e4c16df135c506fabf5e9c1edbdf09408899444a6b93289676fecb1f"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/unseen_shared_timing_plan.json": {
+      "bytes": 21753,
+      "sha256": "1fe0317cb6ab1563d16ed44a1fa130dcb42453b7d96606bb6ba075d80c5b316a"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/write_locality_adapter_transfer_plan.json": {
+      "bytes": 7142,
+      "sha256": "847adbb277ae6440293cce349ed536bcbc2b91df0574e8f1d8068cfc6986457f"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/configs/write_locality_control_panel_plan.json": {
+      "bytes": 12401,
+      "sha256": "5e77a11a20437a4bc29802cb7923cbcf753cbb580b774c0228bc3eefc350d958"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/__init__.py": {
+      "bytes": 79,
+      "sha256": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/calibration.py": {
+      "bytes": 4308,
+      "sha256": "922499d57024c280f3ab93de1dac9ef4a3d611a216f2c1ae4af7fa7862ef7a06"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/controllers.py": {
+      "bytes": 8560,
+      "sha256": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/counterbalance_data.py": {
+      "bytes": 6710,
+      "sha256": "88e38ff2901e652335e23ff5decd4bb69d59481a58d27f7284b99fcdf47d176c"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/counterbalance_tasks.py": {
+      "bytes": 7489,
+      "sha256": "914523e92d5d1e657646d0e6d179c86845af2605fc6f7d8ab34794181fd6bf1d"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/gdn_query_control.py": {
+      "bytes": 5105,
+      "sha256": "b65468349959abd3ebe6a67562e720a13d1590aa37b58803b8cb0b98db026231"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/generalization_tasks.py": {
+      "bytes": 7110,
+      "sha256": "697a6fdc1e9d448fdfd5b7fa6e22adca40477d35c6e70f7aaebf648ef8b608fd"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/interventions.py": {
+      "bytes": 2784,
+      "sha256": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/kv_readout.py": {
+      "bytes": 4530,
+      "sha256": "2927df0cfdaf4972287b83914092e2224eacfc3ccf9d0508e03a64e85e919b8b"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/locality_replication.py": {
+      "bytes": 12985,
+      "sha256": "b34538ae6aaeb5f7cc4c0b4c53e9f83c60a069f807b5df81f897db8b683c29ec"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/metrics.py": {
+      "bytes": 2554,
+      "sha256": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/oracle.py": {
+      "bytes": 998,
+      "sha256": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/readout_controls.py": {
+      "bytes": 2183,
+      "sha256": "c15b4e3d4f4de2ce09a3c559dae64be8d849f472d6b02b9f70dd165c2cf73afa"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/record_kv_ablation.py": {
+      "bytes": 3494,
+      "sha256": "37c694da6bfb100fba6498df3a4b09ae89dde5181b55b1b17d80585e873f6093"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/runtime.py": {
+      "bytes": 11183,
+      "sha256": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/semantic_metrics.py": {
+      "bytes": 7622,
+      "sha256": "3f1383a7aed4d72558d567894532ddfa1486de690849c9eea0c73215aaca4efe"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/stress_tasks.py": {
+      "bytes": 2693,
+      "sha256": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/tasks.py": {
+      "bytes": 5923,
+      "sha256": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/training_data.py": {
+      "bytes": 2764,
+      "sha256": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/write_locality_data.py": {
+      "bytes": 16192,
+      "sha256": "ac4ebadc19ce69b527b1c78ca3ee9af7b775f2230a5d991295601186a3725aeb"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/sas_memory/write_locality_metrics.py": {
+      "bytes": 6057,
+      "sha256": "86c0b90709f4fa6510c351ca3f8bfdbe45a613a7b4ac9cfda4bad816051e9299"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_blocked_reader_adaptation.py": {
+      "bytes": 10971,
+      "sha256": "a23c1d33644f906b1a521fdb44a68d5e6dff86f5c11e094387eaa3fb085f94f5"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_canonical_adapter_check.py": {
+      "bytes": 6527,
+      "sha256": "841bc47e7d1d772d9a1cc4aa392ad742686f9ee042f01ae7bed7ad4fc4e4d794"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_canonical_copy_necessity.py": {
+      "bytes": 13421,
+      "sha256": "458fe78b017994cefb247c3a1e0ddace4197da4d2ba224cefdd2738264dacb28"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_canonical_oracle_replication.py": {
+      "bytes": 16113,
+      "sha256": "91abed9e89d6df8888718c9dd3931d3c6026524e53477e9cc30ee8ebaa73dc7b"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_controller_trial.py": {
+      "bytes": 9164,
+      "sha256": "aee986c912b7f3ada5de142978ef10793f16a7753ffdc8e33733682767137e41"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_copy_dependency_transfer.py": {
+      "bytes": 9130,
+      "sha256": "ae84f51b1036e3ef30c42eecce63ebf0c4787cdf321c4e4b177a56dbb6d54064"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_copy_evidence_necessity.py": {
+      "bytes": 12160,
+      "sha256": "4d5072229dbf92cd1e4a9bb73b7efb41ea0204781083644df8607a18929c92c7"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_copy_readout_sufficiency.py": {
+      "bytes": 12155,
+      "sha256": "e7c95288038784d354794e05f32dda7ddda58bb114dd19a183e6ff9439f03053"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_fresh_control_changes.py": {
+      "bytes": 4379,
+      "sha256": "36ff24db8191350dca267b3962118f325fc5fca4aca1b6c44eb53868e9ad00f4"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_fresh_control_replay.py": {
+      "bytes": 12829,
+      "sha256": "86fb56f58f6584c7897f3200c76097f1d7a244fc0d89baf0a80626951de0acd5"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_fresh_copy_confirmation.py": {
+      "bytes": 15413,
+      "sha256": "9c50ed2243cd5e773e04715d2c4bb3bb38686fa11bce65bb0ae86f7887cf34e5"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_fresh_layer_localization.py": {
+      "bytes": 17206,
+      "sha256": "0db8f4ff5e2cc9543e1bca2810f7116005769f5d042d03493596579f421b7c7d"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_fresh_token_timing.py": {
+      "bytes": 16827,
+      "sha256": "dfa8519bcb83eb1567d28ed33fdb31b98b2cf03008e2aa01eec00a468f55f9b2"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_question_path_mediation.py": {
+      "bytes": 18972,
+      "sha256": "d25119a0e86852c25ba8d26b2b884095362e05de16a5f7103ab9f2543833fd2e"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_semantic_history_no_repeat.py": {
+      "bytes": 8536,
+      "sha256": "3aac7003e8f7aeb7ab5ef0f8bbe46d662987259bdab6045c11ff30d0d5664992"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_semantic_overwrite_history.py": {
+      "bytes": 7655,
+      "sha256": "76537e10f94d52fa4b4fc471b38e2776a35503d09f88f1bd93e34f3237f23b0b"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_state_continuation.py": {
+      "bytes": 20118,
+      "sha256": "f3d18bcc57beb34f88ba2875de0331ad4efe600a2f24f442432533814dc0eaad"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_unseen_shared_timing.py": {
+      "bytes": 16077,
+      "sha256": "36aead3df85c1f80e79ba73b56c8e07abdb4f6ed1269e4cf480cb31900879796"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_write_locality_adapter_transfer.py": {
+      "bytes": 9949,
+      "sha256": "6d6002133df41c24b71ac97ebaf7fdd7cad2feba8c3e7bbbdb51891aa3abc358"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_write_locality_control_panel.py": {
+      "bytes": 9310,
+      "sha256": "1845dc0b3ae41ee917320c2e4c800df88410b1944429c3d7f2a12eb770768a7b"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_write_locality_event_paths.py": {
+      "bytes": 18076,
+      "sha256": "0e98f2a6630b088005eb979e4b09d7a9e68df43dc65998a17dc66ff4d3580d7c"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_write_locality_load_screen.py": {
+      "bytes": 7644,
+      "sha256": "43adbeb05d687c512654927768a7d01e69241dba91a00b8c008b12793d6a14dd"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/analyze_write_locality_replication.py": {
+      "bytes": 2920,
+      "sha256": "314486a345281970503bc61ad3e102d192589e8844ab6385a2fac7f4181ad89d"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/canonical_necessity_common.py": {
+      "bytes": 6035,
+      "sha256": "656491b8fbb58a52cbcd3eef7476628cf3a6bc52dc7e66c295a01b5c62f2cabc"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/canonical_oracle_common.py": {
+      "bytes": 6872,
+      "sha256": "0c8e3e7eefb24564a13fde36200b1584790550808169f70e1451ce23fddd806f"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/canonical_oracle_metrics.py": {
+      "bytes": 4185,
+      "sha256": "07ac7dd9006a3bbc05a0bfe4e8413c35598e8e5b0fbe4cf30c692174106d7205"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/check_canonical_adapter_readout.py": {
+      "bytes": 7531,
+      "sha256": "663c23d9e0ef3ab09afdee54b91b2bf715a8c8ab76f1cd7d5a022b180a958ce1"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/check_record_attention_weights.py": {
+      "bytes": 8689,
+      "sha256": "952d6b00870e170ab6d3cf210b6d150a761c38133257782cc8e63a0d5a4af47f"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/compare_canonical_necessity_smokes.py": {
+      "bytes": 6021,
+      "sha256": "c89c8826a5de33a50cedbeb484d5a92313daa6d9936a8a5e2fa4914bc0acfed6"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/compare_canonical_oracle_smokes.py": {
+      "bytes": 5987,
+      "sha256": "0426b53ea235d50594804e300cf03d9a95d20259e7919fa79674d44a374fbff3"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/compare_fresh_copy_smokes.py": {
+      "bytes": 6177,
+      "sha256": "bd440072ffc54d5af3f42d7c474b4c06c63590599554d1c63f34523d3b56d946"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/copy_necessity_data.py": {
+      "bytes": 10892,
+      "sha256": "bd3b426cd7e1e30b59adc270d299d80aa095014a137b33189c1e59a21197c9e8"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/copy_necessity_metrics.py": {
+      "bytes": 2812,
+      "sha256": "f13335f4e37c51b5b26f97ab86b588715480bf9cdc1b3484b94344a21429817b"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/copy_readout_data.py": {
+      "bytes": 9340,
+      "sha256": "331c69ba57ffdca4cb5fe5a3d27e8f8577ca8365d090bdf4ea5769b21f0ec9ed"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/copy_readout_metrics.py": {
+      "bytes": 4274,
+      "sha256": "c5d29d0ed0d4a6a184daa562190ecf774241e68eea5d5d4ba0d94a969fce58eb"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/copy_readout_runtime.py": {
+      "bytes": 8704,
+      "sha256": "521f66cb509a614c3442c255a8bdf8a9fd94d4fa874e6b416b0a7258d4cbea62"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/copy_transfer_data.py": {
+      "bytes": 9522,
+      "sha256": "8168cf43a687c004469bc07cdf68f4edcb00e5e170db128bf7f58c93a718db9e"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/copy_transfer_metrics.py": {
+      "bytes": 5792,
+      "sha256": "5e90dfd18b4aa24d47109013eebe3d517a2cdba30db0b1c49ed39acc6af61369"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/fresh_copy_data.py": {
+      "bytes": 13415,
+      "sha256": "53bea45ed3429f8a92bcfdbbe56297dfc0291f72464bf4a17a8bad4ab9e88989"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/fresh_copy_metrics.py": {
+      "bytes": 2839,
+      "sha256": "b29dbc6312d27f8e6640452cef78baae7389bb317831cf161a74a7f6266bd671"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/fresh_copy_runtime.py": {
+      "bytes": 3253,
+      "sha256": "dfca521f1544f1c4f630dd973dd46fc3129df5c6d0adeeb25d2bcdfb94bd053c"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/fresh_layer_controls.py": {
+      "bytes": 9783,
+      "sha256": "7f88f1212e59a79ad50878c76bed1ac8de485f9e0e5bdbb8600bea9cf901ad90"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/fresh_timing_controls.py": {
+      "bytes": 13092,
+      "sha256": "6bb1a1cb073c43efb6b5a4753a574d0b33dfeade476b643313327d34566ea169"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/history_no_repeat_data.py": {
+      "bytes": 18353,
+      "sha256": "5914092a4aa17593a5beb6dbb4ff0fce015e9fc33a3c6ee05aad053069e8094e"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/history_no_repeat_metrics.py": {
+      "bytes": 7000,
+      "sha256": "7991334471ccb6e76fdd78b5bede316b27ee6db32a75134e0fcafd24147ac82f"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/locality_event_data.py": {
+      "bytes": 20175,
+      "sha256": "35d742c796722f1e8066b7d5a7ebfd858df93726209829514cadfc0874a5f59e"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/locality_event_runtime.py": {
+      "bytes": 7576,
+      "sha256": "e304ca3134a1be0c9008fa7ae6399323251e8f6e199693dc80ec127822c3cdc5"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/locality_panel_data.py": {
+      "bytes": 7081,
+      "sha256": "f7ea49ce27290d5ddaf760284a33c669beb185abd609d072ac5827d47b574cb1"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/locality_panel_metrics.py": {
+      "bytes": 5747,
+      "sha256": "a561933e5e2e0c60b367133e6818d2eb9c3411970bd667877c6d28cf33ca0229"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/locality_transfer_data.py": {
+      "bytes": 15691,
+      "sha256": "c15a04da6277f0373f282a28a5d484864f1df8677fef1f933a0774891146df72"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/locality_transfer_metrics.py": {
+      "bytes": 5477,
+      "sha256": "e1d849291261649788387783608f4aa7f8ba2dd9e6050e79092ac1c5e528eea6"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/overwrite_history_data.py": {
+      "bytes": 19069,
+      "sha256": "2d996c363c73d22afe3111723587836dbe8a05b791dbf9a2da761bd2a7e97c83"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/overwrite_history_metrics.py": {
+      "bytes": 8504,
+      "sha256": "79b6aaf21244085af9a0a60bb03d33de977a467926242a43935e42e64f6e1f49"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/prepare_copy_dependency_transfer.py": {
+      "bytes": 2725,
+      "sha256": "099e87a05105e00f034148d002f4f03ee206a97b3f8a69596b75dce3ecef798f"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/prepare_copy_evidence_necessity.py": {
+      "bytes": 2465,
+      "sha256": "2c404c9709e88642f551807f7362b44c108fa957ae79c35752870cc320ba0e36"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/prepare_copy_readout_sufficiency.py": {
+      "bytes": 2464,
+      "sha256": "18a95b7ecb446eb725bf97d7e0cf3adda772900b914b69bc2beccc504722dd23"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/prepare_fresh_copy_confirmation.py": {
+      "bytes": 3488,
+      "sha256": "d17a4cf243fc3a3063a6f8f1c47714db2d4c4d89f6c503b0b04f001b18f91c0e"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/prepare_semantic_history_no_repeat.py": {
+      "bytes": 3581,
+      "sha256": "46463bc367b512d6a847299c298b94450853b0e5455d6a85b07bf998c729584b"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/prepare_semantic_overwrite_history.py": {
+      "bytes": 3527,
+      "sha256": "fbf1905c676aa3e986db55d25fedd942c2dae3a0a5a9c786eba0f24daae3cc6f"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/prepare_unseen_shared_timing.py": {
+      "bytes": 3210,
+      "sha256": "fc0b9b15dd80921381db6d81b385869b240eed15a8d1e9f15e982a6055483e4f"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/prepare_write_locality_adapter_transfer.py": {
+      "bytes": 3598,
+      "sha256": "312b571023ca8e59045c03ef6a343090d78e8086737be3dd76acfa3b3d5301cd"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/prepare_write_locality_control_panel.py": {
+      "bytes": 3076,
+      "sha256": "5eef6a1b07f3a630a0d9ce6444e7e836d0af0a54481b138d3bad429973ded85f"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/prepare_write_locality_event_paths.py": {
+      "bytes": 3328,
+      "sha256": "6fce22ee2e152bbe9fef3262e33967589f585c9c1572bea18717b0c73302ace0"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/prepare_write_locality_load_screen.py": {
+      "bytes": 3102,
+      "sha256": "9d7700bc4d52f1f16b9392cceb8af6a43cc82cd9a42a7fdb2ada8a3dfbc9eab2"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/prepare_write_locality_replication.py": {
+      "bytes": 3895,
+      "sha256": "91e48536230e3b347fb83494612dde647c6f0e5eaf376db2e6fb00c2f6f720de"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/question_path_controls.py": {
+      "bytes": 12892,
+      "sha256": "ebde55bf45e7143a55806f2ff2fd2a41484313501ea0b36755fc6e5e556fcf61"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_canonical_copy_necessity.py": {
+      "bytes": 14655,
+      "sha256": "33b932ebaf5393a9b1a5d05d7dd6a06d288de90bf99a89fdf53172de93e63df2"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_canonical_oracle_replication.py": {
+      "bytes": 15382,
+      "sha256": "8d0354c918c5fe7d599ca2e0d624b03f43a51b60a441570cf6976e870bc42bde"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_controller_trial.py": {
+      "bytes": 26799,
+      "sha256": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_copy_dependency_transfer.py": {
+      "bytes": 12699,
+      "sha256": "7d085acf81de9acb34891695e3514e8c7aaf78621a2a95462497ffefd470e2b2"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_copy_evidence_necessity.py": {
+      "bytes": 12223,
+      "sha256": "80eb71f1b036a806020a78d0cd56299d3be4a44f14ec05f576a62b5550b0dfb6"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_copy_readout_sufficiency.py": {
+      "bytes": 12242,
+      "sha256": "1c75f0038b0595951715a829781716ff56186e005042e27dd9a733fe8fe01073"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_fresh_control_replay.py": {
+      "bytes": 20399,
+      "sha256": "b6833a30aeabe80deec174e99f2e42f68ddc0c39aacde85aa7c9eedb2be3a2b7"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_fresh_copy_confirmation.py": {
+      "bytes": 15051,
+      "sha256": "46aff58f5d48a8908dfea7ebe3acd503a931bc1bdabbe1cda65f1cb602e7f70d"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_fresh_layer_localization.py": {
+      "bytes": 21134,
+      "sha256": "a8f9f6a4bf7c803677b99723c3def383e989b9381c43d955bb43ee9fbdb4c8f1"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_fresh_token_timing.py": {
+      "bytes": 18100,
+      "sha256": "c78af0f21ffce58d955038aef2dd40680c387aa7c650c48a72e706c08147af6f"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_oracle_kv_readout.py": {
+      "bytes": 11096,
+      "sha256": "45f0cf4760af5fdfa42e473c80aa5dc6fbf04d0a71d23b7927b6310e06c8e886"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_question_path_mediation.py": {
+      "bytes": 21193,
+      "sha256": "59716f2d76c1c051333fa73833b374dcaef35d782fe551f30ad0dd03922c6377"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_semantic_history_no_repeat.py": {
+      "bytes": 9432,
+      "sha256": "052b40cc3ccf66eacc579595bfc81d0e74e80aeceb5ec2a3eb362470a077bb6f"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_semantic_overwrite_history.py": {
+      "bytes": 3612,
+      "sha256": "0c7004ee13b1874f7e4b4f0ec9b2646a6b7c879023d347fef83e13357bf80c72"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_state_continuation.py": {
+      "bytes": 21215,
+      "sha256": "544f007924dad2a0a766c3ca409f0167a5933818642af6ab2a4fd220d1d5206b"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_unseen_shared_timing.py": {
+      "bytes": 13115,
+      "sha256": "f76fbf228eb7fb0e8c0547ecfe33ad20537028ca98783714e8cd2de17e7956d2"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_write_locality_adapter_transfer.py": {
+      "bytes": 13693,
+      "sha256": "a870e92d8db3f1559c26181364ed98a0139e0bd854bfb7a5b20579b64c749c85"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_write_locality_control_panel.py": {
+      "bytes": 3312,
+      "sha256": "42bb78264eed6dbe3d21252b5c72642d7706a93ea158055291a9e7eff289a468"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_write_locality_event_paths.py": {
+      "bytes": 15311,
+      "sha256": "6b575f2aee50fed0d38afd5df17698a8d6a31dbe6292ee4281b1966a967e5c09"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_write_locality_load_screen.py": {
+      "bytes": 9995,
+      "sha256": "50cf643027299432d247e6fc2ed7cd9d43d5460a50e9d8cf0e29bdef71ced32f"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/run_write_locality_replication.py": {
+      "bytes": 1826,
+      "sha256": "c34ae1209a7958fc9d7de21f58865701c409e26db012514a5e7f28f7fd927232"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/semantic_order_path_common.py": {
+      "bytes": 10061,
+      "sha256": "dd700ac39fb5c64639857b620acb273744bb639940867c2bf6744cce3f14ee67"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/stable_adapter_linears.py": {
+      "bytes": 2320,
+      "sha256": "99c57ff1ad4fe2722b4a260e62e3a63d69c2190acd9e710193a6fabe7617c670"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/state_continuation_controls.py": {
+      "bytes": 13191,
+      "sha256": "8e0fec22e097e2dd6294fa17311e6551ac18725bb20becbe3ee333e4dff71775"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/unseen_shared_timing_data.py": {
+      "bytes": 9234,
+      "sha256": "9743f1faf6075f3dbdeb12f4bdfec230c8613a43b0fe9bd7a64add4436079492"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/unseen_shared_timing_metrics.py": {
+      "bytes": 3529,
+      "sha256": "ea9e7aa319a4b82a11c0b2be51a790b280befa9fe46251e09ddba629ea9c0594"
+    },
+    "runs/memory_update/unseen-shared-timing-20261115-01/sources/scripts/unseen_shared_timing_runtime.py": {
+      "bytes": 10358,
+      "sha256": "48cb1f16fcdc8cc50c00087ddabc535ef2a98220a604f665e2eda52b570f4166"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/attention_only.jsonl": {
+      "bytes": 78082,
+      "sha256": "3c4976da466a1cdea49068c51d2607b700d0e106e4ff29299cbd5860ec350ca9"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/gdn_all_tokens.jsonl": {
+      "bytes": 175253,
+      "sha256": "659776522ee76391a9f332e7af920442002c4035f96781f950faa495a5281f6e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/gdn_question_only.jsonl": {
+      "bytes": 175368,
+      "sha256": "7fc39f795781420ccd7f8c63c665d3d36ff90642626a6ff2857e1d379e1557ea"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/independent.jsonl": {
+      "bytes": 205086,
+      "sha256": "57db1bc85d47e0c30ef2ee4e01962617ab4c38c43f91bc12bf24eecc8e195f69"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/installed_modeling_source.py": {
+      "bytes": 93139,
+      "sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/local.jsonl": {
+      "bytes": 204972,
+      "sha256": "bf9c26d16011dc527adceda949859d944f65fb143d0aecb3d88fa1c4a75c1d5d"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/local_question.jsonl": {
+      "bytes": 205171,
+      "sha256": "e61bba8f210c9a301278a60a0f03d9d29db77aa69ff5974bba7a50dab3e07cc8"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/manifest.json": {
+      "bytes": 2581281,
+      "sha256": "9a5125103217fc2fb8ba32cd03ce83e5bae4d659b0acf404cfcd201642c54727"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/native.jsonl": {
+      "bytes": 56261,
+      "sha256": "a03b9f5e211f53313d047aafa443f66bf3364d77193660f8967d53f3ca89deb6"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/plan.json": {
+      "bytes": 21753,
+      "sha256": "1fe0317cb6ab1563d16ed44a1fa130dcb42453b7d96606bb6ba075d80c5b316a"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/precision_addendum.json": {
+      "bytes": 5911,
+      "sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/shared.jsonl": {
+      "bytes": 204994,
+      "sha256": "4740286bf3a3f6cf2194f01fd058f03a80a16a4176c39fb55badb38e93f6f93e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/shared_ledger_timing.jsonl": {
+      "bytes": 244578,
+      "sha256": "c0c789aba9cdd6902f246fdde5132720786aac5634cee4dde3e8f745b2751966"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/shared_question_timing.jsonl": {
+      "bytes": 205314,
+      "sha256": "fc83228e6f4fc1b3f788f4ede485a34427d467e53835200ca7a01806412b0faf"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/canonical_oracle_sufficiency_replication_plan.json": {
+      "bytes": 6772,
+      "sha256": "2444974c7a9e55e50cb60e132abd12b971c9c1e4903c5e827558bf6c3fd92c66"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/copy_dependency_transfer_plan.json": {
+      "bytes": 15490,
+      "sha256": "84d864ce4ad6373059fc49a559a18b5b39d497bbcaa6544afef5bb6fb4888772"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/copy_evidence_necessity_plan.json": {
+      "bytes": 7454,
+      "sha256": "fcba9df3ded485c71bb030cb6fb5ce755f255f2c51f6d320006368c27fa80407"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/copy_evidence_necessity_precision_addendum.json": {
+      "bytes": 5911,
+      "sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/copy_readout_sufficiency_plan.json": {
+      "bytes": 7587,
+      "sha256": "20c576579c9b076bc56d3f5dd66413ef955235033bf228afaa34fab0f9bb080b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/fresh_control_change_replay_plan.json": {
+      "bytes": 13360,
+      "sha256": "1a3ba5fa85c2547ab5e915f874fc27d9908ec8b05a844cbe6f4f13259b55b1c1"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/fresh_control_layer_localization_plan.json": {
+      "bytes": 15678,
+      "sha256": "9cdde60299233fe414332f69d71c45fba8fa13a1a70717dc8bbf5f3333dceb1f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/fresh_control_token_timing_plan.json": {
+      "bytes": 40051,
+      "sha256": "0e6bc1bd3cd6b619af3ee565b757d6a233827c4a6cd1936dd9bd36c63e7c112b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/fresh_copy_memory_confirmation_plan.json": {
+      "bytes": 20967,
+      "sha256": "e310e4690db41d0c673c93f0785301bd8503c33cfd91c176416010ad672c54da"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/fresh_question_path_mediation_plan.json": {
+      "bytes": 25163,
+      "sha256": "f2eadecbeb209e95b2dc58f546853b548e6bb8a43e87063438508b8ef3f08146"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/fresh_state_continuation_plan.json": {
+      "bytes": 206537,
+      "sha256": "62f2684e0ad9315facb2e56cec76633519b07b48ff496f4374530d355ee779d9"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/models.json": {
+      "bytes": 112,
+      "sha256": "c1ca82d887e5892dcb8238bcaeb55bada81607b6457cf0dbf273014f6ddb5305"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/semantic_history_no_recent_repeat_plan.json": {
+      "bytes": 8651,
+      "sha256": "849d7df7adca1f6ad78bae230f2faaf94eaff273f01d71898c9f1fea65af23c0"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/semantic_overwrite_history_plan.json": {
+      "bytes": 9362,
+      "sha256": "a6f66f16f8e6f58ff140739727dbf2c2ee164749409b5ea4286d0a5eb66c247d"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/semantic_write_locality_event_paths_addendum.json": {
+      "bytes": 2792,
+      "sha256": "a17cf6b406fc6ffa5b623bc1d9bbf7ecb9e76c03aba55541864a29e0f5003b87"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/semantic_write_locality_event_paths_commit_guard.json": {
+      "bytes": 2522,
+      "sha256": "ba85327bc97c5a6698e3337b1315a66875c340017d5b3ffeb7cc2e05b6ca9fac"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/semantic_write_locality_event_paths_plan.json": {
+      "bytes": 5630,
+      "sha256": "e180ebbb62f8a81775a838e29eb43225d991ba10866eb46722aa8fe8a20e7d40"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/semantic_write_locality_load_plan.json": {
+      "bytes": 8375,
+      "sha256": "f0f3d9311eccf72580e500ebf74d2e92e16933898ed59b3d96b8e4673ed25411"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/semantic_write_locality_replication_plan.json": {
+      "bytes": 4892,
+      "sha256": "cc321076e4c16df135c506fabf5e9c1edbdf09408899444a6b93289676fecb1f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/unseen_shared_timing_plan.json": {
+      "bytes": 21753,
+      "sha256": "1fe0317cb6ab1563d16ed44a1fa130dcb42453b7d96606bb6ba075d80c5b316a"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/write_locality_adapter_transfer_plan.json": {
+      "bytes": 7142,
+      "sha256": "847adbb277ae6440293cce349ed536bcbc2b91df0574e8f1d8068cfc6986457f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/configs/write_locality_control_panel_plan.json": {
+      "bytes": 12401,
+      "sha256": "5e77a11a20437a4bc29802cb7923cbcf753cbb580b774c0228bc3eefc350d958"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/__init__.py": {
+      "bytes": 79,
+      "sha256": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/calibration.py": {
+      "bytes": 4308,
+      "sha256": "922499d57024c280f3ab93de1dac9ef4a3d611a216f2c1ae4af7fa7862ef7a06"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/controllers.py": {
+      "bytes": 8560,
+      "sha256": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/counterbalance_data.py": {
+      "bytes": 6710,
+      "sha256": "88e38ff2901e652335e23ff5decd4bb69d59481a58d27f7284b99fcdf47d176c"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/counterbalance_tasks.py": {
+      "bytes": 7489,
+      "sha256": "914523e92d5d1e657646d0e6d179c86845af2605fc6f7d8ab34794181fd6bf1d"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/gdn_query_control.py": {
+      "bytes": 5105,
+      "sha256": "b65468349959abd3ebe6a67562e720a13d1590aa37b58803b8cb0b98db026231"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/generalization_tasks.py": {
+      "bytes": 7110,
+      "sha256": "697a6fdc1e9d448fdfd5b7fa6e22adca40477d35c6e70f7aaebf648ef8b608fd"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/interventions.py": {
+      "bytes": 2784,
+      "sha256": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/kv_readout.py": {
+      "bytes": 4530,
+      "sha256": "2927df0cfdaf4972287b83914092e2224eacfc3ccf9d0508e03a64e85e919b8b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/locality_replication.py": {
+      "bytes": 12985,
+      "sha256": "b34538ae6aaeb5f7cc4c0b4c53e9f83c60a069f807b5df81f897db8b683c29ec"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/metrics.py": {
+      "bytes": 2554,
+      "sha256": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/oracle.py": {
+      "bytes": 998,
+      "sha256": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/readout_controls.py": {
+      "bytes": 2183,
+      "sha256": "c15b4e3d4f4de2ce09a3c559dae64be8d849f472d6b02b9f70dd165c2cf73afa"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/record_kv_ablation.py": {
+      "bytes": 3494,
+      "sha256": "37c694da6bfb100fba6498df3a4b09ae89dde5181b55b1b17d80585e873f6093"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/runtime.py": {
+      "bytes": 11183,
+      "sha256": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/semantic_metrics.py": {
+      "bytes": 7622,
+      "sha256": "3f1383a7aed4d72558d567894532ddfa1486de690849c9eea0c73215aaca4efe"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/stress_tasks.py": {
+      "bytes": 2693,
+      "sha256": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/tasks.py": {
+      "bytes": 5923,
+      "sha256": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/training_data.py": {
+      "bytes": 2764,
+      "sha256": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/write_locality_data.py": {
+      "bytes": 16192,
+      "sha256": "ac4ebadc19ce69b527b1c78ca3ee9af7b775f2230a5d991295601186a3725aeb"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/sas_memory/write_locality_metrics.py": {
+      "bytes": 6057,
+      "sha256": "86c0b90709f4fa6510c351ca3f8bfdbe45a613a7b4ac9cfda4bad816051e9299"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_blocked_reader_adaptation.py": {
+      "bytes": 10971,
+      "sha256": "a23c1d33644f906b1a521fdb44a68d5e6dff86f5c11e094387eaa3fb085f94f5"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_canonical_adapter_check.py": {
+      "bytes": 6527,
+      "sha256": "841bc47e7d1d772d9a1cc4aa392ad742686f9ee042f01ae7bed7ad4fc4e4d794"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_canonical_copy_necessity.py": {
+      "bytes": 13421,
+      "sha256": "458fe78b017994cefb247c3a1e0ddace4197da4d2ba224cefdd2738264dacb28"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_canonical_oracle_replication.py": {
+      "bytes": 16113,
+      "sha256": "91abed9e89d6df8888718c9dd3931d3c6026524e53477e9cc30ee8ebaa73dc7b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_controller_trial.py": {
+      "bytes": 9164,
+      "sha256": "aee986c912b7f3ada5de142978ef10793f16a7753ffdc8e33733682767137e41"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_copy_dependency_transfer.py": {
+      "bytes": 9130,
+      "sha256": "ae84f51b1036e3ef30c42eecce63ebf0c4787cdf321c4e4b177a56dbb6d54064"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_copy_evidence_necessity.py": {
+      "bytes": 12160,
+      "sha256": "4d5072229dbf92cd1e4a9bb73b7efb41ea0204781083644df8607a18929c92c7"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_copy_readout_sufficiency.py": {
+      "bytes": 12155,
+      "sha256": "e7c95288038784d354794e05f32dda7ddda58bb114dd19a183e6ff9439f03053"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_fresh_control_changes.py": {
+      "bytes": 4379,
+      "sha256": "36ff24db8191350dca267b3962118f325fc5fca4aca1b6c44eb53868e9ad00f4"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_fresh_control_replay.py": {
+      "bytes": 12829,
+      "sha256": "86fb56f58f6584c7897f3200c76097f1d7a244fc0d89baf0a80626951de0acd5"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_fresh_copy_confirmation.py": {
+      "bytes": 15413,
+      "sha256": "9c50ed2243cd5e773e04715d2c4bb3bb38686fa11bce65bb0ae86f7887cf34e5"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_fresh_layer_localization.py": {
+      "bytes": 17206,
+      "sha256": "0db8f4ff5e2cc9543e1bca2810f7116005769f5d042d03493596579f421b7c7d"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_fresh_token_timing.py": {
+      "bytes": 16827,
+      "sha256": "dfa8519bcb83eb1567d28ed33fdb31b98b2cf03008e2aa01eec00a468f55f9b2"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_question_path_mediation.py": {
+      "bytes": 18972,
+      "sha256": "d25119a0e86852c25ba8d26b2b884095362e05de16a5f7103ab9f2543833fd2e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_semantic_history_no_repeat.py": {
+      "bytes": 8536,
+      "sha256": "3aac7003e8f7aeb7ab5ef0f8bbe46d662987259bdab6045c11ff30d0d5664992"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_semantic_overwrite_history.py": {
+      "bytes": 7655,
+      "sha256": "76537e10f94d52fa4b4fc471b38e2776a35503d09f88f1bd93e34f3237f23b0b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_state_continuation.py": {
+      "bytes": 20118,
+      "sha256": "f3d18bcc57beb34f88ba2875de0331ad4efe600a2f24f442432533814dc0eaad"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_unseen_shared_timing.py": {
+      "bytes": 16077,
+      "sha256": "36aead3df85c1f80e79ba73b56c8e07abdb4f6ed1269e4cf480cb31900879796"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_write_locality_adapter_transfer.py": {
+      "bytes": 9949,
+      "sha256": "6d6002133df41c24b71ac97ebaf7fdd7cad2feba8c3e7bbbdb51891aa3abc358"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_write_locality_control_panel.py": {
+      "bytes": 9310,
+      "sha256": "1845dc0b3ae41ee917320c2e4c800df88410b1944429c3d7f2a12eb770768a7b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_write_locality_event_paths.py": {
+      "bytes": 18076,
+      "sha256": "0e98f2a6630b088005eb979e4b09d7a9e68df43dc65998a17dc66ff4d3580d7c"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_write_locality_load_screen.py": {
+      "bytes": 7644,
+      "sha256": "43adbeb05d687c512654927768a7d01e69241dba91a00b8c008b12793d6a14dd"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/analyze_write_locality_replication.py": {
+      "bytes": 2920,
+      "sha256": "314486a345281970503bc61ad3e102d192589e8844ab6385a2fac7f4181ad89d"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/canonical_necessity_common.py": {
+      "bytes": 6035,
+      "sha256": "656491b8fbb58a52cbcd3eef7476628cf3a6bc52dc7e66c295a01b5c62f2cabc"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/canonical_oracle_common.py": {
+      "bytes": 6872,
+      "sha256": "0c8e3e7eefb24564a13fde36200b1584790550808169f70e1451ce23fddd806f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/canonical_oracle_metrics.py": {
+      "bytes": 4185,
+      "sha256": "07ac7dd9006a3bbc05a0bfe4e8413c35598e8e5b0fbe4cf30c692174106d7205"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/check_canonical_adapter_readout.py": {
+      "bytes": 7531,
+      "sha256": "663c23d9e0ef3ab09afdee54b91b2bf715a8c8ab76f1cd7d5a022b180a958ce1"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/check_record_attention_weights.py": {
+      "bytes": 8689,
+      "sha256": "952d6b00870e170ab6d3cf210b6d150a761c38133257782cc8e63a0d5a4af47f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/compare_canonical_necessity_smokes.py": {
+      "bytes": 6021,
+      "sha256": "c89c8826a5de33a50cedbeb484d5a92313daa6d9936a8a5e2fa4914bc0acfed6"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/compare_canonical_oracle_smokes.py": {
+      "bytes": 5987,
+      "sha256": "0426b53ea235d50594804e300cf03d9a95d20259e7919fa79674d44a374fbff3"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/compare_fresh_copy_smokes.py": {
+      "bytes": 6177,
+      "sha256": "bd440072ffc54d5af3f42d7c474b4c06c63590599554d1c63f34523d3b56d946"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/copy_necessity_data.py": {
+      "bytes": 10892,
+      "sha256": "bd3b426cd7e1e30b59adc270d299d80aa095014a137b33189c1e59a21197c9e8"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/copy_necessity_metrics.py": {
+      "bytes": 2812,
+      "sha256": "f13335f4e37c51b5b26f97ab86b588715480bf9cdc1b3484b94344a21429817b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/copy_readout_data.py": {
+      "bytes": 9340,
+      "sha256": "331c69ba57ffdca4cb5fe5a3d27e8f8577ca8365d090bdf4ea5769b21f0ec9ed"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/copy_readout_metrics.py": {
+      "bytes": 4274,
+      "sha256": "c5d29d0ed0d4a6a184daa562190ecf774241e68eea5d5d4ba0d94a969fce58eb"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/copy_readout_runtime.py": {
+      "bytes": 8704,
+      "sha256": "521f66cb509a614c3442c255a8bdf8a9fd94d4fa874e6b416b0a7258d4cbea62"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/copy_transfer_data.py": {
+      "bytes": 9522,
+      "sha256": "8168cf43a687c004469bc07cdf68f4edcb00e5e170db128bf7f58c93a718db9e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/copy_transfer_metrics.py": {
+      "bytes": 5792,
+      "sha256": "5e90dfd18b4aa24d47109013eebe3d517a2cdba30db0b1c49ed39acc6af61369"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/fresh_copy_data.py": {
+      "bytes": 13415,
+      "sha256": "53bea45ed3429f8a92bcfdbbe56297dfc0291f72464bf4a17a8bad4ab9e88989"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/fresh_copy_metrics.py": {
+      "bytes": 2839,
+      "sha256": "b29dbc6312d27f8e6640452cef78baae7389bb317831cf161a74a7f6266bd671"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/fresh_copy_runtime.py": {
+      "bytes": 3253,
+      "sha256": "dfca521f1544f1c4f630dd973dd46fc3129df5c6d0adeeb25d2bcdfb94bd053c"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/fresh_layer_controls.py": {
+      "bytes": 9783,
+      "sha256": "7f88f1212e59a79ad50878c76bed1ac8de485f9e0e5bdbb8600bea9cf901ad90"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/fresh_timing_controls.py": {
+      "bytes": 13092,
+      "sha256": "6bb1a1cb073c43efb6b5a4753a574d0b33dfeade476b643313327d34566ea169"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/history_no_repeat_data.py": {
+      "bytes": 18353,
+      "sha256": "5914092a4aa17593a5beb6dbb4ff0fce015e9fc33a3c6ee05aad053069e8094e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/history_no_repeat_metrics.py": {
+      "bytes": 7000,
+      "sha256": "7991334471ccb6e76fdd78b5bede316b27ee6db32a75134e0fcafd24147ac82f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/locality_event_data.py": {
+      "bytes": 20175,
+      "sha256": "35d742c796722f1e8066b7d5a7ebfd858df93726209829514cadfc0874a5f59e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/locality_event_runtime.py": {
+      "bytes": 7576,
+      "sha256": "e304ca3134a1be0c9008fa7ae6399323251e8f6e199693dc80ec127822c3cdc5"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/locality_panel_data.py": {
+      "bytes": 7081,
+      "sha256": "f7ea49ce27290d5ddaf760284a33c669beb185abd609d072ac5827d47b574cb1"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/locality_panel_metrics.py": {
+      "bytes": 5747,
+      "sha256": "a561933e5e2e0c60b367133e6818d2eb9c3411970bd667877c6d28cf33ca0229"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/locality_transfer_data.py": {
+      "bytes": 15691,
+      "sha256": "c15a04da6277f0373f282a28a5d484864f1df8677fef1f933a0774891146df72"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/locality_transfer_metrics.py": {
+      "bytes": 5477,
+      "sha256": "e1d849291261649788387783608f4aa7f8ba2dd9e6050e79092ac1c5e528eea6"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/overwrite_history_data.py": {
+      "bytes": 19069,
+      "sha256": "2d996c363c73d22afe3111723587836dbe8a05b791dbf9a2da761bd2a7e97c83"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/overwrite_history_metrics.py": {
+      "bytes": 8504,
+      "sha256": "79b6aaf21244085af9a0a60bb03d33de977a467926242a43935e42e64f6e1f49"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/prepare_copy_dependency_transfer.py": {
+      "bytes": 2725,
+      "sha256": "099e87a05105e00f034148d002f4f03ee206a97b3f8a69596b75dce3ecef798f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/prepare_copy_evidence_necessity.py": {
+      "bytes": 2465,
+      "sha256": "2c404c9709e88642f551807f7362b44c108fa957ae79c35752870cc320ba0e36"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/prepare_copy_readout_sufficiency.py": {
+      "bytes": 2464,
+      "sha256": "18a95b7ecb446eb725bf97d7e0cf3adda772900b914b69bc2beccc504722dd23"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/prepare_fresh_copy_confirmation.py": {
+      "bytes": 3488,
+      "sha256": "d17a4cf243fc3a3063a6f8f1c47714db2d4c4d89f6c503b0b04f001b18f91c0e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/prepare_semantic_history_no_repeat.py": {
+      "bytes": 3581,
+      "sha256": "46463bc367b512d6a847299c298b94450853b0e5455d6a85b07bf998c729584b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/prepare_semantic_overwrite_history.py": {
+      "bytes": 3527,
+      "sha256": "fbf1905c676aa3e986db55d25fedd942c2dae3a0a5a9c786eba0f24daae3cc6f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/prepare_unseen_shared_timing.py": {
+      "bytes": 3210,
+      "sha256": "fc0b9b15dd80921381db6d81b385869b240eed15a8d1e9f15e982a6055483e4f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/prepare_write_locality_adapter_transfer.py": {
+      "bytes": 3598,
+      "sha256": "312b571023ca8e59045c03ef6a343090d78e8086737be3dd76acfa3b3d5301cd"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/prepare_write_locality_control_panel.py": {
+      "bytes": 3076,
+      "sha256": "5eef6a1b07f3a630a0d9ce6444e7e836d0af0a54481b138d3bad429973ded85f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/prepare_write_locality_event_paths.py": {
+      "bytes": 3328,
+      "sha256": "6fce22ee2e152bbe9fef3262e33967589f585c9c1572bea18717b0c73302ace0"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/prepare_write_locality_load_screen.py": {
+      "bytes": 3102,
+      "sha256": "9d7700bc4d52f1f16b9392cceb8af6a43cc82cd9a42a7fdb2ada8a3dfbc9eab2"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/prepare_write_locality_replication.py": {
+      "bytes": 3895,
+      "sha256": "91e48536230e3b347fb83494612dde647c6f0e5eaf376db2e6fb00c2f6f720de"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/question_path_controls.py": {
+      "bytes": 12892,
+      "sha256": "ebde55bf45e7143a55806f2ff2fd2a41484313501ea0b36755fc6e5e556fcf61"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_canonical_copy_necessity.py": {
+      "bytes": 14655,
+      "sha256": "33b932ebaf5393a9b1a5d05d7dd6a06d288de90bf99a89fdf53172de93e63df2"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_canonical_oracle_replication.py": {
+      "bytes": 15382,
+      "sha256": "8d0354c918c5fe7d599ca2e0d624b03f43a51b60a441570cf6976e870bc42bde"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_controller_trial.py": {
+      "bytes": 26799,
+      "sha256": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_copy_dependency_transfer.py": {
+      "bytes": 12699,
+      "sha256": "7d085acf81de9acb34891695e3514e8c7aaf78621a2a95462497ffefd470e2b2"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_copy_evidence_necessity.py": {
+      "bytes": 12223,
+      "sha256": "80eb71f1b036a806020a78d0cd56299d3be4a44f14ec05f576a62b5550b0dfb6"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_copy_readout_sufficiency.py": {
+      "bytes": 12242,
+      "sha256": "1c75f0038b0595951715a829781716ff56186e005042e27dd9a733fe8fe01073"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_fresh_control_replay.py": {
+      "bytes": 20399,
+      "sha256": "b6833a30aeabe80deec174e99f2e42f68ddc0c39aacde85aa7c9eedb2be3a2b7"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_fresh_copy_confirmation.py": {
+      "bytes": 15051,
+      "sha256": "46aff58f5d48a8908dfea7ebe3acd503a931bc1bdabbe1cda65f1cb602e7f70d"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_fresh_layer_localization.py": {
+      "bytes": 21134,
+      "sha256": "a8f9f6a4bf7c803677b99723c3def383e989b9381c43d955bb43ee9fbdb4c8f1"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_fresh_token_timing.py": {
+      "bytes": 18100,
+      "sha256": "c78af0f21ffce58d955038aef2dd40680c387aa7c650c48a72e706c08147af6f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_oracle_kv_readout.py": {
+      "bytes": 11096,
+      "sha256": "45f0cf4760af5fdfa42e473c80aa5dc6fbf04d0a71d23b7927b6310e06c8e886"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_question_path_mediation.py": {
+      "bytes": 21193,
+      "sha256": "59716f2d76c1c051333fa73833b374dcaef35d782fe551f30ad0dd03922c6377"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_semantic_history_no_repeat.py": {
+      "bytes": 9432,
+      "sha256": "052b40cc3ccf66eacc579595bfc81d0e74e80aeceb5ec2a3eb362470a077bb6f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_semantic_overwrite_history.py": {
+      "bytes": 3612,
+      "sha256": "0c7004ee13b1874f7e4b4f0ec9b2646a6b7c879023d347fef83e13357bf80c72"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_state_continuation.py": {
+      "bytes": 21215,
+      "sha256": "544f007924dad2a0a766c3ca409f0167a5933818642af6ab2a4fd220d1d5206b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_unseen_shared_timing.py": {
+      "bytes": 13115,
+      "sha256": "f76fbf228eb7fb0e8c0547ecfe33ad20537028ca98783714e8cd2de17e7956d2"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_write_locality_adapter_transfer.py": {
+      "bytes": 13693,
+      "sha256": "a870e92d8db3f1559c26181364ed98a0139e0bd854bfb7a5b20579b64c749c85"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_write_locality_control_panel.py": {
+      "bytes": 3312,
+      "sha256": "42bb78264eed6dbe3d21252b5c72642d7706a93ea158055291a9e7eff289a468"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_write_locality_event_paths.py": {
+      "bytes": 15311,
+      "sha256": "6b575f2aee50fed0d38afd5df17698a8d6a31dbe6292ee4281b1966a967e5c09"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_write_locality_load_screen.py": {
+      "bytes": 9995,
+      "sha256": "50cf643027299432d247e6fc2ed7cd9d43d5460a50e9d8cf0e29bdef71ced32f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/run_write_locality_replication.py": {
+      "bytes": 1826,
+      "sha256": "c34ae1209a7958fc9d7de21f58865701c409e26db012514a5e7f28f7fd927232"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/semantic_order_path_common.py": {
+      "bytes": 10061,
+      "sha256": "dd700ac39fb5c64639857b620acb273744bb639940867c2bf6744cce3f14ee67"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/stable_adapter_linears.py": {
+      "bytes": 2320,
+      "sha256": "99c57ff1ad4fe2722b4a260e62e3a63d69c2190acd9e710193a6fabe7617c670"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/state_continuation_controls.py": {
+      "bytes": 13191,
+      "sha256": "8e0fec22e097e2dd6294fa17311e6551ac18725bb20becbe3ee333e4dff71775"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/unseen_shared_timing_data.py": {
+      "bytes": 9234,
+      "sha256": "9743f1faf6075f3dbdeb12f4bdfec230c8613a43b0fe9bd7a64add4436079492"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/unseen_shared_timing_metrics.py": {
+      "bytes": 3529,
+      "sha256": "ea9e7aa319a4b82a11c0b2be51a790b280befa9fe46251e09ddba629ea9c0594"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01/sources/scripts/unseen_shared_timing_runtime.py": {
+      "bytes": 10358,
+      "sha256": "48cb1f16fcdc8cc50c00087ddabc535ef2a98220a604f665e2eda52b570f4166"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/attention_only.jsonl": {
+      "bytes": 78082,
+      "sha256": "3c4976da466a1cdea49068c51d2607b700d0e106e4ff29299cbd5860ec350ca9"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/gdn_all_tokens.jsonl": {
+      "bytes": 175253,
+      "sha256": "659776522ee76391a9f332e7af920442002c4035f96781f950faa495a5281f6e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/gdn_question_only.jsonl": {
+      "bytes": 175368,
+      "sha256": "7fc39f795781420ccd7f8c63c665d3d36ff90642626a6ff2857e1d379e1557ea"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/independent.jsonl": {
+      "bytes": 205086,
+      "sha256": "57db1bc85d47e0c30ef2ee4e01962617ab4c38c43f91bc12bf24eecc8e195f69"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/installed_modeling_source.py": {
+      "bytes": 93139,
+      "sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/local.jsonl": {
+      "bytes": 204972,
+      "sha256": "bf9c26d16011dc527adceda949859d944f65fb143d0aecb3d88fa1c4a75c1d5d"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/local_question.jsonl": {
+      "bytes": 205171,
+      "sha256": "e61bba8f210c9a301278a60a0f03d9d29db77aa69ff5974bba7a50dab3e07cc8"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/manifest.json": {
+      "bytes": 2581280,
+      "sha256": "cb237931a59aa58da7c38ecea88c874310d30aa720c5e7466e0cd0601e8a15ba"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/native.jsonl": {
+      "bytes": 56261,
+      "sha256": "a03b9f5e211f53313d047aafa443f66bf3364d77193660f8967d53f3ca89deb6"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/plan.json": {
+      "bytes": 21753,
+      "sha256": "1fe0317cb6ab1563d16ed44a1fa130dcb42453b7d96606bb6ba075d80c5b316a"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/precision_addendum.json": {
+      "bytes": 5911,
+      "sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/shared.jsonl": {
+      "bytes": 204994,
+      "sha256": "4740286bf3a3f6cf2194f01fd058f03a80a16a4176c39fb55badb38e93f6f93e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/shared_ledger_timing.jsonl": {
+      "bytes": 244578,
+      "sha256": "c0c789aba9cdd6902f246fdde5132720786aac5634cee4dde3e8f745b2751966"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/shared_question_timing.jsonl": {
+      "bytes": 205314,
+      "sha256": "fc83228e6f4fc1b3f788f4ede485a34427d467e53835200ca7a01806412b0faf"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/canonical_oracle_sufficiency_replication_plan.json": {
+      "bytes": 6772,
+      "sha256": "2444974c7a9e55e50cb60e132abd12b971c9c1e4903c5e827558bf6c3fd92c66"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/copy_dependency_transfer_plan.json": {
+      "bytes": 15490,
+      "sha256": "84d864ce4ad6373059fc49a559a18b5b39d497bbcaa6544afef5bb6fb4888772"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/copy_evidence_necessity_plan.json": {
+      "bytes": 7454,
+      "sha256": "fcba9df3ded485c71bb030cb6fb5ce755f255f2c51f6d320006368c27fa80407"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/copy_evidence_necessity_precision_addendum.json": {
+      "bytes": 5911,
+      "sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/copy_readout_sufficiency_plan.json": {
+      "bytes": 7587,
+      "sha256": "20c576579c9b076bc56d3f5dd66413ef955235033bf228afaa34fab0f9bb080b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/fresh_control_change_replay_plan.json": {
+      "bytes": 13360,
+      "sha256": "1a3ba5fa85c2547ab5e915f874fc27d9908ec8b05a844cbe6f4f13259b55b1c1"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/fresh_control_layer_localization_plan.json": {
+      "bytes": 15678,
+      "sha256": "9cdde60299233fe414332f69d71c45fba8fa13a1a70717dc8bbf5f3333dceb1f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/fresh_control_token_timing_plan.json": {
+      "bytes": 40051,
+      "sha256": "0e6bc1bd3cd6b619af3ee565b757d6a233827c4a6cd1936dd9bd36c63e7c112b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/fresh_copy_memory_confirmation_plan.json": {
+      "bytes": 20967,
+      "sha256": "e310e4690db41d0c673c93f0785301bd8503c33cfd91c176416010ad672c54da"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/fresh_question_path_mediation_plan.json": {
+      "bytes": 25163,
+      "sha256": "f2eadecbeb209e95b2dc58f546853b548e6bb8a43e87063438508b8ef3f08146"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/fresh_state_continuation_plan.json": {
+      "bytes": 206537,
+      "sha256": "62f2684e0ad9315facb2e56cec76633519b07b48ff496f4374530d355ee779d9"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/models.json": {
+      "bytes": 112,
+      "sha256": "c1ca82d887e5892dcb8238bcaeb55bada81607b6457cf0dbf273014f6ddb5305"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/semantic_history_no_recent_repeat_plan.json": {
+      "bytes": 8651,
+      "sha256": "849d7df7adca1f6ad78bae230f2faaf94eaff273f01d71898c9f1fea65af23c0"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/semantic_overwrite_history_plan.json": {
+      "bytes": 9362,
+      "sha256": "a6f66f16f8e6f58ff140739727dbf2c2ee164749409b5ea4286d0a5eb66c247d"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/semantic_write_locality_event_paths_addendum.json": {
+      "bytes": 2792,
+      "sha256": "a17cf6b406fc6ffa5b623bc1d9bbf7ecb9e76c03aba55541864a29e0f5003b87"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/semantic_write_locality_event_paths_commit_guard.json": {
+      "bytes": 2522,
+      "sha256": "ba85327bc97c5a6698e3337b1315a66875c340017d5b3ffeb7cc2e05b6ca9fac"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/semantic_write_locality_event_paths_plan.json": {
+      "bytes": 5630,
+      "sha256": "e180ebbb62f8a81775a838e29eb43225d991ba10866eb46722aa8fe8a20e7d40"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/semantic_write_locality_load_plan.json": {
+      "bytes": 8375,
+      "sha256": "f0f3d9311eccf72580e500ebf74d2e92e16933898ed59b3d96b8e4673ed25411"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/semantic_write_locality_replication_plan.json": {
+      "bytes": 4892,
+      "sha256": "cc321076e4c16df135c506fabf5e9c1edbdf09408899444a6b93289676fecb1f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/unseen_shared_timing_plan.json": {
+      "bytes": 21753,
+      "sha256": "1fe0317cb6ab1563d16ed44a1fa130dcb42453b7d96606bb6ba075d80c5b316a"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/write_locality_adapter_transfer_plan.json": {
+      "bytes": 7142,
+      "sha256": "847adbb277ae6440293cce349ed536bcbc2b91df0574e8f1d8068cfc6986457f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/configs/write_locality_control_panel_plan.json": {
+      "bytes": 12401,
+      "sha256": "5e77a11a20437a4bc29802cb7923cbcf753cbb580b774c0228bc3eefc350d958"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/__init__.py": {
+      "bytes": 79,
+      "sha256": "600fb50ca1ec3387a04c5e927e42ab5c59fa428570e29e65d0ebfd84ad249bd3"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/calibration.py": {
+      "bytes": 4308,
+      "sha256": "922499d57024c280f3ab93de1dac9ef4a3d611a216f2c1ae4af7fa7862ef7a06"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/controllers.py": {
+      "bytes": 8560,
+      "sha256": "2fd3e25dcfc74b03fca2a75be004bebeb7f731a95e67c66124d12d72d48a83a9"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/counterbalance_data.py": {
+      "bytes": 6710,
+      "sha256": "88e38ff2901e652335e23ff5decd4bb69d59481a58d27f7284b99fcdf47d176c"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/counterbalance_tasks.py": {
+      "bytes": 7489,
+      "sha256": "914523e92d5d1e657646d0e6d179c86845af2605fc6f7d8ab34794181fd6bf1d"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/gdn_query_control.py": {
+      "bytes": 5105,
+      "sha256": "b65468349959abd3ebe6a67562e720a13d1590aa37b58803b8cb0b98db026231"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/generalization_tasks.py": {
+      "bytes": 7110,
+      "sha256": "697a6fdc1e9d448fdfd5b7fa6e22adca40477d35c6e70f7aaebf648ef8b608fd"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/interventions.py": {
+      "bytes": 2784,
+      "sha256": "35399476aa6667f4bf84413c5977a943af33300926afb90d68c8ac75e62e1422"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/kv_readout.py": {
+      "bytes": 4530,
+      "sha256": "2927df0cfdaf4972287b83914092e2224eacfc3ccf9d0508e03a64e85e919b8b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/locality_replication.py": {
+      "bytes": 12985,
+      "sha256": "b34538ae6aaeb5f7cc4c0b4c53e9f83c60a069f807b5df81f897db8b683c29ec"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/metrics.py": {
+      "bytes": 2554,
+      "sha256": "090e1c97a3832184dda9f01dd865b231626102ff32ebad21edf9537f0c0793f2"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/oracle.py": {
+      "bytes": 998,
+      "sha256": "80c8a6cd1e907f1fac0d2f9e5e607b787fac040eb984ab12d861c5e9c660b00e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/readout_controls.py": {
+      "bytes": 2183,
+      "sha256": "c15b4e3d4f4de2ce09a3c559dae64be8d849f472d6b02b9f70dd165c2cf73afa"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/record_kv_ablation.py": {
+      "bytes": 3494,
+      "sha256": "37c694da6bfb100fba6498df3a4b09ae89dde5181b55b1b17d80585e873f6093"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/runtime.py": {
+      "bytes": 11183,
+      "sha256": "f0334c190e57458652a24cae813b448231a9ffcfdc2c77d8679c896b42fa5c91"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/semantic_metrics.py": {
+      "bytes": 7622,
+      "sha256": "3f1383a7aed4d72558d567894532ddfa1486de690849c9eea0c73215aaca4efe"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/stress_tasks.py": {
+      "bytes": 2693,
+      "sha256": "b5164a1bc60ec8ae41394835d6fd7546f04c16389ab95881df163278d4babdd3"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/tasks.py": {
+      "bytes": 5923,
+      "sha256": "4787f1b94f37dc7e6255cb2ec0dded6293d102013b80fbdaf73b7b9034ffbc17"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/training_data.py": {
+      "bytes": 2764,
+      "sha256": "54e9c3a997892d8d91aa20a7e697d5008340121db1d0da9a3b5065ebb427cb0b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/write_locality_data.py": {
+      "bytes": 16192,
+      "sha256": "ac4ebadc19ce69b527b1c78ca3ee9af7b775f2230a5d991295601186a3725aeb"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/sas_memory/write_locality_metrics.py": {
+      "bytes": 6057,
+      "sha256": "86c0b90709f4fa6510c351ca3f8bfdbe45a613a7b4ac9cfda4bad816051e9299"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_blocked_reader_adaptation.py": {
+      "bytes": 10971,
+      "sha256": "a23c1d33644f906b1a521fdb44a68d5e6dff86f5c11e094387eaa3fb085f94f5"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_canonical_adapter_check.py": {
+      "bytes": 6527,
+      "sha256": "841bc47e7d1d772d9a1cc4aa392ad742686f9ee042f01ae7bed7ad4fc4e4d794"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_canonical_copy_necessity.py": {
+      "bytes": 13421,
+      "sha256": "458fe78b017994cefb247c3a1e0ddace4197da4d2ba224cefdd2738264dacb28"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_canonical_oracle_replication.py": {
+      "bytes": 16113,
+      "sha256": "91abed9e89d6df8888718c9dd3931d3c6026524e53477e9cc30ee8ebaa73dc7b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_controller_trial.py": {
+      "bytes": 9164,
+      "sha256": "aee986c912b7f3ada5de142978ef10793f16a7753ffdc8e33733682767137e41"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_copy_dependency_transfer.py": {
+      "bytes": 9130,
+      "sha256": "ae84f51b1036e3ef30c42eecce63ebf0c4787cdf321c4e4b177a56dbb6d54064"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_copy_evidence_necessity.py": {
+      "bytes": 12160,
+      "sha256": "4d5072229dbf92cd1e4a9bb73b7efb41ea0204781083644df8607a18929c92c7"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_copy_readout_sufficiency.py": {
+      "bytes": 12155,
+      "sha256": "e7c95288038784d354794e05f32dda7ddda58bb114dd19a183e6ff9439f03053"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_fresh_control_changes.py": {
+      "bytes": 4379,
+      "sha256": "36ff24db8191350dca267b3962118f325fc5fca4aca1b6c44eb53868e9ad00f4"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_fresh_control_replay.py": {
+      "bytes": 12829,
+      "sha256": "86fb56f58f6584c7897f3200c76097f1d7a244fc0d89baf0a80626951de0acd5"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_fresh_copy_confirmation.py": {
+      "bytes": 15413,
+      "sha256": "9c50ed2243cd5e773e04715d2c4bb3bb38686fa11bce65bb0ae86f7887cf34e5"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_fresh_layer_localization.py": {
+      "bytes": 17206,
+      "sha256": "0db8f4ff5e2cc9543e1bca2810f7116005769f5d042d03493596579f421b7c7d"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_fresh_token_timing.py": {
+      "bytes": 16827,
+      "sha256": "dfa8519bcb83eb1567d28ed33fdb31b98b2cf03008e2aa01eec00a468f55f9b2"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_question_path_mediation.py": {
+      "bytes": 18972,
+      "sha256": "d25119a0e86852c25ba8d26b2b884095362e05de16a5f7103ab9f2543833fd2e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_semantic_history_no_repeat.py": {
+      "bytes": 8536,
+      "sha256": "3aac7003e8f7aeb7ab5ef0f8bbe46d662987259bdab6045c11ff30d0d5664992"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_semantic_overwrite_history.py": {
+      "bytes": 7655,
+      "sha256": "76537e10f94d52fa4b4fc471b38e2776a35503d09f88f1bd93e34f3237f23b0b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_state_continuation.py": {
+      "bytes": 20118,
+      "sha256": "f3d18bcc57beb34f88ba2875de0331ad4efe600a2f24f442432533814dc0eaad"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_unseen_shared_timing.py": {
+      "bytes": 16077,
+      "sha256": "36aead3df85c1f80e79ba73b56c8e07abdb4f6ed1269e4cf480cb31900879796"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_write_locality_adapter_transfer.py": {
+      "bytes": 9949,
+      "sha256": "6d6002133df41c24b71ac97ebaf7fdd7cad2feba8c3e7bbbdb51891aa3abc358"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_write_locality_control_panel.py": {
+      "bytes": 9310,
+      "sha256": "1845dc0b3ae41ee917320c2e4c800df88410b1944429c3d7f2a12eb770768a7b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_write_locality_event_paths.py": {
+      "bytes": 18076,
+      "sha256": "0e98f2a6630b088005eb979e4b09d7a9e68df43dc65998a17dc66ff4d3580d7c"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_write_locality_load_screen.py": {
+      "bytes": 7644,
+      "sha256": "43adbeb05d687c512654927768a7d01e69241dba91a00b8c008b12793d6a14dd"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/analyze_write_locality_replication.py": {
+      "bytes": 2920,
+      "sha256": "314486a345281970503bc61ad3e102d192589e8844ab6385a2fac7f4181ad89d"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/canonical_necessity_common.py": {
+      "bytes": 6035,
+      "sha256": "656491b8fbb58a52cbcd3eef7476628cf3a6bc52dc7e66c295a01b5c62f2cabc"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/canonical_oracle_common.py": {
+      "bytes": 6872,
+      "sha256": "0c8e3e7eefb24564a13fde36200b1584790550808169f70e1451ce23fddd806f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/canonical_oracle_metrics.py": {
+      "bytes": 4185,
+      "sha256": "07ac7dd9006a3bbc05a0bfe4e8413c35598e8e5b0fbe4cf30c692174106d7205"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/check_canonical_adapter_readout.py": {
+      "bytes": 7531,
+      "sha256": "663c23d9e0ef3ab09afdee54b91b2bf715a8c8ab76f1cd7d5a022b180a958ce1"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/check_record_attention_weights.py": {
+      "bytes": 8689,
+      "sha256": "952d6b00870e170ab6d3cf210b6d150a761c38133257782cc8e63a0d5a4af47f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/compare_canonical_necessity_smokes.py": {
+      "bytes": 6021,
+      "sha256": "c89c8826a5de33a50cedbeb484d5a92313daa6d9936a8a5e2fa4914bc0acfed6"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/compare_canonical_oracle_smokes.py": {
+      "bytes": 5987,
+      "sha256": "0426b53ea235d50594804e300cf03d9a95d20259e7919fa79674d44a374fbff3"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/compare_fresh_copy_smokes.py": {
+      "bytes": 6177,
+      "sha256": "bd440072ffc54d5af3f42d7c474b4c06c63590599554d1c63f34523d3b56d946"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/copy_necessity_data.py": {
+      "bytes": 10892,
+      "sha256": "bd3b426cd7e1e30b59adc270d299d80aa095014a137b33189c1e59a21197c9e8"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/copy_necessity_metrics.py": {
+      "bytes": 2812,
+      "sha256": "f13335f4e37c51b5b26f97ab86b588715480bf9cdc1b3484b94344a21429817b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/copy_readout_data.py": {
+      "bytes": 9340,
+      "sha256": "331c69ba57ffdca4cb5fe5a3d27e8f8577ca8365d090bdf4ea5769b21f0ec9ed"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/copy_readout_metrics.py": {
+      "bytes": 4274,
+      "sha256": "c5d29d0ed0d4a6a184daa562190ecf774241e68eea5d5d4ba0d94a969fce58eb"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/copy_readout_runtime.py": {
+      "bytes": 8704,
+      "sha256": "521f66cb509a614c3442c255a8bdf8a9fd94d4fa874e6b416b0a7258d4cbea62"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/copy_transfer_data.py": {
+      "bytes": 9522,
+      "sha256": "8168cf43a687c004469bc07cdf68f4edcb00e5e170db128bf7f58c93a718db9e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/copy_transfer_metrics.py": {
+      "bytes": 5792,
+      "sha256": "5e90dfd18b4aa24d47109013eebe3d517a2cdba30db0b1c49ed39acc6af61369"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/fresh_copy_data.py": {
+      "bytes": 13415,
+      "sha256": "53bea45ed3429f8a92bcfdbbe56297dfc0291f72464bf4a17a8bad4ab9e88989"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/fresh_copy_metrics.py": {
+      "bytes": 2839,
+      "sha256": "b29dbc6312d27f8e6640452cef78baae7389bb317831cf161a74a7f6266bd671"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/fresh_copy_runtime.py": {
+      "bytes": 3253,
+      "sha256": "dfca521f1544f1c4f630dd973dd46fc3129df5c6d0adeeb25d2bcdfb94bd053c"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/fresh_layer_controls.py": {
+      "bytes": 9783,
+      "sha256": "7f88f1212e59a79ad50878c76bed1ac8de485f9e0e5bdbb8600bea9cf901ad90"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/fresh_timing_controls.py": {
+      "bytes": 13092,
+      "sha256": "6bb1a1cb073c43efb6b5a4753a574d0b33dfeade476b643313327d34566ea169"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/history_no_repeat_data.py": {
+      "bytes": 18353,
+      "sha256": "5914092a4aa17593a5beb6dbb4ff0fce015e9fc33a3c6ee05aad053069e8094e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/history_no_repeat_metrics.py": {
+      "bytes": 7000,
+      "sha256": "7991334471ccb6e76fdd78b5bede316b27ee6db32a75134e0fcafd24147ac82f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/locality_event_data.py": {
+      "bytes": 20175,
+      "sha256": "35d742c796722f1e8066b7d5a7ebfd858df93726209829514cadfc0874a5f59e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/locality_event_runtime.py": {
+      "bytes": 7576,
+      "sha256": "e304ca3134a1be0c9008fa7ae6399323251e8f6e199693dc80ec127822c3cdc5"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/locality_panel_data.py": {
+      "bytes": 7081,
+      "sha256": "f7ea49ce27290d5ddaf760284a33c669beb185abd609d072ac5827d47b574cb1"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/locality_panel_metrics.py": {
+      "bytes": 5747,
+      "sha256": "a561933e5e2e0c60b367133e6818d2eb9c3411970bd667877c6d28cf33ca0229"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/locality_transfer_data.py": {
+      "bytes": 15691,
+      "sha256": "c15a04da6277f0373f282a28a5d484864f1df8677fef1f933a0774891146df72"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/locality_transfer_metrics.py": {
+      "bytes": 5477,
+      "sha256": "e1d849291261649788387783608f4aa7f8ba2dd9e6050e79092ac1c5e528eea6"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/overwrite_history_data.py": {
+      "bytes": 19069,
+      "sha256": "2d996c363c73d22afe3111723587836dbe8a05b791dbf9a2da761bd2a7e97c83"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/overwrite_history_metrics.py": {
+      "bytes": 8504,
+      "sha256": "79b6aaf21244085af9a0a60bb03d33de977a467926242a43935e42e64f6e1f49"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/prepare_copy_dependency_transfer.py": {
+      "bytes": 2725,
+      "sha256": "099e87a05105e00f034148d002f4f03ee206a97b3f8a69596b75dce3ecef798f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/prepare_copy_evidence_necessity.py": {
+      "bytes": 2465,
+      "sha256": "2c404c9709e88642f551807f7362b44c108fa957ae79c35752870cc320ba0e36"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/prepare_copy_readout_sufficiency.py": {
+      "bytes": 2464,
+      "sha256": "18a95b7ecb446eb725bf97d7e0cf3adda772900b914b69bc2beccc504722dd23"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/prepare_fresh_copy_confirmation.py": {
+      "bytes": 3488,
+      "sha256": "d17a4cf243fc3a3063a6f8f1c47714db2d4c4d89f6c503b0b04f001b18f91c0e"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/prepare_semantic_history_no_repeat.py": {
+      "bytes": 3581,
+      "sha256": "46463bc367b512d6a847299c298b94450853b0e5455d6a85b07bf998c729584b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/prepare_semantic_overwrite_history.py": {
+      "bytes": 3527,
+      "sha256": "fbf1905c676aa3e986db55d25fedd942c2dae3a0a5a9c786eba0f24daae3cc6f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/prepare_unseen_shared_timing.py": {
+      "bytes": 3210,
+      "sha256": "fc0b9b15dd80921381db6d81b385869b240eed15a8d1e9f15e982a6055483e4f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/prepare_write_locality_adapter_transfer.py": {
+      "bytes": 3598,
+      "sha256": "312b571023ca8e59045c03ef6a343090d78e8086737be3dd76acfa3b3d5301cd"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/prepare_write_locality_control_panel.py": {
+      "bytes": 3076,
+      "sha256": "5eef6a1b07f3a630a0d9ce6444e7e836d0af0a54481b138d3bad429973ded85f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/prepare_write_locality_event_paths.py": {
+      "bytes": 3328,
+      "sha256": "6fce22ee2e152bbe9fef3262e33967589f585c9c1572bea18717b0c73302ace0"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/prepare_write_locality_load_screen.py": {
+      "bytes": 3102,
+      "sha256": "9d7700bc4d52f1f16b9392cceb8af6a43cc82cd9a42a7fdb2ada8a3dfbc9eab2"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/prepare_write_locality_replication.py": {
+      "bytes": 3895,
+      "sha256": "91e48536230e3b347fb83494612dde647c6f0e5eaf376db2e6fb00c2f6f720de"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/question_path_controls.py": {
+      "bytes": 12892,
+      "sha256": "ebde55bf45e7143a55806f2ff2fd2a41484313501ea0b36755fc6e5e556fcf61"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_canonical_copy_necessity.py": {
+      "bytes": 14655,
+      "sha256": "33b932ebaf5393a9b1a5d05d7dd6a06d288de90bf99a89fdf53172de93e63df2"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_canonical_oracle_replication.py": {
+      "bytes": 15382,
+      "sha256": "8d0354c918c5fe7d599ca2e0d624b03f43a51b60a441570cf6976e870bc42bde"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_controller_trial.py": {
+      "bytes": 26799,
+      "sha256": "d6b4520247408c7f785108bd94292b21673e0e57814acff5a984cca28730c262"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_copy_dependency_transfer.py": {
+      "bytes": 12699,
+      "sha256": "7d085acf81de9acb34891695e3514e8c7aaf78621a2a95462497ffefd470e2b2"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_copy_evidence_necessity.py": {
+      "bytes": 12223,
+      "sha256": "80eb71f1b036a806020a78d0cd56299d3be4a44f14ec05f576a62b5550b0dfb6"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_copy_readout_sufficiency.py": {
+      "bytes": 12242,
+      "sha256": "1c75f0038b0595951715a829781716ff56186e005042e27dd9a733fe8fe01073"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_fresh_control_replay.py": {
+      "bytes": 20399,
+      "sha256": "b6833a30aeabe80deec174e99f2e42f68ddc0c39aacde85aa7c9eedb2be3a2b7"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_fresh_copy_confirmation.py": {
+      "bytes": 15051,
+      "sha256": "46aff58f5d48a8908dfea7ebe3acd503a931bc1bdabbe1cda65f1cb602e7f70d"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_fresh_layer_localization.py": {
+      "bytes": 21134,
+      "sha256": "a8f9f6a4bf7c803677b99723c3def383e989b9381c43d955bb43ee9fbdb4c8f1"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_fresh_token_timing.py": {
+      "bytes": 18100,
+      "sha256": "c78af0f21ffce58d955038aef2dd40680c387aa7c650c48a72e706c08147af6f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_oracle_kv_readout.py": {
+      "bytes": 11096,
+      "sha256": "45f0cf4760af5fdfa42e473c80aa5dc6fbf04d0a71d23b7927b6310e06c8e886"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_question_path_mediation.py": {
+      "bytes": 21193,
+      "sha256": "59716f2d76c1c051333fa73833b374dcaef35d782fe551f30ad0dd03922c6377"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_semantic_history_no_repeat.py": {
+      "bytes": 9432,
+      "sha256": "052b40cc3ccf66eacc579595bfc81d0e74e80aeceb5ec2a3eb362470a077bb6f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_semantic_overwrite_history.py": {
+      "bytes": 3612,
+      "sha256": "0c7004ee13b1874f7e4b4f0ec9b2646a6b7c879023d347fef83e13357bf80c72"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_state_continuation.py": {
+      "bytes": 21215,
+      "sha256": "544f007924dad2a0a766c3ca409f0167a5933818642af6ab2a4fd220d1d5206b"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_unseen_shared_timing.py": {
+      "bytes": 13115,
+      "sha256": "f76fbf228eb7fb0e8c0547ecfe33ad20537028ca98783714e8cd2de17e7956d2"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_write_locality_adapter_transfer.py": {
+      "bytes": 13693,
+      "sha256": "a870e92d8db3f1559c26181364ed98a0139e0bd854bfb7a5b20579b64c749c85"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_write_locality_control_panel.py": {
+      "bytes": 3312,
+      "sha256": "42bb78264eed6dbe3d21252b5c72642d7706a93ea158055291a9e7eff289a468"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_write_locality_event_paths.py": {
+      "bytes": 15311,
+      "sha256": "6b575f2aee50fed0d38afd5df17698a8d6a31dbe6292ee4281b1966a967e5c09"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_write_locality_load_screen.py": {
+      "bytes": 9995,
+      "sha256": "50cf643027299432d247e6fc2ed7cd9d43d5460a50e9d8cf0e29bdef71ced32f"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/run_write_locality_replication.py": {
+      "bytes": 1826,
+      "sha256": "c34ae1209a7958fc9d7de21f58865701c409e26db012514a5e7f28f7fd927232"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/semantic_order_path_common.py": {
+      "bytes": 10061,
+      "sha256": "dd700ac39fb5c64639857b620acb273744bb639940867c2bf6744cce3f14ee67"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/stable_adapter_linears.py": {
+      "bytes": 2320,
+      "sha256": "99c57ff1ad4fe2722b4a260e62e3a63d69c2190acd9e710193a6fabe7617c670"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/state_continuation_controls.py": {
+      "bytes": 13191,
+      "sha256": "8e0fec22e097e2dd6294fa17311e6551ac18725bb20becbe3ee333e4dff71775"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/unseen_shared_timing_data.py": {
+      "bytes": 9234,
+      "sha256": "9743f1faf6075f3dbdeb12f4bdfec230c8613a43b0fe9bd7a64add4436079492"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/unseen_shared_timing_metrics.py": {
+      "bytes": 3529,
+      "sha256": "ea9e7aa319a4b82a11c0b2be51a790b280befa9fe46251e09ddba629ea9c0594"
+    },
+    "runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01/sources/scripts/unseen_shared_timing_runtime.py": {
+      "bytes": 10358,
+      "sha256": "48cb1f16fcdc8cc50c00087ddabc535ef2a98220a604f665e2eda52b570f4166"
+    }
+  }
+}
