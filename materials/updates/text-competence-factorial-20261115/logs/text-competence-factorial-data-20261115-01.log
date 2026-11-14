@@ -1,0 +1,1 @@
+{"status": "registered_before_inference", "transformed_registrations": 1344, "sources": 169, "unique_prompts": {"full": 336, "support_text": 144, "compiled_full": 336, "compiled_support": 144}, "prefix_counts": {"full": 56, "support_text": 64, "compiled_full": 56, "compiled_support": 64}}

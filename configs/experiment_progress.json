@@ -6547,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T22:21:12.618336+00:00",
+  "updated_utc": "2026-11-14T22:25:13.601838+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10651,7 +10651,7 @@
     "next_action": "Decide a complete-cohort competence or evidence-use control from the full results. No new architecture claim, scaleup or new training; any next inference needs its own preregistration."
   },
   "text_competence_factorial": {
-    "status": "registered_before_transformation_and_inference_targeted_tests8_passed_complete_suite_running",
+    "status": "all1344_texts_registered_before_inference_complete_tests223_passed_operational_pipeline_starting",
     "plan": "configs/text_competence_factorial_plan.json",
     "plan_sha256": "fce95c001170418fdd485495d5cfde0120c89b751e136816fc8fc1d86621f00d",
     "data_source_count": 169,
@@ -10666,6 +10666,15 @@
     "operational_readouts_per_order": 360,
     "dataset": "/media/990Pro/Code/SAS/datasets/memory_update/text-competence-factorial-v1",
     "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/text-competence-factorial-20261115-01",
-    "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/text-competence-factorial-audit-20261115-01.json"
+    "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/text-competence-factorial-audit-20261115-01.json",
+    "complete_tests_passed": 223,
+    "transformations_sha256": "3b0eba9db292da79abfafeda0bcc495409da8327f8c7f85c8e735da129ba3a5c",
+    "collisions_sha256": "139a94ba715fbb22a7372e0bbf5a7b3aaf86c275bd6211295fcca1aa91fdc3fc",
+    "distinct_prefixes_per_regime": {
+      "full": 56,
+      "support_text": 64,
+      "compiled_full": 56,
+      "compiled_support": 64
+    }
   }
 }
