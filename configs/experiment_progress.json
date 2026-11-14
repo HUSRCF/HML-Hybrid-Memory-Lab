@@ -11009,7 +11009,7 @@
     "gdn_only_denotes_adapter_scope": true
   },
   "oracle_write_hold_factorial": {
-    "status": "forward_smoke_audited_reverse_running",
+    "status": "opposite_smokes_and_complete_prefix_checks_passed_primary_starting",
     "protocol": "configs/oracle_write_hold_factorial_plan.json",
     "protocol_sha256": "b05fc0ee3b1a1134e54e2a0c43ee815a650b08599c9654122e87682d1f9710e1",
     "prior_runtime_sources_preserved": 172,
@@ -11033,6 +11033,12 @@
     "cached_state_identity_controls": 60,
     "actual_attention_controls": 240,
     "noop_wrapper_controls": 120,
-    "auxiliary_prefix_registration": "configs/oracle_write_hold_prefix_verification.json"
+    "auxiliary_prefix_registration": "configs/oracle_write_hold_prefix_verification.json",
+    "reverse_smoke_readouts_audited": 360,
+    "opposite_smoke_raw_bytes_exact": true,
+    "independent_prefix_checks": 120,
+    "complete_cache_fields_per_prefix": 48,
+    "historical_kv_fields_per_prefix": 12,
+    "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/oracle-write-hold-factorial-20261115-01"
   }
 }
