@@ -11009,7 +11009,7 @@
     "gdn_only_denotes_adapter_scope": true
   },
   "oracle_write_hold_factorial": {
-    "status": "opposite_smokes_and_complete_prefix_checks_passed_primary_starting",
+    "status": "primary_running_after_all_operational_gates",
     "protocol": "configs/oracle_write_hold_factorial_plan.json",
     "protocol_sha256": "b05fc0ee3b1a1134e54e2a0c43ee815a650b08599c9654122e87682d1f9710e1",
     "prior_runtime_sources_preserved": 172,
@@ -11018,7 +11018,7 @@
     "primary_readouts_planned": 6720,
     "new_scientific_results": false,
     "prior_failed_gates_unchanged": true,
-    "next_action": "Complete full tests, freeze original masks, run actual native-kernel identity checks and two independently audited opposite-order360readout smokes before primary.",
+    "next_action": "Finish complete6720readout primary, independently audit, export and inspect all20cells, byte-verify snapshot and publish all raw/control evidence. No new training or scaleup.",
     "full_tests_passed": 229,
     "full_tests_seconds": 157.269,
     "source_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/oracle-write-hold-factorial-v1",
@@ -11039,6 +11039,17 @@
     "independent_prefix_checks": 120,
     "complete_cache_fields_per_prefix": 48,
     "historical_kv_fields_per_prefix": 12,
-    "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/oracle-write-hold-factorial-20261115-01"
+    "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/oracle-write-hold-factorial-20261115-01",
+    "last_progress_utc": "2026-11-14T23:42:00.547829+00:00",
+    "primary_completed_readouts_at_checkpoint": 992,
+    "primary_progress_at_checkpoint": {
+      "native": {
+        "full": 336,
+        "hold": 336,
+        "oracle": 320,
+        "hold_oracle": 0
+      }
+    },
+    "primary_scientific_results_published": false
   }
 }
