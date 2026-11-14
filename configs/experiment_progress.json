@@ -6547,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T22:34:53.399348+00:00",
+  "updated_utc": "2026-11-14T22:35:38.460376+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10651,7 +10651,7 @@
     "next_action": "Decide a complete-cohort competence or evidence-use control from the full results. No new architecture claim, scaleup or new training; any next inference needs its own preregistration."
   },
   "text_competence_factorial": {
-    "status": "both360_operational_runs_audited_and_exactly_equivalent_primary6720_starting",
+    "status": "primary6720_running_after_both_exact_audited360_smokes",
     "plan": "configs/text_competence_factorial_plan.json",
     "plan_sha256": "fce95c001170418fdd485495d5cfde0120c89b751e136816fc8fc1d86621f00d",
     "data_source_count": 169,
@@ -10690,6 +10690,9 @@
     "exact_smoke_readouts_per_order": 360,
     "exact_full_history_attention_controls_per_order": 240,
     "exact_question_prefix_checks_per_order": 36,
-    "smoke_equivalence": "/media/990Pro/Code/SAS/artifacts/memory_update/text-competence-factorial-smoke-equivalence-20261115-01.json"
+    "smoke_equivalence": "/media/990Pro/Code/SAS/artifacts/memory_update/text-competence-factorial-smoke-equivalence-20261115-01.json",
+    "primary_started_utc": "2026-11-14T22:34:25.197999+00:00",
+    "primary_runtime_sources_verified": 172,
+    "primary_start_observation": "materials/updates/text-competence-factorial-20261115/primary-start-manifest.json"
   }
 }
