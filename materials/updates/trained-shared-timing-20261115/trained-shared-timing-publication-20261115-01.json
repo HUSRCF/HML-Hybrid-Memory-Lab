@@ -1,0 +1,50 @@
+{
+  "status": "published_and_all_remote_assets_sha256_verified",
+  "verified_utc": "2026-11-14T21:10:14.549110+00:00",
+  "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/trained-shared-timing-confirmation-2026-11-15",
+  "release_id": 445591278,
+  "release_tag": "trained-shared-timing-confirmation-2026-11-15",
+  "source_commit": "f0a69f8223d02b0e3599e9570df11bb8c47f5a7d",
+  "assets": [
+    {
+      "name": "trained-shared-timing-confirmation-20261115.tar.gz",
+      "bytes": 8616620,
+      "sha256": "9aeea50215284ac51e81096eeec38259768c6fd202636d14deeb741aeace8764",
+      "github_digest": "sha256:9aeea50215284ac51e81096eeec38259768c6fd202636d14deeb741aeace8764",
+      "download_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/download/trained-shared-timing-confirmation-2026-11-15/trained-shared-timing-confirmation-20261115.tar.gz"
+    },
+    {
+      "name": "file_manifest.json",
+      "bytes": 244812,
+      "sha256": "563b91a7121a0fe586ed9fa9df7ec1272c78427ed6a7c3167525676d1caace10",
+      "github_digest": "sha256:563b91a7121a0fe586ed9fa9df7ec1272c78427ed6a7c3167525676d1caace10",
+      "download_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/download/trained-shared-timing-confirmation-2026-11-15/file_manifest.json"
+    },
+    {
+      "name": "local_verification.json",
+      "bytes": 272,
+      "sha256": "4528a6267b9cacecdf4bb3cb65c845394d97b3e327122f5cda61ae8ffe0fbf32",
+      "github_digest": "sha256:4528a6267b9cacecdf4bb3cb65c845394d97b3e327122f5cda61ae8ffe0fbf32",
+      "download_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/download/trained-shared-timing-confirmation-2026-11-15/local_verification.json"
+    }
+  ],
+  "files_in_archive": 1076,
+  "archive_entries": 1077,
+  "all16_complete_raw_result_files_present": true,
+  "runtime_live_and_archived_sources_verified": 160,
+  "csv_physical_rows_compared_to_actual_raw_answers": 5376,
+  "git_csv_bytes_exact": true,
+  "figure_visually_inspected": true,
+  "figure_pixels": [
+    2430,
+    1620
+  ],
+  "audit_sha256": "bcce3a36a63185ed0a4c5843a5d6b19bcc83e9e87d21d54b200ed1057d3f01c1",
+  "registered_criteria": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "architecture_effectiveness_claim": false,
+  "prior_gates_changed": false
+}

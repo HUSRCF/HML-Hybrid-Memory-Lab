@@ -6547,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T21:08:31.566199+00:00",
+  "updated_utc": "2026-11-14T21:10:14.561620+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10072,7 +10072,7 @@
   },
   "current_phase": "matched_shared_training_timing",
   "matched_shared_training_timing": {
-    "status": "completed_audited_confirmation_all_three_registered_criteria_failed_publication_pending",
+    "status": "completed_audited_and_published_confirmation_all_three_criteria_failed",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
     "plan_sha256": "027e1d8fcfde9478115e1d238b0528497e6285ca3b1a80086fe332389da5405f",
     "registered_utc": "2026-11-14T19:35:24.223581+00:00",
@@ -10419,6 +10419,12 @@
       "archive": "trained-shared-timing-confirmation-20261115.tar.gz",
       "bytes": 8616620,
       "sha256": "9aeea50215284ac51e81096eeec38259768c6fd202636d14deeb741aeace8764"
-    }
+    },
+    "confirmation_publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/trained-shared-timing-publication-20261115-01.json",
+    "confirmation_release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/trained-shared-timing-confirmation-2026-11-15",
+    "confirmation_remote_assets_verified": 3,
+    "confirmation_git_csv_rows_verified": 5376,
+    "architecture_effectiveness_claim": false,
+    "can_change_prior_gates": false
   }
 }
