@@ -1,0 +1,40 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:03,  2.58it/s]Loading weights:  11%|█▏        | 36/320 [00:00<00:02, 94.68it/s]Loading weights:  20%|██        | 65/320 [00:00<00:01, 145.34it/s]Loading weights:  29%|██▉       | 94/320 [00:00<00:01, 184.61it/s]Loading weights:  40%|████      | 128/320 [00:00<00:00, 222.13it/s]Loading weights:  49%|████▉     | 156/320 [00:00<00:00, 232.74it/s]Loading weights:  58%|█████▊    | 186/320 [00:01<00:00, 247.70it/s]Loading weights:  69%|██████▉   | 221/320 [00:01<00:00, 274.66it/s]Loading weights:  78%|███████▊  | 251/320 [00:01<00:00, 277.22it/s]Loading weights:  88%|████████▊ | 281/320 [00:01<00:00, 276.45it/s]Loading weights:  97%|█████████▋| 310/320 [00:01<00:00, 275.62it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 215.67it/s]
+{"event": "training", "arm": "shared_question", "step": 48, "loss": 0.002778884139843285}
+{"event": "training", "arm": "shared_question", "step": 96, "loss": 0.0030737551278434694}
+{"event": "training", "arm": "shared_question", "step": 144, "loss": 0.0015831733180675656}
+{"event": "training", "arm": "shared_question", "step": 192, "loss": 0.0005297840980347246}
+{"event": "training", "arm": "shared_question", "step": 240, "loss": 0.001254452916327864}
+{"event": "training", "arm": "shared_question", "step": 288, "loss": 0.0002005240530706942}
+{"event": "training", "arm": "shared_question", "step": 336, "loss": 0.0014998103870311752}
+{"event": "training", "arm": "shared_question", "step": 384, "loss": 0.000333489864715375}
+{"event": "training", "arm": "shared_question", "step": 432, "loss": 0.24180171277112095}
+{"event": "validation", "arm": "shared_question", "examples": 108}
+{"event": "validation", "arm": "shared_question", "examples": 216}
+{"event": "validation", "arm": "shared_question", "examples": 324}
+{"event": "validation", "arm": "shared_question", "examples": 432}
+{"event": "final_evaluated", "arm": "shared_question", "correct": 428, "examples": 432}
+{"event": "permuted_validation", "arm": "shared_question", "examples": 108}
+{"event": "permuted_validation", "arm": "shared_question", "examples": 216}
+{"event": "permuted_validation", "arm": "shared_question", "examples": 324}
+{"event": "permuted_validation", "arm": "shared_question", "examples": 432}
+{"event": "permuted_evaluated", "arm": "shared_question", "correct": 430, "examples": 432}
+{"event": "training", "arm": "shared_ledger", "step": 48, "loss": 0.0035902090603485703}
+{"event": "training", "arm": "shared_ledger", "step": 96, "loss": 0.003110908844973892}
+{"event": "training", "arm": "shared_ledger", "step": 144, "loss": 0.002570691896835342}
+{"event": "training", "arm": "shared_ledger", "step": 192, "loss": 0.0008027434087125584}
+{"event": "training", "arm": "shared_ledger", "step": 240, "loss": 0.001191060378914699}
+{"event": "training", "arm": "shared_ledger", "step": 288, "loss": 0.00013131202285876498}
+{"event": "training", "arm": "shared_ledger", "step": 336, "loss": 0.0001627148340048734}
+{"event": "training", "arm": "shared_ledger", "step": 384, "loss": 8.467841871606652e-05}
+{"event": "training", "arm": "shared_ledger", "step": 432, "loss": 0.6521614482608129}
+{"event": "validation", "arm": "shared_ledger", "examples": 108}
+{"event": "validation", "arm": "shared_ledger", "examples": 216}
+{"event": "validation", "arm": "shared_ledger", "examples": 324}
+{"event": "validation", "arm": "shared_ledger", "examples": 432}
+{"event": "final_evaluated", "arm": "shared_ledger", "correct": 427, "examples": 432}
+{"event": "permuted_validation", "arm": "shared_ledger", "examples": 108}
+{"event": "permuted_validation", "arm": "shared_ledger", "examples": 216}
+{"event": "permuted_validation", "arm": "shared_ledger", "examples": 324}
+{"event": "permuted_validation", "arm": "shared_ledger", "examples": 432}
+{"event": "permuted_evaluated", "arm": "shared_ledger", "correct": 430, "examples": 432}

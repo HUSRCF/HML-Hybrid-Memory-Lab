@@ -6547,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T20:12:11.123346+00:00",
+  "updated_utc": "2026-11-14T20:16:41.622066+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10072,7 +10072,7 @@
   },
   "current_phase": "matched_shared_training_timing",
   "matched_shared_training_timing": {
-    "status": "both432update_schedules_complete_final_validation_running",
+    "status": "completed_training_and_independent_audit_confirmation_pipeline_started",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
     "plan_sha256": "027e1d8fcfde9478115e1d238b0528497e6285ca3b1a80086fe332389da5405f",
     "registered_utc": "2026-11-14T19:35:24.223581+00:00",
@@ -10113,7 +10113,43 @@
     "training_run": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
     "training_log": "/media/990Pro/Code/SAS/logs/matched-shared-training-timing-train-20261115-02.log",
     "confirmation_runtime_sources": 160,
-    "confirmation_full_tests_passed": 206,
-    "confirmation_full_test_log": "/media/990Pro/Code/SAS/logs/trained-shared-timing-complete-tests-20261115-01.log"
+    "confirmation_full_tests_passed": 207,
+    "confirmation_full_test_log": "/media/990Pro/Code/SAS/logs/trained-shared-timing-complete-tests-20261115-01.log",
+    "training_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-audit-20261115-01.json",
+    "optimizer_updates_audited": 864,
+    "checkpoints_audited": 6,
+    "teacher_train_records_audited": 1728,
+    "development_readouts_audited": 1728,
+    "training_audit_sha256": "58dc86ad25e8d858e0077d3b1e5ae7e4950130b02e6d8e6ec0a7387be799e49c",
+    "teacher_fits": {
+      "shared_question": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005023321897164545,
+        "teacher_numeric_tokens_correct": 2590,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      },
+      "shared_ledger": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.0036282962099613136,
+        "teacher_numeric_tokens_correct": 2587,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "confirmation_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/fresh-trained-shared-timing-v1",
+    "confirmation_run": "/media/990Pro/Code/SAS/runs/memory_update/trained-shared-timing-20261115-01",
+    "confirmation_primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/trained-shared-timing-audit-20261115-01.json",
+    "training_backup": {
+      "status": "all_archive_members_byte_verified",
+      "release_tag": "matched-shared-training-timing-2026-11-15",
+      "local_directory": "/media/990Pro/Code/SAS/backups/matched-shared-training-timing-20261115-01",
+      "files": 724,
+      "archive_entries": 725,
+      "files_verified": 724,
+      "archive": "matched-shared-training-timing-20261115.tar.gz",
+      "bytes": 49564984,
+      "sha256": "27e82e8f5c470816770d4b864b07b0c520e47bdffccdd34acebfc49e77e448f0"
+    }
   }
 }
