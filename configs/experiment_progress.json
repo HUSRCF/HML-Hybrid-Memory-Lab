@@ -6547,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T21:44:24.927176+00:00",
+  "updated_utc": "2026-11-14T21:48:30.871834+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10462,6 +10462,8 @@
     "operational_controls_passed": true,
     "exact_smoke_rows_per_order": 270,
     "exact_supplemental_depth2_controls": 10,
-    "smoke_equivalence": "/media/990Pro/Code/SAS/artifacts/memory_update/trained-timing-evidence-access-smoke-equivalence-20261115-01.json"
+    "smoke_equivalence": "/media/990Pro/Code/SAS/artifacts/memory_update/trained-timing-evidence-access-smoke-equivalence-20261115-01.json",
+    "complete_tests_after_supplement": 215,
+    "complete_tests_after_supplement_log": "/media/990Pro/Code/SAS/logs/trained-timing-evidence-access-complete-tests-20261115-02.log"
   }
 }
