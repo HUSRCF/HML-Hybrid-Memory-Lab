@@ -6547,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T21:35:59.165654+00:00",
+  "updated_utc": "2026-11-14T21:44:24.927176+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10428,7 +10428,7 @@
     "can_change_prior_gates": false
   },
   "trained_timing_evidence_access": {
-    "status": "masks_registered_coverage_strengthened_before_any_inference_operational_pipeline_starting",
+    "status": "both270_smoke_orders_and_independent_equivalence_passed_primary5040_running",
     "plan": "configs/trained_timing_evidence_access_plan.json",
     "plan_sha256": "c4a5e0e20c423c5a4764860ff4bf4934e739b73a0962143e86b518867141e8cc",
     "complete_tests_passed": 213,
@@ -10458,6 +10458,10 @@
     "sealed_data_sources_preserved": 163,
     "supplemental_depth2_controls_per_model": 2,
     "coverage_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/trained-timing-evidence-access-coverage-receipt-20261115-01.json",
-    "inference_runs_before_correction": 0
+    "inference_runs_before_correction": 0,
+    "operational_controls_passed": true,
+    "exact_smoke_rows_per_order": 270,
+    "exact_supplemental_depth2_controls": 10,
+    "smoke_equivalence": "/media/990Pro/Code/SAS/artifacts/memory_update/trained-timing-evidence-access-smoke-equivalence-20261115-01.json"
   }
 }

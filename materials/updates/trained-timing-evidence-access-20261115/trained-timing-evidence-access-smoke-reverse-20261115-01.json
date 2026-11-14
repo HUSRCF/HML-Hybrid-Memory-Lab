@@ -1,0 +1,162 @@
+{
+  "status": "audited_trained_timing_evidence_access_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/trained-timing-evidence-access-smoke-reverse-20261115-01",
+  "manifest_sha256": "82576fe7c0774a56e4a984ce9268f1dda49f59f8e4c8a15e8c3d77027bff35db",
+  "dataset_manifest_sha256": "f23e18dd755417761f4a0a609dd0bbde2c8d21644688881e1c42d5009525de74",
+  "mask_registry_sha256": "b123217dfd5e2f8214b1d4f99a441b501548078203d9b99787cca39bcae1cbe3",
+  "precision_addendum_sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc",
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "references": {
+    "source_audit_sha256": "bcce3a36a63185ed0a4c5843a5d6b19bcc83e9e87d21d54b200ed1057d3f01c1",
+    "source_manifest_sha256": "96fc6a877ad70716dd18b777af0b6bec13ae966e3ad92ae5bc9ad5b2637a2e09",
+    "prior_timing_criteria_unchanged": {
+      "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+      "matched_question_positive_joint_gain_over_native": false,
+      "matched_question_no_all_trained_all_deployed_correct_regression": false
+    },
+    "prior_fresh_gates_unchanged": {
+      "generic_shared_controller": {
+        "passed": false,
+        "comparators": {
+          "independent": {
+            "positive_overall": true,
+            "at_least_three_positive_streams": true,
+            "positive_at_every_depth": false
+          },
+          "local_question": {
+            "positive_overall": true,
+            "at_least_three_positive_streams": true,
+            "positive_at_every_depth": true
+          },
+          "gdn_question_only": {
+            "positive_overall": true,
+            "at_least_three_positive_streams": true,
+            "positive_at_every_depth": false
+          }
+        },
+        "scope": "Fixed fresh8stream natural full-history candidate screen. Generic shared latents do not implement explicit semantic constraints. Does not erase previous failed comparisons or establish an architecture contribution."
+      },
+      "frozen_prefix_sufficiency": {
+        "passed": false,
+        "model_checks": {
+          "local_question": {
+            "oracle_current_at_least90_of96": true,
+            "historical_after_no_lower_than_full": true,
+            "unrelated_after_no_lower_than_full": false,
+            "positive_net_current_repair": true,
+            "at_least_four_positive_base_streams": true
+          },
+          "gdn_question_only": {
+            "oracle_current_at_least90_of96": true,
+            "historical_after_no_lower_than_full": true,
+            "unrelated_after_no_lower_than_full": true,
+            "positive_net_current_repair": true,
+            "at_least_four_positive_base_streams": true
+          }
+        }
+      },
+      "whole_record_necessity": {
+        "passed": false,
+        "model_checks": {
+          "local_question": {
+            "other_current_after_no_lower_than_full": false,
+            "other_history_after_no_lower_than_full": true,
+            "other_unrelated_after_no_lower_than_full": true,
+            "other_before_joint_no_lower_than_full": true,
+            "positive_net_support_removal_loss": true,
+            "at_least_four_positive_loss_streams": true
+          },
+          "gdn_question_only": {
+            "other_current_after_no_lower_than_full": true,
+            "other_history_after_no_lower_than_full": true,
+            "other_unrelated_after_no_lower_than_full": true,
+            "other_before_joint_no_lower_than_full": true,
+            "positive_net_support_removal_loss": true,
+            "at_least_four_positive_loss_streams": true
+          }
+        }
+      }
+    },
+    "training": {
+      "shared": {
+        "checkpoint_state_sha256": "21037c2505371f50bf76cdf5411a3bcf28b3baf5fd83da932b0e4036e3c4f197",
+        "checkpoint_sha256": "3ac57cfd86116dc712aacd14de526ccc3cb8f60c7348317fbacc16910914d8fc"
+      },
+      "shared_question_trained_all": {
+        "checkpoint_state_sha256": "ac058fcdb8e1478787a50c5e77808896697045d377a5768967bbcbbb528266a5",
+        "checkpoint_sha256": "1aa88746b1e317047b6095e21cdfc70f7008b1205c79378b1a740e2df3410035"
+      },
+      "shared_question_trained_question": {
+        "checkpoint_state_sha256": "ac058fcdb8e1478787a50c5e77808896697045d377a5768967bbcbbb528266a5",
+        "checkpoint_sha256": "1aa88746b1e317047b6095e21cdfc70f7008b1205c79378b1a740e2df3410035"
+      },
+      "gdn_all_tokens": {
+        "checkpoint_state_sha256": "cb5ddf299e0a0335c64a3815da0a26e18a7179df938731b8895c6e9b437de7e7",
+        "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb"
+      }
+    },
+    "all16_raw_sha256": {
+      "native": "aa28133a8608326bbf68458838b78db9a4939aaa0338b143f29a61abed573e71",
+      "shared": "75b7320697d3dab2d6094c78b16b8d33ee1446b8509e770f55d54e34a83e249d",
+      "shared_question_timing": "1cf72b6203788ab2655388807344b14f451a2bcf99a1df17c10bf878ebac3ef6",
+      "shared_ledger_timing": "dac5466fa43f37b5622a3bc50e1f849aba75c3052911db401a136f176d58ab28",
+      "shared_question_trained_all": "3ff70c969150ad902f373ac2d3fcb10063aae43e299ebcd10d1ed9682cfcab3f",
+      "shared_question_trained_question": "261860ea7510a4f0b55f72000145c63cd86f55f98ae187d2a69ed35cf300881c",
+      "shared_question_trained_ledger": "694d73ddddf143220d91af1bbf94cfd9556f35f42df95ab37eb8b27d7f328816",
+      "shared_ledger_trained_all": "d89a85587ae5bb23e4672447c0d63dd5b11bd041e0812dc0c8a2bd2069d5cdad",
+      "shared_ledger_trained_question": "cff66ebad1680205466125fde3934e7d69a53caf736eaf3a69462edf61aef13f",
+      "shared_ledger_trained_ledger": "be660611d396fda2903217466b1b16da8c80708c37f7f0f1cd00c9795b2a7f65",
+      "independent": "5824be08fca82ba97a1e445a5ab9f0e575c6434c4490430ad60b58def24369a2",
+      "local": "3574d198ba995b8cd4cda8beea0210b333ae4980ba334839d35e6f188d297a8f",
+      "local_question": "e47a2e355e009607b8a183a563dfff1859bfe0f293ca8d0b5520cb961e8d899b",
+      "attention_only": "159855f3c44c3e42eb6d523026956ca5051bd670c1430da7d41b2620b00051b2",
+      "gdn_all_tokens": "20ad9282db5f2bf73085599ea165cd0466b06bf4c2f35659b5f65e87edac1ea1",
+      "gdn_question_only": "ddbfa02f5c3bed594fffcba1066e561ce203196dee839451a2c220b22c0df731"
+    },
+    "actual_eos_token_id": 248044,
+    "generation_config_sha256": {},
+    "installed_modeling_source": "/home/husrcf/anaconda3/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py",
+    "installed_modeling_source_sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded"
+  },
+  "model_order": [
+    "gdn_all_tokens",
+    "shared_question_trained_question",
+    "shared_question_trained_all",
+    "shared",
+    "native"
+  ],
+  "new_physical_readouts_audited": 270,
+  "fresh_full_reference_readouts_audited": 90,
+  "new_masked_readouts_audited": 180,
+  "new_related_bindings_audited": 270,
+  "cross_profile_rows_in_primary": 0,
+  "native_anchors": 10,
+  "all_history_exact_controls": 50,
+  "actual_masked_attention_checks": 100,
+  "complete_prefix_and_historical_KV_proofs": 100,
+  "detached_native_exact_replays": 50,
+  "question_only_native_prefix_checks": 6,
+  "exact_completed_canonical_full_replays": 90,
+  "native_before_attach_exact_replays": 50,
+  "attached_none_identities": 40,
+  "source_files_verified": 166,
+  "supplemental_depth2_complete_memory_controls": 10,
+  "total_actual_masked_attention_checks_including_depth2": 120,
+  "prior_timing_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "metrics": {
+    "primary_evaluated": false
+  },
+  "interpretation": [
+    "Oracle is program-ground-truth historical support, not a learned Router or efficient sparse kernel. This is dense eager Attention with masks; no inference-speed or architecture superiority claim.",
+    "Oracle benefits, especially over disjoint equal-token control, support a contribution from query-time evidence access/distractor suppression under unchanged prefix memory. They do not uniquely identify retrieval, original-state damage or semantic scope.",
+    "Oracle failure cannot establish relation-composition failure: retained KV representations, question-time computation, attention allocation and intervention distribution shift can still fail. A separate text-evidence/compiled-state competence control is required before such attribution; it is not executed in this first diagnostic.",
+    "Nonslice controls token budget, not whole-event grammaticality; report this limitation. Everymodel still retains its full recurrent prefix memory and all post-boundary columns.",
+    "Original48cases are correlated variants of8source streams and were already inspected. Onepairedtraininginitialization; no newdomain, unseen-cohort or independently trained replication claim."
+  ],
+  "analysis_source_sha256": "e2c07f74ff9d1292d312e08f24de1a4086788cbbb748bb32a9eafdfff2c8d044"
+}
