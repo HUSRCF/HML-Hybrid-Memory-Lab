@@ -1,0 +1,36 @@
+{
+  "status": "published_and_all_remote_assets_sha256_verified",
+  "verified_utc": "2026-11-14T20:18:37.835762+00:00",
+  "release_id": 445563511,
+  "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/matched-shared-training-timing-2026-11-15",
+  "release_tag": "matched-shared-training-timing-2026-11-15",
+  "source_commit": "8866058d5808f07c5e0a3d2fef56d8bbf7065e1c",
+  "assets": [
+    {
+      "name": "matched-shared-training-timing-20261115.tar.gz",
+      "bytes": 49564984,
+      "sha256": "27e82e8f5c470816770d4b864b07b0c520e47bdffccdd34acebfc49e77e448f0",
+      "github_digest": "sha256:27e82e8f5c470816770d4b864b07b0c520e47bdffccdd34acebfc49e77e448f0",
+      "download_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/download/matched-shared-training-timing-2026-11-15/matched-shared-training-timing-20261115.tar.gz"
+    },
+    {
+      "name": "file_manifest.json",
+      "bytes": 159131,
+      "sha256": "d2f87dcd45d4306803d7fb63a3e5f9c5ab4eff8015365eec6b5e1fa40bd40013",
+      "github_digest": "sha256:d2f87dcd45d4306803d7fb63a3e5f9c5ab4eff8015365eec6b5e1fa40bd40013",
+      "download_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/download/matched-shared-training-timing-2026-11-15/file_manifest.json"
+    },
+    {
+      "name": "local_verification.json",
+      "bytes": 267,
+      "sha256": "6cf52a754356b8573fa082b8346fa43dd3af7e5a72fa54660b839a58b2478521",
+      "github_digest": "sha256:6cf52a754356b8573fa082b8346fa43dd3af7e5a72fa54660b839a58b2478521",
+      "download_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/download/matched-shared-training-timing-2026-11-15/local_verification.json"
+    }
+  ],
+  "files_in_archive": 724,
+  "archive_entries": 725,
+  "pretrained_weights_uploaded": false,
+  "environments_uploaded": false,
+  "primary_confirmation_evaluated": false
+}

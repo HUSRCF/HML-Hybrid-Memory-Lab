@@ -6547,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T20:16:41.622066+00:00",
+  "updated_utc": "2026-11-14T20:18:37.840190+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10141,7 +10141,7 @@
     "confirmation_run": "/media/990Pro/Code/SAS/runs/memory_update/trained-shared-timing-20261115-01",
     "confirmation_primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/trained-shared-timing-audit-20261115-01.json",
     "training_backup": {
-      "status": "all_archive_members_byte_verified",
+      "status": "published_and_all_remote_assets_sha256_verified",
       "release_tag": "matched-shared-training-timing-2026-11-15",
       "local_directory": "/media/990Pro/Code/SAS/backups/matched-shared-training-timing-20261115-01",
       "files": 724,
@@ -10149,7 +10149,49 @@
       "files_verified": 724,
       "archive": "matched-shared-training-timing-20261115.tar.gz",
       "bytes": 49564984,
-      "sha256": "27e82e8f5c470816770d4b864b07b0c520e47bdffccdd34acebfc49e77e448f0"
+      "sha256": "27e82e8f5c470816770d4b864b07b0c520e47bdffccdd34acebfc49e77e448f0",
+      "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/matched-shared-training-timing-2026-11-15",
+      "publication_receipt": "configs/matched-shared-training-timing-publication-20261115-01.json",
+      "remote_assets_verified": 3
+    },
+    "confirmation_registration": {
+      "status": "registered_before_inference",
+      "sources": 157,
+      "freshness": {
+        "overlap": {
+          "seeds": [],
+          "identifiers": [],
+          "complete_prompts": [],
+          "complete_prefixes": []
+        },
+        "new_seeds": [
+          63000,
+          63001,
+          63002,
+          63003,
+          63004,
+          63005,
+          63006,
+          63007
+        ],
+        "new_case_identifiers": 56,
+        "new_physical_prompts": 336,
+        "new_distinct_complete_prefixes": 56,
+        "prior_registered_directories": 19,
+        "prior_input_files": 80,
+        "prior_complete_prompts": 7056,
+        "prior_complete_prefixes": 2024
+      },
+      "manifest_sha256": "3e6128b70375662843e021bfc872aef10a72edae5fc8b43de590c3f7c6d3a290",
+      "counts": {
+        "base_streams": 8,
+        "related_cases": 48,
+        "physical_queries": 336,
+        "related_bindings": 432,
+        "evaluation_arms": 16,
+        "primary_physical_full_answer_readouts": 5376,
+        "primary_related_bindings": 6912
+      }
     }
   }
 }
