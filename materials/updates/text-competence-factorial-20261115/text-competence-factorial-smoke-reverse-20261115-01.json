@@ -1,0 +1,44 @@
+{
+  "status": "audited_text_competence_factorial_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/text-competence-factorial-smoke-reverse-20261115-01",
+  "manifest_sha256": "a8409bc5fe2cf8b206df904c60edbcff99394aa9c525befc2709cca4b9dc9f9e",
+  "dataset_manifest_sha256": "fca5d76d9456dfe834a6127c63100ab00cde71335845ed7eae99952d3b11931c",
+  "transformations_sha256": "3b0eba9db292da79abfafeda0bcc495409da8327f8c7f85c8e735da129ba3a5c",
+  "collisions_sha256": "139a94ba715fbb22a7372e0bbf5a7b3aaf86c275bd6211295fcca1aa91fdc3fc",
+  "weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "model_order": [
+    "gdn_all_tokens",
+    "shared_question_trained_question",
+    "shared_question_trained_all",
+    "shared",
+    "native"
+  ],
+  "new_physical_readouts_audited": 360,
+  "fresh_full_reference_readouts_audited": 90,
+  "transformed_text_readouts_audited": 270,
+  "related_bindings_audited": 360,
+  "native_anchors": 48,
+  "native_before_attach_exact_replays": 240,
+  "attached_none_identities": 192,
+  "detached_native_exact_replays": 240,
+  "all_layer_full_history_attention_controls": 240,
+  "question_only_native_prefix_checks": 36,
+  "source_files_verified": 172,
+  "all_original_full_reference_fields_exact": true,
+  "identical_actual_input_replays_exact": true,
+  "prior_timing_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "metrics": null,
+  "interpretation": [
+    "Reused8source streams,48related cases; models share one training initialization and some checkpoints. Not independent replications.",
+    "Original physical IDs retain task pairing; transformed prompt collisions are disclosed and never counted as independent evidence.",
+    "Compilation is privileged execution by an interpreter, and support selection is query-specific oracle evidence. Success does not show the LLM can learn either process.",
+    "Improvement can reflect easier text, changed positions, reduced interference, explicit numerical values or distribution effects, not uniquely relation composition.",
+    "Failures on transformed text also do not prove composition incapacity or memory injury. Preserve role-specific harms and strongGDNonly control."
+  ],
+  "analysis_source_sha256": "57036257f02d938ffc8fcd925779310e13658ad7eb26c4617d55ac10bb886188"
+}

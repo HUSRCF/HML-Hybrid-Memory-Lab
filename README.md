@@ -15,6 +15,7 @@ architecture success. All previous failed scientific gates remain failed.
 The equal-token nonslice control scores 0/336 for every arm and is a strong
 intervention with grammatical and evidence-availability confounds.
 
+- [Current registered text-competence controls (223 tests; both 360-readout safety orders audited)](materials/updates/text-competence-factorial-20261115/README.md)
 - [Complete five-configuration, three-regime results](materials/updates/trained-timing-evidence-access-20261115/README.md)
 - [Previous 5,376-readout matched-training confirmation](materials/updates/trained-shared-timing-20261115/README.md)
 - [Research status and archived materials](materials/README.md)

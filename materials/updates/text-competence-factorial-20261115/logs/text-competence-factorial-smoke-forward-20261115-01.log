@@ -1,0 +1,62 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:05,  2.55it/s]Loading weights:   9%|▉         | 28/320 [00:00<00:04, 72.86it/s]Loading weights:  19%|█▉        | 61/320 [00:00<00:01, 141.19it/s]Loading weights:  29%|██▉       | 92/320 [00:00<00:01, 187.13it/s]Loading weights:  37%|███▋      | 118/320 [00:00<00:00, 206.25it/s]Loading weights:  46%|████▌     | 147/320 [00:00<00:00, 225.76it/s]Loading weights:  54%|█████▍    | 174/320 [00:01<00:00, 237.30it/s]Loading weights:  64%|██████▍   | 204/320 [00:01<00:00, 251.03it/s]Loading weights:  74%|███████▍  | 238/320 [00:01<00:00, 269.97it/s]Loading weights:  83%|████████▎ | 267/320 [00:01<00:00, 267.09it/s]Loading weights:  94%|█████████▍| 300/320 [00:01<00:00, 278.29it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 209.90it/s]
+{"event": "text_competence_factorial", "model": "native", "regime": "full", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "native", "regime": "full", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "native", "regime": "full", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "native", "regime": "support_text", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "native", "regime": "support_text", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "native", "regime": "support_text", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "native", "regime": "compiled_full", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "native", "regime": "compiled_full", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "native", "regime": "compiled_full", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "native", "regime": "compiled_support", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "native", "regime": "compiled_support", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "native", "regime": "compiled_support", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "shared", "regime": "full", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "shared", "regime": "full", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "shared", "regime": "full", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "shared", "regime": "support_text", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "shared", "regime": "support_text", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "shared", "regime": "support_text", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "shared", "regime": "compiled_full", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "shared", "regime": "compiled_full", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "shared", "regime": "compiled_full", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "shared", "regime": "compiled_support", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "shared", "regime": "compiled_support", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "shared", "regime": "compiled_support", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_all", "regime": "full", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_all", "regime": "full", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_all", "regime": "full", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_all", "regime": "support_text", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_all", "regime": "support_text", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_all", "regime": "support_text", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_all", "regime": "compiled_full", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_all", "regime": "compiled_full", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_all", "regime": "compiled_full", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_all", "regime": "compiled_support", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_all", "regime": "compiled_support", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_all", "regime": "compiled_support", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_question", "regime": "full", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_question", "regime": "full", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_question", "regime": "full", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_question", "regime": "support_text", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_question", "regime": "support_text", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_question", "regime": "support_text", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_question", "regime": "compiled_full", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_question", "regime": "compiled_full", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_question", "regime": "compiled_full", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_question", "regime": "compiled_support", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_question", "regime": "compiled_support", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "shared_question_trained_question", "regime": "compiled_support", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "gdn_all_tokens", "regime": "full", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "gdn_all_tokens", "regime": "full", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "gdn_all_tokens", "regime": "full", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "gdn_all_tokens", "regime": "support_text", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "gdn_all_tokens", "regime": "support_text", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "gdn_all_tokens", "regime": "support_text", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "gdn_all_tokens", "regime": "compiled_full", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "gdn_all_tokens", "regime": "compiled_full", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "gdn_all_tokens", "regime": "compiled_full", "queries": 18, "total": 18}
+{"event": "text_competence_factorial", "model": "gdn_all_tokens", "regime": "compiled_support", "queries": 6, "total": 18}
+{"event": "text_competence_factorial", "model": "gdn_all_tokens", "regime": "compiled_support", "queries": 12, "total": 18}
+{"event": "text_competence_factorial", "model": "gdn_all_tokens", "regime": "compiled_support", "queries": 18, "total": 18}
