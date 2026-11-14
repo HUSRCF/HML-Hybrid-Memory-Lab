@@ -6164,7 +6164,8 @@
       ]
     },
     "repository_results_commit": "e6443ac6f4ac2572efb481349fa8f2bbd7f623ac",
-    "next_method_plan_registered": false
+    "next_method_plan_registered": true,
+    "next_method_plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json"
   },
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
@@ -6546,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T19:28:26.211457+00:00",
+  "updated_utc": "2026-11-14T19:45:44.218861+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10068,5 +10069,35 @@
     "research_status": "paused",
     "original129sealed_sources_unchanged": true,
     "sha256_verified_for_every_remote_asset": true
+  },
+  "current_phase": "matched_shared_training_timing",
+  "matched_shared_training_timing": {
+    "status": "all198tests_passed_ready_for_two_arm_real_safety_smoke",
+    "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
+    "plan_sha256": "027e1d8fcfde9478115e1d238b0528497e6285ca3b1a80086fe332389da5405f",
+    "registered_utc": "2026-11-14T19:35:24.223581+00:00",
+    "prior_goal_turn_classification": "progress: completed3360readout experiment, independent audit and verified publication changed the next experimental question",
+    "new_training_started": false,
+    "new_confirmation_generated": false,
+    "new_confirmation_inference_started": false,
+    "new_arms": [
+      "shared_question",
+      "shared_ledger"
+    ],
+    "new_optimizer_update_budget": 864,
+    "paired_initialization_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+    "training_data_unchanged": true,
+    "future_confirmation_arms": 16,
+    "future_confirmation_readouts": 5376,
+    "runtime_source_count": 140,
+    "unit_tests_passed": 5,
+    "unit_test_log": "/media/990Pro/Code/SAS/logs/matched-shared-training-timing-unit-tests-20261115-01.log",
+    "next_actions": [
+      "Require complete198test regression and audited two-arm real one-update safety smoke.",
+      "Run the fixed432step schedules, independently audit all6checkpoints and all1728teacher/1728development outcomes.",
+      "Then prepare the single pre-registered63000-63007cohort and full16arm cross-schedule confirmation without choosing favorable old queries."
+    ],
+    "complete_tests_passed": 198,
+    "complete_test_log": "/media/990Pro/Code/SAS/logs/matched-shared-training-timing-complete-tests-20261115-01.log"
   }
 }

@@ -17,6 +17,7 @@ improvement. The earlier four-case state-restoration series remains closed.
 
 - [Research status and archived materials](materials/README.md)
 - [All ten timing results, audit and figure](materials/updates/unseen-shared-timing-20261115/README.md)
+- [Registered training-schedule control](materials/updates/matched-shared-training-timing-20261115/README.md)
 - [Machine-readable progress](configs/experiment_progress.json)
 - [Next registered experiment](configs/unseen_shared_timing_plan.json)
 - [Full backup files](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases)

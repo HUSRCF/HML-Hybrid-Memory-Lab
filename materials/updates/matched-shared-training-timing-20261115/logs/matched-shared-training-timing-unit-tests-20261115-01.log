@@ -1,0 +1,10 @@
+test_entire3x3factorial_and_all_old_baselines_are_registered_before_training (tests.test_matched_shared_training_timing.MatchedSharedTrainingTests.test_entire3x3factorial_and_all_old_baselines_are_registered_before_training) ... ok
+test_fixed_scope_controls_cover_all_variant_roles_and_last_registered_example (tests.test_matched_shared_training_timing.MatchedSharedTrainingTests.test_fixed_scope_controls_cover_all_variant_roles_and_last_registered_example) ... ok
+test_guard_rejects_changed_native_weights_unfrozen_backbone_or_training_arithmetic (tests.test_matched_shared_training_timing.MatchedSharedTrainingTests.test_guard_rejects_changed_native_weights_unfrozen_backbone_or_training_arithmetic) ... ok
+test_rank_loss_budget_seed_and_heldout_grid_cannot_be_tuned (tests.test_matched_shared_training_timing.MatchedSharedTrainingTests.test_rank_loss_budget_seed_and_heldout_grid_cannot_be_tuned) ... ok
+test_same_architecture_initialization_and_original_optimization_budget (tests.test_matched_shared_training_timing.MatchedSharedTrainingTests.test_same_architecture_initialization_and_original_optimization_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 15.739s
+
+OK

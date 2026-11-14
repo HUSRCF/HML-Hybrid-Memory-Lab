@@ -1,0 +1,479 @@
+{
+  "status": "registered_before_new_training_and_unseen_confirmation",
+  "registered_utc": "2026-11-14T19:35:24.223581+00:00",
+  "purpose": "Separate deployment schedule mismatch from prefix utility using paired-initialization shared controllers trained for question/answer-only or ledger-only activation, then cross all three training and deployment schedules on one new cohort.",
+  "backbone": "it",
+  "group_index": 3,
+  "initialization_seed": 1701,
+  "reader_policy": "full",
+  "adapt_gdn_keys": true,
+  "data_source": "/media/990Pro/Code/SAS/datasets/memory_update/paired-semantic-order-augmented-v1",
+  "data_sha256": "3ccaa5be8591fc896646a50991aaa86f5f722e00e76a198449791d3caa992b0f",
+  "registry_sha256": "9147f9f76334ebda3ad503f17603c3d06be630fae72b0dd930d5029ae877c55e",
+  "tokenized_input_answer_sha256": "8f286e49883583b97d4bf48822ea4663bd2cc3f5979f2031eef4c0b583cb3d1f",
+  "native_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-native-20261114-01",
+  "arms": {
+    "shared_question": {
+      "mode": "shared",
+      "rank": 64,
+      "token_policy": "question",
+      "parameters": 694272
+    },
+    "shared_ledger": {
+      "mode": "shared",
+      "rank": 64,
+      "token_policy": "ledger",
+      "parameters": 694272
+    }
+  },
+  "unique_training_examples": 864,
+  "gradient_accumulation": 2,
+  "maximum_optimizer_steps": 432,
+  "checkpoint_steps": [
+    144,
+    288,
+    432
+  ],
+  "evaluation_steps": [
+    432
+  ],
+  "learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "max_gradient_norm": 1.0,
+  "max_input_tokens": 832,
+  "optimized_input_token_budgets": {
+    "144": 176667,
+    "288": 355305,
+    "432": 527808
+  },
+  "supervised_answer_token_budgets": {
+    "144": 1152,
+    "288": 2304,
+    "432": 3456
+  },
+  "objective": "Only gold numeric-answer plus newline LM cross-entropy, identical for all arms. No auxiliary consistency loss or external scope labels.",
+  "gate": "Before new inference verify all136live/archived previous timing sources, completed3360readout audit, same native/modeling source, all7legacy checkpoints and exact old864optimized samples. Require both real one-update safety controls and independent smoke audit before scheduled432step training.",
+  "requirements": [
+    "Reuse unchanged original training execute engine and original864order-augmented examples. Same seed1701, sharedrank64,group3,11outputs,694272parameters,AdamW,432updates,gradacc2,527808inputtokens,3456answer-plus-newline tokens per arm. No new loss, data, rank, LR, early stopping or checkpoint selection.",
+    "Train from the paired original initialization, never from a previously trained checkpoint. Discard scratch safety updates. Training uses original FP32 adapter linears/BF16 frozen native operations; the FP64 affine profile is inference-only and must not be installed during training.",
+    "Retain adapter/optimizer/RNG states at144/288/432. Final teacher fit on all864train examples and both432-example development orders are diagnostic only. Report fitting failures without extending the budget.",
+    "After each final model, verify actual native loaded weights remain byte-identical and gradient-free, full original enabled output scope, actual full-prefill and cached policy receipts at fixed development controls, hook cleanup and exact complete prefix identities for question-only.",
+    "Generate the single registered63000-63007cohort only after both final432checkpoints and independent training audit complete. Never train on or choose weights from this cohort. Preserve all16fixed evaluation arms, full history and original unrestricted gold/greedy grading.",
+    "New data helper must scan actual prior datasets including both61000and62000cohorts, freeze complete prompt/prefix hashes, reject all overlap without resampling, and archive its own immutable source closure. Do not edit136sealed successful sources or mutate sealed module globals.",
+    "Both288-readout forward/reverse smokes and exact readout/scope/prefix equivalence precede5376primaryreadouts. Verify native complete prefix for every distinct ledger for each of the three shared checkpoints deployed question-only. Retain all old strong baselines and all nulls/failures."
+  ],
+  "interpretation": "Controlled training-timing diagnostic with one paired initialization and the same executable task family. The two new schedules do not implement explicit semantic scope. Matched question-only recovery would show that a deployment ablation overstated prefix necessity; failure, especially with worse teacher fit, cannot prove semantic write damage. All prior failed gates remain failed. No architecture success or scale-up is inferred.",
+  "profile": "matched_shared_training_timing",
+  "base_data_sha256": "9a58823c8348db79b5b20db418894ae51782d02d943dc2440365af66c6838791",
+  "data_manifest_sha256": "f5b90214f92710085b208e96d2af98db5d4cc7547a2e518a34e8dec1616de32d",
+  "training_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/paired-semantic-controllers-20261114-01",
+  "order_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/initial-order-control-20261114-01",
+  "original_training_plan_sha256": "52f0db3fe5e6635eb19380856c5792940e9d31124fe29f0543544ad505aed587",
+  "order_control_plan": "/home/husrcf/Code/SAS/configs/initial_order_control_plan.json",
+  "order_control_plan_sha256": "ab728f84c696c8c664217e86955935cbff5ffb3cdfa896e44f748750b6a27a22",
+  "initial_state_sha256": {
+    "shared_question": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+    "shared_ledger": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1"
+  },
+  "evaluation_conditions": [
+    "canonical",
+    "initial_record_derangement"
+  ],
+  "augmentation": {
+    "seed_offset": 991003,
+    "canonical_train_stream_indices": [
+      0,
+      3
+    ],
+    "deranged_train_stream_indices": [
+      1,
+      2
+    ],
+    "canonical_train_examples": 432,
+    "deranged_train_examples": 432,
+    "all_four_siblings_share_order": true
+  },
+  "native_reference_manifest_sha256": "2b9580bea17bad9a6e6569da2c071fa549271114663580e0c7dc514ee8df22a3",
+  "training_reference_manifest_sha256": "601e20a31826ea822da2810231cc5e18da74817adab4d17a10c4218c6c01e965",
+  "order_reference_manifest_sha256": "8f9fbc9bd4fd48a8ad274b5f827d0fddcedfef47c2bd898349a8e747dca5453d",
+  "new_training": true,
+  "new_backbone": false,
+  "new_environment": false,
+  "architecture_effectiveness_claim": false,
+  "explicit_semantic_controller_implemented": false,
+  "can_change_prior_gates": false,
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "precision_addendum": "configs/copy_evidence_necessity_precision_addendum.json",
+  "precision_addendum_sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc",
+  "previous_timing_run": "/media/990Pro/Code/SAS/runs/memory_update/unseen-shared-timing-20261115-01",
+  "previous_timing_manifest_sha256": "65fd9fd8c52cd6b44de366a98d76f68b7699ec6905b83c58b5dd0e2a8c689ca0",
+  "previous_timing_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/unseen-shared-timing-audit-20261115-01.json",
+  "previous_timing_audit_sha256": "a60381e1a81a41910a7cf6373117c43c082fd489db913db49d2053ac663005e9",
+  "previous_timing_plan": "configs/unseen_shared_timing_plan.json",
+  "previous_timing_plan_sha256": "1fe0317cb6ab1563d16ed44a1fa130dcb42453b7d96606bb6ba075d80c5b316a",
+  "preserved_runtime_source_count": 136,
+  "augmentation_reference_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+  "augmentation_reference_manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+  "augmentation_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+  "training_output": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
+  "training_smoke_output": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-smoke-20261115-01",
+  "training_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-audit-20261115-01.json",
+  "training_smoke_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-smoke-audit-20261115-01.json",
+  "maximum_new_optimizer_updates": 864,
+  "legacy_models": {
+    "native": null,
+    "shared": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "shared",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/shared/step-000432/controller.safetensors",
+      "checkpoint_sha256": "3ac57cfd86116dc712aacd14de526ccc3cb8f60c7348317fbacc16910914d8fc",
+      "checkpoint_metadata_sha256": "b2bc536ef797684ef00736b8a2622eb94dbe7c6d6d6b55a8f672346a35663225",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.007630780778693288,
+        "teacher_numeric_tokens_correct": 2585,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "independent": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "independent",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/independent/step-000432/controller.safetensors",
+      "checkpoint_sha256": "e042e284b0bf7c32dc4f1340120f3e71d904b3ddc08ae5f5ebbc6c3b8d93823f",
+      "checkpoint_metadata_sha256": "9c27b9340c726e6fbf915af8a6d187c27b0a28204950589692cdb8c09b533cf9",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "independent",
+      "rank": 54,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696384,
+      "initial_state_sha256": "02120c5c68629314f6cac9fc2e6adb4f4d3da57691e1d1c0bca711e62c2baf26",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.003956158183937246,
+        "teacher_numeric_tokens_correct": 2591,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "local": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "local",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/local/step-000432/controller.safetensors",
+      "checkpoint_sha256": "776d5e1c35c5aa3ec8056fdaf4ad453b8a85d58d156d1448e2788ca2564c0e91",
+      "checkpoint_metadata_sha256": "ec839a0e752ab0fb988c4a86b8345c5c26151b15c030817e091530006acc4a90",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "local",
+      "rank": 22,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 689216,
+      "initial_state_sha256": "44ebb8784799d6d68369fc7953ccfa42429b30109fbe8cbd43aaa1d8d1b2ea8f",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.013929484663227262,
+        "teacher_numeric_tokens_correct": 2578,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "local_question": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "local_question",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/local_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ee78264808d0a532188c61c78e68407e72551947941ebb977ab25864b600a848",
+      "checkpoint_metadata_sha256": "432c52e03ed06df0230b7c925ff440ca6eaca087f4a5ad1589facbb99635a581",
+      "final_step": 432,
+      "token_policy": "question",
+      "mode": "local",
+      "rank": 22,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 689216,
+      "initial_state_sha256": "44ebb8784799d6d68369fc7953ccfa42429b30109fbe8cbd43aaa1d8d1b2ea8f",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005892252288227247,
+        "teacher_numeric_tokens_correct": 2585,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "attention_only": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "attention_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/attention_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "20d9827c1eec05f9ac425f96530df59bd899a3a3a2f4599e3cfcba494715dd61",
+      "checkpoint_metadata_sha256": "3d6840519da53c2eab88d58937f6b241ee003498b7d0b333f084528e8320ca1a",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "attention_only",
+      "rank": 150,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 691200,
+      "initial_state_sha256": "ac7920d08d807c0bd99a58afda8e72b9658235e8e38093bad83b2f491bd05396",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.03906242988725555,
+        "teacher_numeric_tokens_correct": 2551,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "gdn_all_tokens": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "gdn_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+      "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.006321374711538502,
+        "teacher_numeric_tokens_correct": 2584,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "gdn_question_only": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/gdn-question-timing-20261114-01",
+      "training_arm": "gdn_question",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/gdn-question-timing-20261114.json",
+      "audit_sha256": "1ea60978eeac9414ab0211d4e3ad668c080267724b00706fba9bcb745623825e",
+      "manifest_sha256": "a4df590b2b104dd4a87c9ff7c38b82d2f45a6df67a5a02db3434b084108c67da",
+      "training_plan_sha256": "6b02735cd42629e92676fa7c0ff05a34ed0f0976c56ad8d0df7095de907a7b9b",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/gdn-question-timing-20261114-01/gdn_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "5aeea3bc1679df153bb9e246426da580c37575d7292399edd9c21d98c5952662",
+      "checkpoint_metadata_sha256": "b7f77c2dcc05f2105ebe0ca34832f3a534254630d01f434f951b644e6d3523f1",
+      "final_step": 432,
+      "token_policy": "question",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.004157001361527869,
+        "teacher_numeric_tokens_correct": 2588,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    }
+  },
+  "confirmation": {
+    "status": "registered_before_training_data_generation_or_inference",
+    "dataset_destination": "/media/990Pro/Code/SAS/datasets/memory_update/fresh-trained-shared-timing-v1",
+    "fresh_seeds": [
+      63000,
+      63001,
+      63002,
+      63003,
+      63004,
+      63005,
+      63006,
+      63007
+    ],
+    "dependency_depths": [
+      1,
+      2,
+      3
+    ],
+    "question_styles": [
+      "original",
+      "entity_first"
+    ],
+    "distractor_updates_by_seed_index": [
+      8,
+      64,
+      8,
+      64,
+      8,
+      64,
+      8,
+      64
+    ],
+    "evaluation_order": [
+      "native",
+      "shared",
+      "shared_question_timing",
+      "shared_ledger_timing",
+      "shared_question_trained_all",
+      "shared_question_trained_question",
+      "shared_question_trained_ledger",
+      "shared_ledger_trained_all",
+      "shared_ledger_trained_question",
+      "shared_ledger_trained_ledger",
+      "independent",
+      "local",
+      "local_question",
+      "attention_only",
+      "gdn_all_tokens",
+      "gdn_question_only"
+    ],
+    "evaluation_arms": {
+      "native": {
+        "model": "native",
+        "token_policy": "none",
+        "new_training": false
+      },
+      "shared": {
+        "model": "shared",
+        "token_policy": "all",
+        "new_training": false
+      },
+      "shared_question_timing": {
+        "model": "shared",
+        "token_policy": "question",
+        "new_training": false
+      },
+      "shared_ledger_timing": {
+        "model": "shared",
+        "token_policy": "ledger",
+        "new_training": false
+      },
+      "shared_question_trained_all": {
+        "model": "shared_question",
+        "token_policy": "all",
+        "new_training": true
+      },
+      "shared_question_trained_question": {
+        "model": "shared_question",
+        "token_policy": "question",
+        "new_training": true
+      },
+      "shared_question_trained_ledger": {
+        "model": "shared_question",
+        "token_policy": "ledger",
+        "new_training": true
+      },
+      "shared_ledger_trained_all": {
+        "model": "shared_ledger",
+        "token_policy": "all",
+        "new_training": true
+      },
+      "shared_ledger_trained_question": {
+        "model": "shared_ledger",
+        "token_policy": "question",
+        "new_training": true
+      },
+      "shared_ledger_trained_ledger": {
+        "model": "shared_ledger",
+        "token_policy": "ledger",
+        "new_training": true
+      },
+      "independent": {
+        "model": "independent",
+        "token_policy": "all",
+        "new_training": false
+      },
+      "local": {
+        "model": "local",
+        "token_policy": "all",
+        "new_training": false
+      },
+      "local_question": {
+        "model": "local_question",
+        "token_policy": "question",
+        "new_training": false
+      },
+      "attention_only": {
+        "model": "attention_only",
+        "token_policy": "all",
+        "new_training": false
+      },
+      "gdn_all_tokens": {
+        "model": "gdn_all_tokens",
+        "token_policy": "all",
+        "new_training": false
+      },
+      "gdn_question_only": {
+        "model": "gdn_question_only",
+        "token_policy": "question",
+        "new_training": false
+      }
+    },
+    "counts": {
+      "base_streams": 8,
+      "related_cases": 48,
+      "physical_queries": 336,
+      "related_bindings": 432,
+      "evaluation_arms": 16,
+      "primary_physical_full_answer_readouts": 5376,
+      "primary_related_bindings": 6912
+    },
+    "smoke_physical_queries_per_arm": 18,
+    "smoke_physical_readouts_per_order": 288,
+    "smoke_orders": [
+      "registered_forward",
+      "registered_reverse"
+    ],
+    "checkpoint_policy": "Use only the fixed final432step from each new arm after independent audit; do not select from144/288 or replace poor fits. Legacy checkpoint bytes stay fixed.",
+    "primary_contrasts": [
+      "Question-trained/question-deployed versus all-trained/question-deployed: positive paired joint net gain overall, at everydepth and in at least3base streams.",
+      "Question-trained/question-deployed versus native: same positive joint gain criteria.",
+      "Strict functional prefix-free preservation: report whether any physical question correct under all-trained/all-deployed becomes wrong under question-trained/question-deployed, along with all repairs."
+    ],
+    "secondary": "Report every3x3shared training/deployment cell, paired ledger-training schedule effects, all8natural baselines, teacher fits, role/seed/depth/style/load strata and allpointwise regressions. Strong local all-token baseline remains mandatory; no aggregate-only architecture claim.",
+    "readout_policy": "Full original prompt prefill; original unrestricted TextRuntime.probe/measure, singleton gold scoring, max12 greedy tokens and original EOS/newline stop. Report all five original readout fields for every physical query; bind duplicates once without treating correlated bindings as independent samples.",
+    "interpretation_limits": [
+      "The shared controller was trained with all-token activation. Its timing ablations change the deployment distribution. A question-only regression is not proof that semantic prefix writes are necessary, nor proof of recurrent memory damage.",
+      "If question-only preserves shared successes and its positive gains with directly native prefix states, prefix adaptation is unnecessary for those successes under this fixed checkpoint and cohort; do not generalize to all hybrid models.",
+      "Neither shared latent inputs nor successful timing ablation establish explicit semantic dependency constraints, superiority of a new architecture, or absence of prior work.",
+      "These are new source streams within the same executable task family, not a new natural-language domain or independently initialized training replication.",
+      "Both new checkpoints use onepairedinitialization; this is not an independent initialization replication.",
+      "Training fit differences remain part of the result and cannot be removed by selecting queries, further epochs or a better checkpoint."
+    ]
+  }
+}
