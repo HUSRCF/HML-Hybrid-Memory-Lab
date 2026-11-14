@@ -112,15 +112,44 @@ def export(audit,prefix):
     for out,row in zip(csvrows,[v for n,r in cells for v in rows[n][r]],strict=True):
         if (out['model']!=row['model'] or out['regime']!=row['regime'] or out['physical_id']!=row['id'] or
             out['actual_prompt_sha256']!=row['actual_prompt_sha256'] or out['answer']!=row['answer'] or out['generated']!=row['generated'] or
+            out['token_policy']!=row['token_policy'] or int(out['related_binding_count'])!=len(bound[row['id']]) or
+            out['roles']!=';'.join(sorted({b['role'] for b in bound[row['id']]})) or
             (out['greedy_exact']=='True')!=row['greedy_exact'] or float(out['answer_nll'])!=row['answer_nll'] or int(out['query_tokens'])!=row['query_tokens']):
             raise ValueError('CSV differs from actual original raw readouts')
     if len(csvrows)!=6720:raise ValueError('Missing complete exported task coverage')
+    # Decode the two derived CSVs and independently recompute from raw NLLs,
+    # original bindings and the registered contrast order, without metric helpers.
+    indexed={n:{r:{v['id']:v for v in rows[n][r]} for r in REGIMES} for n in MODELS}
+    current=[b for b in registry['bindings'] if b['role']=='target_current' and b['variant']!='before']
+    expected_pairs=[(n,c,r,b) for n in MODELS for c,r in plan['analysis']['contrasts'] for b in current]
+    with prefix.with_suffix('.pairs.csv').open(newline='') as f:pairrows=list(csv.DictReader(f))
+    for out,(n,c,r,b) in zip(pairrows,expected_pairs,strict=True):
+        candidate=indexed[n][c][b['physical_id']];reference=indexed[n][r][b['physical_id']]
+        flags={'candidate_correct':candidate['greedy_exact'],'reference_correct':reference['greedy_exact'],
+               'gain':candidate['greedy_exact'] and not reference['greedy_exact'],
+               'loss':reference['greedy_exact'] and not candidate['greedy_exact']}
+        if (out['model']!=n or out['candidate']!=c or out['reference']!=r or any(
+                out[k]!=str(b[k]) for k in ('case_id','physical_id','base_case_id','dependency_depth','question_style',
+                                            'distractor_updates','variant','role')) or
+            any(out[k]!=str(v) for k,v in flags.items()) or
+            float(out['nll_candidate_minus_reference'])!=candidate['answer_nll']-reference['answer_nll']):
+            raise ValueError('Paired CSV differs from raw answers/NLLs or original task bindings')
+    with prefix.with_suffix('.factorial.csv').open(newline='') as f:factorrows=list(csv.DictReader(f))
+    expected_factor=[(n,q['id']) for n in MODELS for q in registry['physical']]
+    for out,(n,key) in zip(factorrows,expected_factor,strict=True):
+        value=indexed[n]['compiled_support'][key]['answer_nll']-indexed[n]['support_text'][key]['answer_nll']-\
+              indexed[n]['compiled_full'][key]['answer_nll']+indexed[n]['full'][key]['answer_nll']
+        if out['model']!=n or out['physical_id']!=key or float(out['nll_interaction'])!=value:
+            raise ValueError('Factorial CSV differs from its four actual raw NLLs')
+    if len(pairrows)!=1920 or len(factorrows)!=1680:raise ValueError('Missing complete paired/factorial CSV coverage')
     write_json(prefix.with_suffix('.data.json'),metrics)
     write_json(prefix.with_suffix('.layout.json'),{'labels':labels,'joint_counts':joint,'current_counts':current,'original_task_counts':total,
         'model_order':list(MODELS),'regimes':list(REGIMES),'figure_inches':[16,11],'dpi':180,'input_collisions':collisions['by_regime'],
         'intervals':'Exact fixed-cohort counts; related task variants and identical transformed inputs are not independent.'})
     write_json(prefix.with_suffix('.crosscheck.json'),{'status':'all6720_csv_rows_exact_and_independent_task_and_unique_input_counts_match',
         'counts':counts,'raw_csv_rows_verified':6720,'current_target_paired_rows':1920,'factorial_physical_rows':1680,
+        'current_target_paired_rows_independently_verified':len(pairrows),
+        'factorial_physical_rows_independently_verified':len(factorrows),
         'old_gates_unchanged':report['prior_timing_criteria_unchanged']})
     prefix.with_suffix('.source.py').write_bytes(Path(__file__).read_bytes())
     write_json(prefix.with_suffix('.provenance.json'),{'status':'all_twenty_cells_reproduced_from_actual_audited6720readouts',
