@@ -67,7 +67,8 @@ def package(audit,output):
         if p.is_file():add(p,ROOT,'code')
     for name in ['README.md','materials/README.md','.gitattributes','requirements.txt','configs/experiment_progress.json',
                  'scripts/export_oracle_write_hold.py','scripts/verify_oracle_write_hold_prefix.py',
-                 'scripts/package_oracle_write_hold.py','configs/oracle_write_hold_prefix_verification.json']:
+                 'scripts/package_oracle_write_hold.py','scripts/publish_oracle_write_hold.py',
+                 'configs/oracle_write_hold_prefix_verification.json']:
         add(ROOT/name,ROOT,'code')
     for arm,state in m['models'].items():
         for regime,digest in state['results_sha256'].items():

@@ -5,7 +5,13 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; the complete text-competence factorial diagnostic is audited.**
+**Status: active; the fixed-input recurrent-hold factorial is running.**
+All 229 regression tests, two opposite-order 360-readout smokes and 120 complete
+historical-cache preservation checks passed. The full 6,720-readout experiment
+keeps original tokens and positions while crossing privileged recurrent-update
+holds with question-time evidence access. Complete outcomes are pending.
+
+The previous complete text-competence factorial diagnostic is audited.
 All 6,720 registered readouts and 223 regression tests passed operational checks.
 Native rises from 1/48 joint cases on full history to 48/48 with original COPY
 logic on program-selected support text; compiling COPY to SET on full history
@@ -14,7 +20,8 @@ cohort. Text, positions and prefix computation change; they do not uniquely
 localize GDN damage or establish a new architecture. All earlier failed
 scientific criteria remain failed. GDN-only means adapter scope; Attention stays.
 
-- [All twenty text-control cells, limitations and audit](materials/updates/text-competence-factorial-20261115/README.md)
+- [Running fixed-input recurrent-hold protocol and interpretation limits](materials/updates/oracle-write-hold-20261115/README.md)
+- [All twenty previous text-control cells, limitations and audit](materials/updates/text-competence-factorial-20261115/README.md)
 - [Previous frozen-prefix evidence-access diagnostic](materials/updates/trained-timing-evidence-access-20261115/README.md)
 - [Previous matched-training confirmation](materials/updates/trained-shared-timing-20261115/README.md)
 - [Research status and archived materials](materials/README.md)

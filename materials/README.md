@@ -7,7 +7,14 @@
 实验使用 Qwen3.5-2B IT；不能将这些结果当作 Base 模型的实测结果，也尚未
 实现显式的共享语义依赖控制器。
 
-## New complete text competence controls
+## Running fixed-input recurrent-hold controls
+
+[固定原始输入的递归更新阻断诊断](updates/oracle-write-hold-20261115/README.md)
+已通过229项测试、两轮各360次的反向顺序运行及120项完整历史缓存检查。
+6720次正式读出正在运行；本轮使用后见依赖标签，只用于诊断，不是可部署方法。
+全部旧失败门槛保持原判，完成前不筛选模型、问题、深度或条件。
+
+## Previous complete text competence controls
 
 [全部6720次文本交叉对照](updates/text-competence-factorial-20261115/README.md)及独立审计完成，223项测试通过。
 Native在完整历史为1/48，保留原始COPY的支持文本为48/48，完整历史COPY编译为SET时为21/48。
