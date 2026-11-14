@@ -6547,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T19:59:59.666514+00:00",
+  "updated_utc": "2026-11-14T20:12:11.123346+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10072,7 +10072,7 @@
   },
   "current_phase": "matched_shared_training_timing",
   "matched_shared_training_timing": {
-    "status": "verified_safety_and_import_closed_inventory_passed_scheduled_training_pipeline_starting",
+    "status": "both432update_schedules_complete_final_validation_running",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
     "plan_sha256": "027e1d8fcfde9478115e1d238b0528497e6285ca3b1a80086fe332389da5405f",
     "registered_utc": "2026-11-14T19:35:24.223581+00:00",
@@ -10111,6 +10111,9 @@
     "additional_test_log": "/media/990Pro/Code/SAS/logs/matched-shared-training-timing-inventory-tests-20261115-03.log",
     "verified_smoke_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-smoke-audit-20261115-02.json",
     "training_run": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
-    "training_log": "/media/990Pro/Code/SAS/logs/matched-shared-training-timing-train-20261115-02.log"
+    "training_log": "/media/990Pro/Code/SAS/logs/matched-shared-training-timing-train-20261115-02.log",
+    "confirmation_runtime_sources": 160,
+    "confirmation_full_tests_passed": 206,
+    "confirmation_full_test_log": "/media/990Pro/Code/SAS/logs/trained-shared-timing-complete-tests-20261115-01.log"
   }
 }

@@ -11,3 +11,14 @@
 两组真实单步安全检查和独立审计通过后才开始训练。最终检查全部优化器／RNG 状态、完整训练拟合、两个开发顺序、原生权重指纹、实际投影启用区间和问题阶段的完整原生前缀。新测试前还需两轮各 288 次运行检查及严格跨顺序等价校验。
 
 这是训练时段机制对照，没有实现显式语义依赖约束。原有失败判据继续保留，普通局部适配器仍是必需的强对照。当前状态见 [进度记录](../../../configs/experiment_progress.json)。
+
+
+## 完整训练／部署时机确认
+
+确认工具使用独立文件 `scripts/trained_shared_timing_data.py`、`prepare_trained_shared_timing.py`、`run_trained_shared_timing.py`、`analyze_trained_shared_timing.py` 和 `trained_shared_timing_metrics.py`。不修改已封存的 155 份训练源码。
+
+只在两组最终 432 步检查点均完成且独立审计重建通过后，生成方案已登记的 63000–63007 数据。生成后保留完整历史输入、所有 16 个实验配置、336 个物理问题及其 432 个关联绑定。三种 shared 训练时机与三种部署时机组成完整 3×3 矩阵；另外保留 native、independent、local、local_question、attention_only、gdn_all_tokens、gdn_question_only。
+
+先跑两个相反配置顺序的 288 次完整读出安全运行，逐项核对读出、NLL、实际投影作用域及 native 前缀。随后才允许 5376 次正式读出。三个 shared 检查点在 question-only 部署时，都验证全部 56 个不同历史前缀的完整状态、KV、簿记与 logits 与 native 完全相同。
+
+确认记录逐一保留共同正确、退化、修复和共同错误；同一个物理问题的重复绑定不当作独立样本。主判断保持原方案：匹配 question 训练能否超过旧的 question 部署消融与 native，以及能否完整保留旧 shared/all 的正确问题。训练拟合差异及全部失败均报告，不延长训练或挑选较早检查点。
