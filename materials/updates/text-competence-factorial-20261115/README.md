@@ -17,3 +17,5 @@
 正式运行已确认启动，启动时观察保存在 `primary-start-manifest.json`；它不是完成记录。全部172份实际运行源码与封存字节一致。最终判定须等待完整6720次读出及独立审计。
 
 [配置命名与解释边界](interpretation-guide.md)：GDN-only是适配器范围，全部Attention层仍保留；文本控制不是冻结历史状态定位。
+
+运行中的额外操作核验：独立于原解释器的SET/COPY实现核验了已保存的1344份变换、16176对中间状态与全部1728个条件×别名绑定，全部一致。它不改冻结协议、数据、172份运行源码或科研门槛，回执为 `text-competence-factorial-truth-crosscheck-20261115-01.json`。

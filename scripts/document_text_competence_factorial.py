@@ -84,6 +84,7 @@ def document(audit,prefix):
         f'- [全部指标、分层、重复输入与逐问题比较]({prefix.name}.data.json)',
         f'- [独立计数与逐条CSV核验]({prefix.name}.crosscheck.json)',f'- [PDF图表]({prefix.name}.pdf)',
         '- [输入碰撞登记](input-collisions.json)','- [推理前登记与验证记录](pre-inference-notes.md)',
+        '- [独立程序解释器对已保存文本及全部别名绑定的核验](text-competence-factorial-truth-crosscheck-20261115-01.json)',
         '',f'![全部二十个配置与条件]({prefix.name}.png)','',
         '完整归档与远端发布回执将在完成后另行加入。']
     (folder/'README.md').write_text('\n'.join(lines)+'\n')

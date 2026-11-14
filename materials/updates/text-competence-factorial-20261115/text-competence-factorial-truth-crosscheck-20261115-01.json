@@ -1,0 +1,19 @@
+{
+  "status": "all_saved_program_snapshots_and_1728_alias_bindings_independently_verified",
+  "verified_utc": "2026-11-14T22:45:02.548406+00:00",
+  "dataset": "/media/990Pro/Code/SAS/datasets/memory_update/text-competence-factorial-v1",
+  "physical_registrations": 1344,
+  "related_binding_checks": 1728,
+  "intermediate_current_initial_snapshot_pairs": 16176,
+  "source_sha256": "6d98bfa30aebe90fea07e2e4a14164a462d06e6a36baa365e4fc4eaf8ef8b08a",
+  "files_sha256": {
+    "manifest.json": "fca5d76d9456dfe834a6127c63100ab00cde71335845ed7eae99952d3b11931c",
+    "cases.json": "ea975ae5377c6b7942867b4203ac987025f2e13a0823b62caea48fdf0a71317e",
+    "registry.json": "4cfcbaca907e8b549796adaa928f17819cb830e171904673870b4ed7e54cd876",
+    "transformations.json": "17add837f3bceafe2c9ef4949bcaf77e90527a006bc22203a5e082d295430031"
+  },
+  "new_model_inference": false,
+  "new_scientific_success_gate": false,
+  "changes_previous_gates": false,
+  "note": "Independent operational crosscheck only; related bindings and repeated transformed inputs are correlated."
+}

@@ -57,7 +57,8 @@ def package(audit,output):
         if p.is_file():add(p,ROOT,'code')
     for name in ['README.md','materials/README.md','.gitattributes','requirements.txt','configs/experiment_progress.json',
                  'scripts/export_text_competence_factorial.py','scripts/document_text_competence_factorial.py',
-                 'scripts/package_text_competence_factorial.py','tests/test_text_competence_factorial.py']:
+                 'scripts/package_text_competence_factorial.py','scripts/verify_text_factorial_truth.py',
+                 'tests/test_text_competence_factorial.py']:
         add(ROOT/name,ROOT,'code')
     for arm,state in m['models'].items():
         for regime,digest in state['results_sha256'].items():

@@ -114,7 +114,7 @@ def export(audit,prefix):
             out['actual_prompt_sha256']!=row['actual_prompt_sha256'] or out['answer']!=row['answer'] or out['generated']!=row['generated'] or
             out['token_policy']!=row['token_policy'] or int(out['related_binding_count'])!=len(bound[row['id']]) or
             out['roles']!=';'.join(sorted({b['role'] for b in bound[row['id']]})) or
-            (out['greedy_exact']=='True')!=row['greedy_exact'] or float(out['answer_nll'])!=row['answer_nll'] or int(out['query_tokens'])!=row['query_tokens']):
+            out['greedy_exact']!=str(row['greedy_exact']) or float(out['answer_nll'])!=row['answer_nll'] or int(out['query_tokens'])!=row['query_tokens']):
             raise ValueError('CSV differs from actual original raw readouts')
     if len(csvrows)!=6720:raise ValueError('Missing complete exported task coverage')
     # Decode the two derived CSVs and independently recompute from raw NLLs,
