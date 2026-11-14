@@ -11009,7 +11009,7 @@
     "gdn_only_denotes_adapter_scope": true
   },
   "oracle_write_hold_factorial": {
-    "status": "data_frozen_tests_passed_smokes_pending",
+    "status": "forward_smoke_audited_reverse_running",
     "protocol": "configs/oracle_write_hold_factorial_plan.json",
     "protocol_sha256": "b05fc0ee3b1a1134e54e2a0c43ee815a650b08599c9654122e87682d1f9710e1",
     "prior_runtime_sources_preserved": 172,
@@ -11026,6 +11026,13 @@
       255,
       1287
     ],
-    "previous_full_audit_reexecuted": true
+    "previous_full_audit_reexecuted": true,
+    "native_kernel_identity_checks": 5,
+    "forward_smoke_readouts_audited": 360,
+    "forward_previous_readouts_exact": 180,
+    "cached_state_identity_controls": 60,
+    "actual_attention_controls": 240,
+    "noop_wrapper_controls": 120,
+    "auxiliary_prefix_registration": "configs/oracle_write_hold_prefix_verification.json"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "registered_utc": "2026-11-14T23:28:59.602899+00:00",
+  "type": "operational_verification_only",
+  "parent_protocol_sha256": "b05fc0ee3b1a1134e54e2a0c43ee815a650b08599c9654122e87682d1f9710e1",
+  "purpose": "Empirically verify that changing only question-time reader policy preserves complete historical cache and logits, with both native and held recurrent updates.",
+  "models": "All5fixed configurations",
+  "queries": "All12unchanged prescribed control queries",
+  "regimes": [
+    "full",
+    "hold"
+  ],
+  "source": "Completed independently audited forward smoke, all4condition_controls",
+  "requirements": [
+    "Run as independent auxiliary script outside sealed180primary sources; no edits to those sources or registered data.",
+    "Compare all48cache fields and complete metadata plus prefix logits exactly, using unchanged preserve_history/cache_fingerprint helpers. Compare all12historicalK/V slices at original positions.",
+    "Strictly replay both unrestricted and oracle-reader readouts against original completed smoke control records, including allfivefields.",
+    "All weights and native/controller hooks must restore; no training, no accuracy-dependent selection, no scientific thresholds or changed old gates."
+  ]
+}
