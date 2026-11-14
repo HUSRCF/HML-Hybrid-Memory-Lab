@@ -59,6 +59,7 @@ def package(audit_path,output):
         if p.is_file():add(p,ROOT,'code')
     for name in ['README.md','.gitattributes','requirements.txt','configs/experiment_progress.json',
                  'scripts/export_trained_timing_evidence_access.py','scripts/package_trained_timing_evidence_access.py',
+                 'scripts/document_trained_timing_evidence_access.py',
                  'tests/test_trained_timing_evidence_access.py']:
         add(ROOT/name,ROOT,'code')
     # Require every actual primary arm/regime file explicitly, not just a directory count.
