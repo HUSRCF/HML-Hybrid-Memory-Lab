@@ -113,3 +113,5 @@ nonslice匹配Token预算，不保证完整事件语法。这里使用dense eage
 - [本轮原始材料Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/trained-timing-evidence-access-2026-11-15)
 
 远端发布完成：[发布核验回执](trained-timing-evidence-access-publication-20261115-01.json)。3个资产的GitHub大小与SHA-256全部匹配；5040条CSV结果与实际原始读出一致，两版CSV的Git字节均保持原样，166份运行源码仍未改变。
+
+命名补充：本报告的GDN-only/GDN-all是只在GDN路径安装适配器的基线，原混合主干及六个Attention层仍保留。46/48不能解释为递归状态单独回答了这些问题；原始结果、审计及Release字节均不改动。
