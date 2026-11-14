@@ -49,4 +49,4 @@
 
 原始备份仍固定在 [research-backup-2026-11-15](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/research-backup-2026-11-15)。本目录记录恢复工作后的独立里程碑；运行状态以 [进度记录](../../../configs/experiment_progress.json) 为准。
 
-本轮完整原始记录见增量快照 [unseen-shared-timing-2026-11-15](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/unseen-shared-timing-2026-11-15)。归档共 618 个文件、3,757,341 字节，每个成员均经过 SHA-256 校验；[逐文件清单](raw-archive-file-manifest.json) 和 [归档校验值](raw-archive.json) 随材料保存。恢复时先使用原始备份，再将本增量解压至存储根目录。
+本轮完整原始记录见增量快照 [unseen-shared-timing-2026-11-15](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/unseen-shared-timing-2026-11-15)。归档含清单内 618 个文件，另附内嵌清单，共 3,757,341 字节，每个成员均经过 SHA-256 校验；[逐文件清单](raw-archive-file-manifest.json)、[归档校验值](raw-archive.json) 和 [发布后校验记录](publication_receipt.json) 随材料保存。恢复时先使用原始备份，再将本增量解压至存储根目录。

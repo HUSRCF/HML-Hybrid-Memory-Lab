@@ -1,0 +1,30 @@
+{
+  "status": "published_and_verified",
+  "verified_utc": "2026-11-14T19:27:31.114131+00:00",
+  "release_id": 445535401,
+  "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/unseen-shared-timing-2026-11-15",
+  "published_utc": "2026-11-14T19:26:52Z",
+  "tag_commit": "e6443ac6f4ac2572efb481349fa8f2bbd7f623ac",
+  "all_three_server_assets_verified": true,
+  "sealed_runtime_sources_verified": 136,
+  "raw_primary_readouts_verified": 3360,
+  "figure_and_csv_sha256_verified": true,
+  "git_csv_bytes_exact": true,
+  "assets": [
+    {
+      "name": "unseen-shared-timing-20261115.tar.gz",
+      "bytes": 3757341,
+      "sha256": "8d318bb0ef62af3dd1d5d1ed8f400652923c6fd6fae81146f07c8011269f6a62"
+    },
+    {
+      "name": "file_manifest.json",
+      "bytes": 137208,
+      "sha256": "d20babc04fe1a36a66e9050cd8c77fb0e15315d519388b08e519b214c953a00a"
+    },
+    {
+      "name": "local_verification.json",
+      "bytes": 273,
+      "sha256": "8e269b7af9c29db0386d84f293ace99fa8d90986f9f2d007c67c00aa6c7d40fe"
+    }
+  ]
+}
