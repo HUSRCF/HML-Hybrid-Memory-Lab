@@ -1,0 +1,224 @@
+{
+  "status": "registered_before_mask_generation_or_inference",
+  "registered_utc": "2026-11-14T21:18:02.504551+00:00",
+  "purpose": "Complete-cohort frozen-prefix diagnostic of query-time historical evidence access after matched-training timing criteria failed.",
+  "profile": "trained_timing_evidence_access",
+  "training": false,
+  "new_adapters": false,
+  "new_models": false,
+  "new_task_cases": false,
+  "new_environment": false,
+  "local_files_only": true,
+  "prospective_unseen_confirmation": false,
+  "architecture_effectiveness_claim": false,
+  "can_change_prior_gates": false,
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "model_key": "it",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/trained-shared-timing-20261115-01",
+  "source_manifest_sha256": "96fc6a877ad70716dd18b777af0b6bec13ae966e3ad92ae5bc9ad5b2637a2e09",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/trained-shared-timing-audit-20261115-01.json",
+  "source_audit_sha256": "bcce3a36a63185ed0a4c5843a5d6b19bcc83e9e87d21d54b200ed1057d3f01c1",
+  "source_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/fresh-trained-shared-timing-v1",
+  "source_dataset_manifest_sha256": "3e6128b70375662843e021bfc872aef10a72edae5fc8b43de590c3f7c6d3a290",
+  "source_cases_sha256": "bce745177770b89f1ad4ad8bc8682528be922b41af25d8fafbf3bc31a4e73576",
+  "source_registry_sha256": "cc1192f771ee3b5e29a852a94ee9c92b8d23704b76756b7891681b2bcef6a8e0",
+  "source_protocol": "configs/matched_shared_training_timing_plan.json",
+  "source_protocol_sha256": "027e1d8fcfde9478115e1d238b0528497e6285ca3b1a80086fe332389da5405f",
+  "preserved_runtime_source_count": 160,
+  "model_order": [
+    "native",
+    "shared",
+    "shared_question_trained_all",
+    "shared_question_trained_question",
+    "gdn_all_tokens"
+  ],
+  "models": {
+    "native": null,
+    "shared": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "shared",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/shared/step-000432/controller.safetensors",
+      "checkpoint_sha256": "3ac57cfd86116dc712aacd14de526ccc3cb8f60c7348317fbacc16910914d8fc",
+      "checkpoint_metadata_sha256": "b2bc536ef797684ef00736b8a2622eb94dbe7c6d6d6b55a8f672346a35663225",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.007630780778693288,
+        "teacher_numeric_tokens_correct": 2585,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "shared_question_trained_all": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
+      "training_arm": "shared_question",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01/shared_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "1aa88746b1e317047b6095e21cdfc70f7008b1205c79378b1a740e2df3410035",
+      "checkpoint_metadata_sha256": "941e41380f5d7f01de211044c598269f7c4ae5850d6226302f019d4d54f89e2a",
+      "manifest_sha256": "226ce6120ff2405928b9e9081b08b530333255a31516da79ad98f832c721d9bc",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-audit-20261115-01.json",
+      "audit_sha256": "58dc86ad25e8d858e0077d3b1e5ae7e4950130b02e6d8e6ec0a7387be799e49c",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005023321897164545,
+        "teacher_numeric_tokens_correct": 2590,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "shared_question_trained_question": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
+      "training_arm": "shared_question",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01/shared_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "1aa88746b1e317047b6095e21cdfc70f7008b1205c79378b1a740e2df3410035",
+      "checkpoint_metadata_sha256": "941e41380f5d7f01de211044c598269f7c4ae5850d6226302f019d4d54f89e2a",
+      "manifest_sha256": "226ce6120ff2405928b9e9081b08b530333255a31516da79ad98f832c721d9bc",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-audit-20261115-01.json",
+      "audit_sha256": "58dc86ad25e8d858e0077d3b1e5ae7e4950130b02e6d8e6ec0a7387be799e49c",
+      "final_step": 432,
+      "token_policy": "question",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005023321897164545,
+        "teacher_numeric_tokens_correct": 2590,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "gdn_all_tokens": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "gdn_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+      "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.006321374711538502,
+        "teacher_numeric_tokens_correct": 2584,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    }
+  },
+  "regimes": [
+    "full",
+    "oracle",
+    "nonslice"
+  ],
+  "masked_regimes": [
+    "oracle",
+    "nonslice"
+  ],
+  "counts": {
+    "base_streams": 8,
+    "cases": 48,
+    "physical_queries": 336,
+    "related_bindings": 432,
+    "models": 5,
+    "regimes": 3,
+    "primary_physical_readouts": 5040,
+    "primary_related_bindings": 6480,
+    "fresh_full_replays": 1680,
+    "masked_readouts": 3360
+  },
+  "smoke_queries_per_model": 18,
+  "smoke_readouts_per_order": 270,
+  "smoke_orders": [
+    "registered_forward",
+    "registered_reverse"
+  ],
+  "dataset_destination": "/media/990Pro/Code/SAS/datasets/memory_update/trained-timing-evidence-access-v1",
+  "generation": {
+    "max_tokens": 12,
+    "prefill": "full",
+    "score_batch": false
+  },
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "precision_addendum": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_precision_addendum.json",
+  "precision_addendum_sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc",
+  "runtime_source_files": 166,
+  "data_source_files": 163,
+  "mask_policy": "Reuse unchanged executable backward slicing and original-token masks. Oracle keeps instruction prelude plus original support-event spans. Nonslice keeps same instruction prelude and exactly the same number of original historical tokens, disjoint from all oracle record columns. Preserve every original input token/position; restrict only history columns of question/answer softmax rows in all6Attention layers; all GDN prefix updates run normally.",
+  "requirements": [
+    "Preserve all160successful live/archived prior measurement sources and all16complete raw reference files. Use only the five fixed existing checkpoints; include Native, oldshared/all, same newquestion-trained checkpoint under both all/question deployment and strongest priorGDN/all control. No parameter/checkpoint/query/depth selection or training.",
+    "Use all336physical queries/432related bindings from all48cases: all8seeds63000-63007,depths1/2/3,questionstylesoriginal/entity_first,all3roles,all3world variants. This is a reused-cohort explanatory diagnostic, not another unseen replication.",
+    "Generate and freeze all336mask registrations before inference, reconstruct actual token spans and program truth independently, and reject mask/budget/support changes without resampling.",
+    "Every one of1680fullreadouts must exactly reproduce allfiveoriginal readoutfields from the completed canonical profile. Retain original unrestricted gold scoring and greedy stopping. No relaxed tolerance or alternative answer vocabulary.",
+    "For10fixedall-role/variant/depth/style controls permodel use unchanged prove_and_measure: all-history cache/logits/readout identity, complete prefix48tensor/bookkeeping/logits identity, historical12KVfields in fullprefill unchanged, actual zero suppressed and positive retained softmax probabilities in all6layers, bothprefill and cached decoding. Cover both oracle and nonslice masks.",
+    "For the question-deployed shared checkpoint independently verify complete native prefix equality on all56distinctledgers in the fullrun (all6distinctsmokeledgers in smoke), and match those hashes to completed timing reference. Freeze adapter/native weights and verify hook cleanup plus native anchors before/after every arm, including attached-none identities.",
+    "Require two opposite270-readout operational smokes, independent audits and exact row/proof/scope equivalence before5040primaryreadouts. Operational accuracy cannot select checkpoints, cohorts, masks or models.",
+    "Retain allfull/oracle/nonslice results, current/history/unrelated roles, everydepth/style/load/base-stream stratum, allphysical regressions/repairs, jointcase net outcomes and NLLdifferences. Relatedbindings are correlated, not independent samples."
+  ],
+  "analysis": {
+    "contrasts": [
+      [
+        "oracle",
+        "full"
+      ],
+      [
+        "oracle",
+        "nonslice"
+      ]
+    ],
+    "reports": [
+      "complete5model3regime joint/role/physical counts",
+      "all48case joint gain/loss bydepth/base_stream",
+      "all96postcurrent-target gain/loss bydepth/base_stream",
+      "deduplicated336physicalregressions/repairs and role/depth/style/load/seed strata",
+      "all5originalfullreference identities",
+      "eachpairedcurrenttargetNLLdifference"
+    ],
+    "success_thresholds": null,
+    "reason": "Explanatory bounds; all contrasts and nulls reported without converting any old failed architecture or timing gate to success."
+  },
+  "interpretation_limits": [
+    "Oracle is program-ground-truth historical support, not a learned Router or efficient sparse kernel. This is dense eager Attention with masks; no inference-speed or architecture superiority claim.",
+    "Oracle benefits, especially over disjoint equal-token control, support a contribution from query-time evidence access/distractor suppression under unchanged prefix memory. They do not uniquely identify retrieval, original-state damage or semantic scope.",
+    "Oracle failure cannot establish relation-composition failure: retained KV representations, question-time computation, attention allocation and intervention distribution shift can still fail. A separate text-evidence/compiled-state competence control is required before such attribution; it is not executed in this first diagnostic.",
+    "Nonslice controls token budget, not whole-event grammaticality; report this limitation. Everymodel still retains its full recurrent prefix memory and all post-boundary columns.",
+    "Original48cases are correlated variants of8source streams and were already inspected. Onepairedtraininginitialization; no newdomain, unseen-cohort or independently trained replication claim."
+  ]
+}
