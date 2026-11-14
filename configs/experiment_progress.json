@@ -6547,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T21:10:14.561620+00:00",
+  "updated_utc": "2026-11-14T21:28:07.440708+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10070,7 +10070,7 @@
     "original129sealed_sources_unchanged": true,
     "sha256_verified_for_every_remote_asset": true
   },
-  "current_phase": "matched_shared_training_timing",
+  "current_phase": "trained_timing_evidence_access",
   "matched_shared_training_timing": {
     "status": "completed_audited_and_published_confirmation_all_three_criteria_failed",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
@@ -10426,5 +10426,29 @@
     "confirmation_git_csv_rows_verified": 5376,
     "architecture_effectiveness_claim": false,
     "can_change_prior_gates": false
+  },
+  "trained_timing_evidence_access": {
+    "status": "complete_tests_passed_preparing_masks_and_operational_smokes",
+    "plan": "configs/trained_timing_evidence_access_plan.json",
+    "plan_sha256": "c4a5e0e20c423c5a4764860ff4bf4934e739b73a0962143e86b518867141e8cc",
+    "complete_tests_passed": 213,
+    "complete_test_log": "/media/990Pro/Code/SAS/logs/trained-timing-evidence-access-complete-tests-20261115-01.log",
+    "source_prior_runtime_count": 160,
+    "data_source_count": 163,
+    "runtime_source_count": 166,
+    "new_training": false,
+    "new_environment": false,
+    "prospective_unseen_confirmation": false,
+    "architecture_effectiveness_claim": false,
+    "source_run": "/media/990Pro/Code/SAS/runs/memory_update/trained-shared-timing-20261115-01",
+    "source_audit_sha256": "bcce3a36a63185ed0a4c5843a5d6b19bcc83e9e87d21d54b200ed1057d3f01c1",
+    "prior_timing_criteria_all_failed": true,
+    "dataset": "/media/990Pro/Code/SAS/datasets/memory_update/trained-timing-evidence-access-v1",
+    "primary_output": "/media/990Pro/Code/SAS/runs/memory_update/trained-timing-evidence-access-20261115-01",
+    "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/trained-timing-evidence-access-audit-20261115-01.json",
+    "physical_readouts": 5040,
+    "model_regimes": 15,
+    "operational_smoke_readouts_per_order": 270,
+    "composition_failure_attribution_allowed": false
   }
 }
