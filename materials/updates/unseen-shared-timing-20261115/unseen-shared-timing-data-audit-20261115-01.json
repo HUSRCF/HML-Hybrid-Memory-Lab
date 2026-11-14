@@ -1,0 +1,45 @@
+{
+  "status": "independently_reconstructed_registered_data",
+  "dataset": "/media/990Pro/Code/SAS/datasets/memory_update/fresh-shared-timing-v1",
+  "manifest_sha256": "3c94cdfcecf9175204de7cf7e47933196411047bc91f04ab406739a20129647a",
+  "cases": 48,
+  "physical_queries": 336,
+  "counts": {
+    "base_streams": 8,
+    "related_cases": 48,
+    "physical_queries": 336,
+    "related_bindings": 432,
+    "evaluation_arms": 10,
+    "primary_physical_full_answer_readouts": 3360,
+    "primary_related_bindings": 4320,
+    "new_checkpoints": 0,
+    "new_training_steps": 0
+  },
+  "freshness": {
+    "overlap": {
+      "seeds": [],
+      "identifiers": [],
+      "complete_prompts": [],
+      "complete_prefixes": []
+    },
+    "new_seeds": [
+      62000,
+      62001,
+      62002,
+      62003,
+      62004,
+      62005,
+      62006,
+      62007
+    ],
+    "new_case_identifiers": 56,
+    "new_physical_prompts": 336,
+    "new_distinct_complete_prefixes": 56,
+    "prior_registered_directories": 18,
+    "prior_input_files": 75,
+    "prior_complete_prompts": 6720,
+    "prior_complete_prefixes": 1968
+  },
+  "source_files_verified": 132,
+  "all_distinct_prefixes": 56
+}

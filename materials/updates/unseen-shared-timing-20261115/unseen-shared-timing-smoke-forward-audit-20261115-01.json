@@ -1,0 +1,105 @@
+{
+  "status": "audited_unseen_shared_timing_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01",
+  "manifest_sha256": "9a5125103217fc2fb8ba32cd03ce83e5bae4d659b0acf404cfcd201642c54727",
+  "dataset_manifest_sha256": "3c94cdfcecf9175204de7cf7e47933196411047bc91f04ab406739a20129647a",
+  "operational_controls_passed": true,
+  "counts": {
+    "physical_readouts": 180,
+    "related_bindings": 180,
+    "native_before_attach_replays": 100,
+    "detached_native_replays": 100,
+    "attached_none_policy_identities": 90,
+    "question_native_prefix_checks": 18,
+    "shared_question_all_distinct_native_prefixes": 6,
+    "actual_forward_receipts": 936
+  },
+  "model_order": [
+    "native",
+    "shared",
+    "shared_question_timing",
+    "shared_ledger_timing",
+    "independent",
+    "local",
+    "local_question",
+    "attention_only",
+    "gdn_all_tokens",
+    "gdn_question_only"
+  ],
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "source_files_verified": 136,
+  "metrics": {
+    "primary_evaluated": false,
+    "accuracy_gate": false
+  },
+  "prior_fresh_gates_unchanged": {
+    "generic_shared_controller": {
+      "passed": false,
+      "comparators": {
+        "independent": {
+          "positive_overall": true,
+          "at_least_three_positive_streams": true,
+          "positive_at_every_depth": false
+        },
+        "local_question": {
+          "positive_overall": true,
+          "at_least_three_positive_streams": true,
+          "positive_at_every_depth": true
+        },
+        "gdn_question_only": {
+          "positive_overall": true,
+          "at_least_three_positive_streams": true,
+          "positive_at_every_depth": false
+        }
+      },
+      "scope": "Fixed fresh8stream natural full-history candidate screen. Generic shared latents do not implement explicit semantic constraints. Does not erase previous failed comparisons or establish an architecture contribution."
+    },
+    "frozen_prefix_sufficiency": {
+      "passed": false,
+      "model_checks": {
+        "local_question": {
+          "oracle_current_at_least90_of96": true,
+          "historical_after_no_lower_than_full": true,
+          "unrelated_after_no_lower_than_full": false,
+          "positive_net_current_repair": true,
+          "at_least_four_positive_base_streams": true
+        },
+        "gdn_question_only": {
+          "oracle_current_at_least90_of96": true,
+          "historical_after_no_lower_than_full": true,
+          "unrelated_after_no_lower_than_full": true,
+          "positive_net_current_repair": true,
+          "at_least_four_positive_base_streams": true
+        }
+      }
+    },
+    "whole_record_necessity": {
+      "passed": false,
+      "model_checks": {
+        "local_question": {
+          "other_current_after_no_lower_than_full": false,
+          "other_history_after_no_lower_than_full": true,
+          "other_unrelated_after_no_lower_than_full": true,
+          "other_before_joint_no_lower_than_full": true,
+          "positive_net_support_removal_loss": true,
+          "at_least_four_positive_loss_streams": true
+        },
+        "gdn_question_only": {
+          "other_current_after_no_lower_than_full": true,
+          "other_history_after_no_lower_than_full": true,
+          "other_unrelated_after_no_lower_than_full": true,
+          "other_before_joint_no_lower_than_full": true,
+          "positive_net_support_removal_loss": true,
+          "at_least_four_positive_loss_streams": true
+        }
+      }
+    }
+  },
+  "interpretation": [
+    "The shared controller was trained with all-token activation. Its timing ablations change the deployment distribution. A question-only regression is not proof that semantic prefix writes are necessary, nor proof of recurrent memory damage.",
+    "If question-only preserves shared successes and its positive gains with directly native prefix states, prefix adaptation is unnecessary for those successes under this fixed checkpoint and cohort; do not generalize to all hybrid models.",
+    "Neither shared latent inputs nor successful timing ablation establish explicit semantic dependency constraints, superiority of a new architecture, or absence of prior work.",
+    "These are new source streams within the same executable task family, not a new natural-language domain or independently initialized training replication."
+  ],
+  "analysis_source_sha256": "36aead3df85c1f80e79ba73b56c8e07abdb4f6ed1269e4cf480cb31900879796"
+}

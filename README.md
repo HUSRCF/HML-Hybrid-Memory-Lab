@@ -5,19 +5,23 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: paused for backup and repository handoff.** The latest completed
+**Status: active; resumed after verified backup and repository handoff.** The latest completed
 diagnostic contains 32 exact source replays and 20 full-answer state-restoration
 readouts, with 183 tests passed. All 20 generated answers remain equal to their
 respective unmasked references; this is not evidence of answer repair or an
-architecture improvement. The next unseen-stream experiment is registered but
-has not generated data or run inference.
+architecture improvement. The next unseen-stream experiment now has one registered,
+independently reconstructed cohort: eight new streams, 336 physical questions and
+56 distinct complete prefixes, with no prompt or prefix collisions against prior
+registered data. Its ten-arm runtime passed 193 regression tests; operational
+forward/reverse checks precede the registered primary evaluation.
 
 - [Research status and archived materials](materials/README.md)
 - [Machine-readable progress](configs/experiment_progress.json)
 - [Next registered experiment](configs/unseen_shared_timing_plan.json)
 - [Full backup files](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases)
 
-The repository contains code, plans, reports, figures and execution logs. Release
+The fixed backup release records the explicit pause; subsequent work resumes
+only after the user's instruction. The repository contains code, plans, reports, figures and execution logs. Release
 attachments preserve complete synthetic datasets and experiment run files,
 including adapter checkpoints, optimizer states and raw logits. Pretrained LLM
 weights, environments and compiler/download caches remain local.

@@ -3,6 +3,7 @@
 from copy import deepcopy
 import json
 from pathlib import Path
+from tempfile import TemporaryDirectory
 import unittest
 
 from scripts.analyze_fresh_copy_confirmation import audit_proofs
@@ -21,10 +22,28 @@ class FreshCopyConfirmationTests(unittest.TestCase):
         cls.index = json.loads((DESTINATION / 'prior_inputs.json').read_text())
 
     def test_actual_prior_inputs_independently_reconstruct_and_have_no_overlap(self):
-        proof = verify_prior_index(DESTINATION, self.registration)
-        self.assertEqual(proof['actual_prior_index_sha256'], self.registration['prior_inputs_sha256'])
-        self.assertGreater(proof['complete_prompts'], 6000)
-        self.assertGreater(proof['complete_prefixes'], 1900)
+        from scripts.analyze_blocked_reader_adaptation import tokenizer_runtime
+        from scripts.fresh_copy_data import prior_index, DATA_ROOT
+        from sas_memory.training_data import data_fingerprint
+        # Historical registration fixes the input inventory at that time. Later
+        # prospective cohorts must not silently become its earlier inputs.
+        with TemporaryDirectory(prefix='hml-historical-inputs-') as directory:
+            for name in self.index['registered_directories']:
+                (Path(directory)/Path(name).name).symlink_to(name,target_is_directory=True)
+            actual=prior_index(tokenizer_runtime(self.plan['model_path']),data_root=Path(directory))
+            actual['registered_directories']=[str(Path(p).resolve()) for p in actual['registered_directories']]
+            actual['source_files_sha256']={str(Path(p).resolve()):v for p,v in actual['source_files_sha256'].items()}
+        self.assertEqual(actual,self.index)
+        self.assertEqual(data_fingerprint(actual),self.registration['prior_inputs_sha256'])
+        self.assertGreater(len(actual['complete_prompt_ids_sha256']),6000)
+        self.assertGreater(len(actual['complete_prefix_ids_sha256']),1900)
+        current={str(p) for p in DATA_ROOT.iterdir() if p.is_dir() and p!=DESTINATION and (p/'manifest.json').is_file()}
+        if current-set(self.index['registered_directories']):
+            with self.assertRaisesRegex(ValueError,'prior novelty inputs differs'):
+                verify_prior_index(DESTINATION,self.registration)
+        else:
+            self.assertEqual(verify_prior_index(DESTINATION,self.registration)['actual_prior_index_sha256'],
+                             self.registration['prior_inputs_sha256'])
         self.assertEqual(self.registration['freshness']['overlap'], {'seeds': [], 'identifiers': [], 'complete_prompts': [], 'complete_prefixes': []})
         for field, value in [('seeds', self.cases[0]['seed']), ('identifiers', self.cases[0]['base_case_id']),
                              ('complete_prompt_ids_sha256', self.registry['physical'][0]['id']),

@@ -1,5 +1,5 @@
 {
-  "goal_status": "paused",
+  "goal_status": "active",
   "research_question": "Dependency-conditioned coordination of recurrent updates and historical evidence access in existing 3:1 hybrid blocks",
   "runtime": "/home/husrcf/anaconda3/bin/python",
   "storage_root": "/media/990Pro/Code/SAS",
@@ -6008,16 +6008,16 @@
   },
   "last_completed_phase": "32source_replays_and20posthoc_state_continuations_completed_and_audited",
   "next_research_step": {
-    "status": "unseen_shared_timing_registered_before_data_generation",
+    "status": "both_smokes_independently_audited_exact_order_equivalence_passed_primary_running",
     "plan": "/home/husrcf/Code/SAS/configs/unseen_shared_timing_plan.json",
     "plan_sha256": "1fe0317cb6ab1563d16ed44a1fa130dcb42453b7d96606bb6ba075d80c5b316a",
     "registered_utc": "2026-11-14T17:52:44.303688+00:00",
     "prospective_unseen_streams": true,
     "architecture_effectiveness_claim": false,
     "can_change_prior_gates": false,
-    "runtime_implemented": false,
-    "data_generated": false,
-    "model_inference_started": false,
+    "runtime_implemented": true,
+    "data_generated": true,
+    "model_inference_started": true,
     "new_training": false,
     "new_environment": false,
     "selected_base_streams": 8,
@@ -6031,7 +6031,32 @@
       "Retain all8natural strong baselines and add question-only/ledger-only schedules of the same frozen shared checkpoint. Verify complete native prefix states/logits for every distinct shared-question ledger; full Attention and original gold/greedy runtime remain unchanged.",
       "Require two exact180readout forward/reverse operational smokes with scope/weight/native controls before3360primary full-answer readouts. Retain every4320related binding and all own-world failures/nulls; do not reuse favorable old cases.",
       "Report same-checkpoint question-only preservation/regressions and gains versus native overall/everydepth/streams. Deployment timing ablation cannot by itself prove semantic write necessity. Explicit semantic-controller training needs a separate matched prospective plan."
-    ]
+    ],
+    "dataset": "/media/990Pro/Code/SAS/datasets/memory_update/fresh-shared-timing-v1",
+    "dataset_manifest_sha256": "3c94cdfcecf9175204de7cf7e47933196411047bc91f04ab406739a20129647a",
+    "data_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/unseen-shared-timing-data-audit-20261115-01.json",
+    "distinct_complete_prefixes": 56,
+    "registered_data_source_files": 132,
+    "runtime_source_files": 136,
+    "prior_prompt_or_prefix_collisions": 0,
+    "data_audit_sha256": "215ac9948e27c5e0034f9cd4d22df62c30108b5e11d1b7efd89d2afdf1eaa3d1",
+    "tests_passed": 193,
+    "test_log": "/media/990Pro/Code/SAS/logs/unseen-shared-timing-complete-tests-20261115-02.log",
+    "retained_first_test_failure": {
+      "log": "/media/990Pro/Code/SAS/logs/unseen-shared-timing-complete-tests-20261115-01.log",
+      "reason": "Historical test treated later registered dataset as earlier input; unsealed test now reconstructs original inventory and confirms strict original runtime rejects changed inventory. No sealed runtime or dataset changed."
+    },
+    "forward_smoke_run": "/media/990Pro/Code/SAS/runs/memory_update/unseen-shared-timing-smoke-forward-20261115-01",
+    "forward_smoke_log": "/media/990Pro/Code/SAS/logs/unseen-shared-timing-smoke-forward-20261115-01.log",
+    "forward_smoke_physical_readouts": 180,
+    "successful_runtime_sources_sealed": 136,
+    "reverse_smoke_run": "/media/990Pro/Code/SAS/runs/memory_update/unseen-shared-timing-smoke-reverse-20261115-01",
+    "smoke_equivalence": "/media/990Pro/Code/SAS/artifacts/memory_update/unseen-shared-timing-smoke-equivalence-20261115-01.json",
+    "smoke_equivalence_sha256": "6af373c0e13129d21724d5891d10b85d78edfcd07508db23b756d8dd503e62ff",
+    "exact_cross_order_readouts": 180,
+    "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/unseen-shared-timing-20261115-01",
+    "primary_log": "/media/990Pro/Code/SAS/logs/unseen-shared-timing-primary-20261115-01.log",
+    "primary_completed": false
   },
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
@@ -6413,7 +6438,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T18:08:54.329230+00:00",
+  "updated_utc": "2026-11-14T18:58:56.578869+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -9917,5 +9942,23 @@
   },
   "paused_utc": "2026-11-14T18:08:54.329230+00:00",
   "pause_reason": "User explicitly paused research to back up progress and publish HUSRCF/HML-Hybrid-Memory-Lab.",
-  "repository": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab"
+  "repository": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab",
+  "resumed_utc": "2026-11-14T18:25:03.068726+00:00",
+  "resume_reason": "User explicitly asked to continue experiments after verified GitHub backup completion.",
+  "publication_receipt": {
+    "verified_utc": "2026-11-14T18:24:06.221926+00:00",
+    "repository": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab",
+    "commit": "6a4d719dbebeba2f18b46532e675665d944ab338",
+    "tree": "cdc96571f3cded6dbae7f78e7c938bf6a6b45691",
+    "release": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/research-backup-2026-11-15",
+    "release_id": 445493660,
+    "published_at": "2026-11-14T18:23:30Z",
+    "assets_verified": 20,
+    "uploaded_bytes": 512898870,
+    "archived_files_verified": 6815,
+    "git_worktree_clean": true,
+    "research_status": "paused",
+    "original129sealed_sources_unchanged": true,
+    "sha256_verified_for_every_remote_asset": true
+  }
 }
