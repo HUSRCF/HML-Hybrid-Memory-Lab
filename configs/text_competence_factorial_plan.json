@@ -1,0 +1,239 @@
+{
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "model_key": "it",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "models": {
+    "native": null,
+    "shared": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "shared",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/shared/step-000432/controller.safetensors",
+      "checkpoint_sha256": "3ac57cfd86116dc712aacd14de526ccc3cb8f60c7348317fbacc16910914d8fc",
+      "checkpoint_metadata_sha256": "b2bc536ef797684ef00736b8a2622eb94dbe7c6d6d6b55a8f672346a35663225",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.007630780778693288,
+        "teacher_numeric_tokens_correct": 2585,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "shared_question_trained_all": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
+      "training_arm": "shared_question",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01/shared_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "1aa88746b1e317047b6095e21cdfc70f7008b1205c79378b1a740e2df3410035",
+      "checkpoint_metadata_sha256": "941e41380f5d7f01de211044c598269f7c4ae5850d6226302f019d4d54f89e2a",
+      "manifest_sha256": "226ce6120ff2405928b9e9081b08b530333255a31516da79ad98f832c721d9bc",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-audit-20261115-01.json",
+      "audit_sha256": "58dc86ad25e8d858e0077d3b1e5ae7e4950130b02e6d8e6ec0a7387be799e49c",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005023321897164545,
+        "teacher_numeric_tokens_correct": 2590,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "shared_question_trained_question": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
+      "training_arm": "shared_question",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01/shared_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "1aa88746b1e317047b6095e21cdfc70f7008b1205c79378b1a740e2df3410035",
+      "checkpoint_metadata_sha256": "941e41380f5d7f01de211044c598269f7c4ae5850d6226302f019d4d54f89e2a",
+      "manifest_sha256": "226ce6120ff2405928b9e9081b08b530333255a31516da79ad98f832c721d9bc",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-audit-20261115-01.json",
+      "audit_sha256": "58dc86ad25e8d858e0077d3b1e5ae7e4950130b02e6d8e6ec0a7387be799e49c",
+      "final_step": 432,
+      "token_policy": "question",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005023321897164545,
+        "teacher_numeric_tokens_correct": 2590,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "gdn_all_tokens": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "gdn_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+      "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.006321374711538502,
+        "teacher_numeric_tokens_correct": 2584,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    }
+  },
+  "model_order": [
+    "native",
+    "shared",
+    "shared_question_trained_all",
+    "shared_question_trained_question",
+    "gdn_all_tokens"
+  ],
+  "generation": {
+    "max_tokens": 12,
+    "prefill": "full",
+    "score_batch": false
+  },
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "precision_addendum": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_precision_addendum.json",
+  "precision_addendum_sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc",
+  "status": "registered_before_text_transformation_generation_or_inference",
+  "registered_utc": "2026-11-14T22:11:20.995317+00:00",
+  "profile": "text_competence_factorial",
+  "purpose": "Full-cohort factorial competence controls separating history scope and online COPY execution; not recurrent-state causal localization.",
+  "training": false,
+  "new_adapters": false,
+  "new_models": false,
+  "new_task_cases": false,
+  "new_environment": false,
+  "local_files_only": true,
+  "prospective_unseen_confirmation": false,
+  "architecture_effectiveness_claim": false,
+  "can_change_prior_gates": false,
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/trained-timing-evidence-access-20261115-01",
+  "source_manifest_sha256": "42f5f64830b1f2a8e64691f6b770333c96a4eb89e2e1a21d252254765de55b56",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/trained-timing-evidence-access-audit-20261115-01.json",
+  "source_audit_sha256": "1bfb845bd0648220300502d6d5d44a92c2d2d6f42fcef82e47fdb696f249b395",
+  "source_protocol": "configs/trained_timing_evidence_access_plan.json",
+  "source_protocol_sha256": "c4a5e0e20c423c5a4764860ff4bf4934e739b73a0962143e86b518867141e8cc",
+  "source_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/fresh-trained-shared-timing-v1",
+  "source_dataset_manifest_sha256": "3e6128b70375662843e021bfc872aef10a72edae5fc8b43de590c3f7c6d3a290",
+  "source_cases_sha256": "bce745177770b89f1ad4ad8bc8682528be922b41af25d8fafbf3bc31a4e73576",
+  "source_registry_sha256": "cc1192f771ee3b5e29a852a94ee9c92b8d23704b76756b7891681b2bcef6a8e0",
+  "preserved_runtime_source_count": 166,
+  "regimes": [
+    "full",
+    "support_text",
+    "compiled_full",
+    "compiled_support"
+  ],
+  "factors": {
+    "event_scope": [
+      "full",
+      "support"
+    ],
+    "operation_form": [
+      "original",
+      "compiled"
+    ]
+  },
+  "counts": {
+    "base_streams": 8,
+    "cases": 48,
+    "physical_queries": 336,
+    "related_bindings": 432,
+    "models": 5,
+    "regimes": 4,
+    "primary_physical_readouts": 6720,
+    "primary_related_bindings": 8640,
+    "fresh_full_replays": 1680,
+    "transformed_text_readouts": 5040
+  },
+  "smoke_queries_per_model": 18,
+  "smoke_readouts_per_order": 360,
+  "smoke_orders": [
+    "registered_forward",
+    "registered_reverse"
+  ],
+  "dataset_destination": "/media/990Pro/Code/SAS/datasets/memory_update/text-competence-factorial-v1",
+  "data_source_files": 169,
+  "runtime_source_files": 172,
+  "transformation": {
+    "instructions_and_query": "Keep original INSTRUCTIONS, tokenizer, chat template, question wording and unrestricted answer scoring/stopping. Preserve original physical IDs for paired task accounting; separately register actual transformed prompt hashes, prefix hashes, lengths and token IDs.",
+    "support": "Use unchanged executable evidence_slice on original events for the original entity/version. Render complete selected events in order, without token masking.",
+    "compiled": "Process each selected event sequence in its original order; replace COPY with SET(target, actual current source value at that moment). Preserve all original SET events. Require original/compiled current and initial maps equal for every entity at every step; do not append query gold or inspect model predictions.",
+    "coverage": "Construct all4conditions for all336original physical queries; preserve all432role/variant bindings. Allow multiple original IDs to share transformed tokens; report such collisions, never treat correlated repetitions as independent.",
+    "limits": "Compiled/support text changes token lengths, positions, prefix computation, semantic difficulty and distribution. It is an oracle competence control, not a learned routing method or clean isolation of composition."
+  },
+  "requirements": [
+    "Register this exact protocol before any in-memory or saved transformed dataset generation; freeze all169data sources and original336queries before model inference. Never alter166prior measurement sources.",
+    "Use unchanged5model/deployment configurations and final checkpoints; no training, query/depth selection, resampling, answer restriction or threshold tuning.",
+    "Every1680freshfullreadout must exactly match all5fields from the completed evidence-access full result and preceding canonical profile. No tolerance relaxation.",
+    "For each of4textconditions take12fixed control queries: inherited10all-role/variant endpoint controls plus both predetermined depth2queries. Run independent native anchors, before-attach, attached-none and detach checks for all5configurations, including controls outside18smoke queries as explicitly auxiliary measurements.",
+    "Observe positive historical record probability/mass at all6Attention layers on all12controls in all4conditions for everymodel, in full prefill and cached answer forwards; no KV masks or changed causal policy.",
+    "For question-deployed checkpoint verify complete48tensor/cache/bookkeeping/logit identity with native for every distinct transformed ledger within every condition among selected queries plus auxiliary controls. Verify full-condition prefix hashes also match the completed reference.",
+    "Freeze native/adapter weights, verify canonical FP64 affine accumulation without native wrapping, all model and generation configuration hashes, and restore hooks after every arm.",
+    "Require opposite360readout operational runs and independent audits with exact raw/control/proof equivalence before6720primary readouts; do not gate on operational accuracy.",
+    "Report all4cells, current/history/unrelated roles, everydepth/style/load/seed, complete physical repairs/regressions, jointcases, paired current NLL and withinquery factorial NLL interaction. No binomial independent-sample claims."
+  ],
+  "analysis": {
+    "contrasts": [
+      [
+        "support_text",
+        "full"
+      ],
+      [
+        "compiled_full",
+        "full"
+      ],
+      [
+        "compiled_support",
+        "support_text"
+      ],
+      [
+        "compiled_support",
+        "compiled_full"
+      ]
+    ],
+    "factorial_nll_interaction": "NLL(compiled_support)-NLL(support_text)-NLL(compiled_full)+NLL(full), per original physical query and all96postcurrent bindings; descriptive, not unique causal attribution.",
+    "success_thresholds": null,
+    "interpretation": "All old failed criteria remain unchanged. No new architecture effectiveness, timing speed or semantic-state injury claim; cross-condition changes do not isolate a single internal mechanism."
+  },
+  "interpretation_limits": [
+    "Reused8source streams,48related cases; models share one training initialization and some checkpoints. Not independent replications.",
+    "Original physical IDs retain task pairing; transformed prompt collisions are disclosed and never counted as independent evidence.",
+    "Compilation is privileged execution by an interpreter, and support selection is query-specific oracle evidence. Success does not show the LLM can learn either process.",
+    "Improvement can reflect easier text, changed positions, reduced interference, explicit numerical values or distribution effects, not uniquely relation composition.",
+    "Failures on transformed text also do not prove composition incapacity or memory injury. Preserve role-specific harms and strongGDNonly control."
+  ]
+}
