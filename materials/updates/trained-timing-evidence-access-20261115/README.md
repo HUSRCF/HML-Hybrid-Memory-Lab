@@ -111,3 +111,5 @@ nonslice匹配Token预算，不保证完整事件语法。这里使用dense eage
 - [文件与SHA-256清单](file_manifest.json)
 - [本地逐项验证回执](local_verification.json)
 - [本轮原始材料Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/trained-timing-evidence-access-2026-11-15)
+
+远端发布完成：[发布核验回执](trained-timing-evidence-access-publication-20261115-01.json)。3个资产的GitHub大小与SHA-256全部匹配；5040条CSV结果与实际原始读出一致，两版CSV的Git字节均保持原样，166份运行源码仍未改变。

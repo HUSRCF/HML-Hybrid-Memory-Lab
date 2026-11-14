@@ -1,0 +1,80 @@
+{
+  "status": "published_all3_remote_asset_sizes_and_sha256_verified",
+  "verified_utc": "2026-11-14T22:07:46.881288+00:00",
+  "repository": "HUSRCF/HML-Hybrid-Memory-Lab",
+  "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/trained-timing-evidence-access-2026-11-15",
+  "release_id": 445622560,
+  "tag": "trained-timing-evidence-access-2026-11-15",
+  "tag_commit": "50c2449fc45316277a64cea34c6a6e5f02222436",
+  "assets": [
+    {
+      "name": "trained-timing-evidence-access-20261115.tar.gz",
+      "bytes": 11942597,
+      "sha256": "70f8690b59d8228a05f63136f6311a74c890c52c9497696d6a750af7437d0fdd",
+      "github_digest": "sha256:70f8690b59d8228a05f63136f6311a74c890c52c9497696d6a750af7437d0fdd",
+      "url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/download/trained-timing-evidence-access-2026-11-15/trained-timing-evidence-access-20261115.tar.gz",
+      "state": "uploaded"
+    },
+    {
+      "name": "file_manifest.json",
+      "bytes": 322920,
+      "sha256": "64cdea20b1f20d7847da617aba0018042ad5d29e231abdf4a1849cf915e700a3",
+      "github_digest": "sha256:64cdea20b1f20d7847da617aba0018042ad5d29e231abdf4a1849cf915e700a3",
+      "url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/download/trained-timing-evidence-access-2026-11-15/file_manifest.json",
+      "state": "uploaded"
+    },
+    {
+      "name": "local_verification.json",
+      "bytes": 269,
+      "sha256": "ef8715f2e91544cfe3a342916305c35346c24de7f6290967b5890fbea69ac057",
+      "github_digest": "sha256:ef8715f2e91544cfe3a342916305c35346c24de7f6290967b5890fbea69ac057",
+      "url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/download/trained-timing-evidence-access-2026-11-15/local_verification.json",
+      "state": "uploaded"
+    }
+  ],
+  "local_verification": {
+    "status": "all_archive_members_byte_verified",
+    "files_verified": 1332,
+    "archive_entries": 1333,
+    "archive": "trained-timing-evidence-access-20261115.tar.gz",
+    "bytes": 11942597,
+    "sha256": "70f8690b59d8228a05f63136f6311a74c890c52c9497696d6a750af7437d0fdd"
+  },
+  "primary_readouts": 5040,
+  "related_bindings": 6480,
+  "primary_audit_sha256": "1bfb845bd0648220300502d6d5d44a92c2d2d6f42fcef82e47fdb696f249b395",
+  "all_primary_csv_rows_verified_by_export": 5040,
+  "current_target_paired_csv_rows": 960,
+  "git_csv_bytes_verified": [
+    {
+      "path": "materials/updates/trained-timing-evidence-access-20261115/trained-timing-evidence-access-figure-20261115-02.csv",
+      "sha256": "87bfc383461ed59a603ee4e202dfdc7797baab30c99957a826224509c27577cc",
+      "bytes": 775370
+    },
+    {
+      "path": "materials/updates/trained-timing-evidence-access-20261115/trained-timing-evidence-access-figure-20261115-02.pairs.csv",
+      "sha256": "65c60097716c284405f51f64dc7808c225ba5592514140fc471f1d5dbf47848b",
+      "bytes": 222591
+    },
+    {
+      "path": "materials/updates/trained-timing-evidence-access-20261115/trained-timing-evidence-access-figure-20261115-01.csv",
+      "sha256": "87bfc383461ed59a603ee4e202dfdc7797baab30c99957a826224509c27577cc",
+      "bytes": 775370
+    },
+    {
+      "path": "materials/updates/trained-timing-evidence-access-20261115/trained-timing-evidence-access-figure-20261115-01.pairs.csv",
+      "sha256": "65c60097716c284405f51f64dc7808c225ba5592514140fc471f1d5dbf47848b",
+      "bytes": 222591
+    }
+  ],
+  "live_and_archived_runtime_sources_unchanged": 166,
+  "complete_tests_passed": 215,
+  "figure_visual_inspection": {
+    "width": 2700,
+    "height": 1620,
+    "version": 2
+  },
+  "all_previous_failed_gates_unchanged": true,
+  "architecture_effectiveness_claim": false,
+  "goal_status": "active"
+}

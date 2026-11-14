@@ -6547,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T22:06:15.614298+00:00",
+  "updated_utc": "2026-11-14T22:07:46.885732+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10428,7 +10428,7 @@
     "can_change_prior_gates": false
   },
   "trained_timing_evidence_access": {
-    "status": "complete_audited_exported_local_archive_verified_publication_pending",
+    "status": "completed_independently_audited_all_results_published_and_remote_verified",
     "plan": "configs/trained_timing_evidence_access_plan.json",
     "plan_sha256": "c4a5e0e20c423c5a4764860ff4bf4934e739b73a0962143e86b518867141e8cc",
     "complete_tests_passed": 213,
@@ -10642,6 +10642,12 @@
       "sha256": "70f8690b59d8228a05f63136f6311a74c890c52c9497696d6a750af7437d0fdd"
     },
     "backup_manifest_sha256": "64cdea20b1f20d7847da617aba0018042ad5d29e231abdf4a1849cf915e700a3",
-    "no_scaleup_or_new_training_triggered": true
+    "no_scaleup_or_new_training_triggered": true,
+    "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/trained-timing-evidence-access-publication-20261115-01.json",
+    "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/trained-timing-evidence-access-2026-11-15",
+    "remote_assets_verified": 3,
+    "git_csv_rows_verified": 5040,
+    "source_files_unchanged_after_publication": 166,
+    "next_action": "Decide a complete-cohort competence or evidence-use control from the full results. No new architecture claim, scaleup or new training; any next inference needs its own preregistration."
   }
 }
