@@ -1,0 +1,13 @@
+{
+  "status": "direct_raw_count_crosscheck_matches_complete_independent_audit",
+  "audit_sha256": "bcce3a36a63185ed0a4c5843a5d6b19bcc83e9e87d21d54b200ed1057d3f01c1",
+  "raw_crosscheck_sha256": "4a4796107ed83998ad65230400264f1583503039f9e729788fc1b5524b44712a",
+  "models_compared": 16,
+  "physical_answers_compared": 5376,
+  "three_registered_criteria": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "architecture_effectiveness_claim": false
+}

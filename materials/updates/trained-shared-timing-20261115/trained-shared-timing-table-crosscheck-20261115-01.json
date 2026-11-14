@@ -1,0 +1,1666 @@
+{
+  "status": "raw_counts_crosscheck_pending_full_execution_audit",
+  "source_manifest_sha256": "96fc6a877ad70716dd18b777af0b6bec13ae966e3ad92ae5bc9ad5b2637a2e09",
+  "models": {
+    "native": {
+      "physical_correct": 249,
+      "physical_questions": 336,
+      "joint_six_after": 1,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 13,
+        "target_initial": 96,
+        "protected_current": 92
+      }
+    },
+    "shared": {
+      "physical_correct": 281,
+      "physical_questions": 336,
+      "joint_six_after": 14,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 45,
+        "target_initial": 92,
+        "protected_current": 96
+      }
+    },
+    "shared_question_timing": {
+      "physical_correct": 254,
+      "physical_questions": 336,
+      "joint_six_after": 2,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 14,
+        "target_initial": 96,
+        "protected_current": 96
+      }
+    },
+    "shared_ledger_timing": {
+      "physical_correct": 266,
+      "physical_questions": 336,
+      "joint_six_after": 6,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 40,
+        "target_initial": 84,
+        "protected_current": 94
+      }
+    },
+    "shared_question_trained_all": {
+      "physical_correct": 280,
+      "physical_questions": 336,
+      "joint_six_after": 15,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 43,
+        "target_initial": 93,
+        "protected_current": 96
+      }
+    },
+    "shared_question_trained_question": {
+      "physical_correct": 279,
+      "physical_questions": 336,
+      "joint_six_after": 15,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 39,
+        "target_initial": 96,
+        "protected_current": 96
+      }
+    },
+    "shared_question_trained_ledger": {
+      "physical_correct": 255,
+      "physical_questions": 336,
+      "joint_six_after": 2,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 18,
+        "target_initial": 96,
+        "protected_current": 93
+      }
+    },
+    "shared_ledger_trained_all": {
+      "physical_correct": 277,
+      "physical_questions": 336,
+      "joint_six_after": 13,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 42,
+        "target_initial": 91,
+        "protected_current": 96
+      }
+    },
+    "shared_ledger_trained_question": {
+      "physical_correct": 253,
+      "physical_questions": 336,
+      "joint_six_after": 0,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 13,
+        "target_initial": 96,
+        "protected_current": 96
+      }
+    },
+    "shared_ledger_trained_ledger": {
+      "physical_correct": 278,
+      "physical_questions": 336,
+      "joint_six_after": 13,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 42,
+        "target_initial": 92,
+        "protected_current": 96
+      }
+    },
+    "independent": {
+      "physical_correct": 273,
+      "physical_questions": 336,
+      "joint_six_after": 14,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 34,
+        "target_initial": 95,
+        "protected_current": 96
+      }
+    },
+    "local": {
+      "physical_correct": 277,
+      "physical_questions": 336,
+      "joint_six_after": 13,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 38,
+        "target_initial": 95,
+        "protected_current": 96
+      }
+    },
+    "local_question": {
+      "physical_correct": 271,
+      "physical_questions": 336,
+      "joint_six_after": 12,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 33,
+        "target_initial": 94,
+        "protected_current": 96
+      }
+    },
+    "attention_only": {
+      "physical_correct": 273,
+      "physical_questions": 336,
+      "joint_six_after": 1,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 33,
+        "target_initial": 96,
+        "protected_current": 96
+      }
+    },
+    "gdn_all_tokens": {
+      "physical_correct": 278,
+      "physical_questions": 336,
+      "joint_six_after": 16,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 38,
+        "target_initial": 96,
+        "protected_current": 96
+      }
+    },
+    "gdn_question_only": {
+      "physical_correct": 281,
+      "physical_questions": 336,
+      "joint_six_after": 13,
+      "cases": 48,
+      "post_role_counts": {
+        "target_current": 43,
+        "target_initial": 94,
+        "protected_current": 96
+      }
+    }
+  },
+  "matched_question_joint_contrasts": {
+    "shared_question_timing": {
+      "gains": 13,
+      "losses": 0,
+      "net": 13,
+      "by_depth": {
+        "1": {
+          "gains": 13,
+          "losses": 0,
+          "net": 13
+        },
+        "2": {
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "3": {
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      },
+      "by_seed": {
+        "63000": {
+          "gains": 2,
+          "losses": 0,
+          "net": 2
+        },
+        "63001": {
+          "gains": 2,
+          "losses": 0,
+          "net": 2
+        },
+        "63002": {
+          "gains": 2,
+          "losses": 0,
+          "net": 2
+        },
+        "63003": {
+          "gains": 2,
+          "losses": 0,
+          "net": 2
+        },
+        "63004": {
+          "gains": 2,
+          "losses": 0,
+          "net": 2
+        },
+        "63005": {
+          "gains": 2,
+          "losses": 0,
+          "net": 2
+        },
+        "63006": {
+          "gains": 1,
+          "losses": 0,
+          "net": 1
+        },
+        "63007": {
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      },
+      "passed": false
+    },
+    "native": {
+      "gains": 14,
+      "losses": 0,
+      "net": 14,
+      "by_depth": {
+        "1": {
+          "gains": 14,
+          "losses": 0,
+          "net": 14
+        },
+        "2": {
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        },
+        "3": {
+          "gains": 0,
+          "losses": 0,
+          "net": 0
+        }
+      },
+      "by_seed": {
+        "63000": {
+          "gains": 2,
+          "losses": 0,
+          "net": 2
+        },
+        "63001": {
+          "gains": 2,
+          "losses": 0,
+          "net": 2
+        },
+        "63002": {
+          "gains": 2,
+          "losses": 0,
+          "net": 2
+        },
+        "63003": {
+          "gains": 2,
+          "losses": 0,
+          "net": 2
+        },
+        "63004": {
+          "gains": 2,
+          "losses": 0,
+          "net": 2
+        },
+        "63005": {
+          "gains": 2,
+          "losses": 0,
+          "net": 2
+        },
+        "63006": {
+          "gains": 1,
+          "losses": 0,
+          "net": 1
+        },
+        "63007": {
+          "gains": 1,
+          "losses": 0,
+          "net": 1
+        }
+      },
+      "passed": false
+    }
+  },
+  "matched_question_vs_shared_all_physical": {
+    "preserved": 274,
+    "regression": 7,
+    "repair": 5,
+    "both_wrong": 50
+  },
+  "physical_pairs": [
+    {
+      "physical_id": "ae5e844908f434ab55af229e505b694e7ca3027dc54e283ee7a654a6aa551078",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "89fc6b12b113c65171b35ef31cb898b24c9a26ed0c3d0c09314fc7f2f0f4e303",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "564360d358c21565c0c1c2fb28ae57dac61a7e014ea64b4a0d09cf0194756fdb",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "d49c3d1362bdef3f4451016d1d958996d88cf1503c17997aac9093e35b9ca572",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "463f1d50f3e86e23563bb13addf11393089033ead18afb3968bdbe417be083a8",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "920a4181c481b514322626a3ad38ebaa59c840fcaf6cdbbcc747f413dcc29071",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "6b1372b4113b84f836ed34c50864bdddaac5fa12f1d254deb5d1915590c741f4",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "ed418abb22964bfb3f06913ba1554a7d7ad7b2c4a60451be48075cd45732d86d",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "0d3f35a2067eedfd40af121e1cc24709fd1dab35f6746bb7169f144cfe76136a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "1b26ef2c40ba7620343e692817bf18c290162f157592211eed059651476a9e8c",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "0378bb93af9ffa8883c1a357baec56e9d39cbab30f76526e774dc171e2a93332",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "b7c00265abd201573180bcf0480bf2071ab0b7f4147379918fa3df3ff4109752",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "3867e44cd20cabf4066ed8c6f3a161b67c4287a4bc1442efe6c1c5b4fa8dee18",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "7d1fbeb54ef2fe57a4a7da1394a7cc9666d6ca211b45b0d39be1d7110dfd2008",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "4c1fac4d1c68ee1b3f6e426a6b496ace4fc6ff189903a8c10b23074926b86f4d",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "4602b8dcf81e58f85c81bbc52e29fec611d51a4fd866148e1682eb65f03cf2cc",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "57d8734255ab1cb6abd78879309177367ab3201c680ebc7c741bf95094b8c583",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "02d915e85de8c6e4426ede0a2c195c350fcd288f58f56f749e4868339a1b1fc0",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "63de0154c5a446ce0d048d7d5f88dcfbea12c14c29722e5665d5fb3471aba888",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "5de5cb171d63d9a1dd2651ecd8254c3ad94f23c3a5f9101581578000154e2541",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "89c742c8c686ba4eac28243f13a8bddc9423c713292be20ba825e2a80cbd499d",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "ab32ca4490933d101502966ac4c6c9dff17f4d307f9be65163e8015a3581e7d2",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "ba89c4900f5065ac16357a14cad52bab2baddcffe135545d2fa3978a05ff3dbd",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "655d9675c7ad4c03d65b0dc61f421540aebc3ab0fdbcf4040e68a5843beecc39",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "cea9b1e798508aee22772718961840949beb4a9f19669dcf2bdf77565a87b6ac",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "60b02ecf5627c62b09e89441f2feec06497fde221d5d0a5c19e0f101ad779f2e",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "4384bb080484a67dcec194c95a253e05f1b9fc8acf39cd4de191feddc132dc26",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "5a48cc3be387d74886a5bc21ed47195896c60273b82275a4a79981bdb0b735f5",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "0738decc48297d03272cc816f679ef0eda519654ba62c9c611d81441e33f075f",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "61bd68e329662e758ab5ae7e8a9a91f498d3841dadcf2ea3001ca64f6a9fa3b3",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "7cc7dd83c5df2ec713fb2b58e726456818821349ab73cb8d36b089605de93df2",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "77b0ddad7133ba2d633fa6a8b42f5a6669650bb2136829a343790f67ff5062c6",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "fd2b55649dbf61ef4d69798cbfe76822678568720c82fbb2967c02b725c39418",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "2cfa4e2c20704f31349d9ca43dbbbffd20670b5088ad1e3b7b68a9fbe476f60d",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "7692d9444763a92521856d364540f61b52d43357e3114c231eae2ce305493f27",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "98c53a5500e9122010469ebd7f11598e931cc033479df8ad047a941085882c7d",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "b1657a32164eb0661e3e0489fde7d8e22b446f3d1c14923d303f9437e634c9ee",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "39d9e1f614c2d4e99a03dc3b0f27c193f313a827ea132544ec33b2ec567517e3",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "3a9cc5e611c63af745a397fdd2ff2af7d8e947ecf604d55f0e7811b1878b3379",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "130e9267fc16e39281319653f43a8d894072f768dd93315783c0547c38e0f2d6",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "fa1b36be1c49f6deb4efb5be8ef0b1a0323aeba538ea7806b21374caf74a82a4",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "a521dd82802c8cfd4b8ffcedaf14ec66ad8aadaf56012d993b084926cd86cfb8",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "e0ac87f35b56e334e65af0c4522e280c6cb0a3dd375226cc157c2f5de272eabb",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "14e9ee8f8de4cf0d6eac42e300b44b2f8211c40932f8fa1c7830c4fbef5899f4",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "cca0573efb397cc4663c2c1486f4296d2e2728cd5ac1d28288bee35b1cb4b65e",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "5cc9a601ff1d420968be1a9960bdae26ca5387956117d9f0164c69d7e3903889",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "1b58bce2d1a38b9e504e3004906cd0f4831782d49117fd200261f2ae994d91ff",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "d57b3ee47f65e41817a2bb6a77dd9234d37b87810e210bf9a2345325621ee813",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "a89c5e978510b7980c6f217fc92151b6f7d5ce8424c9511c2ee62c40440e2ac4",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "c284cd87902689b06905b78ff6c152a0ae12611f3a6fe77375e9f669f90c65a3",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "223fbdd69c15dc409d749dc84c1c9075ad23ec297ed03c56c1206c5abe1bbb98",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "bc9d535bd68921e0f5dc010d5547b3dbb6050998166cea1fe2d72b3c2d44fd4c",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "21c0a4be6eee5e7de8a2025212e75b90a8aff58abc83a9868b9d78ee92500c05",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "6ff47b185d660576698185e998518de7ede09484e462af02ca35c98e5ed9139e",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "f63a76d9ab24cc4a035dd68667c3835518951cb8afe0234bb569a19e146ef36f",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "a64a088977c1115d2da5d1de0d990391a9bcb3b01a43b43e177476d1fd7a07c5",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "13dd7185d58a0ed6d10245c093febb5bf425981c17d0b97e5ef0b7a7dc11c3b1",
+      "outcome": "repair"
+    },
+    {
+      "physical_id": "948dcf7a9eeea9be4450380f424a71714a69fc5d8b8a6d388364de6b35b3c848",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "8b6f8f64b66cd846ca1f1d62144799448b798349b279a2cf9a49abc8ee7e861e",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "52da7ae967406d1f3d06c05dad16958b3cfd1f08195e7cc5a42821e3d5fee7ba",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "3919acb48df17a22cc5ca56b2b8490e9d792e1710d6810c2a828b15bf1ec3b6a",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "da1e15ea33633a24a52022d64d3f4c55211a815598b78c3db25b7c198fcde039",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "60ee8b534933d1e42a89cd2944fc9a8a8c935c6cd529577c76ea3735f54ee10d",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "b0e3cc558d64bb066af614e25fab514ae0ef3d3b0e061653be1d45a874390083",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "50bbfd72fc1d4ccb07ed27949ed015773aaf2d59205c4b301c7e61443a6351b8",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "4a3b2c9b39fcc628d2c37918b9faa970ed954e34512c21fb064dd6f8f321b163",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "189ad4296ff0cd245f488ab8ed368c287fd9043ba97a72be01aab3a75e350c3b",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "7e561e37f50afbd47a7324ee149db34c6edff2c2ce14ca80159144d731fa4b72",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "b0a8faf6eef0b1b9d2978396483d1661ba2906357362f7d45af0084afc1c22ff",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "57a484398028042403305d9538a091294505499efb4aa73b30564a7cd9c0539b",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "a7bd523e50d1e2f51b46879d1acb32072a12cb324370b21d41d02f909e6357d3",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "fc761764ec26b7c053aef037d37735167ebed5ecfdbf6025178051746826ab29",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "dc7fce59e92a657d7f5cdae31da3fc714ee2dc68f817de324354d27e091bdfcc",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "d67f96f9879ded7f916170249e9787080ce0e60addc08f514a6ad32cbbe7e12d",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "2a1a1df8db23c489fe275ed072a2d82af0f50fd0c1e62e14ebd8204ed437d3e2",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "ec8a68337f265a4b02a74b895712aa9a34116d7d3bacbe9ba883ce83982c0b3b",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "6b894cdba88e18c756e020b075e83a6826e79110ea520fd247afe5027962a299",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "0be1abb388977785d4995aa088241cf951f74d1db6d0d666b0e185f8d2e482a8",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "af3bd41f0d2c5812b9c2836ad4e2c53d59f75ca5fa81e5a84b9ba1869802c833",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "a7f85492dcbb7a101d9cef076f7d7e8f3c199699bb915048e0fb6655b2c3fdfd",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "8439f51c0a57142ea76ccb988fc56d167420902574e5a64f929e4aef42c6e578",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "da6449c204abd858d3b316c1cc52a880d99faacc0af6196666eb15488d1a6a16",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "da70486143214a2128c4eb6c75616334c9dac91ead166bd33e775929ccb41a68",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "6cc68ad5d5f8419127db9bd9a5f5abf6dcc2030b7c7f44bd99504bbcbcbe1fe2",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "8561b00995153392c7278092316f37fe55e35578d1e3ff700df95edbf32b1242",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "95c7a618b4fb9bf4f6754b9c0c1863dbfee663981a1132c705850eb295a7770d",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "8cd003c8f864d461135c7c6d3682f70def5c3dd24957a8dd2096738100de3db8",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "227c21c718e1ed19ee47b011b52f51609aa636e9a59782f0aaee20280b29286b",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "d26645dd6785f5bc22bbac83da351127e64d4bf03105c458a14456386a66ed46",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "3523908b23cffaaa13d37958a418da80c8b4670e868021ae0189e64a2f0fcb13",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "d9322bd92dc0226e78844d6712a1a833db3f144c1409f5e4254a89c9940d87d6",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "b4b3269d3f7f3b65989beeb1aa23a4160b60d4ee7a9fcf4e5d3e8c60ba1632f9",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "4f89880501b6bbc051aef8caf17c918a259dc40130900a147e23d8f70fe7b07c",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "7fa8d57e9057834fcae27807b3419b1f3c33105eee8f5a89a197f7e6486ddfc0",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "cc79751236a2193a22beee171ed0b44b463de1ae1271e41ef87515ee61f097ca",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "991a1cc37f6c723b60592b385c303d7a20d170e5537ae90ed4e66e7dd4562dca",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "23273224f260420109b3dd2e6c22ace56f71461360bf8e215682758b0a414f87",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "8cda5085a1d584dda478d10d069348b59ae054d1b6a737b12c04c0d1a222eaa0",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "5c3efa943a3f6d18072c697512a5cf737d743f4c3fd46318e3307a315d468031",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "dabe07d154654afc33bad89e95d889c41fba5138b9a14dd1d2117ae3cc96eab8",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "bf3823b13ab51d5b62004235f2d9cc206c7fa14a1336f493ce10f745dc3b8cff",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "bbd044592c0cc5772cfec00a78e8a3f41e34565dae59cfb1f08b4920aaf1526d",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "8d314579f846423d329b426c431388287d12d529f85330e78e5c75aaaf454a6a",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "5cd71f8ac3a0d279c0137f5149c90bf5e6324dd0911cac462f27b1b6da5d457e",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "83a6f7452532bb5d052fea7023acde840aa80a8929557adff8b988bfca48085c",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "010a2ee4473a3c0f33a3f614658cc94df1354ad21cf40c1618b884e1fce1ec1a",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "9909bd2a1fd431abfa6dd785ca7aab6ec9d2ce478b33d86517a937e79a554eaf",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "8402c080cbfecdfa5fe64c61d651ff9efbe4ffb1613d464a6cd841901ce6ca5a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "dc2461b899fc9fb1b0c816c2526b06d85098927ebfe61a07c5b9ec68689e5e99",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "9cba0a45fdd1276e725e860b9d09026ba81dec9deebe1310dda8cf12965426f2",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "d2bb020e8c5b87f2ea8c6261483f85ba1ceb792ecd5d846c1a83afaeae71be70",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "37e4d65d13e183406fe93d601ff0480958ab225a07c6735db8140e9c838d7f34",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "3e68a3857417ec67dacc41442b8e7c3b31f739568df841acbb6dfa9474074257",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "73c938adce9937cc3b2a8088819521af9e76d694c57b8a63b1d293ff418c441d",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "7cb4d72d80e12b3f13b78dfd43464a2eb678a6d295e8ed197f853fc83b44b574",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "b32240d4754bf6bdda81629c05015d4163b4a32d9886258bcf6152a92fa7e279",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "19f28fad83e383ad0e540cb498c6346ef9641deb3342684dfd66af8c516a65cd",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "aac09702eb00413c027c76672436e43314e5a6831d82ae897930a641c540900f",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "0dfb9c7ce99ee3d0c98ffce5207e61c0097b3ffa59a026f349cdbec7f3393089",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "5d293dbc7daf1691a9fae3022f495fe7eac45e418d5e9841fa6de9d4f9c6db36",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "1daa28cafbb2a563623185ed5e2dd152f198ee86ca7185a64e0408d7356203d4",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "7cdae9f41938a289b6f6437ba992f28b491cd7de399f9717402a50346b640675",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "c8da61b9400d7e0fa97ebb329017279ed434e3987ca1c1afee51ae48505d9360",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "6fd0057aa61134ce3b95d0ae4d82cabae3704dc87aa1003fadbc1cde67c9baac",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "6d61ffafb7ca51ac22eeeb11bd58e3ca0d6463bc51076e5a822c0677a6125571",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "6403d9daa63bc58dd2e16d258c590b414117167d38ecf290aeaaf4e7d9e77590",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "291bead4b10f665c3c9b41bcea577b8291acc766b18b3993a58acc0f7ea43a9a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "311973eaa9d45854d4fe98468c6218b3d7251d67a4be01e30ce4038aab4d1f13",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "350708ead9c9b685cda206cb4ec94192d2783fd7056fef34faffb25db2e913ca",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "64384d04599db4dcf6b595a927f37ec2f053e650359bcc2a69a6499e623de07a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "bcda102872073af1e9ff8825cb3fd7b1bf6752d20de2f121d1e3d0ddeeb5b7e7",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "dde8b0d35330ea8348f2d11f3b8c20b73c02525144341e5aeb432703ee1a4277",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "9aedd9f841a539cc98aa661dc0baeadd03ec466841e96f841427b1f6e3663517",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "06c644ba5051ae37bb04f323a81421269df1925b471a76187ebfacc8e87ee223",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "16371cd08ed720a5854846b5bf8bcc1c309debaf06e6200a22cf14cab5583850",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "6cb99989c85f87b8e9058967a89d329772b9d21ad2d9d7cb9047417e2b60d4c5",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "38a45afc4ea05c8d16bead9cb53aa4a9619d8a70ca1ec79b1815995914294a4a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "b58b926fc8edb77d1f2b7fe431e70fd9dae4b5dc44569feaee53a426a512ff3e",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "85ba01a81ea07b8405c4421a0cb71433662489443a22347357663462f328eeeb",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "049407574cf9007ea6e128a7b6f08abc8226ef7c42c990e504a5b952369a1822",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "e5eee763bee673b6e907d07eb5bf7765345444ec8a0aebb6e69c1299b9304e1c",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "ad83f445dfa670ae00b91ee803183e08110512391368f1119cf6f0da71c2c78f",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "6a1ff6b8a72382ba94f09a282c195d675de5e16999cf4a46bd362b96880947d7",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "bdde9d994725ca5c4f65eb8cd047a2ab455595f34f4f800a69887007eb156c06",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "f7d25b36e1021b54db9562e6d535ce515a240202776015ef09fc18cf5c6a8654",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "9583c6d24b5adb13ab62a9cbba0992d09d68e1b925e8f5e28d5ab81498e24684",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "4b4d8e045c929b3e7fbefd75a4dfdcb3d7425be7a48e6b7a4892a5350f832739",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "e4c30e728a2fc76c96b0dcd437266745df07f34f57c59e3dfea9a0f92a241df0",
+      "outcome": "regression"
+    },
+    {
+      "physical_id": "c210df4116bd70c53015bb8d7e6e9a80271a29f571ef3b30db99900f996e0cda",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "5eb574774df4707ca7280062c564196ec9f1294954dab7579507bce8c87af7a8",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "28f0a9ca78a61792d8723d8f96f47f5075c3332db17ffd97a2f9f4b6d08bfbe4",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "cba6db99753a33b6c0cfd7b730634f6f09c7157ff11ba985b0fbef429f6a438b",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "8c41e0d2d2318a8aa7b2230c75decbbeb7b6b7187a1f32f32e02cce7648ee975",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "e885f283750c409e85542dd1590da4fbc8e8c2885e796378de13ed8ff821ae3d",
+      "outcome": "regression"
+    },
+    {
+      "physical_id": "4687bcd61f578ee89ccd103ba51163681cf0d43c62267fa794fb1f37456c7b09",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "1cce0cc27e910eb346a790dc58cbb69bf184898ae98fcaf545eceb43e6f18c48",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "97733501afc63b9fb081d83509aed86c334efe72bec403ec291fe65c352d5f54",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "c99d71a80e0d4c0d43cb50512e337d987ce40cdbb52d20895a7df623cee40722",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "e1b5622e9e6ab42b81e3612c0254dfede9ad8392bf6d67f276e6bd112a1d869b",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "b026482acff5d60442b5dc791e6077be3ad83bc6a6c598d03cbcf23ec5ae8975",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "409e14e9c15cb8549bc2a644b07ce50e89fc62e7c5793691bb92abf58148d4a0",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "333f097830ad2ea7fc93a891f54add755a3768423adeb9fda81b217bee371a98",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "753909c0b93d3c3f8d3641490020d403a217464b523b20df7956e556661618ee",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "55ecc5ad034da102155636a2ee7e117bf2c43f9a089a86500893b154af0a39a2",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "7a64d4fccd64e105367792bd8af4026945ae0e1210f9e47ecd02d8a9a7968d06",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "216780cea5dac154fccfa402a8f5c602eb4498ee74f2fad4c6decb9b625fac85",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "eab099d43fb88a7c20812f92050fb3d9f23aa70c02601d67e116d0e650926f3d",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "e392f49914e016d32e1ab47d7edce69eca8406028ce7cab8e0215d758e8d1f52",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "a1fe7ebad0fd79a72359de34c8c72db0127cdd04b2737034a26779986021ae80",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "9f48497f8b1d27b91f9e284918b70f073f4cb90d01334a1b8b6248f3dd59fc1a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "9e62c6e5a4fba8bea3ba1105a5101e01eb050b27675af2a65777911336236887",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "651aeaece5c2940ba5e331fc76929817cf59e3566b1d57b8b2258a4cae579213",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "6a250b0b78bf5045828fed145b5933f693e5a6d87da659a012762759cce5ff1f",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "2d1fe029596f9549cfbe2baa97ac39da651aa1dbc2240821e08933f586582c75",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "3bfd149e1bb82afb9534c34a4f7e438d6a3035da658985ab397a7d474d990d24",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "244a2e31b402d7e2c45213bf0364b46f98803905b0cb26b0ec87b89407d291b2",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "cd4b6f2bd621ecc09d7bb24edfd530144402b236ee34c139ae9729bddbcae47b",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "aa168509bdc21bee52651a75d8707d180846a0bedf30e863bcfc42af49294652",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "2844cd254cbe42cd50678978f4140b8568128d20450f72b4f6a57928d7b840c8",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "b4903d62bef3458d0bf2000e3c27c9a54adecb029a5a8723a2b3b592f7054c2c",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "b2e201561f1398f5ba7359b68425bae2226fc344894a2aedb297f7931c63358c",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "4f436ba2cd95d90ba29fcaeb4b102b6654f08ec4db853ba7bfde338428942daf",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "f10fb7c2f88dad25d9ae652b35013b2603d529dc355cbbb12397f4b7be4ff193",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "2b7367a999706b2d9cece9531dabb489c4078c4825708faeb4a4d74cbaf12d74",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "2c13b7f6972069f92cb685adde4c6112185b838647e3d9e6963f7350c315a41e",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "e9193eba9e5d8e3c4af56c9978058b6bf56aef5fa5ff5c9860594ac34556fda7",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "1c88aef26d5be81d6e43cf3d3ff81f0a2643b71a278500dde42c6a075cf5a14a",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "16d90319fa1bb279d7a2c33239795f53e6190c78c9e37d08b98fb93e9ba40c79",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "cad4eafe315b6ba3f100c73906c04cded986144d3e45d43bf08b33fac3abfec8",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "ab2124ceb5eb8b1ef2b5944cc0d4348e15800950f9cae7c71cc10b9eb37ee6c9",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "037105ee162e60274dd94f04da128006bd5766397940c3a294515b50825bf66b",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "808ca2c1411ea92c37603a422e64861b771c89282dfd0162bbae8d6e9a943508",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "f820891a9cf1190bbc5b9564b0e09d2d3a0fa885b44b79ae11e87a14dd5e3798",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "56d493fdd05a6d51e31b48330f48a5b593d909f07b94314e0a2d141d5b272720",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "cce81913b866c1000b87de36d551d46e4b78360a0c0eec999c07c9f01b9e5326",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "cb7c7c2919e9a3cd608834b74efb7319096b8567c31fdab273adb8d25fc69352",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "cf0640b13155f9b09d7251d12cdc0b012319b9b3496cd504a0a57b5ca5b7ac9b",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "8563193d9a35b094427d170a5dcc132a00669aac644daf1aa37d63c4662e53c5",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "0b4709c0e18530b814e5445c29956df7518486f6f9c5d661548c698caef6e359",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "bad4f75770edf8f95eb22064bea6289abc978a8918084f2bcde4af6c049dfadf",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "1f1f3fbba9cb3757a78ec2257d45f820f336f4f1ca47bf235b7b9139e3a6636a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "4ef722b2c19bbb12665a0638d9605315309734aa1ae93320f24988176f52f31e",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "58fcb7c97c94586cbeb3bcaaacd9b105f31422c77a096e5804e856ad642b1861",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "7e945316e17737bcd305a6b0fd83e09bc8beb070e7d805d15362e3311fe9dc08",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "d98cf65ea169aa8a415cb12ffc44e972305370034edde0807a1ff65b190d71c8",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "3c1bbde73063d6cd884e4f0975e10690101f9d05df3b432e92ef8a2904dc360c",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "831660218414f036adedf8b03e66445979804a85bfd342e640e99b40da49aaf3",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "1df54f7acca50e9d84b488347c9b93a5b788fc009b528ba7df9b09d69bbc2322",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "737b129bbf71f35bf51ca4f416c92210f20ba8e0c4dc1584689ab93fc3c59b4a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "d869626ccd8438ac3e6f26cb8af82768b9297dbfbc0ddffccb2f5c8a05a00e83",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "c0d5b2f7f8839aa42c4b45ce6451f9d292b492c3188d4856849423af40384e75",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "6898170d0a52a030e57320924923194dd87df3b12c5f0e16bdf2d061e261b5f8",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "886bee3fea4edfb1bbb927ceebe15efbec1fca77e4e86e48c52ce13f9259ed53",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "f676d48c869d4f0ab0b8c73d18f318ad452d6a4dbab0429ac0d3be26adeff791",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "9be3ce00725625be7705d9ff6063993f24267442c547178e4c59529f460b47d2",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "890e1e7c9fca877599ec46969875e39df43f0653aac407f7d571105f0288acdc",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "d04f9e577e9ea7622dec33ba613cea75b9a845d28e1a4d8817193030382c4692",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "5bfa208babafe602142aea2744c23402353731a784c1009d9e1296d0c5259781",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "34af29f1ec8b68c08c19072e59714915b5050ac780e1ded738be3143868ee7a3",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "bbdfe0380816e677dfc3444028dbe9d01c1c3a6dde78579ed3ddbc3b1b63327a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "52087028f96c763b3f159ea2fdf09f6a769c6136f71570426ac73ead43bb106a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "0a9ab6245d802b7d257b8ec60044078c60793f5c3e63f84bbe3b0ed75ac7e4de",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "38c9e94780ab7d152d751898e4110c0a779852a53783ff1a36d67750c93a3095",
+      "outcome": "repair"
+    },
+    {
+      "physical_id": "0146cfda3235d36157fc0c91931356ddd98bd1375aa504fd98a577ad78c354b2",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "cf38165ed3b5b466eb27185ae4fb1bc94ddd527832217050ae366e4ebbe4625a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "4bfa9181ecbab840b483423a002e4b0b802a609d3c3922633f7af5bbd3206412",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "7ca4098036f215f2364290bffe8ed1981f3488eefdbe7d4f39d6cd4d6f81d5ae",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "eacd2b755fcef4901458e3b92cdcc7aa169bd80986704c6c0204bb685a8f270b",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "d3e8c940db0390b299f8065fa8e9783ee1fa35a66325bc1a285e29c906c2e6ac",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "be833197c8bf90fa73e1686dcb90a92c7d59b8a1cb378cd982d887105a47dceb",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "1eefbff036bbf7579758ba383512d57252f3ecb8f1e65e633d5a6103443579db",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "1d4ee97190ce5fd3cd30f819b788132df16ad0d2a7993de09e83abf3de8804f0",
+      "outcome": "regression"
+    },
+    {
+      "physical_id": "3c33910ff1ef817a73cc6bfc8844e229e824c5560701bf16a9ba74970471aa8c",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "ccbafd4e5eb135664ec150ce1632e817102ea708884dc3e6a4ad720b493b3921",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "ed6622c47cd422e6e483bd79506480398b0ad7df3036170baee08a6258c1dee1",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "1a73800084a46ff197666441b79c02278c655e9f36b6d1ff17288c7c05121219",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "34f412f2d96eba97ffd705af79333a80c80a420fb9b6efa875300a3fee1ace19",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "898f187082030dc56e75142490b1fe1eb0c1bc06ff99335bc2adb041bdca2173",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "f8bafd7458a7be64aaf3679c1bce74ad1318140630e2f18b90b05ab191e89b35",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "92b4dbe36d96031c2df9cbe5e156b3d6a8fb426240539605446bc4322a5a8be2",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "3d0b718aac0f5ad50287833abe726f7fa69a3007c518c2973b076e611c3698d8",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "3f0ab2c0799f3ff0044a1f32baec11f36ab7932071ea85482dbac743f23a1703",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "213726a2432dc32fb300dfd42d3064659c01fcbdcbbfb19354dfd1c389988c05",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "63ba8046a79f37b08880a43d0c87b2b5f7dd8166f450bfd464cadab3a0a2ca00",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "c9c3c92468378ada2272e4ba0f376355410f88b1b981eb51e89b0cbdc20c9c71",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "cece5307b8ec9075bce732845a2cc3f7fd54c9b69145476ac420532d55a2ae51",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "4668efa8a3d1c7e16b1f79037c9136d1bbbf5c4ea60cfb2741d2f22b2b647c0a",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "4506489b49f9a8105a396693ac1d2b24febf68cfe3c803748c95f41ae6850d6c",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "205d9d717b44363e807dcef6ee4af76ca05867007aa3a9e47913a7e28798de59",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "29ab02c4724a5eac3dfae335e2271a145223603cc0d6bf1cac58bd618cb46c4e",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "aafd82d4157a0795866b2efb8b3d76897b1760ca01c01f635781904cd9a13945",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "7cc85a0b884034df3e25dfecb871aa71b22ccb9ca41e2ab61af225a1c6551215",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "eeb02e84781292a62c87812d6eefb807129b499a931fbe12b778c46cd1ab07ea",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "330590934cd298a12aee1adee5166bfdf34e11b93b669522835a585733eef67a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "b883a3e43631b67dbfdf42877c65906c6e67ebd3ce61c8020f907582b437faac",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "e83182c13a7d8f31f2fd5db7dc81ce03da49e03c743eaf6e14d8bc90dc9fb2c3",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "17573ff9e1334dbcd008b0c72752c247cfca21d3698253c27c5267af3c1fb903",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "8fd40431cf42be916649e7f62b4435288a4d5439c6da383f3c73224960951aca",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "0d79bce29a59e1254ef5f42fd6c633965328cec922ff6392ad582c33c56d15d6",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "ec199db9ede5702487d6fd62266ce25930d3669dd9f4160946a6995547368d59",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "5d8b08694311148ea88c72c5ab745332e81a7859b52a0129e215ede571ee227c",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "ca0642f05e76c6b59325abc7df8580b63341282b4b7692bec78b80cc1f84d1cb",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "4e30e1e3b06355a4584347fc5b9d72878a0574595a87d771ae1887974f061d9a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "4c6f6d540e9e1d365b90d5abcaaa08344f37529f86a94ed0d80198f871795efb",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "61a06f52814f78856c92e3e59372749dd6bcf968ca78d212fc57ec16bb7f381f",
+      "outcome": "regression"
+    },
+    {
+      "physical_id": "8ffef6d17a644ac13d0b979b1bdeae659717e0489e8518b6af67a1b8eb089340",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "9cc28b75fd2e5e99928207b7fccb01ad022cd517c43639631c797d7f0c5df6c5",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "11796bb2de1e21dd54d71c1b53160c88219ccfbbd22f270820b03ad541b08955",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "3dd711d587bf2ebd15cd304d8ccdde893df5ba62c1c5d9e731793825ea97cc12",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "b4bed38c1baf40c92f86b4e1742a711295c5aa6ab52448e1895b4af2ed61ea6d",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "25450c9dd6b0795628bd5b0e19fba8a63751f69170d067f22e27ee7c1c5873e0",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "f9511628d661636c69f08d162e8f1cf8a70d19113d3b204059f04fb52f48dce3",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "ff6ed7b54cc484ffcefa434ccafc70e802153a1906d3a9f8d8495256e18223da",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "24e480f9fe894908c3db18cc18085b61bc9166aa05f1f242fd877e513a44c05d",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "145abc38a7f0ae3500e248cae40731b40781806d7c582e973278c97529b72033",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "bdd67cb1a6f51fb3ff14a5abc39404620244e88220189d8d3ab10efb0d55c7f4",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "082f8e8d49ea6399e7bd17cce6394f6faaa63fcc4174a575f3f64c4064c98a05",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "e1a10ac5cb0d7922ae9e49ee104637ea10941d33a969dbffd3a67c005af4890b",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "04b0d14b051a21a56fcafb9da8ee58e1b48375004c58fb4eb142ad639a29d88e",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "b93dadfc67fd6beb8ffb224667ca52b9d487d89f7c327f6fb6bd8a316d7659b9",
+      "outcome": "regression"
+    },
+    {
+      "physical_id": "58756cf3b7298b962e10a53cac3209efd5271f1ce75eeb5dee955f3d199c3339",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "5486d634dd43821c2fd3ec0917bf7ca09998eaed50d4f3fd8fdc0c14b1ec49fb",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "a8684ba8de2f40a995533ae1e87c5598f781a5907a4c5bd179f947c6d89d4e92",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "c5613bdb15cd5607e76319a326d667ad2fdae8cdf071402ff0bf0cae81e6f3e7",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "9dc3d9a20c53e1da9d8fe34715908bd8162293384283ae7f4a3b53b0b746b1d8",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "316321c38526b52f6bbfaa07560aebdac0244e5aa9112a3038c78fd8a72e6a2e",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "51a72bee0f0c56352b7b6b01cba4e79302db8a91ab19f58d45832e9c756d878a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "64d579a8a9da701295dea5ffadd792dd8ff08136296af756e6fb1bbac74bce55",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "394d96a1ea40416f2bf6e925324d11f804c5e9813106716c97e6e732291b5ebd",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "6b5836ea3093b58a436e88c5a94fd1e8e4e2bd906c5b1608d59b31e01bc44775",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "2438a9f7dc91dc15ced27922538405920a43241cd3dd7cd9960cf89b93331cb4",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "f03e1e4917eda6ff42099424f3f7065a4f2fe903937bba07581bca28dd878700",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "b11b193b82b5da3dca2ac9ade9117abb70659317e82b2471083bc8a19ea0eabd",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "f1b3096583f217cb734b6c9b08904a66ded01677da97f4c9a592f7c9bfd32818",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "d68234a67b0dd6df5e53d7f7369a6e4b676a493c9003315f725e11552490dac6",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "00e5e393a9ec7137b6ea93d9f1015bcc21757c9597f96002de288b262685d283",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "07131e65ca03a8cb94c7d7cb52f8e035e02ec08cb537e26bb820b14ca1aff3c2",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "8313cb8e781a3f6cbb5497ca7e9d7d281293c0dd2051688f574a75dd0105b57a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "2814bb4c35b0ad41cc936ffacfabbce645c79b0e846b9f852a7dc002a7651014",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "e04713728871d3ad3dc2f991673ab95bbd59814b1e7a8873eb952d175d7e1ea4",
+      "outcome": "repair"
+    },
+    {
+      "physical_id": "d7ace8b138a78ffe5592c4813b91d1e7e61c77505b6344217bfa6383850f043d",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "1f1f2fd680b8d5ee87b9db918eb3540ef07ab5d6ae5740afbacf01e02534e335",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "df14592d98b13712df311df3f804bd36f6fc80a8679219c257289ff38e9fa9b3",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "37d044ece45dd04b6952cb5e3eb5caaf70b423bb5d7a04974393e9a618d0a27c",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "1f37a3623688930611e0e3817f594a9bcc6298e521a98b8d83534ac002b27d80",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "4764cb2864e6568af0037e07dc3d56ba69fb1d86f7877fc0a9eb3bbff8a226a2",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "c2a9455cfa8e83e59e1ae8d11e3a06861420553751fccb4f5f5855f0bfba0a9b",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "6d789a080cf0e3a5054a2eadd0008b65be42c98eb5af57f453cba774484fb8fd",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "52acc80f07df522f688274642ac2d84372a37db00beaab74e20c0315aabd1ad4",
+      "outcome": "repair"
+    },
+    {
+      "physical_id": "9d8d6db95dd14696ff876d774eec3414949b8ad897bd72b9368824404e794b58",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "7defe990f8a9344e35cfe922ac3fb4a9b426318a4bc0626ed6b0385fc0041195",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "1a3c1250df06ec6afaec71f4a8c3640f0a9d1d9401a303cd7e8c41199e849155",
+      "outcome": "repair"
+    },
+    {
+      "physical_id": "7fe526a5590c5b21b6bfdfd1ebd064b8ba6cdda82a42febeda6cf352834d6439",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "96fc74b3eb9098175f6a09cb728bac98d70971810bdea2318c1e38536315261e",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "e46071e811c6b48e23802b15dfc6a4c3a9dbe0f0c8bbdeef2011a8449955524d",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "d9223e44b431d65b5dbb27f72e3f970028480772f056b64daca4f159bf157501",
+      "outcome": "regression"
+    },
+    {
+      "physical_id": "953fbb7c130b32b02f1797e42f76227329cc5264745b7f5685280a1ed16290b6",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "d94e97b85527b14f3ee4d5ca61ba898f6fb243f989eeb6e8911483fc43f58df3",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "5ea5f58d8fa48797b2b50d4b63b1144066fd516f82b33ecf79c5f27359bcf625",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "27b484dc6f9676d83145fd01b72fe11b03e87f68a2529fba067c3e67dea4d89a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "fb0ed7b175b0f74f9ac42c93eb42655c0ecb2a74d5d473c1f832484a3ed3aa62",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "07ef4886bdd9084d2eab1e629cbb4565e6d376bc3cc74037d760fffd4a23d91b",
+      "outcome": "regression"
+    },
+    {
+      "physical_id": "28deb5909edee2ac21d8575d67cc6eb5075d9509e563602d9d77aabb3133136a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "6205ba0947a3934b27cb0dd7c7b8ed8b15aeb7ba0be449afde1085b8c6c9bca9",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "a859286027de3643f594eb129a3dab2902b366198f1562fb2c42a0cb4a9f9908",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "a5cb20f87bb1a1207e48ef8353bf14bacff31ff3c99d2be62670a36f35d8bc3a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "ce784f293efb32bab0f9670632199cab404e66480ea79c040479766a7ff48d17",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "271be637c08155f9beec80d54baed26128e493295c6bf6dd10bfb3b7b010d6a7",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "53ee3130174bf541231c7dfd01f832c806aa0ee55f981856a50d5f0f483ad473",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "de3d49ad4a13c2386bc854e79a8821238c663802a1987df4568c7b7389b390bd",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "22f83c3ece2751352201fc99e4f5c1e74ba56ac293f7f30dff5c0ece9af132ac",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "b5aa76c39b1f22c38b6366707a89e8ed44ec75dc7f87e29f5b6cb1a5dbeb20cc",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "61ab346896f56b3cb7853db3f4de42990adb9a5ec1b89fbb02e767dcb2e4460a",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "5b9ad58b6bff494b08d02238e40d1ccfbc46b236acc18bfcd4e555dfb9d3d814",
+      "outcome": "both_wrong"
+    },
+    {
+      "physical_id": "64810f894ca9115814452145b312e519aa0b7e7172e7357c15438a450f1e0e7b",
+      "outcome": "preserved"
+    },
+    {
+      "physical_id": "b4accbe93fd46d87867ab0b7599ffe9ce4d267814c7be2274fc6956fb0ec3cd6",
+      "outcome": "preserved"
+    }
+  ]
+}

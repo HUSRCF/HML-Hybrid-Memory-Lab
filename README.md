@@ -2818,3 +2818,5 @@ failed. All ten outcomes, the 33 regressions and two repairs, stronger local
 baseline, raw answer table, visualized counts and incremental raw snapshot are
 reported in [the completed phase](materials/updates/unseen-shared-timing-20261115/README.md).
 The broader goal remains active; this result does not trigger new training.
+
+最新完成：[匹配训练/部署时机的完整新样本结果](materials/updates/trained-shared-timing-20261115/README.md)。5376次读出与独立审计完成；三项研究门槛均未通过，匹配训练的收益集中于一跳任务。

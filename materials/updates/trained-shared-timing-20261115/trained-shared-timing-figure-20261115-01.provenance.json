@@ -1,0 +1,17 @@
+{
+  "status": "all_sixteen_arms_reproduced_from_actual_audited5376readouts",
+  "audit_path": "/media/990Pro/Code/SAS/artifacts/memory_update/trained-shared-timing-audit-20261115-01.json",
+  "audit_sha256": "bcce3a36a63185ed0a4c5843a5d6b19bcc83e9e87d21d54b200ed1057d3f01c1",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/trained-shared-timing-20261115-01",
+  "manifest_sha256": "96fc6a877ad70716dd18b777af0b6bec13ae966e3ad92ae5bc9ad5b2637a2e09",
+  "dataset_manifest_sha256": "3e6128b70375662843e021bfc872aef10a72edae5fc8b43de590c3f7c6d3a290",
+  "export_source_sha256": "92126f03482ec9bf922197beeca401b09a20b02e93b456e1e5ef4177b4375f1c",
+  "output_sha256": {
+    "trained-shared-timing-figure-20261115-01.png": "fbb74c34c754e1a53f00ce8a073012e860bc26b424299bc87dc78d05b1cd42f9",
+    "trained-shared-timing-figure-20261115-01.pdf": "708e61f747beede3a37420148d3e70105805e0f7bd77823a38a4a2229b55eacd",
+    "trained-shared-timing-figure-20261115-01.csv": "cdec12bdd233de57638e4a96944a304231f08872329cb7aa70a4fc2770b84cfd",
+    "trained-shared-timing-figure-20261115-01.data.json": "1c64b7d3e88c86d90daba1303efb5677f43dc6ac67ca32d2de797b7b1b9c2e0c",
+    "trained-shared-timing-figure-20261115-01.layout.json": "3e86e83818644c4f68aee33f7a58853ec64937fb435e690f7c148cda25571f05",
+    "trained-shared-timing-figure-20261115-01.source.py": "92126f03482ec9bf922197beeca401b09a20b02e93b456e1e5ef4177b4375f1c"
+  }
+}

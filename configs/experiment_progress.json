@@ -6547,7 +6547,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T20:37:38.233154+00:00",
+  "updated_utc": "2026-11-14T21:08:31.566199+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10072,7 +10072,7 @@
   },
   "current_phase": "matched_shared_training_timing",
   "matched_shared_training_timing": {
-    "status": "primary_full_history_readouts_running",
+    "status": "completed_audited_confirmation_all_three_registered_criteria_failed_publication_pending",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
     "plan_sha256": "027e1d8fcfde9478115e1d238b0528497e6285ca3b1a80086fe332389da5405f",
     "registered_utc": "2026-11-14T19:35:24.223581+00:00",
@@ -10209,7 +10209,7 @@
       },
       "actual_forward_receipts": 1512
     },
-    "confirmation_primary_evaluated": false,
+    "confirmation_primary_evaluated": true,
     "confirmation_reverse_smoke_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/trained-shared-timing-smoke-reverse-20261115-01.json",
     "confirmation_reverse_smoke_audit_sha256": "48560aa3b9e960ea4909525f95821ed2d43fbc8877414dda06213c17d928adc5",
     "confirmation_reverse_smoke_counts": {
@@ -10235,6 +10235,190 @@
     "confirmation_postprocess_process_pid": 2112853,
     "confirmation_postprocess_log": "/media/990Pro/Code/SAS/logs/hml-confirmation-postprocess-20261115-01.log",
     "confirmation_postprocess_driver_sha256": "220833107d001cd43c243fbddfce6a010e264979b5ceb8c44a31fdd77f97750b",
-    "confirmation_expected_backup": "/media/990Pro/Code/SAS/backups/trained-shared-timing-confirmation-20261115-01"
+    "confirmation_expected_backup": "/media/990Pro/Code/SAS/backups/trained-shared-timing-confirmation-20261115-01",
+    "confirmation_primary_audit_sha256": "bcce3a36a63185ed0a4c5843a5d6b19bcc83e9e87d21d54b200ed1057d3f01c1",
+    "confirmation_primary_manifest_sha256": "96fc6a877ad70716dd18b777af0b6bec13ae966e3ad92ae5bc9ad5b2637a2e09",
+    "confirmation_runtime_source_files_verified": 160,
+    "confirmation_actual_counts": {
+      "physical_readouts": 5376,
+      "related_bindings": 6912,
+      "native_before_attach_replays": 160,
+      "detached_native_replays": 160,
+      "attached_none_policy_identities": 150,
+      "question_native_prefix_checks": 180,
+      "shared_question_all_distinct_native_prefixes": {
+        "shared_question_timing": 56,
+        "shared_question_trained_question": 56,
+        "shared_ledger_trained_question": 56
+      },
+      "actual_forward_receipts": 28224
+    },
+    "confirmation_registered_criteria": {
+      "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+      "matched_question_positive_joint_gain_over_native": false,
+      "matched_question_no_all_trained_all_deployed_correct_regression": false
+    },
+    "confirmation_models": {
+      "native": {
+        "joint_six_after": 1,
+        "physical_correct": 249,
+        "joint_by_depth": {
+          "1": 1,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "shared": {
+        "joint_six_after": 14,
+        "physical_correct": 281,
+        "joint_by_depth": {
+          "1": 12,
+          "2": 2,
+          "3": 0
+        }
+      },
+      "shared_question_timing": {
+        "joint_six_after": 2,
+        "physical_correct": 254,
+        "joint_by_depth": {
+          "1": 2,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "shared_ledger_timing": {
+        "joint_six_after": 6,
+        "physical_correct": 266,
+        "joint_by_depth": {
+          "1": 4,
+          "2": 2,
+          "3": 0
+        }
+      },
+      "shared_question_trained_all": {
+        "joint_six_after": 15,
+        "physical_correct": 280,
+        "joint_by_depth": {
+          "1": 13,
+          "2": 1,
+          "3": 1
+        }
+      },
+      "shared_question_trained_question": {
+        "joint_six_after": 15,
+        "physical_correct": 279,
+        "joint_by_depth": {
+          "1": 15,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "shared_question_trained_ledger": {
+        "joint_six_after": 2,
+        "physical_correct": 255,
+        "joint_by_depth": {
+          "1": 2,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "shared_ledger_trained_all": {
+        "joint_six_after": 13,
+        "physical_correct": 277,
+        "joint_by_depth": {
+          "1": 12,
+          "2": 0,
+          "3": 1
+        }
+      },
+      "shared_ledger_trained_question": {
+        "joint_six_after": 0,
+        "physical_correct": 253,
+        "joint_by_depth": {
+          "1": 0,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "shared_ledger_trained_ledger": {
+        "joint_six_after": 13,
+        "physical_correct": 278,
+        "joint_by_depth": {
+          "1": 13,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "independent": {
+        "joint_six_after": 14,
+        "physical_correct": 273,
+        "joint_by_depth": {
+          "1": 14,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "local": {
+        "joint_six_after": 13,
+        "physical_correct": 277,
+        "joint_by_depth": {
+          "1": 13,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "local_question": {
+        "joint_six_after": 12,
+        "physical_correct": 271,
+        "joint_by_depth": {
+          "1": 12,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "attention_only": {
+        "joint_six_after": 1,
+        "physical_correct": 273,
+        "joint_by_depth": {
+          "1": 1,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "gdn_all_tokens": {
+        "joint_six_after": 16,
+        "physical_correct": 278,
+        "joint_by_depth": {
+          "1": 15,
+          "2": 0,
+          "3": 1
+        }
+      },
+      "gdn_question_only": {
+        "joint_six_after": 13,
+        "physical_correct": 281,
+        "joint_by_depth": {
+          "1": 11,
+          "2": 1,
+          "3": 1
+        }
+      }
+    },
+    "confirmation_physical_preservation": {
+      "preserved": 274,
+      "regression": 7,
+      "repair": 5,
+      "both_wrong": 50
+    },
+    "confirmation_no_scaleup_justified": true,
+    "confirmation_next_action": "Register a complete-cohort mechanism diagnostic separating history access from multistep relation composition; no new training or favorable subset selected.",
+    "confirmation_backup": {
+      "status": "all_archive_members_byte_verified",
+      "files_verified": 1076,
+      "archive_entries": 1077,
+      "archive": "trained-shared-timing-confirmation-20261115.tar.gz",
+      "bytes": 8616620,
+      "sha256": "9aeea50215284ac51e81096eeec38259768c6fd202636d14deeb741aeace8764"
+    }
   }
 }
