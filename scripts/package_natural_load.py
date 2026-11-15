@@ -51,7 +51,7 @@ def package(audit,output):
             if p.is_dir():tree(p,STORAGE,'storage')
             elif p.is_file():add(p,STORAGE,'storage')
     for name,digest in m['source_sha256'].items():
-        if sha(ROOT/name)!=digest or sha(run/'sources'/name)!=digest:raise ValueError('Preserve all230sealed measurement sources')
+        if sha(ROOT/name)!=digest or sha(run/'sources'/name)!=digest:raise ValueError('Preserve all240sealed measurement sources')
         add(ROOT/name,ROOT,'code')
     tree(ROOT/'materials/updates/natural-load-20261115',ROOT,'code')
     for name in ('README.md','materials/README.md','.gitattributes','requirements.txt','configs/experiment_progress.json',
