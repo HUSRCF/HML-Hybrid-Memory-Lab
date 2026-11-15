@@ -6389,7 +6389,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "Allsixlocal_question_phase_freezes_lower_both_wordings_group3_protected144to1_all18non_integer",
-  "updated_utc": "2026-11-15T13:03:16.135201+00:00",
+  "updated_utc": "2026-11-15T13:16:03.831922+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -9890,7 +9890,7 @@
   "resumed_utc": "2026-11-14T18:25:03.068726+00:00",
   "resume_reason": "User explicitly asked to continue experiments after verified GitHub backup completion.",
   "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-publication-20261115-01.json",
-  "current_phase": "question_state_freeze_completed_next_diagnostic_not_registered",
+  "current_phase": "version_address_observation_registered",
   "matched_shared_training_timing": {
     "status": "completed_audited_and_published_confirmation_all_three_criteria_failed",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
@@ -13153,5 +13153,43 @@
     "remote_assets_byte_verified": 3,
     "committed_snapshot_files_byte_verified": 325
   },
-  "latest_published_phase": "question_state_freeze"
+  "latest_published_phase": "question_state_freeze",
+  "version_address_observation": {
+    "status": "prospectively_registered_before_implementation_data_or_inference",
+    "protocol": "configs/version_address_audit_plan.json",
+    "protocol_sha256": "f3e1867a24b83bacbc5d5fbab0b2be682d818b27808a2f1d52082dc780da3bbe",
+    "registered_utc": "2026-11-15T13:16:03.831922+00:00",
+    "source_files_immutable": 261,
+    "planned_source_files": 268,
+    "code_started": false,
+    "data_packet_generated": false,
+    "model_inference_started": false,
+    "counts": {
+      "physical_readouts": 3456,
+      "reused_exact_reference_replays": 1728,
+      "fresh_readouts": 1728,
+      "archived_references": 1728,
+      "normal_prefix_caches": 64,
+      "normal_after_caches": 512,
+      "complete_float32_record_mass_files": 576,
+      "layer_position_rows": 41472,
+      "model_cohort_style_episode_cells": 72,
+      "role_cells": 216,
+      "wording_pairs": 1728,
+      "same_history_current_initial_pairs": 1152,
+      "prefix_guard_checks_per_case": 64,
+      "after_guard_checks_per_context": 8
+    },
+    "fresh_seeds": [
+      82000,
+      82001,
+      82002,
+      82003,
+      82004,
+      82005,
+      82006,
+      82007
+    ],
+    "next_action": "Implement passive original-record mass capture with complete normal replay and independent reaggregation; verify268source closure and tests before packet seal or native inference."
+  }
 }

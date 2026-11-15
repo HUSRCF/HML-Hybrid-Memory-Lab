@@ -1,0 +1,411 @@
+{
+  "profile": "normal_history_version_address_observation_v1",
+  "registered_utc": "2026-11-15T13:16:03.831922+00:00",
+  "research_question": "On unchanged normally encoded histories, do native and frozen-GDN version errors co-occur with different pooled attention to the queried entity versions, and does the pattern replicate on eight prospectively fixed new streams?",
+  "stage": "Passive observational diagnostic, not a causal attention attribution, architecture improvement, learned selector,or new intervention.",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/question-state-freeze-primary-20261115-01",
+  "source_manifest_sha256": "bce45ddf6aeaca675d6ee797a96f44fc6b0c46947b9e828a0f9707e96ebdf225",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-primary-audit-20261115-01.json",
+  "source_audit_sha256": "6cff340e8385670b71dcd37db456fc45569198f0f5a308a085c3ede1a2f144a2",
+  "source_publication": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-publication-20261115-01.json",
+  "source_publication_sha256": "a3f0ced77dafb56f9a02f4abe0352adc4ad30fd8b912f82bf097069eaa74113c",
+  "source_release": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/question-state-freeze-2026-11-15",
+  "wording_run": "/media/990Pro/Code/SAS/runs/memory_update/version-query-primary-validated-20261115-01",
+  "wording_manifest_sha256": "526ad4d74363e51b8246381ce2b4a81922158f40c2952391ae01eb0b4e4c126a",
+  "wording_packet": "/media/990Pro/Code/SAS/datasets/memory_update/version-query-control-v1",
+  "wording_packet_manifest_sha256": "d3297596bcefc879bcbea7c9c3458e6d019c30a43a7f5aa654217d84b16e8a3d",
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "model_order": [
+    "native",
+    "gdn_all_tokens"
+  ],
+  "models": {
+    "native": null,
+    "gdn_all_tokens": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "gdn_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+      "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.006321374711538502,
+        "teacher_numeric_tokens_correct": 2584,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    }
+  },
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "installed_modeling_source": "/home/husrcf/anaconda3/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py",
+  "installed_modeling_source_sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded",
+  "generation": {
+    "max_tokens": 12,
+    "prefill": "cached",
+    "score_batch": false,
+    "candidates": "gold-only serial NLL; unconstrained greedy"
+  },
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "precision_addendum": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_precision_addendum.json",
+  "cohorts": [
+    "reused",
+    "fresh"
+  ],
+  "fresh_seeds": [
+    82000,
+    82001,
+    82002,
+    82003,
+    82004,
+    82005,
+    82006,
+    82007
+  ],
+  "fresh_seed_rule": "Exactly82000..82007; all disjoint from the28pinned prior packets. No replacement seed,template or condition filtering on tokenization or outcomes.",
+  "prior_packets": [
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/copy-dependency-transfer-v1/manifest.json",
+      "manifest_sha256": "0b98f840a84d90c4d2cea8412de08f9589957b229ee297b957ff8853cf6b7455",
+      "files": {
+        "cases.json": "9cf394ded8f0ac5c1795ff992e2eba0c28be6d086528b380e25af7221ca74b40",
+        "registry.json": "8217906692adfe8cbfe67b8a9be7b92a2cc190b3955b217630469d6d083a4fc9"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/copy-generalization-v1/manifest.json",
+      "manifest_sha256": "2300bbf222606fd1c3e05f5063bfe65b9d5be83ca67e3f8ef129b0ac2158d611",
+      "files": {
+        "cases.json": "9cf394ded8f0ac5c1795ff992e2eba0c28be6d086528b380e25af7221ca74b40"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/counterbalanced-overwrite-history-v1/manifest.json",
+      "manifest_sha256": "d783f7c3261a44f108db2dc7064772bc044a1570e1e89bfbef8e5f018d583330",
+      "files": {
+        "registry.json": "ad6e5c3125d16aeca1de32cff905dae5f8a421a77b303ced77f64e9fef7722d2"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/fixed-length-write-locality-event-paths-v1/manifest.json",
+      "manifest_sha256": "fd8d7a0be96932d543f852aba12f832990a8f45665770046a82f6141bf5b7be8",
+      "files": {
+        "registry.json": "6b092b6c3a6d87e54b93cec22ddff6ba7aeba2c92fc286cc0c64357811812c31"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/fixed-length-write-locality-load-v1/manifest.json",
+      "manifest_sha256": "364999d6e60f93533cd32f6e33247cac6cac1bb77034189a26d471207a69bb68",
+      "files": {
+        "registry.json": "2042ec4b2e5116c2789e9d4bb2d06185ab437d26df4d8c3307ae4b88cdda87a4"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/fixed-length-write-locality-replication-v1/manifest.json",
+      "manifest_sha256": "367dae3466df3f797b1a4222173b84773960523ca12a55ce372c7c536348bfca",
+      "files": {
+        "registry.json": "3e3193662939f3c205f80d9455cb14bf351512d9c1fb5df481f6c4bce27c0144"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/fresh-copy-memory-confirmation-v1/manifest.json",
+      "manifest_sha256": "9eff6d04307c32785000efb2b495ae6cf17ea3d24d28ff25f61a1778105c3a75",
+      "files": {
+        "cases.json": "8df1f352770e8a25fe1516c97ba176863ab3dde0b9672c54d8b884bab73b7638",
+        "registry.json": "56423a779a97b5655dc380b3528bbd8831223ae7c480535244d5c260f960e5bf"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/fresh-question-query-mediation-v1/manifest.json",
+      "manifest_sha256": "78c42d760f1d0108e8a79adea427f8638bca5be88be3b8933574632ba1d82f60",
+      "files": {
+        "cases.json": "63159a85f454f06c286631908f0170328fec7d35af070fd30ad9aef58dd4f895",
+        "registry.json": "8fe6a5cf31b1bee8e0676de719acbbd64eb6ff33c247c5874e9b892dfe46017b",
+        "queries.json": "7f363142b073c2c5815516ce5f7fa8e8def4c572a2864b7f071481fc72283760"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/fresh-shared-timing-v1/manifest.json",
+      "manifest_sha256": "3c94cdfcecf9175204de7cf7e47933196411047bc91f04ab406739a20129647a",
+      "files": {
+        "cases.json": "6d25379ce3a0d01edad94ac63d6e334aa2eeb7c588769d0d05648d0b174a7a15",
+        "registry.json": "457d5291775cf919ac42540c4d9317f4db0b12d3f2ab4a8dd6b5b47cd693d233"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/fresh-trained-shared-timing-v1/manifest.json",
+      "manifest_sha256": "3e6128b70375662843e021bfc872aef10a72edae5fc8b43de590c3f7c6d3a290",
+      "files": {
+        "cases.json": "ea975ae5377c6b7942867b4203ac987025f2e13a0823b62caea48fdf0a71317e",
+        "registry.json": "4cfcbaca907e8b549796adaa928f17819cb830e171904673870b4ed7e54cd876"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/gate-component-factorial-v1/manifest.json",
+      "manifest_sha256": "45aaa5b75182c7e30083c0101a27cfaf2b61cfa8f51f7ee1a4a3428000e69f15",
+      "files": {
+        "cases.json": "ea975ae5377c6b7942867b4203ac987025f2e13a0823b62caea48fdf0a71317e",
+        "registry.json": "4cfcbaca907e8b549796adaa928f17819cb830e171904673870b4ed7e54cd876",
+        "queries.json": "568edb2713d03bdf46e324581e1a8695fde0a9239167117999254c7ae60f24bd"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/history-no-recent-repeat-v1/manifest.json",
+      "manifest_sha256": "d73205d16b25e4d65bac701a26f29cd45844aa1297c65bcbc30d8538b11d3226",
+      "files": {
+        "registry.json": "4b5f1f9d71802ebe827274b15215ec289e6df06505c97e281c9912e2914ea32b"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/initial-order-derangement-v1/manifest.json",
+      "manifest_sha256": "33d25a3564b5b872227664da10d6c447bcd12fc17bb221b0c9df7dc8afc380d5",
+      "files": {
+        "cases.json": "a40570ce43a57874e10c0042073db7be9ccf36212e152f2506972bf89e26337b",
+        "registry.json": "1ccbce9d14321d18e921f64883ef4163b952f4ecc0ad0bcc49012b0277979d3f"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/natural-update-load-v1/manifest.json",
+      "manifest_sha256": "e229aa8487cd30d8c121dd14df9a6f48bb91bda73b1ade83d77be0f25bca2c9d",
+      "files": {
+        "cases.json": "502e6f16906e201aa4b595d8eded44089dd1ed7710ebfd0dd5c3dff5fbe916f0",
+        "registry.json": "36f6476fe73c9420099f676f303eeb02165ebf3424bec370b25f88c2e64b7616",
+        "queries.json": "852d0e28d8bdbd5158306bfb6518da96cde91b316d42523e47649a52898caf0f"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/oracle-write-hold-factorial-v1/manifest.json",
+      "manifest_sha256": "a150a9063adbb8ae93d25341fc639bfe9eb13926892383f3202bd94a8fb8f0d0",
+      "files": {
+        "cases.json": "ea975ae5377c6b7942867b4203ac987025f2e13a0823b62caea48fdf0a71317e",
+        "registry.json": "4cfcbaca907e8b549796adaa928f17819cb830e171904673870b4ed7e54cd876",
+        "queries.json": "568edb2713d03bdf46e324581e1a8695fde0a9239167117999254c7ae60f24bd"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/paired-semantic-order-augmented-v1/manifest.json",
+      "manifest_sha256": "f5b90214f92710085b208e96d2af98db5d4cc7547a2e518a34e8dec1616de32d",
+      "files": {
+        "registry.json": "a87c3f228894da0fe6a78ae23b5b05849fa828fd49f3061c52cf822684022b41"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/paired-semantic-updates-v1/manifest.json",
+      "manifest_sha256": "f572ee457fbea4deb6135abeaa12d32094f0e1e66d7906192ab6c442a7ec8fcf",
+      "files": {
+        "registry.json": "dddbfb0551b071c0a97d2f7ca9715307286b90763fc92b47b4221f749e2e6ebc"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/post-encoding-updates-v1/manifest.json",
+      "manifest_sha256": "d3e65bc72abd1a901c26c4c69f768bb83d9095c6bb2d9e0987ffa2a8545a0051",
+      "files": {
+        "cases.json": "b423a3cf93f2710d0751934ab34e60874862a916ef992fdcf288e2e40a04aabe",
+        "registry.json": "a353ee34cce6c01058b2387264d4aa0f7f1e1727e769bbe01c6f83eb5f9774e1",
+        "queries.json": "519e9227e1348a076daaff4a48bb82a16372254c879a046faf62997f942f87b4"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/post-tail-path-crossover-v1/manifest.json",
+      "manifest_sha256": "209c3dc8185f66e60bbcb05abec9086082c64b17a825a2aca3753a82f8af9dfd",
+      "files": {
+        "cases.json": "b423a3cf93f2710d0751934ab34e60874862a916ef992fdcf288e2e40a04aabe",
+        "registry.json": "3e146bebfd405495154ea6fcb4314b9f868e452f0251d92c9e91c4ad9042c612",
+        "queries.json": "ae3b5ea839053c44b68ddde59f90b03cda26b55eae2c1857c342c2ec9904ab93"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/query-layer-localization-v1/manifest.json",
+      "manifest_sha256": "ddc38548a1ac566aac0d44d35b25c108f21a0edc1e58ffd98e79a8fde7e22737",
+      "files": {
+        "cases.json": "63159a85f454f06c286631908f0170328fec7d35af070fd30ad9aef58dd4f895",
+        "registry.json": "8fe6a5cf31b1bee8e0676de719acbbd64eb6ff33c247c5874e9b892dfe46017b",
+        "queries.json": "7f363142b073c2c5815516ce5f7fa8e8def4c572a2864b7f071481fc72283760"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/question-state-freeze-v1/manifest.json",
+      "manifest_sha256": "90c37b73de45ba7d1d152b0104ebf403d3251d0b35b8a0ee4be2c5deff35459c",
+      "files": {
+        "cases.json": "502e6f16906e201aa4b595d8eded44089dd1ed7710ebfd0dd5c3dff5fbe916f0",
+        "registry.json": "5f8775f3a1586e2328e22024a755b093a29924cf0f2cb8e69d5f53902c273589",
+        "queries.json": "0c32b7023e89ccd0dd3259fd90263db9f5c26be0ec23e7e5474b4657bcae0b47"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/readout-counterbalance-v1/manifest.json",
+      "manifest_sha256": "b3b8455b7316008f63b3c933a8913fa157f3bc2cc71586a9aff1847d9e94655e",
+      "files": {
+        "cases.json": "aae7d4d18fa0ca17a4028d9ff4a9bfaff23219569a0310802c0d08b554b6e893",
+        "registry.json": "4ced5bf2a4f2d23507459f18a31b345a39e7ae5f7ae02b72010efe4b885b9a14"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/record-kv-ablation-v1/manifest.json",
+      "manifest_sha256": "ff2290c7e8af5724938bf8c492fcf364ebe54b9f431a6c8ba9e9a171f43d4177",
+      "files": {
+        "cases.json": "aae7d4d18fa0ca17a4028d9ff4a9bfaff23219569a0310802c0d08b554b6e893",
+        "registry.json": "2a2c1c3cccc43c9e2448bfa7d08c3faeeb29cf35a4dbddb8726e26b2038044a7"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/single-fact-counterfactual-v1/manifest.json",
+      "manifest_sha256": "5504281e5a71d16aca823a1c1445a021ef5bd80d3c7b3efe62f7e544beebe0d1",
+      "files": {
+        "registry.json": "287e67ed14c6114a04ad20a1b488fcdcfc358a740a54e2fb829908c8133e65a2"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/text-competence-factorial-v1/manifest.json",
+      "manifest_sha256": "fca5d76d9456dfe834a6127c63100ab00cde71335845ed7eae99952d3b11931c",
+      "files": {
+        "cases.json": "ea975ae5377c6b7942867b4203ac987025f2e13a0823b62caea48fdf0a71317e",
+        "registry.json": "4cfcbaca907e8b549796adaa928f17819cb830e171904673870b4ed7e54cd876"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/update-budget-controls-v1/manifest.json",
+      "manifest_sha256": "9cfca6516f9b035d0dff6548f0f5ee6f704930b87a9a686e6fe80c0e7c2d7f49",
+      "files": {
+        "cases.json": "ea975ae5377c6b7942867b4203ac987025f2e13a0823b62caea48fdf0a71317e",
+        "registry.json": "4cfcbaca907e8b549796adaa928f17819cb830e171904673870b4ed7e54cd876",
+        "queries.json": "568edb2713d03bdf46e324581e1a8695fde0a9239167117999254c7ae60f24bd"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/version-query-control-v1/manifest.json",
+      "manifest_sha256": "d3297596bcefc879bcbea7c9c3458e6d019c30a43a7f5aa654217d84b16e8a3d",
+      "files": {
+        "cases.json": "502e6f16906e201aa4b595d8eded44089dd1ed7710ebfd0dd5c3dff5fbe916f0",
+        "registry.json": "5f8775f3a1586e2328e22024a755b093a29924cf0f2cb8e69d5f53902c273589",
+        "queries.json": "0c32b7023e89ccd0dd3259fd90263db9f5c26be0ec23e7e5474b4657bcae0b47"
+      }
+    },
+    {
+      "manifest": "/media/990Pro/Code/SAS/datasets/memory_update/write-locality-adapter-transfer-v1/manifest.json",
+      "manifest_sha256": "87d3ca1794f7ab08521b8598fe5114885bd63315108267bebcf0fcee0a293a60",
+      "files": {
+        "registry.json": "7de27f0a975e30fa73ec368178b8c744c7d18e1f4a5a44415582fb6082f3624e"
+      }
+    }
+  ],
+  "input_policy": {
+    "case_variants_per_cohort": 16,
+    "contexts_per_cohort": 144,
+    "questions_per_cohort": 864,
+    "reused_all864_questions_unchanged": true,
+    "reused_all50_GDN_errors_retained": true,
+    "styles": [
+      "state_term",
+      "event_term"
+    ],
+    "roles": [
+      "target_current",
+      "target_initial",
+      "protected_current"
+    ],
+    "known_suffix_tokens": 24,
+    "generator": "Use sealed natural_load_data.make_cases/build_registry and version_query_data.build_registry with the same generator/templates/length and program truth; only prospective seeds change. New complete prefixes,ledgers and prompts must be disjoint from all pinned prior inputs.",
+    "fresh_definition": "Fresh generated input streams, not unseen operation templates,models or tasks."
+  },
+  "observation": {
+    "attention_layers": [
+      3,
+      7,
+      11,
+      15,
+      19,
+      23
+    ],
+    "primary_layer": 15,
+    "known_suffix_positions": {
+      "question_end": 11,
+      "answer_boundary": 23
+    },
+    "pool": "Actual native BF16 softmax weights, convert to FP32, mean over all8query heads, sum each original contiguous14token record. Preserve every record,not topK.",
+    "heads": 8,
+    "record_tokens": 14,
+    "capture_scope": "Exactly the first24known question/format suffix tokens. Own observation hooks removed before gold scoring and unconstrained answer generation. Native recurrent updates,conv,residual,MLP,Q/K/V,positions and full reading remain unchanged.",
+    "raw_preservation": "For each model/context save deterministic float32 .npy with shape[6questions,6layers,2positions,record_count]; every raw observation can be independently reaggregated. Include pooled prelude,causal question and total mass; finite/nonnegative and causal future-zero checks only,no success or nonzero-support gate.",
+    "labels": "Observer accepts only record spans,known input IDs and source boundary,no question role,answer or support. Associate executable entity/version/answer/emitted-value labels after the complete unconstrained readout. Labels never affect model attention or cache.",
+    "summaries": "All layers/positions/wordings/roles/cohorts and all baseline errors. Primary pooled support mass/rank,queried entity first/last/other-version masses,total entity mass,emitted-value record mass/rank,prelude/question/record masses. Current-initial question contrasts paired on the same history and entity.",
+    "limits": "Head pooling can hide specialization. Weights are not causal contribution; correct evidence weight does not prove semantic use,and low weight does not prove absence from GDN. Formatting-position differences change native computation stage,not a pure semantic intervention."
+  },
+  "counts": {
+    "physical_readouts": 3456,
+    "reused_exact_reference_replays": 1728,
+    "fresh_readouts": 1728,
+    "archived_references": 1728,
+    "normal_prefix_caches": 64,
+    "normal_after_caches": 512,
+    "complete_float32_record_mass_files": 576,
+    "layer_position_rows": 41472,
+    "model_cohort_style_episode_cells": 72,
+    "role_cells": 216,
+    "wording_pairs": 1728,
+    "same_history_current_initial_pairs": 1152,
+    "prefix_guard_checks_per_case": 64,
+    "after_guard_checks_per_context": 8
+  },
+  "smoke": {
+    "cohort_cases": "First original-name case from EACH cohort; all9contexts and both styles/all roles.",
+    "readouts_per_model": 108,
+    "readouts_each_order": 216,
+    "opposite_model_order_exact": true,
+    "accuracy_gate": false,
+    "primary_shared_subset_exact": true,
+    "new_sources_and_all_raw_mass_files_exact": true
+  },
+  "controls": {
+    "all_reused_readouts_and_old_passive_proof_exact": true,
+    "all_reused_source_fields_exact_except_guard_count": true,
+    "model_weight_hash_unchanged": true,
+    "adapter_frozen": true,
+    "native_legacy_before_attach_none_after": true,
+    "all_old_failed_criteria_unchanged": true,
+    "no_outcome_filter": true,
+    "all_generation_outputs_and_original_errors_retained": true,
+    "all_prior261sources_immutable": true
+  },
+  "predecessor_sources_immutable": 261,
+  "new_sources": [
+    "configs/version_address_audit_plan.json",
+    "scripts/version_address_data.py",
+    "scripts/version_address_runtime.py",
+    "scripts/prepare_version_address.py",
+    "scripts/run_version_address.py",
+    "scripts/analyze_version_address.py",
+    "tests/test_version_address.py"
+  ],
+  "planned_total_sources": 268,
+  "registration_destination": "/media/990Pro/Code/SAS/datasets/memory_update/version-address-observation-v1",
+  "code_started": false,
+  "data_packet_generated": false,
+  "model_inference_started": false,
+  "training": false,
+  "new_adapters": false,
+  "new_models": false,
+  "new_environment": false,
+  "oracle_reading": false,
+  "donor_forward": false,
+  "changes_recurrent_updates": false,
+  "can_change_prior_gates": false,
+  "architecture_effectiveness_claim": false,
+  "causal_attention_claim": false
+}
