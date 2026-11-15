@@ -12225,8 +12225,8 @@
     "primary_scientific_results_published": true
   },
   "update_budget_controls": {
-    "status": "first3configs_complete_remaining2continue",
-    "previous_goal_turn_classification": "progress: queued guarded whole-phase exports, verified complete2688shared readouts and exact native restoration, pushed receipts",
+    "status": "first4configs_complete_final_gdn_adapter_config_continues",
+    "previous_goal_turn_classification": "progress: verified complete third2688readout configuration, frozen adapter state and12exact native anchors; pushed progress",
     "prior_head": "c3447ec3e2840c98a1c660a3a2ca0c19ada7dac7",
     "protocol": "configs/update_budget_controls_plan.json",
     "protocol_sha256": "46bb14453d6f67fa58bcafaba0b78232501ff3b86ce18bbc8c0b9b3a0f20da71",
@@ -12265,8 +12265,8 @@
     "unified_logical_cells": 20160,
     "prior_failed_gates_unchanged": true,
     "auxiliary_prefix_utility": "scripts/verify_update_budget_prefix.py",
-    "last_updated_utc": "2026-11-15T02:55:56.647580+00:00",
-    "next_action": "Finish question-deployment and GDN-adapter configurations; independent full audit and queued complete exports/report; inspect figure and all results before byte-verified publication.",
+    "last_updated_utc": "2026-11-15T03:05:30.234507+00:00",
+    "next_action": "Finish final GDN-adapter configuration, then full audit and queued all-cell exports/report; inspect figure and every result before snapshot/publication.",
     "smoke_receipts": {
       "update-budget-smoke-forward-audit-20261115-01": {
         "status": "audited_update_budget_smoke",
@@ -12290,7 +12290,8 @@
     "completed_models_at_last_observation": [
       "native",
       "shared",
-      "shared_question_trained_all"
+      "shared_question_trained_all",
+      "shared_question_trained_question"
     ],
     "native_files_complete_verified": {
       "random0_full": {
@@ -12398,6 +12399,43 @@
         "sha256": "a368ea6bb027a2dc79cd3be462f7a07e4b4e813887ffaf8d830578ae73323690"
       }
     },
-    "question_trained_all_adapter_unchanged_and12native_readouts_exactly_restored": true
+    "question_trained_all_adapter_unchanged_and12native_readouts_exactly_restored": true,
+    "question_deployed_files_complete_verified": {
+      "random0_full": {
+        "rows": 336,
+        "sha256": "22b61f3fb5a1991d51f6819687a302951ceaf74f9929cf15900e5c46c11cea63"
+      },
+      "random0_oracle": {
+        "rows": 336,
+        "sha256": "706df3fb5c33fa446c3ced0ec5bec81da877c922a5b4eab0ac686a0e68a77b2e"
+      },
+      "random1_full": {
+        "rows": 336,
+        "sha256": "75ffaeadd936ea3d4e1992231f60348bcbc3c8967a5b20b95da392628c0ecb67"
+      },
+      "random1_oracle": {
+        "rows": 336,
+        "sha256": "f9251d4cea2d7287d314c0e8ab7b35c84b9880b05084e8fa27bbd31af1093a3b"
+      },
+      "early_full": {
+        "rows": 336,
+        "sha256": "f9684c78fd534500fb9a72f813c95add66e529919111eabe0836f085a181992e"
+      },
+      "early_oracle": {
+        "rows": 336,
+        "sha256": "f58e1c327c5845a066e2a6c6b498e70ba9f82a075c23cac224e524f9fca5ac4a"
+      },
+      "recent_full": {
+        "rows": 336,
+        "sha256": "eb6669675a697401a493c1ed2d9c3b2179ee432d484160102e5abd8f47ed598b"
+      },
+      "recent_oracle": {
+        "rows": 336,
+        "sha256": "0eb4c9db9564948def346452a66bafba547db0e07ad26d7c774a1e45493f1db5"
+      }
+    },
+    "question_deployed_adapter_unchanged_and12native_readouts_exactly_restored": true,
+    "question_only_prefix_checks_exact": 56,
+    "question_only_prefix_check_scope": "No extra Delta hold: controller-only native-prefix isolation. Experimental write holds can change prefix states; reader-only preservation is conditional on the same write policy."
   }
 }
