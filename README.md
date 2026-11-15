@@ -69,7 +69,9 @@ cohort. Text, positions and prefix computation change; they do not uniquely
 localize GDN damage or establish a new architecture. All earlier failed
 scientific criteria remain failed. GDN-only means adapter scope; Attention stays.
 
-- [All 32 post-tail crossover cells and128 episode cells](materials/updates/post-tail-path-20261115/README.md)
+- [Registered fresh-stream question Query intervention](materials/updates/fresh-query-20261115/README.md)
+- [All 32 post-tail crossover cells and 128 episode cells](materials/updates/post-tail-path-20261115/README.md)
+- [Byte-verified post-tail cache crossover snapshot](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/post-tail-path-crossover-2026-11-15)
 - [All 170 normally encoded-prefix conditions and complete audit](materials/updates/post-encoding-20261115/README.md)
 - [Byte-verified normally encoded-prefix snapshot](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/post-encoding-updates-2026-11-15)
 - [All sixty budget-control cells and encoding-confound analysis](materials/updates/update-budget-20261115/README.md)
