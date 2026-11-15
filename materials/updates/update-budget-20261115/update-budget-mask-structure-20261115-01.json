@@ -1,0 +1,97 @@
+{
+  "status": "locked_data_only_structure_audited",
+  "created_utc": "2026-11-15T02:25:29.387190+00:00",
+  "model_inference": false,
+  "predictions_read": false,
+  "policy_sha256": "0d48230d7990e9aafd2b45d43dbb0027a80a218a1367714dab01b6e25d942062",
+  "dataset_manifest_sha256": "9cfca6516f9b035d0dff6548f0f5ee6f704930b87a9a686e6fe80c0e7c2d7f49",
+  "source_sha256": "71c9616ebe5c6d7b0bf17c98b475ec466ef06e8ce410bb83de5a439db3461519",
+  "physical_queries": 336,
+  "choices": [
+    {
+      "kind": "COPY",
+      "available": 0,
+      "selected": 0,
+      "possible_subsets": 1,
+      "queries": 48
+    },
+    {
+      "kind": "COPY",
+      "available": 1,
+      "selected": 0,
+      "possible_subsets": 1,
+      "queries": 64
+    },
+    {
+      "kind": "COPY",
+      "available": 1,
+      "selected": 1,
+      "possible_subsets": 1,
+      "queries": 32
+    },
+    {
+      "kind": "COPY",
+      "available": 2,
+      "selected": 0,
+      "possible_subsets": 1,
+      "queries": 64
+    },
+    {
+      "kind": "COPY",
+      "available": 2,
+      "selected": 2,
+      "possible_subsets": 1,
+      "queries": 32
+    },
+    {
+      "kind": "COPY",
+      "available": 3,
+      "selected": 0,
+      "possible_subsets": 1,
+      "queries": 64
+    },
+    {
+      "kind": "COPY",
+      "available": 3,
+      "selected": 3,
+      "possible_subsets": 1,
+      "queries": 32
+    },
+    {
+      "kind": "SET",
+      "available": 16,
+      "selected": 1,
+      "possible_subsets": 16,
+      "queries": 24
+    },
+    {
+      "kind": "SET",
+      "available": 17,
+      "selected": 1,
+      "possible_subsets": 17,
+      "queries": 144
+    },
+    {
+      "kind": "SET",
+      "available": 72,
+      "selected": 1,
+      "possible_subsets": 72,
+      "queries": 24
+    },
+    {
+      "kind": "SET",
+      "available": 73,
+      "selected": 1,
+      "possible_subsets": 73,
+      "queries": 144
+    }
+  ],
+  "all_copy_strata_have_one_possible_selection": true,
+  "copy_selection_equals_original_support_per_family": {
+    "random0": 336,
+    "random1": 336,
+    "early": 336,
+    "recent": 336
+  },
+  "interpretation": "All336queries select exactly one SET record. Controls vary SET identity among16/17/72/73 candidates. COPY is either fully included or excluded by the oracle-derived type budget; every family has exactly the original COPY selection. This does not test discovering a COPY dependency chain or choosing between alternative COPY paths."
+}

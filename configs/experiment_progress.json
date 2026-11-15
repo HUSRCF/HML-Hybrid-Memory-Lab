@@ -12265,7 +12265,7 @@
     "unified_logical_cells": 20160,
     "prior_failed_gates_unchanged": true,
     "auxiliary_prefix_utility": "scripts/verify_update_budget_prefix.py",
-    "last_updated_utc": "2026-11-15T02:22:41.486014+00:00",
+    "last_updated_utc": "2026-11-15T02:25:54.754543+00:00",
     "next_action": "Independent240prefix/cache/KV checks, then preregistered13440new measurements; no outcome-based condition selection.",
     "smoke_receipts": {
       "update-budget-smoke-forward-audit-20261115-01": {
@@ -12281,6 +12281,8 @@
         "sha256": "61217010ab10764c3235d84c1d3e27630ade8d98f804cf72bd20ade216067004"
       }
     },
-    "measurement_sources_unchanged": 197
+    "measurement_sources_unchanged": 197,
+    "mask_structure_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/update-budget-mask-structure-20261115-01.json",
+    "mask_structure_limitation": "Each query chooses one SET among16/17/72/73. COPY selection is already determined by oracle type/count budget in all336queries; not a dependency-chain-discovery test."
   }
 }
