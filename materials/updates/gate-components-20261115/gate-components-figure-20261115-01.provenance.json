@@ -1,0 +1,15 @@
+{
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/gate-components-factorial-20261115-01",
+  "audit_sha256": "d69fdde414fd0fb482551dadaa32d57dd1ecb7f4571e5f1e37cf93e884a0035a",
+  "manifest_sha256": "c14536d6bd92565fa845f3113a21ac49f3f56c95a4e0efb069a56c5b913361e6",
+  "source_sha256": "6e570e71e577da939155b2b18820eaf1600057661675fa2c3940b12d3f7a1d7f",
+  "outputs_sha256": {
+    "gate-components-figure-20261115-01.csv": "d71d4f5b640c2dda6ad62c2ce2884cc5a9066b0c92de43759ba992f58311ea54",
+    "gate-components-figure-20261115-01.pairs.csv": "40031f6eeeccf34df38227600dbe178c119349a261d9089208f3e343b775b58a",
+    "gate-components-figure-20261115-01.factorial.csv": "cfa2d3dacd451878fa8f9eb29802a802b196bd14ce68f5cc8a69244211d0448f",
+    "gate-components-figure-20261115-01.png": "9dc7e488b59e770cb286e550a7a301c91a9273cd9ef026bc0cb057bc6be31210",
+    "gate-components-figure-20261115-01.pdf": "e9d098c7a8197a723da6d8ea7aa750e4b1fe0fa90041719276a84693d71ecc04",
+    "gate-components-figure-20261115-01.data.json": "79ab5a619789b1b43a6860fab5b7ad504c612aa87e23b3c727fb0f4c40c68bb9",
+    "gate-components-figure-20261115-01.source.py": "6e570e71e577da939155b2b18820eaf1600057661675fa2c3940b12d3f7a1d7f"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "visually_inspected",
+  "width": 3240,
+  "height": 3600,
+  "all40cells_present": true,
+  "new_and_archive_labels_present": true,
+  "clipping_observed": false,
+  "labels_and_footer_readable": true,
+  "png_sha256": "9dc7e488b59e770cb286e550a7a301c91a9273cd9ef026bc0cb057bc6be31210"
+}

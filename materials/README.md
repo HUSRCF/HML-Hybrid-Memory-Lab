@@ -7,11 +7,14 @@
 实验使用 Qwen3.5-2B IT；不能将这些结果当作 Base 模型的实测结果，也尚未
 实现显式的共享语义依赖控制器。
 
-## Registered gate-component decomposition
+## Complete gate-component decomposition
 
-[衰减与Delta修正分解](updates/gate-components-20261115/README.md)已在新推理前登记。
-全部五配置、336问题及原始输入保持；四种新条件计划6720次正式读出，历史6720次
-参考单独标记。先验证原生内核与旧端点重放，不训练、不扩模。等预算语义控制仍待另行登记。
+[衰减与Delta修正分解](updates/gate-components-20261115/README.md)的6720次新读出
+已完整审计，历史6720次参考单独标记，统一报告全部40个条件。关闭Delta配合Oracle读取
+时五配置均48/48；仅关闭衰减配合Oracle为15、32、35、33、30/48。完整读取下单门干预
+仍损害历史和无关事实。234项测试、相反顺序smoke、120项完整缓存检查通过；首次
+理想FP32内核校验失败及数值参考修正保留。输入与位置固定、掩码具有后见信息，
+等预算随机/位置对照仍待登记，没有新训练、扩模或架构成功声明。
 
 ## Previous complete fixed-input recurrent-hold controls
 

@@ -5,13 +5,21 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; the next single-gate decomposition is registered before inference.**
-The [registered component phase](materials/updates/gate-components-20261115/README.md)
-separates native decay from the complete Delta correction on the same inputs,
-crossed with full/oracle reading. It adds 6,720 readouts across all five fixed
-configurations; the preceding 6,720 readouts remain labeled archived references.
-No training or scaleup is triggered. Budget-matched semantic-specificity controls
-remain a separate next step.
+**Status: active; all 6,720 new gate-component readouts are independently audited.**
+The [complete component phase](materials/updates/gate-components-20261115/README.md)
+separates native decay from the complete Delta correction on fixed original inputs.
+Delta suppression plus oracle reading reaches 48/48 in all five configurations;
+decay suppression plus oracle reaches 15, 32, 35, 33 and 30/48. Full reading with
+single-gate interventions still damages historical and unrelated answers.
+The unified table labels 6,720 new measurements and 6,720 archived references.
+All 234 tests, opposite-order smokes and 120 complete-cache checks passed revised
+operational validation. The first failed ideal-FP32 kernel check remains preserved;
+a preregistered numerical addendum accounts for native BF16 chunk rounding without
+changing task intervention or tolerances. These remain hindsight-oracle controls
+on eight reused streams. Budget-matched relevance controls precede any new training
+or scaleup; earlier failed scientific criteria remain failed.
+Different questions may use different write masks and prefix states; joint accuracy
+does not establish one reusable memory state that supports every question.
 
 The complete fixed-input recurrent-hold factorial is audited.
 All 6,720 readouts, 229 regression tests, two opposite-order 360-readout smokes
@@ -33,12 +41,14 @@ cohort. Text, positions and prefix computation change; they do not uniquely
 localize GDN damage or establish a new architecture. All earlier failed
 scientific criteria remain failed. GDN-only means adapter scope; Attention stays.
 
+- [All forty gate-component cells, explicit origins, controls and limitations](materials/updates/gate-components-20261115/README.md)
 - [All twenty fixed-input recurrent-hold cells, controls and limitations](materials/updates/oracle-write-hold-20261115/README.md)
 - [All twenty previous text-control cells, limitations and audit](materials/updates/text-competence-factorial-20261115/README.md)
 - [Previous frozen-prefix evidence-access diagnostic](materials/updates/trained-timing-evidence-access-20261115/README.md)
 - [Previous matched-training confirmation](materials/updates/trained-shared-timing-20261115/README.md)
 - [Research status and archived materials](materials/README.md)
 - [Registered fixed-input recurrent-hold protocol](configs/oracle_write_hold_factorial_plan.json)
+- [Gate-component protocol](configs/gate_component_factorial_plan.json) and [native-precision validation addendum](configs/gate_component_kernel_reference_addendum.json)
 - [Previous registered text-control protocol](configs/text_competence_factorial_plan.json)
 - [Machine-readable progress](configs/experiment_progress.json)
 - [Full backup files](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases)
