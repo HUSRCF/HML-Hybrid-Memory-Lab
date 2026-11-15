@@ -1,0 +1,8 @@
+{
+  "captured_utc": "2026-11-15T18:30:56.149287+00:00",
+  "terminal": false,
+  "pipeline_receipt_sha256": "0a11258a4d83f28269eb0aead6a129b0aea56d3f08e9e6256c9fb9c5f82aad99",
+  "latest_stage": "lock_complete_training_then_register_full_cohorts",
+  "stage_has_finished": false,
+  "pipeline_session": 48521
+}
