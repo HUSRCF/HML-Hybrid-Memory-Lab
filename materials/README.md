@@ -1,12 +1,13 @@
 # Research materials
 
-Latest: [post-tail recurrent/convolution/KV crossover](updates/post-tail-path-20261115/README.md).
-All 4,608 new readouts and 1,536 endpoint replays are independently audited; all 32 cells and
-128 episode cells are exported. Restoring old recurrent matrices is not a general
-protection strategy: GDN-adapted new-value full reading falls from 32/32 to 2/32 while oracle
-still recovers 32/32. No new training or shared-architecture success claim.
+Latest: [fresh recurrent-state / question-Query intervention](updates/fresh-query-20261115/README.md).
+All 3,264 readouts, 20 cells, 68 episode cells and 1,536 actual same-source replacements
+are independently audited. Normal Queries restore GDN-adapted new-value Full reading
+from 2/32 to 32/32 in an old-state recipient; the reverse swap yields 3/32.
+A fixed-prefix answer regresses, and normal Full already scores 191/192.
+This is a fresh eight-stream mechanism diagnostic; no new architecture claim or training.
 
-[Complete byte-verified crossover backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/post-tail-path-crossover-2026-11-15).
+[Previous byte-verified crossover backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/post-tail-path-crossover-2026-11-15).
 
 本目录记录 2026-11-15 暂停备份时点的材料。完整上传与校验完成后，用户已要求
 继续实验；后续状态以 `configs/experiment_progress.json` 为准，Release 快照保持不变。

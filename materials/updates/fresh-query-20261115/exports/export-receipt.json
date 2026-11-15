@@ -1,0 +1,36 @@
+{
+  "status": "complete_fresh_query_exports",
+  "rows": {
+    "primary": 3264,
+    "same-source-replays": 1536,
+    "donor-queries": 9216,
+    "replacement-calls": 18432,
+    "cells": 20,
+    "episodes": 68,
+    "strata": 296,
+    "contrasts": 178,
+    "before-after": 160,
+    "nll-interactions": 768,
+    "cache-fields": 6912
+  },
+  "audit_sha256": "3e2f029ee3b03000a5e934f7f290c33815737120df4b0f56ef3332dfc9de1180",
+  "export_source_sha256": "3d58c53345b1fd19275deaa869b77e13289bff311460aaecd757ce3124fa98b1",
+  "files_sha256": {
+    "export-source.py": "3d58c53345b1fd19275deaa869b77e13289bff311460aaecd757ce3124fa98b1",
+    "contrasts.csv": "5020991491d4577998269e54be901fdb7453baf7fb93ebba6d74fe43a6b6a8bf",
+    "same-source-replays.csv": "e6e3f59d87cdfe6d7ebf0212411c0bb02420561ad9748d6ee21ba2228a18fe60",
+    "metrics.json": "4aa2dd20ea29b255f1b17216880ddd85e4c25da702040746503522dc715b3cb9",
+    "replacement-calls.csv": "3b5b49993d16c4a7241e66f61a196bdb8fac279d8136774c980526b67940a9ca",
+    "strata.csv": "27fc0415bfe092179876a9d2a5d202a15c38082d61490171035b9d47e1e19e25",
+    "cells.csv": "6ab2d137ea26e30431e91b93cb060f123d21897325215be0bf5fdfc63fe83096",
+    "primary.csv": "46c77c370d3e11b951dac704c126aaae56fc31271e71ff3cc9022ec0d5b9a57f",
+    "cache-fields.csv": "82ddf7796d72377b8f41fab1d3b2dfe33d978703ac5b9bba7a268ba2e08af3cc",
+    "all20cells.png": "78ceeef7aac6c0931ebdda825bc5d4cfb5d9267a9d12391a9ca0c4e636a0d748",
+    "before-after.csv": "1b5dc76f450cb212b8f5cc3f204dc6ed73c33f91ae9f26d591bbcad0be835d07",
+    "report.md": "f8e632c8e468a52c42841a588c8a59e2ff62989052ee05b3382e4913f7f0ed85",
+    "all20cells.svg": "a598d7c69d5856af19bee3280238b06217a8e864483a4bcc6c533b183e32f730",
+    "episodes.csv": "97249344af773d8d904887feb77da13dfa582c326d767703ff5d89f78994e688",
+    "donor-queries.csv": "bb4de4900ad1d3328446e689531333e86dd4f801f62a3e3027c13b5922408142",
+    "nll-interactions.csv": "f93120514007573b9f4a8019eb3a6f5736781d6ca5f44ea2087ba957db5e4145"
+  }
+}

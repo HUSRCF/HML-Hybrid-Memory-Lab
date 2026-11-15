@@ -5,17 +5,22 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; all 4,608 new post-tail crossover readouts are independently audited.**
-The [complete diagnostic](materials/updates/post-tail-path-20261115/README.md) reports all 32 factorial cells,
-128 episode cells and 1,536 exact endpoint replays on eight reused streams. All 269 tests,
-opposite-order smokes, 128 source caches, 512 composed caches and 214 measurement sources passed.
-Held-tail KV makes every new-value control fail; keeping normal KV with old recurrent
-matrices permits oracle recovery but harms full reading. The existing GDN adapter falls
-from 32/32 to 2/32 on new values after matrix restoration, while oracle remains 32/32.
-Normal full reading already reaches 191/192 with that adapter. These results do not
-establish a need for a new shared architecture. Earlier failed criteria remain unchanged.
-No new training, environment or model download. Next validate the readout effect on fresh
-streams and isolate question-stage Query computation before considering another controller.
+**Status: active; all 3,264 fresh state / question-Query readouts are independently audited.**
+The [complete fresh diagnostic](materials/updates/fresh-query-20261115/README.md) retains all 20 cells,
+68 episode cells and all baseline failures on eight new streams. All 284 tests, opposite-order
+smokes, 1,536 actual same-source replacements, 9,216 donor Query tensors and 222 measurement
+sources passed. With normal tail KV fixed, restoring old recurrent matrices reduces the
+GDN adapter's new-value Full accuracy from 32/32 to 2/32. Replacing only question-stage
+Attention Queries restores 32/32; the reverse Query swap yields 3/32. The repair also loses
+one fixed-prefix answer. Normal Full already reaches 191/192: this is mechanism evidence,
+not a new shared-architecture success. Earlier failed criteria remain unchanged.
+No new training, environment or model download. Next register single-layer Query repair
+and reverse-damage controls across all six Attention layers before any further inference.
+
+The previous [post-tail cache crossover](materials/updates/post-tail-path-20261115/README.md)
+retains all 4,608 new readouts, 32 factorial cells and 1,536 exact endpoint replays on eight
+reused streams, with its complete byte-verified Release. That phase motivated this fresh
+question-stage intervention; old results and failures remain preserved.
 
 The previous [normally encoded-prefix diagnostic](materials/updates/post-encoding-20261115/README.md)
 retains all 8,160 readouts, 170 cells, 680 source-cache checks and its byte-verified Release.

@@ -6390,7 +6390,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-15T07:13:23.299001+00:00",
+  "updated_utc": "2026-11-15T07:21:48.836810+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -12483,7 +12483,7 @@
     "committed_snapshot_files": 256
   },
   "fresh_question_query_mediation": {
-    "status": "222source_fresh_input_packet_sealed_before_LLM_inference",
+    "status": "completed_independently_audited_exported_visually_inspected",
     "protocol": "configs/fresh_question_query_mediation_plan.json",
     "protocol_sha256": "b99755922d42236d6077c3a0d16bcc3e8cadc61ad34d093b8f2946432bac791d",
     "prior_input_inventory": "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-query-prior-inputs-20261115-01.json",
@@ -12494,15 +12494,64 @@
     "new_training": false,
     "new_environment": false,
     "fresh_data_generated": true,
-    "model_inference_started": false,
-    "next_action": "Push sealed code/data provenance; run opposite-order204smokes and exact same-source Query replacements before3264primary readouts.",
-    "last_updated_utc": "2026-11-15T07:13:23.299001+00:00",
+    "model_inference_started": true,
+    "next_action": "Package complete phase, push committed evidence and roundtrip all Release assets; then register all-six-layer Query localization.",
+    "last_updated_utc": "2026-11-15T07:43:19.450108+00:00",
     "packet_manifest_sha256": "78c42d760f1d0108e8a79adea427f8638bca5be88be3b8933574632ba1d82f60",
     "sources_sealed": 222,
     "tests_passed": 284,
     "tests_seconds": 164.267,
     "input_feasibility_passed": true,
-    "native_model_constructor_calls_during_registration": 0
+    "native_model_constructor_calls_during_registration": 0,
+    "source_files_unchanged": 222,
+    "smoke_equivalence": "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-query-smoke-equivalence-20261115-01.json",
+    "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/fresh-query-primary-20261115-01",
+    "primary_session_id": 1767,
+    "primary_progress": {
+      "native": {
+        "completed_primary": 1632,
+        "completed_same_source_replays": 768,
+        "completed_captures": 768
+      },
+      "gdn_all_tokens": {
+        "completed_primary": 1632,
+        "completed_same_source_replays": 768,
+        "completed_captures": 768
+      }
+    },
+    "primary_exit_code": 0,
+    "primary_inference_completed": true,
+    "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-query-primary-audit-20261115-01.json",
+    "primary_audit_sha256": "3e2f029ee3b03000a5e934f7f290c33815737120df4b0f56ef3332dfc9de1180",
+    "primary_readouts_completed": 3264,
+    "same_source_replays_completed": 1536,
+    "question_only_captures_completed": 1536,
+    "actual_donor_query_tensors_audited": 9216,
+    "normal_prefix_caches_audited": 16,
+    "after_source_caches_audited": 128,
+    "all_sources_unchanged": 222,
+    "old_scientific_criteria_unchanged": {
+      "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+      "matched_question_positive_joint_gain_over_native": false,
+      "matched_question_no_all_trained_all_deployed_correct_regression": false
+    },
+    "exports": "/media/990Pro/Code/SAS/artifacts/memory_update/fresh-query-exports-20261115-01",
+    "exports_rows": {
+      "primary": 3264,
+      "same-source-replays": 1536,
+      "donor-queries": 9216,
+      "replacement-calls": 18432,
+      "cells": 20,
+      "episodes": 68,
+      "strata": 296,
+      "contrasts": 178,
+      "before-after": 160,
+      "nll-interactions": 768,
+      "cache-fields": 6912
+    },
+    "figure_visually_inspected": true,
+    "primary_manifest_sha256": "a9059e6309feae40f69c72ccacbb544875bd73cd65d366027de6ff0c9e44ce17",
+    "publication_pending": true
   },
   "archived_research_steps": {
     "unseen_shared_timing_before_fresh_query_registration": {
