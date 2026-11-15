@@ -1,0 +1,14 @@
+test_all261sources_unchanged_and268source_import_closure (tests.test_version_address.AddressDataTests.test_all261sources_unchanged_and268source_import_closure) ... ok
+test_complete_all216_readout_audits_and_exact_opposite_order_raw_files (tests.test_version_address.AddressDataTests.test_complete_all216_readout_audits_and_exact_opposite_order_raw_files) ... ok
+test_full_unfiltered_old_and_fresh_inputs_novelty_and_one_token_pairs (tests.test_version_address.AddressDataTests.test_full_unfiltered_old_and_fresh_inputs_novelty_and_one_token_pairs) ... ok
+test_independent_raw_aggregation_ties_zero_support_and_noncanonical_number (tests.test_version_address.AddressDataTests.test_independent_raw_aggregation_ties_zero_support_and_noncanonical_number) ... ok
+test_actual_eight_head_mean_and_record_sum_match_manual_dyadic_weights (tests.test_version_address.ObserverTests.test_actual_eight_head_mean_and_record_sum_match_manual_dyadic_weights) ... ok
+test_bad_known_ids_future_access_and_native_exception_clean_all_own_hooks (tests.test_version_address.ObserverTests.test_bad_known_ids_future_access_and_native_exception_clean_all_own_hooks) ... ok
+test_invalid_history_or_known_boundary_rejected_before_hooks (tests.test_version_address.ObserverTests.test_invalid_history_or_known_boundary_rejected_before_hooks) ... ok
+test_native_logits_all48cache_fields_and_return_tensors_are_unchanged (tests.test_version_address.ObserverTests.test_native_logits_all48cache_fields_and_return_tensors_are_unchanged) ... ok
+test_observer_is_removed_before_answer_and_cannot_observe_answer_tokens (tests.test_version_address.ObserverTests.test_observer_is_removed_before_answer_and_cannot_observe_answer_tokens) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 64.418s
+
+OK

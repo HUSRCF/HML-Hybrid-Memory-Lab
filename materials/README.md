@@ -1,6 +1,11 @@
 # Research materials
 
-Latest: [complete question-only local GDN controls](updates/question-state-freeze-20261115/README.md).
+Current: [passive version-address observation](updates/version-address-20261115/README.md).
+All 352 CPU tests passed; 268 sources and complete old/fresh inputs are sealed before
+native inference. Old/new864questions each; eight fixed new streams; no changed model
+updates,restricted reading or training.
+
+Latest completed: [complete question-only local GDN controls](updates/question-state-freeze-20261115/README.md).
 All 6,912 readouts, 864 exact normal replays and all local controls independently audited;
 all 343 pre-inference tests and 261 sealed sources unchanged. Every local arm lowers accuracy
 in both wordings. Group 12/13/14 is 105/432 versus normal 412/432 in state terms (5 repairs,

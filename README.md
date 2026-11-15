@@ -5,7 +5,14 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; all 6,912 question-phase GDN control readouts are independently audited.**
+**Status: active; passive version-address observations are implemented and sealed.**
+The [registered normal-history observation](materials/updates/version-address-20261115/README.md)
+retains all old questions and adds eight fixed new streams. All 352 CPU regression tests
+passed before sealing 268 sources. Native and frozen-GDN models will retain normal updates
+and full attention; all pooled original-record weights at two known positions will be saved
+for independent reaggregation. No new model inference or scientific outcome at this seal.
+
+**Latest completed: all 6,912 question-phase GDN control readouts independently audited.**
 The [complete eight-arm diagnostic](materials/updates/question-state-freeze-20261115/README.md)
 retains every normal history, both wordings, all roles and all baseline failures. Every local
 three-GDN freeze lowers accuracy in both wordings. The preregistered group 12/13/14 gives

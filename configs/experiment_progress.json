@@ -6389,7 +6389,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "Allsixlocal_question_phase_freezes_lower_both_wordings_group3_protected144to1_all18non_integer",
-  "updated_utc": "2026-11-15T13:16:03.831922+00:00",
+  "updated_utc": "2026-11-15T13:43:57.693671+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -9890,7 +9890,7 @@
   "resumed_utc": "2026-11-14T18:25:03.068726+00:00",
   "resume_reason": "User explicitly asked to continue experiments after verified GitHub backup completion.",
   "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-publication-20261115-01.json",
-  "current_phase": "version_address_observation_registered",
+  "current_phase": "version_address_observation_sealed",
   "matched_shared_training_timing": {
     "status": "completed_audited_and_published_confirmation_all_three_criteria_failed",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
@@ -13155,14 +13155,14 @@
   },
   "latest_published_phase": "question_state_freeze",
   "version_address_observation": {
-    "status": "prospectively_registered_before_implementation_data_or_inference",
+    "status": "352tests_passed_268sources_sealed_before_native_inference",
     "protocol": "configs/version_address_audit_plan.json",
     "protocol_sha256": "f3e1867a24b83bacbc5d5fbab0b2be682d818b27808a2f1d52082dc780da3bbe",
     "registered_utc": "2026-11-15T13:16:03.831922+00:00",
-    "source_files_immutable": 261,
+    "source_files_immutable": 268,
     "planned_source_files": 268,
-    "code_started": false,
-    "data_packet_generated": false,
+    "code_started": true,
+    "data_packet_generated": true,
     "model_inference_started": false,
     "counts": {
       "physical_readouts": 3456,
@@ -13190,6 +13190,17 @@
       82006,
       82007
     ],
-    "next_action": "Implement passive original-record mass capture with complete normal replay and independent reaggregation; verify268source closure and tests before packet seal or native inference."
+    "next_action": "Push exact sealed sources and model-free evidence; then launch opposite-order216readout native checks before3456normal measurements.",
+    "new_cpu_tests_passed": 9,
+    "full_regression_session": 47843,
+    "full_regression_log": "/media/990Pro/Code/SAS/logs/memory_update/version-address-full-tests-20261115-01.log",
+    "full_tests_passed": 352,
+    "full_tests_seconds": 407.2,
+    "packet": "/media/990Pro/Code/SAS/datasets/memory_update/version-address-observation-v1",
+    "packet_manifest_sha256": "138f248163f886c6ef95521f26ae14f46ebae56a7df06cfb97195ad69d6c16f8",
+    "independent_reconstruction_session": 97837,
+    "registration_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-seal-20261115-01.json",
+    "registration_seal_sha256": "b9f517bd5b88c6dffaf76a7ea612288cfe29e9ff34d133b61369201d28aeb5e2",
+    "independent_inputs": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-independent-inputs-20261115-01.json"
   }
 }
