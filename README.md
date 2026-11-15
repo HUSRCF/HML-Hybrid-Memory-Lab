@@ -8,9 +8,9 @@ attention routing.
 **Current: paired Gate task-coverage controls registered and implemented.**
 The [SET replay versus SET/COPY mixture study](materials/updates/readout-mixture-20261116/README.md)
 uses identical Gate initialization, 131,072 parameters and 432 updates per regime. All eight new
-CPU tests and all 380 regression tests passed; all 296 sources are sealed and native safety
-is running before scheduled training. Teacher lengths and compute differences are explicit;
-fresh confirmation remains ungenerated.
+CPU tests and all 380 regression tests passed; all 296 sources are sealed. Independent observed-input
+reconstruction and real native 27/29/30-token backward/forward-equivalence safety passed. Both
+432-step regimes are now in the scheduled training pipeline; fresh confirmation remains ungenerated.
 
 **Latest completed: all 6,000 new-stream readout-control answers independently audited.**
 The [complete SET/COPY confirmation](materials/updates/readout-confirmation-20261116/README.md)

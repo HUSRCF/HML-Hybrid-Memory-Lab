@@ -1,0 +1,8 @@
+{
+  "status": "all256normal_history_reference_records_losslessly_preserved",
+  "source": "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-smoke-20261116-01/normal-history-references.json",
+  "source_sha256": "eb275d1588b2026bf141c4e9bf6e7648ddf48434c7bf8e9b3cef1e90dc15374c",
+  "source_bytes": 20761403,
+  "gzip_sha256": "550d691f23f7210c0693dcaa36ceaede50d04e8ff49c02f43ee16c9aadce52be",
+  "gzip_bytes": 987847
+}

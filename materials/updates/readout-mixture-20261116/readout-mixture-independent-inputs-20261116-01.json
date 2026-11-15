@@ -1,0 +1,27 @@
+{
+  "status": "all1536literal_inputs_and3456paired_exposures_independently_rechecked",
+  "completed_utc": "2026-11-15T17:51:08.698271+00:00",
+  "source_sha256": "12bb08cedde3c2db7db12ac8fc948382e777244955b0f7479839e8e9b5f88f26",
+  "packet_manifest_sha256": "b20075118a989dd80ce2056ba846b2f32d705d6fe5bafafdb37fea89b7dc5a0f",
+  "physical_truths_checked": 1536,
+  "copy_logical_truths_checked": 864,
+  "normal_histories": 256,
+  "regimes": {
+    "set_replay": {
+      "exposures": 1728,
+      "unique_physical_questions": 864,
+      "teacher_input_tokens": 46656,
+      "supervised_answer_tokens": 6912
+    },
+    "set_copy_mix": {
+      "exposures": 1728,
+      "unique_physical_questions": 1536,
+      "teacher_input_tokens": 48816,
+      "supervised_answer_tokens": 6912
+    }
+  },
+  "native_model_constructed": false,
+  "gpu_initialized": false,
+  "new_cases_generated": false,
+  "future_confirmation_generated": false
+}
