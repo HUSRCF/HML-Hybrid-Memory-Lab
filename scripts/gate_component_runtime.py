@@ -2,6 +2,30 @@
 from contextlib import ExitStack
 from scripts.oracle_write_hold_runtime import RecurrentHold,GDN_LAYERS
 
+VALIDATION_ADDENDUM_SHA256='1eed068b08f6c006b390f553380dfba99843b93d247b276d6101d67444a7b08d'
+
+def validation_addendum():
+    """Keep failed ideal checks and pin the explicit native-precision correction."""
+    import json
+    from pathlib import Path
+    from sas_memory.write_locality_data import streaming_hash
+    p=Path(__file__).resolve().parents[1]/'configs/gate_component_kernel_reference_addendum.json'
+    if streaming_hash(p)!=VALIDATION_ADDENDUM_SHA256:raise ValueError('Validation-only addendum changed')
+    d=json.loads(p.read_text());failed=Path(d['failed_run']);probe=Path(d['probe'])
+    if streaming_hash(failed/'manifest.json')!=d['failed_manifest_sha256']:raise ValueError('Preserve first failed smoke')
+    m=json.loads((failed/'manifest.json').read_text())
+    if m['status']!='failed' or m['native_anchors'] or m['models']:raise ValueError('Failure must precede all task inference')
+    for n,h in d['failed_sources_sha256'].items():
+        if streaming_hash(failed/'sources'/n)!=h:raise ValueError('Preserve every failed-version source byte')
+    if streaming_hash(probe/'receipt.json')!=d['probe_receipt_sha256']:raise ValueError('Numerical-only probe changed')
+    receipt=json.loads((probe/'receipt.json').read_text())
+    if receipt['task_inputs_evaluated']!=0 or not all(c['precision_passed'] for c in receipt['checks']):raise ValueError('Probe mismatch')
+    for n,h in receipt['files_sha256'].items():
+        if streaming_hash(probe/n)!=h:raise ValueError('Preserve all raw numerical probe tensors')
+    for n,h in d['installed_fla_sources_sha256'].items():
+        if streaming_hash(Path(n))!=h:raise ValueError('Native FLA implementation changed')
+    return d
+
 SETTINGS={'full':('none',False),'hold':('both',False),'oracle':('none',True),'hold_oracle':('both',True),
     'decay_full':('decay',False),'delta_full':('delta',False),'decay_oracle':('decay',True),'delta_oracle':('delta',True)}
 
@@ -44,6 +68,7 @@ class ComponentHold(RecurrentHold):
 def component_kernel_contract(runtime):
     """Native kernels against explicit pure-decay and one-hot Delta algebra."""
     import torch
+    correction=validation_addendum()
     gdn=runtime.model.model.layers[0].linear_attn;device=runtime.model.device
     generator=torch.Generator(device=device).manual_seed(31297);result=[]
     with torch.inference_mode():
@@ -66,6 +91,14 @@ def component_kernel_contract(runtime):
                     for t in range(length):
                         j=t%gdn.head_k_dim;expected[:,:,j,:]=.5*expected[:,:,j,:]+.5*v[:,t].float()
                 output,final=fn(q,keys,v,g=g,beta=beta,initial_state=initial,output_final_state=True,use_qk_l2norm_in_kernel=True)
+                ideal=expected.clone()
+                if mode=='pure_delta' and kernel=='chunk_gated_delta_rule':
+                    if length>gdn.head_k_dim:raise ValueError('Distinct one-hot Key directions required')
+                    expected=initial.clone()
+                    for t in range(length):
+                        j=t%gdn.head_k_dim
+                        delta=(.5*v[:,t].float()-.5*initial[:,:,j,:].to(v.dtype).float()).to(v.dtype).float()
+                        expected[:,:,j,:]=initial[:,:,j,:]+delta
                 independent=None
                 if mode=='pure_decay':
                     _,other=fn(-q,-keys,-v,g=g,beta=beta,initial_state=initial,output_final_state=True,use_qk_l2norm_in_kernel=True)
@@ -76,6 +109,9 @@ def component_kernel_contract(runtime):
                     raise ValueError(f'Native component algebra check failed: {kernel},{length},{mode}')
                 result.append({'kernel':kernel,'length':length,'mode':mode,'initial_state_unmodified':True,
                     'output_finite':True,'explicit_state_algebra_passed':True,'atol':.00005,'rtol':.0001,
+                    'reference_profile':correction['profile'],'validation_addendum_sha256':VALIDATION_ADDENDUM_SHA256,
+                    'original_ideal_algebra_passed':bool(torch.allclose(final,ideal,atol=.00005,rtol=.0001)),
+                    'original_ideal_max_absolute_error':(final-ideal).abs().max().item(),
                     'max_absolute_error':(final-expected).abs().max().item(),'independent_of_qkv':independent})
     return result
 

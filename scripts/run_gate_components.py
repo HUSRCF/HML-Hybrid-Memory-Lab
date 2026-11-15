@@ -12,7 +12,8 @@ from sas_memory.training_data import data_fingerprint
 from sas_memory.write_locality_data import streaming_hash
 from scripts.gate_component_data import (MODELS,REGIMES,PROTOCOL,DESTINATION,read_plan,registered_inputs,
     sources,control_ids,selected_inputs,unique_prefixes,actual_prompt,ARCHIVED)
-from scripts.gate_component_runtime import measure_condition,component_kernel_contract,SETTINGS
+from scripts.gate_component_runtime import (measure_condition,component_kernel_contract,SETTINGS,
+    validation_addendum,VALIDATION_ADDENDUM_SHA256)
 from scripts.run_controller_trial import write_json,state_fingerprint
 from scripts.run_oracle_kv_readout import measure
 from scripts.run_write_locality_load_screen import hook_state,weights_fingerprint
@@ -39,6 +40,7 @@ def execute_run(args):
     if args.output.exists() or args.smoke==bool(args.smoke_equivalence) or (args.reverse_model_order and not args.smoke):
         raise ValueError('New operational smoke or gated complete forward run required')
     plan=read_plan();registered,cases,registry,queries,policies,references=registered_inputs(args.dataset)
+    correction=validation_addendum()
     gate=None if args.smoke else checked_gate(args.smoke_equivalence,streaming_hash(args.dataset/'manifest.json'))
     physical,bindings=selected_inputs(registry,args.smoke);controls=control_ids(cases,registry)
     order=list(MODELS[::-1] if args.reverse_model_order else MODELS)
@@ -52,9 +54,11 @@ def execute_run(args):
         'precision_addendum_sha256':streaming_hash(Path(plan['precision_addendum'])),'generation':plan['generation'],
         'selected_physical_ids':[q['id'] for q in physical],'bindings_per_model_regime':len(bindings),
         'control_query_ids':controls,'smoke_equivalence_gate':gate,'native_anchors':[],'models':{},'completed_models':[],
+        'validation_addendum_sha256':VALIDATION_ADDENDUM_SHA256,
         'source_sha256':{n:streaming_hash(ROOT/n) for n in sorted(sources())},
         'generation_config_sha256':{p.name:streaming_hash(p) for p in Path(plan['model_path']).glob('generation_config.json')}}
     args.output.mkdir(parents=True,exist_ok=False);write_json(args.output/'plan.json',plan);write_json(args.output/'precision_addendum.json',profile)
+    write_json(args.output/'kernel_validation_addendum.json',correction)
     for n in m['source_sha256']:
         out=args.output/'sources'/n;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes((ROOT/n).read_bytes())
     mp=args.output/'manifest.json';write_json(mp,m)

@@ -14,7 +14,7 @@ from scripts.analyze_unseen_shared_timing import audit_prefix
 from scripts.canonical_necessity_common import audit_affines
 from scripts.gate_component_data import (MODELS,REGIMES,PROTOCOL,DESTINATION,read_plan,registered_inputs,
     sources,control_ids,selected_inputs,unique_prefixes,ARCHIVED)
-from scripts.gate_component_runtime import GDN_LAYERS,SETTINGS
+from scripts.gate_component_runtime import GDN_LAYERS,SETTINGS,validation_addendum,VALIDATION_ADDENDUM_SHA256
 from scripts.gate_component_metrics import summarize
 
 
@@ -49,6 +49,10 @@ def audit_kernel_checks(checks):
     if [(v['kernel'],v['length'],v['mode']) for v in checks]!=expected:raise ValueError('All10actual native component checks required')
     for v in checks:
         if (not v['initial_state_unmodified'] or not v['output_finite'] or not v['explicit_state_algebra_passed'] or
+            v['reference_profile']!='native_bf16_chunk_fp32_recurrent_reference_v1' or
+            v['validation_addendum_sha256']!=VALIDATION_ADDENDUM_SHA256 or
+            not isinstance(v['original_ideal_algebra_passed'],bool) or
+            not math.isfinite(v['original_ideal_max_absolute_error']) or v['original_ideal_max_absolute_error']<0 or
             v['atol']!=.00005 or v['rtol']!=.0001 or not math.isfinite(v['max_absolute_error']) or v['max_absolute_error']<0 or
             v['independent_of_qkv']!=(True if v['mode']=='pure_decay' else None)):
             raise ValueError('Native pure-decay/one-hot Delta algebra check failed')
@@ -57,6 +61,11 @@ def audit_kernel_checks(checks):
 def audit_run(path,allow_smoke=False):
     path=Path(path);m=json.loads((path/'manifest.json').read_text());plan=read_plan()
     registered,cases,registry,queries,policies,references=registered_inputs()
+    correction=validation_addendum()
+    if (m['validation_addendum_sha256']!=VALIDATION_ADDENDUM_SHA256 or
+        json.loads((path/'kernel_validation_addendum.json').read_text())!=correction or
+        not datetime.fromisoformat(correction['registered_utc'])<datetime.fromisoformat(m['started_utc'])):
+        raise ValueError('Native precision correction must be pinned before any task inference')
     physical,bindings=selected_inputs(registry,m['smoke']);ids=[q['id'] for q in physical];controls=control_ids(cases,registry)
     order=list(MODELS[::-1] if m['reverse_model_order'] else MODELS);refs=registered['references'];weights=m['weights_after']
     if (m['status']!='completed' or (m['smoke'] and not allow_smoke) or m['training'] or m['new_adapters'] or
@@ -148,7 +157,10 @@ def audit_run(path,allow_smoke=False):
         'new_physical_readouts_audited':len(physical)*20,'archived_reference_readouts_verified':6720,
         'related_bindings_audited':len(bindings)*20,'question_only_native_prefix_checks':prefix_count,
         'new_condition_attention_controls':240,'archived_endpoint_exact_controls':240,'all_layer_attention_observations':480,
-        'source_files_verified':len(sources()),'prior_timing_criteria_unchanged':refs['prior_timing_criteria_unchanged'],
+        'source_files_verified':len(sources()),'extra_validation_registration_files_verified':1,
+        'original_ideal_kernel_contract_failed_and_preserved':True,
+        'validation_addendum_sha256':VALIDATION_ADDENDUM_SHA256,
+        'prior_timing_criteria_unchanged':refs['prior_timing_criteria_unchanged'],
         'metrics':None if m['smoke'] else summarize(all_rows,references,cases,registry,plan),
         'interpretation':plan['interpretation_limits'],'analysis_source_sha256':streaming_hash(Path(__file__))}
 

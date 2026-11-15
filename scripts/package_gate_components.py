@@ -65,6 +65,7 @@ def package(audit,output):
         for p in sorted((STORAGE/folder).glob(PHASE+'*')):
             # This log is still being written by the packager; publish its final receipt separately.
             if p.is_file() and '-packaging-' not in p.name:add(p,STORAGE,'storage')
+            elif p.is_dir():tree(p)
     for name,digest in m['source_sha256'].items():
         if sha(ROOT/name)!=digest or sha(run/'sources'/name)!=digest:raise ValueError('Preserve188 sealed primary sources')
         add(ROOT/name,ROOT,'code')
@@ -73,7 +74,9 @@ def package(audit,output):
         if p.is_file():add(p,ROOT,'code')
     for name in ['README.md','materials/README.md','.gitattributes','requirements.txt','configs/experiment_progress.json',
                  'scripts/export_gate_components.py','scripts/verify_gate_component_prefix.py',
-                 'scripts/package_gate_components.py','scripts/publish_gate_components.py']:
+                 'scripts/package_gate_components.py','scripts/publish_gate_components.py',
+                 'scripts/probe_gate_kernel_precision.py','configs/gate_component_kernel_reference_addendum.json',
+                 'scripts/run_gate_component_pipeline.sh']:
         add(ROOT/name,ROOT,'code')
     for arm,state in m['models'].items():
         for regime,digest in state['results_sha256'].items():

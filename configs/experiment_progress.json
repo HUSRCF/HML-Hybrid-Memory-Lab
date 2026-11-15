@@ -11438,7 +11438,7 @@
     "publication_fix_scope": "Release draft lookup and asset downloads by ID only; outside all180sealed measurement sources."
   },
   "gate_component_factorial": {
-    "status": "data_locked_before_inference",
+    "status": "precision_reference_correction_tested_ready_for_fresh_operational_smokes",
     "registered_protocol": "configs/gate_component_factorial_plan.json",
     "protocol_sha256": "25971ba4eb6a75e929ba83cf06c01fba3cb26ee475e49b477ba13db0fc670b68",
     "preserved_prior_measurement_sources": 180,
@@ -11451,11 +11451,21 @@
     "targeted_tests_passed": 5,
     "auxiliary_prefix_utility": "scripts/verify_gate_component_prefix.py",
     "auxiliary_prefix_source_outside_measurement_closure": true,
-    "last_updated_utc": "2026-11-15T00:50:06.262605+00:00",
-    "next_action": "Run registered forward360smoke including ten native kernel checks and240exact old-endpoint controls. No new task result yet.",
+    "last_updated_utc": "2026-11-15T00:59:34.010721+00:00",
+    "next_action": "Run fresh forward/reverse360smokes with all480actual Attention observations and240exact archived-endpoint controls per run; require exact complete raw bytes, then120prefix checks before primary6720.",
     "dataset_manifest_sha256": "45aaa5b75182c7e30083c0101a27cfaf2b61cfa8f51f7ee1a4a3428000e69f15",
     "full_tests_passed": 234,
-    "full_tests_seconds": 158.024,
-    "previous_full_audit_reexecuted": true
+    "full_tests_seconds": 158.182,
+    "previous_full_audit_reexecuted": true,
+    "failed_smoke_run": "/media/990Pro/Code/SAS/runs/memory_update/gate-components-smoke-forward-20261115-01",
+    "failed_task_readouts": 0,
+    "kernel_numerical_probe": "/media/990Pro/Code/SAS/artifacts/memory_update/gate-components-kernel-precision-probe-20261115-01",
+    "kernel_precision_addendum": "configs/gate_component_kernel_reference_addendum.json",
+    "kernel_precision_addendum_sha256": "1eed068b08f6c006b390f553380dfba99843b93d247b276d6101d67444a7b08d",
+    "original_ideal_kernel_contract_passed": false,
+    "numerical_precision_reference_checks_passed": 10,
+    "validation_tolerances_unchanged": true,
+    "task_intervention_and_scoring_unchanged": true,
+    "completed_prior_180_sources_unchanged": true
   }
 }

@@ -1,0 +1,51 @@
+{
+  "status": "pre_task_scope_verified",
+  "created_utc": "2026-11-15T00:57:32.004286+00:00",
+  "completed_prior_sources_unchanged": 180,
+  "gate_projection_reader_and_proof_symbols_unchanged": [
+    {
+      "file": "scripts/gate_component_runtime.py",
+      "symbol": "ComponentHold",
+      "source_bytes_unchanged": true,
+      "sha256": "3fd054fafbc63fbba6e45573c17ae7b1d8937bd6b8cbbd9311f36ad754f890cd"
+    },
+    {
+      "file": "scripts/gate_component_runtime.py",
+      "symbol": "measure_condition",
+      "source_bytes_unchanged": true,
+      "sha256": "87ad75f9c6d7654c9e0a24dde2612182b3c4e72a799a4d5df3047dfc5cc6f472"
+    },
+    {
+      "file": "scripts/gate_component_runtime.py",
+      "symbol": "SETTINGS",
+      "source_bytes_unchanged": true,
+      "sha256": "911ce75b5799e8b9072053ed533c50cc33aa02349faff4e0956752994f3e2f64"
+    },
+    {
+      "file": "scripts/analyze_gate_components.py",
+      "symbol": "audit_gates",
+      "source_bytes_unchanged": true,
+      "sha256": "2374f85891a39cc9bb287279a8ef0d1b09483f428ede467e09a0161c84a97eaf"
+    },
+    {
+      "file": "scripts/analyze_gate_components.py",
+      "symbol": "audit_proof",
+      "source_bytes_unchanged": true,
+      "sha256": "ad4e8001b2ff4c17c92d68c160c6a0c3ab98943a985a322b727fcc292300c5c9"
+    },
+    {
+      "file": "scripts/analyze_gate_components.py",
+      "symbol": "audit_equivalence",
+      "source_bytes_unchanged": true,
+      "sha256": "3dab29ab1b14c10668ece6a7b648a7bcdf330a1cd5c1c4aea9fbc57c257bd795"
+    },
+    {
+      "file": "scripts/run_gate_components.py",
+      "symbol": "checked_gate",
+      "source_bytes_unchanged": true,
+      "sha256": "ceaaa14abb0658c847971f8db9150d143271906501335ec6a7673b09f70953d7"
+    }
+  ],
+  "failed_original_task_readouts": 0,
+  "validation_addendum_sha256": "1eed068b08f6c006b390f553380dfba99843b93d247b276d6101d67444a7b08d"
+}
