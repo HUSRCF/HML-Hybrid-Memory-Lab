@@ -1,0 +1,17 @@
+arm,question_style,correct,contexts
+freeze_all18,event_term,0,144
+freeze_all18,state_term,0,144
+freeze_group0,event_term,22,144
+freeze_group0,state_term,24,144
+freeze_group1,event_term,27,144
+freeze_group1,state_term,39,144
+freeze_group2,event_term,39,144
+freeze_group2,state_term,39,144
+freeze_group3,event_term,1,144
+freeze_group3,state_term,1,144
+freeze_group4,event_term,111,144
+freeze_group4,state_term,116,144
+freeze_group5,event_term,110,144
+freeze_group5,state_term,118,144
+normal,event_term,114,144
+normal,state_term,124,144

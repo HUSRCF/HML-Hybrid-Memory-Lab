@@ -1,0 +1,9 @@
+arm,readouts,wall_seconds_with_observers,seconds_per_readout_with_observers,selected_gdn_layers,zero_gate_layer_rows_per_question,interpretation
+normal,864,177.33878462738357,0.20525322294836063,[],0,"Includes source forks,finite/gate/matrix/KV proofs,passive attention observation,NLL and generation; not deployment decode latency."
+freeze_group0,864,204.60765983979218,0.2368144211108706,"[0, 1, 2]",72,"Includes source forks,finite/gate/matrix/KV proofs,passive attention observation,NLL and generation; not deployment decode latency."
+freeze_group1,864,180.96493799658492,0.20945015971826958,"[4, 5, 6]",72,"Includes source forks,finite/gate/matrix/KV proofs,passive attention observation,NLL and generation; not deployment decode latency."
+freeze_group2,864,180.83047305466607,0.2092945289984561,"[8, 9, 10]",72,"Includes source forks,finite/gate/matrix/KV proofs,passive attention observation,NLL and generation; not deployment decode latency."
+freeze_group3,864,203.3085218546912,0.23531078918367038,"[12, 13, 14]",72,"Includes source forks,finite/gate/matrix/KV proofs,passive attention observation,NLL and generation; not deployment decode latency."
+freeze_group4,864,180.8575184624642,0.209325831553778,"[16, 17, 18]",72,"Includes source forks,finite/gate/matrix/KV proofs,passive attention observation,NLL and generation; not deployment decode latency."
+freeze_group5,864,180.97082506865263,0.2094569734590887,"[20, 21, 22]",72,"Includes source forks,finite/gate/matrix/KV proofs,passive attention observation,NLL and generation; not deployment decode latency."
+freeze_all18,864,201.52014302858151,0.23324090628308045,"[0, 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 14, 16, 17, 18, 20, 21, 22]",432,"Includes source forks,finite/gate/matrix/KV proofs,passive attention observation,NLL and generation; not deployment decode latency."

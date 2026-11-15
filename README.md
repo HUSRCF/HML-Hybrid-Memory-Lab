@@ -5,7 +5,20 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; all 1,728 single-token version-question readouts are independently audited.**
+**Status: active; all 6,912 question-phase GDN control readouts are independently audited.**
+The [complete eight-arm diagnostic](materials/updates/question-state-freeze-20261115/README.md)
+retains every normal history, both wordings, all roles and all baseline failures. Every local
+three-GDN freeze lowers accuracy in both wordings. The preregistered group 12/13/14 gives
+105/432 versus normal 412/432 with current/initial: 5 repairs and 312 regressions; protected
+reading falls from 144/144 to 1/144. All-18-layer freezing produces 864 non-integer outputs.
+This rejects the simple all-suffix zero-gate policy on this cohort, without proving erased
+history or uniquely locating a fault. The existing adapter was trained in group 12/13/14.
+All 343 pre-inference tests, 261 sealed sources, opposite-order raw-file checks and 864 exact
+normal replays passed. Independent raw grading agrees on all 6,912 answers and 6,048 pairs.
+No Oracle, donor, new parameters or training. All prior failed scientific criteria remain false.
+Complete incremental backup is being prepared; the broader research goal remains active.
+
+**Previous diagnostic: all 1,728 single-token version-question readouts independently audited.**
 The [complete wording diagnostic](materials/updates/version-query-20261115/README.md)
 retains all 1,728 archived references and all 72 new/archived conditions on eight reused
 SET streams. Every new question pair has identical history and positions, with only one
@@ -17,8 +30,7 @@ unique memory mechanism or architecture gain. All 331 tests and exact model-orde
 passed; 254 sources remain sealed. Both failed runs are preserved; terminal validation
 used an explicitly registered CPU-only recovery with no repeated inference. Complete
 [backup publication](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/version-question-control-2026-11-15) is verified. All prior failed scientific criteria remain false.
-The next normal-cache question-phase GDN freeze control is registered before implementation;
-it compares every equal-size three-GDN group without Oracle access, donor forwards or new training.
+The normal-cache question-phase GDN control above was registered before implementation.
 
 The [previous normal-update diagnostic](materials/updates/natural-load-20261115/README.md)
 retains all 3,456 readouts and its published backup. The existing GDN adapter scores

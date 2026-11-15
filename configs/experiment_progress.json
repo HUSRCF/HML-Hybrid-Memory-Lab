@@ -4797,10 +4797,9 @@
     }
   },
   "next_actions": [
-    "Implement independent new dataset/runner/auditor code without editing129sealed sources or mutating sealed module globals. Freeze one cohort62000-62007 and verify actual prior-input novelty, including fresh-copy-memory-confirmation-v1, before inference.",
-    "Retain all8natural strong baselines and add question-only/ledger-only schedules of the same frozen shared checkpoint. Verify complete native prefix states/logits for every distinct shared-question ledger; full Attention and original gold/greedy runtime remain unchanged.",
-    "Require two exact180readout forward/reverse operational smokes with scope/weight/native controls before3360primary full-answer readouts. Retain every4320related binding and all own-world failures/nulls; do not reuse favorable old cases.",
-    "Report same-checkpoint question-only preservation/regressions and gains versus native overall/everydepth/streams. Deployment timing ablation cannot by itself prove semantic write necessity. Explicit semantic-controller training needs a separate matched prospective plan."
+    "Preserve full measured outputs, independent grades, all local controls and failed criteria; byte-verify and publish incremental backup.",
+    "Retire simple all-suffix freeze policy; separate version/entity/output-format processing on normally built histories.",
+    "Preregister any new intervention before implementation/data/inference; no larger-model scaleup or architecture success claim from this negative control."
   ],
   "active_exec_sessions": [],
   "tests_last_verified": {
@@ -4810,7 +4809,7 @@
     "phase": "fresh_question_query_mediation"
   },
   "training_started": true,
-  "current_conclusion": "Held-tail KV causes0/512new-value controls; normal KV with old recurrent matrices restores oracle32/32but harms full reading, particularly GDN adapter32/32to2/32. Existing GDN normal191/192; no shared architecture necessity established.",
+  "current_conclusion": "Question-wide g=0,beta=0 is not a useful inference policy on this reused cohort. Group12/13/14state105/432versus412normal,5repairs312regressions;protected144to1. All18nonnumeric864/864. Does not uniquely locate historical damage or prove Shared architecture. All prior failed criteria remain false.",
   "prepared_data": {
     "copy_generalization": "/media/990Pro/Code/SAS/datasets/memory_update/copy-generalization-v1",
     "status": "Frozen raw/oracle-slice/oracle-KV and matched short-update evaluations completed",
@@ -6008,8 +6007,8 @@
     "provenance": "/media/990Pro/Code/SAS/artifacts/memory_update/overwrite-history-diagnostics-20261114.provenance.json",
     "branch_decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
   },
-  "last_completed_phase": "unseen_shared_timing3360full_answers_completed_and_audited_both_registered_criteria_failed",
-  "next_research_step": "Execute the registered complete-cohort, one-token version-question control. Keep broader research goal active; no new controller or training yet.",
+  "last_completed_phase": "question_state_freeze_all6912audited_negative_outcome",
+  "next_research_step": "After verified backup, design a nondestructive version-address diagnostic on normal failures; retain native updates and strong frozen GDN baseline.",
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
     "plan": "configs/copy_dependency_transfer_plan.json",
@@ -6291,7 +6290,7 @@
     "new_training": false,
     "first_failed_operational_smoke_cause": "Not established; failed run retained. Dedicated36exact replays, unchanged288query rerun and complete5376query run all passed exact controls. No tolerance, data or mask tuning."
   },
-  "latest_completed_phase": "post_tail_path_crossover",
+  "latest_completed_phase": "question_state_freeze",
   "planned_copy_evidence_necessity": {
     "status": "canonical8064_completed_audited_exported_gate_passed",
     "plan": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_plan.json",
@@ -6389,8 +6388,8 @@
     "canonical_provenance_sha256": "fba6026e3617df5266fea3646edf80ae9c21b8ee96b68720fedaf150a7906843",
     "canonical_full8064_completed": true
   },
-  "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-15T12:19:59.768669+00:00",
+  "latest_completed_diagnostic": "Allsixlocal_question_phase_freezes_lower_both_wordings_group3_protected144to1_all18non_integer",
+  "updated_utc": "2026-11-15T12:51:54.019427+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -6485,7 +6484,7 @@
     "completed_utc": "2026-11-14T14:05:50.100611+00:00",
     "scope": "Functional access dependence under fixed readouts, not proof of GDN forgetting, recurrent damage, a shared-interface advantage or new architecture. All48cases are related within8reused streams."
   },
-  "last_goal_turn_result": "Previous turn published all post-tail crossover outcomes and registered this fresh Query protocol; this turn implemented, tested and sealed222sources without LLM inference.",
+  "last_goal_turn_result": "Completed word-choice publication and all6912question-freeze readouts with343preinference tests,261immutable sources and exact control replays; simple freeze hypothesis not supported.",
   "canonical_oracle_replication": {
     "status": "completed_independently_audited_exported_visually_inspected",
     "plan": "/home/husrcf/Code/SAS/configs/canonical_oracle_sufficiency_replication_plan.json",
@@ -9906,7 +9905,7 @@
     "original129sealed_sources_unchanged": true,
     "sha256_verified_for_every_remote_asset": true
   },
-  "current_phase": "fresh_question_query_mediation",
+  "current_phase": "question_state_freeze_backup",
   "matched_shared_training_timing": {
     "status": "completed_audited_and_published_confirmation_all_three_criteria_failed",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
@@ -12726,6 +12725,28 @@
       "repository_results_commit": "e6443ac6f4ac2572efb481349fa8f2bbd7f623ac",
       "next_method_plan_registered": true,
       "next_method_plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json"
+    },
+    "root_resume_consolidation_20261115_question_freeze": {
+      "archived_utc": "2026-11-15T12:28:36.931239+00:00",
+      "reason": "Consolidate stale root resume fields; original phase-specific records and published snapshots remain unchanged.",
+      "superseded_root_resume_fields": {
+        "current_phase": "fresh_question_query_mediation",
+        "latest_completed_phase": "post_tail_path_crossover",
+        "last_completed_phase": "unseen_shared_timing3360full_answers_completed_and_audited_both_registered_criteria_failed",
+        "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
+        "active_exec_sessions": [],
+        "active_sessions": [],
+        "active_execution_sessions": [],
+        "next_actions": [
+          "Implement independent new dataset/runner/auditor code without editing129sealed sources or mutating sealed module globals. Freeze one cohort62000-62007 and verify actual prior-input novelty, including fresh-copy-memory-confirmation-v1, before inference.",
+          "Retain all8natural strong baselines and add question-only/ledger-only schedules of the same frozen shared checkpoint. Verify complete native prefix states/logits for every distinct shared-question ledger; full Attention and original gold/greedy runtime remain unchanged.",
+          "Require two exact180readout forward/reverse operational smokes with scope/weight/native controls before3360primary full-answer readouts. Retain every4320related binding and all own-world failures/nulls; do not reuse favorable old cases.",
+          "Report same-checkpoint question-only preservation/regressions and gains versus native overall/everydepth/streams. Deployment timing ablation cannot by itself prove semantic write necessity. Explicit semantic-controller training needs a separate matched prospective plan."
+        ],
+        "next_research_step": "Execute the registered complete-cohort, one-token version-question control. Keep broader research goal active; no new controller or training yet.",
+        "current_conclusion": "Held-tail KV causes0/512new-value controls; normal KV with old recurrent matrices restores oracle32/32but harms full reading, particularly GDN adapter32/32to2/32. Existing GDN normal191/192; no shared architecture necessity established.",
+        "last_goal_turn_result": "Previous turn published all post-tail crossover outcomes and registered this fresh Query protocol; this turn implemented, tested and sealed222sources without LLM inference."
+      }
     }
   },
   "query_layer_localization": {
@@ -13067,7 +13088,7 @@
     "wording_control_is_diagnostic_not_final_architecture_contribution": true
   },
   "question_state_freeze": {
-    "status": "full_6912_native_readouts_running_after_exact_opposite_order_audit",
+    "status": "all6912audited_and_independently_regraded_exports_complete_backup_pending",
     "protocol": "configs/question_state_freeze_plan.json",
     "protocol_sha256": "4a7bdf4e2e19c1a8bb6cf5c64094fdf6fc8ee550115ea8160c749bb7df266630",
     "registered_utc": "2026-11-15T11:32:57.782343+00:00",
@@ -13100,7 +13121,7 @@
       "expected_prefix_guard_checks": 442,
       "expected_after_guard_checks": 50
     },
-    "next_action": "Complete all6912readouts, audit all864normal replays and every local control; then export every condition and preserve full incremental backup.",
+    "next_action": "Preserve complete negative outcome and publish verified backup. Do not adopt question-wide zero-gate strategy or infer erased history from format collapse.",
     "new_cpu_tests_passed": 12,
     "full_regression_session": 37696,
     "immediate_readout_and_future_state_both_affected_by_zero_gates": true,
@@ -13117,6 +13138,25 @@
     "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/question-state-freeze-primary-20261115-01",
     "smoke_equivalence": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-smoke-equivalence-20261115-01.json",
     "smoke_readouts_per_order": 432,
-    "smoke_raw_arm_files_exact": 8
+    "smoke_raw_arm_files_exact": 8,
+    "postprocessing_session": 63357,
+    "postprocessing_policy": "Wait for completed independent primary audit; then regrade all6912raw answers and export every arm/style/role. No additional inference or baseline-error filtering.",
+    "native_inference_completed": true,
+    "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-primary-audit-20261115-01.json",
+    "primary_audit_sha256": "6cff340e8385670b71dcd37db456fc45569198f0f5a308a085c3ede1a2f144a2",
+    "primary_manifest_sha256": "bce45ddf6aeaca675d6ee797a96f44fc6b0c46947b9e828a0f9707e96ebdf225",
+    "independent_observations": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-observations-20261115-01.json",
+    "independent_observations_sha256": "07dd7d174b7f583363fcafe2073b0688f6f4bde86f8ab638fe87e97f3a631464",
+    "export_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-exports-20261115-01/export-receipt.json",
+    "measured_readouts": 6912,
+    "normal_exact_replays": 864,
+    "archived_references": 864,
+    "every_local_arm_below_normal_in_both_wordings": true,
+    "group3_state_correct": 105,
+    "group3_state_gains": 5,
+    "group3_state_losses": 312,
+    "group3_state_protected_correct": 1,
+    "all18_correct": 0,
+    "all18_non_integer_outputs": 864
   }
 }

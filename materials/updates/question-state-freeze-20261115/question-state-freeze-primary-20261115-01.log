@@ -1,0 +1,18 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:05,  2.53it/s]Loading weights:  11%|█▏        | 36/320 [00:00<00:03, 93.24it/s]Loading weights:  19%|█▉        | 62/320 [00:00<00:01, 136.16it/s]Loading weights:  29%|██▉       | 94/320 [00:00<00:01, 177.71it/s]Loading weights:  40%|███▉      | 127/320 [00:00<00:00, 215.18it/s]Loading weights:  48%|████▊     | 154/320 [00:00<00:00, 219.13it/s]Loading weights:  58%|█████▊    | 186/320 [00:01<00:00, 244.51it/s]Loading weights:  67%|██████▋   | 214/320 [00:01<00:00, 251.27it/s]Loading weights:  75%|███████▌  | 241/320 [00:01<00:00, 255.12it/s]Loading weights:  85%|████████▍ | 271/320 [00:01<00:00, 265.16it/s]Loading weights:  95%|█████████▌| 305/320 [00:01<00:00, 277.83it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 207.36it/s]
+{"event": "question_state_freeze", "case_id": "natural-load-s76000-original", "readouts": 432}
+{"event": "question_state_freeze", "case_id": "natural-load-s76000-permuted", "readouts": 864}
+{"event": "question_state_freeze", "case_id": "natural-load-s76001-original", "readouts": 1296}
+{"event": "question_state_freeze", "case_id": "natural-load-s76001-permuted", "readouts": 1728}
+{"event": "question_state_freeze", "case_id": "natural-load-s76002-original", "readouts": 2160}
+{"event": "question_state_freeze", "case_id": "natural-load-s76002-permuted", "readouts": 2592}
+{"event": "question_state_freeze", "case_id": "natural-load-s76003-original", "readouts": 3024}
+{"event": "question_state_freeze", "case_id": "natural-load-s76003-permuted", "readouts": 3456}
+{"event": "question_state_freeze", "case_id": "natural-load-s76004-original", "readouts": 3888}
+{"event": "question_state_freeze", "case_id": "natural-load-s76004-permuted", "readouts": 4320}
+{"event": "question_state_freeze", "case_id": "natural-load-s76005-original", "readouts": 4752}
+{"event": "question_state_freeze", "case_id": "natural-load-s76005-permuted", "readouts": 5184}
+{"event": "question_state_freeze", "case_id": "natural-load-s76006-original", "readouts": 5616}
+{"event": "question_state_freeze", "case_id": "natural-load-s76006-permuted", "readouts": 6048}
+{"event": "question_state_freeze", "case_id": "natural-load-s76007-original", "readouts": 6480}
+{"event": "question_state_freeze", "case_id": "natural-load-s76007-permuted", "readouts": 6912}

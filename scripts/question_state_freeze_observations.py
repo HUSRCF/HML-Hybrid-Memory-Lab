@@ -120,6 +120,12 @@ def observe(audit_path):
         actual_joint.append({'arm': arm, 'question_style': style, 'correct': values[0], 'contexts': values[1]})
     if actual_joint != audit['metrics']['same_cache_joint3']:
         raise ValueError('Independent joint grading differs')
+    if any(len(values) != 6 for values in combined.values()):
+        raise ValueError('All six same-cache answers are required')
+    actual_six = [{'arm': arm, 'correct': sum(all(v) for (a, _), v in combined.items() if a == arm),
+                   'contexts': 144} for arm in sorted(ARMS)]
+    if actual_six != audit['metrics']['same_cache_joint6']:
+        raise ValueError('Independent six-answer joint grading differs')
     return {'status': 'all6912raw_answers_and6048pairs_independently_regraded',
             'created_utc': datetime.now(timezone.utc).isoformat(), 'source_sha256': streaming_hash(Path(__file__)),
             'audit_sha256': streaming_hash(audit_path), 'manifest_sha256': audit['manifest_sha256'],
@@ -134,8 +140,7 @@ def observe(audit_path):
             'error_category_counts': [{'arm': arm, **dict(Counter(r['category'] for r in classified if r['arm'] == arm))}
                                       for arm in ARMS],
             'same_cache_joint3': actual_joint,
-            'same_cache_joint6': [{'arm': arm, 'correct': sum(all(v) for (a, _), v in combined.items() if a == arm),
-                                   'contexts': 144} for arm in ARMS],
+            'same_cache_joint6': actual_six,
             'all_normal_intervention_pairs': pairs,
             'original17paired_failures_descriptive_only': stable,
             'interpretation': 'Post-audit descriptive regrading, not a new cohort or acceptance criterion. All864questions and all eight arms retained. Numeric value matching can be ambiguous and does not identify internal attention or state loss. Eight reused streams; no significance, unique fault source, architecture or multihop success claim.'}

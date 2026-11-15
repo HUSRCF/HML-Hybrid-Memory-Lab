@@ -1,6 +1,15 @@
 # Research materials
 
-Latest: [single-token version-question control](updates/version-query-20261115/README.md).
+Latest: [complete question-only local GDN controls](updates/question-state-freeze-20261115/README.md).
+All 6,912 readouts, 864 exact normal replays and all local controls independently audited;
+all 343 pre-inference tests and 261 sealed sources unchanged. Every local arm lowers accuracy
+in both wordings. Group 12/13/14 is 105/432 versus normal 412/432 in state terms (5 repairs,
+312 regressions); protected reading falls 144 to 1/144. All-18 outputs are non-integer.
+This is a negative inference-policy control on eight reused streams, not proof of historical
+memory loss, unique layer specialization or Shared architecture success. No Oracle, donor or
+new training. All old failed criteria remain false. Full incremental backup is being prepared.
+
+Previous: [single-token version-question control](updates/version-query-20261115/README.md).
 All 1,728 new readouts and 1,728 labelled archived references are independently audited.
 Frozen GDN: current/initial 412/432; last/first 402/432; 3 repairs and 13 regressions.
 49 of 50 new wrong answers emit another recorded version of the queried account.
