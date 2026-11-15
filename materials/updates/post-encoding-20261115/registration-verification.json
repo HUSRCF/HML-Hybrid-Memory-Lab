@@ -1,0 +1,20 @@
+{
+  "status": "fresh_dataset_independently_reconstructed_before_inference",
+  "created_utc": "2026-11-15T04:28:14.350169+00:00",
+  "dataset_manifest_sha256": "d3e65bc72abd1a901c26c4c69f768bb83d9095c6bb2d9e0987ffa2a8545a0051",
+  "source_files_verified": 206,
+  "previous_sources_unchanged": 197,
+  "tokenizer_feasibility_fingerprints_exact": true,
+  "full_tests": 259,
+  "full_test_seconds": 158.556,
+  "model_inference_started": false,
+  "registered_utc": "2026-11-15T04:27:24.177953+00:00",
+  "copied_payload_sha256": {
+    "manifest.json": "d3e65bc72abd1a901c26c4c69f768bb83d9095c6bb2d9e0987ffa2a8545a0051",
+    "queries.json": "519e9227e1348a076daaff4a48bb82a16372254c879a046faf62997f942f87b4",
+    "registry.json": "a353ee34cce6c01058b2387264d4aa0f7f1e1727e769bbe01c6f83eb5f9774e1",
+    "prior_inputs.json": "f6f41cc5ccb2728bbef4b9e1ea3c08759adebab35932426f0b5e8127fe81bd21",
+    "cases.json": "b423a3cf93f2710d0751934ab34e60874862a916ef992fdcf288e2e40a04aabe",
+    "plan.json": "ccd180ff352e56064f1eb9bbd017e41c285f49cdf16ce39764992467d9a8bfd8"
+  }
+}

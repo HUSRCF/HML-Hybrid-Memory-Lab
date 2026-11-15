@@ -1,0 +1,9 @@
+{
+  "status": "failed_before_feasibility_receipt_or_dataset_output",
+  "created_utc": "2026-11-15T04:05:37.153065+00:00",
+  "failed_assertion": "'model' not in vars(runtime) and not torch.cuda.is_initialized()",
+  "cause": "Importing frozen project dependencies initializes the GPU context without a model. Probe confirmed no model attribute and zero allocated GPU tensor bytes. Context initialization is not LLM inference.",
+  "model_inference": false,
+  "new_data_or_scientific_outcome_selection": false,
+  "resolution": "Require explicit zero model-constructor/weight-loader calls and no runtime model attribute; record actual CUDA-context initialization separately."
+}

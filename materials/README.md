@@ -7,6 +7,13 @@
 实验使用 Qwen3.5-2B IT；不能将这些结果当作 Base 模型的实测结果，也尚未
 实现显式的共享语义依赖控制器。
 
+## Registered normal-encoding then subsequent-update controls
+
+[新一轮诊断](updates/post-encoding-20261115/README.md)的8条新事件流、240个问题与206份源码已封存，
+最终259项测试通过。固定正常编码的共享前缀，只对后续8/64条更新干预；同一缓存供全部问题读取。
+两轮各510次的相反模型顺序smoke必须完全一致，才进入8160次正式推理。当前没有新科学结论，
+未新增训练、模型或环境；此前197份测量源码不变。
+
 ## Complete whole-record budget controls
 
 [完整记录预算对照](updates/update-budget-20261115/README.md)已完成13440次新读出及独立审计，

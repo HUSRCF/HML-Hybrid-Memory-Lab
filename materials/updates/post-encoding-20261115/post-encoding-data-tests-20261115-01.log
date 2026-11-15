@@ -1,0 +1,13 @@
+test_cross_record_tokenization_is_rejected (test_post_encoding.PostEncodingDataTests.test_cross_record_tokenization_is_rejected) ... ok
+test_exact_prompt_and_prefix_overlap_are_rejected (test_post_encoding.PostEncodingDataTests.test_exact_prompt_and_prefix_overlap_are_rejected) ... ok
+test_grid_one_context_shared_by_all_questions (test_post_encoding.PostEncodingDataTests.test_grid_one_context_shared_by_all_questions) ... ok
+test_illegal_protected_update_is_rejected (test_post_encoding.PostEncodingDataTests.test_illegal_protected_update_is_rejected) ... ok
+test_normal_prefix_and_required_update_only (test_post_encoding.PostEncodingDataTests.test_normal_prefix_and_required_update_only) ... ok
+test_pair_only_final_update_target_changes (test_post_encoding.PostEncodingDataTests.test_pair_only_final_update_target_changes) ... ok
+test_seed_choice_uses_prior_registry_only (test_post_encoding.PostEncodingDataTests.test_seed_choice_uses_prior_registry_only) ... ok
+test_unknown_task_roles_fail (test_post_encoding.PostEncodingDataTests.test_unknown_task_roles_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.143s
+
+OK

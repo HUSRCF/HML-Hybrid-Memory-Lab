@@ -5,7 +5,14 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; all 13,440 new whole-record budget-control readouts are independently audited.**
+**Status: active; normally encoded-prefix controls are registered before inference.**
+The [new diagnostic](materials/updates/post-encoding-20261115/README.md) seals eight fresh streams,
+240 questions and all 206 measurement sources after 259 passing tests. The same normally
+encoded prefix is reused across subsequent-update interventions and all questions.
+Two opposite-order 510-readout operational smokes must match exactly before the
+registered 8,160-readout primary. No new training, environment or model download.
+
+All 13,440 new whole-record budget-control readouts are independently audited.
 The [complete budget-control phase](materials/updates/update-budget-20261115/README.md)
 reports all 60 cells: 13,440 new readouts plus 6,720 archived references on eight reused streams.
 All forty new random/early/recent control cells have zero joint cases; semantic-support
@@ -54,6 +61,7 @@ cohort. Text, positions and prefix computation change; they do not uniquely
 localize GDN damage or establish a new architecture. All earlier failed
 scientific criteria remain failed. GDN-only means adapter scope; Attention stays.
 
+- [Registered normal-encoding then subsequent-update diagnostic](materials/updates/post-encoding-20261115/README.md)
 - [All sixty budget-control cells and encoding-confound analysis](materials/updates/update-budget-20261115/README.md)
 - [Byte-verified budget-control snapshot](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/update-budget-controls-2026-11-15)
 - [All forty gate-component cells, explicit origins, controls and limitations](materials/updates/gate-components-20261115/README.md)

@@ -38,6 +38,7 @@ def question(case,role,style):
 
 
 def truth(case,episode,role):
+    if role not in ROLES:raise ValueError('Explicit task role required')
     events=[Operation(**e) for e in case['prefix_events']+episode['tail']]
     state=execute(events);entity=case['protected'] if role=='protected_current' else case['target']
     field='initial' if role=='target_initial' else 'current'

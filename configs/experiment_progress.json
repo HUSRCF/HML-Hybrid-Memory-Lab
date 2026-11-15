@@ -12488,7 +12488,7 @@
     "primary_scientific_results_published": true
   },
   "post_encoding_updates": {
-    "status": "protocol_registered_runtime_and_data_implementation_in_preparation",
+    "status": "dataset_and206sources_sealed_tests259_passed_before_native_inference",
     "previous_goal_turn_classification": "progress: completed13440new budget controls, full audit and published byte-verified complete GitHub Release; exposed initial-encoding confound",
     "protocol": "configs/post_encoding_update_plan.json",
     "protocol_sha256": "ccd180ff352e56064f1eb9bbd017e41c285f49cdf16ce39764992467d9a8bfd8",
@@ -12518,7 +12518,19 @@
     "new_environment": false,
     "new_models": false,
     "new_model_inference_started": false,
-    "last_updated_utc": "2026-11-15T03:56:30.853258+00:00",
-    "next_action": "Implement registered cached-prefix forks and tail-only controls, verify source/cache/reader invariants, lock fresh data and pass tests before native inference."
+    "last_updated_utc": "2026-11-15T04:28:14.353989+00:00",
+    "next_action": "Push registered data and immutable measurement sources, then execute opposite-order510smokes, audit exact equality and run the gated8160primary.",
+    "implemented_sources": 206,
+    "completed_full_suite": {
+      "tests": 259,
+      "seconds": 158.556,
+      "log": "materials/updates/post-encoding-20261115/post-encoding-full-tests-20261115-02.log"
+    },
+    "completed_final_runtime_targeted_tests": 17,
+    "tokenizer_feasibility": "materials/updates/post-encoding-20261115/post-encoding-data-feasibility-20261115-01.json",
+    "auxiliary_import_guard_failure_preserved": true,
+    "registered_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/post-encoding-updates-v1",
+    "dataset_manifest_sha256": "d3e65bc72abd1a901c26c4c69f768bb83d9095c6bb2d9e0987ffa2a8545a0051",
+    "registered_utc": "2026-11-15T04:27:24.177953+00:00"
   }
 }

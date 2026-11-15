@@ -1,0 +1,22 @@
+test_cross_record_tokenization_is_rejected (test_post_encoding.PostEncodingDataTests.test_cross_record_tokenization_is_rejected) ... ok
+test_exact_prompt_and_prefix_overlap_are_rejected (test_post_encoding.PostEncodingDataTests.test_exact_prompt_and_prefix_overlap_are_rejected) ... ok
+test_grid_one_context_shared_by_all_questions (test_post_encoding.PostEncodingDataTests.test_grid_one_context_shared_by_all_questions) ... ok
+test_illegal_protected_update_is_rejected (test_post_encoding.PostEncodingDataTests.test_illegal_protected_update_is_rejected) ... ok
+test_normal_prefix_and_required_update_only (test_post_encoding.PostEncodingDataTests.test_normal_prefix_and_required_update_only) ... ok
+test_pair_only_final_update_target_changes (test_post_encoding.PostEncodingDataTests.test_pair_only_final_update_target_changes) ... ok
+test_seed_choice_uses_prior_registry_only (test_post_encoding.PostEncodingDataTests.test_seed_choice_uses_prior_registry_only) ... ok
+test_unknown_task_roles_fail (test_post_encoding.PostEncodingDataTests.test_unknown_task_roles_fail) ... ok
+test_actual_tail_gate_coverage_and_native_component_are_checked (test_post_encoding.PostEncodingRuntimeTests.test_actual_tail_gate_coverage_and_native_component_are_checked) ... ok
+test_all_historical_kv_slices_checked (test_post_encoding.PostEncodingRuntimeTests.test_all_historical_kv_slices_checked) ... ok
+test_cache_auditor_rejects_missing_tensor_and_wrong_guard_count (test_post_encoding.PostEncodingRuntimeTests.test_cache_auditor_rejects_missing_tensor_and_wrong_guard_count) ... ok
+test_cached_attention_rejects_prefill_missing_layer_and_leakage (test_post_encoding.PostEncodingRuntimeTests.test_cached_attention_rejects_prefill_missing_layer_and_leakage) ... ok
+test_guards_detect_each_cache_field_and_bookkeeping_and_logits (test_post_encoding.PostEncodingRuntimeTests.test_guards_detect_each_cache_field_and_bookkeeping_and_logits) ... ok
+test_metrics_retain_failed_baselines_and_all_cells (test_post_encoding.PostEncodingRuntimeTests.test_metrics_retain_failed_baselines_and_all_cells) ... ok
+test_storage_alias_rejected_even_for_disjoint_views (test_post_encoding.PostEncodingRuntimeTests.test_storage_alias_rejected_even_for_disjoint_views) ... ok
+test_tail_interface_has_no_question_and_closes_writer_before_reading (test_post_encoding.PostEncodingRuntimeTests.test_tail_interface_has_no_question_and_closes_writer_before_reading) ... ok
+test_untracked_bookkeeping_tensor_cannot_escape_guard (test_post_encoding.PostEncodingRuntimeTests.test_untracked_bookkeeping_tensor_cannot_escape_guard) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.391s
+
+OK

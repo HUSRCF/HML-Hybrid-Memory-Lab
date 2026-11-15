@@ -1,0 +1,244 @@
+{
+  "profile": "normally_encoded_prefix_then_controlled_updates",
+  "status": "registered_before_new_data_generation_and_model_inference",
+  "registered_utc": "2026-11-15T03:51:13.225517+00:00",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/update-budget-controls-20261115-01",
+  "source_manifest_sha256": "12820ea8a1e975adb293cf04b57956c6d19f6f9678c492004d6329f4865359a7",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/update-budget-primary-audit-20261115-01.json",
+  "source_audit_sha256": "63f80eacae657186032fd737d2832889c61abda1ce240ebb9b5baf7f6a96d463",
+  "source_release": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/update-budget-controls-2026-11-15",
+  "source_release_target": "ad52962dc7f567ecfd11b685719b8ed2680a7b1b",
+  "dataset_destination": "/media/990Pro/Code/SAS/datasets/memory_update/post-encoding-updates-v1",
+  "prior_input_inventory": "/media/990Pro/Code/SAS/artifacts/memory_update/post-encoding-prior-input-inventory-20261115-01.json",
+  "seed_rule": {
+    "start": 74000,
+    "count": 8,
+    "selection": "first ascending integers absent from the immutable prior registered-input inventory"
+  },
+  "prefix_accounts": 8,
+  "prefix_set_records": 9,
+  "tail_record_counts": [
+    8,
+    64
+  ],
+  "tail_kinds": [
+    "unrelated",
+    "related"
+  ],
+  "tail_pair_difference": "Same text, values, record count and token count; only the final SET target changes from a distractor to the target account. All protected and initial facts remain unchanged.",
+  "gate_modes": [
+    "none",
+    "decay",
+    "delta",
+    "both"
+  ],
+  "reader_modes": [
+    "full",
+    "oracle"
+  ],
+  "roles": [
+    "target_current",
+    "target_initial",
+    "protected_current"
+  ],
+  "question_styles": [
+    "original",
+    "entity_first"
+  ],
+  "prefix_execution": "All9prefix SET records are normally encoded once per seed/configuration before any writer intervention. Reuse that same complete cache for all tail branches, roles, styles and readers.",
+  "tail_execution": "Advance the complete tail once from an isolated fork of the shared prefix. Gate intervention is active only for this tail call and closes before every query. Tail mask is prefix-true/tail-false and never uses a question, role, answer, or support record.",
+  "question_only_controller_execution": "Keep the controller off during prefix/tail without using any future ledger boundary; activate its question policy only when the question arrives. Native and question-only prefix/tail cache fingerprints must match exactly.",
+  "query_execution": "Each fixed post-tail cache serves all6role/style questions and both readers. Only oracle reader uses question-specific evidence; writes and source prefix/tail states do not. Full greedy generation is unconstrained; gold-only serial NLL is reported separately.",
+  "forward_partitions": "One native prefix chunk; one complete tail chunk; one question-suffix chunk; cached generation/scoring. All counterfactuals share these partitions. No exact equivalence to monolithic full-prefill or outcome-based tolerance adjustment is assumed.",
+  "counts": {
+    "independent_base_streams": 8,
+    "ledger_contexts": 40,
+    "unique_task_questions": 240,
+    "normally_encoded_prefix_caches": 40,
+    "tail_cache_conditions": 640,
+    "total_source_cache_conditions": 680,
+    "primary_readouts": 8160,
+    "before_tail_readouts": 480,
+    "after_tail_readouts": 7680,
+    "archived_task_rows_in_primary": 0,
+    "primary_unwrapped_vs_none_tail_checks": 160,
+    "primary_noop_control_readouts": 320,
+    "primary_both_mode_exact_recurrent_state_checks": 160
+  },
+  "smoke": {
+    "seed": "first registered seed",
+    "styles": [
+      "original"
+    ],
+    "readouts_each": 510,
+    "opposite_model_orders": true,
+    "all_tail_kinds_lengths_modes_readers_roles": true,
+    "accuracy_gate": false,
+    "exact_raw_readouts_caches_gates_and_native_restores": true
+  },
+  "operational_controls": {
+    "preserved_previous_measurement_sources": 197,
+    "source_files": 206,
+    "new_sources": [
+      "configs/post_encoding_update_plan.json",
+      "scripts/post_encoding_tasks.py",
+      "scripts/post_encoding_data.py",
+      "scripts/prepare_post_encoding.py",
+      "scripts/post_encoding_runtime.py",
+      "scripts/run_post_encoding.py",
+      "scripts/analyze_post_encoding.py",
+      "scripts/post_encoding_metrics.py",
+      "tests/test_post_encoding.py"
+    ],
+    "legacy_full_readout_anchors_per_configuration": 12,
+    "legacy_operational_readouts_each_run": 240,
+    "no_op_tail": "Unwrapped and ComponentHold(none) tail advances from the same prefix must yield exact48tensor cache, all bookkeeping and logits. Replay original-style current-answer five-field readouts under both readers.",
+    "source_guard": "Complete48tensor and all actual cache attributes unchanged after every query, every tail fork and no-op control; prefix logits unchanged. No mutable tensor storage shared with parent.",
+    "historical_kv": "All12prefix KV slices remain exactly equal to the normally encoded prefix in every tail mode. Tail KV and current hidden representations may differ.",
+    "both_mode": "All18recurrent matrices equal the prefix matrices exactly. Convolution states continue to run; do not claim the entire memory is frozen.",
+    "attention": "Observe all6eager Attention layers on every primary cached readout. There must be zero prefill calls; positive retained-record mass; oracle suppressed mass exactly0; full reader exposes suppressed columns.",
+    "native_kernel_reference": "Reuse the existing ten native-precision checks and immutable addendum. Preserve the original ideal-FP32 failure.",
+    "arithmetic": "Unchanged BF16 native model, FP64 adapter affine accumulation/FP32 output, fixed final step432 checkpoints. No training."
+  },
+  "analysis": {
+    "all_before_and_after": "Report all roles/styles/streams, paired losses and gains, joint3role and6role results, and before-correct→after-wrong without dropping any baseline failures.",
+    "same_input_contrasts": "At each fixed tail kind/count compare decay/delta/both with none under each reader; compare oracle with full within each gate mode. Compare related vs unrelated tail at matched token/record lengths.",
+    "scope": "Fresh generated streams relative to the recorded local input inventory, frozen model mechanism diagnostic. No architecture confirmation, significance threshold, new training or scaleup trigger.",
+    "encoding_scope": "Prefix-evidence encoding is fixed. Related-tail current answers require newly encoded tail evidence and are reported as update positive controls; they do not enjoy fixed-evidence encoding.",
+    "remaining_limits": "Tail gates can change subsequent hidden/Query/tail-KV/convolution states. Prefix KV equality does not uniquely localize an error to matrix storage, separate erase from insertion, or prove a learned semantic update rule. Before/after differences alone also change distance/position; gate contrasts keep actual tail tokens and positions fixed."
+  },
+  "training": false,
+  "new_adapters": false,
+  "new_models": false,
+  "new_environment": false,
+  "local_files_only": true,
+  "can_change_prior_gates": false,
+  "architecture_effectiveness_claim": false,
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "model_order": [
+    "native",
+    "shared",
+    "shared_question_trained_all",
+    "shared_question_trained_question",
+    "gdn_all_tokens"
+  ],
+  "models": {
+    "native": null,
+    "shared": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "shared",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/shared/step-000432/controller.safetensors",
+      "checkpoint_sha256": "3ac57cfd86116dc712aacd14de526ccc3cb8f60c7348317fbacc16910914d8fc",
+      "checkpoint_metadata_sha256": "b2bc536ef797684ef00736b8a2622eb94dbe7c6d6d6b55a8f672346a35663225",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.007630780778693288,
+        "teacher_numeric_tokens_correct": 2585,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "shared_question_trained_all": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
+      "training_arm": "shared_question",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01/shared_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "1aa88746b1e317047b6095e21cdfc70f7008b1205c79378b1a740e2df3410035",
+      "checkpoint_metadata_sha256": "941e41380f5d7f01de211044c598269f7c4ae5850d6226302f019d4d54f89e2a",
+      "manifest_sha256": "226ce6120ff2405928b9e9081b08b530333255a31516da79ad98f832c721d9bc",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-audit-20261115-01.json",
+      "audit_sha256": "58dc86ad25e8d858e0077d3b1e5ae7e4950130b02e6d8e6ec0a7387be799e49c",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005023321897164545,
+        "teacher_numeric_tokens_correct": 2590,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "shared_question_trained_question": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
+      "training_arm": "shared_question",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01/shared_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "1aa88746b1e317047b6095e21cdfc70f7008b1205c79378b1a740e2df3410035",
+      "checkpoint_metadata_sha256": "941e41380f5d7f01de211044c598269f7c4ae5850d6226302f019d4d54f89e2a",
+      "manifest_sha256": "226ce6120ff2405928b9e9081b08b530333255a31516da79ad98f832c721d9bc",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-audit-20261115-01.json",
+      "audit_sha256": "58dc86ad25e8d858e0077d3b1e5ae7e4950130b02e6d8e6ec0a7387be799e49c",
+      "final_step": 432,
+      "token_policy": "question",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005023321897164545,
+        "teacher_numeric_tokens_correct": 2590,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "gdn_all_tokens": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "gdn_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+      "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.006321374711538502,
+        "teacher_numeric_tokens_correct": 2584,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    }
+  },
+  "precision_addendum": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_precision_addendum.json",
+  "generation": {
+    "max_tokens": 12,
+    "prefill": "full",
+    "score_batch": false
+  },
+  "installed_modeling_source": "/home/husrcf/anaconda3/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py",
+  "installed_modeling_source_sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded"
+}
