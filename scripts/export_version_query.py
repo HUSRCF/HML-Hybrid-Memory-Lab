@@ -9,7 +9,7 @@ import sys
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
-from scripts.analyze_version_query import audit_run
+from scripts.analyze_version_query_corrected import audit_run
 from scripts.version_query_data import registered_inputs,read_plan
 from scripts.run_controller_trial import write_json
 from sas_memory.write_locality_data import streaming_hash

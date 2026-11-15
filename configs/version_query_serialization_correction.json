@@ -1,0 +1,32 @@
+{
+  "profile": "version_query_layer_key_serialization_correction_v1",
+  "registered_utc": "2026-11-15T10:35:47.167173+00:00",
+  "base_protocol": "configs/version_query_control_plan.json",
+  "base_protocol_sha256": "34d0ae71adf9507bb345bcc1c051bf09e33278d26e4706f4a919a3c3b9a56807",
+  "base_packet": "/media/990Pro/Code/SAS/datasets/memory_update/version-query-control-v1",
+  "base_packet_manifest_sha256": "d3297596bcefc879bcbea7c9c3458e6d019c30a43a7f5aa654217d84b16e8a3d",
+  "base_sources_immutable": 246,
+  "additional_sources": [
+    "configs/version_query_serialization_correction.json",
+    "scripts/run_version_query_corrected.py",
+    "scripts/analyze_version_query_corrected.py",
+    "tests/test_version_query_serialization.py"
+  ],
+  "total_verified_sources": 250,
+  "diagnosis": "/media/990Pro/Code/SAS/artifacts/memory_update/version-query-serialization-diagnosis-20261115-01.json",
+  "diagnosis_sha256": "88e72eefefa5c8d8aa8e99905e32cdcf6989c846420929c135a2f30bb5e4e2e4",
+  "failed_run": "/media/990Pro/Code/SAS/runs/memory_update/version-query-smoke-forward-20261115-01",
+  "failed_manifest_sha256": "c9c9f1aacf3f30b696e385e1e58a7d85f9b0a9bd8b672599a664c953cc7b003d",
+  "failed_log": "/media/990Pro/Code/SAS/logs/memory_update/version-query-smoke-forward-20261115-01.log",
+  "failed_log_sha256": "e5982628a32854471ed860d0713ae9666228582f059d8ca63647b2e2fcb95633",
+  "failed_partial_readout_sha256": "b93d540badbbb8d35f7718ce12b0991118145eec24fc7a071c6ef56c9fa39706",
+  "correction": "Convert only integer layer dictionary keys in live tail_proof.gates.layers to their exact decimal JSON string representation before the existing predecessor comparison. Reject collisions and unsupported key types. All48cache fields, floating-point values, tensors, counts, truth and old failed criteria unchanged.",
+  "execution": "Reuse unchanged runner execute_run/run_model code. Wrapper replaces only source-proof verification, corrected smoke gate and provenance writer; restore original bindings in finally. Independent auditor reuses original code objects with corrected proof verification and source-file identity; verifies separate4source correction annotation/snapshot and all246original sources.",
+  "repeated_partial_smoke": "Preserve failed native54readouts and alloriginalbytes. Start fresh corrected forward/reverse108readout smokes with new output paths, no outcome selection; primary1728 requires exact opposite-order equivalence and sharedsubset replay.",
+  "validation": "CPU-only reproduce real failed proof with integer keys, reject modified numerical/proof/cache fields and key collisions; check helper is nonmutating, complete two-model fixture audit and wrapper failure restoration. Seal/commit4sources and full regression before further native inference.",
+  "measurement_changes": false,
+  "new_accuracy_gate": false,
+  "tolerances_changed": false,
+  "scientific_outcomes_inspected_before_correction": false,
+  "prior_failed_scientific_criteria_unchanged": true
+}

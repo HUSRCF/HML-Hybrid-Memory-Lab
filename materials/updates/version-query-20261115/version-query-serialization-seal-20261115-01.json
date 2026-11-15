@@ -1,0 +1,27 @@
+{
+  "status": "sealed_serialization_only_correction_before_further_native_inference",
+  "created_utc": "2026-11-15T10:43:47.402595+00:00",
+  "descriptor": {
+    "profile": "version_query_layer_key_serialization_correction_v1",
+    "protocol_sha256": "b7cbf4942851666eb829a884c36444518963720529d779e14d37addfe7e61856",
+    "base_sources_unchanged": 246,
+    "source_sha256": {
+      "configs/version_query_serialization_correction.json": "b7cbf4942851666eb829a884c36444518963720529d779e14d37addfe7e61856",
+      "scripts/run_version_query_corrected.py": "a48a46eb9c7cbb273b3d4b06a2cdf301fa567d9fa11f59f1ed05c9fd75406412",
+      "scripts/analyze_version_query_corrected.py": "c54f287079b6480d6ae14efea6c4fb90e7acbcee16591879df948f2a51f3291e",
+      "tests/test_version_query_serialization.py": "5b4a891d48ced82caf2028e75e7b62c112aad12c75f3b3f53210b6a99db1ab66"
+    }
+  },
+  "full_tests_passed": 325,
+  "full_tests_seconds": 277.545,
+  "full_tests_log": "/media/990Pro/Code/SAS/logs/memory_update/version-query-serialization-full-tests-20261115-01.log",
+  "full_tests_log_sha256": "0f5d4e34d7ab8017029ab9a1485f1c5addd34df988eb84f6293617cb22abba9a",
+  "new_tests_passed": 6,
+  "all246_original_sources_unchanged": true,
+  "additional_sources": 4,
+  "total_verified_sources": 250,
+  "new_native_inference_since_original_failure": false,
+  "scientific_outcomes_inspected_for_correction": false,
+  "no_model_or_tensor_arithmetic_changes": true,
+  "no_changed_tolerances_or_accuracy_gates": true
+}

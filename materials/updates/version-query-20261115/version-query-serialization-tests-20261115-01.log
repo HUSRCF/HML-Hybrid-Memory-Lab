@@ -1,0 +1,11 @@
+test_all246_original_sources_and_four_source_import_closure (tests.test_version_query_serialization.SerializationCorrectionTests.test_all246_original_sources_and_four_source_import_closure) ... ok
+test_corrected_audit_reuses_exact_original_code_and_complete_both_models (tests.test_version_query_serialization.SerializationCorrectionTests.test_corrected_audit_reuses_exact_original_code_and_complete_both_models) ... ok
+test_missing_correction_provenance_rejected (tests.test_version_query_serialization.SerializationCorrectionTests.test_missing_correction_provenance_rejected) ... ok
+test_numeric_proof_cache_and_key_corruption_remain_rejected (tests.test_version_query_serialization.SerializationCorrectionTests.test_numeric_proof_cache_and_key_corruption_remain_rejected) ... ok
+test_real_failure_reproduced_and_only_key_representation_corrected (tests.test_version_query_serialization.SerializationCorrectionTests.test_real_failure_reproduced_and_only_key_representation_corrected) ... ok
+test_wrapper_restores_all_three_original_bindings_on_failure (tests.test_version_query_serialization.SerializationCorrectionTests.test_wrapper_restores_all_three_original_bindings_on_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 27.849s
+
+OK

@@ -1,0 +1,15 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<01:59,  2.68it/s]Loading weights:   9%|▉         | 29/320 [00:00<00:03, 79.32it/s]Loading weights:  14%|█▍        | 46/320 [00:01<00:06, 42.31it/s]Loading weights:  25%|██▌       | 80/320 [00:01<00:02, 83.87it/s]Loading weights:  33%|███▎      | 105/320 [00:01<00:01, 111.22it/s]Loading weights:  44%|████▍     | 140/320 [00:01<00:01, 156.88it/s]Loading weights:  53%|█████▎    | 170/320 [00:01<00:00, 186.47it/s]Loading weights:  62%|██████▏   | 198/320 [00:01<00:00, 205.41it/s]Loading weights:  71%|███████   | 226/320 [00:01<00:00, 219.65it/s]Loading weights:  80%|████████  | 257/320 [00:01<00:00, 241.01it/s]Loading weights:  91%|█████████ | 290/320 [00:01<00:00, 263.28it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 265.38it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 157.34it/s]
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76000-original", "readouts": 54}
+Traceback (most recent call last):
+  File "/home/husrcf/Code/SAS/scripts/run_version_query.py", line 170, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/husrcf/Code/SAS/scripts/run_version_query.py", line 167, in main
+    execute_run(p.parse_args())
+  File "/home/husrcf/Code/SAS/scripts/run_version_query.py", line 147, in execute_run
+    state['predecessor_sources']=verify_model_sources(state,refs['source_caches'][name])
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/husrcf/Code/SAS/scripts/run_version_query.py", line 58, in verify_model_sources
+    raise ValueError('Actual48field normal tail or proof differs from predecessor')
+ValueError: Actual48field normal tail or proof differs from predecessor

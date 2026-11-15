@@ -7,7 +7,7 @@ from pathlib import Path
 import sys
 import tarfile
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
-from scripts.analyze_version_query import audit_run
+from scripts.analyze_version_query_corrected import audit_run
 
 STORAGE=Path('/media/990Pro/Code/SAS');PHASE='version-query';TAG='version-question-control-2026-11-15'
 
@@ -24,7 +24,7 @@ def package(audit,output):
     plan=json.loads((run/'plan.json').read_text())
     if (report['status']!='completed_and_audited_version_query' or report!=audit_run(run) or
         report['primary_readouts_audited']!=1728 or report['archived_full_references_audited']!=1728 or
-        report['after_caches_audited']!=256 or report['prefix_caches_audited']!=32 or report['source_files_verified']!=246 or
+        report['after_caches_audited']!=256 or report['prefix_caches_audited']!=32 or report['source_files_verified']!=246 or report['total_source_files_verified']!=250 or
         len(report['metrics']['cells'])!=72 or len(report['metrics']['per_stream_state_to_event_pairs'])!=864 or
         any(report['prior_failed_criteria_unchanged'].values())):
         raise ValueError('All new and explicitly archived cells and unchanged failed criteria required')
@@ -54,9 +54,12 @@ def package(audit,output):
     for name,digest in m['source_sha256'].items():
         if sha(ROOT/name)!=digest or sha(run/'sources'/name)!=digest:raise ValueError('Preserve all246sealed measurement sources')
         add(ROOT/name,ROOT,'code')
+    for name,digest in m['serialization_correction']['source_sha256'].items():
+        if sha(ROOT/name)!=digest or sha(run/'serialization-correction-sources'/name)!=digest:raise ValueError('Preserve all4correction sources')
+        add(ROOT/name,ROOT,'code')
     tree(ROOT/'materials/updates/version-query-20261115',ROOT,'code')
     for name in ('README.md','materials/README.md','.gitattributes','requirements.txt','configs/experiment_progress.json',
-        'scripts/run_version_query_pipeline.sh','scripts/export_version_query.py','scripts/package_version_query.py','scripts/publish_version_query.py'):
+        'scripts/run_version_query_pipeline.sh','scripts/run_version_query_corrected_pipeline.sh','scripts/export_version_query.py','scripts/package_version_query.py','scripts/publish_version_query.py'):
         add(ROOT/name,ROOT,'code')
     for model,state in m['models'].items():
         for suffix,field in (('.jsonl','results_sha256'),('.references.jsonl','references_sha256')):
@@ -67,7 +70,7 @@ def package(audit,output):
     records=[{'path':key,'bytes':p.stat().st_size,'sha256':sha(p)} for key,p in sorted(inputs.items())]
     manifest={'status':'complete_audited_version_query_snapshot','created_utc':datetime.now(timezone.utc).isoformat(),
         'primary_audit_sha256':sha(audit),'manifest_sha256':report['manifest_sha256'],'packet_manifest_sha256':report['packet_manifest_sha256'],
-        'primary_readouts':1728,'archived_readouts':1728,'after_source_caches':256,'normal_prefix_caches':32,'source_files':246,'cells':72,'release_tag':TAG,
+        'primary_readouts':1728,'archived_readouts':1728,'after_source_caches':256,'normal_prefix_caches':32,'source_files':250,'base_source_files':246,'serialization_correction_sources':4,'cells':72,'release_tag':TAG,
         'predecessor_release':plan['source_release'],
         'training_checkpoint_release':'https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/matched-shared-training-timing-2026-11-15',
         'restore_scope':'This incremental snapshot requires the published predecessor release chain and earlier fixed adapter checkpoints. Local pretrained IT weights and existing Conda base are required separately.',
