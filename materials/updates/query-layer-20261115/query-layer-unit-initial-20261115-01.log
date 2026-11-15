@@ -1,0 +1,18 @@
+test_all24new_and8archived_cells_preserve_baseline_failures (tests.test_query_layer.SingleQueryAccountingTests.test_all24new_and8archived_cells_preserve_baseline_failures) ... ok
+test_complete230source_closure (tests.test_query_layer.SingleQueryAccountingTests.test_complete230source_closure) ... ok
+test_control_ids_and_full_smoke_counts_are_output_independent (tests.test_query_layer.SingleQueryAccountingTests.test_control_ids_and_full_smoke_counts_are_output_independent) ... ok
+test_missing_or_duplicate_rows_fail_complete_accounting (tests.test_query_layer.SingleQueryAccountingTests.test_missing_or_duplicate_rows_fail_complete_accounting) ... ok
+test_real_runner_cpu_smoke_matches_predecessor_and_all_guard_counts (tests.test_query_layer.SingleQueryAccountingTests.test_real_runner_cpu_smoke_matches_predecessor_and_all_guard_counts) ... {"event": "fresh_query", "model": "native", "seed": 75000, "primary": 102, "same_source_replays": 48, "question_captures": 48}
+{"event": "single_layer_query", "model": "native", "seed": 75000, "primary": 144, "reference_replays": 48, "self_replays": 24, "question_captures": 24}
+ok
+test_auditor_rejects_false_identity_extra_replacement_and_clamped_query (tests.test_query_layer.SingleQueryRuntimeTests.test_auditor_rejects_false_identity_extra_replacement_and_clamped_query) ... ok
+test_each_actual_single_layer_self_copy_replays_output_cache_and_decode (tests.test_query_layer.SingleQueryRuntimeTests.test_each_actual_single_layer_self_copy_replays_output_cache_and_decode) ... ok
+test_early_cross_patch_leaves_later_actual_queries_unclamped (tests.test_query_layer.SingleQueryRuntimeTests.test_early_cross_patch_leaves_later_actual_queries_unclamped) ... ok
+test_last_layer_cross_patch_preserves_all_upstream_native_queries (tests.test_query_layer.SingleQueryRuntimeTests.test_last_layer_cross_patch_preserves_all_upstream_native_queries) ... ok
+test_oracle_and_unregistered_layers_rejected_before_installing_hooks (tests.test_query_layer.SingleQueryRuntimeTests.test_oracle_and_unregistered_layers_rejected_before_installing_hooks) ... ok
+test_wrong_known_question_or_nonquery_mutation_fails_and_cleans_up (tests.test_query_layer.SingleQueryRuntimeTests.test_wrong_known_question_or_nonquery_mutation_fails_and_cleans_up) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 8.697s
+
+OK

@@ -12729,7 +12729,7 @@
     }
   },
   "query_layer_localization": {
-    "status": "registered_before_new_code_packet_or_inference",
+    "status": "sealed_tested_ready_for_native_smokes",
     "protocol": "configs/query_layer_localization_plan.json",
     "protocol_sha256": "967a7693dd3f3c4ff2cb9e71353742e68297b460495b12f35ce3c5d7ec35aa56",
     "prior_sources_immutable": 222,
@@ -12739,8 +12739,20 @@
     "fresh_confirmation": false,
     "training": false,
     "new_environment": false,
-    "new_code_started": false,
+    "new_code_started": true,
     "model_inference_started": false,
-    "next_action": "Implement single-layer native-Query passthrough and safeguards, test, seal230sources and audit registration before any inference."
+    "next_action": "Commit and push sealed code, then run two opposite-order288readout smokes and only after exact equivalence start4608primary readouts.",
+    "new_unit_tests_passed": 11,
+    "new_unit_tests_seconds": 8.697,
+    "input_feasibility_passed": true,
+    "input_feasibility": "/media/990Pro/Code/SAS/artifacts/memory_update/query-layer-input-feasibility-20261115-01.json",
+    "last_updated_utc": "2026-11-15T08:07:50.391561+00:00",
+    "source_files_sealed": 230,
+    "packet": "/media/990Pro/Code/SAS/datasets/memory_update/query-layer-localization-v1",
+    "packet_manifest_sha256": "ddc38548a1ac566aac0d44d35b25c108f21a0edc1e58ffd98e79a8fde7e22737",
+    "data_packet_generated": true,
+    "tests_passed": 295,
+    "tests_seconds": 173.947,
+    "registration_independent_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/query-layer-registration-audit-20261115-01.json"
   }
 }

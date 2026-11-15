@@ -1,0 +1,8 @@
+......................................................................{"event": "fresh_query", "model": "native", "seed": 75000, "primary": 102, "same_source_replays": 48, "question_captures": 48}
+....................................................................................................................................{"event": "fresh_query", "model": "native", "seed": 75000, "primary": 102, "same_source_replays": 48, "question_captures": 48}
+{"event": "single_layer_query", "model": "native", "seed": 75000, "primary": 144, "reference_replays": 48, "self_replays": 24, "question_captures": 24}
+.............................................................................................
+----------------------------------------------------------------------
+Ran 295 tests in 173.947s
+
+OK

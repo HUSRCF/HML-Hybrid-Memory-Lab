@@ -1,0 +1,31 @@
+{
+  "status": "independently_reconstructed_single_layer_registration",
+  "manifest_sha256": "ddc38548a1ac566aac0d44d35b25c108f21a0edc1e58ffd98e79a8fde7e22737",
+  "sources": 230,
+  "after_contexts": 32,
+  "after_questions": 192,
+  "new_primary_readouts": 4608,
+  "archived_full_references": 1536,
+  "self_control_question_ids": [
+    "000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1",
+    "0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206",
+    "06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8",
+    "09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8",
+    "0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28",
+    "0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334",
+    "1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007",
+    "150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae",
+    "f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c",
+    "f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506",
+    "f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498",
+    "fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2",
+    "fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c",
+    "fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf",
+    "fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6",
+    "feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e"
+  ],
+  "calls": {
+    "native_constructor": 0
+  },
+  "GPU_tensor_bytes": 0
+}
