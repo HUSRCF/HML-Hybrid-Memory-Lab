@@ -12943,7 +12943,7 @@
     }
   },
   "version_query_control": {
-    "status": "all1728_new_readouts_and1728_archived_references_independently_audited_exports_complete",
+    "status": "completed_audited_exported_and_publication_roundtrip_verified",
     "protocol": "configs/version_query_control_plan.json",
     "protocol_sha256": "34d0ae71adf9507bb345bcc1c051bf09e33278d26e4706f4a919a3c3b9a56807",
     "registered_utc": "2026-11-15T09:59:02.068367+00:00",
@@ -12973,7 +12973,7 @@
     "prior_240_sources_immutable": true,
     "new_training": false,
     "new_environment": false,
-    "next_action": "Package every raw readout and failed run, exact CPU validation copy, all72new/archived cells and254sources; commit/push and publish byte-verified increment. Then register normal-cache entity/version evidence-factor control; no new training yet.",
+    "next_action": "Implement preregistered normal-cache question_state_freeze control; all17stable failures are descriptive only, all864questions remain, equal-size GDN groups and no Oracle/donor/training.",
     "tokenizer_feasibility_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/version-query-feasibility-20261115-01.json",
     "tokenizer_feasibility_passed": true,
     "question_tokens": 24,
@@ -13041,7 +13041,20 @@
     "gdn_same_cache_all_six_correct": 111,
     "same_cache_contexts": 144,
     "prior_failed_criteria_unchanged": true,
-    "publication_status": "pending_complete_snapshot"
+    "publication_status": "published_remote_assets_roundtrip_byte_verified",
+    "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/version-query-publication-20261115-01.json",
+    "publication_receipt_sha256": "cf1abe2d1ecef851b5a86179905a8e6bc7880687e7690962a85836b4798f3753",
+    "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/version-question-control-2026-11-15",
+    "release_target_commit": "bea85753f03f425124c7309333e13ca72667d087",
+    "archive_verification": {
+      "status": "all_archive_members_byte_verified",
+      "files_verified": 1918,
+      "archive_entries": 1919,
+      "archive": "version-query-20261115.tar.gz",
+      "bytes": 21906709,
+      "sha256": "dd73d4af938ce4aabce4fc69d1fc458092c02fe844fdb7c5458df130f3942cb7"
+    },
+    "publication_content_scope": "/media/990Pro/Code/SAS/artifacts/memory_update/version-query-publication-content-scope-20261115-01.json"
   },
   "research_constraints_from_user_review": {
     "reviewed_commit": "07d0197",
@@ -13052,5 +13065,41 @@
     "method_requires_normal_shared_history_without_oracle_or_donor_forward": true,
     "method_requires_stable_version_and_multihop_improvement_over_simple_adaptation_and_existing_GDN_baselines": true,
     "wording_control_is_diagnostic_not_final_architecture_contribution": true
+  },
+  "question_state_freeze": {
+    "status": "registered_before_new_code_data_or_inference",
+    "protocol": "configs/question_state_freeze_plan.json",
+    "protocol_sha256": "4a7bdf4e2e19c1a8bb6cf5c64094fdf6fc8ee550115ea8160c749bb7df266630",
+    "registered_utc": "2026-11-15T11:32:57.782343+00:00",
+    "source_release": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/version-question-control-2026-11-15",
+    "source_files_immutable": 254,
+    "planned_source_files": 261,
+    "code_started": false,
+    "data_packet_generated": false,
+    "model_inference_started": false,
+    "new_training": false,
+    "new_adapters": false,
+    "new_environment": false,
+    "oracle_evidence": false,
+    "donor_forward": false,
+    "counts": {
+      "new_primary_readouts": 6912,
+      "normal_physical_replays": 864,
+      "intervention_readouts": 6048,
+      "archived_reference_readouts": 864,
+      "arm_style_episode_cells": 144,
+      "role_cells": 432,
+      "episode_case_cells": 2304,
+      "normal_to_intervention_query_pairs": 6048,
+      "arm_style_wording_pairs": 3456,
+      "role_condition_contrasts": 378,
+      "per_seed_contrasts": 3024,
+      "normal_prefix_caches": 16,
+      "normal_after_caches": 128,
+      "questions_per_style_role_episode": 16,
+      "expected_prefix_guard_checks": 442,
+      "expected_after_guard_checks": 50
+    },
+    "next_action": "Build selective question-only gate runtime with canonical proof metadata; CPU tests and closed-source registration before model work, then opposite-arm-order432readout smokes and6912all-cohort readouts."
   }
 }

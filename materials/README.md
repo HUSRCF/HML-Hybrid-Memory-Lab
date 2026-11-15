@@ -8,7 +8,7 @@ Frozen GDN: current/initial 412/432; last/first 402/432; 3 repairs and 13 regres
 sources and exact model-order checks passed. Both failed native runs and the explicitly
 registered CPU-only validation recovery are preserved; no repeated inference or new
 training. All old failed scientific criteria remain false. Complete incremental backup
-publication is pending.
+[publication is verified](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/version-question-control-2026-11-15).
 
 Previous: [normal-update load diagnostic](updates/natural-load-20261115/README.md).
 All 3,456 readouts, 36 cells, 576 episode cells and all baseline errors are independently

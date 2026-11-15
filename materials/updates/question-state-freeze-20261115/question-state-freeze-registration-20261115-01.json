@@ -1,0 +1,12 @@
+{
+  "status": "question_state_freeze_registered_before_new_code_data_inference",
+  "created_utc": "2026-11-15T11:34:33.378780+00:00",
+  "protocol": "configs/question_state_freeze_plan.json",
+  "protocol_sha256": "4a7bdf4e2e19c1a8bb6cf5c64094fdf6fc8ee550115ea8160c749bb7df266630",
+  "registered_utc": "2026-11-15T11:32:57.782343+00:00",
+  "predecessor_sources_immutable": 254,
+  "planned_sources": 261,
+  "model_inference_started": false,
+  "training": false,
+  "new_readouts_planned": 6912
+}

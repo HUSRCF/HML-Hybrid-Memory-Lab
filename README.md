@@ -16,7 +16,9 @@ new wordings with the same wrong value. These are descriptive output patterns, n
 unique memory mechanism or architecture gain. All 331 tests and exact model-order checks
 passed; 254 sources remain sealed. Both failed runs are preserved; terminal validation
 used an explicitly registered CPU-only recovery with no repeated inference. Complete
-backup publication is pending. All prior failed scientific criteria remain false.
+[backup publication](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/version-question-control-2026-11-15) is verified. All prior failed scientific criteria remain false.
+The next normal-cache question-phase GDN freeze control is registered before implementation;
+it compares every equal-size three-GDN group without Oracle access, donor forwards or new training.
 
 The [previous normal-update diagnostic](materials/updates/natural-load-20261115/README.md)
 retains all 3,456 readouts and its published backup. The existing GDN adapter scores
