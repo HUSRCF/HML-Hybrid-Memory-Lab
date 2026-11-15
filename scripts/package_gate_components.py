@@ -36,6 +36,22 @@ def package(audit,output):
         any(not c['complete_prefix_memory_exact'] or not c['prefix_logits_exact'] or
             c['prefix_sha256']!=c['masked_prefix_sha256'] or c['historical_kv_fields_exact']!=12 for c in checks)):
         raise ValueError('All120independent complete-cache/logits/KV preservation checks required')
+    controls=m['control_query_ids'];names=plan['model_order']
+    if [(c['model'],c['id'],c['component']) for c in checks]!=[(n,k,g) for n in names for k in controls for g in ('decay','delta')]:
+        raise ValueError('All5models x12controls x2gate components required without duplicates')
+    for c in checks:
+        state=m['models'][c['model']];component=c['component'];regime=component+'_full';restricted=component+'_oracle'
+        reference={v['id']:v['readout'] for v in state['condition_controls'][regime]}
+        masked={v['id']:v['readout'] for v in state['condition_controls'][restricted]}
+        if c['regime']!=regime or c['readout']!=reference[c['id']] or c['restricted_readout']!=masked[c['id']]:
+            raise ValueError('All auxiliary five-field readouts must match the complete primary controls')
+        gates=c['actual_native_gates'];stats=list(gates['layers'].values())
+        if (not gates['enabled'] or not gates['actual_gates_finite_and_exact'] or gates['component_mode']!=component or
+            set(gates['layers'])!={str(i) for i in range(24) if i%4!=3} or
+            any(s!=stats[0] or s['held_rows']<=0 or s['rows']!=s['held_rows']+s['unheld_rows'] or
+                s['forced_decay_rows']!=(s['held_rows'] if component=='decay' else 0) or
+                s['forced_delta_rows']!=(s['held_rows'] if component=='delta' else 0) for s in stats)):
+            raise ValueError('Auxiliary actual18layer component gate coverage changed')
     inputs={}
     def add(p,base,prefix):
         if p.is_symlink() or not p.is_file():raise ValueError('Only explicit real regular files')

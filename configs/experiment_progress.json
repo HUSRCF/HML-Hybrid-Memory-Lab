@@ -11438,7 +11438,7 @@
     "publication_fix_scope": "Release draft lookup and asset downloads by ID only; outside all180sealed measurement sources."
   },
   "gate_component_factorial": {
-    "status": "both_operational_smokes_audited_exact_prefix_checks_running",
+    "status": "full_primary_running_all_preregistered_operational_gates_passed",
     "registered_protocol": "configs/gate_component_factorial_plan.json",
     "protocol_sha256": "25971ba4eb6a75e929ba83cf06c01fba3cb26ee475e49b477ba13db0fc670b68",
     "preserved_prior_measurement_sources": 180,
@@ -11451,8 +11451,8 @@
     "targeted_tests_passed": 5,
     "auxiliary_prefix_utility": "scripts/verify_gate_component_prefix.py",
     "auxiliary_prefix_source_outside_measurement_closure": true,
-    "last_updated_utc": "2026-11-15T01:09:23.079834+00:00",
-    "next_action": "Complete all120prefix controls, then full6720new measurements across all5models and336queries. Historical6720reference outcomes stay labeled separately.",
+    "last_updated_utc": "2026-11-15T01:22:08.752245+00:00",
+    "next_action": "Finish all6720new readouts, independent primary audit, export all40new/archive cells with every regression, then byte-verified incremental publication. Budget-matched relevance controls remain pending; no training.",
     "dataset_manifest_sha256": "45aaa5b75182c7e30083c0101a27cfaf2b61cfa8f51f7ee1a4a3428000e69f15",
     "full_tests_passed": 234,
     "full_tests_seconds": 158.182,
@@ -11474,6 +11474,25 @@
     "actual_attention_controls_per_smoke": 480,
     "archived_endpoints_exact_per_smoke": 240,
     "source_files_verified": 188,
-    "extra_validation_registration_files": 1
+    "extra_validation_registration_files": 1,
+    "independent_prefix_checks": 120,
+    "complete_cache_fields_per_prefix": 48,
+    "historical_kv_fields_per_prefix": 12,
+    "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/gate-components-factorial-20261115-01",
+    "primary_readouts_completed_at_checkpoint": 2688,
+    "primary_progress_at_checkpoint": {
+      "native": {
+        "decay_full": 336,
+        "delta_full": 336,
+        "decay_oracle": 336,
+        "delta_oracle": 336
+      },
+      "shared": {
+        "decay_full": 336,
+        "delta_full": 336,
+        "decay_oracle": 336,
+        "delta_oracle": 336
+      }
+    }
   }
 }
