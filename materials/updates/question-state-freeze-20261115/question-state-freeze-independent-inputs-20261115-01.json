@@ -1,0 +1,17 @@
+{
+  "status": "all261sources_and_unfiltered_inputs_independently_reconstructed_without_inference",
+  "completed_utc": "2026-11-15T12:08:12.040984+00:00",
+  "packet": "/media/990Pro/Code/SAS/datasets/memory_update/question-state-freeze-v1",
+  "packet_manifest_sha256": "90c37b73de45ba7d1d152b0104ebf403d3251d0b35b8a0ee4be2c5deff35459c",
+  "source_files_verified": 261,
+  "predecessor_sources_unchanged": 254,
+  "cases": 16,
+  "contexts": 144,
+  "questions": 864,
+  "normal_reference_readouts": 864,
+  "prior_errors_retained": 50,
+  "all_known_suffixes_24tokens": true,
+  "model_constructors": 0,
+  "weight_loads": 0,
+  "gpu_initializations": 0
+}
