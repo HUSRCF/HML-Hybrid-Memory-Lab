@@ -13264,7 +13264,7 @@
     "broader_research_goal_active": true
   },
   "learned_readout_controls": {
-    "status": "protocol_registered_before_implementation",
+    "status": "eight_new_cpu_tests_passed_complete_regression_running_no_native_smoke",
     "protocol": "configs/readout_adapter_training_plan.json",
     "protocol_sha256": "d8c7564a1dcaf73629a9d4a36fbd8a36f1bf566d4144b8a0adc1cfa664ae049b",
     "predecessor_sources_immutable": 268,
@@ -13277,6 +13277,16 @@
       "query_gate"
     ],
     "new_parameters_each": 131072,
-    "next_action": "Implement and CPU-test causal local q/gate adapters, regular cache clones and constant-input frozen arithmetic; seal full source/tests before a real throwaway one-update smoke. No training or confirmation data yet."
+    "next_action": "Complete same CPU regression45550,then register and independently reconstruct all observed fit inputs and seal276sources before a real throwaway update per arm. Do not generate88000/89000confirmation yet.",
+    "implementation_started": true,
+    "new_cpu_tests_passed": 8,
+    "new_cpu_tests_seconds": 20.908,
+    "new_tests_log": "/media/990Pro/Code/SAS/logs/memory_update/readout-adapter-new-tests-20261115-02.log",
+    "preserved_first_test_failure_log": "/media/990Pro/Code/SAS/logs/memory_update/readout-adapter-new-tests-20261115-01.log",
+    "full_regression_session": 45550,
+    "full_regression_log": "/media/990Pro/Code/SAS/logs/memory_update/readout-adapter-full-tests-20261115-01.log",
+    "packet_generated": false,
+    "native_smoke_started": false,
+    "optimizer_updates_started": false
   }
 }
