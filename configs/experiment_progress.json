@@ -11438,7 +11438,7 @@
     "publication_fix_scope": "Release draft lookup and asset downloads by ID only; outside all180sealed measurement sources."
   },
   "gate_component_factorial": {
-    "status": "precision_reference_correction_tested_ready_for_fresh_operational_smokes",
+    "status": "both_operational_smokes_audited_exact_prefix_checks_running",
     "registered_protocol": "configs/gate_component_factorial_plan.json",
     "protocol_sha256": "25971ba4eb6a75e929ba83cf06c01fba3cb26ee475e49b477ba13db0fc670b68",
     "preserved_prior_measurement_sources": 180,
@@ -11451,8 +11451,8 @@
     "targeted_tests_passed": 5,
     "auxiliary_prefix_utility": "scripts/verify_gate_component_prefix.py",
     "auxiliary_prefix_source_outside_measurement_closure": true,
-    "last_updated_utc": "2026-11-15T00:59:34.010721+00:00",
-    "next_action": "Run fresh forward/reverse360smokes with all480actual Attention observations and240exact archived-endpoint controls per run; require exact complete raw bytes, then120prefix checks before primary6720.",
+    "last_updated_utc": "2026-11-15T01:09:23.079834+00:00",
+    "next_action": "Complete all120prefix controls, then full6720new measurements across all5models and336queries. Historical6720reference outcomes stay labeled separately.",
     "dataset_manifest_sha256": "45aaa5b75182c7e30083c0101a27cfaf2b61cfa8f51f7ee1a4a3428000e69f15",
     "full_tests_passed": 234,
     "full_tests_seconds": 158.182,
@@ -11466,6 +11466,14 @@
     "numerical_precision_reference_checks_passed": 10,
     "validation_tolerances_unchanged": true,
     "task_intervention_and_scoring_unchanged": true,
-    "completed_prior_180_sources_unchanged": true
+    "completed_prior_180_sources_unchanged": true,
+    "forward_smoke_readouts_audited": 360,
+    "reverse_smoke_readouts_audited": 360,
+    "opposite_smoke_raw_bytes_exact": true,
+    "native_component_kernel_checks": 10,
+    "actual_attention_controls_per_smoke": 480,
+    "archived_endpoints_exact_per_smoke": 240,
+    "source_files_verified": 188,
+    "extra_validation_registration_files": 1
   }
 }

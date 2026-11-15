@@ -1,0 +1,62 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:02,  2.61it/s]Loading weights:   9%|▉         | 28/320 [00:00<00:03, 74.98it/s]Loading weights:  19%|█▉        | 60/320 [00:00<00:01, 141.77it/s]Loading weights:  29%|██▉       | 92/320 [00:00<00:01, 185.37it/s]Loading weights:  37%|███▋      | 119/320 [00:00<00:00, 202.26it/s]Loading weights:  46%|████▋     | 148/320 [00:00<00:00, 226.40it/s]Loading weights:  57%|█████▋    | 181/320 [00:01<00:00, 252.37it/s]Loading weights:  65%|██████▌   | 209/320 [00:01<00:00, 253.29it/s]Loading weights:  75%|███████▌  | 240/320 [00:01<00:00, 261.56it/s]Loading weights:  85%|████████▍ | 271/320 [00:01<00:00, 273.28it/s]Loading weights:  95%|█████████▌| 305/320 [00:01<00:00, 286.78it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 212.08it/s]
+{"event": "gate_component", "model": "native", "regime": "decay_full", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "native", "regime": "decay_full", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "native", "regime": "decay_full", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "native", "regime": "delta_full", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "native", "regime": "delta_full", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "native", "regime": "delta_full", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "native", "regime": "decay_oracle", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "native", "regime": "decay_oracle", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "native", "regime": "decay_oracle", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "native", "regime": "delta_oracle", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "native", "regime": "delta_oracle", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "native", "regime": "delta_oracle", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "shared", "regime": "decay_full", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "shared", "regime": "decay_full", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "shared", "regime": "decay_full", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "shared", "regime": "delta_full", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "shared", "regime": "delta_full", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "shared", "regime": "delta_full", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "shared", "regime": "decay_oracle", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "shared", "regime": "decay_oracle", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "shared", "regime": "decay_oracle", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "shared", "regime": "delta_oracle", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "shared", "regime": "delta_oracle", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "shared", "regime": "delta_oracle", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_all", "regime": "decay_full", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_all", "regime": "decay_full", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_all", "regime": "decay_full", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_all", "regime": "delta_full", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_all", "regime": "delta_full", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_all", "regime": "delta_full", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_all", "regime": "decay_oracle", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_all", "regime": "decay_oracle", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_all", "regime": "decay_oracle", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_all", "regime": "delta_oracle", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_all", "regime": "delta_oracle", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_all", "regime": "delta_oracle", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_question", "regime": "decay_full", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_question", "regime": "decay_full", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_question", "regime": "decay_full", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_question", "regime": "delta_full", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_question", "regime": "delta_full", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_question", "regime": "delta_full", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_question", "regime": "decay_oracle", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_question", "regime": "decay_oracle", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_question", "regime": "decay_oracle", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_question", "regime": "delta_oracle", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_question", "regime": "delta_oracle", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "shared_question_trained_question", "regime": "delta_oracle", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "gdn_all_tokens", "regime": "decay_full", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "gdn_all_tokens", "regime": "decay_full", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "gdn_all_tokens", "regime": "decay_full", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "gdn_all_tokens", "regime": "delta_full", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "gdn_all_tokens", "regime": "delta_full", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "gdn_all_tokens", "regime": "delta_full", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "gdn_all_tokens", "regime": "decay_oracle", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "gdn_all_tokens", "regime": "decay_oracle", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "gdn_all_tokens", "regime": "decay_oracle", "queries": 18, "total": 18}
+{"event": "gate_component", "model": "gdn_all_tokens", "regime": "delta_oracle", "queries": 6, "total": 18}
+{"event": "gate_component", "model": "gdn_all_tokens", "regime": "delta_oracle", "queries": 12, "total": 18}
+{"event": "gate_component", "model": "gdn_all_tokens", "regime": "delta_oracle", "queries": 18, "total": 18}
