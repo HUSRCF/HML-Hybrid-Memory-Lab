@@ -16,7 +16,9 @@ one fixed-prefix answer. Normal Full already reaches 191/192: this is mechanism 
 not a new shared-architecture success. Earlier failed criteria remain unchanged.
 No new training, environment or model download. The [single-layer follow-up](materials/updates/query-layer-20261115/README.md) is prospectively
 registered across all six Attention layers. Its 230 sources are now sealed after 295 passing
-tests and independent input reconstruction; next run exact opposite-order operational smokes.
+tests and independent input reconstruction. The first native smoke completed; an audit-only
+variable-scope correction is separately sealed with four added sources after 299 passing tests.
+The original 230 sources and failed audit log are retained; resume with exact opposite-order checks.
 
 The [complete fresh-query Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/fresh-question-query-2026-11-15)
 retains all raw results and registrations. All three remote assets were downloaded and

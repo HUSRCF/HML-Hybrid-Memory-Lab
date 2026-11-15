@@ -1,0 +1,31 @@
+{
+  "profile": "query_layer_audit_variable_scope_correction_v1",
+  "registered_utc": "2026-11-15T08:13:33.260161+00:00",
+  "stage": "after completed forward operational smoke; before reverse smoke or primary inference",
+  "base_protocol": "configs/query_layer_localization_plan.json",
+  "base_protocol_sha256": "967a7693dd3f3c4ff2cb9e71353742e68297b460495b12f35ce3c5d7ec35aa56",
+  "base_packet": "/media/990Pro/Code/SAS/datasets/memory_update/query-layer-localization-v1",
+  "base_packet_manifest_sha256": "ddc38548a1ac566aac0d44d35b25c108f21a0edc1e58ffd98e79a8fde7e22737",
+  "base_sources_immutable": 230,
+  "additional_sources": [
+    "configs/query_layer_audit_correction.json",
+    "scripts/analyze_query_layer_corrected.py",
+    "scripts/run_query_layer_corrected.py",
+    "tests/test_query_layer_audit_correction.py"
+  ],
+  "total_verified_sources": 234,
+  "diagnosis": "/media/990Pro/Code/SAS/artifacts/memory_update/query-layer-audit-failure-diagnosis-20261115-01.json",
+  "diagnosis_sha256": "a41703256210190c5c179b842c2b9da2bb1ffa3373cb0910c9fbdabf91acb7d3",
+  "failed_audit_log": "/media/990Pro/Code/SAS/logs/memory_update/query-layer-smoke-forward-audit-20261115-01.log",
+  "failed_audit_log_sha256": "58675ac0477df351bf16d96604c7e4ce08e66eb5733452de7d436a36197f4be5",
+  "allowlisted_pre_correction_run": "/media/990Pro/Code/SAS/runs/memory_update/query-layer-smoke-forward-20261115-01",
+  "allowlisted_manifest_sha256": "47d6b7e0710ac93f579b37c72b316dc724a9f1d1fad7bc13ebeb483390c1bac0",
+  "correction": "Only rename the per-context controls count in an independent auditor copy so legacy controls remain a list across both models. Preserve original auditor and its failed log. No experimental output, tolerance, case, model, donor, intervention or threshold changes.",
+  "execution": "Operational wrapper changes only checked_gate to the corrected auditor and annotates every manifest with the sealed correction source digests/snapshots; original execute_run and run_model perform all model work unchanged. Restore original Python globals after execution.",
+  "validation": "Audit entire existing288readout forward smoke without native inference and with all original checks; test both models and corruption rejection. Seal all4additional sources and commit before any reverse or primary model work. Then opposite-order exact equivalence under corrected audits before all4608primary readouts.",
+  "measurement_changes": false,
+  "new_accuracy_gate": false,
+  "tolerances_changed": false,
+  "scientific_outcomes_inspected_before_correction": false,
+  "prior_failed_scientific_criteria_unchanged": true
+}

@@ -1,0 +1,9 @@
+test_additional_sources_complete_local_import_closure (tests.test_query_layer_audit_correction.AuditCorrectionTests.test_additional_sources_complete_local_import_closure) ... ok
+test_complete_actual_two_model_forward_smoke_without_native_inference (tests.test_query_layer_audit_correction.AuditCorrectionTests.test_complete_actual_two_model_forward_smoke_without_native_inference) ... ok
+test_unannotated_subsequent_run_cannot_inherit_forward_exception (tests.test_query_layer_audit_correction.AuditCorrectionTests.test_unannotated_subsequent_run_cannot_inherit_forward_exception) ... ok
+test_wrapper_restores_original_globals_when_execution_fails (tests.test_query_layer_audit_correction.AuditCorrectionTests.test_wrapper_restores_original_globals_when_execution_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 18.065s
+
+OK

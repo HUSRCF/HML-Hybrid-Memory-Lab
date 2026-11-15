@@ -1,0 +1,11 @@
+{
+  "status": "read_only_operational_audit_failure_diagnosed",
+  "completed_run": "/media/990Pro/Code/SAS/runs/memory_update/query-layer-smoke-forward-20261115-01",
+  "manifest_sha256": "47d6b7e0710ac93f579b37c72b316dc724a9f1d1fad7bc13ebeb483390c1bac0",
+  "actual_legacy_checks_exact": 96,
+  "per_model_checks_all_pass": true,
+  "preserved_base_sources": 230,
+  "failure": "analyze_query_layer.audit_run overwrites controls legacy-ID list with per-context integer before checking the second model; actual readouts match every legacy reference.",
+  "scientific_outcomes_inspected": false,
+  "primary_inference_started": false
+}

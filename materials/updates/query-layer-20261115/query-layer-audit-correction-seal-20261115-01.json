@@ -1,0 +1,20 @@
+{
+  "status": "sealed_audit_only_correction_before_further_native_inference",
+  "created_utc": "2026-11-15T08:21:46.694802+00:00",
+  "descriptor": {
+    "profile": "query_layer_audit_variable_scope_correction_v1",
+    "protocol_sha256": "471837b3a109dc5183431ab2d069441e907dd3b447b60a693bc59057664b7c91",
+    "base_sources_unchanged": 230,
+    "source_sha256": {
+      "configs/query_layer_audit_correction.json": "471837b3a109dc5183431ab2d069441e907dd3b447b60a693bc59057664b7c91",
+      "scripts/analyze_query_layer_corrected.py": "7a4e1fadecfa4f7dd3a741eb5fe2c81f0a3c3c6bd75e9405037b915deb7b77bc",
+      "scripts/run_query_layer_corrected.py": "a0ed64a54e1295f8020ca0600bda7412e78120a7cf19fbf4a3638d4258c2ddfa",
+      "tests/test_query_layer_audit_correction.py": "6e7a472b7238caa994800363ce9ea4515eae5f206a88f224fef967fdb467d304"
+    }
+  },
+  "complete_tests": 299,
+  "tests_log_sha256": "6a186c754e7744f0052ef64c1061f10434c36443358de0f959b34e900d5dec62",
+  "measurement_changes": false,
+  "original_forward_run_preserved": true,
+  "primary_inference_started": false
+}
