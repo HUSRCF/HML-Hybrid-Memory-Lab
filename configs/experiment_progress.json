@@ -13164,7 +13164,7 @@
   },
   "latest_published_phase": "question_state_freeze",
   "version_address_observation": {
-    "status": "all3456_normal_readouts_independently_audited_and_exported_publication_pending",
+    "status": "complete_audited_exported_and_published_remote_bytes_verified",
     "protocol": "configs/version_address_audit_plan.json",
     "protocol_sha256": "f3e1867a24b83bacbc5d5fbab0b2be682d818b27808a2f1d52082dc780da3bbe",
     "registered_utc": "2026-11-15T13:16:03.831922+00:00",
@@ -13199,7 +13199,7 @@
       82006,
       82007
     ],
-    "next_action": "Inspect complete plots/tables, package all576primary and72smoke raw FP32 arrays plus all outcomes and publish byte-verified incremental release. Keep broader research active; no new architecture or causal attention claim.",
+    "next_action": "Keep broader research active. Prepare a matched question/answer-trained learned readout control on the frozen existing GDN baseline, checking query-only versus attention output-gate adaptation before proposing more joint memory machinery. Inspect original training data and native cached-gradient support; register before any new implementation/data/training. Treat all observed76000/82000cases as development and reserve a prospective new confirmation cohort. No learned-reader training or new architecture claim yet.",
     "new_cpu_tests_passed": 9,
     "full_regression_session": 47843,
     "full_regression_log": "/media/990Pro/Code/SAS/logs/memory_update/version-address-full-tests-20261115-01.log",
@@ -13250,6 +13250,17 @@
       "matched_question_positive_joint_gain_over_native": false,
       "matched_question_no_all_trained_all_deployed_correct_regression": false
     },
-    "new_method_or_causal_attention_claim": false
+    "new_method_or_causal_attention_claim": false,
+    "backup_archive": "/media/990Pro/Code/SAS/backups/version-address-20261115-01/version-address-20261115.tar.gz",
+    "backup_sha256": "1a9d6a5275581fdfc86df94657fe078db86f30acfa91128979ef303c0261f05b",
+    "backup_bytes": 94269650,
+    "backup_archive_entries": 2107,
+    "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-publication-20261115-01.json",
+    "publication_receipt_sha256": "fb51ce8b2c0388fd1cd9b593c9f1c81b80d2f672940a7fca5cedf06b0f1a76b6",
+    "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/version-address-observation-2026-11-15",
+    "release_target_commit": "f01d1da2a212a446b6538496215e2e77817b4baa",
+    "committed_snapshot_files_byte_verified": 311,
+    "remote_assets_roundtrip_verified": 3,
+    "broader_research_goal_active": true
   }
 }

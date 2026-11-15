@@ -16,7 +16,8 @@ attention as causal answer use. Version-word contrasts appear at both layers15 a
 All 352 pre-inference tests, 268 sealed sources, opposite-order controls, 1,728 exact old
 replays and 576 complete raw FP32 arrays passed audit. No Oracle, donor, new training,
 architecture gain or unique-group attribution. All prior failed criteria remain false.
-Complete tables and plots are exported; full incremental backup publication is pending.
+Complete tables and plots are exported. The [full incremental backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/version-address-observation-2026-11-15)
+is published; all three assets were downloaded and byte-verified.
 The broader research goal remains active.
 
 **Previous: all 6,912 question-phase GDN control readouts independently audited.**

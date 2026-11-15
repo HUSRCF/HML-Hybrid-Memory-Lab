@@ -70,7 +70,7 @@ current 与 initial、last 与 first 的每对目标问题共享同一历史和�
 - 主审计重新聚合全部 576 份原始 FP32 数组、41,472 行分层观测，并核对 96 次既有运行控制。独立判分脚本从原始 SET 事件再次核对全部 3,456 个回答。全部原有失败判据维持 false。
 - 每个队列只有八条基础事件流；账户重命名、历史条件、问题及模型并非独立样本。这里不作显著性、跨任务、100K 长度或多跳 COPY 成功的声明。
 
-完整导出：[全部回答](exports/primary.csv)、[全部分层观测](exports/pooled-record-observations.csv)、[全部正确性分组（含空组）](exports/all-correctness-strata-including-empty.csv)、[所有配对](exports/same-history-version-pairs.csv)、[原始数组清单](exports/raw-fp32-array-inventory.csv)。全部 576 份正式原始数组、72 份执行检查数组及原始运行元数据将进入完整增量备份。
+完整导出：[全部回答](exports/primary.csv)、[全部分层观测](exports/pooled-record-observations.csv)、[全部正确性分组（含空组）](exports/all-correctness-strata-including-empty.csv)、[所有配对](exports/same-history-version-pairs.csv)、[原始数组清单](exports/raw-fp32-array-inventory.csv)。全部 576 份正式原始数组、72 份执行检查数组及原始运行元数据均已进入完整增量备份。
 
 本机命令：先 `bash scripts/run_version_address_pipeline.sh`，完成审计后 `bash scripts/run_version_address_postprocess.sh`。两者都拒绝覆盖已有输出；复现时需显式使用新的输出位置。封存的输入与原始结果不应被改写。
 
@@ -80,4 +80,4 @@ current 与 initial、last 与 first 的每对目标问题共享同一历史和�
 
 主审计 manifest SHA-256：`798b044b2deb77c7b2e384f9d892fcfa3481e7266cf10f8e8fbc9f037be6e102`。数据包 SHA-256：`138f248163f886c6ef95521f26ae14f46ebae56a7df06cfb97195ad69d6c16f8`。封存收据 SHA-256：`b9f517bd5b88c6dffaf76a7ea612288cfe29e9ff34d133b61369201d28aeb5e2`。
 
-备份状态：本地完整归档与远端附件逐字节核验待完成；总体研究目标保持 active。
+备份状态：[完整增量 Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/version-address-observation-2026-11-15) 已发布，指向提交 `f01d1da2a212a446b6538496215e2e77817b4baa`。归档 `version-address-20261115.tar.gz` 共 94,269,650 字节，SHA-256 `1a9d6a5275581fdfc86df94657fe078db86f30acfa91128979ef303c0261f05b`；2,107 个归档条目已逐个解压验证。发布前核对 311 个提交内代码/材料文件，三个远端附件均实际下载并逐字节核对。模型权重、环境和缓存未打包；恢复仍需前序 Release 链、原有 GDN 检查点及单独的 IT 权重。总体研究目标保持 active。

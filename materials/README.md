@@ -6,7 +6,8 @@ arrays independently audited. On eight fixed fresh streams, the existing GDN ada
 819/864; all45errors emit another version of the same account, protected reading288/288.
 At the fixed layer15/boundary23,35errors have higher wrong-record mass and10have higher
 correct-support mass. All352pre-inference tests and268sealed sources unchanged. All layers,
-positions,roles,wordings,old errors and empty strata retained. Full backup publication pending;
+positions,roles,wordings,old errors and empty strata retained. The [complete incremental backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/version-address-observation-2026-11-15)
+is published with all three remote assets downloaded and byte-verified;
 no new training,architecture gain or causal attention claim. All old failed criteria remain false.
 
 Previous: [complete question-only local GDN controls](updates/question-state-freeze-20261115/README.md).
