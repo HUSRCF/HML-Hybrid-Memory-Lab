@@ -5,6 +5,12 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
+**Current: paired Gate task-coverage controls registered and implemented.**
+The [SET replay versus SET/COPY mixture study](materials/updates/readout-mixture-20261116/README.md)
+uses identical Gate initialization, 131,072 parameters and 432 updates per regime. All eight new
+CPU tests passed; the complete 380-test regression is running before native safety and training.
+Teacher lengths and compute differences are explicit; fresh confirmation remains ungenerated.
+
 **Latest completed: all 6,000 new-stream readout-control answers independently audited.**
 The [complete SET/COPY confirmation](materials/updates/readout-confirmation-20261116/README.md)
 retains all five frozen models, every condition, repair, regression and all 6,480 logical bindings.
