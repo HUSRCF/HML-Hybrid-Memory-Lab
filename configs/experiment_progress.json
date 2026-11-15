@@ -6393,7 +6393,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "6000fresh_physical_answers_and6480logical_bindings_independently_audited_all5frozen_models",
-  "updated_utc": "2026-11-15T17:55:25.374273+00:00",
+  "updated_utc": "2026-11-15T17:56:39.793756+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -13684,7 +13684,7 @@
     "remote_assets_verified": 3
   },
   "readout_mixture": {
-    "status": "all380passed_native_safety_and_independent_audit_passed_scheduled_training_process_active",
+    "status": "audited_native_safety_passed_scheduled_optimizer_updates_active",
     "protocol": "configs/readout_mixture_training_plan.json",
     "protocol_sha256": "ad9ee63e5e367e7e9ee4850585625102becc43cd624d03ad21950ca43b730f6e",
     "predecessor_sources_immutable": 289,
@@ -13725,6 +13725,14 @@
     "scratch_optimizer_updates": 2,
     "scheduled_training_process_started": true,
     "training_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01",
-    "scheduled_optimizer_updates_observed": 0
+    "training_progress_snapshot": {
+      "captured_utc": "2026-11-15T17:56:39.793749+00:00",
+      "actual_logged_optimizer_updates": {
+        "set_replay": 219,
+        "set_copy_mix": 0
+      },
+      "terminal": false
+    },
+    "scheduled_optimizer_updates_started": true
   }
 }
