@@ -1,0 +1,34 @@
+{
+  "status": "audited_update_budget_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/update-budget-smoke-reverse-20261115-01",
+  "manifest_sha256": "a16fa2b94c7c4df7db3fe3b73ae2103cfc94455aa140bd02f3dc4f19a0ef4072",
+  "dataset_manifest_sha256": "9cfca6516f9b035d0dff6548f0f5ee6f704930b87a9a686e6fe80c0e7c2d7f49",
+  "new_physical_readouts_audited": 720,
+  "archived_reference_readouts_verified": 6720,
+  "related_bindings_audited": 720,
+  "question_only_native_prefix_checks": 8,
+  "new_condition_attention_controls": 480,
+  "archived_endpoint_exact_controls": 240,
+  "all_layer_attention_observations": 720,
+  "source_files_verified": 197,
+  "kernel_validation_included_in_source_closure": true,
+  "original_ideal_kernel_contract_failed_and_preserved": true,
+  "validation_addendum_sha256": "1eed068b08f6c006b390f553380dfba99843b93d247b276d6101d67444a7b08d",
+  "prior_timing_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "metrics": null,
+  "interpretation": [
+    "Only a same-original-input oracle diagnostic on reused8streams; no prospective architectural confirmation or training/scaleup trigger.",
+    "Match permitted native-beta token/record/type counts, not beta sums, write energy, cumulative log-decay values or semantic capacity. Gates/hidden representations downstream can differ.",
+    "Whole-record matching removes fragmentation confound; early/recent bracket location effects but do not perfectly match every update time or full state trajectory.",
+    "Exact operation-type budgets leak oracle-derived counts. Masks are prefix/budget-consistent, not globally query-independent. Same-case different questions can have different states.",
+    "Historical reader mask remains original semantic support. Outcomes cannot be attributed to generic sparse-reader quality or a learned semantic writer.",
+    "All5configurations and all original role/depth/style/load/stream results and regressions remain; all previously failed scientific gates unchanged.",
+    "If random/position controls also recover the conditional oracle maximum, semantic update-selection necessity is weakened. If oracle selection is better, this is still a conditional upper-bound comparison and requires query-independent and unseen confirmation before a deployable method.",
+    "Original failed ideal-FP32 kernel check and its registered native BF16 reference correction remain preserved. No new numerical or native-kernel change."
+  ],
+  "analysis_source_sha256": "803248d3c7467d4b00a76ddb0d0dda55e2d01aa0bf54db6431078808b858edad"
+}

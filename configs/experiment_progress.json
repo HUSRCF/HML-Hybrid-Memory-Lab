@@ -12225,7 +12225,7 @@
     "primary_scientific_results_published": true
   },
   "update_budget_controls": {
-    "status": "registered_data_locked_regression_tests_passed_before_native_inference",
+    "status": "both720smokes_audited_exact_opposite_order_replay_passed",
     "previous_goal_turn_classification": "progress: completed audited6720new gate-component readouts and remotely byte-verified GitHub Release",
     "prior_head": "c3447ec3e2840c98a1c660a3a2ca0c19ada7dac7",
     "protocol": "configs/update_budget_controls_plan.json",
@@ -12265,7 +12265,22 @@
     "unified_logical_cells": 20160,
     "prior_failed_gates_unchanged": true,
     "auxiliary_prefix_utility": "scripts/verify_update_budget_prefix.py",
-    "last_updated_utc": "2026-11-15T02:09:44.817614+00:00",
-    "next_action": "Two opposite720readout native operational smokes with independent writer/reader masks and exact old endpoints; then240prefix checks before full13440new measurements. No outcome-dependent mask choices or new training."
+    "last_updated_utc": "2026-11-15T02:22:41.486014+00:00",
+    "next_action": "Independent240prefix/cache/KV checks, then preregistered13440new measurements; no outcome-based condition selection.",
+    "smoke_receipts": {
+      "update-budget-smoke-forward-audit-20261115-01": {
+        "status": "audited_update_budget_smoke",
+        "sha256": "0f306862e5eed8240faab8ae093272d9686888e585786aeec1ba4b22c7c5a649"
+      },
+      "update-budget-smoke-reverse-audit-20261115-01": {
+        "status": "audited_update_budget_smoke",
+        "sha256": "162a0bf45b454818a7960a434ea650d64b7697e5018525fc50145f62940d5c85"
+      },
+      "update-budget-smoke-equivalence-20261115-01": {
+        "status": "audited_update_budget_smoke_equivalence",
+        "sha256": "61217010ab10764c3235d84c1d3e27630ade8d98f804cf72bd20ade216067004"
+      }
+    },
+    "measurement_sources_unchanged": 197
   }
 }
