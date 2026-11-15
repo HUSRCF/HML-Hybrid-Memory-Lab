@@ -12943,7 +12943,7 @@
     }
   },
   "version_query_control": {
-    "status": "protocol_registered_before_new_code_packet_or_inference",
+    "status": "sealed_319_tests_passed_before_native_smokes",
     "protocol": "configs/version_query_control_plan.json",
     "protocol_sha256": "34d0ae71adf9507bb345bcc1c051bf09e33278d26e4706f4a919a3c3b9a56807",
     "registered_utc": "2026-11-15T09:59:02.068367+00:00",
@@ -12967,12 +12967,35 @@
       "normal_after_caches_both_models": 256,
       "questions_per_new_style_role_episode": 16
     },
-    "new_code_started": false,
-    "data_packet_generated": false,
+    "new_code_started": true,
+    "data_packet_generated": true,
     "model_inference_started": false,
     "prior_240_sources_immutable": true,
     "new_training": false,
     "new_environment": false,
-    "next_action": "Implement registered literal one-token question pairs, tokenizer-only feasibility and246source packet, CPU checks and opposite-order native smokes before all1728newFullreadouts."
+    "next_action": "Commit and push246source seal, then exact opposite-order108readout smokes before all1728registered new Full readouts. Preserve1728labelled archived references and all old failed criteria.",
+    "tokenizer_feasibility_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/version-query-feasibility-20261115-01.json",
+    "tokenizer_feasibility_passed": true,
+    "question_tokens": 24,
+    "one_differing_question_token_index": 5,
+    "new_cpu_tests_passed": 11,
+    "full_regression_session": 95710,
+    "packet": "/media/990Pro/Code/SAS/datasets/memory_update/version-query-control-v1",
+    "packet_manifest_sha256": "d3297596bcefc879bcbea7c9c3458e6d019c30a43a7f5aa654217d84b16e8a3d",
+    "seal": "/media/990Pro/Code/SAS/artifacts/memory_update/version-query-seal-20261115-01.json",
+    "seal_sha256": "5f8836319a8487ecb94257c81baa853f65a5d0cfbf20f06b0694201c72454c30",
+    "source_files_immutable": 246,
+    "full_tests_passed": 319,
+    "independent_inputs_reconstructed": true
+  },
+  "research_constraints_from_user_review": {
+    "reviewed_commit": "07d0197",
+    "matched_training_deployment_3x3_already_completed": true,
+    "shared_advantage_over_strong_baselines_not_established": true,
+    "normal_SET_success_does_not_solve_multihop_COPY": true,
+    "future_state_interventions_must_compare_GDN12_13_14_with_other_GDN_layers": true,
+    "method_requires_normal_shared_history_without_oracle_or_donor_forward": true,
+    "method_requires_stable_version_and_multihop_improvement_over_simple_adaptation_and_existing_GDN_baselines": true,
+    "wording_control_is_diagnostic_not_final_architecture_contribution": true
   }
 }

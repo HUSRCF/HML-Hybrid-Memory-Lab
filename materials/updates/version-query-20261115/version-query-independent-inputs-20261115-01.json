@@ -1,0 +1,24 @@
+{
+  "status": "independently_reconstructed_token_matched_inputs_without_inference",
+  "completed_utc": "2026-11-15T10:25:18.233437+00:00",
+  "packet": "/media/990Pro/Code/SAS/datasets/memory_update/version-query-control-v1",
+  "packet_manifest_sha256": "d3297596bcefc879bcbea7c9c3458e6d019c30a43a7f5aa654217d84b16e8a3d",
+  "source_files": 246,
+  "all_prior_240_sources_unchanged": true,
+  "cases": 16,
+  "contexts": 144,
+  "questions": 864,
+  "paired_inputs": 432,
+  "exactly_one_differing_question_token": true,
+  "question_tokens": [
+    24
+  ],
+  "difference_positions_in_question": [
+    5
+  ],
+  "archived_full_readouts": 1728,
+  "model_constructor_calls": 0,
+  "model_loader_calls": 0,
+  "weights_loader_calls": 0,
+  "gpu_initializations": 0
+}

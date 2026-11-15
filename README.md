@@ -17,7 +17,8 @@ from 16/32 to 28/32 when active accounts increase from 2 to 16. These are descri
 patterns, not proof of a recurrent-state mechanism or a new architecture's benefit.
 Maximum history is 7,519 tokens; no new training, model download or environment. All prior
 failed criteria remain false. The complete backup is published. Matched one-token version-question controls are
-registered before new code, data or inference; the next phase remains pending.
+registered before new code, data or inference. Their [implementation and input seal](materials/updates/version-query-20261115/README.md)
+now pass all 319 tests; 246 sources are frozen before native operational checks.
 
 **Previous diagnostic: all 4,608 single-layer question-Query readouts independently audited.**
 The [complete layer diagnostic](materials/updates/query-layer-20261115/README.md) retains all 24 new

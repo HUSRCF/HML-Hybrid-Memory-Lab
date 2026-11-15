@@ -145,3 +145,5 @@ portable installer guarantee.
 [正常更新负载诊断](updates/natural-load-20261115/README.md)已登记、通过 308 项测试并封存 240 个源文件。完整设计为 3,456 次读出，历史最长 7,519 Token；本轮现已完成，完整结果见上述最新材料。
 
 本轮完整结果已发布至 [逐字节验证的 GitHub Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/natural-update-load-2026-11-15)，目标提交 `5ea0c9c1015ee5145b54257d0bb8346d93f2c494`。备份含 1,322 个文件；压缩包 SHA-256 为 `1a3429bbaa11ec1a9a01e35cba2f15a7430aefd434a89210e1a94af531b32206`，三个附件均已从远端下载核对。
+
+当前[单 Token 版本问法控制](updates/version-query-20261115/README.md)已实现、通过 319 项测试并封存 246 个源文件。全部问题为 24 Token，配对仅一处不同；两个执行顺序的 GPU 检查尚未启动。
