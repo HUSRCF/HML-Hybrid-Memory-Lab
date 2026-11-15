@@ -1,0 +1,77 @@
+{
+  "status": "completed_all_three_training_arms_and_independent_audit",
+  "started_utc": "2026-11-15T15:44:06.709610+00:00",
+  "source_sha256": "b07a63e9df25233c7a1a8ba80fc6fc6bad7e4f9b452134bc9e5941f43a199edc",
+  "stages": [
+    {
+      "stage": "native_smoke",
+      "started_utc": "2026-11-15T15:44:06.709769+00:00",
+      "log": "/media/990Pro/Code/SAS/logs/memory_update/readout-adapter-smoke-20261115-02.log",
+      "command": [
+        "/home/husrcf/anaconda3/bin/python",
+        "-B",
+        "scripts/run_readout_adapter_cache_training.py",
+        "--smoke",
+        "--output",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-smoke-20261115-02"
+      ],
+      "returncode": 0,
+      "completed_utc": "2026-11-15T15:45:54.486010+00:00",
+      "log_sha256": "67834235bd81d77fd52be0069fe8fa670dcf6b4a3d4855abd450c05d46425b26"
+    },
+    {
+      "stage": "independent_smoke_audit",
+      "started_utc": "2026-11-15T15:45:54.486390+00:00",
+      "log": "/media/990Pro/Code/SAS/logs/memory_update/readout-adapter-smoke-audit-20261115-02.log",
+      "command": [
+        "/home/husrcf/anaconda3/bin/python",
+        "-B",
+        "scripts/analyze_readout_adapter_cache_training.py",
+        "--run",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-smoke-20261115-02",
+        "--allow-smoke",
+        "--output",
+        "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-smoke-audit-20261115-02.json"
+      ],
+      "returncode": 0,
+      "completed_utc": "2026-11-15T15:46:02.779475+00:00",
+      "log_sha256": "7ad9f1b9e092a24af10cfd034421be29138651cbe799f139abf7b001aecd6699"
+    },
+    {
+      "stage": "scheduled_three_arm_training",
+      "started_utc": "2026-11-15T15:46:02.779899+00:00",
+      "log": "/media/990Pro/Code/SAS/logs/memory_update/readout-adapter-training-20261115-01.log",
+      "command": [
+        "/home/husrcf/anaconda3/bin/python",
+        "-B",
+        "scripts/run_readout_adapter_cache_training.py",
+        "--smoke-audit",
+        "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-smoke-audit-20261115-02.json",
+        "--output",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01"
+      ],
+      "returncode": 0,
+      "completed_utc": "2026-11-15T16:27:52.817726+00:00",
+      "log_sha256": "6762778e11b012ba2b4ce21349283edbf3ad57aac69bff59c4e0ac5fd40dae83"
+    },
+    {
+      "stage": "independent_training_audit",
+      "started_utc": "2026-11-15T16:27:52.827099+00:00",
+      "log": "/media/990Pro/Code/SAS/logs/memory_update/readout-adapter-training-audit-20261115-01.log",
+      "command": [
+        "/home/husrcf/anaconda3/bin/python",
+        "-B",
+        "scripts/analyze_readout_adapter_cache_training.py",
+        "--run",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01",
+        "--output",
+        "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-training-audit-20261115-01.json"
+      ],
+      "returncode": 0,
+      "completed_utc": "2026-11-15T16:28:03.749682+00:00",
+      "log_sha256": "cb1c38966e3d48d7b20e7b1b22e2eff6e4cef56c4c79152a251de691293371fa"
+    }
+  ],
+  "future_confirmation_generated": false,
+  "completed_utc": "2026-11-15T16:28:03.749991+00:00"
+}

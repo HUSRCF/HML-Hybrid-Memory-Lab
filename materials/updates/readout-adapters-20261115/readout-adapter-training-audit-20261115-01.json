@@ -1,0 +1,100 @@
+{
+  "status": "completed_and_audited_readout_adapter_training",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01",
+  "manifest_sha256": "86cc706a473db9fd939734bba66dbb88aebc298f68458ba882e9bca01898c80a",
+  "packet_manifest_sha256": "3f1e2eeff44559530ee43a033917034da4dfffb8a403c1db190b56a2e192a9cf",
+  "source_files_verified": 277,
+  "optimizer_updates_audited": 1296,
+  "checkpoints_audited": 9,
+  "arms": {
+    "query": {
+      "initial_state_sha256": "9d84a8a04a0f8958b1eca604819fc109d3d0a2a42298c24509d8be96065d54bb",
+      "checkpoints": [
+        {
+          "step": 144,
+          "controller_sha256": "a933567da7f3fe9328c3e6d7d932726f8fbae406b0788cf7846534c92cd0d100",
+          "optimizer_sha256": "d8cbf462a630fff1363780b75a2977300d51445f9d4654d42a080c33d9d6639e",
+          "state_sha256": "0595bd29a0f94a7b7ca670bd15959d034afc190e4c2d93b9c2c82ea7c2220976"
+        },
+        {
+          "step": 288,
+          "controller_sha256": "fe6767b792040a65efcb8b70a6ad3fff73ad6b8b01c890bf0d5b4c80885fd1a2",
+          "optimizer_sha256": "b79e10075056d4658067e1b3f9b15fe4b83b6c3badf51022b21c0f15c5b3ee08",
+          "state_sha256": "c941688e3777a63e215893602c0b04b5267122c545526c94212f7f37ea83321c"
+        },
+        {
+          "step": 432,
+          "controller_sha256": "e2d16c08327bb641deadd5b180f1adb1835585dc76577000898fe6c28442e04a",
+          "optimizer_sha256": "b70af8df5a929959d5c515e725f6ed2a97895718eb103b754911cbfec6e4c653",
+          "state_sha256": "fd8f4eec0fe148229e11c601057d18246f45be4a7921364a47f3468b085ee262"
+        }
+      ],
+      "new_parameters": 131072,
+      "fit_correct": 1720,
+      "fit_questions": 1728,
+      "teacher_nll_mean": 0.006254789800413126
+    },
+    "gate": {
+      "initial_state_sha256": "794adcc220d640b5317a3c41447497481d4ef425505b5a5e14250672085e9a1e",
+      "checkpoints": [
+        {
+          "step": 144,
+          "controller_sha256": "26eb6301c337a81dad0111a6886e371471d5a4c27384b076dba2092b799b65f0",
+          "optimizer_sha256": "a82a60e6e93a8587e020df8560420a2642a755245a1e7856c0b68dccb365a407",
+          "state_sha256": "cc50b9c1099e053dd26d6005c59fc5dc982da3c26ba3ab12a18f23fa6d2a9152"
+        },
+        {
+          "step": 288,
+          "controller_sha256": "98b77246c8dbb63b35902e7b29e44c6d6158008a04081be67c407a7e24844669",
+          "optimizer_sha256": "801f66307c3cd3340c060e415896d03f7675eb1fc4b3f1bd3dc91e8c487c02d0",
+          "state_sha256": "df1dbb3c9eaa432d5f29638fb3ad0a2a6e1ad5ff3b583d051f105484a254a7a9"
+        },
+        {
+          "step": 432,
+          "controller_sha256": "aec08106b931b349effc7b29ad040d011eb5e42fd85dea8251900d6834f4a764",
+          "optimizer_sha256": "4043b2c8d1f26d54cfc617fd4a694fe59a3729403254ba3e463e7342c896960f",
+          "state_sha256": "ba9f5d1aade67e264e7d32d9fa2b08e601b7ac41a71442e92454ce76d4f1879c"
+        }
+      ],
+      "new_parameters": 131072,
+      "fit_correct": 1715,
+      "fit_questions": 1728,
+      "teacher_nll_mean": 0.004631209914347956
+    },
+    "query_gate": {
+      "initial_state_sha256": "53541e82a528393ebba9ad64417fcf0c73841dd996c9241507483928f08d0253",
+      "checkpoints": [
+        {
+          "step": 144,
+          "controller_sha256": "9cab7900f155b00cee276dc42efdbd788876d6ce2c84b35a81805917f5b8b343",
+          "optimizer_sha256": "a3ab4a5dab7e28227570d68203c2dea17574253f5350a1d233ae370c9c683501",
+          "state_sha256": "f05df2f096ffe6ffa57d1bd8eb7fd26c9cf363f453e71dc01b618c4d3fc61c7a"
+        },
+        {
+          "step": 288,
+          "controller_sha256": "030411f3fb5b9491ebcc088c79f573fb2b9c9ef3eba749650a55944a8b3916fa",
+          "optimizer_sha256": "f2272deffb5b7307d11a5f716960aa9e8f0c14ab1d5f37fc2eb35dd8bfdede6b",
+          "state_sha256": "03de7b9faace11df659702d33bffe262c4a56735382e465ffdebb6998a1e7ff4"
+        },
+        {
+          "step": 432,
+          "controller_sha256": "152c1d90d2b2e9cae7a303e31496b3b3eaafeb5acbfda1bdca5998df8bc934bf",
+          "optimizer_sha256": "572b92c93b68c4d87fc3d0710613dc2c8d660f9a89db3aaaae70d69d2cbd608d",
+          "state_sha256": "7cbd0614860a047cc5d00dfab67e8f8fed72eabe3eab2a7ffcf22d21ab9bbcd7"
+        }
+      ],
+      "new_parameters": 131072,
+      "fit_correct": 1727,
+      "fit_questions": 1728,
+      "teacher_nll_mean": 0.0009061031677514688
+    }
+  },
+  "prior_failed_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "all_data_observed_fit_not_confirmation": true,
+  "analysis_source_sha256": "9b9a4260ad6b908a3a22fe772e39fa9db6de812fe732a8c1ce4b26fadc7c57ea",
+  "completed_utc": "2026-11-15T16:27:51.420812+00:00"
+}

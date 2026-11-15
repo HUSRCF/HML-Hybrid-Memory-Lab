@@ -6012,7 +6012,7 @@
     "branch_decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
   },
   "last_completed_phase": "question_state_freeze_all6912audited_negative_outcome",
-  "next_research_step": "Continue existing pipeline41240 with no restart and no source edits. Query has reached final432checkpoint; complete all1728fit readouts for Query,Gate and joint plus independent full audit before any confirmation construction. Prepared exporter independently regrades all6912baseline+adapted fit outputs,all5184pairs and all1296steps only after audited completion.",
+  "next_research_step": "Back up complete observed-fit materials and final checkpoints; lock all audited final432weights and generate the already sealed fixed SET/COPY confirmation. Fit improvement is not held-out or architecture evidence.",
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
     "plan": "configs/copy_dependency_transfer_plan.json",
@@ -13264,7 +13264,7 @@
     "broader_research_goal_active": true
   },
   "learned_readout_controls": {
-    "status": "three_arm_fixed_budget_training_running_query432complete_full_fit_in_progress",
+    "status": "completed_all1296steps_all5184fit_readouts_independently_audited_and_all_fit_exports_regraded",
     "protocol": "configs/readout_adapter_training_plan.json",
     "protocol_sha256": "d8c7564a1dcaf73629a9d4a36fbd8a36f1bf566d4144b8a0adc1cfa664ae049b",
     "predecessor_sources_immutable": 268,
@@ -13277,7 +13277,7 @@
       "query_gate"
     ],
     "new_parameters_each": 131072,
-    "next_action": "Continue existing pipeline41240 with no restart and no source edits. Query has reached final432checkpoint; complete all1728fit readouts for Query,Gate and joint plus independent full audit before any confirmation construction. Prepared exporter independently regrades all6912baseline+adapted fit outputs,all5184pairs and all1296steps only after audited completion.",
+    "next_action": "Back up complete observed-fit materials and final checkpoints; lock all audited final432weights and generate the already sealed fixed SET/COPY confirmation. Fit improvement is not held-out or architecture evidence.",
     "implementation_started": true,
     "new_cpu_tests_passed": 8,
     "new_cpu_tests_seconds": 20.908,
@@ -13339,7 +13339,69 @@
       }
     },
     "pending_complete_fit_exporter": "/tmp/export_readout_adapter_fit.py",
-    "pending_complete_fit_exporter_sha256": "8eb0d0556e1db9ba8d85bbc110551ec660333e1d71704508dd945df3f1027855"
+    "pending_complete_fit_exporter_sha256": "8eb0d0556e1db9ba8d85bbc110551ec660333e1d71704508dd945df3f1027855",
+    "training_complete": true,
+    "scheduled_optimizer_updates": 1296,
+    "fit_readouts": 5184,
+    "training_audit_sha256": "b11fe2c5baf049d50d9e587ba64df22b736c41d682abebb40cb5dc43be6d0205",
+    "training_correction_audit_sha256": "108928ca0bea9edcba7070d227e1e76f33852482c6752eb8a3dac542f0c61450",
+    "complete_fit_export": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-fit-exports-20261115-01",
+    "complete_fit_export_receipt_sha256": "6007dba70ae97e43a715588f933f2b42bdd36deb65d52508a295345850d1c9cf",
+    "fit_only_summary": {
+      "fixed_gdn": {
+        "fit_correct": 1633,
+        "fit_questions": 1728,
+        "gain_vs_fixed_gdn": 0,
+        "regression_vs_fixed_gdn": 0,
+        "error_value_counts": {
+          "correct": 1633,
+          "non_integer": 0,
+          "matches_same_entity_other_record_value": 94,
+          "matches_other_entity_record_value": 1,
+          "unrecorded_value": 0
+        }
+      },
+      "query": {
+        "fit_correct": 1720,
+        "fit_questions": 1728,
+        "gain_vs_fixed_gdn": 92,
+        "regression_vs_fixed_gdn": 5,
+        "error_value_counts": {
+          "correct": 1720,
+          "non_integer": 0,
+          "matches_same_entity_other_record_value": 1,
+          "matches_other_entity_record_value": 6,
+          "unrecorded_value": 1
+        }
+      },
+      "gate": {
+        "fit_correct": 1715,
+        "fit_questions": 1728,
+        "gain_vs_fixed_gdn": 84,
+        "regression_vs_fixed_gdn": 2,
+        "error_value_counts": {
+          "correct": 1715,
+          "non_integer": 0,
+          "matches_same_entity_other_record_value": 6,
+          "matches_other_entity_record_value": 7,
+          "unrecorded_value": 0
+        }
+      },
+      "query_gate": {
+        "fit_correct": 1727,
+        "fit_questions": 1728,
+        "gain_vs_fixed_gdn": 95,
+        "regression_vs_fixed_gdn": 1,
+        "error_value_counts": {
+          "correct": 1727,
+          "non_integer": 0,
+          "matches_same_entity_other_record_value": 0,
+          "matches_other_entity_record_value": 1,
+          "unrecorded_value": 0
+        }
+      }
+    },
+    "prior_failed_criteria_unchanged": true
   },
   "readout_confirmation": {
     "status": "all372regression_tests_passed289sources_sealed_no_future_cases_generated",
@@ -13379,7 +13441,7 @@
       89006,
       89007
     ],
-    "next_action": "Wait for the existing training pipeline41240 to finish all3final432weights,all5184fit answers and complete independent audit; then run complete fit exporter,lock training bytes,and construct both unchanged prospective cohorts. All289sources stay frozen.",
+    "next_action": "All training gates are now complete. Execute the existing fixed confirmation pipeline after committing observed-fit results; reexecute training audit and pin all final files before any future case construction.",
     "full_tests_passed": 372,
     "full_tests_seconds": 463.121,
     "source_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-source-seal-20261115-01.json",

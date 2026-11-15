@@ -1,0 +1,15 @@
+{
+  "status": "all_observed_fit_outputs_independently_regraded",
+  "source_audit_sha256": "b11fe2c5baf049d50d9e587ba64df22b736c41d682abebb40cb5dc43be6d0205",
+  "files_sha256": {
+    "all-role-condition-cells.csv": "db8e7474a0eb6a0f461e222357631f4c9efe94b6ab211939930a13fa68ffb8c9",
+    "all-training-steps.csv": "b9b55cb0e0b10f4302823259883e56f83a7d660ec8b123361f4119b5cb06482b",
+    "analysis.source.py": "8eb0d0556e1db9ba8d85bbc110551ec660333e1d71704508dd945df3f1027855",
+    "fit-summary.pdf": "85a71fb0ecebce4d7f4c8ff5097d228e07295bbe66db00791986b48a2bf4e550",
+    "fit-summary.png": "7ab0cde69f9bdae75b0291e423c9c3a409ab614ff4cb46b60a1e8d4a75710e15",
+    "paired-vs-fixed-gdn.csv": "b3a4c1126beae468670461edd08325a01b7852a95bfb83228e660fb750e0e601",
+    "readouts.csv": "485b8647dd8791b2a7db8f83d8fc792058508a78754df25becb63c20b1e506b6",
+    "report.json": "216cc5dfbeeace0c93c79e849a5e12ddf98f3d1d5a5e722e8d6358b9d3bad8f6"
+  },
+  "fit_not_confirmation": true
+}
