@@ -27,7 +27,9 @@ initialization; paired views are dependent. These simple controls establish a st
 baseline and a transfer/retention problem, not an advantage for a new shared hybrid block.
 All 372 tests and 289 sealed sources passed; every learned readout's 200 normal histories
 match fixed GDN across all 48 cache fields, layouts, metadata and prefix logits.
-Complete raw tables, audits and plots are committed; full backup publication is in preparation.
+Complete raw tables, audits and plots are committed. The [complete backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/readout-confirmation-2026-11-16)
+is published; all three assets were downloaded and byte-verified. Next: same-budget SET/COPY-mixture
+simple controls before a shared-block method. The next stage is not yet trained or generated.
 
 **Completed: all three readout controls trained and all observed-fit answers audited.**
 The [complete training record](materials/updates/readout-adapters-20261115/README.md)

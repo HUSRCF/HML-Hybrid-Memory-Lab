@@ -4811,7 +4811,7 @@
     "phase": "fresh_question_query_mediation"
   },
   "training_started": true,
-  "current_conclusion": "Question-wide g=0,beta=0 is not a useful inference policy on this reused cohort. Group12/13/14state105/432versus412normal,5repairs312regressions;protected144to1. All18nonnumeric864/864. Does not uniquely locate historical damage or prove Shared architecture. All prior failed criteria remain false.",
+  "current_conclusion": "Fresh SET improves from814/864fixedGDN to859Query,856Gate,859joint across all8basestreams. Query/joint each add2protected errors;Gate preserves288/288. COPY joint falls14/48to9,11,10 despite similar aggregate accuracy. Same-family SET readout adaptation works;general relational transfer,necessary co-design and unique Query-address cause are unestablished. All prior failed criteria remain false.",
   "prepared_data": {
     "copy_generalization": "/media/990Pro/Code/SAS/datasets/memory_update/copy-generalization-v1",
     "status": "Frozen raw/oracle-slice/oracle-KV and matched short-update evaluations completed",
@@ -4998,7 +4998,7 @@
       "coverage": "Actual allfive cache-origin cuts, complete final-row KV and bookkeeping guards, source-cache mutation rejection after individual operations, original runtime greedy/gold raw-vector reconstruction, stopping/position/loss corruption checks and129-source input seal."
     }
   },
-  "last_completed_utc": "2026-11-15T13:03:16.135201+00:00",
+  "last_completed_utc": "2026-11-15T17:15:45.480806+00:00",
   "planned_blocked_reader_adaptation": {
     "status": "completed_and_audited",
     "plan": "configs/blocked_reader_adaptation_plan.json",
@@ -6011,8 +6011,8 @@
     "provenance": "/media/990Pro/Code/SAS/artifacts/memory_update/overwrite-history-diagnostics-20261114.provenance.json",
     "branch_decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
   },
-  "last_completed_phase": "question_state_freeze_all6912audited_negative_outcome",
-  "next_research_step": "Continue the existing live pipeline6705 without restart. Complete all6000physical readouts and independent full audit before aggregate performance claims;then retain every paired gain/regression,SETcondition andCOPYdepth/style/order/role. No tuning,checkpointselection orresampling.",
+  "last_completed_phase": "readout_confirmation",
+  "next_research_step": "Register same-budget SET/COPY-mixture simple readout controls before new code,training or data; test task-coverage explanations for COPY joint regressions and protected-readout regressions. Preserve all289predecessor sources and fixed completed checkpoints;fresh fixed evaluation cohorts must be registered. No next-stage training or generation has started. Completed confirmation is now observed development for any future changes. Shared hybrid architecture advantage remains unestablished.",
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
     "plan": "configs/copy_dependency_transfer_plan.json",
@@ -6392,8 +6392,8 @@
     "canonical_provenance_sha256": "fba6026e3617df5266fea3646edf80ae9c21b8ee96b68720fedaf150a7906843",
     "canonical_full8064_completed": true
   },
-  "latest_completed_diagnostic": "Allsixlocal_question_phase_freezes_lower_both_wordings_group3_protected144to1_all18non_integer",
-  "updated_utc": "2026-11-15T13:49:26.171939+00:00",
+  "latest_completed_diagnostic": "6000fresh_physical_answers_and6480logical_bindings_independently_audited_all5frozen_models",
+  "updated_utc": "2026-11-15T17:15:45.480806+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -6488,7 +6488,7 @@
     "completed_utc": "2026-11-14T14:05:50.100611+00:00",
     "scope": "Functional access dependence under fixed readouts, not proof of GDN forgetting, recurrent damage, a shared-interface advantage or new architecture. All48cases are related within8reused streams."
   },
-  "last_goal_turn_result": "Completed word-choice publication and all6912question-freeze readouts with343preinference tests,261immutable sources and exact control replays; simple freeze hypothesis not supported.",
+  "last_goal_turn_result": "Completed all6000registered fresh readouts,independent grading,allpaired gains/regressions and alltask/depth/role/seed cells; published1606file complete backup with all3remote assets roundtrip byte verified. No scientific289source change oradditional training.",
   "canonical_oracle_replication": {
     "status": "completed_independently_audited_exported_visually_inspected",
     "plan": "/home/husrcf/Code/SAS/configs/canonical_oracle_sufficiency_replication_plan.json",
@@ -9898,8 +9898,8 @@
   "repository": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab",
   "resumed_utc": "2026-11-14T18:25:03.068726+00:00",
   "resume_reason": "User explicitly asked to continue experiments after verified GitHub backup completion.",
-  "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-publication-20261115-01.json",
-  "current_phase": "version_address_observation_native_checks",
+  "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-publication-20261116-01.json",
+  "current_phase": "readout_confirmation_complete_published_next_baseline_registration_pending",
   "matched_shared_training_timing": {
     "status": "completed_audited_and_published_confirmation_all_three_criteria_failed",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
@@ -13162,7 +13162,7 @@
     "remote_assets_byte_verified": 3,
     "committed_snapshot_files_byte_verified": 325
   },
-  "latest_published_phase": "learned_readout_controls",
+  "latest_published_phase": "readout_confirmation",
   "version_address_observation": {
     "status": "complete_audited_exported_and_published_remote_bytes_verified",
     "protocol": "configs/version_address_audit_plan.json",
@@ -13327,15 +13327,15 @@
     "training_progress_snapshot": {
       "query": {
         "optimizer_steps": 432,
-        "fit_readouts": 310
+        "fit_readouts": 1728
       },
       "gate": {
-        "optimizer_steps": 0,
-        "fit_readouts": 0
+        "optimizer_steps": 432,
+        "fit_readouts": 1728
       },
       "query_gate": {
-        "optimizer_steps": 0,
-        "fit_readouts": 0
+        "optimizer_steps": 432,
+        "fit_readouts": 1728
       }
     },
     "pending_complete_fit_exporter": "/tmp/export_readout_adapter_fit.py",
@@ -13412,7 +13412,7 @@
     "remote_assets_verified": 3
   },
   "readout_confirmation": {
-    "status": "complete_audited_exported_and_local_backup_byte_verified",
+    "status": "complete_audited_exported_and_published_remote_bytes_verified",
     "protocol": "configs/readout_adapter_confirmation_plan.json",
     "protocol_sha256": "30fe0e1107b57ff48dec43a2015ddd29c4e8f9c168b2b8e4dd1895c326a8fb33",
     "predecessor_sources_immutable": 282,
@@ -13449,7 +13449,7 @@
       89006,
       89007
     ],
-    "next_action": "Publish the complete fixed-model confirmation Release and independently roundtrip-verify all remote assets. No new inference or scientific source changes.",
+    "next_action": "Register same-budget SET/COPY-mixture simple readout controls before new code,training or data; test task-coverage explanations for COPY joint regressions and protected-readout regressions. Preserve all289predecessor sources and fixed completed checkpoints;fresh fixed evaluation cohorts must be registered. No next-stage training or generation has started. Completed confirmation is now observed development for any future changes. Shared hybrid architecture advantage remains unestablished.",
     "full_tests_passed": 372,
     "full_tests_seconds": 463.121,
     "source_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-source-seal-20261115-01.json",
@@ -13675,6 +13675,12 @@
     "package_receipt_sha256": "0c5c4915948d082e4a8704039998af74155a2a767baad2c6b79de16b2a7cd653",
     "archive_sha256": "bf9c9e7b36523b0fafc443efbd5e834e8b6da94fd92af4cb18d47dbebe65934d",
     "archive_bytes": 41425377,
-    "archive_files": 1606
+    "archive_files": 1606,
+    "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-publication-20261116-01.json",
+    "publication_receipt_sha256": "75043c41bef62c3e100d7b0fab81cc558dd8ff520ac450604fc547db95ec41d7",
+    "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/readout-confirmation-2026-11-16",
+    "release_target_commit": "3d7163a74eca19d8d9b85d7611ab2801591ff755",
+    "committed_snapshot_files_verified": 350,
+    "remote_assets_verified": 3
   }
 }
