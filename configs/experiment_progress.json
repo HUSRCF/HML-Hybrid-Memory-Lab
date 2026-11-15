@@ -6393,7 +6393,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "6000fresh_physical_answers_and6480logical_bindings_independently_audited_all5frozen_models",
-  "updated_utc": "2026-11-15T17:56:39.793756+00:00",
+  "updated_utc": "2026-11-15T18:04:49.199209+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -13734,5 +13734,17 @@
       "terminal": false
     },
     "scheduled_optimizer_updates_started": true
+  },
+  "mixture_confirmation": {
+    "status": "registered_before_confirmation_implementation_or_generation",
+    "protocol": "configs/readout_mixture_confirmation_plan.json",
+    "protocol_sha256": "8b5c777474e14bcc2debcef76aa6c9cf16e46d0843dd999709548369ac0dda69",
+    "planned_sources": 303,
+    "predecessor_sources_immutable": 296,
+    "cpu_tests_planned": 8,
+    "full_cpu_tests_required": 388,
+    "cases_generated": false,
+    "inference_started": false,
+    "next_action": "Implement fixedsevenmodel/observed-fresh confirmation usingonlyknown76000/61000CPUfixtures;run388tests andseal303sources. Keep live training41032running;generatefuturecases onlyaftercomplete independent training audit andcheckpointlock."
   }
 }
