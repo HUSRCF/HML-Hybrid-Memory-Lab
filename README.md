@@ -5,7 +5,15 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; the complete fixed-input recurrent-hold factorial is audited.**
+**Status: active; the next single-gate decomposition is registered before inference.**
+The [registered component phase](materials/updates/gate-components-20261115/README.md)
+separates native decay from the complete Delta correction on the same inputs,
+crossed with full/oracle reading. It adds 6,720 readouts across all five fixed
+configurations; the preceding 6,720 readouts remain labeled archived references.
+No training or scaleup is triggered. Budget-matched semantic-specificity controls
+remain a separate next step.
+
+The complete fixed-input recurrent-hold factorial is audited.
 All 6,720 readouts, 229 regression tests, two opposite-order 360-readout smokes
 and 120 complete historical-cache preservation checks passed operational gates.
 The original tokens and positions stay fixed. Native joint accuracy is 1/48

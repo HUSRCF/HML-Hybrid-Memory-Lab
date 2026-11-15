@@ -1,0 +1,276 @@
+{
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "model_key": "it",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "models": {
+    "native": null,
+    "shared": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "shared",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/shared/step-000432/controller.safetensors",
+      "checkpoint_sha256": "3ac57cfd86116dc712aacd14de526ccc3cb8f60c7348317fbacc16910914d8fc",
+      "checkpoint_metadata_sha256": "b2bc536ef797684ef00736b8a2622eb94dbe7c6d6d6b55a8f672346a35663225",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.007630780778693288,
+        "teacher_numeric_tokens_correct": 2585,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "shared_question_trained_all": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
+      "training_arm": "shared_question",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01/shared_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "1aa88746b1e317047b6095e21cdfc70f7008b1205c79378b1a740e2df3410035",
+      "checkpoint_metadata_sha256": "941e41380f5d7f01de211044c598269f7c4ae5850d6226302f019d4d54f89e2a",
+      "manifest_sha256": "226ce6120ff2405928b9e9081b08b530333255a31516da79ad98f832c721d9bc",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-audit-20261115-01.json",
+      "audit_sha256": "58dc86ad25e8d858e0077d3b1e5ae7e4950130b02e6d8e6ec0a7387be799e49c",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005023321897164545,
+        "teacher_numeric_tokens_correct": 2590,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "shared_question_trained_question": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
+      "training_arm": "shared_question",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01/shared_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "1aa88746b1e317047b6095e21cdfc70f7008b1205c79378b1a740e2df3410035",
+      "checkpoint_metadata_sha256": "941e41380f5d7f01de211044c598269f7c4ae5850d6226302f019d4d54f89e2a",
+      "manifest_sha256": "226ce6120ff2405928b9e9081b08b530333255a31516da79ad98f832c721d9bc",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-audit-20261115-01.json",
+      "audit_sha256": "58dc86ad25e8d858e0077d3b1e5ae7e4950130b02e6d8e6ec0a7387be799e49c",
+      "final_step": 432,
+      "token_policy": "question",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005023321897164545,
+        "teacher_numeric_tokens_correct": 2590,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "gdn_all_tokens": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "gdn_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+      "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.006321374711538502,
+        "teacher_numeric_tokens_correct": 2584,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    }
+  },
+  "model_order": [
+    "native",
+    "shared",
+    "shared_question_trained_all",
+    "shared_question_trained_question",
+    "gdn_all_tokens"
+  ],
+  "generation": {
+    "max_tokens": 12,
+    "prefill": "full",
+    "score_batch": false
+  },
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "precision_addendum": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_precision_addendum.json",
+  "precision_addendum_sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc",
+  "status": "registered_before_component_data_copy_or_inference",
+  "registered_utc": "2026-11-15T00:33:15.978879+00:00",
+  "profile": "gate_component_factorial",
+  "purpose": "Separate global decay suppression from Key-directed Delta-correction suppression, crossed with full/oracle historical reading on fixed original inputs. Diagnose preceding conditional effects without claiming semantic routing or a learned method.",
+  "training": false,
+  "new_adapters": false,
+  "new_models": false,
+  "new_task_cases": false,
+  "new_environment": false,
+  "local_files_only": true,
+  "prospective_unseen_confirmation": false,
+  "architecture_effectiveness_claim": false,
+  "can_change_prior_gates": false,
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/oracle-write-hold-factorial-20261115-01",
+  "source_manifest_sha256": "290d0cd3d8a4dc63340bf0cda5be695238ab581c641b0703f0feaa4bb8632fd3",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/oracle-write-hold-primary-audit-20261115-01.json",
+  "source_audit_sha256": "7be39244115b2f489fabcb474d7583afc4bdec862ad8336adef905ecd3f9e680",
+  "source_protocol": "configs/oracle_write_hold_factorial_plan.json",
+  "source_protocol_sha256": "b05fc0ee3b1a1134e54e2a0c43ee815a650b08599c9654122e87682d1f9710e1",
+  "source_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/oracle-write-hold-factorial-v1",
+  "source_dataset_manifest_sha256": "a150a9063adbb8ae93d25341fc639bfe9eb13926892383f3202bd94a8fb8f0d0",
+  "preserved_runtime_source_count": 180,
+  "regimes": [
+    "decay_full",
+    "delta_full",
+    "decay_oracle",
+    "delta_oracle"
+  ],
+  "archived_regimes": [
+    "full",
+    "hold",
+    "oracle",
+    "hold_oracle"
+  ],
+  "unified_order": [
+    "full",
+    "decay_full",
+    "delta_full",
+    "hold",
+    "oracle",
+    "decay_oracle",
+    "delta_oracle",
+    "hold_oracle"
+  ],
+  "dataset_destination": "/media/990Pro/Code/SAS/datasets/memory_update/gate-component-factorial-v1",
+  "counts": {
+    "base_streams": 8,
+    "cases": 48,
+    "physical_queries": 336,
+    "related_bindings": 432,
+    "models": 5,
+    "new_regimes": 4,
+    "archived_regimes": 4,
+    "new_primary_physical_readouts": 6720,
+    "new_related_bindings": 8640,
+    "archived_physical_readouts": 6720,
+    "unified_logical_cells": 13440,
+    "unified_related_bindings": 17280
+  },
+  "smoke_queries_per_model": 18,
+  "smoke_readouts_per_order": 360,
+  "smoke_orders": [
+    "registered_forward",
+    "registered_reverse"
+  ],
+  "data_source_files": 183,
+  "runtime_source_files": 188,
+  "intervention": {
+    "mask": "Exactly the prior original query-specific non-support record token positions. All prelude/support/question/answer updates retained; original token IDs, positions, boundaries and scoring unchanged.",
+    "decay": "Only in_proj_a target rows set to negative infinity, yielding log-decay g=0. Beta remains its exact native projected/sigmoid value; Delta erase/write continues.",
+    "delta": "Only in_proj_b target rows set to negative infinity, yielding beta=0. Native projected log-decay remains exact; global forgetting continues. Beta suppresses both Key-directed erase and insertion, so this does not separately isolate erase from write.",
+    "scope": "All18GDNlayers; all6Attention layers remain in all configurations. Unchanged Q/K/V, convolution, residuals, MLP and reads continue. Changed hidden representations may affect later gates and KV.",
+    "reader": "Full or unchanged QuestionKVReadout oracle on question/answer rows only. No restriction on historical rows.",
+    "endpoint_validation": "New component class also supports none/both ONLY for operational endpoint controls. For all12fixed controls x all5models x all4archived regimes, reproduce the exact5fields from the completed prior primary. No old rows silently recounted as new primary measurements.",
+    "kernel_validation": "Actual installed native chunk/recurrent kernels tested before task outputs on lengths1/7/65 (chunk) and1/7 (recurrent), local generator seed31297. Beta0/log-decay=-0.01 must match initial_state*exp(sum(g)) within atol0.00005/rtol0.0001, and be exactly independent of a different Q/K/V. Log-decay0/beta0.5 with one-hot Keys must match explicit sequential row interpolation within atol0.00005/rtol0.0001. Require finite outputs and no mutation of initial state.",
+    "gate_validation": "Observe actual kernel g/beta on every new readout, exact to corresponding native projections on unforced components/rows; finite throughout. Report per-layer targeted/forced gate rows.",
+    "auxiliary_prefix_verification": "All12fixed controls x all5models x2newcomponent policies: oracle reader alone preserves all48historical cache tensors, bookkeeping and logits plus12historicalKV slices. Repeat full and restricted readouts against main control records.",
+    "arithmetic": "Unchanged frozen adapter FP64 accumulation/FP32 output profile, native BF16 eager model and FLA kernels. No kernel or prior source edits."
+  },
+  "contrasts": [
+    [
+      "decay_full",
+      "full"
+    ],
+    [
+      "delta_full",
+      "full"
+    ],
+    [
+      "decay_oracle",
+      "oracle"
+    ],
+    [
+      "delta_oracle",
+      "oracle"
+    ],
+    [
+      "hold",
+      "decay_full"
+    ],
+    [
+      "hold",
+      "delta_full"
+    ],
+    [
+      "hold_oracle",
+      "decay_oracle"
+    ],
+    [
+      "hold_oracle",
+      "delta_oracle"
+    ],
+    [
+      "decay_oracle",
+      "decay_full"
+    ],
+    [
+      "delta_oracle",
+      "delta_full"
+    ]
+  ],
+  "loss_interactions": {
+    "gates_full": "L(hold)-L(decay_full)-L(delta_full)+L(full)",
+    "gates_oracle": "L(hold_oracle)-L(decay_oracle)-L(delta_oracle)+L(oracle)",
+    "reader_decay": "L(decay_oracle)-L(decay_full)-L(oracle)+L(full)",
+    "reader_delta": "L(delta_oracle)-L(delta_full)-L(oracle)+L(full)",
+    "three_way": "gates_oracle-gates_full"
+  },
+  "requirements": [
+    "Freeze all180 prior measurement sources and all20prior raw files, references and failed gates; register before new data copies or component inference.",
+    "All5fixed models, all336physicalqueries/432bindings, all3depths/2styles; no query/model/layer/seed selection, new training, downloads, precision changes or gate threshold tuning.",
+    "Run full tests, then independently audit both opposite360readout smokes. All raw bytes, endpoint proofs, attention statistics, prefixes and affine counts must agree before6720new primary readouts.",
+    "Archive references retain their original source run, manifest/raw hashes and origin labels. Unified13440cell summaries contain6720new and6720archived observations; do not call them13440new measurements.",
+    "Exact actual native anchor/before-attach/attached-none/detached replay on12controls permodel; exact all4endpoints on12controls permodel; actual Attention observation on all12controls/condition/model; original Q-only native prefix equality on all56unique histories.",
+    "Report every role/joint/depth outcome and paired repair/regression, all40unified cells and descriptive loss interactions. No new architecture success threshold.",
+    "Complete auxiliary prefix checks before final interpretation/publication; preserve failed attempts and source snapshots. Publish full evidence and byte-verified GitHub archive."
+  ],
+  "interpretation_limits": [
+    "All interventions use future query support labels, so these are hindsight oracle controls, not online update policies or a learned selector.",
+    "The experiment separates global decay from the entire Delta correction, not erase from insertion within Delta.",
+    "Comparing values of separate gates cannot establish semantic specificity: update-count/budget matching remains a separate necessary control before such a claim.",
+    "The new gate interventions can alter later representations and contextualized KV. Neither positive nor negative effects uniquely establish natural recurrent-state damage.",
+    "Native and the four trained/deployed configurations must all be retained, including prior Shared/all oracle48to47regression. No training/scaleup is triggered by an oracle maximum.",
+    "Only8reused base streams; variants/queries/bindings correlated and not independent confirmation.",
+    "Loss interactions are descriptive; signs do not prove path synergy/redundancy or architectural superiority."
+  ]
+}

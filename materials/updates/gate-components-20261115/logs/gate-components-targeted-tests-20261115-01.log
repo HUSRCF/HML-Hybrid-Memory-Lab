@@ -1,0 +1,10 @@
+test_all_models_and_eight_cells_registered_without_new_training (tests.test_gate_components.ComponentTests.test_all_models_and_eight_cells_registered_without_new_training) ... ok
+test_both_endpoint_matches_old_implementation_exactly (tests.test_gate_components.ComponentTests.test_both_endpoint_matches_old_implementation_exactly) ... ok
+test_invalid_mode_rejected_before_hooks (tests.test_gate_components.ComponentTests.test_invalid_mode_rejected_before_hooks) ... ok
+test_reader_and_gate_axes_are_separate (tests.test_gate_components.ComponentTests.test_reader_and_gate_axes_are_separate) ... ok
+test_single_components_leave_other_native_gate_exact (tests.test_gate_components.ComponentTests.test_single_components_leave_other_native_gate_exact) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.040s
+
+OK

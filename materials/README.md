@@ -7,7 +7,13 @@
 实验使用 Qwen3.5-2B IT；不能将这些结果当作 Base 模型的实测结果，也尚未
 实现显式的共享语义依赖控制器。
 
-## New complete fixed-input recurrent-hold controls
+## Registered gate-component decomposition
+
+[衰减与Delta修正分解](updates/gate-components-20261115/README.md)已在新推理前登记。
+全部五配置、336问题及原始输入保持；四种新条件计划6720次正式读出，历史6720次
+参考单独标记。先验证原生内核与旧端点重放，不训练、不扩模。等预算语义控制仍待另行登记。
+
+## Previous complete fixed-input recurrent-hold controls
 
 [固定原始输入的递归更新阻断诊断](updates/oracle-write-hold-20261115/README.md)
 完成6720次正式读出及独立审计，并通过229项测试、两轮各360次的反向顺序运行
