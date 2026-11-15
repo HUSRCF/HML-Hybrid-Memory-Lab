@@ -62,7 +62,8 @@ def package(audit,output):
         add(ROOT/name,ROOT,'code')
     tree(ROOT/'materials/updates/version-query-20261115',ROOT,'code')
     for name in ('README.md','materials/README.md','.gitattributes','requirements.txt','configs/experiment_progress.json',
-        'scripts/run_version_query_pipeline.sh','scripts/run_version_query_corrected_pipeline.sh','scripts/export_version_query.py','scripts/package_version_query.py','scripts/publish_version_query.py'):
+        'scripts/run_version_query_pipeline.sh','scripts/run_version_query_corrected_pipeline.sh','scripts/export_version_query.py',
+        'scripts/version_query_observations.py','scripts/package_version_query.py','scripts/publish_version_query.py'):
         add(ROOT/name,ROOT,'code')
     for model,state in m['models'].items():
         for suffix,field in (('.jsonl','results_sha256'),('.references.jsonl','references_sha256')):

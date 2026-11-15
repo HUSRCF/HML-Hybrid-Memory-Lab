@@ -5,25 +5,24 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; all 3,456 normal-update load readouts are independently audited.**
-The [complete normal-update diagnostic](materials/updates/natural-load-20261115/README.md)
-retains all 36 conditions, 576 episode cells and all baseline errors across eight fresh
-SET streams with two paired renamings. All 308 tests and exact opposite-order checks passed;
-240 measurement sources remain sealed. The existing frozen GDN adapter scores 821/864 Full
-and 864/864 with privileged Oracle evidence. Its protected account is correct in all 288
-answers; 40 of 43 Full errors emit another version of the queried account's value.
-The load effect is not monotonic: historical reading after 512 related updates improves
-from 16/32 to 28/32 when active accounts increase from 2 to 16. These are descriptive output
-patterns, not proof of a recurrent-state mechanism or a new architecture's benefit.
-Maximum history is 7,519 tokens; no new training, model download or environment. All prior
-failed criteria remain false. The complete backup is published. Matched one-token version-question controls are
-registered before new code, data or inference. Their [implementation and input seal](materials/updates/version-query-20261115/README.md)
-passed all 319 tests. Both corrected opposite-order checks match exactly, and all 1,728
-new task readouts have now executed. Terminal smoke/primary replay validation stopped on
-a second integer/string JSON layer-key comparison. The failed complete run, earlier partial
-failure and original 250 sources are preserved. A separately registered four-source CPU-only
-validation recovery is under regression; it repeats no model inference. Scientific results
-will be reported after complete independent validation.
+**Status: active; all 1,728 single-token version-question readouts are independently audited.**
+The [complete wording diagnostic](materials/updates/version-query-20261115/README.md)
+retains all 1,728 archived references and all 72 new/archived conditions on eight reused
+SET streams. Every new question pair has identical history and positions, with only one
+of 24 question tokens changed. The frozen GDN adapter scores 412/432 with current/initial
+and 402/432 with last/first: 3 repairs and 13 regressions. Of 50 new wrong answers, 49
+emit another version of the queried account. Seventeen paired questions fail under both
+new wordings with the same wrong value. These are descriptive output patterns, not a
+unique memory mechanism or architecture gain. All 331 tests and exact model-order checks
+passed; 254 sources remain sealed. Both failed runs are preserved; terminal validation
+used an explicitly registered CPU-only recovery with no repeated inference. Complete
+backup publication is pending. All prior failed scientific criteria remain false.
+
+The [previous normal-update diagnostic](materials/updates/natural-load-20261115/README.md)
+retains all 3,456 readouts and its published backup. The existing GDN adapter scores
+821/864 Full; 40 of 43 errors emit another version of the queried account. Protected
+account reading is 288/288, and load effects are nonmonotonic. Maximum history remains
+7,519 tokens. No new training, environment or model download.
 
 **Previous diagnostic: all 4,608 single-layer question-Query readouts independently audited.**
 The [complete layer diagnostic](materials/updates/query-layer-20261115/README.md) retains all 24 new

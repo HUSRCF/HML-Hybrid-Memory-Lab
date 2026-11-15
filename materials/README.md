@@ -1,6 +1,16 @@
 # Research materials
 
-Latest: [normal-update load diagnostic](updates/natural-load-20261115/README.md).
+Latest: [single-token version-question control](updates/version-query-20261115/README.md).
+All 1,728 new readouts and 1,728 labelled archived references are independently audited.
+Frozen GDN: current/initial 412/432; last/first 402/432; 3 repairs and 13 regressions.
+49 of 50 new wrong answers emit another recorded version of the queried account.
+17 pairs fail under both new wordings with the same value. All 331 tests, 254 sealed
+sources and exact model-order checks passed. Both failed native runs and the explicitly
+registered CPU-only validation recovery are preserved; no repeated inference or new
+training. All old failed scientific criteria remain false. Complete incremental backup
+publication is pending.
+
+Previous: [normal-update load diagnostic](updates/natural-load-20261115/README.md).
 All 3,456 readouts, 36 cells, 576 episode cells and all baseline errors are independently
 audited. The frozen GDN adapter is 821/864 Full and 864/864 privileged Oracle; 40 of its
 43 Full errors output another recorded version of the queried account. Protected-account

@@ -1,0 +1,12 @@
+{
+  "status": "all_new_and_archived_condition_plots_visually_inspected",
+  "created_utc": "2026-11-15T11:18:57.549817+00:00",
+  "layout": "Separate new/archived4x3panels; all9conditions per panel; each role/style/model/condition denominator16; all labels visible; U/R/L explained in adjacent report.",
+  "files_sha256": {
+    "new-all-conditions.png": "7789aca4d23aa32803fe11521e87b1fc56cf921fa2e4de23788870bbf1f2605a",
+    "new-all-conditions.svg": "ef536574f433e84497af06c4d63732c26b628390a78f1d5cfcf3d4f89c171c57",
+    "archived-all-conditions.png": "397cf789405fa98d3d6c7b6c1c7e6f64c9070dc3d6af0f4fc69c81fdcbf0709b",
+    "archived-all-conditions.svg": "f09832e5a862bd13eb00d2a978f8d19579ca923b2a8367f970d252f77bf07436"
+  },
+  "no_results_filtered": true
+}

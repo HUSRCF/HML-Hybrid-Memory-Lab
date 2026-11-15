@@ -1,0 +1,93 @@
+{
+  "status": "complete_new_and_archived_exports_roundtrip_verified",
+  "audit_sha256": "60685a9a4778bf7ff3d06aba0f90580a45b8d95647575212fb002f26dcb6e90a",
+  "manifest_sha256": "526ad4d74363e51b8246381ce2b4a81922158f40c2952391ae01eb0b4e4c126a",
+  "rows": {
+    "primary": 1728,
+    "archived-references": 1728,
+    "reader-probabilities": 20736,
+    "token-pairs": 432,
+    "cells": 72,
+    "role-cells": 216,
+    "episodes": 1152,
+    "state-to-event-pairs": 864,
+    "paired-contrasts": 54,
+    "per-seed-contrasts": 432,
+    "value-attribution": 3456
+  },
+  "files": {
+    "archived-all-conditions.png": {
+      "bytes": 276518,
+      "sha256": "397cf789405fa98d3d6c7b6c1c7e6f64c9070dc3d6af0f4fc69c81fdcbf0709b"
+    },
+    "archived-all-conditions.svg": {
+      "bytes": 299891,
+      "sha256": "f09832e5a862bd13eb00d2a978f8d19579ca923b2a8367f970d252f77bf07436"
+    },
+    "archived-references.csv": {
+      "bytes": 555229,
+      "sha256": "51e82a5654f3e35c0b04ecfb7738932631dd6618f2d0881a752a257424fa255b"
+    },
+    "cells.csv": {
+      "bytes": 5332,
+      "sha256": "8f2448ef4939a08e663ccf0e9ecc27521287413cbf142dd789272d32f43e000d"
+    },
+    "episodes.csv": {
+      "bytes": 99461,
+      "sha256": "587748adada5dceb4ab44ee70abe12bbeea34b0a07b1667f8a6d0398dba97cc3"
+    },
+    "export-source.py": {
+      "bytes": 9337,
+      "sha256": "e2b48b13a32075538b392c4fee5dca8690b4e5cd2e6c7435ac395c387720f721"
+    },
+    "metrics.json": {
+      "bytes": 3082541,
+      "sha256": "313558643a9963573629f232630454af06683a1db882165ae93059b3605d8e51"
+    },
+    "new-all-conditions.png": {
+      "bytes": 275919,
+      "sha256": "7789aca4d23aa32803fe11521e87b1fc56cf921fa2e4de23788870bbf1f2605a"
+    },
+    "new-all-conditions.svg": {
+      "bytes": 298480,
+      "sha256": "ef536574f433e84497af06c4d63732c26b628390a78f1d5cfcf3d4f89c171c57"
+    },
+    "paired-contrasts.csv": {
+      "bytes": 4519,
+      "sha256": "e3314053ac69cd4019d3ab7603595abf45445f08b64478a6338768788192e9c1"
+    },
+    "per-seed-contrasts.csv": {
+      "bytes": 36802,
+      "sha256": "6c5fa2ec7484d5f2d9c623ffff25730271e322916a8824a8ccf971afa2073e53"
+    },
+    "primary.csv": {
+      "bytes": 678046,
+      "sha256": "ffa20cf0a21bdeb15ee05ef4fc6a041610f459edae966f2c35336e43a7fd828e"
+    },
+    "reader-probabilities.csv": {
+      "bytes": 2942676,
+      "sha256": "873dec7b3835ef30090f05e0d38f696ccaf2d3b798013831747f380f135cf746"
+    },
+    "report.md": {
+      "bytes": 6413,
+      "sha256": "21163da0d172949ee120cdfac22123941c252a9e4e4b6046da984a183d7f2193"
+    },
+    "role-cells.csv": {
+      "bytes": 19326,
+      "sha256": "4266144b9844453e09bdd41e1a562d2ce6e7c970f109544b106a61e7885a78a0"
+    },
+    "state-to-event-pairs.csv": {
+      "bytes": 234412,
+      "sha256": "0449579d87e5a136d7876b27131c1a73ba7f141b0773ff3ebbb2ba907a39ff00"
+    },
+    "token-pairs.csv": {
+      "bytes": 163172,
+      "sha256": "cd55e031c9c27540bd6e99c7a08e2dd65c69500bb2c7b50612233e5ff20d801e"
+    },
+    "value-attribution.csv": {
+      "bytes": 666194,
+      "sha256": "163de8f5d24205f27e51c4cb6e3c8099d04dd83af511a45565d9cc7fc804f8b2"
+    }
+  },
+  "export_source_sha256": "e2b48b13a32075538b392c4fee5dca8690b4e5cd2e6c7435ac395c387720f721"
+}
