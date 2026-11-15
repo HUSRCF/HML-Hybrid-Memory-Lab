@@ -12488,7 +12488,7 @@
     "primary_scientific_results_published": true
   },
   "post_encoding_updates": {
-    "status": "dataset_and206sources_sealed_tests259_passed_before_native_inference",
+    "status": "opposite510smokes_exact_equivalence_passed_primary_pipeline_started",
     "previous_goal_turn_classification": "progress: completed13440new budget controls, full audit and published byte-verified complete GitHub Release; exposed initial-encoding confound",
     "protocol": "configs/post_encoding_update_plan.json",
     "protocol_sha256": "ccd180ff352e56064f1eb9bbd017e41c285f49cdf16ce39764992467d9a8bfd8",
@@ -12517,9 +12517,9 @@
     "new_training": false,
     "new_environment": false,
     "new_models": false,
-    "new_model_inference_started": false,
-    "last_updated_utc": "2026-11-15T04:28:14.353989+00:00",
-    "next_action": "Push registered data and immutable measurement sources, then execute opposite-order510smokes, audit exact equality and run the gated8160primary.",
+    "new_model_inference_started": true,
+    "last_updated_utc": "2026-11-15T04:37:52.631933+00:00",
+    "next_action": "Verify opposite-order exact equality, then execute all8160cached-prefix primary readouts and independently audit all170cells.",
     "implemented_sources": 206,
     "completed_full_suite": {
       "tests": 259,
@@ -12531,6 +12531,12 @@
     "auxiliary_import_guard_failure_preserved": true,
     "registered_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/post-encoding-updates-v1",
     "dataset_manifest_sha256": "d3e65bc72abd1a901c26c4c69f768bb83d9095c6bb2d9e0987ffa2a8545a0051",
-    "registered_utc": "2026-11-15T04:27:24.177953+00:00"
+    "registered_utc": "2026-11-15T04:27:24.177953+00:00",
+    "smoke_forward_audit": "materials/updates/post-encoding-20261115/post-encoding-smoke-forward-audit-20261115-01.json",
+    "smoke_reverse_audit": "materials/updates/post-encoding-20261115/post-encoding-smoke-reverse-audit-20261115-01.json",
+    "first_inference_registration_commit": "dc42f24db23261020369cc18e52259d74aa04239",
+    "git_source_and_registered_data_bytes_verified": 212,
+    "smoke_equivalence": "materials/updates/post-encoding-20261115/post-encoding-smoke-equivalence-20261115-01.json",
+    "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/post-encoding-updates-20261115-01"
   }
 }

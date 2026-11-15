@@ -1,0 +1,23 @@
+{
+  "status": "audited_post_encoding_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/post-encoding-smoke-reverse-20261115-01",
+  "manifest_sha256": "03a453acb2386fee981bec24dbd85230750d12065ec72d6f068fe54bb7d23a24",
+  "dataset_manifest_sha256": "d3e65bc72abd1a901c26c4c69f768bb83d9095c6bb2d9e0987ffa2a8545a0051",
+  "primary_readouts_audited": 510,
+  "source_caches_audited": 85,
+  "tail_conditions_audited": 80,
+  "noop_control_readouts_audited": 40,
+  "legacy_operational_readouts": 240,
+  "source_files_verified": 206,
+  "question_only_native_memory_exact": true,
+  "original_ideal_kernel_failure_preserved": true,
+  "baseline_failures_excluded": 0,
+  "prior_timing_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "architecture_effectiveness_claim": false,
+  "metrics": null,
+  "analysis_source_sha256": "e7274522f4bf814a9ec213c76db53a17101672fc892cef48d05171545c8a736b"
+}
