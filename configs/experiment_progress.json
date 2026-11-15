@@ -13262,5 +13262,21 @@
     "committed_snapshot_files_byte_verified": 311,
     "remote_assets_roundtrip_verified": 3,
     "broader_research_goal_active": true
+  },
+  "learned_readout_controls": {
+    "status": "protocol_registered_before_implementation",
+    "protocol": "configs/readout_adapter_training_plan.json",
+    "protocol_sha256": "d8c7564a1dcaf73629a9d4a36fbd8a36f1bf566d4144b8a0adc1cfa664ae049b",
+    "predecessor_sources_immutable": 268,
+    "planned_sources": 276,
+    "training_examples": 1728,
+    "optimizer_steps_per_arm": 432,
+    "arms": [
+      "query",
+      "gate",
+      "query_gate"
+    ],
+    "new_parameters_each": 131072,
+    "next_action": "Implement and CPU-test causal local q/gate adapters, regular cache clones and constant-input frozen arithmetic; seal full source/tests before a real throwaway one-update smoke. No training or confirmation data yet."
   }
 }

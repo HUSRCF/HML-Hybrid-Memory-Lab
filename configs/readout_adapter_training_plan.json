@@ -1,0 +1,210 @@
+{
+  "profile": "frozen_gdn_learned_query_output_gate_controls_v1",
+  "status": "registered_before_new_implementation_packet_or_training",
+  "registered_utc": "2026-11-15T14:48:11.165122+00:00",
+  "question": "Can matched question/answer-trained local attention Query or output-gate adapters improve actual version reading over the fixed strong GDN adapter while every fact-prefix cache remains identical?",
+  "scope": "Simple learned readout controls, not a new joint hybrid architecture or a proof that weight ranking causes errors. Preserve the wider co-design question and test COPY transfer before broad claims.",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/version-address-primary-20261115-01",
+  "source_manifest_sha256": "798b044b2deb77c7b2e384f9d892fcfa3481e7266cf10f8e8fbc9f037be6e102",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-primary-audit-20261115-01.json",
+  "source_audit_sha256": "a0f2317fd09b7ec9f068d717e20fb18ea2a66da95e2968af6f22c2c0d720bcf9",
+  "source_publication": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-publication-20261115-01.json",
+  "source_publication_sha256": "fb51ce8b2c0388fd1cd9b593c9f1c81b80d2f672940a7fca5cedf06b0f1a76b6",
+  "source_release": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/version-address-observation-2026-11-15",
+  "source_packet": "/media/990Pro/Code/SAS/datasets/memory_update/version-address-observation-v1",
+  "source_packet_manifest_sha256": "138f248163f886c6ef95521f26ae14f46ebae56a7df06cfb97195ad69d6c16f8",
+  "source_payload_sha256": {
+    "plan.json": "f3e1867a24b83bacbc5d5fbab0b2be682d818b27808a2f1d52082dc780da3bbe",
+    "cases.json": "7d9a5068ff0a540e1b282cfccec7ce92759c0b93c0c72f89231b1d6e5e21f477",
+    "registry.json": "daaccb317a6fd73077446b28100859aea6319dcab779aa4f7635fdb06af0fc1b",
+    "queries.json": "cafe6c39ca7c4bf233a5c9f8a33520512d3d57ea67e18a82ee117d23aab4f368",
+    "references.json": "078c261c37268c6cae7a3c4f3171078c1acaa1308bd4317a66adff7fcc623a1a"
+  },
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "model_kind": "it",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "installed_modeling_source": "/home/husrcf/anaconda3/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py",
+  "installed_modeling_source_sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded",
+  "fixed_gdn": {
+    "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+    "training_arm": "gdn_only",
+    "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+    "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+    "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+    "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+    "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+    "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+    "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+    "final_step": 432,
+    "token_policy": "all",
+    "mode": "gdn_only",
+    "rank": 84,
+    "group_index": 3,
+    "adapt_gdn_keys": true,
+    "parameters": 696192,
+    "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+    "teacher_train_fit": {
+      "examples": 864,
+      "teacher_loss_including_newline": 0.006321374711538502,
+      "teacher_numeric_tokens_correct": 2584,
+      "teacher_numeric_tokens": 2592,
+      "teacher_newline_correct": 864
+    }
+  },
+  "fixed_gdn_state_sha256": "cb5ddf299e0a0335c64a3815da0a26e18a7179df938731b8895c6e9b437de7e7",
+  "fixed_gdn_arithmetic": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "fixed_gdn_grad_contract": "Same frozen FP64 affine operations rounded to FP32. A new wrapper may allow global grad-enabled execution only when each frozen adapter input/weight has no gradient. No edit of StableAdapterLinears or existing268sources. Equality against old arithmetic is checked on CPU and actual native controls.",
+  "new_readout_arithmetic": "Differentiable FP64 affine accumulation with FP32 parameters and an explicit FP32 round after each affine, in both training and inference. Native BF16 backbone kernels and dtypes unchanged. This is a new declared adapter profile, not a speed claim.",
+  "attention_layer": 15,
+  "head_dim": 256,
+  "query_heads": 8,
+  "hidden_size": 2048,
+  "arms": {
+    "query": {
+      "branches": [
+        "query"
+      ],
+      "rank": 32,
+      "new_trainable_parameters": 131072
+    },
+    "gate": {
+      "branches": [
+        "gate"
+      ],
+      "rank": 32,
+      "new_trainable_parameters": 131072
+    },
+    "query_gate": {
+      "branches": [
+        "query",
+        "gate"
+      ],
+      "rank": 16,
+      "new_trainable_parameters": 131072
+    }
+  },
+  "parameterization": "For each active branch, local normalized Attention input -> bias-free A -> bias-free zero-initialized B, divided by sqrt(rank). No SiLU or shared encoder. Query residual modifies only each head first256 entries; gate residual modifies only the second256 pre-sigmoid entries. K,V,O and all GDN parameters untouched. Query-only and gate-only use paired initial numerical matrices at seed1701; joint uses two independent rank16 branches. Same parameter count, not identical ranks.",
+  "activation": "Question and answer positions only, from the known ledger/question boundary, identically during training and deployment. Entire fact-prefix calls return the native projection unchanged without adapter arithmetic. No role, answer, entity, version, dependency or support labels enter adapter interfaces.",
+  "training": {
+    "initialization_seed": 1701,
+    "order": [
+      "query",
+      "gate",
+      "query_gate"
+    ],
+    "examples": 1728,
+    "base_streams": 16,
+    "case_name_variants": 32,
+    "history_contexts": 288,
+    "source_question_ids": "All source packet queries in literal insertion order; both formerly reused and formerly fresh cohorts are now observed adaptation/fit data. Neither is held-out for these new models. No filtering of original failures or successes.",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "max_gradient_norm": 1.0,
+    "gradient_accumulation": 4,
+    "optimizer_steps_per_arm": 432,
+    "epochs": 1,
+    "checkpoint_steps": [
+      144,
+      288,
+      432
+    ],
+    "evaluation_checkpoint_steps": [
+      432
+    ],
+    "known_question_tokens": 24,
+    "answer_plus_newline_tokens": 4,
+    "teacher_chunk_tokens": 27,
+    "optimized_cached_chunk_input_tokens_per_arm": 46656,
+    "supervised_answer_tokens_per_arm": 6912,
+    "maximum_history_tokens": 7519,
+    "maximum_full_prompt_tokens": 7546,
+    "loss": "Only numeric answer plus newline LM cross-entropy. No attention-weight loss, program support supervision, extra consistency loss or Oracle.",
+    "cached_execution": "Build each normally processed frozen-GDN history once per arm; clone all48fields into regular non-inference tensors before each27-token teacher chunk. Native multi-token chunk kernel and normal updates remain. Never backpropagate a single-token fused recurrent call; greedy evaluation uses inference mode.",
+    "cache_invariant": "All288histories per arm, and again at final fit, must match every tensor,layout,metadata and prefix logits of the prior normal strong-GDN cache bank. Every question gets an isolated clone. Updated readout weights may change downstream question computation but cannot re-encode fact prefixes.",
+    "baseline_teacher_fit": "Measure all1728disabled-readout teacher losses during the query arm on the same cached histories; no frozen weights change. Later arms need not repeat that full baseline.",
+    "final_fit": "All1728teacher losses and unconstrained numeric answers per arm, not just a chosen validation subset. Final432only; no early stopping, budget extension or best-checkpoint selection."
+  },
+  "safety": {
+    "cpu_before_native": true,
+    "preserve_prior_tests": 352,
+    "real_smoke": "One throwaway optimizer update per arm on the first4literal examples, then a second backward without another optimizer update to inspect encoder gradients. Save scratch state, losses, active-branch gradients and caches; reset to original initialization for scheduled training.",
+    "required": "Zero-adapter normal answers match the six first-context frozen-GDN references exactly. Inactive Q/gate halves and prefix positions remain bit-identical after a nonzero update. All native and fixed-GDN weights unchanged and gradient-free, source caches unchanged, hooks restored. No positive loss or accuracy gate. Real kernel backward must succeed without fallback or native-kernel edits.",
+    "native_legacy": "All12prior native anchors before fixed GDN attachment and after removal; all12GDN legacy anchors under the new constant-input arithmetic wrapper.",
+    "before_full_training": "Seal all276sources and full prior+new CPU regression log before any native smoke; independently audit complete native smoke before scheduled1296optimizer updates. Preserve failures and separately register any needed correction rather than editing sealed sources."
+  },
+  "confirmation": {
+    "generation_gate": "Generate neither prospective test cohort until all three final432checkpoints, complete fit results and independent training audit are sealed. Confirmation code/inputs receive their own later registration; these fixed seed lists and task scope must not be replaced based on training outcomes.",
+    "set_seeds": [
+      88000,
+      88001,
+      88002,
+      88003,
+      88004,
+      88005,
+      88006,
+      88007
+    ],
+    "set_generator": "Same frozen natural-load and single-token wording generators, all9historyconditions, two names, two wordings and three roles.",
+    "set_questions_per_model": 864,
+    "copy_seeds": [
+      89000,
+      89001,
+      89002,
+      89003,
+      89004,
+      89005,
+      89006,
+      89007
+    ],
+    "copy_generator": "Same frozen fresh_copy_data generator, dependency depths1/2/3,canonical and paraphrase styles, original control/treatment orders and all roles. COPY is operation-family transfer/retention: not present in this phase adaptation data.",
+    "copy_physical_questions_per_model": 336,
+    "copy_related_bindings_per_model": 432,
+    "models": [
+      "native",
+      "fixed_gdn",
+      "query",
+      "gate",
+      "query_gate"
+    ],
+    "all_conditions_and_errors": true,
+    "no_oracle_donor": true,
+    "prior_scan": "Before generation inventory actual registered input bytes, IDs,seeds,prefix and full prompt hashes, including all observed development and training inputs. Reject overlap; never resample. Paired names/history/questions are dependent views, eight base streams per task.",
+    "interpretation": "Report every model,wording,role,depth,paired repair/regression and prefix identity. One initialization and one task family are not stable architecture evidence. Gains from a simple read-only adapter weaken the need for extra write machinery only for this tested setup. Poor fit, transfer failure or regression must be retained without extending budget. Do not infer GDN destruction or unique layer15 mechanism."
+  },
+  "prior_failed_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "predecessor_sources_immutable": 268,
+  "planned_total_sources": 276,
+  "new_sources": [
+    "configs/readout_adapter_training_plan.json",
+    "sas_memory/readout_adapters.py",
+    "scripts/readout_adapter_data.py",
+    "scripts/readout_adapter_runtime.py",
+    "scripts/prepare_readout_adapters.py",
+    "scripts/run_readout_adapter_training.py",
+    "scripts/analyze_readout_adapter_training.py",
+    "tests/test_readout_adapters.py"
+  ],
+  "registration_destination": "/media/990Pro/Code/SAS/datasets/memory_update/readout-adapter-fit-v1",
+  "registration_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-seal-20261115-01.json",
+  "implementation_started": false,
+  "packet_generated": false,
+  "native_smoke_started": false,
+  "optimizer_updates_started": false,
+  "new_backbone": false,
+  "new_environment": false,
+  "oracle_reading": false,
+  "donor_forward": false,
+  "changes_fact_prefixes": false,
+  "can_change_prior_gates": false,
+  "architecture_effectiveness_claim": false
+}
