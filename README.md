@@ -5,12 +5,19 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; all 6,720 new gate-component readouts are independently audited.**
-The next [whole-record budget control phase](materials/updates/update-budget-20261115/README.md)
-is registered before mask generation or new inference. It compares two fixed random
-rankings and earliest/recent record choices with exactly matched record/type/token
-counts, crossed with full and fixed-original-oracle reading in all five configurations.
-It plans 13,440 new readouts without training or a new environment.
+**Status: active; all 13,440 new whole-record budget-control readouts are independently audited.**
+The [complete budget-control phase](materials/updates/update-budget-20261115/README.md)
+reports all 60 cells: 13,440 new readouts plus 6,720 archived references on eight reused streams.
+All forty new random/early/recent control cells have zero joint cases; semantic-support
+writes with oracle reading reach 48/48 in the archived references. Under oracle reading,
+control successes occur exactly when the original support write mask is accidentally retained.
+This shows that write count alone is insufficient in this hindsight setting. It does not
+isolate damage by later updates: a wrong write mask also suppresses the relevant fact during
+its own encoding. COPY choices are already disclosed by the operation-type budget.
+All 241 tests, opposite-order smokes and 240 complete-cache checks passed; 197 measurement
+sources and all frozen parameters remain unchanged. Earlier failed scientific criteria remain.
+The next diagnostic must start from an identical normally encoded prefix, then vary only
+subsequent updates while preserving historical evidence KV. No new training or scaleup.
 
 The [complete component phase](materials/updates/gate-components-20261115/README.md)
 separates native decay from the complete Delta correction on fixed original inputs.

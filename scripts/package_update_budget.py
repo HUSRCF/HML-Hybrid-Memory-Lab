@@ -93,7 +93,8 @@ def package(audit,output):
                  'scripts/package_update_budget.py','scripts/publish_update_budget.py',
                  'configs/gate_component_kernel_reference_addendum.json',
                  'scripts/run_update_budget_pipeline.sh','scripts/analyze_update_budget_mask_structure.py',
-                 'scripts/report_update_budget.py','scripts/run_update_budget_exports.sh']:
+                 'scripts/report_update_budget.py','scripts/run_update_budget_exports.sh',
+                 'scripts/analyze_update_budget_retention.py']:
         add(ROOT/name,ROOT,'code')
     for arm,state in m['models'].items():
         for regime,digest in state['results_sha256'].items():

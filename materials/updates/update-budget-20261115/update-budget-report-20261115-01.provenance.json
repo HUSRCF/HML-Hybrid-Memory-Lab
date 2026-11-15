@@ -1,0 +1,16 @@
+{
+  "status": "all60cells_100contrasts_reported",
+  "created_utc": "2026-11-15T03:18:04.324204+00:00",
+  "primary_audit_sha256": "63f80eacae657186032fd737d2832889c61abda1ce240ebb9b5baf7f6a96d463",
+  "raw_export_data_sha256": "8782ebf6b80b0f810654dcc66aa636ba491fe119a874cd1eddace134bbc4a225",
+  "source_sha256": "cd789e1606aa04119441f03902890784bde0ecd2e976a7d299603832f452b265",
+  "cells": 60,
+  "paired_comparisons": 100,
+  "case_strata_csv_rows": 900,
+  "all_strata_cover48related_cases": true,
+  "outputs_sha256": {
+    "update-budget-report-20261115-01.md": "bc84d18ec0502920badefbf438efcc4070cb2bc70c20ff1435ccf43087cf70f3",
+    "update-budget-report-20261115-01.strata.csv": "8f3a1881b3fb19d345e3e37cc95f26148c4b4f2604275a2915059797f9b8e491",
+    "update-budget-report-20261115-01.source.py": "cd789e1606aa04119441f03902890784bde0ecd2e976a7d299603832f452b265"
+  }
+}

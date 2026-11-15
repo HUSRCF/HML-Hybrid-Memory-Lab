@@ -1,0 +1,389 @@
+{
+  "status": "all13440control_readouts_retention_checked",
+  "created_utc": "2026-11-15T03:24:54.850814+00:00",
+  "posthoc_descriptive_not_preregistered_success_gate": true,
+  "model_inference": false,
+  "primary_audit_sha256": "63f80eacae657186032fd737d2832889c61abda1ce240ebb9b5baf7f6a96d463",
+  "source_sha256": "d6408ce098d431ac48516e2c21e88e4113ae215b747b43e97920c7d654f9efd1",
+  "cells": [
+    {
+      "model": "native",
+      "family": "random0",
+      "reader": "full",
+      "matched": 6,
+      "matched_correct": 4,
+      "unmatched": 330,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "native",
+      "family": "random0",
+      "reader": "oracle",
+      "matched": 6,
+      "matched_correct": 6,
+      "unmatched": 330,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "native",
+      "family": "random1",
+      "reader": "full",
+      "matched": 8,
+      "matched_correct": 1,
+      "unmatched": 328,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "native",
+      "family": "random1",
+      "reader": "oracle",
+      "matched": 8,
+      "matched_correct": 8,
+      "unmatched": 328,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "native",
+      "family": "early",
+      "reader": "full",
+      "matched": 128,
+      "matched_correct": 45,
+      "unmatched": 208,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "native",
+      "family": "early",
+      "reader": "oracle",
+      "matched": 128,
+      "matched_correct": 128,
+      "unmatched": 208,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "native",
+      "family": "recent",
+      "reader": "full",
+      "matched": 48,
+      "matched_correct": 42,
+      "unmatched": 288,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "native",
+      "family": "recent",
+      "reader": "oracle",
+      "matched": 48,
+      "matched_correct": 48,
+      "unmatched": 288,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared",
+      "family": "random0",
+      "reader": "full",
+      "matched": 6,
+      "matched_correct": 5,
+      "unmatched": 330,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared",
+      "family": "random0",
+      "reader": "oracle",
+      "matched": 6,
+      "matched_correct": 6,
+      "unmatched": 330,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared",
+      "family": "random1",
+      "reader": "full",
+      "matched": 8,
+      "matched_correct": 3,
+      "unmatched": 328,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared",
+      "family": "random1",
+      "reader": "oracle",
+      "matched": 8,
+      "matched_correct": 8,
+      "unmatched": 328,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared",
+      "family": "early",
+      "reader": "full",
+      "matched": 128,
+      "matched_correct": 83,
+      "unmatched": 208,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared",
+      "family": "early",
+      "reader": "oracle",
+      "matched": 128,
+      "matched_correct": 128,
+      "unmatched": 208,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared",
+      "family": "recent",
+      "reader": "full",
+      "matched": 48,
+      "matched_correct": 33,
+      "unmatched": 288,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared",
+      "family": "recent",
+      "reader": "oracle",
+      "matched": 48,
+      "matched_correct": 48,
+      "unmatched": 288,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_all",
+      "family": "random0",
+      "reader": "full",
+      "matched": 6,
+      "matched_correct": 4,
+      "unmatched": 330,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_all",
+      "family": "random0",
+      "reader": "oracle",
+      "matched": 6,
+      "matched_correct": 6,
+      "unmatched": 330,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_all",
+      "family": "random1",
+      "reader": "full",
+      "matched": 8,
+      "matched_correct": 4,
+      "unmatched": 328,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_all",
+      "family": "random1",
+      "reader": "oracle",
+      "matched": 8,
+      "matched_correct": 8,
+      "unmatched": 328,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_all",
+      "family": "early",
+      "reader": "full",
+      "matched": 128,
+      "matched_correct": 50,
+      "unmatched": 208,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_all",
+      "family": "early",
+      "reader": "oracle",
+      "matched": 128,
+      "matched_correct": 128,
+      "unmatched": 208,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_all",
+      "family": "recent",
+      "reader": "full",
+      "matched": 48,
+      "matched_correct": 34,
+      "unmatched": 288,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_all",
+      "family": "recent",
+      "reader": "oracle",
+      "matched": 48,
+      "matched_correct": 48,
+      "unmatched": 288,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_question",
+      "family": "random0",
+      "reader": "full",
+      "matched": 6,
+      "matched_correct": 4,
+      "unmatched": 330,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_question",
+      "family": "random0",
+      "reader": "oracle",
+      "matched": 6,
+      "matched_correct": 6,
+      "unmatched": 330,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_question",
+      "family": "random1",
+      "reader": "full",
+      "matched": 8,
+      "matched_correct": 4,
+      "unmatched": 328,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_question",
+      "family": "random1",
+      "reader": "oracle",
+      "matched": 8,
+      "matched_correct": 8,
+      "unmatched": 328,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_question",
+      "family": "early",
+      "reader": "full",
+      "matched": 128,
+      "matched_correct": 49,
+      "unmatched": 208,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_question",
+      "family": "early",
+      "reader": "oracle",
+      "matched": 128,
+      "matched_correct": 128,
+      "unmatched": 208,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_question",
+      "family": "recent",
+      "reader": "full",
+      "matched": 48,
+      "matched_correct": 33,
+      "unmatched": 288,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "shared_question_trained_question",
+      "family": "recent",
+      "reader": "oracle",
+      "matched": 48,
+      "matched_correct": 48,
+      "unmatched": 288,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "gdn_all_tokens",
+      "family": "random0",
+      "reader": "full",
+      "matched": 6,
+      "matched_correct": 4,
+      "unmatched": 330,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "gdn_all_tokens",
+      "family": "random0",
+      "reader": "oracle",
+      "matched": 6,
+      "matched_correct": 6,
+      "unmatched": 330,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "gdn_all_tokens",
+      "family": "random1",
+      "reader": "full",
+      "matched": 8,
+      "matched_correct": 6,
+      "unmatched": 328,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "gdn_all_tokens",
+      "family": "random1",
+      "reader": "oracle",
+      "matched": 8,
+      "matched_correct": 8,
+      "unmatched": 328,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "gdn_all_tokens",
+      "family": "early",
+      "reader": "full",
+      "matched": 128,
+      "matched_correct": 70,
+      "unmatched": 208,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "gdn_all_tokens",
+      "family": "early",
+      "reader": "oracle",
+      "matched": 128,
+      "matched_correct": 128,
+      "unmatched": 208,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "gdn_all_tokens",
+      "family": "recent",
+      "reader": "full",
+      "matched": 48,
+      "matched_correct": 45,
+      "unmatched": 288,
+      "unmatched_correct": 0
+    },
+    {
+      "model": "gdn_all_tokens",
+      "family": "recent",
+      "reader": "oracle",
+      "matched": 48,
+      "matched_correct": 48,
+      "unmatched": 288,
+      "unmatched_correct": 0
+    }
+  ],
+  "all_readouts": 13440,
+  "oracle_reader": {
+    "rows": 6720,
+    "matched_correct": 950,
+    "unmatched_rows": 5770,
+    "unmatched_correct": 0,
+    "correct_iff_exact_support_write_mask_on_this_cohort": true
+  },
+  "full_reader": {
+    "rows": 6720,
+    "matched_correct": 523,
+    "unmatched_rows": 5770,
+    "unmatched_correct": 0
+  },
+  "interpretation": [
+    "Matching-mask successes must replay old semantic-Delta endpoints by the registered contract; not independent discoveries.",
+    "Controls suppress the relevant SET during its own encoding when they select another SET. They do not isolate damage by subsequent unrelated updates.",
+    "Descriptive on8reused streams. Oracle type budgets already determine COPY selection; no query-independent architecture or new scientific success claim."
+  ]
+}

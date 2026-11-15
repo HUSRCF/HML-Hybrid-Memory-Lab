@@ -12225,8 +12225,8 @@
     "primary_scientific_results_published": true
   },
   "update_budget_controls": {
-    "status": "first4configs_complete_final_gdn_adapter_config_continues",
-    "previous_goal_turn_classification": "progress: verified complete third2688readout configuration, frozen adapter state and12exact native anchors; pushed progress",
+    "status": "all13440completed_audited_exported_visually_reviewed_ready_for_snapshot",
+    "previous_goal_turn_classification": "progress: completed and verified fourth2688readout configuration; clarified no-hold versus experimental prefix checks",
     "prior_head": "c3447ec3e2840c98a1c660a3a2ca0c19ada7dac7",
     "protocol": "configs/update_budget_controls_plan.json",
     "protocol_sha256": "46bb14453d6f67fa58bcafaba0b78232501ff3b86ce18bbc8c0b9b3a0f20da71",
@@ -12265,8 +12265,8 @@
     "unified_logical_cells": 20160,
     "prior_failed_gates_unchanged": true,
     "auxiliary_prefix_utility": "scripts/verify_update_budget_prefix.py",
-    "last_updated_utc": "2026-11-15T03:05:30.234507+00:00",
-    "next_action": "Finish final GDN-adapter configuration, then full audit and queued all-cell exports/report; inspect figure and every result before snapshot/publication.",
+    "last_updated_utc": "2026-11-15T03:29:02.832494+00:00",
+    "next_action": "Byte-verify and publish complete incremental evidence. Then register a new normally-encoded-prefix/later-update diagnostic with fixed historical KV and query-independent prefix states before new architecture training.",
     "smoke_receipts": {
       "update-budget-smoke-forward-audit-20261115-01": {
         "status": "audited_update_budget_smoke",
@@ -12291,7 +12291,8 @@
       "native",
       "shared",
       "shared_question_trained_all",
-      "shared_question_trained_question"
+      "shared_question_trained_question",
+      "gdn_all_tokens"
     ],
     "native_files_complete_verified": {
       "random0_full": {
@@ -12436,6 +12437,35 @@
     },
     "question_deployed_adapter_unchanged_and12native_readouts_exactly_restored": true,
     "question_only_prefix_checks_exact": 56,
-    "question_only_prefix_check_scope": "No extra Delta hold: controller-only native-prefix isolation. Experimental write holds can change prefix states; reader-only preservation is conditional on the same write policy."
+    "question_only_prefix_check_scope": "No extra Delta hold: controller-only native-prefix isolation. Experimental write holds can change prefix states; reader-only preservation is conditional on the same write policy.",
+    "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/update-budget-primary-audit-20261115-01.json",
+    "primary_audit_sha256": "63f80eacae657186032fd737d2832889c61abda1ce240ebb9b5baf7f6a96d463",
+    "primary_manifest_sha256": "12820ea8a1e975adb293cf04b57956c6d19f6f9678c492004d6329f4865359a7",
+    "new_primary_readouts": 13440,
+    "related_bindings": 17280,
+    "all60cells_exported": true,
+    "all100contrasts_reported": true,
+    "csv_rows_verified": [
+      20160,
+      9600,
+      1680
+    ],
+    "case_strata_csv_rows": 900,
+    "all_phase_jobs_terminal": true,
+    "weights_and_adapter_states_unchanged": true,
+    "visual_review": {
+      "all60cells_present": true,
+      "clipping_observed": false,
+      "png": "update-budget-figure-20261115-01.png"
+    },
+    "new_control_joint_cases_all40conditions": 0,
+    "oracle_control_correct_iff_matching_support_write_mask": {
+      "correct": 950,
+      "unmatched": 5770,
+      "unmatched_correct": 0,
+      "scope": "posthoc descriptive on reused8streams; not new success gate"
+    },
+    "encoding_confound_not_resolved": true,
+    "new_training_or_scaleup_triggered": false
   }
 }

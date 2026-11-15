@@ -1,0 +1,15 @@
+{
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/update-budget-controls-20261115-01",
+  "audit_sha256": "63f80eacae657186032fd737d2832889c61abda1ce240ebb9b5baf7f6a96d463",
+  "manifest_sha256": "12820ea8a1e975adb293cf04b57956c6d19f6f9678c492004d6329f4865359a7",
+  "source_sha256": "09ada26b49147d14c080ca3ca1d826b8c87f19fcc936d7d1960de3e89f65fb53",
+  "outputs_sha256": {
+    "update-budget-figure-20261115-01.csv": "8f47f0f8a45a02fd5d4cf83cf02cd55c4656a64314874262547982baaf64cee6",
+    "update-budget-figure-20261115-01.pairs.csv": "8e22d44c1add734607143f97a5bcfaa458b37a9c507413737e4a905343902a8d",
+    "update-budget-figure-20261115-01.factorial.csv": "7ea680c002aa90fea1b192e5d03af8c2f16698d282ecbbafe70767e546cbe6db",
+    "update-budget-figure-20261115-01.png": "6f1e98fd8d1f6ad83e8c1b1ff8ae5f2a1f21e08aeb1923a596f828bcc02396f5",
+    "update-budget-figure-20261115-01.pdf": "96601a11c800c0e2d831dfc8313e5fa0904d23eca01caacd4586e3819ee27394",
+    "update-budget-figure-20261115-01.data.json": "8782ebf6b80b0f810654dcc66aa636ba491fe119a874cd1eddace134bbc4a225",
+    "update-budget-figure-20261115-01.source.py": "09ada26b49147d14c080ca3ca1d826b8c87f19fcc936d7d1960de3e89f65fb53"
+  }
+}

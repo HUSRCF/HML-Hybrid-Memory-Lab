@@ -1,0 +1,8 @@
+{
+  "status": "failed_before_any_retention_output",
+  "created_utc": "2026-11-15T03:24:54.287570+00:00",
+  "source_sha256": "819147708281590650cb7eea0bc738dad41c5e49062e310a473c11550b7bca34",
+  "error": "ValueError: Locked policies changed",
+  "cause": "Post-hoc helper compared the registered canonical-JSON fingerprint with a file-byte hash. Canonical fingerprints and registered file bytes both match; no measurement or policy changed.",
+  "primary_measurements_and_audit_unchanged": true
+}
