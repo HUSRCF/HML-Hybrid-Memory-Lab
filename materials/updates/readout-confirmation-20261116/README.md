@@ -1,0 +1,15 @@
+# Fixed-model SET and COPY confirmation
+
+Protocol: `configs/readout_adapter_confirmation_plan.json`, registered at commit `3e44ab1` before implementation or prospective input construction. This implements the seed lists and task scope already frozen in the learned-readout training protocol; it does not choose cohorts or checkpoints from fit outcomes.
+
+Five frozen models: native, existing fixed GDN, final Query, final output-gate and final joint readout adapters. All three readout checkpoints must be step432, with131072new parameters each. The new phase performs no training, Oracle reading, donor forward, recurrent rollback or gate intervention.
+
+Prospective construction requires complete independent audit of all1296training steps, all5184fit answers and all three final checkpoints. Their exact bytes are locked before constructing either prospective cohort. SET uses eight88000seeds, two names, nine normal histories, two single-token-matched wordings and three roles (864questions/model). COPY uses eight89000seeds, three depths, two styles and all order/role conditions (336physical questions and432bindings/model). The total is6000new primary readouts, on200normal histories/model.
+
+Actual prior dataset and run training inputs are inventoried before construction. Any seed,case-ID,prefix orcomplete-prompt overlap stops the fixed cohort without resampling. Eight base streams per task are the independent units; names,depths,styles and questions are paired views.
+
+Before prospective inference, all five final models replay the first six already observed fit questions exactly (30readouts). All200normal histories for each learned readout must match the fixed-GDN baseline across every48tensor value,layout,metadata field andprefix logits. Each question receives an isolated history; every source is guarded. Every raw success,failure,malformed answer and paired regression is retained.
+
+Implementation and eight CPU tests passed in28.006s. Tests reconstruct only the already observed76000SET and61000COPY fixtures; prospective88000/89000cases have not been constructed. The full372test regression is running. All282predecessor source bytes remain unchanged; the planned new source seal contains289files.
+
+One initialization and SET-only adaptation are simple readout controls, not evidence of a new hybrid architecture. COPY evaluates transfer/retention of these newly trained readout controls; the existing pretrained model and fixedGDN have their own earlier training history. All prior failed scientific criteria remain unchanged.

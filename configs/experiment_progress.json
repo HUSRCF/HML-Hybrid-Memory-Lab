@@ -13340,5 +13340,45 @@
     },
     "pending_complete_fit_exporter": "/tmp/export_readout_adapter_fit.py",
     "pending_complete_fit_exporter_sha256": "8eb0d0556e1db9ba8d85bbc110551ec660333e1d71704508dd945df3f1027855"
+  },
+  "readout_confirmation": {
+    "status": "protocol_registered_implementation_and_eight_observed_fixture_tests_passed_before_any_prospective_generation",
+    "protocol": "configs/readout_adapter_confirmation_plan.json",
+    "protocol_sha256": "30fe0e1107b57ff48dec43a2015ddd29c4e8f9c168b2b8e4dd1895c326a8fb33",
+    "predecessor_sources_immutable": 282,
+    "planned_sources": 289,
+    "new_cpu_tests_passed": 8,
+    "new_cpu_tests_seconds": 28.006,
+    "new_cpu_tests_log": "/media/990Pro/Code/SAS/logs/memory_update/readout-confirmation-new-tests-20261116-01.log",
+    "prospective_cases_generated": false,
+    "native_confirmation_started": false,
+    "fixed_models": [
+      "native",
+      "fixed_gdn",
+      "query",
+      "gate",
+      "query_gate"
+    ],
+    "fixed_set_seeds": [
+      88000,
+      88001,
+      88002,
+      88003,
+      88004,
+      88005,
+      88006,
+      88007
+    ],
+    "fixed_copy_seeds": [
+      89000,
+      89001,
+      89002,
+      89003,
+      89004,
+      89005,
+      89006,
+      89007
+    ],
+    "next_action": "Run full372CPU regressions and seal289sources. Prospective inputs require completed current training pipeline41240 plus complete fit and independent original+correction audits. Tests reconstructed only already observed76000SET and61000COPY fixtures."
   }
 }

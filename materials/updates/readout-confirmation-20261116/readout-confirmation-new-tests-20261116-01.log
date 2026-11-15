@@ -1,0 +1,13 @@
+test_actual_inventory_includes_run_training_cases_and_literal_fit_hashes (tests.test_readout_confirmation.ReadoutConfirmationTests.test_actual_inventory_includes_run_training_cases_and_literal_fit_hashes) ... ok
+test_all_history_fields_are_required_for_frozen_prefix_identity (tests.test_readout_confirmation.ReadoutConfirmationTests.test_all_history_fields_are_required_for_frozen_prefix_identity) ... ok
+test_frozen_copy_fixtures_preserve_all_bindings_and_shared_ledgers (tests.test_readout_confirmation.ReadoutConfirmationTests.test_frozen_copy_fixtures_preserve_all_bindings_and_shared_ledgers) ... ok
+test_frozen_set_fixtures_match_every_literal_known_question_and_pair (tests.test_readout_confirmation.ReadoutConfirmationTests.test_frozen_set_fixtures_match_every_literal_known_question_and_pair) ... ok
+test_missing_full_training_gate_precedes_all_case_generation (tests.test_readout_confirmation.ReadoutConfirmationTests.test_missing_full_training_gate_precedes_all_case_generation) ... ok
+test_novelty_rejects_seed_before_generator_and_all_actual_collision_types (tests.test_readout_confirmation.ReadoutConfirmationTests.test_novelty_rejects_seed_before_generator_and_all_actual_collision_types) ... ok
+test_raw_coverage_rejects_missing_duplicate_reordered_and_wrong_models (tests.test_readout_confirmation.ReadoutConfirmationTests.test_raw_coverage_rejects_missing_duplicate_reordered_and_wrong_models) ... ok
+test_wrong_numeric_and_malformed_answers_remain_failures_not_accuracy_gates (tests.test_readout_confirmation.ReadoutConfirmationTests.test_wrong_numeric_and_malformed_answers_remain_failures_not_accuracy_gates) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 28.006s
+
+OK
