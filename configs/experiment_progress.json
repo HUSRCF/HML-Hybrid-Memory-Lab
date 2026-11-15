@@ -12488,8 +12488,8 @@
     "primary_scientific_results_published": true
   },
   "post_encoding_updates": {
-    "status": "opposite510smokes_exact_equivalence_passed_primary_pipeline_started",
-    "previous_goal_turn_classification": "progress: completed13440new budget controls, full audit and published byte-verified complete GitHub Release; exposed initial-encoding confound",
+    "status": "completed8160_primary_audited_all170cells_exported_pending_byte_verified_publication",
+    "previous_goal_turn_classification": "progress: completed259tests, sealed206sources and fresh8streams, passed opposite510smokes, audited8160primary readouts and exported all170cells with280contrasts.",
     "protocol": "configs/post_encoding_update_plan.json",
     "protocol_sha256": "ccd180ff352e56064f1eb9bbd017e41c285f49cdf16ce39764992467d9a8bfd8",
     "prior_inventory_summary": {
@@ -12518,8 +12518,8 @@
     "new_environment": false,
     "new_models": false,
     "new_model_inference_started": true,
-    "last_updated_utc": "2026-11-15T04:37:52.631933+00:00",
-    "next_action": "Verify opposite-order exact equality, then execute all8160cached-prefix primary readouts and independently audit all170cells.",
+    "last_updated_utc": "2026-11-15T05:11:33.429214+00:00",
+    "next_action": "Package all source/input/raw-readout/control/provenance materials; byte-verify and publish incremental GitHub Release. Then separate post-tail recurrent state from tail-KV encoding before new training.",
     "implemented_sources": 206,
     "completed_full_suite": {
       "tests": 259,
@@ -12537,6 +12537,41 @@
     "first_inference_registration_commit": "dc42f24db23261020369cc18e52259d74aa04239",
     "git_source_and_registered_data_bytes_verified": 212,
     "smoke_equivalence": "materials/updates/post-encoding-20261115/post-encoding-smoke-equivalence-20261115-01.json",
-    "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/post-encoding-updates-20261115-01"
+    "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/post-encoding-updates-20261115-01",
+    "primary_readouts_completed": 8160,
+    "primary_manifest_sha256": "3bdd8f7e7ee657d270911d77ab15bf8b6b292aaca11fcf68b5afdc6714829b8a",
+    "primary_audit_sha256": "a1e86be89ca3ba4d3296f26659d8158c3c25727708df14b2428b7d9182260265",
+    "primary_audit": "materials/updates/post-encoding-20261115/post-encoding-primary-audit-20261115-01.json",
+    "source_caches_audited": 680,
+    "tail_conditions_audited": 640,
+    "noop_control_readouts": 320,
+    "source_files_verified": 206,
+    "exports": {
+      "cells": 170,
+      "readouts": 8160,
+      "strata": 2210,
+      "before_after_strata": 800,
+      "contrasts": 280,
+      "visual_inspection": {
+        "status": "visually_inspected",
+        "created_utc": "2026-11-15T05:11:33.423013+00:00",
+        "png_sha256": "8d603ce375c1e8c1e4b8cf6b29e652165f6c61211cbe74bd08921638ca5b70f5",
+        "width": 3240,
+        "height": 3960,
+        "panels": 10,
+        "cells": 170,
+        "labels_all_visible": true,
+        "footer_visible": true,
+        "no_clipped_labels": true,
+        "scope": "Correct readouts/48 per condition. Complete joint3/joint6 and role tables retained separately;8independent streams."
+      }
+    },
+    "native_current_before_full": "16/16",
+    "native_current_unrelated64_full": "8/16",
+    "native_current_unrelated64_oracle": "16/16",
+    "gdnscope_normal_unrelated8_and64_each": "48/48",
+    "delta_and_both_new_value_correct": "0/640 repeated diagnostic readouts",
+    "prior_scientific_failed_gates_unchanged": true,
+    "new_architecture_effectiveness_claim": false
   }
 }

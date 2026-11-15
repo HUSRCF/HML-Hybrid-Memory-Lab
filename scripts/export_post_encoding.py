@@ -65,6 +65,7 @@ def main():
         '`contrasts.csv`保留同一尾部/问题下各门控对none、Oracle对full，以及同长度相关对无关尾部的比较。相关与无关尾部的当前答案不同，不能把其比较解释为同一目标答案的损伤。',
         '', '## 解释限制','',
         '门控仍会改变后续Query、隐藏表示、尾部KV与卷积状态。旧KV相同不唯一定位到递归矩阵存储损坏，也不分离Delta擦除与插入。接尾部前后还存在距离/位置变化；主要干预对照固定实际尾部Token和位置。',
+        '缓存记录保留逐张量指纹、布局、实际元数据和检查回执，未保存680份完整缓存张量。逐张量相等检查由封存的运行代码执行；外部复现这些计算仍需在相同模型和后端上重跑。',
         '本轮是冻结模型的机制诊断，没有新架构成功门槛、显著性声明、训练或扩模触发条件。此前失败的科学门槛全部保持原判。'])
     (a.output/'report.md').write_text('\n'.join(lines)+'\n')
     import matplotlib
@@ -86,6 +87,7 @@ def main():
     fig.tight_layout(rect=(0,.025,1,.98))
     for suffix in ('png','svg'):fig.savefig(a.output/('all170cells.'+suffix),dpi=180)
     plt.close(fig)
+    (a.output/'export-source.py').write_bytes(Path(__file__).read_bytes())
     receipt={'status':'complete_post_encoding_exports','primary_readouts':len(raw),'cells':len(cells),'strata':len(strata),
         'paired_before_after_strata':len(transitions),'contrasts':len(contrasts),'audit_sha256':streaming_hash(a.audit),
         'export_source_sha256':streaming_hash(Path(__file__)),'files_sha256':{p.name:streaming_hash(p) for p in a.output.iterdir()}}

@@ -55,7 +55,8 @@ def package(audit,output):
         add(ROOT/name,ROOT,'code')
     tree(ROOT/'materials/updates/post-encoding-20261115',ROOT,'code')
     for name in ('README.md','materials/README.md','.gitattributes','requirements.txt','configs/experiment_progress.json',
-        'scripts/run_post_encoding_pipeline.sh','scripts/export_post_encoding.py','scripts/package_post_encoding.py','scripts/publish_post_encoding.py'):
+        'scripts/run_post_encoding_pipeline.sh','scripts/export_post_encoding.py','scripts/package_post_encoding.py','scripts/publish_post_encoding.py',
+        'scripts/post_encoding_observations.py'):
         add(ROOT/name,ROOT,'code')
     for model,state in m['models'].items():
         path=run/f'{model}.jsonl'

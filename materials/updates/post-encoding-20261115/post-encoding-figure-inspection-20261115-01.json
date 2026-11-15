@@ -1,0 +1,13 @@
+{
+  "status": "visually_inspected",
+  "created_utc": "2026-11-15T05:11:33.423013+00:00",
+  "png_sha256": "8d603ce375c1e8c1e4b8cf6b29e652165f6c61211cbe74bd08921638ca5b70f5",
+  "width": 3240,
+  "height": 3960,
+  "panels": 10,
+  "cells": 170,
+  "labels_all_visible": true,
+  "footer_visible": true,
+  "no_clipped_labels": true,
+  "scope": "Correct readouts/48 per condition. Complete joint3/joint6 and role tables retained separately;8independent streams."
+}

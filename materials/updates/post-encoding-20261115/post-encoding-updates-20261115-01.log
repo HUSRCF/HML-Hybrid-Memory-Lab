@@ -1,0 +1,42 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<01:53,  2.81it/s]Loading weights:  11%|█▏        | 36/320 [00:00<00:02, 100.71it/s]Loading weights:  20%|██        | 65/320 [00:00<00:01, 152.14it/s]Loading weights:  29%|██▉       | 94/320 [00:00<00:01, 189.16it/s]Loading weights:  38%|███▊      | 121/320 [00:00<00:00, 212.41it/s]Loading weights:  48%|████▊     | 152/320 [00:00<00:00, 234.27it/s]Loading weights:  58%|█████▊    | 186/320 [00:00<00:00, 262.40it/s]Loading weights:  68%|██████▊   | 219/320 [00:01<00:00, 276.27it/s]Loading weights:  79%|███████▉  | 252/320 [00:01<00:00, 288.28it/s]Loading weights:  88%|████████▊ | 283/320 [00:01<00:00, 289.78it/s]Loading weights:  98%|█████████▊| 313/320 [00:01<00:00, 278.48it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 223.38it/s]
+{"event": "post_encoding", "model": "native", "seed": 74000, "readouts": 204}
+{"event": "post_encoding", "model": "native", "seed": 74001, "readouts": 408}
+{"event": "post_encoding", "model": "native", "seed": 74002, "readouts": 612}
+{"event": "post_encoding", "model": "native", "seed": 74003, "readouts": 816}
+{"event": "post_encoding", "model": "native", "seed": 74004, "readouts": 1020}
+{"event": "post_encoding", "model": "native", "seed": 74005, "readouts": 1224}
+{"event": "post_encoding", "model": "native", "seed": 74006, "readouts": 1428}
+{"event": "post_encoding", "model": "native", "seed": 74007, "readouts": 1632}
+{"event": "post_encoding", "model": "shared", "seed": 74000, "readouts": 204}
+{"event": "post_encoding", "model": "shared", "seed": 74001, "readouts": 408}
+{"event": "post_encoding", "model": "shared", "seed": 74002, "readouts": 612}
+{"event": "post_encoding", "model": "shared", "seed": 74003, "readouts": 816}
+{"event": "post_encoding", "model": "shared", "seed": 74004, "readouts": 1020}
+{"event": "post_encoding", "model": "shared", "seed": 74005, "readouts": 1224}
+{"event": "post_encoding", "model": "shared", "seed": 74006, "readouts": 1428}
+{"event": "post_encoding", "model": "shared", "seed": 74007, "readouts": 1632}
+{"event": "post_encoding", "model": "shared_question_trained_all", "seed": 74000, "readouts": 204}
+{"event": "post_encoding", "model": "shared_question_trained_all", "seed": 74001, "readouts": 408}
+{"event": "post_encoding", "model": "shared_question_trained_all", "seed": 74002, "readouts": 612}
+{"event": "post_encoding", "model": "shared_question_trained_all", "seed": 74003, "readouts": 816}
+{"event": "post_encoding", "model": "shared_question_trained_all", "seed": 74004, "readouts": 1020}
+{"event": "post_encoding", "model": "shared_question_trained_all", "seed": 74005, "readouts": 1224}
+{"event": "post_encoding", "model": "shared_question_trained_all", "seed": 74006, "readouts": 1428}
+{"event": "post_encoding", "model": "shared_question_trained_all", "seed": 74007, "readouts": 1632}
+{"event": "post_encoding", "model": "shared_question_trained_question", "seed": 74000, "readouts": 204}
+{"event": "post_encoding", "model": "shared_question_trained_question", "seed": 74001, "readouts": 408}
+{"event": "post_encoding", "model": "shared_question_trained_question", "seed": 74002, "readouts": 612}
+{"event": "post_encoding", "model": "shared_question_trained_question", "seed": 74003, "readouts": 816}
+{"event": "post_encoding", "model": "shared_question_trained_question", "seed": 74004, "readouts": 1020}
+{"event": "post_encoding", "model": "shared_question_trained_question", "seed": 74005, "readouts": 1224}
+{"event": "post_encoding", "model": "shared_question_trained_question", "seed": 74006, "readouts": 1428}
+{"event": "post_encoding", "model": "shared_question_trained_question", "seed": 74007, "readouts": 1632}
+{"event": "post_encoding", "model": "gdn_all_tokens", "seed": 74000, "readouts": 204}
+{"event": "post_encoding", "model": "gdn_all_tokens", "seed": 74001, "readouts": 408}
+{"event": "post_encoding", "model": "gdn_all_tokens", "seed": 74002, "readouts": 612}
+{"event": "post_encoding", "model": "gdn_all_tokens", "seed": 74003, "readouts": 816}
+{"event": "post_encoding", "model": "gdn_all_tokens", "seed": 74004, "readouts": 1020}
+{"event": "post_encoding", "model": "gdn_all_tokens", "seed": 74005, "readouts": 1224}
+{"event": "post_encoding", "model": "gdn_all_tokens", "seed": 74006, "readouts": 1428}
+{"event": "post_encoding", "model": "gdn_all_tokens", "seed": 74007, "readouts": 1632}

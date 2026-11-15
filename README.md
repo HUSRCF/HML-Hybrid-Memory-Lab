@@ -5,12 +5,16 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; normally encoded-prefix controls are registered before inference.**
-The [new diagnostic](materials/updates/post-encoding-20261115/README.md) seals eight fresh streams,
-240 questions and all 206 measurement sources after 259 passing tests. The same normally
-encoded prefix is reused across subsequent-update interventions and all questions.
-Two opposite-order 510-readout operational smokes must match exactly before the
-registered 8,160-readout primary. No new training, environment or model download.
+**Status: active; all 8,160 normally encoded-prefix readouts are independently audited.**
+The [complete diagnostic](materials/updates/post-encoding-20261115/README.md) reports all 170 cells
+on eight fresh streams with one shared normally encoded prefix per stream/configuration.
+Native current-value answers fall from 16/16 to 8/16 after 64 unrelated updates; oracle reading
+still reaches 16/16. Delta suppression destroys new-value answers under both readers,
+while an existing GDN adapter already reaches 48/48 with normal updates on both unrelated
+tail lengths. These controls do not establish an architectural need for joint control.
+All 259 tests, opposite-order 510-readout smokes, 680 source caches and 206 measurement sources
+passed operational validation. Earlier failed scientific criteria remain unchanged.
+No new training, environment or model download. Next isolate post-tail state and tail-KV encoding.
 
 All 13,440 new whole-record budget-control readouts are independently audited.
 The [complete budget-control phase](materials/updates/update-budget-20261115/README.md)
@@ -23,8 +27,7 @@ isolate damage by later updates: a wrong write mask also suppresses the relevant
 its own encoding. COPY choices are already disclosed by the operation-type budget.
 All 241 tests, opposite-order smokes and 240 complete-cache checks passed; 197 measurement
 sources and all frozen parameters remain unchanged. Earlier failed scientific criteria remain.
-The next diagnostic must start from an identical normally encoded prefix, then vary only
-subsequent updates while preserving historical evidence KV. No new training or scaleup.
+This motivated the normally encoded-prefix diagnostic above. No new training or scaleup.
 
 The [complete component phase](materials/updates/gate-components-20261115/README.md)
 separates native decay from the complete Delta correction on fixed original inputs.
@@ -61,7 +64,7 @@ cohort. Text, positions and prefix computation change; they do not uniquely
 localize GDN damage or establish a new architecture. All earlier failed
 scientific criteria remain failed. GDN-only means adapter scope; Attention stays.
 
-- [Registered normal-encoding then subsequent-update diagnostic](materials/updates/post-encoding-20261115/README.md)
+- [All 170 normally encoded-prefix conditions and complete audit](materials/updates/post-encoding-20261115/README.md)
 - [All sixty budget-control cells and encoding-confound analysis](materials/updates/update-budget-20261115/README.md)
 - [Byte-verified budget-control snapshot](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/update-budget-controls-2026-11-15)
 - [All forty gate-component cells, explicit origins, controls and limitations](materials/updates/gate-components-20261115/README.md)
