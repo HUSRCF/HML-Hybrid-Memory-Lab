@@ -6390,7 +6390,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-15T07:21:48.836810+00:00",
+  "updated_utc": "2026-11-15T12:19:59.768669+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -13067,7 +13067,7 @@
     "wording_control_is_diagnostic_not_final_architecture_contribution": true
   },
   "question_state_freeze": {
-    "status": "343tests_passed_261sources_and_inputs_sealed_before_native_smokes",
+    "status": "full_6912_native_readouts_running_after_exact_opposite_order_audit",
     "protocol": "configs/question_state_freeze_plan.json",
     "protocol_sha256": "4a7bdf4e2e19c1a8bb6cf5c64094fdf6fc8ee550115ea8160c749bb7df266630",
     "registered_utc": "2026-11-15T11:32:57.782343+00:00",
@@ -13076,7 +13076,7 @@
     "planned_source_files": 261,
     "code_started": true,
     "data_packet_generated": true,
-    "model_inference_started": false,
+    "model_inference_started": true,
     "new_training": false,
     "new_adapters": false,
     "new_environment": false,
@@ -13100,7 +13100,7 @@
       "expected_prefix_guard_checks": 442,
       "expected_after_guard_checks": 50
     },
-    "next_action": "Commit/push sealed261source implementation, then opposite-arm-order432readout smokes and independent equivalence before6912readouts.",
+    "next_action": "Complete all6912readouts, audit all864normal replays and every local control; then export every condition and preserve full incremental backup.",
     "new_cpu_tests_passed": 12,
     "full_regression_session": 37696,
     "immediate_readout_and_future_state_both_affected_by_zero_gates": true,
@@ -13109,6 +13109,14 @@
     "registration_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-seal-20261115-01.json",
     "registration_seal_sha256": "5dea2da51ec8948dd9d730776b4f69ea1bf76a3810181a3fa89a78cc0b104333",
     "full_tests_passed": 343,
-    "independent_inputs": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-independent-inputs-20261115-01.json"
+    "independent_inputs": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-independent-inputs-20261115-01.json",
+    "pipeline_session": 58264,
+    "source_seal_commit": "4d2212a",
+    "forward_run": "/media/990Pro/Code/SAS/runs/memory_update/question-state-freeze-smoke-forward-20261115-01",
+    "reverse_run": "/media/990Pro/Code/SAS/runs/memory_update/question-state-freeze-smoke-reverse-20261115-01",
+    "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/question-state-freeze-primary-20261115-01",
+    "smoke_equivalence": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-smoke-equivalence-20261115-01.json",
+    "smoke_readouts_per_order": 432,
+    "smoke_raw_arm_files_exact": 8
   }
 }
