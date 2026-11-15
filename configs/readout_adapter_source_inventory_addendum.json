@@ -1,0 +1,26 @@
+{
+  "status": "registered_before_source_relocation_and_any_packet_or_native_run",
+  "registered_utc": "2026-11-15T15:15:41.282202+00:00",
+  "profile": "readout_adapter_source_inventory_path_correction_v1",
+  "original_protocol": "configs/readout_adapter_training_plan.json",
+  "original_protocol_sha256": "d8c7564a1dcaf73629a9d4a36fbd8a36f1bf566d4144b8a0adc1cfa664ae049b",
+  "reason": "Historical immutable canonical_necessity_common.sources() includes every sas_memory/*.py. Adding the new core module expanded multiple historical source closures from109to110 and caused8regression setup errors although all268old file bytes were unchanged. Keep historical checkers/data unchanged and place this experiment module in scripts instead.",
+  "failed_full_tests_log": "/media/990Pro/Code/SAS/logs/memory_update/readout-adapter-full-tests-20261115-01.log",
+  "failed_full_tests_log_sha256": "778a165c5090b99e4d1faeb2853df77f3397287ad03cd43bc932b0a7d2a5e2d9",
+  "replace_source": {
+    "from": "sas_memory/readout_adapters.py",
+    "to": "scripts/readout_adapter_modules.py"
+  },
+  "add_source": "configs/readout_adapter_source_inventory_addendum.json",
+  "effective_total_sources": 277,
+  "predecessor_sources_immutable": 268,
+  "scientific_design_changed": false,
+  "training_examples_changed": false,
+  "parameter_counts_changed": false,
+  "optimizer_budget_changed": false,
+  "old_tests_or_auditors_changed": false,
+  "packet_generated": false,
+  "model_inference_started": false,
+  "optimizer_updates_started": false,
+  "requirement": "Keep original protocol byte-identical; include this addendum in the new source seal; rerun complete360test regression without skipping, monkeypatching old module globals, or changing any268sealed predecessor sources."
+}
