@@ -1,0 +1,22 @@
+{
+  "status": "registered_fresh_query_packet_independently_reconstructed",
+  "manifest_sha256": "78c42d760f1d0108e8a79adea427f8638bca5be88be3b8933574632ba1d82f60",
+  "sources": 222,
+  "seeds": [
+    75000,
+    75001,
+    75002,
+    75003,
+    75004,
+    75005,
+    75006,
+    75007
+  ],
+  "contexts": 40,
+  "questions": 240,
+  "native_model_constructor_calls": 0,
+  "weights_loader_calls": 0,
+  "full_tests_passed": 284,
+  "full_tests_seconds": 164.267,
+  "retained_unit_fixture_failures": "Two deliberate inference-tensor mutation tests initially lacked the production InferenceMode context; fixture corrected before sealing. Both failure logs retained. No LLM outputs inspected."
+}

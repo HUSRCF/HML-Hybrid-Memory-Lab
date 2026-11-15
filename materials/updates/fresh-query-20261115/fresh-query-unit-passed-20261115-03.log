@@ -1,0 +1,21 @@
+test_all_fresh_events_roles_styles_and_baseline_failures_are_retained (tests.test_fresh_query.FreshQueryAccountingTests.test_all_fresh_events_roles_styles_and_baseline_failures_are_retained) ... ok
+test_complete222source_import_closure_and_exact_smoke_counts (tests.test_fresh_query.FreshQueryAccountingTests.test_complete222source_import_closure_and_exact_smoke_counts) ... ok
+test_missing_or_duplicated_primary_rows_cannot_pass (tests.test_fresh_query.FreshQueryAccountingTests.test_missing_or_duplicated_primary_rows_cannot_pass) ... ok
+test_real_runner_cpu_smoke_checks_all_source_and_donor_guard_counts (tests.test_fresh_query.FreshQueryAccountingTests.test_real_runner_cpu_smoke_checks_all_source_and_donor_guard_counts) ... {"event": "fresh_query", "model": "native", "seed": 75000, "primary": 102, "same_source_replays": 48, "question_captures": 48}
+ok
+test_actual_same_source_replacement_matches_output_and_leaves_decode_queries (tests.test_fresh_query.QueryRuntimeTests.test_actual_same_source_replacement_matches_output_and_leaves_decode_queries) ... ok
+test_argument_guard_catches_mutations_identity_and_layout (tests.test_fresh_query.QueryRuntimeTests.test_argument_guard_catches_mutations_identity_and_layout) ... ok
+test_auditor_rejects_patch_in_decode_and_wrong_actual_donor (tests.test_fresh_query.QueryRuntimeTests.test_auditor_rejects_patch_in_decode_and_wrong_actual_donor) ... ok
+test_capture_accepts_only_known_text_and_one_cached_question_forward (tests.test_fresh_query.QueryRuntimeTests.test_capture_accepts_only_known_text_and_one_cached_question_forward) ... ok
+test_capture_rejects_answer_call_wrong_question_and_cleans_up_on_failure (tests.test_fresh_query.QueryRuntimeTests.test_capture_rejects_answer_call_wrong_question_and_cleans_up_on_failure) ... ok
+test_cross_query_replacement_uses_donor_and_guarded_reader_provenance (tests.test_fresh_query.QueryRuntimeTests.test_cross_query_replacement_uses_donor_and_guarded_reader_provenance) ... ok
+test_donor_mutation_or_missing_layer_cannot_be_used (tests.test_fresh_query.QueryRuntimeTests.test_donor_mutation_or_missing_layer_cannot_be_used) ... ok
+test_mutating_native_non_query_tensor_is_rejected_and_wrappers_restore (tests.test_fresh_query.QueryRuntimeTests.test_mutating_native_non_query_tensor_is_rejected_and_wrappers_restore) ... ok
+test_oracle_donor_cannot_enter_full_reader (tests.test_fresh_query.QueryRuntimeTests.test_oracle_donor_cannot_enter_full_reader) ... ok
+test_query_copy_preserves_actual_singleton_strides_and_offset (tests.test_fresh_query.QueryRuntimeTests.test_query_copy_preserves_actual_singleton_strides_and_offset) ... ok
+test_restoration_preserves_all_non_recurrent_fields_and_refuses_borrowed_logits (tests.test_fresh_query.QueryRuntimeTests.test_restoration_preserves_all_non_recurrent_fields_and_refuses_borrowed_logits) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 4.388s
+
+OK
