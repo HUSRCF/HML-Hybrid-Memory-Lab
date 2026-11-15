@@ -1,0 +1,6374 @@
+{
+  "status": "posthoc_descriptive_extraction_of_complete_factorial",
+  "audit_sha256": "c50c68febfac98615cc66c0079ba90b1b983f194edf16922b24262910e422b5e",
+  "source_sha256": "0ddee89fc187f15a733ecea932ed7090f4a81c7708b6b85c4be6a1653f4481d9",
+  "all32_new_and_prefix_evidence_cells": [
+    {
+      "model": "native",
+      "condition": "NNN",
+      "reader": "full",
+      "origin": "archived_endpoint_reference",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 31,
+        "accuracy": 0.96875,
+        "answer_nll": 0.3167393645271659
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 141,
+        "accuracy": 0.88125,
+        "answer_nll": 0.3113418661057949
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 172,
+        "accuracy": 0.8958333333333334,
+        "answer_nll": 0.3122414491760234,
+        "joint3": {
+          "correct": 46,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 19,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 2,
+          "total": 8
+        },
+        "measurement_origin": "archived_endpoint_reference"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 52,
+          "accuracy": 0.8125,
+          "answer_nll": 0.40768334874883294
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 56,
+          "accuracy": 0.875,
+          "answer_nll": 0.25196946210538346
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.2770715366738538
+        }
+      }
+    },
+    {
+      "model": "native",
+      "condition": "NNN",
+      "reader": "oracle",
+      "origin": "archived_endpoint_reference",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 29,
+        "accuracy": 0.90625,
+        "answer_nll": 0.34263646975159645
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.210924888458491
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 189,
+        "accuracy": 0.984375,
+        "answer_nll": 0.23287681867400856,
+        "joint3": {
+          "correct": 61,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 30,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 6,
+          "total": 8
+        },
+        "measurement_origin": "archived_endpoint_reference"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 61,
+          "accuracy": 0.953125,
+          "answer_nll": 0.34236258423576754
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.030213715183587436
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.32605415660267073
+        }
+      }
+    },
+    {
+      "model": "native",
+      "condition": "NNH",
+      "reader": "full",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 2.980637495716413
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 70,
+        "accuracy": 0.4375,
+        "answer_nll": 0.6233002340421081
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 70,
+        "accuracy": 0.3645833333333333,
+        "answer_nll": 1.0161897776544921,
+        "joint3": {
+          "correct": 5,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 2,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 11,
+          "accuracy": 0.171875,
+          "answer_nll": 1.9087827360878389
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 24,
+          "accuracy": 0.375,
+          "answer_nll": 0.6278563975356519
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 35,
+          "accuracy": 0.546875,
+          "answer_nll": 0.5119301993399858
+        }
+      }
+    },
+    {
+      "model": "native",
+      "condition": "NNH",
+      "reader": "oracle",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 2.804217278957367
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.210924888458491
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 160,
+        "accuracy": 0.8333333333333334,
+        "answer_nll": 0.6431402868749704,
+        "joint3": {
+          "correct": 32,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 16,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 32,
+          "accuracy": 0.5,
+          "answer_nll": 1.5731529888386528
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.030213715183587436
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.32605415660267073
+        }
+      }
+    },
+    {
+      "model": "native",
+      "condition": "NHN",
+      "reader": "full",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 30,
+        "accuracy": 0.9375,
+        "answer_nll": 0.32189387393494445
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 144,
+        "accuracy": 0.9,
+        "answer_nll": 0.3091845368345579
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 174,
+        "accuracy": 0.90625,
+        "answer_nll": 0.3113027596846223,
+        "joint3": {
+          "correct": 49,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 20,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 3,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 53,
+          "accuracy": 0.828125,
+          "answer_nll": 0.4004586028556029
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 57,
+          "accuracy": 0.890625,
+          "answer_nll": 0.2590913334861398
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.27435834271212417
+        }
+      }
+    },
+    {
+      "model": "native",
+      "condition": "NHN",
+      "reader": "oracle",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 30,
+        "accuracy": 0.9375,
+        "answer_nll": 0.35493095964193344
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.21339766354261278
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 190,
+        "accuracy": 0.9895833333333334,
+        "answer_nll": 0.23698654622583287,
+        "joint3": {
+          "correct": 62,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 30,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 6,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 62,
+          "accuracy": 0.96875,
+          "answer_nll": 0.34653860873853165
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.03192855128145311
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.33249247865751386
+        }
+      }
+    },
+    {
+      "model": "native",
+      "condition": "NHH",
+      "reader": "full",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 2.979075605670611
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 69,
+        "accuracy": 0.43125,
+        "answer_nll": 0.6481757174556454
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 69,
+        "accuracy": 0.359375,
+        "answer_nll": 1.0366590321581397,
+        "joint3": {
+          "correct": 5,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 2,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 12,
+          "accuracy": 0.1875,
+          "answer_nll": 1.9272794798016548
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 23,
+          "accuracy": 0.359375,
+          "answer_nll": 0.6548657313299676
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 34,
+          "accuracy": 0.53125,
+          "answer_nll": 0.5278318853427967
+        }
+      }
+    },
+    {
+      "model": "native",
+      "condition": "NHH",
+      "reader": "oracle",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 2.8248272985219955
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.21339766354261278
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 160,
+        "accuracy": 0.8333333333333334,
+        "answer_nll": 0.6486359360391766,
+        "joint3": {
+          "correct": 32,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 16,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 32,
+          "accuracy": 0.5,
+          "answer_nll": 1.5814867781785626
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.03192855128145311
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.33249247865751386
+        }
+      }
+    },
+    {
+      "model": "native",
+      "condition": "HNN",
+      "reader": "full",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 16,
+        "accuracy": 0.5,
+        "answer_nll": 0.4429821452746789
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 143,
+        "accuracy": 0.89375,
+        "answer_nll": 0.24969690113017956
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 159,
+        "accuracy": 0.828125,
+        "answer_nll": 0.2819111084875961,
+        "joint3": {
+          "correct": 36,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 16,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 1,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 48,
+          "accuracy": 0.75,
+          "answer_nll": 0.33467303107803065
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 47,
+          "accuracy": 0.734375,
+          "answer_nll": 0.3248348403722048
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.1862254540125529
+        }
+      }
+    },
+    {
+      "model": "native",
+      "condition": "HNN",
+      "reader": "oracle",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 32,
+        "accuracy": 1,
+        "answer_nll": 0.257372450393935
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.06825917996078108
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 192,
+        "accuracy": 1,
+        "answer_nll": 0.09977805836630675,
+        "joint3": {
+          "correct": 64,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 32,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 8,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.18031526682898402
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.019954479056953762
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.09906442921298246
+        }
+      }
+    },
+    {
+      "model": "native",
+      "condition": "HNH",
+      "reader": "full",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 3.15403946240743
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 72,
+        "accuracy": 0.45,
+        "answer_nll": 0.576151456994315
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 72,
+        "accuracy": 0.375,
+        "answer_nll": 1.0057994578965008,
+        "joint3": {
+          "correct": 6,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 3,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 14,
+          "accuracy": 0.21875,
+          "answer_nll": 1.9167376700788736
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 20,
+          "accuracy": 0.3125,
+          "answer_nll": 0.6358012657923003
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 38,
+          "accuracy": 0.59375,
+          "answer_nll": 0.46485943781832856
+        }
+      }
+    },
+    {
+      "model": "native",
+      "condition": "HNH",
+      "reader": "oracle",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 2.8816434939702353
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.06825917996078108
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 160,
+        "accuracy": 0.8333333333333334,
+        "answer_nll": 0.5371565656290235,
+        "joint3": {
+          "correct": 32,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 16,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 32,
+          "accuracy": 0.5,
+          "answer_nll": 1.492450788617134
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.019954479056953762
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.09906442921298246
+        }
+      }
+    },
+    {
+      "model": "native",
+      "condition": "HHN",
+      "reader": "full",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 14,
+        "accuracy": 0.4375,
+        "answer_nll": 0.4467339913050334
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 139,
+        "accuracy": 0.86875,
+        "answer_nll": 0.2700280527273814
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 153,
+        "accuracy": 0.796875,
+        "answer_nll": 0.29947904249032337,
+        "joint3": {
+          "correct": 33,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 15,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 1,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 46,
+          "accuracy": 0.71875,
+          "answer_nll": 0.34852012728030485
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 43,
+          "accuracy": 0.671875,
+          "answer_nll": 0.3546792867903908
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.19523771340027452
+        }
+      }
+    },
+    {
+      "model": "native",
+      "condition": "HHN",
+      "reader": "oracle",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 32,
+        "accuracy": 1,
+        "answer_nll": 0.2900581567858656
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.07966618128897002
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 192,
+        "accuracy": 1,
+        "answer_nll": 0.11473151053845261,
+        "joint3": {
+          "correct": 64,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 32,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 8,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.20433379872702062
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.024267536607415725
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.1155931962809215
+        }
+      }
+    },
+    {
+      "model": "native",
+      "condition": "HHH",
+      "reader": "full",
+      "origin": "archived_endpoint_reference",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 3.1367651224136353
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 70,
+        "accuracy": 0.4375,
+        "answer_nll": 0.6041750298192103
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 70,
+        "accuracy": 0.3645833333333333,
+        "answer_nll": 1.0262733785849478,
+        "joint3": {
+          "correct": 6,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 3,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "archived_endpoint_reference"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 12,
+          "accuracy": 0.1875,
+          "answer_nll": 1.9240319166953366
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 20,
+          "accuracy": 0.3125,
+          "answer_nll": 0.6734587640191118
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 38,
+          "accuracy": 0.59375,
+          "answer_nll": 0.48132945504039526
+        }
+      }
+    },
+    {
+      "model": "native",
+      "condition": "HHH",
+      "reader": "oracle",
+      "origin": "archived_endpoint_reference",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 2.902545854449272
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.07966618128897002
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 160,
+        "accuracy": 0.8333333333333334,
+        "answer_nll": 0.5501461268156871,
+        "joint3": {
+          "correct": 32,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 16,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "archived_endpoint_reference"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 32,
+          "accuracy": 0.5,
+          "answer_nll": 1.5105776475587238
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.024267536607415725
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.1155931962809215
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "NNN",
+      "reader": "full",
+      "origin": "archived_endpoint_reference",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 32,
+        "accuracy": 1,
+        "answer_nll": 0.00529456429376296
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 159,
+        "accuracy": 0.99375,
+        "answer_nll": 0.006889925359691537
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 191,
+        "accuracy": 0.9947916666666666,
+        "answer_nll": 0.006624031848703441,
+        "joint3": {
+          "correct": 63,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 31,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 7,
+          "total": 8
+        },
+        "measurement_origin": "archived_endpoint_reference"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.00815973816497717
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 63,
+          "accuracy": 0.984375,
+          "answer_nll": 0.011410806786746738
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.00030155059438641274
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "NNN",
+      "reader": "oracle",
+      "origin": "archived_endpoint_reference",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 32,
+        "accuracy": 1,
+        "answer_nll": 0.0017285309744086892
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.05141360606239308
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 192,
+        "accuracy": 1,
+        "answer_nll": 0.04313276021439568,
+        "joint3": {
+          "correct": 64,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 32,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 8,
+          "total": 8
+        },
+        "measurement_origin": "archived_endpoint_reference"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.028497228420140647
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.0001455627310917862
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.1007554894919546
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "NNH",
+      "reader": "full",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 3.3341535180807114
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 115,
+        "accuracy": 0.71875,
+        "answer_nll": 0.16269548419265145
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 115,
+        "accuracy": 0.5989583333333334,
+        "answer_nll": 0.6912718231739947,
+        "joint3": {
+          "correct": 8,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 3,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 9,
+          "accuracy": 0.140625,
+          "answer_nll": 1.8262402608136956
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 44,
+          "accuracy": 0.6875,
+          "answer_nll": 0.23668077639619392
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 62,
+          "accuracy": 0.96875,
+          "answer_nll": 0.010894432312094674
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "NNH",
+      "reader": "oracle",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 2.5696270863215127
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.05141360606239308
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 160,
+        "accuracy": 0.8333333333333334,
+        "answer_nll": 0.4711158527722464,
+        "joint3": {
+          "correct": 32,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 16,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 32,
+          "accuracy": 0.5,
+          "answer_nll": 1.3124465060936927
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.0001455627310917862
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.1007554894919546
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "NHN",
+      "reader": "full",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 32,
+        "accuracy": 1,
+        "answer_nll": 0.007830222664779285
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 158,
+        "accuracy": 0.9875,
+        "answer_nll": 0.007504136188322263
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 190,
+        "accuracy": 0.9895833333333334,
+        "answer_nll": 0.007558483934398434,
+        "joint3": {
+          "correct": 62,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 30,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 7,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.008345567242940888
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 62,
+          "accuracy": 0.96875,
+          "answer_nll": 0.013936695279653577
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.00039318928060083636
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "NHN",
+      "reader": "oracle",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 32,
+        "accuracy": 1,
+        "answer_nll": 0.0036295284880907275
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.06424244691147578
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 192,
+        "accuracy": 1,
+        "answer_nll": 0.0541402938409116,
+        "joint3": {
+          "correct": 64,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 32,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 8,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.029485373464315973
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.0001455852869867158
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.13278992277143212
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "NHH",
+      "reader": "full",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 3.3030673811833062
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 113,
+        "accuracy": 0.70625,
+        "answer_nll": 0.16074304509009682
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 113,
+        "accuracy": 0.5885416666666666,
+        "answer_nll": 0.6844637677722984,
+        "joint3": {
+          "correct": 6,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 2,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 7,
+          "accuracy": 0.109375,
+          "answer_nll": 1.8064698089535038
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 45,
+          "accuracy": 0.703125,
+          "answer_nll": 0.23042719587162233
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 61,
+          "accuracy": 0.953125,
+          "answer_nll": 0.01649429849176916
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "NHH",
+      "reader": "oracle",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 2.5951331357161203
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.06424244691147578
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 160,
+        "accuracy": 0.8333333333333334,
+        "answer_nll": 0.4860575617122499,
+        "joint3": {
+          "correct": 32,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 16,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 32,
+          "accuracy": 0.5,
+          "answer_nll": 1.3252371770783309
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.0001455852869867158
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.13278992277143212
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "HNN",
+      "reader": "full",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 2,
+        "accuracy": 0.0625,
+        "answer_nll": 1.7188813250201445
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 158,
+        "accuracy": 0.9875,
+        "answer_nll": 0.014200680119027236
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 160,
+        "accuracy": 0.8333333333333334,
+        "answer_nll": 0.2983141209358801,
+        "joint3": {
+          "correct": 33,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 16,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 34,
+          "accuracy": 0.53125,
+          "answer_nll": 0.8637884279131262
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 62,
+          "accuracy": 0.96875,
+          "answer_nll": 0.031108549710931282
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 4.538518358288002e-05
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "HNN",
+      "reader": "oracle",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 32,
+        "accuracy": 1,
+        "answer_nll": 0.0013529345372565633
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.000548987337519217
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 192,
+        "accuracy": 1,
+        "answer_nll": 0.0006829785374754414,
+        "joint3": {
+          "correct": 64,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 32,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 8,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.0011413703015629533
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.0002024375498971646
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.0007051277609662066
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "HNH",
+      "reader": "full",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 3.6539959659179053
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 124,
+        "accuracy": 0.775,
+        "answer_nll": 0.11330056454350294
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 124,
+        "accuracy": 0.6458333333333334,
+        "answer_nll": 0.70341646477257,
+        "joint3": {
+          "correct": 11,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 3,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 12,
+          "accuracy": 0.1875,
+          "answer_nll": 1.9441332274388212
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 48,
+          "accuracy": 0.75,
+          "answer_nll": 0.16088650395128448
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.005229662927604295
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "HNH",
+      "reader": "oracle",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 3.0220391005277634
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.000548987337519217
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 160,
+        "accuracy": 0.8333333333333334,
+        "answer_nll": 0.5041306728692265,
+        "joint3": {
+          "correct": 32,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 16,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 32,
+          "accuracy": 0.5,
+          "answer_nll": 1.5114844532968164
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.0002024375498971646
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.0007051277609662066
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "HHN",
+      "reader": "full",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 2,
+        "accuracy": 0.0625,
+        "answer_nll": 1.822577098229279
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 158,
+        "accuracy": 0.9875,
+        "answer_nll": 0.016168839110919937
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 160,
+        "accuracy": 0.8333333333333334,
+        "answer_nll": 0.3172368822973131,
+        "joint3": {
+          "correct": 33,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 16,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 34,
+          "accuracy": 0.53125,
+          "answer_nll": 0.914525785937561
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 62,
+          "accuracy": 0.96875,
+          "answer_nll": 0.03711955335787328
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 6.530759650521152e-05
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "HHN",
+      "reader": "oracle",
+      "origin": "new_primary",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 32,
+        "accuracy": 1,
+        "answer_nll": 0.0035818650915947123
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.0013309540776920887
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 192,
+        "accuracy": 1,
+        "answer_nll": 0.001706105913342526,
+        "joint3": {
+          "correct": 64,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 32,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 8,
+          "total": 8
+        },
+        "measurement_origin": "new_primary"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.0022637493952970544
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.0002634916281560133
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.0025910767165745105
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "HHH",
+      "reader": "full",
+      "origin": "archived_endpoint_reference",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 3.609707439939181
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 119,
+        "accuracy": 0.74375,
+        "answer_nll": 0.11057455052074754
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 119,
+        "accuracy": 0.6197916666666666,
+        "answer_nll": 0.6937633654238198,
+        "joint3": {
+          "correct": 6,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 2,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "archived_endpoint_reference"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 8,
+          "accuracy": 0.125,
+          "answer_nll": 1.9114366085656609
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 47,
+          "accuracy": 0.734375,
+          "answer_nll": 0.16314957984256276
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.006703907863235751
+        }
+      }
+    },
+    {
+      "model": "gdn_all_tokens",
+      "condition": "HHH",
+      "reader": "oracle",
+      "origin": "archived_endpoint_reference",
+      "new_tail": {
+        "readouts": 32,
+        "greedy_exact": 0,
+        "accuracy": 0,
+        "answer_nll": 3.0013288160165152
+      },
+      "fixed_prefix": {
+        "readouts": 160,
+        "greedy_exact": 160,
+        "accuracy": 1,
+        "answer_nll": 0.0013309540776920887
+      },
+      "all": {
+        "readouts": 192,
+        "greedy_exact": 160,
+        "accuracy": 0.8333333333333334,
+        "answer_nll": 0.5013305977341626,
+        "joint3": {
+          "correct": 32,
+          "total": 64
+        },
+        "joint6": {
+          "correct": 16,
+          "total": 32
+        },
+        "all_questions_per_stream": {
+          "correct": 0,
+          "total": 8
+        },
+        "measurement_origin": "archived_endpoint_reference"
+      },
+      "by_role": {
+        "target_current": {
+          "readouts": 64,
+          "greedy_exact": 32,
+          "accuracy": 0.5,
+          "answer_nll": 1.5011372248577572
+        },
+        "target_initial": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.0002634916281560133
+        },
+        "protected_current": {
+          "readouts": 64,
+          "greedy_exact": 64,
+          "accuracy": 1,
+          "answer_nll": 0.0025910767165745105
+        }
+      }
+    }
+  ],
+  "held_tail_KV_new_value_controls": {
+    "correct": 0,
+    "readouts": 512,
+    "new_primary_readouts": 384,
+    "archived_endpoint_references": 128
+  },
+  "component_difference_counts": {
+    "native": {
+      "recurrent_states": [
+        18
+      ],
+      "conv_states": [
+        17
+      ],
+      "kv": [
+        12
+      ]
+    },
+    "gdn_all_tokens": {
+      "recurrent_states": [
+        18
+      ],
+      "conv_states": [
+        17
+      ],
+      "kv": [
+        12
+      ]
+    }
+  },
+  "all_paired_contrasts": {
+    "native": {
+      "NNN.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 169,
+          "gain": 20,
+          "loss": 3,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.07936463050201484
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 49,
+            "gain": 12,
+            "loss": 3,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.06532076451306543
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 56,
+            "gain": 8,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.22175574692179603
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.04898261992881695
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 141,
+          "gain": 19,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.10041697764730392
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 28,
+          "gain": 1,
+          "loss": 3,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.025897105224430565
+        }
+      },
+      "NNH.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 70,
+          "gain": 90,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.3730494907795219
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 11,
+            "gain": 21,
+            "loss": 0,
+            "both_wrong": 32,
+            "candidate_minus_reference_nll": -0.33562974724918604
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 24,
+            "gain": 40,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.5976426823520645
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 35,
+            "gain": 29,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.1858760427373151
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 70,
+          "gain": 90,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.41237534558361705
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.17642021675904584
+        }
+      },
+      "NHN.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 173,
+          "gain": 17,
+          "loss": 1,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": -0.07431621345878942
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 52,
+            "gain": 10,
+            "loss": 1,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": -0.053919994117071234
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 57,
+            "gain": 7,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.22716278220468666
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.058134135945389666
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 144,
+          "gain": 16,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.09578687329194509
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 29,
+          "gain": 1,
+          "loss": 1,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": 0.03303708570698897
+        }
+      },
+      "NHH.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 69,
+          "gain": 91,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.38802309611896313
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 12,
+            "gain": 20,
+            "loss": 0,
+            "both_wrong": 32,
+            "candidate_minus_reference_nll": -0.3457927016230921
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 23,
+            "gain": 41,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.6229371800485145
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 34,
+            "gain": 30,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.1953394066852828
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 69,
+          "gain": 91,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.43477805391303265
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.15424830714861548
+        }
+      },
+      "HNN.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 159,
+          "gain": 33,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.18213305012128936
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 48,
+            "gain": 16,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.15435776424904665
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 47,
+            "gain": 17,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.30488036131525104
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.08716102479957044
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 143,
+          "gain": 17,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.18143772116939846
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 16,
+          "gain": 16,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.18560969488074383
+        }
+      },
+      "HNH.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 72,
+          "gain": 88,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.4686428922674774
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 14,
+            "gain": 18,
+            "loss": 0,
+            "both_wrong": 32,
+            "candidate_minus_reference_nll": -0.42428688146173954
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 20,
+            "gain": 44,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.6158467867353465
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 38,
+            "gain": 26,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.3657950086053461
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 72,
+          "gain": 88,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.5078922770335339
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.2723959684371948
+        }
+      },
+      "HHN.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 153,
+          "gain": 39,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.18474753195187077
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 46,
+            "gain": 18,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.1441863285532842
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 43,
+            "gain": 21,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.3304117501829751
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.07964451711935301
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 139,
+          "gain": 21,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.19036187143841138
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 14,
+          "gain": 18,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.15667583451916775
+        }
+      },
+      "HHH.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 70,
+          "gain": 90,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.4761272517692608
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 12,
+            "gain": 20,
+            "loss": 0,
+            "both_wrong": 32,
+            "candidate_minus_reference_nll": -0.41345426913661265
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 20,
+            "gain": 44,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.6491912274116961
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 38,
+            "gain": 26,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.36573625875947374
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 70,
+          "gain": 90,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.5245088485302404
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.2342192679643631
+        }
+      },
+      "HNN.full_vs_NNN": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 147,
+          "gain": 12,
+          "loss": 25,
+          "both_wrong": 8,
+          "candidate_minus_reference_nll": -0.030330340688427288
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 37,
+            "gain": 11,
+            "loss": 15,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": -0.07301031767080228
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 46,
+            "gain": 1,
+            "loss": 10,
+            "both_wrong": 7,
+            "candidate_minus_reference_nll": 0.07286537826682131
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0908460826613009
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 131,
+          "gain": 12,
+          "loss": 10,
+          "both_wrong": 7,
+          "candidate_minus_reference_nll": -0.06164496497561534
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 16,
+          "gain": 0,
+          "loss": 15,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": 0.126242780747513
+        }
+      },
+      "HNN.oracle_vs_NNN": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 189,
+          "gain": 3,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.13309876030770182
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 61,
+            "gain": 3,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.1620473174067835
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.010259236126633672
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.22698972738968828
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.1426657084977099
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 29,
+          "gain": 3,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.08526401935766141
+        }
+      },
+      "NHN.full_vs_NNN": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 171,
+          "gain": 3,
+          "loss": 1,
+          "both_wrong": 17,
+          "candidate_minus_reference_nll": -0.000938689491401115
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 51,
+            "gain": 2,
+            "loss": 1,
+            "both_wrong": 10,
+            "candidate_minus_reference_nll": -0.00722474589323004
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 56,
+            "gain": 1,
+            "loss": 0,
+            "both_wrong": 7,
+            "candidate_minus_reference_nll": 0.007121871380756302
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0027131939617296074
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 141,
+          "gain": 3,
+          "loss": 0,
+          "both_wrong": 16,
+          "candidate_minus_reference_nll": -0.002157329271237055
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 30,
+          "gain": 0,
+          "loss": 1,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": 0.005154509407778585
+        }
+      },
+      "NHN.oracle_vs_NNN": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 189,
+          "gain": 1,
+          "loss": 0,
+          "both_wrong": 2,
+          "candidate_minus_reference_nll": 0.00410972755182431
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 61,
+            "gain": 1,
+            "loss": 0,
+            "both_wrong": 2,
+            "candidate_minus_reference_nll": 0.004176024502764147
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0017148360978656756
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.006438322054843108
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.0024727750841217738
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 29,
+          "gain": 1,
+          "loss": 0,
+          "both_wrong": 2,
+          "candidate_minus_reference_nll": 0.01229448989033699
+        }
+      },
+      "NNH.full_vs_NNN": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 70,
+          "gain": 0,
+          "loss": 102,
+          "both_wrong": 20,
+          "candidate_minus_reference_nll": 0.7039483284784688
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 11,
+            "gain": 0,
+            "loss": 41,
+            "both_wrong": 12,
+            "candidate_minus_reference_nll": 1.501099387339006
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 24,
+            "gain": 0,
+            "loss": 32,
+            "both_wrong": 8,
+            "candidate_minus_reference_nll": 0.37588693543026847
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 35,
+            "gain": 0,
+            "loss": 29,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.23485866266613206
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 70,
+          "gain": 0,
+          "loss": 71,
+          "both_wrong": 19,
+          "candidate_minus_reference_nll": 0.31195836793631315
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 31,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": 2.663898131189247
+        }
+      },
+      "NNH.oracle_vs_NNN": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 29,
+          "both_wrong": 3,
+          "candidate_minus_reference_nll": 0.41026346820096177
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 32,
+            "gain": 0,
+            "loss": 29,
+            "both_wrong": 3,
+            "candidate_minus_reference_nll": 1.2307904046028852
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.0
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 29,
+          "both_wrong": 3,
+          "candidate_minus_reference_nll": 2.4615808092057705
+        }
+      },
+      "NHH.full_vs_HHH": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 62,
+          "gain": 7,
+          "loss": 8,
+          "both_wrong": 115,
+          "candidate_minus_reference_nll": 0.010385653573191825
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 10,
+            "gain": 2,
+            "loss": 2,
+            "both_wrong": 50,
+            "candidate_minus_reference_nll": 0.003247563106318306
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 20,
+            "gain": 3,
+            "loss": 0,
+            "both_wrong": 41,
+            "candidate_minus_reference_nll": -0.018593032689144213
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 32,
+            "gain": 2,
+            "loss": 6,
+            "both_wrong": 24,
+            "candidate_minus_reference_nll": 0.04650243030240138
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 62,
+          "gain": 7,
+          "loss": 8,
+          "both_wrong": 83,
+          "candidate_minus_reference_nll": 0.04400068763643503
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.15768951674302423
+        }
+      },
+      "NHH.oracle_vs_HHH": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": 0.09848980922348953
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 32,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 32,
+            "candidate_minus_reference_nll": 0.07090913061983883
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.007661014674037384
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.21689928237659237
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.13373148225364276
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.07771855592727661
+        }
+      },
+      "HNH.full_vs_HHH": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 70,
+          "gain": 2,
+          "loss": 0,
+          "both_wrong": 120,
+          "candidate_minus_reference_nll": -0.020473920688447018
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 12,
+            "gain": 2,
+            "loss": 0,
+            "both_wrong": 50,
+            "candidate_minus_reference_nll": -0.007294246616462853
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 20,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 44,
+            "candidate_minus_reference_nll": -0.037657498226811484
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 38,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 26,
+            "candidate_minus_reference_nll": -0.016470017222066723
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 70,
+          "gain": 2,
+          "loss": 0,
+          "both_wrong": 88,
+          "candidate_minus_reference_nll": -0.02802357282489538
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": 0.017274339993794782
+        }
+      },
+      "HNH.oracle_vs_HHH": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.012989561186663596
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 32,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 32,
+            "candidate_minus_reference_nll": -0.01812685894158978
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.004313057550461963
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.016528767067939043
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.011407001328188927
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.020902360479036944
+        }
+      },
+      "HHN.full_vs_HHH": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 70,
+          "gain": 83,
+          "loss": 0,
+          "both_wrong": 39,
+          "candidate_minus_reference_nll": -0.7267943360946245
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 12,
+            "gain": 34,
+            "loss": 0,
+            "both_wrong": 18,
+            "candidate_minus_reference_nll": -1.5755117894150317
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 20,
+            "gain": 23,
+            "loss": 0,
+            "both_wrong": 21,
+            "candidate_minus_reference_nll": -0.31877947722872096
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 38,
+            "gain": 26,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.28609174164012074
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 70,
+          "gain": 69,
+          "loss": 0,
+          "both_wrong": 21,
+          "candidate_minus_reference_nll": -0.334146977091829
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 14,
+          "loss": 0,
+          "both_wrong": 18,
+          "candidate_minus_reference_nll": -2.690031131108602
+        }
+      },
+      "HHN.oracle_vs_HHH": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 160,
+          "gain": 32,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.43541461627723443
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 32,
+            "gain": 32,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -1.3062438488317032
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.0
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 32,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -2.6124876976634064
+        }
+      },
+      "NNN.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 42,
+          "gain": 3,
+          "loss": 2,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": -0.018189016729593277
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 13,
+            "gain": 3,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.14342636304597062
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 13,
+            "gain": 0,
+            "loss": 2,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": 0.09251345818241438
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0036541453252236017
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NNN.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 37,
+          "gain": 7,
+          "loss": 2,
+          "both_wrong": 2,
+          "candidate_minus_reference_nll": -0.019288718079527225
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 8,
+            "gain": 7,
+            "loss": 0,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": -0.22034957384069762
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 13,
+            "gain": 0,
+            "loss": 2,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": 0.11445502005517483
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.04802839954694112
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NNN.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.005867870666811037
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.018624945233265564
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.005319004684376219
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.006340337917208671
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NNN.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 45,
+          "gain": 0,
+          "loss": 3,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.006966119004775664
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 13,
+            "gain": 0,
+            "loss": 3,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.017529403169949845
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0025071054891062285
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0058760593334833775
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NNH.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 23,
+          "gain": 0,
+          "loss": 10,
+          "both_wrong": 15,
+          "candidate_minus_reference_nll": 0.8069772080828747
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 10,
+            "both_wrong": 6,
+            "candidate_minus_reference_nll": 2.3832034642497697
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 9,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 7,
+            "candidate_minus_reference_nll": 0.03934903629124164
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 14,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 2,
+            "candidate_minus_reference_nll": -0.0016208762923876439
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NNH.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 6,
+          "gain": 1,
+          "loss": 1,
+          "both_wrong": 40,
+          "candidate_minus_reference_nll": 0.6224350370466709
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 1,
+            "both_wrong": 15,
+            "candidate_minus_reference_nll": 1.9042155742645264
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 3,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 13,
+            "candidate_minus_reference_nll": -0.04010425383845965
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 3,
+            "gain": 1,
+            "loss": 0,
+            "both_wrong": 12,
+            "candidate_minus_reference_nll": 0.003193790713946019
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NNH.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.9022333451624339
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.7077213687201342
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.005319004684376219
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.006340337917208671
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NNH.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.7377222793034485
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.2165357917547226
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0025071054891062285
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0058760593334833775
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHN.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 44,
+          "gain": 2,
+          "loss": 1,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": -0.01965313653151194
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 14,
+            "gain": 2,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.12921698267261186
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 14,
+            "gain": 0,
+            "loss": 1,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": 0.07455228889981906
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0042947158217430115
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHN.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 38,
+          "gain": 5,
+          "loss": 2,
+          "both_wrong": 3,
+          "candidate_minus_reference_nll": -0.02524217756258117
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 9,
+            "gain": 5,
+            "loss": 0,
+            "both_wrong": 2,
+            "candidate_minus_reference_nll": -0.18504193301002184
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 13,
+            "gain": 0,
+            "loss": 2,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": 0.07159547507762909
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.03771992524464925
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHN.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.00947984024727096
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.03297466350098451
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.00429784277609239
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.008832985535264022
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHN.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 46,
+          "gain": 0,
+          "loss": 2,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.002748477796558291
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 14,
+            "gain": 0,
+            "loss": 2,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.000594740112622583
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0036703944400263335
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.005169779062271123
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHH.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 23,
+          "gain": 0,
+          "loss": 10,
+          "both_wrong": 15,
+          "candidate_minus_reference_nll": 0.7977529923535055
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 10,
+            "both_wrong": 6,
+            "candidate_minus_reference_nll": 2.3590125689903894
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 9,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 7,
+            "candidate_minus_reference_nll": 0.03344794424871604
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 14,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 2,
+            "candidate_minus_reference_nll": 0.0007984638214111328
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHH.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 5,
+          "gain": 1,
+          "loss": 2,
+          "both_wrong": 40,
+          "candidate_minus_reference_nll": 0.5948717511362499
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 2,
+            "both_wrong": 14,
+            "candidate_minus_reference_nll": 1.8481719344854355
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 2,
+            "gain": 1,
+            "loss": 0,
+            "both_wrong": 13,
+            "candidate_minus_reference_nll": -0.05850620071093242
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 3,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 13,
+            "candidate_minus_reference_nll": -0.005050480365753174
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHH.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.910461657641766
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.7359201156844697
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.00429784277609239
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.008832985535264022
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHH.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.7428672640623214
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.237441965689262
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0036703944400263335
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.005169779062271123
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNN.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 40,
+          "gain": 0,
+          "loss": 5,
+          "both_wrong": 3,
+          "candidate_minus_reference_nll": 0.04243119309345881
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 12,
+            "gain": 0,
+            "loss": 4,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.08071660250425339
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 12,
+            "gain": 0,
+            "loss": 1,
+            "both_wrong": 3,
+            "candidate_minus_reference_nll": 0.046126989647746086
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0004499871283769577
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNN.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 30,
+          "gain": 0,
+          "loss": 14,
+          "both_wrong": 4,
+          "candidate_minus_reference_nll": 0.16051090094778273
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 4,
+            "gain": 0,
+            "loss": 12,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.35251985428233945
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 10,
+            "gain": 0,
+            "loss": 2,
+            "both_wrong": 4,
+            "candidate_minus_reference_nll": 0.08652767228583494
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.04248517627517383
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNN.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.03495996834761981
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.1078264464934667
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0003057217303042605
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0032522631809115414
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNN.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.06667817125303878
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.2004022877663374
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.00203097394357125
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0023987479507923105
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNH.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 24,
+          "gain": 0,
+          "loss": 14,
+          "both_wrong": 10,
+          "candidate_minus_reference_nll": 0.9229793666551511
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 14,
+            "both_wrong": 2,
+            "candidate_minus_reference_nll": 2.772470297912757
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 8,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 8,
+            "candidate_minus_reference_nll": -0.003709527974327391
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.00017733002702394716
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNH.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 5,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 43,
+          "candidate_minus_reference_nll": 0.7183718101845847
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 16,
+            "candidate_minus_reference_nll": 2.1767368714014688
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 2,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 14,
+            "candidate_minus_reference_nll": -0.024057423075040153
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 3,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 13,
+            "candidate_minus_reference_nll": 0.0024359822273254464
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNH.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.9633072179664547
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.8928681953499713
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0003057217303042605
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0032522631809115414
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNH.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.8878449506850706
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.6639026260624328
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.00203097394357125
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0023987479507923105
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHN.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 39,
+          "gain": 0,
+          "loss": 5,
+          "both_wrong": 4,
+          "candidate_minus_reference_nll": 0.03608703427016736
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 12,
+            "gain": 0,
+            "loss": 4,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.07670599160095057
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 11,
+            "gain": 0,
+            "loss": 1,
+            "both_wrong": 4,
+            "candidate_minus_reference_nll": 0.03322251761953037
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0016674064099788674
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHN.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 28,
+          "gain": 0,
+          "loss": 14,
+          "both_wrong": 6,
+          "candidate_minus_reference_nll": 0.12138942111697462
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 2,
+            "gain": 0,
+            "loss": 14,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.3161494644979636
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 10,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 6,
+            "candidate_minus_reference_nll": 0.052235643068949386
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0042168442159891155
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHN.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.04598273081420403
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.13427541870623827
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0010322817640068627
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0026404919723669695
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHN.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.07109379510317618
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.20862201352914173
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0008625493501313026
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.005521921130518118
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHH.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 24,
+          "gain": 0,
+          "loss": 12,
+          "both_wrong": 12,
+          "candidate_minus_reference_nll": 0.9052632186147902
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 12,
+            "both_wrong": 4,
+            "candidate_minus_reference_nll": 2.720127941419681
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 8,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 8,
+            "candidate_minus_reference_nll": -0.006280592332283667
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0019423067569732683
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHH.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 5,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 43,
+          "candidate_minus_reference_nll": 0.700859920018249
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 16,
+            "candidate_minus_reference_nll": 2.130804881453514
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 2,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 14,
+            "candidate_minus_reference_nll": -0.03214215983947119
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 3,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 13,
+            "candidate_minus_reference_nll": 0.003917038440704346
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHH.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.9708026359181127
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.9087351340179644
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0010322817640068627
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0026404919723669695
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHH.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.8879323551082052
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.659137693544229
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0008625493501313026
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.005521921130518118
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      }
+    },
+    "gdn_all_tokens": {
+      "NNN.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 191,
+          "gain": 1,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.03650872836569224
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.020337490255163477
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 63,
+            "gain": 1,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.011265244055654952
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.10045393889756819
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 159,
+          "gain": 1,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.04452368070270154
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.003566033319354271
+        }
+      },
+      "NNH.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 115,
+          "gain": 45,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.2201559704017484
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 9,
+            "gain": 23,
+            "loss": 0,
+            "both_wrong": 32,
+            "candidate_minus_reference_nll": -0.513793754720003
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 44,
+            "gain": 20,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.23653521366510213
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 62,
+            "gain": 2,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.08986105717985993
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 115,
+          "gain": 45,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.11128187813025836
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.7645264317591985
+        }
+      },
+      "NHN.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 190,
+          "gain": 2,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.04658180990651317
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.021139806221375085
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 62,
+            "gain": 2,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.013791109992666861
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.13239673349083128
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 158,
+          "gain": 2,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.056738310723153516
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.0042006941766885575
+        }
+      },
+      "NHH.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 113,
+          "gain": 47,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.19840620606004855
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 7,
+            "gain": 25,
+            "loss": 0,
+            "both_wrong": 32,
+            "candidate_minus_reference_nll": -0.48123263187517296
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 45,
+            "gain": 19,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.23028161058463562
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 61,
+            "gain": 3,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.11629562427966296
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 113,
+          "gain": 47,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.09650059817862106
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.707934245467186
+        }
+      },
+      "HNN.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 160,
+          "gain": 32,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.29763114239840466
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 34,
+            "gain": 30,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.8626470576115631
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 62,
+            "gain": 2,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.030906112161034116
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0006597425773833265
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 158,
+          "gain": 2,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.013651692781508018
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 2,
+          "gain": 30,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -1.7175283904828877
+        }
+      },
+      "HNH.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 124,
+          "gain": 36,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.1992857919033434
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 12,
+            "gain": 20,
+            "loss": 0,
+            "both_wrong": 32,
+            "candidate_minus_reference_nll": -0.4326487741420048
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 48,
+            "gain": 16,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.16068406640138733
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.004524535166638088
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 124,
+          "gain": 36,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.11275157720598372
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.6319568653901417
+        }
+      },
+      "HHN.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 160,
+          "gain": 32,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.3155307763839706
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 34,
+            "gain": 30,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.9122620365422639
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 62,
+            "gain": 2,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.03685606172971727
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.002525769120069299
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 158,
+          "gain": 2,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.01483788503322785
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 2,
+          "gain": 30,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -1.8189952331376844
+        }
+      },
+      "HHH.oracle_vs_full": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 119,
+          "gain": 41,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.1924327676896572
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 8,
+            "gain": 24,
+            "loss": 0,
+            "both_wrong": 32,
+            "candidate_minus_reference_nll": -0.4102993837079036
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 47,
+            "gain": 17,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.16288608821440675
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.004112831146661241
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 119,
+          "gain": 41,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.10924359644305544
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.608378623922666
+        }
+      },
+      "HNN.full_vs_NNN": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 31,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": 0.29169008908717664
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 34,
+            "gain": 0,
+            "loss": 30,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.855628689748149
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 62,
+            "gain": 0,
+            "loss": 1,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": 0.019697742924184542
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0002561654108035327
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 158,
+          "gain": 0,
+          "loss": 1,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": 0.0073107547593356985
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 2,
+          "gain": 0,
+          "loss": 30,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 1.7135867607263815
+        }
+      },
+      "HNN.oracle_vs_NNN": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 192,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.042449781676920234
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.027355858118577697
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 5.687481880537841e-05
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.10005036173098839
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.050864618724873856
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.00037559643715212587
+        }
+      },
+      "NHN.full_vs_NNN": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 190,
+          "gain": 0,
+          "loss": 1,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": 0.0009344520856949932
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.00018582907796371744
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 62,
+            "gain": 0,
+            "loss": 1,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": 0.0025258884929068386
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 9.163868621442361e-05
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 158,
+          "gain": 0,
+          "loss": 1,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": 0.0006142108286307269
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.0025356583710163254
+        }
+      },
+      "NHN.oracle_vs_NNN": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 192,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.011007533626515928
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0009881450441753257
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.2555894929610566e-08
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.032034433279477526
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.012828840849082705
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.0019009975136820383
+        }
+      },
+      "NNH.full_vs_NNN": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 115,
+          "gain": 0,
+          "loss": 76,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": 0.6846477913252913
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 9,
+            "gain": 0,
+            "loss": 55,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 1.8180805226487184
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 44,
+            "gain": 0,
+            "loss": 19,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": 0.2252699696094472
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 62,
+            "gain": 0,
+            "loss": 2,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.010592881717708261
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 115,
+          "gain": 0,
+          "loss": 44,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": 0.1558055588329599
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 32,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 3.3288589537869484
+        }
+      },
+      "NNH.oracle_vs_NNN": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 32,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.4279830925578507
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 32,
+            "gain": 0,
+            "loss": 32,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 1.2839492776735522
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.0
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 32,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 2.5678985553471043
+        }
+      },
+      "NHH.full_vs_HHH": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 108,
+          "gain": 5,
+          "loss": 11,
+          "both_wrong": 68,
+          "candidate_minus_reference_nll": -0.009299597651521354
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 5,
+            "gain": 2,
+            "loss": 3,
+            "both_wrong": 54,
+            "candidate_minus_reference_nll": -0.10496679961215705
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 42,
+            "gain": 3,
+            "loss": 5,
+            "both_wrong": 14,
+            "candidate_minus_reference_nll": 0.06727761602905957
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 61,
+            "gain": 0,
+            "loss": 3,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.00979039062853341
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 108,
+          "gain": 5,
+          "loss": 11,
+          "both_wrong": 36,
+          "candidate_minus_reference_nll": 0.0501684945693493
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.30664005875587463
+        }
+      },
+      "NHH.oracle_vs_HHH": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.015273036021912706
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 32,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 32,
+            "candidate_minus_reference_nll": -0.17590004777942644
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.00011790634116929746
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.13019884605485763
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.0629114928337837
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.4061956803003947
+        }
+      },
+      "HNH.full_vs_HHH": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 116,
+          "gain": 8,
+          "loss": 3,
+          "both_wrong": 65,
+          "candidate_minus_reference_nll": 0.009653099348750199
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 8,
+            "gain": 4,
+            "loss": 0,
+            "both_wrong": 52,
+            "candidate_minus_reference_nll": 0.03269661887316033
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 44,
+            "gain": 4,
+            "loss": 3,
+            "both_wrong": 13,
+            "candidate_minus_reference_nll": -0.0022630758912782784
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0014742449356314564
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 116,
+          "gain": 8,
+          "loss": 3,
+          "both_wrong": 33,
+          "candidate_minus_reference_nll": 0.002726014022755408
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": 0.04428852597872415
+        }
+      },
+      "HNH.oracle_vs_HHH": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": 0.0028000751350639886
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 32,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 32,
+            "candidate_minus_reference_nll": 0.010347228439059117
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -6.105407825884868e-05
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0018859489556083038
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.0007819667401728717
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": 0.02071028451124829
+        }
+      },
+      "HHN.full_vs_HHH": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 119,
+          "gain": 41,
+          "loss": 0,
+          "both_wrong": 32,
+          "candidate_minus_reference_nll": -0.37652648312650666
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 8,
+            "gain": 26,
+            "loss": 0,
+            "both_wrong": 30,
+            "candidate_minus_reference_nll": -0.9969108226280999
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 47,
+            "gain": 15,
+            "loss": 0,
+            "both_wrong": 2,
+            "candidate_minus_reference_nll": -0.1260300264846895
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.006638600266730539
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 119,
+          "gain": 39,
+          "loss": 0,
+          "both_wrong": 2,
+          "candidate_minus_reference_nll": -0.09440571140982759
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 2,
+          "loss": 0,
+          "both_wrong": 30,
+          "candidate_minus_reference_nll": -1.7871303417099018
+        }
+      },
+      "HHN.oracle_vs_HHH": {
+        "all": {
+          "pairs": 192,
+          "both_correct": 160,
+          "gain": 32,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.4996244918208201
+        },
+        "by_role": {
+          "target_current": {
+            "pairs": 64,
+            "both_correct": 32,
+            "gain": 32,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -1.4988734754624602
+          },
+          "target_initial": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0
+          },
+          "protected_current": {
+            "pairs": 64,
+            "both_correct": 64,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0
+          }
+        },
+        "fixed_prefix_evidence": {
+          "pairs": 160,
+          "both_correct": 160,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.0
+        },
+        "new_tail_evidence": {
+          "pairs": 32,
+          "both_correct": 0,
+          "gain": 32,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -2.9977469509249204
+        }
+      },
+      "NNN.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.0015062573084239578
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.004430286218242448
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.00035786240853970757
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.00026937670151028215
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NNN.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 47,
+          "gain": 0,
+          "loss": 1,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.001374682872880031
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.01589098170309929
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 15,
+            "gain": 0,
+            "loss": 1,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.011773931596205028
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -6.998511745829697e-06
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NNN.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.007131720224442182
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.009800294592423597
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 3.2363451168748725e-05
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.011627229532071697
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NNN.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.04125457968060194
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.09727449519050424
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -4.9340741346289484e-05
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.02643990310995529
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NNH.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 30,
+          "gain": 1,
+          "loss": 10,
+          "both_wrong": 7,
+          "candidate_minus_reference_nll": 1.2071877728009592
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 9,
+            "both_wrong": 7,
+            "candidate_minus_reference_nll": 3.6209365115500987
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 14,
+            "gain": 1,
+            "loss": 1,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0009587531725022313
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.00033194631972340477
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NNH.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 21,
+          "gain": 2,
+          "loss": 0,
+          "both_wrong": 25,
+          "candidate_minus_reference_nll": 0.7513660048627773
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 16,
+            "candidate_minus_reference_nll": 2.410716517517964
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 6,
+            "gain": 2,
+            "loss": 0,
+            "both_wrong": 8,
+            "candidate_minus_reference_nll": -0.15799016583090025
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 15,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": 0.0013716629012681856
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NNH.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.9557068286186955
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.8787153519369895
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 3.2363451168748725e-05
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.011627229532071697
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NNH.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.7078392417076632
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.150006968974291
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -4.9340741346289484e-05
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.02643990310995529
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHN.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.004234198582417372
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.011821094170348564
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0011797149381891363
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0002982133612855856
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHN.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 47,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": -0.0026949994934537046
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.013882472482994975
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 15,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": 0.005781742706252165
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 1.5731296381697263e-05
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHN.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.007946673981905404
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.006972190106656247
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -1.0017778701391443e-06
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.016866830061189827
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHN.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.03517039543953615
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.09645118979824474
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -3.5004245622379436e-05
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.00902499227474133
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHH.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 30,
+          "gain": 0,
+          "loss": 8,
+          "both_wrong": 10,
+          "candidate_minus_reference_nll": 1.2074369377006002
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 7,
+            "both_wrong": 9,
+            "candidate_minus_reference_nll": 3.6115823599199457
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 14,
+            "gain": 0,
+            "loss": 1,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": 0.011417878440018592
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0006894252581635857
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHH.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 21,
+          "gain": 2,
+          "loss": 1,
+          "both_wrong": 24,
+          "candidate_minus_reference_nll": 0.7415845158280313
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 16,
+            "candidate_minus_reference_nll": 2.374807928999265
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 7,
+            "gain": 2,
+            "loss": 0,
+            "both_wrong": 7,
+            "candidate_minus_reference_nll": -0.1478061305436616
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 14,
+            "gain": 0,
+            "loss": 1,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": -0.0022482509715094547
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHH.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.957587751398301
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.889631086033963
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -1.0017778701391443e-06
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.016866830061189827
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "NHH.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.7269642506656105
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.1899527485171952
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -3.5004245622379436e-05
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.00902499227474133
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNN.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 34,
+          "gain": 0,
+          "loss": 14,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.22852520089218034
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 2,
+            "gain": 0,
+            "loss": 14,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.681841652544487
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.003734191227219222
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -2.4109516516546004e-07
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNN.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 31,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": 0.9003189788261479
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.738529935883586
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 15,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": -0.03757134325284521
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -1.6561522973764405e-06
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNN.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.00022632354417358633
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.000860474905493902
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 1.8221332273545464e-05
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0001997256052466885
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNN.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": -0.00013493869742988967
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -1.4217962719461264e-05
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -3.2747689677610964e-05
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.00035785043989259674
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNH.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 31,
+          "gain": 1,
+          "loss": 11,
+          "both_wrong": 5,
+          "candidate_minus_reference_nll": 1.3749053507519622
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 11,
+            "both_wrong": 5,
+            "candidate_minus_reference_nll": 4.1380632349755615
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 15,
+            "gain": 1,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.013374342680132639
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.7159960457841696e-05
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNH.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 23,
+          "gain": 0,
+          "loss": 4,
+          "both_wrong": 21,
+          "candidate_minus_reference_nll": 0.8811883115308269
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 1,
+            "both_wrong": 15,
+            "candidate_minus_reference_nll": 2.7013877189407745
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 7,
+            "gain": 0,
+            "loss": 3,
+            "both_wrong": 6,
+            "candidate_minus_reference_nll": -0.0552107667705665
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0026120175777274803
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNH.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 1.0404487167292775
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 3.121527654460806
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 1.8221332273545464e-05
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.0001997256052466885
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HNH.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.9734334454444706
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.920690934462982
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -3.2747689677610964e-05
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -0.00035785043989259674
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHN.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 34,
+          "gain": 0,
+          "loss": 14,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.28122561413471836
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 2,
+            "gain": 0,
+            "loss": 14,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.8379443715699987
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.005738322750403313
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -5.851916246986851e-06
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHN.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 31,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 1,
+          "candidate_minus_reference_nll": 0.919773240988497
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.7942608775968742
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 15,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": -0.0349384880943641
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -2.6665370190433655e-06
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHN.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.0009601876767975328
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0026289038875499196
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 3.938602390007878e-06
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0002477205404526708
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHN.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 48,
+          "gain": 0,
+          "loss": 0,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.0008988552084474577
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.002643558897640711
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -4.7575801128611296e-05
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0001005825288302731
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHH.full.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 30,
+          "gain": 1,
+          "loss": 8,
+          "both_wrong": 9,
+          "candidate_minus_reference_nll": 1.3588337403580226
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 8,
+            "both_wrong": 8,
+            "candidate_minus_reference_nll": 4.09134275202329
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 14,
+            "gain": 1,
+            "loss": 0,
+            "both_wrong": 1,
+            "candidate_minus_reference_nll": -0.014866416515966801
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.4885566745069802e-05
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHH.full.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 23,
+          "gain": 1,
+          "loss": 3,
+          "both_wrong": 21,
+          "candidate_minus_reference_nll": 0.9189854077073202
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 16,
+            "candidate_minus_reference_nll": 2.7017405734707913
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 7,
+            "gain": 1,
+            "loss": 3,
+            "both_wrong": 5,
+            "candidate_minus_reference_nll": 0.05502158310264349
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.00019406654852597693
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHH.oracle.related-8_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 1.0420326954771832
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 3.1258464272887068
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 3.938602390007878e-06
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0002477205404526708
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      },
+      "HHH.oracle.related-64_vs_unrelated": {
+        "all": {
+          "pairs": 48,
+          "both_correct": 32,
+          "gain": 0,
+          "loss": 16,
+          "both_wrong": 0,
+          "candidate_minus_reference_nll": 0.958324314691342
+        },
+        "role": {
+          "target_current": {
+            "pairs": 16,
+            "both_correct": 0,
+            "gain": 0,
+            "loss": 16,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 2.874919937346325
+          },
+          "target_initial": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": -4.7575801128611296e-05
+          },
+          "protected_current": {
+            "pairs": 16,
+            "both_correct": 16,
+            "gain": 0,
+            "loss": 0,
+            "both_wrong": 0,
+            "candidate_minus_reference_nll": 0.0001005825288302731
+          }
+        },
+        "scope": "Current answers differ; this is a matched-tail comparison, not a same-gold retention contrast."
+      }
+    }
+  },
+  "nll_interaction_means": {
+    "native": {
+      "full": {
+        "recurrent": -0.030330340688427288,
+        "convolution": -0.000938689491401115,
+        "kv": 0.7039483284784688,
+        "recurrent_convolution": 0.018506623494128384,
+        "recurrent_kv": 0.019940020930435932,
+        "convolution_kv": 0.021407943995048605,
+        "three_way": -0.018501957309328864
+      },
+      "oracle": {
+        "recurrent": -0.13309876030770182,
+        "convolution": 0.00410972755182431,
+        "kv": 0.41026346820096177,
+        "recurrent_convolution": 0.010843724620321559,
+        "recurrent_kv": 0.02711503906175493,
+        "convolution_kv": 0.0013859216123819258,
+        "three_way": -0.0033498125978641993
+      }
+    },
+    "gdn_all_tokens": {
+      "full": {
+        "recurrent": 0.29169008908717664,
+        "convolution": 0.0009344520856949932,
+        "kv": 0.6846477913252913,
+        "recurrent_convolution": 0.017988309275738055,
+        "recurrent_kv": -0.27954544748860144,
+        "convolution_kv": -0.007742507487391329,
+        "three_way": -0.020833353222791912
+      },
+      "oracle": {
+        "recurrent": -0.042449781676920234,
+        "convolution": 0.011007533626515928,
+        "kv": 0.4279830925578507,
+        "recurrent_convolution": -0.009984406250648843,
+        "recurrent_kv": 0.07546460177390045,
+        "convolution_kv": 0.003934175313487582,
+        "three_way": -0.007757377824418665
+      }
+    }
+  },
+  "independent_streams": 8,
+  "reused_cohort": true,
+  "fresh_confirmation": false,
+  "new_scientific_gate": false,
+  "architecture_effectiveness_claim": false,
+  "previous_failed_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "interpretation_limits": [
+    "Crossed caches can be off distribution.",
+    "A failed answer does not prove semantic information is absent from a tensor.",
+    "Old recurrent state can change subsequent query and answer computation.",
+    "Oracle support is privileged, not an implemented router.",
+    "Repeated readouts and archived references are not independent streams."
+  ]
+}

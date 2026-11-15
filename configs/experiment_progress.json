@@ -4810,7 +4810,7 @@
     "phase": "post_tail_path_crossover"
   },
   "training_started": true,
-  "current_conclusion": "Fresh8stream confirmation still fails allthree overall scientific gates; original same-corpus canonical passes remain in their original scope. Completed final four-case conditional state diagnostic:32exact source replays,20full-answer readouts,112archived logit tensors,all183tests and independent audit passed. Complete K/V,allnon-target tensors,metadata and initial logits fixed;12intervened/partial-state conditions alter later gold logits and losses butnonechanges the complete generated answer. Four restore-both conditions exactly replay full cache,answer,NLL and everylaterlogit. This supports a conditional prediction-distribution effect,not memory repair,original-prefix write damage or architecture superiority. Four-case localization is closed. Registered one prospective unseen8stream same-shared-checkpoint timing test withall8natural baselines,3360full-answerreadouts; no newdata,inference ortraining for that phase yet.",
+  "current_conclusion": "Held-tail KV causes0/512new-value controls; normal KV with old recurrent matrices restores oracle32/32but harms full reading, particularly GDN adapter32/32to2/32. Existing GDN normal191/192; no shared architecture necessity established.",
   "prepared_data": {
     "copy_generalization": "/media/990Pro/Code/SAS/datasets/memory_update/copy-generalization-v1",
     "status": "Frozen raw/oracle-slice/oracle-KV and matched short-update evaluations completed",
@@ -6453,7 +6453,7 @@
     "new_training": false,
     "first_failed_operational_smoke_cause": "Not established; failed run retained. Dedicated36exact replays, unchanged288query rerun and complete5376query run all passed exact controls. No tolerance, data or mask tuning."
   },
-  "latest_completed_phase": "32source_replays_and20posthoc_state_continuations_completed_and_audited",
+  "latest_completed_phase": "post_tail_path_crossover",
   "planned_copy_evidence_necessity": {
     "status": "canonical8064_completed_audited_exported_gate_passed",
     "plan": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_plan.json",
@@ -6552,7 +6552,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-15T05:47:03.202299+00:00",
+  "updated_utc": "2026-11-15T06:21:43.150654+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -6647,14 +6647,7 @@
     "completed_utc": "2026-11-14T14:05:50.100611+00:00",
     "scope": "Functional access dependence under fixed readouts, not proof of GDN forgetting, recurrent damage, a shared-interface advantage or new architecture. All48cases are related within8reused streams."
   },
-  "last_goal_turn_result": {
-    "classification": "progress",
-    "previous_turn_revalidated_as": "progress_verified_by32exact_mediation_source_replays_and_preservation_of125prior_sealed_sources",
-    "completed": "Implemented isolated state-origin runner/helper/auditor and10meaningful newtests.183tests passed. Actual32source replays and20cached full-answer observations completed;112rawlogit tensors saved. Independent original-shape GPU loss/greedy reconstruction,960tensororigins,completeKV/metadata/nativeprefix/weight/hook and4all-step restore-both closures passed.129live/archivedsources,installedsource,2rawfilesand8finalartifactsverified; alljobs terminal.",
-    "new_progress": "All20generatedstrings remainnative-reference despite12altered latergoldlogit tensors and mixed loss effects. Ended four-case localization; registered one unseen8stream10arm shared-checkpoint timing test beforedata generation. All8naturalbaselines retained; nofailedgate relabeling,newtraining orenvironment.",
-    "goal_complete": false,
-    "blocked": false
-  },
+  "last_goal_turn_result": "Completed frozen cache crossovers; publication pending; continue research after backup.",
   "canonical_oracle_replication": {
     "status": "completed_independently_audited_exported_visually_inspected",
     "plan": "/home/husrcf/Code/SAS/configs/canonical_oracle_sufficiency_replication_plan.json",
@@ -12595,7 +12588,7 @@
     "remote_download_bytes_verified": 13839371
   },
   "post_tail_path_crossover": {
-    "status": "214source_packet_sealed_before_new_crossover_inference",
+    "status": "completed_independently_audited_exported_not_yet_published",
     "protocol": "configs/post_tail_path_crossover_plan.json",
     "protocol_sha256": "ef761441d8bef022d1096d7bc851022c6199d219d544315f4c6793e72ad2a305",
     "previous_phase": "post_encoding_updates",
@@ -12610,11 +12603,37 @@
     ],
     "new_training": false,
     "new_environment": false,
-    "new_counterfactual_inference_started": false,
-    "last_updated_utc": "2026-11-15T05:47:03.202299+00:00",
-    "next_action": "Commit and push sealed code and registration; run opposite-order smokes, then registered primary only after exact equivalence.",
+    "new_counterfactual_inference_started": true,
+    "last_updated_utc": "2026-11-15T06:21:43.150654+00:00",
+    "next_action": "Publish complete byte-verified snapshot, then preregister fresh-stream question-path mediation; no answer activation or baseline correctness filtering.",
     "packet_manifest_sha256": "209c3dc8185f66e60bbcb05abec9086082c64b17a825a2aca3753a82f8af9dfd",
     "source_files": 214,
-    "full_unit_tests": 269
+    "full_unit_tests": 269,
+    "measurement_sources_unchanged": 214,
+    "forward_smoke": {
+      "new_primary": 288,
+      "endpoint_replays": 96,
+      "source_caches": 16,
+      "factorial_caches": 64,
+      "status": "independently_audited"
+    },
+    "smoke_equivalence": "/media/990Pro/Code/SAS/artifacts/memory_update/post-tail-path-smoke-equivalence-20261115-01.json",
+    "new_primary_readouts_completed": 4608,
+    "endpoint_replays_completed": 1536,
+    "source_caches_audited": 128,
+    "factorial_caches_audited": 512,
+    "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/post-tail-path-primary-audit-20261115-01.json",
+    "audit_sha256": "c50c68febfac98615cc66c0079ba90b1b983f194edf16922b24262910e422b5e",
+    "manifest_sha256": "ba01f38b49f23af7af758331694ba4e9024ebffbaa12437862356517475b69de",
+    "exports": {
+      "cells": 32,
+      "episodes": 128,
+      "strata": 480,
+      "contrasts": 496,
+      "nll_interactions": 768,
+      "component_comparisons": 3072,
+      "cache_identities": 512
+    },
+    "current_conclusion": "Held-tail KV causes0/512new-value controls; normal KV with old recurrent matrices restores oracle32/32but harms full reading, particularly GDN adapter32/32to2/32. Existing GDN normal191/192; no shared architecture necessity established."
   }
 }

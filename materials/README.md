@@ -1,5 +1,11 @@
 # Research materials
 
+Latest: [post-tail recurrent/convolution/KV crossover](updates/post-tail-path-20261115/README.md).
+All 4,608 new readouts and 1,536 endpoint replays are independently audited; all 32 cells and
+128 episode cells are exported. Restoring old recurrent matrices is not a general
+protection strategy: GDN-adapted new-value full reading falls from 32/32 to 2/32 while oracle
+still recovers 32/32. No new training or shared-architecture success claim.
+
 本目录记录 2026-11-15 暂停备份时点的材料。完整上传与校验完成后，用户已要求
 继续实验；后续状态以 `configs/experiment_progress.json` 为准，Release 快照保持不变。
 

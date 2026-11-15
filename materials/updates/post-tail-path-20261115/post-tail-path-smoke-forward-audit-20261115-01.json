@@ -1,0 +1,23 @@
+{
+  "status": "audited_post_tail_path_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/post-tail-path-smoke-forward-20261115-01",
+  "manifest_sha256": "92a50c29c1573f41a9275e9252235525d9419a29778629d51f73c67916f269d1",
+  "packet_manifest_sha256": "209c3dc8185f66e60bbcb05abec9086082c64b17a825a2aca3753a82f8af9dfd",
+  "new_primary_readouts_audited": 288,
+  "endpoint_operational_replays_audited": 96,
+  "source_N_H_caches_audited": 16,
+  "factorial_caches_audited": 64,
+  "legacy_operational_readouts": 96,
+  "source_files_verified": 214,
+  "baseline_failures_excluded": 0,
+  "fresh_confirmation": false,
+  "prior_failed_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "original_ideal_kernel_failure_preserved": true,
+  "architecture_effectiveness_claim": false,
+  "metrics": null,
+  "analysis_source_sha256": "c94da53c5c2e5e277a5a9bb3ba4593728e10c05712369ea1b64d23909129474c"
+}

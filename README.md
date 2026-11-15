@@ -5,17 +5,21 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; all 8,160 normally encoded-prefix readouts are independently audited.**
-The [complete diagnostic](materials/updates/post-encoding-20261115/README.md) reports all 170 cells
-on eight fresh streams with one shared normally encoded prefix per stream/configuration.
-Native current-value answers fall from 16/16 to 8/16 after 64 unrelated updates; oracle reading
-still reaches 16/16. Delta suppression destroys new-value answers under both readers,
-while an existing GDN adapter already reaches 48/48 with normal updates on both unrelated
-tail lengths. These controls do not establish an architectural need for joint control.
-All 259 tests, opposite-order 510-readout smokes, 680 source caches and 206 measurement sources
-passed operational validation. Earlier failed scientific criteria remain unchanged.
-No new training, environment or model download. The [post-tail cache crossover](materials/updates/post-tail-path-20261115/README.md)
-is registered with214sealed sources and269passing tests; opposite-order checks precede4608new readouts.
+**Status: active; all 4,608 new post-tail crossover readouts are independently audited.**
+The [complete diagnostic](materials/updates/post-tail-path-20261115/README.md) reports all 32 factorial cells,
+128 episode cells and 1,536 exact endpoint replays on eight reused streams. All 269 tests,
+opposite-order smokes, 128 source caches, 512 composed caches and 214 measurement sources passed.
+Held-tail KV makes every new-value control fail; keeping normal KV with old recurrent
+matrices permits oracle recovery but harms full reading. The existing GDN adapter falls
+from 32/32 to 2/32 on new values after matrix restoration, while oracle remains 32/32.
+Normal full reading already reaches 191/192 with that adapter. These results do not
+establish a need for a new shared architecture. Earlier failed criteria remain unchanged.
+No new training, environment or model download. Next validate the readout effect on fresh
+streams and isolate question-stage Query computation before considering another controller.
+
+The previous [normally encoded-prefix diagnostic](materials/updates/post-encoding-20261115/README.md)
+retains all 8,160 readouts, 170 cells, 680 source-cache checks and its byte-verified Release.
+That phase motivated this separation of recurrent, convolution and tail-KV paths.
 
 All 13,440 new whole-record budget-control readouts are independently audited.
 The [complete budget-control phase](materials/updates/update-budget-20261115/README.md)
@@ -65,6 +69,7 @@ cohort. Text, positions and prefix computation change; they do not uniquely
 localize GDN damage or establish a new architecture. All earlier failed
 scientific criteria remain failed. GDN-only means adapter scope; Attention stays.
 
+- [All 32 post-tail crossover cells and128 episode cells](materials/updates/post-tail-path-20261115/README.md)
 - [All 170 normally encoded-prefix conditions and complete audit](materials/updates/post-encoding-20261115/README.md)
 - [Byte-verified normally encoded-prefix snapshot](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/post-encoding-updates-2026-11-15)
 - [All sixty budget-control cells and encoding-confound analysis](materials/updates/update-budget-20261115/README.md)

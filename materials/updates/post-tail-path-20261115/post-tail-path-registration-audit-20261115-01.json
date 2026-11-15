@@ -1,0 +1,12 @@
+{
+  "status": "independently_reconstructed_registered_crossover_packet",
+  "manifest_sha256": "209c3dc8185f66e60bbcb05abec9086082c64b17a825a2aca3753a82f8af9dfd",
+  "sources": 214,
+  "streams": 8,
+  "contexts": 32,
+  "queries": 192,
+  "endpoint_references": 1536,
+  "model_constructor_calls": 0,
+  "full_unit_tests": 269,
+  "initial_unit_test_failure_retained": "Test initially used correct instead of existing greedy_exact metric key; fixed before sealing, no model inference."
+}

@@ -55,7 +55,8 @@ def package(audit,output):
         add(ROOT/name,ROOT,'code')
     tree(ROOT/'materials/updates/post-tail-path-20261115',ROOT,'code')
     for name in ('README.md','materials/README.md','.gitattributes','requirements.txt','configs/experiment_progress.json',
-        'scripts/run_post_tail_path_pipeline.sh','scripts/export_post_tail_path.py','scripts/package_post_tail_path.py','scripts/publish_post_tail_path.py'):
+        'scripts/run_post_tail_path_pipeline.sh','scripts/export_post_tail_path.py','scripts/package_post_tail_path.py','scripts/publish_post_tail_path.py',
+        'scripts/post_tail_path_observations.py'):
         add(ROOT/name,ROOT,'code')
     for model,state in m['models'].items():
         for kind in ('primary','endpoints'):

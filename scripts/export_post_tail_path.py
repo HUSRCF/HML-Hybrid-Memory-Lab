@@ -30,7 +30,8 @@ def main():
     audit=json.loads(a.audit.read_text());run=Path(audit['source_run']);plan=read_plan()
     if audit['status']!='completed_and_audited_post_tail_path' or audit_run(run)!=audit:raise ValueError('Complete independent primary audit required')
     registered,cases,registry,queries,endpoints,refs=registered_inputs();metrics=audit['metrics'];a.output.mkdir(parents=True,exist_ok=False)
-    raw=[];replays=[];cells=[];strata=[];episodes=[];contrasts=[];interactions=[]
+    raw=[];replays=[];cells=[];strata=[];episodes=[];contrasts=[];interactions=[];components=[];identities=[]
+    run_manifest=json.loads((run/'manifest.json').read_text())
     def readout_row(row,model,label,origin):
         q=queries[row['id']]
         return {'model':model,'condition':label,'measurement_origin':origin,**{k:row[k] for k in
@@ -38,6 +39,22 @@ def main():
             'memory_identity':row.get('memory_identity',''),**{k:q[k] for k in
             ('seed','episode','role','question_style','prefix_evidence','support_event_index','question','source_key')}}
     for model in MODELS:
+        state=run_manifest['models'][model]
+        for context in registry['contexts']:
+            proof=state['sources'][context['id']]
+            for kind,groups in proof['component_differences'].items():
+                for group,keys in groups.items():
+                    for key in keys:
+                        components.append({'model':model,'context_id':context['id'],'seed':context['seed'],
+                            'episode':context['episode'],'component':kind,'tensor_key':key,'equal':group=='equal_keys',
+                            'normal_sha256':proof['caches']['N']['cache']['tensors'][key]['sha256'],
+                            'held_sha256':proof['caches']['H']['cache']['tensors'][key]['sha256']})
+            memories={label:state['memories'][context['id']+'.'+label] for label in CONDITIONS}
+            for label,memory in memories.items():
+                equivalent=[c for c,v in memories.items() if v['memory_identity']==memory['memory_identity']]
+                identities.append({'model':model,'context_id':context['id'],'condition':label,'memory_identity':memory['memory_identity'],
+                    'equivalent_conditions':','.join(equivalent),'equivalent_count':len(equivalent),'retained':True,
+                    'query_independent':True,'borrowed_logits':False})
         for line in (run/f'{model}.primary.jsonl').read_text().splitlines():
             row=json.loads(line);raw.append(readout_row(row,model,row['condition'],'new_primary'))
         for label,rows in endpoints[model].items():
@@ -62,9 +79,10 @@ def main():
             for row in values['all_query_values']:
                 q=queries[row['id']];interactions.append({'model':model,'reader':reader,**row,
                     **{k:q[k] for k in ('seed','episode','role','question_style','prefix_evidence')}})
-    if (len(raw),len(replays),len(cells),len(episodes),len(strata),len(interactions))!=(6144,1536,32,128,480,768):
+    if (len(raw),len(replays),len(cells),len(episodes),len(strata),len(interactions),len(components),len(identities))!=(6144,1536,32,128,480,768,3072,512):
         raise ValueError('Complete unfiltered factorial exports required')
-    tables={'readouts':raw,'endpoint-replays':replays,'cells':cells,'episodes':episodes,'strata':strata,'contrasts':contrasts,'nll-interactions':interactions}
+    tables={'readouts':raw,'endpoint-replays':replays,'cells':cells,'episodes':episodes,'strata':strata,'contrasts':contrasts,
+        'nll-interactions':interactions,'cache-components':components,'cache-identities':identities}
     for name,rows in tables.items():csv_file(a.output/(name+'.csv'),rows)
     write_json(a.output/'metrics.json',metrics)
     lines=['# 尾部后递归状态、卷积与KV交叉：完整结果','',
@@ -89,6 +107,7 @@ def main():
     lines.extend(['','## 解读边界','',
         '`readouts.csv`明确区分新主测量和历史参考；`endpoint-replays.csv`单列精确端点重放。全部角色、文体、流和证据来源见`strata.csv`，全部单分量替换/修复、Oracle及相关/无关对照见`contrasts.csv`。',
         '`nll-interactions.csv`给出每个固定问题的7项有限差分，含二阶与三阶项；它们是冻结缓存干预的NLL交互，不是学到的集合效用或显著性证据。',
+        '`cache-components.csv`逐层报告全部3072项N/H分量比较，`cache-identities.csv`保留512个组合及等价组合清单；重复条件不重采样、不删除。',
         '相关尾部的当前答案来自新写入，和固定前缀证据分开报告。相关/无关匹配时该答案改变，不能把这个比较叫同一事实损伤。',
         '交叉缓存可能偏离自然分布。分量替换会改变后续Query和答案计算；回答恢复不证明事实存储或删除，也不证明共享控制的新架构必要。',
         '保留完整逐张量指纹、布局、实际属性与运行检查，没有保存所有缓存张量的全量副本。精确重跑需要相同本地权重及后端。',

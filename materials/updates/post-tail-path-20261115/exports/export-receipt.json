@@ -1,0 +1,32 @@
+{
+  "status": "complete_post_tail_path_exports",
+  "rows": {
+    "readouts": 6144,
+    "endpoint-replays": 1536,
+    "cells": 32,
+    "episodes": 128,
+    "strata": 480,
+    "contrasts": 496,
+    "nll-interactions": 768,
+    "cache-components": 3072,
+    "cache-identities": 512
+  },
+  "audit_sha256": "c50c68febfac98615cc66c0079ba90b1b983f194edf16922b24262910e422b5e",
+  "export_source_sha256": "e0af5dbeed5e5c293048cd918527ad8f01c5e24ed73a12f975da068c21a13a5a",
+  "files_sha256": {
+    "export-source.py": "e0af5dbeed5e5c293048cd918527ad8f01c5e24ed73a12f975da068c21a13a5a",
+    "contrasts.csv": "3c3834e83a8263a7abd763759649ff93709f1309f86cf736e0239d2e12869411",
+    "all32cells.png": "a80076acfa9765158f41dd2899771d03905f23ec314d82700abb16599f2c19d0",
+    "metrics.json": "6690aa0779d6f314da7017591b8d60b3c067a6572c4e8a572a66171f0736597b",
+    "cache-identities.csv": "3ed5917b8d85f12084433ff232efb34a9dbcb669df22cd51c9d3cb537ffe73c3",
+    "strata.csv": "e0c159960c50dfa382e7a13cc7f76012e69a83562320cdbabea44ba3b5ba5767",
+    "cells.csv": "e5f2a7ddb33bb3b7c8e3c200f7372f05019e0c876e522571cbe1f39998c70f11",
+    "cache-components.csv": "b120c51971604957aeb26738f38c4bf3768648a305dbb5a823d68771084676eb",
+    "all32cells.svg": "f8e99228a1d7e06edd24e571de65b1d3c562696a1ce374212bd6aa899f2b93dd",
+    "readouts.csv": "4973bab7cf029e76f87ee49221a13cfc40bdb42d246a2d6154bdece2e0fa9262",
+    "report.md": "276f30ca7a3aa8bb9754cca8ee3a207d090bd0651b90e5ee754febea34e1650f",
+    "episodes.csv": "c3444dc54622c6a0a7d17535bca959a6f6e355064a4c2531b286c3e56e87bf68",
+    "nll-interactions.csv": "2be333a3d089e57a1198cc1cff61ea3cc9d17a2bfedaa0f39ebac71e3bb5d9a5",
+    "endpoint-replays.csv": "da7c9cc1802c6203d459e2b46d9f638b7cb3d41d6d9e90819239f3fd3abb7988"
+  }
+}

@@ -1,0 +1,24 @@
+test_all_eight_origins_independent_storage_and_immutable_sources (tests.test_post_tail_path.CacheCrossoverTests.test_all_eight_origins_independent_storage_and_immutable_sources) ... ok
+test_equivalent_combinations_retained_as_eight_conditions (tests.test_post_tail_path.CacheCrossoverTests.test_equivalent_combinations_retained_as_eight_conditions) ... ok
+test_historical_prefix_unchanged_and_component_differences_independently_match (tests.test_post_tail_path.CacheCrossoverTests.test_historical_prefix_unchanged_and_component_differences_independently_match) ... ok
+test_hybrid_record_cannot_borrow_logits_or_change_origin_or_layout (tests.test_post_tail_path.CacheCrossoverTests.test_hybrid_record_cannot_borrow_logits_or_change_origin_or_layout) ... ok
+test_source_validation_rejects_alias_bookkeeping_shapes_and_hidden_tensors (tests.test_post_tail_path.CacheCrossoverTests.test_source_validation_rejects_alias_bookkeeping_shapes_and_hidden_tensors) ... ok
+test_all214sources_exist_and_contain_complete_local_import_closure (tests.test_post_tail_path.FactorialAccountingTests.test_all214sources_exist_and_contain_complete_local_import_closure) ... ok
+test_all_cells_roles_styles_streams_and_failed_baselines_are_reported (tests.test_post_tail_path.FactorialAccountingTests.test_all_cells_roles_styles_streams_and_failed_baselines_are_reported) ... ERROR
+test_finite_differences_distinguish_main_pair_and_three_way_effects (tests.test_post_tail_path.FactorialAccountingTests.test_finite_differences_distinguish_main_pair_and_three_way_effects) ... ok
+test_missing_query_or_duplicated_query_cannot_pass_complete_cell (tests.test_post_tail_path.FactorialAccountingTests.test_missing_query_or_duplicated_query_cannot_pass_complete_cell) ... ok
+test_selection_keeps_every_after_context_and_smoke_fixed_subset (tests.test_post_tail_path.FactorialAccountingTests.test_selection_keeps_every_after_context_and_smoke_fixed_subset) ... ok
+
+======================================================================
+ERROR: test_all_cells_roles_styles_streams_and_failed_baselines_are_reported (tests.test_post_tail_path.FactorialAccountingTests.test_all_cells_roles_styles_streams_and_failed_baselines_are_reported)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/husrcf/Code/SAS/tests/test_post_tail_path.py", line 125, in test_all_cells_roles_styles_streams_and_failed_baselines_are_reported
+    c=r['cells']['native']['NNN.full'];self.assertEqual(c['correct'],0)
+                                                        ~^^^^^^^^^^^
+KeyError: 'correct'
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.822s
+
+FAILED (errors=1)
