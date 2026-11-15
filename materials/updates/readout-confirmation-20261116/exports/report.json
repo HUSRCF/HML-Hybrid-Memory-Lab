@@ -1,0 +1,456 @@
+{
+  "status": "all6000physical_and6480logical_answers_independently_regraded",
+  "created_utc": "2026-11-15T17:06:07.034535+00:00",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-confirmation-primary-20261116-01",
+  "source_audit_sha256": "234a068b713d4ecee658c3bf1be1977cbeefecbcab29357c3fd1e5a6b1ebb86c",
+  "packet_manifest_sha256": "6be43a69171f05c82a1827b3ae854b575541d1f8d1026627418100e1de3e93d0",
+  "summary": {
+    "native": {
+      "set": {
+        "physical_correct": 599,
+        "physical_questions": 864,
+        "logical_correct": 599,
+        "logical_bindings": 864,
+        "protected_correct": 222,
+        "protected_bindings": 288,
+        "error_value_counts": {
+          "correct": 599,
+          "non_integer": 0,
+          "matches_requested_entity_other_seen_value": 77,
+          "matches_other_entity_seen_value": 179,
+          "unrecorded_value": 9
+        },
+        "joint6_correct": 34,
+        "joint6_units": 144
+      },
+      "copy": {
+        "physical_correct": 251,
+        "physical_questions": 336,
+        "logical_correct": 345,
+        "logical_bindings": 432,
+        "protected_correct": 135,
+        "protected_bindings": 144,
+        "error_value_counts": {
+          "correct": 345,
+          "non_integer": 0,
+          "matches_requested_entity_other_seen_value": 41,
+          "matches_other_entity_seen_value": 40,
+          "unrecorded_value": 6
+        },
+        "joint6_correct": 1,
+        "joint6_units": 48
+      }
+    },
+    "fixed_gdn": {
+      "set": {
+        "physical_correct": 814,
+        "physical_questions": 864,
+        "logical_correct": 814,
+        "logical_bindings": 864,
+        "protected_correct": 288,
+        "protected_bindings": 288,
+        "error_value_counts": {
+          "correct": 814,
+          "non_integer": 0,
+          "matches_requested_entity_other_seen_value": 50,
+          "matches_other_entity_seen_value": 0,
+          "unrecorded_value": 0
+        },
+        "joint6_correct": 113,
+        "joint6_units": 144
+      },
+      "copy": {
+        "physical_correct": 275,
+        "physical_questions": 336,
+        "logical_correct": 371,
+        "logical_bindings": 432,
+        "protected_correct": 144,
+        "protected_bindings": 144,
+        "error_value_counts": {
+          "correct": 371,
+          "non_integer": 0,
+          "matches_requested_entity_other_seen_value": 44,
+          "matches_other_entity_seen_value": 17,
+          "unrecorded_value": 0
+        },
+        "joint6_correct": 14,
+        "joint6_units": 48
+      }
+    },
+    "query": {
+      "set": {
+        "physical_correct": 859,
+        "physical_questions": 864,
+        "logical_correct": 859,
+        "logical_bindings": 864,
+        "protected_correct": 286,
+        "protected_bindings": 288,
+        "error_value_counts": {
+          "correct": 859,
+          "non_integer": 0,
+          "matches_requested_entity_other_seen_value": 3,
+          "matches_other_entity_seen_value": 2,
+          "unrecorded_value": 0
+        },
+        "joint6_correct": 140,
+        "joint6_units": 144
+      },
+      "copy": {
+        "physical_correct": 276,
+        "physical_questions": 336,
+        "logical_correct": 372,
+        "logical_bindings": 432,
+        "protected_correct": 144,
+        "protected_bindings": 144,
+        "error_value_counts": {
+          "correct": 372,
+          "non_integer": 0,
+          "matches_requested_entity_other_seen_value": 27,
+          "matches_other_entity_seen_value": 31,
+          "unrecorded_value": 2
+        },
+        "joint6_correct": 9,
+        "joint6_units": 48
+      }
+    },
+    "gate": {
+      "set": {
+        "physical_correct": 856,
+        "physical_questions": 864,
+        "logical_correct": 856,
+        "logical_bindings": 864,
+        "protected_correct": 288,
+        "protected_bindings": 288,
+        "error_value_counts": {
+          "correct": 856,
+          "non_integer": 0,
+          "matches_requested_entity_other_seen_value": 8,
+          "matches_other_entity_seen_value": 0,
+          "unrecorded_value": 0
+        },
+        "joint6_correct": 138,
+        "joint6_units": 144
+      },
+      "copy": {
+        "physical_correct": 273,
+        "physical_questions": 336,
+        "logical_correct": 369,
+        "logical_bindings": 432,
+        "protected_correct": 144,
+        "protected_bindings": 144,
+        "error_value_counts": {
+          "correct": 369,
+          "non_integer": 0,
+          "matches_requested_entity_other_seen_value": 43,
+          "matches_other_entity_seen_value": 20,
+          "unrecorded_value": 0
+        },
+        "joint6_correct": 11,
+        "joint6_units": 48
+      }
+    },
+    "query_gate": {
+      "set": {
+        "physical_correct": 859,
+        "physical_questions": 864,
+        "logical_correct": 859,
+        "logical_bindings": 864,
+        "protected_correct": 286,
+        "protected_bindings": 288,
+        "error_value_counts": {
+          "correct": 859,
+          "non_integer": 0,
+          "matches_requested_entity_other_seen_value": 2,
+          "matches_other_entity_seen_value": 3,
+          "unrecorded_value": 0
+        },
+        "joint6_correct": 141,
+        "joint6_units": 144
+      },
+      "copy": {
+        "physical_correct": 276,
+        "physical_questions": 336,
+        "logical_correct": 372,
+        "logical_bindings": 432,
+        "protected_correct": 144,
+        "protected_bindings": 144,
+        "error_value_counts": {
+          "correct": 372,
+          "non_integer": 0,
+          "matches_requested_entity_other_seen_value": 31,
+          "matches_other_entity_seen_value": 29,
+          "unrecorded_value": 0
+        },
+        "joint6_correct": 10,
+        "joint6_units": 48
+      }
+    }
+  },
+  "all_model_task_contrasts": [
+    {
+      "model_left": "native",
+      "model_right": "fixed_gdn",
+      "task": "set",
+      "logical_bindings": 864,
+      "gains": 218,
+      "regressions": 3,
+      "base_seeds": 8,
+      "base_seed_improvements": 8,
+      "base_seed_regressions": 0,
+      "base_seed_ties": 0
+    },
+    {
+      "model_left": "native",
+      "model_right": "fixed_gdn",
+      "task": "copy",
+      "logical_bindings": 432,
+      "gains": 34,
+      "regressions": 8,
+      "base_seeds": 8,
+      "base_seed_improvements": 5,
+      "base_seed_regressions": 2,
+      "base_seed_ties": 1
+    },
+    {
+      "model_left": "native",
+      "model_right": "query",
+      "task": "set",
+      "logical_bindings": 864,
+      "gains": 260,
+      "regressions": 0,
+      "base_seeds": 8,
+      "base_seed_improvements": 8,
+      "base_seed_regressions": 0,
+      "base_seed_ties": 0
+    },
+    {
+      "model_left": "native",
+      "model_right": "query",
+      "task": "copy",
+      "logical_bindings": 432,
+      "gains": 35,
+      "regressions": 8,
+      "base_seeds": 8,
+      "base_seed_improvements": 5,
+      "base_seed_regressions": 2,
+      "base_seed_ties": 1
+    },
+    {
+      "model_left": "native",
+      "model_right": "gate",
+      "task": "set",
+      "logical_bindings": 864,
+      "gains": 258,
+      "regressions": 1,
+      "base_seeds": 8,
+      "base_seed_improvements": 8,
+      "base_seed_regressions": 0,
+      "base_seed_ties": 0
+    },
+    {
+      "model_left": "native",
+      "model_right": "gate",
+      "task": "copy",
+      "logical_bindings": 432,
+      "gains": 34,
+      "regressions": 10,
+      "base_seeds": 8,
+      "base_seed_improvements": 5,
+      "base_seed_regressions": 3,
+      "base_seed_ties": 0
+    },
+    {
+      "model_left": "native",
+      "model_right": "query_gate",
+      "task": "set",
+      "logical_bindings": 864,
+      "gains": 260,
+      "regressions": 0,
+      "base_seeds": 8,
+      "base_seed_improvements": 8,
+      "base_seed_regressions": 0,
+      "base_seed_ties": 0
+    },
+    {
+      "model_left": "native",
+      "model_right": "query_gate",
+      "task": "copy",
+      "logical_bindings": 432,
+      "gains": 35,
+      "regressions": 8,
+      "base_seeds": 8,
+      "base_seed_improvements": 6,
+      "base_seed_regressions": 2,
+      "base_seed_ties": 0
+    },
+    {
+      "model_left": "fixed_gdn",
+      "model_right": "query",
+      "task": "set",
+      "logical_bindings": 864,
+      "gains": 47,
+      "regressions": 2,
+      "base_seeds": 8,
+      "base_seed_improvements": 8,
+      "base_seed_regressions": 0,
+      "base_seed_ties": 0
+    },
+    {
+      "model_left": "fixed_gdn",
+      "model_right": "query",
+      "task": "copy",
+      "logical_bindings": 432,
+      "gains": 7,
+      "regressions": 6,
+      "base_seeds": 8,
+      "base_seed_improvements": 3,
+      "base_seed_regressions": 4,
+      "base_seed_ties": 1
+    },
+    {
+      "model_left": "fixed_gdn",
+      "model_right": "gate",
+      "task": "set",
+      "logical_bindings": 864,
+      "gains": 43,
+      "regressions": 1,
+      "base_seeds": 8,
+      "base_seed_improvements": 8,
+      "base_seed_regressions": 0,
+      "base_seed_ties": 0
+    },
+    {
+      "model_left": "fixed_gdn",
+      "model_right": "gate",
+      "task": "copy",
+      "logical_bindings": 432,
+      "gains": 2,
+      "regressions": 4,
+      "base_seeds": 8,
+      "base_seed_improvements": 1,
+      "base_seed_regressions": 2,
+      "base_seed_ties": 5
+    },
+    {
+      "model_left": "fixed_gdn",
+      "model_right": "query_gate",
+      "task": "set",
+      "logical_bindings": 864,
+      "gains": 47,
+      "regressions": 2,
+      "base_seeds": 8,
+      "base_seed_improvements": 8,
+      "base_seed_regressions": 0,
+      "base_seed_ties": 0
+    },
+    {
+      "model_left": "fixed_gdn",
+      "model_right": "query_gate",
+      "task": "copy",
+      "logical_bindings": 432,
+      "gains": 6,
+      "regressions": 5,
+      "base_seeds": 8,
+      "base_seed_improvements": 2,
+      "base_seed_regressions": 3,
+      "base_seed_ties": 3
+    },
+    {
+      "model_left": "query",
+      "model_right": "gate",
+      "task": "set",
+      "logical_bindings": 864,
+      "gains": 3,
+      "regressions": 6,
+      "base_seeds": 8,
+      "base_seed_improvements": 1,
+      "base_seed_regressions": 2,
+      "base_seed_ties": 5
+    },
+    {
+      "model_left": "query",
+      "model_right": "gate",
+      "task": "copy",
+      "logical_bindings": 432,
+      "gains": 5,
+      "regressions": 8,
+      "base_seeds": 8,
+      "base_seed_improvements": 3,
+      "base_seed_regressions": 3,
+      "base_seed_ties": 2
+    },
+    {
+      "model_left": "query",
+      "model_right": "query_gate",
+      "task": "set",
+      "logical_bindings": 864,
+      "gains": 1,
+      "regressions": 1,
+      "base_seeds": 8,
+      "base_seed_improvements": 1,
+      "base_seed_regressions": 1,
+      "base_seed_ties": 6
+    },
+    {
+      "model_left": "query",
+      "model_right": "query_gate",
+      "task": "copy",
+      "logical_bindings": 432,
+      "gains": 5,
+      "regressions": 5,
+      "base_seeds": 8,
+      "base_seed_improvements": 3,
+      "base_seed_regressions": 2,
+      "base_seed_ties": 3
+    },
+    {
+      "model_left": "gate",
+      "model_right": "query_gate",
+      "task": "set",
+      "logical_bindings": 864,
+      "gains": 6,
+      "regressions": 3,
+      "base_seeds": 8,
+      "base_seed_improvements": 3,
+      "base_seed_regressions": 1,
+      "base_seed_ties": 4
+    },
+    {
+      "model_left": "gate",
+      "model_right": "query_gate",
+      "task": "copy",
+      "logical_bindings": 432,
+      "gains": 7,
+      "regressions": 4,
+      "base_seeds": 8,
+      "base_seed_improvements": 2,
+      "base_seed_regressions": 2,
+      "base_seed_ties": 4
+    }
+  ],
+  "table_rows": {
+    "physical-readouts.csv": 6000,
+    "all-logical-bindings.csv": 6480,
+    "all-model-pairs-physical.csv": 12000,
+    "all-model-pairs-logical.csv": 12960,
+    "all-role-condition-cells.csv": 1080,
+    "all-base-streams.csv": 80,
+    "all-joint6-units.csv": 960,
+    "all-joint6-model-pairs.csv": 1920,
+    "all-wording-pairs.csv": 3240,
+    "all-current-initial-pairs.csv": 2160,
+    "all-account-renaming-pairs.csv": 2160,
+    "all-tail-length-pairs.csv": 1920,
+    "all-active-account-pairs.csv": 1920,
+    "all-update-relevance-pairs.csv": 1920,
+    "all-before-after-pairs.csv": 3840,
+    "all-model-task-contrasts.csv": 20
+  },
+  "new_model_inference": false,
+  "independent_base_streams_per_task": 8,
+  "training_initializations": 1,
+  "old_failed_criteria_unchanged": true,
+  "architecture_superiority_claim": false,
+  "error_categories_are_value_matches_not_internal_attention_evidence": true,
+  "source_sha256": "ff3484b94db1ad4cb380b026f4518f87695c071d577b792c2ff550bc83c17074"
+}

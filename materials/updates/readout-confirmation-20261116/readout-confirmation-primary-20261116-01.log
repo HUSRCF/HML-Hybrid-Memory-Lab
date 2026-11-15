@@ -1,0 +1,67 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:03,  2.59it/s]Loading weights:   8%|▊         | 26/320 [00:00<00:04, 68.28it/s]Loading weights:  16%|█▌        | 51/320 [00:00<00:02, 118.08it/s]Loading weights:  25%|██▍       | 79/320 [00:00<00:01, 157.11it/s]Loading weights:  32%|███▏      | 101/320 [00:00<00:01, 120.90it/s]Loading weights:  40%|████      | 128/320 [00:01<00:01, 152.77it/s]Loading weights:  48%|████▊     | 152/320 [00:01<00:01, 165.59it/s]Loading weights:  58%|█████▊    | 186/320 [00:01<00:00, 202.73it/s]Loading weights:  66%|██████▌   | 210/320 [00:01<00:00, 211.02it/s]Loading weights:  75%|███████▍  | 239/320 [00:01<00:00, 229.26it/s]Loading weights:  83%|████████▎ | 265/320 [00:01<00:00, 237.05it/s]Loading weights:  92%|█████████▏| 293/320 [00:01<00:00, 247.33it/s]Loading weights: 100%|█████████▉| 319/320 [00:01<00:00, 248.66it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 176.58it/s]
+{"event": "frozen_confirmation_progress", "model": "native", "readouts": 96, "normal_histories": 16}
+{"event": "frozen_confirmation_progress", "model": "native", "readouts": 192, "normal_histories": 32}
+{"event": "frozen_confirmation_progress", "model": "native", "readouts": 288, "normal_histories": 48}
+{"event": "frozen_confirmation_progress", "model": "native", "readouts": 384, "normal_histories": 64}
+{"event": "frozen_confirmation_progress", "model": "native", "readouts": 480, "normal_histories": 80}
+{"event": "frozen_confirmation_progress", "model": "native", "readouts": 576, "normal_histories": 96}
+{"event": "frozen_confirmation_progress", "model": "native", "readouts": 672, "normal_histories": 112}
+{"event": "frozen_confirmation_progress", "model": "native", "readouts": 768, "normal_histories": 128}
+{"event": "frozen_confirmation_progress", "model": "native", "readouts": 864, "normal_histories": 144}
+{"event": "frozen_confirmation_progress", "model": "native", "readouts": 960, "normal_histories": 160}
+{"event": "frozen_confirmation_progress", "model": "native", "readouts": 1056, "normal_histories": 176}
+{"event": "frozen_confirmation_progress", "model": "native", "readouts": 1152, "normal_histories": 192}
+{"event": "completed_frozen_readout_model", "model": "native", "smoke": false, "readouts": 1200}
+{"event": "frozen_confirmation_progress", "model": "fixed_gdn", "readouts": 96, "normal_histories": 16}
+{"event": "frozen_confirmation_progress", "model": "fixed_gdn", "readouts": 192, "normal_histories": 32}
+{"event": "frozen_confirmation_progress", "model": "fixed_gdn", "readouts": 288, "normal_histories": 48}
+{"event": "frozen_confirmation_progress", "model": "fixed_gdn", "readouts": 384, "normal_histories": 64}
+{"event": "frozen_confirmation_progress", "model": "fixed_gdn", "readouts": 480, "normal_histories": 80}
+{"event": "frozen_confirmation_progress", "model": "fixed_gdn", "readouts": 576, "normal_histories": 96}
+{"event": "frozen_confirmation_progress", "model": "fixed_gdn", "readouts": 672, "normal_histories": 112}
+{"event": "frozen_confirmation_progress", "model": "fixed_gdn", "readouts": 768, "normal_histories": 128}
+{"event": "frozen_confirmation_progress", "model": "fixed_gdn", "readouts": 864, "normal_histories": 144}
+{"event": "frozen_confirmation_progress", "model": "fixed_gdn", "readouts": 960, "normal_histories": 160}
+{"event": "frozen_confirmation_progress", "model": "fixed_gdn", "readouts": 1056, "normal_histories": 176}
+{"event": "frozen_confirmation_progress", "model": "fixed_gdn", "readouts": 1152, "normal_histories": 192}
+{"event": "completed_frozen_readout_model", "model": "fixed_gdn", "smoke": false, "readouts": 1200}
+{"event": "frozen_confirmation_progress", "model": "query", "readouts": 96, "normal_histories": 16}
+{"event": "frozen_confirmation_progress", "model": "query", "readouts": 192, "normal_histories": 32}
+{"event": "frozen_confirmation_progress", "model": "query", "readouts": 288, "normal_histories": 48}
+{"event": "frozen_confirmation_progress", "model": "query", "readouts": 384, "normal_histories": 64}
+{"event": "frozen_confirmation_progress", "model": "query", "readouts": 480, "normal_histories": 80}
+{"event": "frozen_confirmation_progress", "model": "query", "readouts": 576, "normal_histories": 96}
+{"event": "frozen_confirmation_progress", "model": "query", "readouts": 672, "normal_histories": 112}
+{"event": "frozen_confirmation_progress", "model": "query", "readouts": 768, "normal_histories": 128}
+{"event": "frozen_confirmation_progress", "model": "query", "readouts": 864, "normal_histories": 144}
+{"event": "frozen_confirmation_progress", "model": "query", "readouts": 960, "normal_histories": 160}
+{"event": "frozen_confirmation_progress", "model": "query", "readouts": 1056, "normal_histories": 176}
+{"event": "frozen_confirmation_progress", "model": "query", "readouts": 1152, "normal_histories": 192}
+{"event": "completed_frozen_readout_model", "model": "query", "smoke": false, "readouts": 1200}
+{"event": "frozen_confirmation_progress", "model": "gate", "readouts": 96, "normal_histories": 16}
+{"event": "frozen_confirmation_progress", "model": "gate", "readouts": 192, "normal_histories": 32}
+{"event": "frozen_confirmation_progress", "model": "gate", "readouts": 288, "normal_histories": 48}
+{"event": "frozen_confirmation_progress", "model": "gate", "readouts": 384, "normal_histories": 64}
+{"event": "frozen_confirmation_progress", "model": "gate", "readouts": 480, "normal_histories": 80}
+{"event": "frozen_confirmation_progress", "model": "gate", "readouts": 576, "normal_histories": 96}
+{"event": "frozen_confirmation_progress", "model": "gate", "readouts": 672, "normal_histories": 112}
+{"event": "frozen_confirmation_progress", "model": "gate", "readouts": 768, "normal_histories": 128}
+{"event": "frozen_confirmation_progress", "model": "gate", "readouts": 864, "normal_histories": 144}
+{"event": "frozen_confirmation_progress", "model": "gate", "readouts": 960, "normal_histories": 160}
+{"event": "frozen_confirmation_progress", "model": "gate", "readouts": 1056, "normal_histories": 176}
+{"event": "frozen_confirmation_progress", "model": "gate", "readouts": 1152, "normal_histories": 192}
+{"event": "completed_frozen_readout_model", "model": "gate", "smoke": false, "readouts": 1200}
+{"event": "frozen_confirmation_progress", "model": "query_gate", "readouts": 96, "normal_histories": 16}
+{"event": "frozen_confirmation_progress", "model": "query_gate", "readouts": 192, "normal_histories": 32}
+{"event": "frozen_confirmation_progress", "model": "query_gate", "readouts": 288, "normal_histories": 48}
+{"event": "frozen_confirmation_progress", "model": "query_gate", "readouts": 384, "normal_histories": 64}
+{"event": "frozen_confirmation_progress", "model": "query_gate", "readouts": 480, "normal_histories": 80}
+{"event": "frozen_confirmation_progress", "model": "query_gate", "readouts": 576, "normal_histories": 96}
+{"event": "frozen_confirmation_progress", "model": "query_gate", "readouts": 672, "normal_histories": 112}
+{"event": "frozen_confirmation_progress", "model": "query_gate", "readouts": 768, "normal_histories": 128}
+{"event": "frozen_confirmation_progress", "model": "query_gate", "readouts": 864, "normal_histories": 144}
+{"event": "frozen_confirmation_progress", "model": "query_gate", "readouts": 960, "normal_histories": 160}
+{"event": "frozen_confirmation_progress", "model": "query_gate", "readouts": 1056, "normal_histories": 176}
+{"event": "frozen_confirmation_progress", "model": "query_gate", "readouts": 1152, "normal_histories": 192}
+{"event": "completed_frozen_readout_model", "model": "query_gate", "smoke": false, "readouts": 1200}

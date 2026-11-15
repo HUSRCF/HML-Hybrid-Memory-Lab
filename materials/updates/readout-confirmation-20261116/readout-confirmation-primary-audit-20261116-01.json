@@ -1,0 +1,62 @@
+{
+  "status": "completed_and_audited_frozen_readout_confirmation",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-confirmation-primary-20261116-01",
+  "manifest_sha256": "2e1134cd2feabb39581847f40b9716ab26e1e0fd083373d2754eaa8a6931a86a",
+  "packet_manifest_sha256": "6be43a69171f05c82a1827b3ae854b575541d1f8d1026627418100e1de3e93d0",
+  "source_files_verified": 289,
+  "physical_readouts_audited": 6000,
+  "models": {
+    "native": {
+      "set_correct": 599,
+      "set_questions": 864,
+      "copy_physical_correct": 251,
+      "copy_physical_questions": 336,
+      "copy_binding_correct": 345,
+      "copy_bindings": 432,
+      "normal_histories": 200
+    },
+    "fixed_gdn": {
+      "set_correct": 814,
+      "set_questions": 864,
+      "copy_physical_correct": 275,
+      "copy_physical_questions": 336,
+      "copy_binding_correct": 371,
+      "copy_bindings": 432,
+      "normal_histories": 200
+    },
+    "query": {
+      "set_correct": 859,
+      "set_questions": 864,
+      "copy_physical_correct": 276,
+      "copy_physical_questions": 336,
+      "copy_binding_correct": 372,
+      "copy_bindings": 432,
+      "normal_histories": 200
+    },
+    "gate": {
+      "set_correct": 856,
+      "set_questions": 864,
+      "copy_physical_correct": 273,
+      "copy_physical_questions": 336,
+      "copy_binding_correct": 369,
+      "copy_bindings": 432,
+      "normal_histories": 200
+    },
+    "query_gate": {
+      "set_correct": 859,
+      "set_questions": 864,
+      "copy_physical_correct": 276,
+      "copy_physical_questions": 336,
+      "copy_binding_correct": 372,
+      "copy_bindings": 432,
+      "normal_histories": 200
+    }
+  },
+  "prior_failed_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "analysis_source_sha256": "0bdde1b9ffd12c8c5c308d72df3723586a75070b6f9c499adfc7ff539e9c61b5",
+  "completed_utc": "2026-11-15T17:02:55.918000+00:00"
+}

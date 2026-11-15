@@ -1,0 +1,103 @@
+{
+  "status": "completed_all6000_frozen_confirmation_readouts_and_independent_audit",
+  "started_utc": "2026-11-15T16:30:50.400940+00:00",
+  "source_sha256": "d494f1ecb0582944a85f90cd1090ea1d57f858c3ad7b9ad0021f43b72c7b8b5a",
+  "stages": [
+    {
+      "stage": "prepare_fixed_confirmation",
+      "started_utc": "2026-11-15T16:30:50.401089+00:00",
+      "log": "/media/990Pro/Code/SAS/logs/memory_update/readout-confirmation-registration-20261116-01.log",
+      "command": [
+        "/home/husrcf/anaconda3/bin/python",
+        "-B",
+        "scripts/prepare_readout_confirmation.py"
+      ],
+      "returncode": 0,
+      "completed_utc": "2026-11-15T16:32:16.336420+00:00",
+      "log_sha256": "0530c4f5dda4d36760fc0427cdf7e577fcb01c629fe3cf05085f830b374a51d5"
+    },
+    {
+      "stage": "independent_input_reconstruction",
+      "started_utc": "2026-11-15T16:32:16.347795+00:00",
+      "log": "/media/990Pro/Code/SAS/logs/memory_update/readout-confirmation-independent-inputs-20261116-01.log",
+      "command": [
+        "/home/husrcf/anaconda3/bin/python",
+        "-B",
+        "/tmp/check_readout_confirmation_packet.py"
+      ],
+      "returncode": 0,
+      "completed_utc": "2026-11-15T16:33:51.989491+00:00",
+      "log_sha256": "90e567796ec2de7e4ec7beeef50ad94f7274b1d411d752b236ba0ee07237ce7e"
+    },
+    {
+      "stage": "replay_observed_fit",
+      "started_utc": "2026-11-15T16:33:51.989846+00:00",
+      "log": "/media/990Pro/Code/SAS/logs/memory_update/readout-confirmation-smoke-20261116-01.log",
+      "command": [
+        "/home/husrcf/anaconda3/bin/python",
+        "-B",
+        "scripts/run_readout_confirmation.py",
+        "--smoke",
+        "--output",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-confirmation-smoke-20261116-01"
+      ],
+      "returncode": 0,
+      "completed_utc": "2026-11-15T16:35:28.873381+00:00",
+      "log_sha256": "64da962c46fe50f50eea9d04dea918963b05177e407dda3f0cafad2242680a05"
+    },
+    {
+      "stage": "audit_observed_replay",
+      "started_utc": "2026-11-15T16:35:28.873786+00:00",
+      "log": "/media/990Pro/Code/SAS/logs/memory_update/readout-confirmation-smoke-audit-20261116-01.log",
+      "command": [
+        "/home/husrcf/anaconda3/bin/python",
+        "-B",
+        "scripts/analyze_readout_confirmation.py",
+        "--run",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-confirmation-smoke-20261116-01",
+        "--allow-smoke",
+        "--output",
+        "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-smoke-audit-20261116-01.json"
+      ],
+      "returncode": 0,
+      "completed_utc": "2026-11-15T16:36:10.279825+00:00",
+      "log_sha256": "6318aee941c077aa5b091fe0cc3ea03c9a0dd78f6eccc783babc2cc3daaa50de"
+    },
+    {
+      "stage": "full_frozen_confirmation",
+      "started_utc": "2026-11-15T16:36:10.280157+00:00",
+      "log": "/media/990Pro/Code/SAS/logs/memory_update/readout-confirmation-primary-20261116-01.log",
+      "command": [
+        "/home/husrcf/anaconda3/bin/python",
+        "-B",
+        "scripts/run_readout_confirmation.py",
+        "--smoke-audit",
+        "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-smoke-audit-20261116-01.json",
+        "--output",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-confirmation-primary-20261116-01"
+      ],
+      "returncode": 0,
+      "completed_utc": "2026-11-15T17:02:59.461765+00:00",
+      "log_sha256": "033accf4bfa9e294d90ffc5de6dd1a6a1a8266d93b718ef56bf800b896a4a3df"
+    },
+    {
+      "stage": "independent_complete_confirmation_audit",
+      "started_utc": "2026-11-15T17:02:59.462169+00:00",
+      "log": "/media/990Pro/Code/SAS/logs/memory_update/readout-confirmation-primary-audit-20261116-01.log",
+      "command": [
+        "/home/husrcf/anaconda3/bin/python",
+        "-B",
+        "scripts/analyze_readout_confirmation.py",
+        "--run",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-confirmation-primary-20261116-01",
+        "--output",
+        "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-primary-audit-20261116-01.json"
+      ],
+      "returncode": 0,
+      "completed_utc": "2026-11-15T17:04:12.321658+00:00",
+      "log_sha256": "da723d319594e3a55a3f262df6ea151df23ebfdf5474850d6ae88705b1236efd"
+    }
+  ],
+  "accuracy_gate": false,
+  "completed_utc": "2026-11-15T17:04:12.321980+00:00"
+}

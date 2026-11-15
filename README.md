@@ -5,27 +5,50 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Current: preparing matched learned Query/output-gate controls on the frozen GDN baseline.**
-The [registered training diagnostic](materials/updates/readout-adapters-20261115/README.md)
-uses all 1,728 observed questions as fit data, three exactly matched 131,072-parameter arms,
-and question/answer-only activation in both training and deployment. Eight new CPU checks
-passed; complete regression is running after a separately registered source-path correction
-that preserves every historical source and test. No new native inference or training yet.
+**Latest completed: all 6,000 new-stream readout-control answers independently audited.**
+The [complete SET/COPY confirmation](materials/updates/readout-confirmation-20261116/README.md)
+retains all five frozen models, every condition, repair, regression and all 6,480 logical bindings.
+Final checkpoints were locked before constructing the new cohorts; no Oracle, donor, recurrent
+rollback, sparse reader or further training is used.
 
-**Latest completed: all 3,456 normal-history version-address readouts independently audited.**
-The [complete passive diagnostic](materials/updates/version-address-20261115/README.md)
-retains every old question and eight prospectively fixed new streams. The existing frozen
-GDN adapter scores 819/864 on the fresh streams; all 45 errors emit another version of the
-queried account, while protected-account reading is 288/288. At the preregistered layer15,
-answer-boundary observation, the wrong-value record has higher pooled weight in 35 errors;
-the correct support has higher weight in 10. These counterexamples prevent treating pooled
-attention as causal answer use. Version-word contrasts appear at both layers15 and19.
-All 352 pre-inference tests, 268 sealed sources, opposite-order controls, 1,728 exact old
-replays and 576 complete raw FP32 arrays passed audit. No Oracle, donor, new training,
-architecture gain or unique-group attribution. All prior failed criteria remain false.
-Complete tables and plots are exported. The [full incremental backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/version-address-observation-2026-11-15)
-is published; all three assets were downloaded and byte-verified.
-The broader research goal remains active.
+| Frozen model | SET /864 | COPY physical /336 | COPY six-answer units /48 |
+| --- | ---: | ---: | ---: |
+| Native | 599 | 251 | 1 |
+| Fixed GDN | 814 | 275 | 14 |
+| Query | 859 | 276 | 9 |
+| Output gate | 856 | 273 | 11 |
+| Query + gate | 859 | 276 | 10 |
+
+All three controls improve SET net accuracy on every base stream, but COPY joint success
+falls. Query and joint each introduce two protected-account errors; gate preserves all
+288 protected SET answers. Strong gate-only results prevent a unique Query-address
+explanation. Each task has only eight independent base streams and training uses one
+initialization; paired views are dependent. These simple controls establish a stronger
+baseline and a transfer/retention problem, not an advantage for a new shared hybrid block.
+All 372 tests and 289 sealed sources passed; every learned readout's 200 normal histories
+match fixed GDN across all 48 cache fields, layouts, metadata and prefix logits.
+Complete raw tables, audits and plots are committed; full backup publication is in preparation.
+
+**Completed: all three readout controls trained and all observed-fit answers audited.**
+The [complete training record](materials/updates/readout-adapters-20261115/README.md)
+retains all 1,728 fit questions per arm, 432 updates per arm and 131,072 new parameters.
+The frozen GDN baseline scores 1,633/1,728; Query scores 1,720 (92 repairs, 5 regressions),
+output gate 1,715 (84 repairs, 2 regressions), and joint 1,727 (95 repairs, 1 regression).
+The joint regression is a protected-account question. All fact-prefix cache fields and
+logits remain exactly unchanged by these question/answer-only controls.
+These are fit results from one initialization, not generalization or architecture evidence.
+Strong gate-only fitting also prevents a unique Query-address explanation.
+The [complete fit backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/readout-adapter-fit-2026-11-16)
+was published and all three remote assets downloaded and byte-verified.
+
+The [preceding passive version-address diagnostic](materials/updates/version-address-20261115/README.md)
+retains all 3,456 readouts and 576 raw attention arrays. The existing GDN scores 819/864
+on its fresh streams; all 45 errors emit another version of the requested account,
+while protected reading is 288/288. Pooled attention mass is descriptive, not causal
+answer use, and effects at layers 15 and 19 do not uniquely locate a faulty block.
+Its [complete backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/version-address-observation-2026-11-15)
+is published and byte-verified. All earlier failed scientific criteria remain unchanged;
+the broader hybrid-memory research goal remains active.
 
 **Previous: all 6,912 question-phase GDN control readouts independently audited.**
 The [complete eight-arm diagnostic](materials/updates/question-state-freeze-20261115/README.md)

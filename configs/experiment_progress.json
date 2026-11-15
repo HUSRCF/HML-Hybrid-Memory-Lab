@@ -6294,7 +6294,7 @@
     "new_training": false,
     "first_failed_operational_smoke_cause": "Not established; failed run retained. Dedicated36exact replays, unchanged288query rerun and complete5376query run all passed exact controls. No tolerance, data or mask tuning."
   },
-  "latest_completed_phase": "question_state_freeze",
+  "latest_completed_phase": "readout_confirmation",
   "planned_copy_evidence_necessity": {
     "status": "canonical8064_completed_audited_exported_gate_passed",
     "plan": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_plan.json",
@@ -13412,7 +13412,7 @@
     "remote_assets_verified": 3
   },
   "readout_confirmation": {
-    "status": "fixed_cases_generated_independently_verified_observed_replay_audited_full6000_running",
+    "status": "complete6000_independently_audited_and_all_answers_exported",
     "protocol": "configs/readout_adapter_confirmation_plan.json",
     "protocol_sha256": "30fe0e1107b57ff48dec43a2015ddd29c4e8f9c168b2b8e4dd1895c326a8fb33",
     "predecessor_sources_immutable": 282,
@@ -13449,7 +13449,7 @@
       89006,
       89007
     ],
-    "next_action": "Continue the existing live pipeline6705 without restart. Complete all6000physical readouts and independent full audit before aggregate performance claims;then retain every paired gain/regression,SETcondition andCOPYdepth/style/order/role. No tuning,checkpointselection orresampling.",
+    "next_action": "Publish and roundtrip-verify the complete backup;interpret SET improvements and COPY retention against all frozen simple baselines before registering any further method. No tuning or resampling of this completed cohort.",
     "full_tests_passed": 372,
     "full_tests_seconds": 463.121,
     "source_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-source-seal-20261115-01.json",
@@ -13471,6 +13471,195 @@
     "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-primary-audit-20261116-01.json",
     "pending_complete_analysis": "/tmp/export_readout_confirmation.py",
     "pending_complete_analysis_sha256": "ff3484b94db1ad4cb380b026f4518f87695c071d577b792c2ff550bc83c17074",
-    "pending_complete_analysis_scope": "After independent full audit only:all6000physical answers,6480logical bindings,all10model pairs,1080complete role-condition cells,80basestream rows,all960joint6units andeverywording/version/name/length/load/relevance/before-after pair. Semantic smoke checked on a separate trivial COPY fixture without reading prospective model answers."
+    "pending_complete_analysis_scope": "After independent full audit only:all6000physical answers,6480logical bindings,all10model pairs,1080complete role-condition cells,80basestream rows,all960joint6units andeverywording/version/name/length/load/relevance/before-after pair. Semantic smoke checked on a separate trivial COPY fixture without reading prospective model answers.",
+    "completed_utc": "2026-11-15T17:07:30.329191+00:00",
+    "independent_audit_sha256": "234a068b713d4ecee658c3bf1be1977cbeefecbcab29357c3fd1e5a6b1ebb86c",
+    "physical_readouts": 6000,
+    "logical_bindings": 6480,
+    "complete_export": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-exports-20261116-01",
+    "complete_export_receipt_sha256": "b3548b1f08730e665c4a1d70514fe2588bab4a5dd029f0945094d2f67f881abf",
+    "complete_summary": {
+      "native": {
+        "set": {
+          "physical_correct": 599,
+          "physical_questions": 864,
+          "logical_correct": 599,
+          "logical_bindings": 864,
+          "protected_correct": 222,
+          "protected_bindings": 288,
+          "error_value_counts": {
+            "correct": 599,
+            "non_integer": 0,
+            "matches_requested_entity_other_seen_value": 77,
+            "matches_other_entity_seen_value": 179,
+            "unrecorded_value": 9
+          },
+          "joint6_correct": 34,
+          "joint6_units": 144
+        },
+        "copy": {
+          "physical_correct": 251,
+          "physical_questions": 336,
+          "logical_correct": 345,
+          "logical_bindings": 432,
+          "protected_correct": 135,
+          "protected_bindings": 144,
+          "error_value_counts": {
+            "correct": 345,
+            "non_integer": 0,
+            "matches_requested_entity_other_seen_value": 41,
+            "matches_other_entity_seen_value": 40,
+            "unrecorded_value": 6
+          },
+          "joint6_correct": 1,
+          "joint6_units": 48
+        }
+      },
+      "fixed_gdn": {
+        "set": {
+          "physical_correct": 814,
+          "physical_questions": 864,
+          "logical_correct": 814,
+          "logical_bindings": 864,
+          "protected_correct": 288,
+          "protected_bindings": 288,
+          "error_value_counts": {
+            "correct": 814,
+            "non_integer": 0,
+            "matches_requested_entity_other_seen_value": 50,
+            "matches_other_entity_seen_value": 0,
+            "unrecorded_value": 0
+          },
+          "joint6_correct": 113,
+          "joint6_units": 144
+        },
+        "copy": {
+          "physical_correct": 275,
+          "physical_questions": 336,
+          "logical_correct": 371,
+          "logical_bindings": 432,
+          "protected_correct": 144,
+          "protected_bindings": 144,
+          "error_value_counts": {
+            "correct": 371,
+            "non_integer": 0,
+            "matches_requested_entity_other_seen_value": 44,
+            "matches_other_entity_seen_value": 17,
+            "unrecorded_value": 0
+          },
+          "joint6_correct": 14,
+          "joint6_units": 48
+        }
+      },
+      "query": {
+        "set": {
+          "physical_correct": 859,
+          "physical_questions": 864,
+          "logical_correct": 859,
+          "logical_bindings": 864,
+          "protected_correct": 286,
+          "protected_bindings": 288,
+          "error_value_counts": {
+            "correct": 859,
+            "non_integer": 0,
+            "matches_requested_entity_other_seen_value": 3,
+            "matches_other_entity_seen_value": 2,
+            "unrecorded_value": 0
+          },
+          "joint6_correct": 140,
+          "joint6_units": 144
+        },
+        "copy": {
+          "physical_correct": 276,
+          "physical_questions": 336,
+          "logical_correct": 372,
+          "logical_bindings": 432,
+          "protected_correct": 144,
+          "protected_bindings": 144,
+          "error_value_counts": {
+            "correct": 372,
+            "non_integer": 0,
+            "matches_requested_entity_other_seen_value": 27,
+            "matches_other_entity_seen_value": 31,
+            "unrecorded_value": 2
+          },
+          "joint6_correct": 9,
+          "joint6_units": 48
+        }
+      },
+      "gate": {
+        "set": {
+          "physical_correct": 856,
+          "physical_questions": 864,
+          "logical_correct": 856,
+          "logical_bindings": 864,
+          "protected_correct": 288,
+          "protected_bindings": 288,
+          "error_value_counts": {
+            "correct": 856,
+            "non_integer": 0,
+            "matches_requested_entity_other_seen_value": 8,
+            "matches_other_entity_seen_value": 0,
+            "unrecorded_value": 0
+          },
+          "joint6_correct": 138,
+          "joint6_units": 144
+        },
+        "copy": {
+          "physical_correct": 273,
+          "physical_questions": 336,
+          "logical_correct": 369,
+          "logical_bindings": 432,
+          "protected_correct": 144,
+          "protected_bindings": 144,
+          "error_value_counts": {
+            "correct": 369,
+            "non_integer": 0,
+            "matches_requested_entity_other_seen_value": 43,
+            "matches_other_entity_seen_value": 20,
+            "unrecorded_value": 0
+          },
+          "joint6_correct": 11,
+          "joint6_units": 48
+        }
+      },
+      "query_gate": {
+        "set": {
+          "physical_correct": 859,
+          "physical_questions": 864,
+          "logical_correct": 859,
+          "logical_bindings": 864,
+          "protected_correct": 286,
+          "protected_bindings": 288,
+          "error_value_counts": {
+            "correct": 859,
+            "non_integer": 0,
+            "matches_requested_entity_other_seen_value": 2,
+            "matches_other_entity_seen_value": 3,
+            "unrecorded_value": 0
+          },
+          "joint6_correct": 141,
+          "joint6_units": 144
+        },
+        "copy": {
+          "physical_correct": 276,
+          "physical_questions": 336,
+          "logical_correct": 372,
+          "logical_bindings": 432,
+          "protected_correct": 144,
+          "protected_bindings": 144,
+          "error_value_counts": {
+            "correct": 372,
+            "non_integer": 0,
+            "matches_requested_entity_other_seen_value": 31,
+            "matches_other_entity_seen_value": 29,
+            "unrecorded_value": 0
+          },
+          "joint6_correct": 10,
+          "joint6_units": 48
+        }
+      }
+    },
+    "architecture_superiority_claim": false
   }
 }
