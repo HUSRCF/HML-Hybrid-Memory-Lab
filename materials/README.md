@@ -9,6 +9,10 @@
 
 ## Complete gate-component decomposition
 
+下一轮[完整记录预算匹配](updates/update-budget-20261115/README.md)已在掩码生成前登记，
+两随机种子与最早/最近记录选择交叉两种读取，全部五配置共13440次新读出。写入和读取
+掩码独立，匹配完整记录/类型/Token预算；预算仍有Oracle信息，不代表单一问题无关状态。
+
 [衰减与Delta修正分解](updates/gate-components-20261115/README.md)的6720次新读出
 已完整审计，历史6720次参考单独标记，统一报告全部40个条件。关闭Delta配合Oracle读取
 时五配置均48/48；仅关闭衰减配合Oracle为15、32、35、33、30/48。完整读取下单门干预

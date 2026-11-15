@@ -1,0 +1,12 @@
+test_every_family_matches_record_types_lengths_and_total_tokens (tests.test_update_budget.BudgetTests.test_every_family_matches_record_types_lengths_and_total_tokens) ... ok
+test_hash_ranking_is_deterministic_without_global_random_state (tests.test_update_budget.BudgetTests.test_hash_ranking_is_deterministic_without_global_random_state) ... ok
+test_invalid_budgets_and_unknown_policy_are_rejected (tests.test_update_budget.BudgetTests.test_invalid_budgets_and_unknown_policy_are_rejected) ... ok
+test_position_controls_select_within_strata (tests.test_update_budget.BudgetTests.test_position_controls_select_within_strata) ... ok
+test_registered_complete_scope_keeps_all_existing_models (tests.test_update_budget.BudgetTests.test_registered_complete_scope_keeps_all_existing_models) ... ok
+test_semantic_coincidences_are_retained_without_resampling (tests.test_update_budget.BudgetTests.test_semantic_coincidences_are_retained_without_resampling) ... ok
+test_writer_mask_never_replaces_reader_mask_or_native_decay (tests.test_update_budget.BudgetTests.test_writer_mask_never_replaces_reader_mask_or_native_decay) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.008s
+
+OK

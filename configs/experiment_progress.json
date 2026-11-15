@@ -12223,5 +12223,49 @@
     "source_files_unchanged_after_publication": 188,
     "all_phase_jobs_terminal": true,
     "primary_scientific_results_published": true
+  },
+  "update_budget_controls": {
+    "status": "registered_data_locked_regression_tests_passed_before_native_inference",
+    "previous_goal_turn_classification": "progress: completed audited6720new gate-component readouts and remotely byte-verified GitHub Release",
+    "prior_head": "c3447ec3e2840c98a1c660a3a2ca0c19ada7dac7",
+    "protocol": "configs/update_budget_controls_plan.json",
+    "protocol_sha256": "46bb14453d6f67fa58bcafaba0b78232501ff3b86ce18bbc8c0b9b3a0f20da71",
+    "dataset": "/media/990Pro/Code/SAS/datasets/memory_update/update-budget-controls-v1",
+    "dataset_manifest_sha256": "9cfca6516f9b035d0dff6548f0f5ee6f704930b87a9a686e6fe80c0e7c2d7f49",
+    "mask_summary": {
+      "physical_queries": 336,
+      "unique_prefixes": 56,
+      "prefix_budget_groups": 104,
+      "prefix_budget_family_groups": 416,
+      "record_kind_token_lengths": {
+        "COPY:21": 576,
+        "SET:17": 15072
+      },
+      "accidental_oracle_mask_collisions": {
+        "random0": 6,
+        "random1": 8,
+        "early": 128,
+        "recent": 48
+      },
+      "all_controls_prefix_budget_consistent": true,
+      "one_global_query_independent_policy_tested": false,
+      "model_inference": false
+    },
+    "full_tests_passed": 241,
+    "full_tests_seconds": 158.528,
+    "targeted_tests_passed": 7,
+    "preserved_prior_measurement_sources": 188,
+    "data_source_files": 192,
+    "runtime_source_files": 197,
+    "training": false,
+    "new_models": false,
+    "new_environment": false,
+    "new_primary_readouts_planned": 13440,
+    "archived_reference_readouts": 6720,
+    "unified_logical_cells": 20160,
+    "prior_failed_gates_unchanged": true,
+    "auxiliary_prefix_utility": "scripts/verify_update_budget_prefix.py",
+    "last_updated_utc": "2026-11-15T02:09:44.817614+00:00",
+    "next_action": "Two opposite720readout native operational smokes with independent writer/reader masks and exact old endpoints; then240prefix checks before full13440new measurements. No outcome-dependent mask choices or new training."
   }
 }

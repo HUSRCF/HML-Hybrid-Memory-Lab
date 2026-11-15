@@ -1,0 +1,19 @@
+{
+  "physical_queries": 336,
+  "unique_prefixes": 56,
+  "prefix_budget_groups": 104,
+  "prefix_budget_family_groups": 416,
+  "record_kind_token_lengths": {
+    "COPY:21": 576,
+    "SET:17": 15072
+  },
+  "accidental_oracle_mask_collisions": {
+    "random0": 6,
+    "random1": 8,
+    "early": 128,
+    "recent": 48
+  },
+  "all_controls_prefix_budget_consistent": true,
+  "one_global_query_independent_policy_tested": false,
+  "model_inference": false
+}

@@ -1,0 +1,340 @@
+{
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "model_key": "it",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "models": {
+    "native": null,
+    "shared": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01",
+      "training_arm": "shared",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/order-augmented-semantic-20261114.json",
+      "audit_sha256": "b67e709015a7a9b5fe552109da027e463a939812a1648168e68c6b37722931d5",
+      "manifest_sha256": "56263a22a5c25e1c9663e805a09219e3a3a1c904c90d6f4b5a4cfe6f1d379bbe",
+      "training_plan_sha256": "0678a164bf9a35c82db14b654152afdecdea2128e399e17f21bda611253a1773",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/order-augmented-semantic-20261114-01/shared/step-000432/controller.safetensors",
+      "checkpoint_sha256": "3ac57cfd86116dc712aacd14de526ccc3cb8f60c7348317fbacc16910914d8fc",
+      "checkpoint_metadata_sha256": "b2bc536ef797684ef00736b8a2622eb94dbe7c6d6d6b55a8f672346a35663225",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.007630780778693288,
+        "teacher_numeric_tokens_correct": 2585,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "shared_question_trained_all": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
+      "training_arm": "shared_question",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01/shared_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "1aa88746b1e317047b6095e21cdfc70f7008b1205c79378b1a740e2df3410035",
+      "checkpoint_metadata_sha256": "941e41380f5d7f01de211044c598269f7c4ae5850d6226302f019d4d54f89e2a",
+      "manifest_sha256": "226ce6120ff2405928b9e9081b08b530333255a31516da79ad98f832c721d9bc",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-audit-20261115-01.json",
+      "audit_sha256": "58dc86ad25e8d858e0077d3b1e5ae7e4950130b02e6d8e6ec0a7387be799e49c",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005023321897164545,
+        "teacher_numeric_tokens_correct": 2590,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "shared_question_trained_question": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01",
+      "training_arm": "shared_question",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/matched-shared-training-timing-20261115-01/shared_question/step-000432/controller.safetensors",
+      "checkpoint_sha256": "1aa88746b1e317047b6095e21cdfc70f7008b1205c79378b1a740e2df3410035",
+      "checkpoint_metadata_sha256": "941e41380f5d7f01de211044c598269f7c4ae5850d6226302f019d4d54f89e2a",
+      "manifest_sha256": "226ce6120ff2405928b9e9081b08b530333255a31516da79ad98f832c721d9bc",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/matched-shared-training-timing-audit-20261115-01.json",
+      "audit_sha256": "58dc86ad25e8d858e0077d3b1e5ae7e4950130b02e6d8e6ec0a7387be799e49c",
+      "final_step": 432,
+      "token_policy": "question",
+      "mode": "shared",
+      "rank": 64,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 694272,
+      "initial_state_sha256": "b7cfffae5f383205c385e668742a5f55f3a210e782dfd27660c935dc3c3a54e1",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.005023321897164545,
+        "teacher_numeric_tokens_correct": 2590,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    },
+    "gdn_all_tokens": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "gdn_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+      "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.006321374711538502,
+        "teacher_numeric_tokens_correct": 2584,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    }
+  },
+  "model_order": [
+    "native",
+    "shared",
+    "shared_question_trained_all",
+    "shared_question_trained_question",
+    "gdn_all_tokens"
+  ],
+  "generation": {
+    "max_tokens": 12,
+    "prefill": "full",
+    "score_batch": false
+  },
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "precision_addendum": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_precision_addendum.json",
+  "precision_addendum_sha256": "d7911f61eb63091d49e69f95159f1d28bff37284eb0dc007a987490249b433bc",
+  "status": "registered_before_matched_mask_generation_or_inference",
+  "registered_utc": "2026-11-15T01:58:50.659472+00:00",
+  "profile": "whole_record_update_budget_controls",
+  "purpose": "Test whether query-specific oracle Delta-update selection adds value beyond identical permitted-write record/token/type budgets, crossing four nonsemantic write policies with full/fixed-original-oracle reading.",
+  "training": false,
+  "new_adapters": false,
+  "new_models": false,
+  "new_task_cases": false,
+  "new_environment": false,
+  "local_files_only": true,
+  "prospective_unseen_confirmation": false,
+  "architecture_effectiveness_claim": false,
+  "can_change_prior_gates": false,
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/gate-components-factorial-20261115-01",
+  "source_manifest_sha256": "c14536d6bd92565fa845f3113a21ac49f3f56c95a4e0efb069a56c5b913361e6",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/gate-components-primary-audit-20261115-01.json",
+  "source_audit_sha256": "d69fdde414fd0fb482551dadaa32d57dd1ecb7f4571e5f1e37cf93e884a0035a",
+  "source_protocol": "configs/gate_component_factorial_plan.json",
+  "source_protocol_sha256": "25971ba4eb6a75e929ba83cf06c01fba3cb26ee475e49b477ba13db0fc670b68",
+  "source_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/gate-component-factorial-v1",
+  "source_dataset_manifest_sha256": "45aaa5b75182c7e30083c0101a27cfaf2b61cfa8f51f7ee1a4a3428000e69f15",
+  "kernel_validation_addendum": "configs/gate_component_kernel_reference_addendum.json",
+  "kernel_validation_addendum_sha256": "1eed068b08f6c006b390f553380dfba99843b93d247b276d6101d67444a7b08d",
+  "preserved_runtime_source_count": 188,
+  "data_source_files": 192,
+  "runtime_source_files": 197,
+  "dataset_destination": "/media/990Pro/Code/SAS/datasets/memory_update/update-budget-controls-v1",
+  "families": [
+    "random0",
+    "random1",
+    "early",
+    "recent"
+  ],
+  "regimes": [
+    "random0_full",
+    "random0_oracle",
+    "random1_full",
+    "random1_oracle",
+    "early_full",
+    "early_oracle",
+    "recent_full",
+    "recent_oracle"
+  ],
+  "archived_regimes": [
+    "full",
+    "delta_full",
+    "oracle",
+    "delta_oracle"
+  ],
+  "unified_order": [
+    "full",
+    "delta_full",
+    "random0_full",
+    "random1_full",
+    "early_full",
+    "recent_full",
+    "oracle",
+    "delta_oracle",
+    "random0_oracle",
+    "random1_oracle",
+    "early_oracle",
+    "recent_oracle"
+  ],
+  "counts": {
+    "base_streams": 8,
+    "cases": 48,
+    "physical_queries": 336,
+    "related_bindings": 432,
+    "models": 5,
+    "families": 4,
+    "new_regimes": 8,
+    "new_primary_physical_readouts": 13440,
+    "new_related_bindings": 17280,
+    "archived_regimes": 4,
+    "archived_physical_readouts": 6720,
+    "unified_logical_cells": 20160,
+    "unified_related_bindings": 25920,
+    "unique_prefixes": 56,
+    "prefix_budget_groups": 104
+  },
+  "smoke_queries_per_model": 18,
+  "smoke_readouts_per_order": 720,
+  "smoke_orders": [
+    "registered_forward",
+    "registered_reverse"
+  ],
+  "random_hash_seeds": {
+    "random0": 41001,
+    "random1": 41002
+  },
+  "selection": {
+    "unit": "Complete original event spans. Never fragment tokens or remove/change/reorder original input.",
+    "strata": "Match exactly selected record counts by (operation kind, token length), therefore total selected/held original record tokens and record/type counts equal the original query-specific oracle policy. Prelude/question/answer writes always retained. Expected SET17,COPY21 length inventory must be verified; mismatch stops registration rather than changing matching.",
+    "random": "Within each stratum sort all record indices by SHA256 of JSON [seed,source_key,kind,length,index], lexical digest then index. Take required count; all oracle/nonoracle records eligible. No rejection/resampling of accidental semantic overlap or identical masks.",
+    "position": "early/recent take smallest/largest original event indices within each stratum.",
+    "conditioning": "Selection uses prefix identity, stratum descriptors and required count signature only, without question IDs/text, entity queries, answers, relevance identities or model outputs. Budget counts themselves come from oracle labels and can disclose operation requirements; not an online policy.",
+    "prefix_sharing": "Identical prefix+budget signature must yield identical write mask across all questions/styles for each family. There are104groups over56prefixes;48prefixes have two budgets. This is not one question-independent memory state per prefix.",
+    "reader": "Full or original semantic Oracle reader, independent of write-policy choice. Never use random/positional write mask as KV-reader mask.",
+    "gate": "Only beta=0 on nonselected complete-record token rows, all18GDNlayers, native decay and all six Attention layers remain; reuse sealed ComponentHold implementation and corrected native kernel reference.",
+    "measurement": "Keep every prescribed physical query and family/model, including coincident random/oracle masks and all regressions. No outcome-dependent choice."
+  },
+  "controls": {
+    "native_kernel_checks": 10,
+    "endpoint_controls": 240,
+    "new_condition_attention_controls": 480,
+    "total_attention_observations_per_run": 720,
+    "auxiliary_prefix_checks": 240,
+    "auxiliary_cache_fields_per_check": 48,
+    "auxiliary_historical_kv_fields": 12,
+    "question_only_original_prefix_checks": 56,
+    "old_endpoints": "All12fixed controls x5configurations x4archived endpoints reproduce exact5fields with new independent-write/read wrapper.",
+    "smokes": "Two opposite-model-order720readout smokes; full raw bytes, actual gate/Attention/control records, checkpoints/native restores and source versions exact. No accuracy threshold.",
+    "prefix_verification": "All12controls x5configs x4write families; fixed-reader change alone preserves all48prefix cache fields/bookkeeping/logits and12historicalKV fields. Match both full/oracle five-field readouts to main controls before interpretation/publication."
+  },
+  "contrasts": [
+    [
+      "random0_full",
+      "delta_full"
+    ],
+    [
+      "random0_oracle",
+      "delta_oracle"
+    ],
+    [
+      "random1_full",
+      "delta_full"
+    ],
+    [
+      "random1_oracle",
+      "delta_oracle"
+    ],
+    [
+      "early_full",
+      "delta_full"
+    ],
+    [
+      "early_oracle",
+      "delta_oracle"
+    ],
+    [
+      "recent_full",
+      "delta_full"
+    ],
+    [
+      "recent_oracle",
+      "delta_oracle"
+    ],
+    [
+      "random0_oracle",
+      "random0_full"
+    ],
+    [
+      "random1_oracle",
+      "random1_full"
+    ],
+    [
+      "early_oracle",
+      "early_full"
+    ],
+    [
+      "recent_oracle",
+      "recent_full"
+    ],
+    [
+      "random0_full",
+      "full"
+    ],
+    [
+      "random0_oracle",
+      "oracle"
+    ],
+    [
+      "random1_full",
+      "full"
+    ],
+    [
+      "random1_oracle",
+      "oracle"
+    ],
+    [
+      "early_full",
+      "full"
+    ],
+    [
+      "early_oracle",
+      "oracle"
+    ],
+    [
+      "recent_full",
+      "full"
+    ],
+    [
+      "recent_oracle",
+      "oracle"
+    ]
+  ],
+  "loss_interactions": {
+    "formula": "For each family: L(f_oracle)-L(f_full)-L(delta_oracle)+L(delta_full). Physical336 and post-update current-binding96 means; every physical value retained.",
+    "interpretation": "Descriptive on reused related streams; no new success threshold, no unregistered inferential p-values. Random replicas reported separately, not additional independent task repetitions."
+  },
+  "interpretation_limits": [
+    "Only a same-original-input oracle diagnostic on reused8streams; no prospective architectural confirmation or training/scaleup trigger.",
+    "Match permitted native-beta token/record/type counts, not beta sums, write energy, cumulative log-decay values or semantic capacity. Gates/hidden representations downstream can differ.",
+    "Whole-record matching removes fragmentation confound; early/recent bracket location effects but do not perfectly match every update time or full state trajectory.",
+    "Exact operation-type budgets leak oracle-derived counts. Masks are prefix/budget-consistent, not globally query-independent. Same-case different questions can have different states.",
+    "Historical reader mask remains original semantic support. Outcomes cannot be attributed to generic sparse-reader quality or a learned semantic writer.",
+    "All5configurations and all original role/depth/style/load/stream results and regressions remain; all previously failed scientific gates unchanged.",
+    "If random/position controls also recover the conditional oracle maximum, semantic update-selection necessity is weakened. If oracle selection is better, this is still a conditional upper-bound comparison and requires query-independent and unseen confirmation before a deployable method.",
+    "Original failed ideal-FP32 kernel check and its registered native BF16 reference correction remain preserved. No new numerical or native-kernel change."
+  ]
+}

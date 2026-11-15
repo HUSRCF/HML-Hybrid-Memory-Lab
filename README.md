@@ -6,6 +6,12 @@ its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
 **Status: active; all 6,720 new gate-component readouts are independently audited.**
+The next [whole-record budget control phase](materials/updates/update-budget-20261115/README.md)
+is registered before mask generation or new inference. It compares two fixed random
+rankings and earliest/recent record choices with exactly matched record/type/token
+counts, crossed with full and fixed-original-oracle reading in all five configurations.
+It plans 13,440 new readouts without training or a new environment.
+
 The [complete component phase](materials/updates/gate-components-20261115/README.md)
 separates native decay from the complete Delta correction on fixed original inputs.
 Delta suppression plus oracle reading reaches 48/48 in all five configurations;
