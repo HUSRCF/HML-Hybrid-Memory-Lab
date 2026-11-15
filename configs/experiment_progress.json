@@ -6009,7 +6009,7 @@
     "branch_decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
   },
   "last_completed_phase": "unseen_shared_timing3360full_answers_completed_and_audited_both_registered_criteria_failed",
-  "next_research_step": "Complete backup, then test whether version-question wording explains the dominant exact-other-version errors on the complete cohort. The broader goal remains active; old failed criteria unchanged.",
+  "next_research_step": "Execute the registered complete-cohort, one-token version-question control. Keep broader research goal active; no new controller or training yet.",
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
     "plan": "configs/copy_dependency_transfer_plan.json",
@@ -12843,7 +12843,7 @@
     }
   },
   "natural_update_load": {
-    "status": "completed_independently_audited_exported_visually_inspected",
+    "status": "completed_audited_exported_and_published",
     "protocol": "configs/natural_update_load_plan.json",
     "protocol_sha256": "c0f32de5f7fc43b587300e82554e8609cfcf9a74da963659d9e1ea049b463903",
     "packet": "/media/990Pro/Code/SAS/datasets/memory_update/natural-update-load-v1",
@@ -12876,7 +12876,7 @@
     "native_model_inference_started": true,
     "new_training": false,
     "new_environment": false,
-    "next_action": "Package and publish the complete normal-update phase. Then prospectively register an unfiltered, token-matched version-question control before new inference; no new training or architecture claim.",
+    "next_action": "Published complete snapshot; proceed with separately registered version-question control, preserving all old failed criteria.",
     "forward_smoke": "/media/990Pro/Code/SAS/runs/memory_update/natural-load-smoke-forward-20261115-01",
     "forward_started_utc": "2026-11-15T09:21:20.145261+00:00",
     "forward_progress": {
@@ -12928,6 +12928,51 @@
       "matched_question_positive_joint_gain_over_native": false,
       "matched_question_no_all_trained_all_deployed_correct_regression": false
     },
-    "publication_pending": true
+    "publication_pending": false,
+    "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/natural-load-publication-20261115-01.json",
+    "publication_receipt_sha256": "f0651703192ff68a7db2297db55deb92d6619f4813a5543531f68b1f558d08e1",
+    "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/natural-update-load-2026-11-15",
+    "release_target_commit": "5ea0c9c1015ee5145b54257d0bb8346d93f2c494",
+    "archive_verification": {
+      "status": "all_archive_members_byte_verified",
+      "files_verified": 1322,
+      "archive_entries": 1323,
+      "archive": "natural-load-20261115.tar.gz",
+      "bytes": 13385912,
+      "sha256": "1a3429bbaa11ec1a9a01e35cba2f15a7430aefd434a89210e1a94af531b32206"
+    }
+  },
+  "version_query_control": {
+    "status": "protocol_registered_before_new_code_packet_or_inference",
+    "protocol": "configs/version_query_control_plan.json",
+    "protocol_sha256": "34d0ae71adf9507bb345bcc1c051bf09e33278d26e4706f4a919a3c3b9a56807",
+    "registered_utc": "2026-11-15T09:59:02.068367+00:00",
+    "registration_destination": "/media/990Pro/Code/SAS/datasets/memory_update/version-query-control-v1",
+    "source_release": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/natural-update-load-2026-11-15",
+    "counts": {
+      "underlying_streams": 8,
+      "naming_variants": 2,
+      "contexts": 144,
+      "after_contexts": 128,
+      "questions": 864,
+      "new_primary_readouts": 1728,
+      "new_model_style_episode_cells": 36,
+      "new_role_cells": 108,
+      "paired_state_to_event_comparisons": 864,
+      "archived_full_reference_readouts": 1728,
+      "archived_model_style_episode_cells": 36,
+      "unified_readouts": 3456,
+      "unified_cells": 72,
+      "normal_prefix_caches_both_models": 32,
+      "normal_after_caches_both_models": 256,
+      "questions_per_new_style_role_episode": 16
+    },
+    "new_code_started": false,
+    "data_packet_generated": false,
+    "model_inference_started": false,
+    "prior_240_sources_immutable": true,
+    "new_training": false,
+    "new_environment": false,
+    "next_action": "Implement registered literal one-token question pairs, tokenizer-only feasibility and246source packet, CPU checks and opposite-order native smokes before all1728newFullreadouts."
   }
 }

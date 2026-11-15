@@ -16,8 +16,8 @@ The load effect is not monotonic: historical reading after 512 related updates i
 from 16/32 to 28/32 when active accounts increase from 2 to 16. These are descriptive output
 patterns, not proof of a recurrent-state mechanism or a new architecture's benefit.
 Maximum history is 7,519 tokens; no new training, model download or environment. All prior
-failed criteria remain false. Next finish the complete backup, then register matched
-version-question controls before any further inference.
+failed criteria remain false. The complete backup is published. Matched one-token version-question controls are
+registered before new code, data or inference; the next phase remains pending.
 
 **Previous diagnostic: all 4,608 single-layer question-Query readouts independently audited.**
 The [complete layer diagnostic](materials/updates/query-layer-20261115/README.md) retains all 24 new
@@ -2917,3 +2917,5 @@ The broader goal remains active; this result does not trigger new training.
 后续完成：[冻结历史状态的证据访问诊断](materials/updates/trained-timing-evidence-access-20261115/README.md)。5040次正式读出、独立审计及全量导出完成；旧失败门槛保持原判，研究继续。
 
 完整结果已发布至 [逐字节验证的 GitHub Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/query-layer-localization-2026-11-15)，目标提交 `0a6cb60609566d82a9b9fb8e85f549c78a39d95a`。备份包含 1,315 个文件，压缩包 SHA-256 为 `07c3fdff5b7af2852ad766f86fd8cfe9c1edd32c513ee1474952162dd25ac933`；三个附件均经远端下载校验。发布回执保存在本阶段材料中。
+
+本轮完整结果已发布至 [逐字节验证的 GitHub Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/natural-update-load-2026-11-15)，目标提交 `5ea0c9c1015ee5145b54257d0bb8346d93f2c494`。备份含 1,322 个文件；压缩包 SHA-256 为 `1a3429bbaa11ec1a9a01e35cba2f15a7430aefd434a89210e1a94af531b32206`，三个附件均已从远端下载核对。

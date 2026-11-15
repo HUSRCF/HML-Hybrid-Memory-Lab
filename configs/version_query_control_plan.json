@@ -1,0 +1,170 @@
+{
+  "models": {
+    "native": null,
+    "gdn_all_tokens": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "gdn_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+      "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.006321374711538502,
+        "teacher_numeric_tokens_correct": 2584,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    }
+  },
+  "model_order": [
+    "native",
+    "gdn_all_tokens"
+  ],
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "precision_addendum": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_precision_addendum.json",
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "installed_modeling_source": "/home/husrcf/anaconda3/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py",
+  "installed_modeling_source_sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded",
+  "generation": {
+    "max_tokens": 12,
+    "prefill": "cached",
+    "score_batch": false,
+    "candidates": "gold-only serial NLL; unconstrained greedy"
+  },
+  "profile": "token_matched_single_word_version_question_control_v1",
+  "status": "registered_before_new_code_data_or_inference",
+  "registered_utc": "2026-11-15T09:59:02.068367+00:00",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/natural-load-primary-20261115-01",
+  "source_manifest_sha256": "6525a2b8d108460fee480008dee370c41bdba013b80b3c2e756695044b4c36cf",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/natural-load-primary-audit-20261115-01.json",
+  "source_audit_sha256": "d6f85c30b13e8052afdcf80832f4f446a912d5cadf62490f2ebde33048fb86a5",
+  "source_publication": "/media/990Pro/Code/SAS/artifacts/memory_update/natural-load-publication-20261115-01.json",
+  "source_publication_sha256": "f0651703192ff68a7db2297db55deb92d6619f4813a5543531f68b1f558d08e1",
+  "source_release": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/natural-update-load-2026-11-15",
+  "source_release_target": "5ea0c9c1015ee5145b54257d0bb8346d93f2c494",
+  "source_packet": "/media/990Pro/Code/SAS/datasets/memory_update/natural-update-load-v1",
+  "source_packet_manifest_sha256": "e229aa8487cd30d8c121dd14df9a6f48bb91bda73b1ade83d77be0f25bca2c9d",
+  "source_version_attribution": "/media/990Pro/Code/SAS/artifacts/memory_update/natural-load-version-errors-20261115-01.json",
+  "source_version_attribution_sha256": "66ba81c011592069194f1c2d1f7dd52b139749f8e8d5ac54bf2252636ed31268",
+  "registration_destination": "/media/990Pro/Code/SAS/datasets/memory_update/version-query-control-v1",
+  "question": "At identical normally encoded history and identical question-token positions, does one state-term versus event-term word change version-correct free generation?",
+  "motivation": "All3456normal-update readouts completed and published. Existing GDN Full821/864,Oracle864/864,protected288/288,relatednew128/128;40of43Fullerrors output another version of queried account and3another prefix account. Higher load can improve historical reading. This does not yet justify changing the memory update architecture.",
+  "cohort": "Reuse ALL8natural-load streams76000..76007,2renamings,144contexts,3roles. No error,seed,load,role,name or model selection; no new event streams,positions or source writes. This is reused-cohort diagnostic, not a fresh confirmation.",
+  "question_styles": [
+    "state_term",
+    "event_term"
+  ],
+  "roles": [
+    "target_current",
+    "target_initial",
+    "protected_current"
+  ],
+  "reader_modes": [
+    "full"
+  ],
+  "templates": {
+    "state_term": "What is the {term} balance assigned to account {entity}?",
+    "event_term": "What is the {term} balance assigned to account {entity}?"
+  },
+  "terms": {
+    "state_term": {
+      "target_current": "current",
+      "target_initial": "initial",
+      "protected_current": "current"
+    },
+    "event_term": {
+      "target_current": "last",
+      "target_initial": "first",
+      "protected_current": "last"
+    }
+  },
+  "token_control": "For every same context/role pair require equal full prompt length and exactlyONE differing known-question token; difference must encode registered current->last or initial->first replacement. Every other input token and all source history IDs identical. Across account renamings question lengths must match within role/style. Answers/support labels equal predecessor and both wordings, gold remains3tokens. If any literal pair fails feasibility preserve failure and register an addendum before inference; no silent template/name filtering.",
+  "sources": "Normally encode the identical351token common prefix and each full normal896/7168token tail with existing advance_tail(mode=none). Verify every actual48field prefix/after cache,logits,layout,metadata and tail-gate/historical-KV proof against the published predecessor, excluding only declared guard-check count differences. Build all8after sources before any question/answer. Both wordings read independent forks of the same cache. No question,role or support enters writes.",
+  "runner_reuse": "Use frozen scripts.run_natural_load.run_model via an isolated function clone with copied globals, replacing only READERS=(full,) and context_queries to include both registered new styles for smoke and primary. Keep the original module/function globals untouched and restore controller hooks on every exit. New orchestrator seals246sources, fixed runtime and full controls; no original240file edits. Test the clone bindings and failure cleanup on CPU.",
+  "references": "Retain ALL1728predecessor Full readouts as explicitly archived references (36model/old-style/episode cells), raw provenance and full original baseline errors. No new Oracle inference; published Oracle matrix remains labelled privileged predecessor evidence. Old versus new syntax differs and is not the primary token-matched contrast. New primary comparison is state_term versus event_term only.",
+  "counts": {
+    "underlying_streams": 8,
+    "naming_variants": 2,
+    "contexts": 144,
+    "after_contexts": 128,
+    "questions": 864,
+    "new_primary_readouts": 1728,
+    "new_model_style_episode_cells": 36,
+    "new_role_cells": 108,
+    "paired_state_to_event_comparisons": 864,
+    "archived_full_reference_readouts": 1728,
+    "archived_model_style_episode_cells": 36,
+    "unified_readouts": 3456,
+    "unified_cells": 72,
+    "normal_prefix_caches_both_models": 32,
+    "normal_after_caches_both_models": 256,
+    "questions_per_new_style_role_episode": 16
+  },
+  "smoke": {
+    "seed": 76000,
+    "naming": [
+      "original"
+    ],
+    "question_styles": [
+      "state_term",
+      "event_term"
+    ],
+    "all9contexts": true,
+    "opposite_model_orders": true,
+    "new_readouts_each": 108,
+    "accuracy_gate": false,
+    "require_exact_raw_cache_logits_proofs_parameters_hooks": true,
+    "primary_same_subset_exact_replay": true
+  },
+  "operational_controls": {
+    "prior_sources_immutable": 240,
+    "source_files_planned": 246,
+    "new_sources": [
+      "configs/version_query_control_plan.json",
+      "scripts/version_query_data.py",
+      "scripts/prepare_version_query.py",
+      "scripts/run_version_query.py",
+      "scripts/analyze_version_query.py",
+      "tests/test_version_query.py"
+    ],
+    "legacy_readouts_per_run": 96,
+    "kernel_checks_per_run": 10,
+    "prefix_guard_checks": 64,
+    "after_guard_checks": 8,
+    "guards_reason": "Each cache question count6and Full reader only, same for smoke and primary. Prefix1initial+8tailbranches+54questionreads+1final=64. After1initial+6reads+1final=8.",
+    "native_runtime": "Same installed source,packages,EOS,generation-config,loaded native/adapter bytes and native-BF16 numerical addendum. Frozen adapter stable FP64 accumulate/FP32 output unchanged. All6Attention layers remain active. No new environment,weights,training or arithmetic.",
+    "cpu": "Tokenizer-only full paired input reconstruction, interpreter/support invariance, new246source AST imports, isolated clone bindings without original-global mutation, complete two-model synthetic audit and corruption rejection. Seal and commit before native smoke."
+  },
+  "analysis": {
+    "complete_reporting": "All36new and36archived labelled cells,all108new role cells,allcases and8streams,paired state_term->event_term gains/losses,NLL,full free generation and exact value attribution including correct answers. Report each new style separately:16case/name repetitions per role/episode/model, not32. All864paired comparisons retained. Keep all original43GDNerrors and all other baseline errors as archived evidence; do not condition primary analysis on prior correctness.",
+    "limits": "Only8independentstreams. One-word changes test paraphrase sensitivity under matched step count/positions, not pure abstract semantics, an internal retrieval address, irreversible memory loss or architecture usefulness. Known question processing itself can change recurrent states and Attention; this does not isolate a single module. Shared source writes and frozen weights cannot count as a new update method. No significance,novelty,fresh-confirmation or scaleup claim."
+  },
+  "training": false,
+  "new_adapters": false,
+  "new_models": false,
+  "new_environment": false,
+  "can_change_prior_gates": false,
+  "architecture_effectiveness_claim": false,
+  "fresh_confirmation": false,
+  "new_code_started": false,
+  "data_packet_generated": false,
+  "model_inference_started": false
+}
