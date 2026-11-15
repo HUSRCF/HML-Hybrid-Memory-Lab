@@ -6009,7 +6009,7 @@
     "branch_decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
   },
   "last_completed_phase": "unseen_shared_timing3360full_answers_completed_and_audited_both_registered_criteria_failed",
-  "next_research_step": "Implement registered single-layer Question Query localization, retaining all222prior sources and every failed scientific criterion. No new training or architecture claim.",
+  "next_research_step": "Publish complete layer localization, then register natural-update load controls on the fixed native/GDN strong baseline before new data or training.",
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
     "plan": "configs/copy_dependency_transfer_plan.json",
@@ -12729,7 +12729,7 @@
     }
   },
   "query_layer_localization": {
-    "status": "native_primary_complete_gdn_primary_running",
+    "status": "completed_independently_audited_exported_visually_inspected",
     "protocol": "configs/query_layer_localization_plan.json",
     "protocol_sha256": "967a7693dd3f3c4ff2cb9e71353742e68297b460495b12f35ce3c5d7ec35aa56",
     "prior_sources_immutable": 222,
@@ -12741,12 +12741,12 @@
     "new_environment": false,
     "new_code_started": true,
     "model_inference_started": true,
-    "next_action": "Poll live pipeline44644; GDN readouts continue. Wait complete independent corrected primary audit before export/observation scripts or reading results. Then inspect all32cells and publish verified backup. Draft next question has no new data or inference.",
+    "next_action": "Package and publish complete audited phase, preserving original failed audit and audit-only correction. Then prospectively register natural-update diversity/load diagnostic before generating data; no new training.",
     "new_unit_tests_passed": 11,
     "new_unit_tests_seconds": 8.697,
     "input_feasibility_passed": true,
     "input_feasibility": "/media/990Pro/Code/SAS/artifacts/memory_update/query-layer-input-feasibility-20261115-01.json",
-    "last_updated_utc": "2026-11-15T08:41:52.724554+00:00",
+    "last_updated_utc": "2026-11-15T08:58:00.354083+00:00",
     "source_files_sealed": 230,
     "packet": "/media/990Pro/Code/SAS/datasets/memory_update/query-layer-localization-v1",
     "packet_manifest_sha256": "ddc38548a1ac566aac0d44d35b25c108f21a0edc1e58ffd98e79a8fde7e22737",
@@ -12781,20 +12781,53 @@
     "primary_progress": {
       "native": {
         "completed_primary": 2304,
-        "completed_reference_replays": 768,
         "completed_same_source_replays": 192,
-        "completed_captures": 384
+        "completed_captures": 384,
+        "completed_reference_replays": 768
       },
       "gdn_all_tokens": {
-        "completed_primary": 288,
-        "completed_reference_replays": 96,
-        "completed_same_source_replays": 24,
-        "completed_captures": 48
+        "completed_primary": 2304,
+        "completed_same_source_replays": 192,
+        "completed_captures": 384,
+        "completed_reference_replays": 768
       }
     },
     "posthoc_observations": "scripts/query_layer_observations.py",
     "next_question_draft": "materials/updates/query-layer-20261115/next-question-draft.md",
-    "scientific_outcomes_inspected": false,
-    "all234_source_bytes_unchanged": true
+    "scientific_outcomes_inspected": true,
+    "all234_source_bytes_unchanged": true,
+    "primary_exit_code": 0,
+    "primary_inference_completed": true,
+    "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/query-layer-primary-audit-corrected-20261115-01.json",
+    "primary_audit_sha256": "85fc66e81746d5e243ad6ab596785c4ab7c8df5e953e4ba8ffee510d3cfbfaf0",
+    "primary_manifest_sha256": "942bb9f514e7a78ad4206ebaebd368776266218f11356beda33ba0e19ae05d2b",
+    "new_primary_readouts_completed": 4608,
+    "reference_operational_replays_completed": 1536,
+    "single_layer_self_replays_completed": 384,
+    "question_only_captures_completed": 768,
+    "actual_donor_query_tensors_audited": 4608,
+    "normal_prefix_caches_audited": 16,
+    "after_source_caches_audited": 128,
+    "old_scientific_criteria_unchanged": {
+      "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+      "matched_question_positive_joint_gain_over_native": false,
+      "matched_question_no_all_trained_all_deployed_correct_regression": false
+    },
+    "exports": "/media/990Pro/Code/SAS/artifacts/memory_update/query-layer-exports-20261115-01",
+    "export_rows": {
+      "primary": 4608,
+      "archived-references": 1536,
+      "reference-replays": 1536,
+      "same-source-replays": 384,
+      "donor-queries": 4608,
+      "question-calls": 29952,
+      "cells": 32,
+      "episodes": 128,
+      "strata": 480,
+      "contrasts": 288,
+      "cache-fields": 6912
+    },
+    "figure_visually_inspected": true,
+    "publication_pending": true
   }
 }

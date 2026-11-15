@@ -1,15 +1,14 @@
 # Research materials
 
-Latest: [fresh recurrent-state / question-Query intervention](updates/fresh-query-20261115/README.md).
-All 3,264 readouts, 20 cells, 68 episode cells and 1,536 actual same-source replacements
-are independently audited. Normal Queries restore GDN-adapted new-value Full reading
-from 2/32 to 32/32 in an old-state recipient; the reverse swap yields 3/32.
-A fixed-prefix answer regresses, and normal Full already scores 191/192.
-This is a fresh eight-stream mechanism diagnostic; no new architecture claim or training.
+Latest: [single-layer question-Query localization](updates/query-layer-20261115/README.md).
+All 4,608 new readouts, 32 new/archived conditions and 128 episode cells are independently
+audited. GDN layer 15 restores new-value Full reading from 2/32 to 32/32, with one prefix
+regression; layer 19 gives 28/32 without a prefix regression. Reverse effects differ.
+All 299 tests and exact opposite-order checks passed. The original 230 sources, failed audit
+and four separately registered audit-correction sources are preserved. No new architecture
+claim or training; maximum history is 1,107 tokens on eight reused SET streams.
 
-[Complete byte-verified fresh-query backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/fresh-question-query-2026-11-15).
-
-[Previous byte-verified crossover backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/post-tail-path-crossover-2026-11-15).
+[Previous byte-verified fresh-query backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/fresh-question-query-2026-11-15).
 
 本目录记录 2026-11-15 暂停备份时点的材料。完整上传与校验完成后，用户已要求
 继续实验；后续状态以 `configs/experiment_progress.json` 为准，Release 快照保持不变。

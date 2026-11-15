@@ -1,0 +1,769 @@
+id,model,condition,reader,measurement_origin,answer,generated,greedy_exact,answer_nll,query_tokens,selected_layer,seed,episode,role,question_style,prefix_evidence,support_event_index,question,source_key
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,native,NN,full,single_layer_same_source_operational_replay,799,"799
+",True,0.2277742624282837,23,3,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,native,NN,full,single_layer_same_source_operational_replay,799,"799
+",True,0.2277742624282837,23,7,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,native,NN,full,single_layer_same_source_operational_replay,799,"799
+",True,0.2277742624282837,23,11,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,native,NN,full,single_layer_same_source_operational_replay,799,"799
+",True,0.2277742624282837,23,15,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,native,NN,full,single_layer_same_source_operational_replay,799,"799
+",True,0.2277742624282837,23,19,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,native,NN,full,single_layer_same_source_operational_replay,799,"799
+",True,0.2277742624282837,23,23,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,native,HH,full,single_layer_same_source_operational_replay,799,"799
+",True,0.22297020753224692,23,3,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,native,HH,full,single_layer_same_source_operational_replay,799,"799
+",True,0.22297020753224692,23,7,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,native,HH,full,single_layer_same_source_operational_replay,799,"799
+",True,0.22297020753224692,23,11,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,native,HH,full,single_layer_same_source_operational_replay,799,"799
+",True,0.22297020753224692,23,15,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,native,HH,full,single_layer_same_source_operational_replay,799,"799
+",True,0.22297020753224692,23,19,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,native,HH,full,single_layer_same_source_operational_replay,799,"799
+",True,0.22297020753224692,23,23,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,native,NN,full,single_layer_same_source_operational_replay,746,"746
+",True,0.27631179491678876,23,3,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,native,NN,full,single_layer_same_source_operational_replay,746,"746
+",True,0.27631179491678876,23,7,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,native,NN,full,single_layer_same_source_operational_replay,746,"746
+",True,0.27631179491678876,23,11,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,native,NN,full,single_layer_same_source_operational_replay,746,"746
+",True,0.27631179491678876,23,15,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,native,NN,full,single_layer_same_source_operational_replay,746,"746
+",True,0.27631179491678876,23,19,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,native,NN,full,single_layer_same_source_operational_replay,746,"746
+",True,0.27631179491678876,23,23,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,native,HH,full,single_layer_same_source_operational_replay,746,"746
+",True,0.17434839407602945,23,3,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,native,HH,full,single_layer_same_source_operational_replay,746,"746
+",True,0.17434839407602945,23,7,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,native,HH,full,single_layer_same_source_operational_replay,746,"746
+",True,0.17434839407602945,23,11,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,native,HH,full,single_layer_same_source_operational_replay,746,"746
+",True,0.17434839407602945,23,15,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,native,HH,full,single_layer_same_source_operational_replay,746,"746
+",True,0.17434839407602945,23,19,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,native,HH,full,single_layer_same_source_operational_replay,746,"746
+",True,0.17434839407602945,23,23,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,native,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,0.13018458088239035,23,3,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,native,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,0.13018458088239035,23,7,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,native,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,0.13018458088239035,23,11,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,native,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,0.13018458088239035,23,15,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,native,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,0.13018458088239035,23,19,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,native,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,0.13018458088239035,23,23,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,native,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,0.08582796653111775,23,3,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,native,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,0.08582796653111775,23,7,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,native,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,0.08582796653111775,23,11,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,native,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,0.08582796653111775,23,15,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,native,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,0.08582796653111775,23,19,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,native,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,0.08582796653111775,23,23,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,native,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,0.2942751447359721,24,3,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,native,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,0.2942751447359721,24,7,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,native,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,0.2942751447359721,24,11,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,native,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,0.2942751447359721,24,15,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,native,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,0.2942751447359721,24,19,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,native,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,0.2942751447359721,24,23,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,native,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,0.27885766824086505,24,3,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,native,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,0.27885766824086505,24,7,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,native,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,0.27885766824086505,24,11,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,native,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,0.27885766824086505,24,15,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,native,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,0.27885766824086505,24,19,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,native,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,0.27885766824086505,24,23,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,native,NN,full,single_layer_same_source_operational_replay,792,"745
+",False,0.6183257897694906,23,3,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,native,NN,full,single_layer_same_source_operational_replay,792,"745
+",False,0.6183257897694906,23,7,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,native,NN,full,single_layer_same_source_operational_replay,792,"745
+",False,0.6183257897694906,23,11,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,native,NN,full,single_layer_same_source_operational_replay,792,"745
+",False,0.6183257897694906,23,15,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,native,NN,full,single_layer_same_source_operational_replay,792,"745
+",False,0.6183257897694906,23,19,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,native,NN,full,single_layer_same_source_operational_replay,792,"745
+",False,0.6183257897694906,23,23,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,native,HH,full,single_layer_same_source_operational_replay,792,"792
+",True,0.29392313957214355,23,3,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,native,HH,full,single_layer_same_source_operational_replay,792,"792
+",True,0.29392313957214355,23,7,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,native,HH,full,single_layer_same_source_operational_replay,792,"792
+",True,0.29392313957214355,23,11,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,native,HH,full,single_layer_same_source_operational_replay,792,"792
+",True,0.29392313957214355,23,15,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,native,HH,full,single_layer_same_source_operational_replay,792,"792
+",True,0.29392313957214355,23,19,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,native,HH,full,single_layer_same_source_operational_replay,792,"792
+",True,0.29392313957214355,23,23,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,native,NN,full,single_layer_same_source_operational_replay,804,"804
+",True,0.41581328709920246,23,3,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,native,NN,full,single_layer_same_source_operational_replay,804,"804
+",True,0.41581328709920246,23,7,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,native,NN,full,single_layer_same_source_operational_replay,804,"804
+",True,0.41581328709920246,23,11,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,native,NN,full,single_layer_same_source_operational_replay,804,"804
+",True,0.41581328709920246,23,15,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,native,NN,full,single_layer_same_source_operational_replay,804,"804
+",True,0.41581328709920246,23,19,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,native,NN,full,single_layer_same_source_operational_replay,804,"804
+",True,0.41581328709920246,23,23,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,native,HH,full,single_layer_same_source_operational_replay,804,"792
+",False,0.9302841822306315,23,3,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,native,HH,full,single_layer_same_source_operational_replay,804,"792
+",False,0.9302841822306315,23,7,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,native,HH,full,single_layer_same_source_operational_replay,804,"792
+",False,0.9302841822306315,23,11,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,native,HH,full,single_layer_same_source_operational_replay,804,"792
+",False,0.9302841822306315,23,15,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,native,HH,full,single_layer_same_source_operational_replay,804,"792
+",False,0.9302841822306315,23,19,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,native,HH,full,single_layer_same_source_operational_replay,804,"792
+",False,0.9302841822306315,23,23,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,native,NN,full,single_layer_same_source_operational_replay,323,"182
+",False,0.7324079672495524,24,3,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,native,NN,full,single_layer_same_source_operational_replay,323,"182
+",False,0.7324079672495524,24,7,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,native,NN,full,single_layer_same_source_operational_replay,323,"182
+",False,0.7324079672495524,24,11,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,native,NN,full,single_layer_same_source_operational_replay,323,"182
+",False,0.7324079672495524,24,15,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,native,NN,full,single_layer_same_source_operational_replay,323,"182
+",False,0.7324079672495524,24,19,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,native,NN,full,single_layer_same_source_operational_replay,323,"182
+",False,0.7324079672495524,24,23,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,native,HH,full,single_layer_same_source_operational_replay,323,"323
+",True,0.2760072350502014,24,3,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,native,HH,full,single_layer_same_source_operational_replay,323,"323
+",True,0.2760072350502014,24,7,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,native,HH,full,single_layer_same_source_operational_replay,323,"323
+",True,0.2760072350502014,24,11,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,native,HH,full,single_layer_same_source_operational_replay,323,"323
+",True,0.2760072350502014,24,15,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,native,HH,full,single_layer_same_source_operational_replay,323,"323
+",True,0.2760072350502014,24,19,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,native,HH,full,single_layer_same_source_operational_replay,323,"323
+",True,0.2760072350502014,24,23,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,native,NN,full,single_layer_same_source_operational_replay,219,"219
+",True,0.14935637513796488,23,3,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,native,NN,full,single_layer_same_source_operational_replay,219,"219
+",True,0.14935637513796488,23,7,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,native,NN,full,single_layer_same_source_operational_replay,219,"219
+",True,0.14935637513796488,23,11,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,native,NN,full,single_layer_same_source_operational_replay,219,"219
+",True,0.14935637513796488,23,15,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,native,NN,full,single_layer_same_source_operational_replay,219,"219
+",True,0.14935637513796488,23,19,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,native,NN,full,single_layer_same_source_operational_replay,219,"219
+",True,0.14935637513796488,23,23,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,native,HH,full,single_layer_same_source_operational_replay,219,"219
+",True,0.09955706199010213,23,3,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,native,HH,full,single_layer_same_source_operational_replay,219,"219
+",True,0.09955706199010213,23,7,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,native,HH,full,single_layer_same_source_operational_replay,219,"219
+",True,0.09955706199010213,23,11,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,native,HH,full,single_layer_same_source_operational_replay,219,"219
+",True,0.09955706199010213,23,15,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,native,HH,full,single_layer_same_source_operational_replay,219,"219
+",True,0.09955706199010213,23,19,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,native,HH,full,single_layer_same_source_operational_replay,219,"219
+",True,0.09955706199010213,23,23,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,native,NN,full,single_layer_same_source_operational_replay,852,"852
+",True,0.1435500681400299,23,3,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,native,NN,full,single_layer_same_source_operational_replay,852,"852
+",True,0.1435500681400299,23,7,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,native,NN,full,single_layer_same_source_operational_replay,852,"852
+",True,0.1435500681400299,23,11,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,native,NN,full,single_layer_same_source_operational_replay,852,"852
+",True,0.1435500681400299,23,15,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,native,NN,full,single_layer_same_source_operational_replay,852,"852
+",True,0.1435500681400299,23,19,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,native,NN,full,single_layer_same_source_operational_replay,852,"852
+",True,0.1435500681400299,23,23,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,native,HH,full,single_layer_same_source_operational_replay,852,"852
+",True,0.1155988077322642,23,3,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,native,HH,full,single_layer_same_source_operational_replay,852,"852
+",True,0.1155988077322642,23,7,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,native,HH,full,single_layer_same_source_operational_replay,852,"852
+",True,0.1155988077322642,23,11,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,native,HH,full,single_layer_same_source_operational_replay,852,"852
+",True,0.1155988077322642,23,15,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,native,HH,full,single_layer_same_source_operational_replay,852,"852
+",True,0.1155988077322642,23,19,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,native,HH,full,single_layer_same_source_operational_replay,852,"852
+",True,0.1155988077322642,23,23,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,native,NN,full,single_layer_same_source_operational_replay,676,"222
+",False,0.7376898129781088,24,3,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,native,NN,full,single_layer_same_source_operational_replay,676,"222
+",False,0.7376898129781088,24,7,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,native,NN,full,single_layer_same_source_operational_replay,676,"222
+",False,0.7376898129781088,24,11,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,native,NN,full,single_layer_same_source_operational_replay,676,"222
+",False,0.7376898129781088,24,15,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,native,NN,full,single_layer_same_source_operational_replay,676,"222
+",False,0.7376898129781088,24,19,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,native,NN,full,single_layer_same_source_operational_replay,676,"222
+",False,0.7376898129781088,24,23,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,native,HH,full,single_layer_same_source_operational_replay,676,"676
+",True,0.3299840490023295,24,3,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,native,HH,full,single_layer_same_source_operational_replay,676,"676
+",True,0.3299840490023295,24,7,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,native,HH,full,single_layer_same_source_operational_replay,676,"676
+",True,0.3299840490023295,24,11,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,native,HH,full,single_layer_same_source_operational_replay,676,"676
+",True,0.3299840490023295,24,15,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,native,HH,full,single_layer_same_source_operational_replay,676,"676
+",True,0.3299840490023295,24,19,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,native,HH,full,single_layer_same_source_operational_replay,676,"676
+",True,0.3299840490023295,24,23,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,native,NN,full,single_layer_same_source_operational_replay,707,"611
+",False,0.5306334495544434,23,3,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,native,NN,full,single_layer_same_source_operational_replay,707,"611
+",False,0.5306334495544434,23,7,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,native,NN,full,single_layer_same_source_operational_replay,707,"611
+",False,0.5306334495544434,23,11,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,native,NN,full,single_layer_same_source_operational_replay,707,"611
+",False,0.5306334495544434,23,15,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,native,NN,full,single_layer_same_source_operational_replay,707,"611
+",False,0.5306334495544434,23,19,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,native,NN,full,single_layer_same_source_operational_replay,707,"611
+",False,0.5306334495544434,23,23,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,native,HH,full,single_layer_same_source_operational_replay,707,"611
+",False,0.7451242605845133,23,3,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,native,HH,full,single_layer_same_source_operational_replay,707,"611
+",False,0.7451242605845133,23,7,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,native,HH,full,single_layer_same_source_operational_replay,707,"611
+",False,0.7451242605845133,23,11,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,native,HH,full,single_layer_same_source_operational_replay,707,"611
+",False,0.7451242605845133,23,15,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,native,HH,full,single_layer_same_source_operational_replay,707,"611
+",False,0.7451242605845133,23,19,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,native,HH,full,single_layer_same_source_operational_replay,707,"611
+",False,0.7451242605845133,23,23,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,native,NN,full,single_layer_same_source_operational_replay,454,"659
+",False,0.8908956050872803,24,3,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,native,NN,full,single_layer_same_source_operational_replay,454,"659
+",False,0.8908956050872803,24,7,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,native,NN,full,single_layer_same_source_operational_replay,454,"659
+",False,0.8908956050872803,24,11,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,native,NN,full,single_layer_same_source_operational_replay,454,"659
+",False,0.8908956050872803,24,15,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,native,NN,full,single_layer_same_source_operational_replay,454,"659
+",False,0.8908956050872803,24,19,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,native,NN,full,single_layer_same_source_operational_replay,454,"659
+",False,0.8908956050872803,24,23,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,native,HH,full,single_layer_same_source_operational_replay,454,"212
+",False,0.8983581066131592,24,3,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,native,HH,full,single_layer_same_source_operational_replay,454,"212
+",False,0.8983581066131592,24,7,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,native,HH,full,single_layer_same_source_operational_replay,454,"212
+",False,0.8983581066131592,24,11,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,native,HH,full,single_layer_same_source_operational_replay,454,"212
+",False,0.8983581066131592,24,15,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,native,HH,full,single_layer_same_source_operational_replay,454,"212
+",False,0.8983581066131592,24,19,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,native,HH,full,single_layer_same_source_operational_replay,454,"212
+",False,0.8983581066131592,24,23,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,native,NN,full,single_layer_same_source_operational_replay,378,"378
+",True,0.1746610403060913,23,3,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,native,NN,full,single_layer_same_source_operational_replay,378,"378
+",True,0.1746610403060913,23,7,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,native,NN,full,single_layer_same_source_operational_replay,378,"378
+",True,0.1746610403060913,23,11,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,native,NN,full,single_layer_same_source_operational_replay,378,"378
+",True,0.1746610403060913,23,15,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,native,NN,full,single_layer_same_source_operational_replay,378,"378
+",True,0.1746610403060913,23,19,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,native,NN,full,single_layer_same_source_operational_replay,378,"378
+",True,0.1746610403060913,23,23,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,native,HH,full,single_layer_same_source_operational_replay,378,"378
+",True,0.1308716336886088,23,3,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,native,HH,full,single_layer_same_source_operational_replay,378,"378
+",True,0.1308716336886088,23,7,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,native,HH,full,single_layer_same_source_operational_replay,378,"378
+",True,0.1308716336886088,23,11,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,native,HH,full,single_layer_same_source_operational_replay,378,"378
+",True,0.1308716336886088,23,15,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,native,HH,full,single_layer_same_source_operational_replay,378,"378
+",True,0.1308716336886088,23,19,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,native,HH,full,single_layer_same_source_operational_replay,378,"378
+",True,0.1308716336886088,23,23,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,native,NN,full,single_layer_same_source_operational_replay,706,"706
+",True,0.4083929459253947,24,3,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,native,NN,full,single_layer_same_source_operational_replay,706,"706
+",True,0.4083929459253947,24,7,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,native,NN,full,single_layer_same_source_operational_replay,706,"706
+",True,0.4083929459253947,24,11,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,native,NN,full,single_layer_same_source_operational_replay,706,"706
+",True,0.4083929459253947,24,15,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,native,NN,full,single_layer_same_source_operational_replay,706,"706
+",True,0.4083929459253947,24,19,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,native,NN,full,single_layer_same_source_operational_replay,706,"706
+",True,0.4083929459253947,24,23,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,native,HH,full,single_layer_same_source_operational_replay,706,"706
+",True,0.4587786595026652,24,3,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,native,HH,full,single_layer_same_source_operational_replay,706,"706
+",True,0.4587786595026652,24,7,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,native,HH,full,single_layer_same_source_operational_replay,706,"706
+",True,0.4587786595026652,24,11,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,native,HH,full,single_layer_same_source_operational_replay,706,"706
+",True,0.4587786595026652,24,15,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,native,HH,full,single_layer_same_source_operational_replay,706,"706
+",True,0.4587786595026652,24,19,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,native,HH,full,single_layer_same_source_operational_replay,706,"706
+",True,0.4587786595026652,24,23,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,native,NN,full,single_layer_same_source_operational_replay,181,"181
+",True,0.188356081644694,24,3,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,native,NN,full,single_layer_same_source_operational_replay,181,"181
+",True,0.188356081644694,24,7,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,native,NN,full,single_layer_same_source_operational_replay,181,"181
+",True,0.188356081644694,24,11,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,native,NN,full,single_layer_same_source_operational_replay,181,"181
+",True,0.188356081644694,24,15,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,native,NN,full,single_layer_same_source_operational_replay,181,"181
+",True,0.188356081644694,24,19,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,native,NN,full,single_layer_same_source_operational_replay,181,"181
+",True,0.188356081644694,24,23,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,native,HH,full,single_layer_same_source_operational_replay,181,"181
+",True,0.23540451129277548,24,3,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,native,HH,full,single_layer_same_source_operational_replay,181,"181
+",True,0.23540451129277548,24,7,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,native,HH,full,single_layer_same_source_operational_replay,181,"181
+",True,0.23540451129277548,24,11,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,native,HH,full,single_layer_same_source_operational_replay,181,"181
+",True,0.23540451129277548,24,15,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,native,HH,full,single_layer_same_source_operational_replay,181,"181
+",True,0.23540451129277548,24,19,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,native,HH,full,single_layer_same_source_operational_replay,181,"181
+",True,0.23540451129277548,24,23,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,native,NN,full,single_layer_same_source_operational_replay,278,"278
+",True,0.031155750155448914,23,3,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,native,NN,full,single_layer_same_source_operational_replay,278,"278
+",True,0.031155750155448914,23,7,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,native,NN,full,single_layer_same_source_operational_replay,278,"278
+",True,0.031155750155448914,23,11,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,native,NN,full,single_layer_same_source_operational_replay,278,"278
+",True,0.031155750155448914,23,15,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,native,NN,full,single_layer_same_source_operational_replay,278,"278
+",True,0.031155750155448914,23,19,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,native,NN,full,single_layer_same_source_operational_replay,278,"278
+",True,0.031155750155448914,23,23,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,native,HH,full,single_layer_same_source_operational_replay,278,"278
+",True,0.10597340265909831,23,3,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,native,HH,full,single_layer_same_source_operational_replay,278,"278
+",True,0.10597340265909831,23,7,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,native,HH,full,single_layer_same_source_operational_replay,278,"278
+",True,0.10597340265909831,23,11,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,native,HH,full,single_layer_same_source_operational_replay,278,"278
+",True,0.10597340265909831,23,15,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,native,HH,full,single_layer_same_source_operational_replay,278,"278
+",True,0.10597340265909831,23,19,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,native,HH,full,single_layer_same_source_operational_replay,278,"278
+",True,0.10597340265909831,23,23,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,799,"799
+",True,0.0003647068903471033,23,3,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,799,"799
+",True,0.0003647068903471033,23,7,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,799,"799
+",True,0.0003647068903471033,23,11,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,799,"799
+",True,0.0003647068903471033,23,15,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,799,"799
+",True,0.0003647068903471033,23,19,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,799,"799
+",True,0.0003647068903471033,23,23,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,799,"799
+",True,0.00022595154587179422,23,3,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,799,"799
+",True,0.00022595154587179422,23,7,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,799,"799
+",True,0.00022595154587179422,23,11,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,799,"799
+",True,0.00022595154587179422,23,15,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,799,"799
+",True,0.00022595154587179422,23,19,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+f0005d5df8d27d1dc1337c7b12aa87a60d949d95b1228900c82552501517ac9c,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,799,"799
+",True,0.00022595154587179422,23,23,75000,related-8,target_initial,original,True,3,What was the initial balance of account E?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,746,"746
+",True,3.572225493068496e-05,23,3,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,746,"746
+",True,3.572225493068496e-05,23,7,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,746,"746
+",True,3.572225493068496e-05,23,11,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,746,"746
+",True,3.572225493068496e-05,23,15,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,746,"746
+",True,3.572225493068496e-05,23,19,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,746,"746
+",True,3.572225493068496e-05,23,23,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,746,"746
+",True,5.856860661879182e-05,23,3,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,746,"746
+",True,5.856860661879182e-05,23,7,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,746,"746
+",True,5.856860661879182e-05,23,11,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,746,"746
+",True,5.856860661879182e-05,23,15,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,746,"746
+",True,5.856860661879182e-05,23,19,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+0b5e33c47fc4f1c44c39648375d6677da670fd7268d93858b98de29f2ce4fc28,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,746,"746
+",True,5.856860661879182e-05,23,23,75000,related-8,protected_current,original,True,7,What is the current balance of account C?,672ce3732ecb168c5fff22a5a56677121658262ef1e578af041b56bf9b7c4c63
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,8.900906323106028e-06,23,3,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,8.900906323106028e-06,23,7,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,8.900906323106028e-06,23,11,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,8.900906323106028e-06,23,15,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,8.900906323106028e-06,23,19,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,8.900906323106028e-06,23,23,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,1.4185705367708579e-05,23,3,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,1.4185705367708579e-05,23,7,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,1.4185705367708579e-05,23,11,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,1.4185705367708579e-05,23,15,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,1.4185705367708579e-05,23,19,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+06d825285f5fd4ea4e550dd8e99d3e44fe2316d6d4780868a5bfa994f7c0a1b8,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,1.4185705367708579e-05,23,23,75001,related-8,protected_current,original,True,3,What is the current balance of account J?,efdf8f816cc09c18739fd100e3614a826624f87f633aaea9c7072b0192ac9ef0
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,5.634374974761158e-05,24,3,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,5.634374974761158e-05,24,7,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,5.634374974761158e-05,24,11,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,5.634374974761158e-05,24,15,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,5.634374974761158e-05,24,19,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,249,"249
+",True,5.634374974761158e-05,24,23,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,3.866224142257124e-05,24,3,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,3.866224142257124e-05,24,7,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,3.866224142257124e-05,24,11,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,3.866224142257124e-05,24,15,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,3.866224142257124e-05,24,19,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+fa0fb3a43ce7a3b3212c548408b230df6a988c9f512258d74fa458b9a07ae5a2,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,249,"249
+",True,3.866224142257124e-05,24,23,75001,unrelated-64,protected_current,entity_first,True,3,"For account J, what is its current balance?",707198d8efb4cf360796b2726c8acf6a2a2dc94757d057148110c6a1b06de8ec
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,792,"792
+",True,0.11689951022466023,23,3,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,792,"792
+",True,0.11689951022466023,23,7,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,792,"792
+",True,0.11689951022466023,23,11,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,792,"792
+",True,0.11689951022466023,23,15,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,792,"792
+",True,0.11689951022466023,23,19,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,792,"792
+",True,0.11689951022466023,23,23,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,792,"792
+",True,0.060123259822527565,23,3,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,792,"792
+",True,0.060123259822527565,23,7,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,792,"792
+",True,0.060123259822527565,23,11,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,792,"792
+",True,0.060123259822527565,23,15,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,792,"792
+",True,0.060123259822527565,23,19,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+000de8855bc51f2abc790e0d59667c6eef399f4c2fde6fc36faa9897ad6644b1,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,792,"792
+",True,0.060123259822527565,23,23,75002,unrelated-64,target_current,original,True,8,What is the current balance of account G?,9cd73ee81d476c00f8d346d4543e9b23badad7485e8ab2536f1ef8fdc94a839a
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,804,"804
+",True,0.00017446083559965095,23,3,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,804,"804
+",True,0.00017446083559965095,23,7,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,804,"804
+",True,0.00017446083559965095,23,11,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,804,"804
+",True,0.00017446083559965095,23,15,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,804,"804
+",True,0.00017446083559965095,23,19,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,804,"804
+",True,0.00017446083559965095,23,23,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,804,"792
+",False,2.882110595703125,23,3,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,804,"792
+",False,2.882110595703125,23,7,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,804,"792
+",False,2.882110595703125,23,11,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,804,"792
+",False,2.882110595703125,23,15,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,804,"792
+",False,2.882110595703125,23,19,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+f702a83e60f8ae0112d64e2e641aa4959167164ac7574cb18278ea7211d6e506,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,804,"792
+",False,2.882110595703125,23,23,75002,related-64,target_current,original,False,72,What is the current balance of account G?,60ac1aba0791c1b835b7cbefc043714d4fb163181aec53dfe1e1929e2728ca97
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,323,"323
+",True,0.01900245745976766,24,3,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,323,"323
+",True,0.01900245745976766,24,7,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,323,"323
+",True,0.01900245745976766,24,11,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,323,"323
+",True,0.01900245745976766,24,15,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,323,"323
+",True,0.01900245745976766,24,19,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,323,"323
+",True,0.01900245745976766,24,23,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,323,"323
+",True,0.0015194819619258244,24,3,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,323,"323
+",True,0.0015194819619258244,24,7,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,323,"323
+",True,0.0015194819619258244,24,11,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,323,"323
+",True,0.0015194819619258244,24,15,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,323,"323
+",True,0.0015194819619258244,24,19,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+150b573ad7c8f8addec48c39ec2646c2c99cf7696636711e0aa33be7b1a53aae,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,323,"323
+",True,0.0015194819619258244,24,23,75003,unrelated-64,target_current,entity_first,True,8,"For account H, what is its current balance?",2ba95806b67ddc8d8703339b71e23c5ab7661c5587e916f16700ea08b40fa1e2
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,219,"219
+",True,1.8715494661591947e-05,23,3,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,219,"219
+",True,1.8715494661591947e-05,23,7,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,219,"219
+",True,1.8715494661591947e-05,23,11,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,219,"219
+",True,1.8715494661591947e-05,23,15,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,219,"219
+",True,1.8715494661591947e-05,23,19,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,219,"219
+",True,1.8715494661591947e-05,23,23,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,219,"219
+",True,3.087401516192282e-05,23,3,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,219,"219
+",True,3.087401516192282e-05,23,7,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,219,"219
+",True,3.087401516192282e-05,23,11,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,219,"219
+",True,3.087401516192282e-05,23,15,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,219,"219
+",True,3.087401516192282e-05,23,19,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+f9e4db43de7c383be3dc8872ff70b4f7ea11a6a4402b8750b6d12710298d2498,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,219,"219
+",True,3.087401516192282e-05,23,23,75003,related-64,protected_current,original,True,5,What is the current balance of account E?,d83f5ea491c6db3fac5f7924d94d659d797381b54124eb5392df814627660584
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,852,"852
+",True,4.891371645499021e-05,23,3,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,852,"852
+",True,4.891371645499021e-05,23,7,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,852,"852
+",True,4.891371645499021e-05,23,11,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,852,"852
+",True,4.891371645499021e-05,23,15,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,852,"852
+",True,4.891371645499021e-05,23,19,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,852,"852
+",True,4.891371645499021e-05,23,23,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,852,"852
+",True,2.0821651560254395e-05,23,3,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,852,"852
+",True,2.0821651560254395e-05,23,7,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,852,"852
+",True,2.0821651560254395e-05,23,11,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,852,"852
+",True,2.0821651560254395e-05,23,15,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,852,"852
+",True,2.0821651560254395e-05,23,19,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+feec4b858f513b40f3593446d82753b8da47a90b899c1798cd2ac227a649c34e,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,852,"852
+",True,2.0821651560254395e-05,23,23,75004,unrelated-64,protected_current,original,True,5,What is the current balance of account P?,4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,676,"676
+",True,0.003696481076379617,24,3,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,676,"676
+",True,0.003696481076379617,24,7,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,676,"676
+",True,0.003696481076379617,24,11,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,676,"676
+",True,0.003696481076379617,24,15,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,676,"676
+",True,0.003696481076379617,24,19,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,676,"676
+",True,0.003696481076379617,24,23,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,676,"676
+",True,0.0005122261354699731,24,3,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,676,"676
+",True,0.0005122261354699731,24,7,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,676,"676
+",True,0.0005122261354699731,24,11,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,676,"676
+",True,0.0005122261354699731,24,15,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,676,"676
+",True,0.0005122261354699731,24,19,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0bdd2211b434e0a1feb64cee9491fde785e5333009ee645f56707efdf1f10334,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,676,"676
+",True,0.0005122261354699731,24,23,75004,unrelated-64,target_current,entity_first,True,8,"For account J, what is its current balance?",4a6a8b0142c08471ca32df5e40d3261850b98407259ddc2cddaa44d27be8e66d
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,707,"707
+",True,0.004829012788832188,23,3,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,707,"707
+",True,0.004829012788832188,23,7,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,707,"707
+",True,0.004829012788832188,23,11,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,707,"707
+",True,0.004829012788832188,23,15,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,707,"707
+",True,0.004829012788832188,23,19,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,707,"707
+",True,0.004829012788832188,23,23,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,707,"707
+",True,0.004886368289589882,23,3,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,707,"707
+",True,0.004886368289589882,23,7,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,707,"707
+",True,0.004886368289589882,23,11,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,707,"707
+",True,0.004886368289589882,23,15,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,707,"707
+",True,0.004886368289589882,23,19,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+0182a65295e05a4e7736e1b7babf3a55b8b7ded8ebfc9479e19461d5fa31d206,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,707,"707
+",True,0.004886368289589882,23,23,75005,unrelated-64,target_initial,original,True,5,What was the initial balance of account N?,b8da37e0e80b3c9a020b3383de5628c92d0ef166c48490b7d0950d706a022e3f
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,454,"454
+",True,0.00042232265695929527,24,3,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,454,"454
+",True,0.00042232265695929527,24,7,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,454,"454
+",True,0.00042232265695929527,24,11,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,454,"454
+",True,0.00042232265695929527,24,15,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,454,"454
+",True,0.00042232265695929527,24,19,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,454,"454
+",True,0.00042232265695929527,24,23,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,454,"212
+",False,2.1868295669555664,24,3,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,454,"212
+",False,2.1868295669555664,24,7,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,454,"212
+",False,2.1868295669555664,24,11,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,454,"212
+",False,2.1868295669555664,24,15,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,454,"212
+",False,2.1868295669555664,24,19,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+fd9afedca73e4544213c3258391e047989084123c342cbe31895d9e1e11180a6,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,454,"212
+",False,2.1868295669555664,24,23,75005,related-64,target_current,entity_first,False,72,"For account N, what is its current balance?",2f6a84c28abd8d43488ba8777b5b0ea55716c104585a189b7976b5dc7af9fb5e
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,378,"378
+",True,2.1219015858757e-05,23,3,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,378,"378
+",True,2.1219015858757e-05,23,7,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,378,"378
+",True,2.1219015858757e-05,23,11,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,378,"378
+",True,2.1219015858757e-05,23,15,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,378,"378
+",True,2.1219015858757e-05,23,19,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,378,"378
+",True,2.1219015858757e-05,23,23,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,378,"378
+",True,1.1960541693648944e-05,23,3,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,378,"378
+",True,1.1960541693648944e-05,23,7,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,378,"378
+",True,1.1960541693648944e-05,23,11,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,378,"378
+",True,1.1960541693648944e-05,23,15,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,378,"378
+",True,1.1960541693648944e-05,23,19,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+1444f8e6d349fdd126ad149a065c0119dc883c210b176eaabe2f776cc048c007,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,378,"378
+",True,1.1960541693648944e-05,23,23,75006,unrelated-64,protected_current,original,True,5,What is the current balance of account C?,4c98c9d494990b6d439cbd7858486c5ee52d50690a7346e919dbded1fc6c1063
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,706,"706
+",True,0.0008992710305998722,24,3,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,706,"706
+",True,0.0008992710305998722,24,7,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,706,"706
+",True,0.0008992710305998722,24,11,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,706,"706
+",True,0.0008992710305998722,24,15,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,706,"706
+",True,0.0008992710305998722,24,19,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,706,"706
+",True,0.0008992710305998722,24,23,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,706,"706
+",True,0.00264299971361955,24,3,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,706,"706
+",True,0.00264299971361955,24,7,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,706,"706
+",True,0.00264299971361955,24,11,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,706,"706
+",True,0.00264299971361955,24,15,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,706,"706
+",True,0.00264299971361955,24,19,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+fd09626f2e5b34e4c799a0d60f63ec46555241e8fcf37fcbc5b0ba45409a47bf,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,706,"706
+",True,0.00264299971361955,24,23,75006,related-64,target_initial,entity_first,True,6,"For account G, what was its initial balance?",975166ee1cf3813c632ea9a8aa2db8488a0f6f22afeb3551cdfe1e2d50883766
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,181,"181
+",True,0.00143508721763889,24,3,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,181,"181
+",True,0.00143508721763889,24,7,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,181,"181
+",True,0.00143508721763889,24,11,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,181,"181
+",True,0.00143508721763889,24,15,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,181,"181
+",True,0.00143508721763889,24,19,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,181,"181
+",True,0.00143508721763889,24,23,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,181,"500
+",False,0.899695078531901,24,3,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,181,"500
+",False,0.899695078531901,24,7,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,181,"500
+",False,0.899695078531901,24,11,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,181,"500
+",False,0.899695078531901,24,15,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,181,"500
+",False,0.899695078531901,24,19,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+09d85613305a9403194809c29eaa5b9f4adc3a13b957267def47557361a77ba8,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,181,"500
+",False,0.899695078531901,24,23,75007,related-8,target_current,entity_first,False,16,"For account L, what is its current balance?",bb592937afffa6c3d3be04785189390e99325daf70d29d71f58b42182815d8f9
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,278,"278
+",True,2.0781905429127317e-05,23,3,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,278,"278
+",True,2.0781905429127317e-05,23,7,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,278,"278
+",True,2.0781905429127317e-05,23,11,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,278,"278
+",True,2.0781905429127317e-05,23,15,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,278,"278
+",True,2.0781905429127317e-05,23,19,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,gdn_all_tokens,NN,full,single_layer_same_source_operational_replay,278,"278
+",True,2.0781905429127317e-05,23,23,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,278,"278
+",True,2.3364635126199573e-05,23,3,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,278,"278
+",True,2.3364635126199573e-05,23,7,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,278,"278
+",True,2.3364635126199573e-05,23,11,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,278,"278
+",True,2.3364635126199573e-05,23,15,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,278,"278
+",True,2.3364635126199573e-05,23,19,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738
+fc0b7cab0eb9f191a6bee5ff968896c862756a14dbb140d4edad4f1315473f2c,gdn_all_tokens,HH,full,single_layer_same_source_operational_replay,278,"278
+",True,2.3364635126199573e-05,23,23,75007,unrelated-64,target_initial,original,True,2,What was the initial balance of account L?,96d96131ef7d7e907aff4ba406648952673d566e41283ac7267ae443c1a9f738

@@ -1,0 +1,18 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:01,  2.62it/s]Loading weights:  11%|█         | 35/320 [00:00<00:03, 91.38it/s]Loading weights:  20%|██        | 65/320 [00:00<00:01, 147.52it/s]Loading weights:  29%|██▉       | 94/320 [00:00<00:01, 184.39it/s]Loading weights:  39%|███▉      | 125/320 [00:00<00:00, 219.71it/s]Loading weights:  48%|████▊     | 153/320 [00:00<00:00, 221.82it/s]Loading weights:  58%|█████▊    | 187/320 [00:01<00:00, 249.26it/s]Loading weights:  69%|██████▉   | 221/320 [00:01<00:00, 273.28it/s]Loading weights:  79%|███████▉  | 252/320 [00:01<00:00, 278.03it/s]Loading weights:  88%|████████▊ | 282/320 [00:01<00:00, 268.73it/s]Loading weights:  97%|█████████▋| 310/320 [00:01<00:00, 257.11it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 210.78it/s]
+{"event": "single_layer_query", "model": "native", "seed": 75000, "primary": 288, "reference_replays": 96, "self_replays": 24, "question_captures": 48}
+{"event": "single_layer_query", "model": "native", "seed": 75001, "primary": 576, "reference_replays": 192, "self_replays": 48, "question_captures": 96}
+{"event": "single_layer_query", "model": "native", "seed": 75002, "primary": 864, "reference_replays": 288, "self_replays": 72, "question_captures": 144}
+{"event": "single_layer_query", "model": "native", "seed": 75003, "primary": 1152, "reference_replays": 384, "self_replays": 96, "question_captures": 192}
+{"event": "single_layer_query", "model": "native", "seed": 75004, "primary": 1440, "reference_replays": 480, "self_replays": 120, "question_captures": 240}
+{"event": "single_layer_query", "model": "native", "seed": 75005, "primary": 1728, "reference_replays": 576, "self_replays": 144, "question_captures": 288}
+{"event": "single_layer_query", "model": "native", "seed": 75006, "primary": 2016, "reference_replays": 672, "self_replays": 168, "question_captures": 336}
+{"event": "single_layer_query", "model": "native", "seed": 75007, "primary": 2304, "reference_replays": 768, "self_replays": 192, "question_captures": 384}
+{"event": "single_layer_query", "model": "gdn_all_tokens", "seed": 75000, "primary": 288, "reference_replays": 96, "self_replays": 24, "question_captures": 48}
+{"event": "single_layer_query", "model": "gdn_all_tokens", "seed": 75001, "primary": 576, "reference_replays": 192, "self_replays": 48, "question_captures": 96}
+{"event": "single_layer_query", "model": "gdn_all_tokens", "seed": 75002, "primary": 864, "reference_replays": 288, "self_replays": 72, "question_captures": 144}
+{"event": "single_layer_query", "model": "gdn_all_tokens", "seed": 75003, "primary": 1152, "reference_replays": 384, "self_replays": 96, "question_captures": 192}
+{"event": "single_layer_query", "model": "gdn_all_tokens", "seed": 75004, "primary": 1440, "reference_replays": 480, "self_replays": 120, "question_captures": 240}
+{"event": "single_layer_query", "model": "gdn_all_tokens", "seed": 75005, "primary": 1728, "reference_replays": 576, "self_replays": 144, "question_captures": 288}
+{"event": "single_layer_query", "model": "gdn_all_tokens", "seed": 75006, "primary": 2016, "reference_replays": 672, "self_replays": 168, "question_captures": 336}
+{"event": "single_layer_query", "model": "gdn_all_tokens", "seed": 75007, "primary": 2304, "reference_replays": 768, "self_replays": 192, "question_captures": 384}

@@ -5,24 +5,25 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; all 3,264 fresh state / question-Query readouts are independently audited.**
-The [complete fresh diagnostic](materials/updates/fresh-query-20261115/README.md) retains all 20 cells,
-68 episode cells and all baseline failures on eight new streams. All 284 tests, opposite-order
-smokes, 1,536 actual same-source replacements, 9,216 donor Query tensors and 222 measurement
-sources passed. With normal tail KV fixed, restoring old recurrent matrices reduces the
-GDN adapter's new-value Full accuracy from 32/32 to 2/32. Replacing only question-stage
-Attention Queries restores 32/32; the reverse Query swap yields 3/32. The repair also loses
-one fixed-prefix answer. Normal Full already reaches 191/192: this is mechanism evidence,
-not a new shared-architecture success. Earlier failed criteria remain unchanged.
-No new training, environment or model download. The [single-layer follow-up](materials/updates/query-layer-20261115/README.md) is prospectively
-registered across all six Attention layers. Its 230 sources are now sealed after 295 passing
-tests and independent input reconstruction. The first native smoke completed; an audit-only
-variable-scope correction is separately sealed with four added sources after 299 passing tests.
-The original 230 sources and failed audit log are retained; resume with exact opposite-order checks.
+**Status: active; all 4,608 single-layer question-Query readouts are independently audited.**
+The [complete layer diagnostic](materials/updates/query-layer-20261115/README.md) retains all 24 new
+and 8 archived Full conditions, 128 episode cells and every baseline failure on eight reused
+streams. All 299 tests, opposite-order checks, 1,536 exact reference replays and 384 actual
+single-layer self replacements passed. The original 230 sources and four separately sealed
+audit-correction sources remain unchanged; the original failed audit is preserved.
+For the GDN adapter, layer 15 alone restores new-value reading from 2/32 to 32/32, but loses
+one fixed-prefix answer. Layer 19 restores 28/32 without a fixed-prefix regression. Reverse
+swaps are asymmetric: layer 15 gives 26/32, layer 19 gives 21/32, all six give 3/32.
+Normal Full already scores 191/192. This localizes a defined intervention, not a new shared
+architecture's value; all earlier failed scientific criteria remain unchanged. The longest
+history is 1,107 tokens, so these data do not establish 100K-context behavior. No new training,
+environment or model download. Next complete the backup, then register natural-update load
+controls before generating any further data or considering another controller.
 
-The [complete fresh-query Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/fresh-question-query-2026-11-15)
-retains all raw results and registrations. All three remote assets were downloaded and
-byte-verified; pretrained weights and environments are excluded.
+The previous [fresh state / question-Query diagnostic](materials/updates/fresh-query-20261115/README.md)
+retains all 3,264 readouts, 20 cells, 1,536 exact same-source replacements and its
+[byte-verified Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/fresh-question-query-2026-11-15).
+That phase motivated this single-layer localization; all prior results and failures remain.
 
 The previous [post-tail cache crossover](materials/updates/post-tail-path-20261115/README.md)
 retains all 4,608 new readouts, 32 factorial cells and 1,536 exact endpoint replays on eight
@@ -2607,7 +2608,7 @@ their effects can propagate through residuals, MLPs, later Attention, question
 KV and GDN; the present experiment does not identify GDN uniquely.
 
 First-token correctness also remains distinct from full-answer correctness:
-the GDN-question only-layer15 case generates 784 instead of 703 despite a
+the GDN-question only-layer 15 case generates 784 instead of 703 despite a
 positive gold-first-token margin. The repaired case reaches a zero gold-versus-
 strongest-alternative first-token margin under only-layer7 or only-layer11.
 All ties and small margins remain in the raw report, with the original frozen
@@ -2677,7 +2678,7 @@ Earlier-token-only Attention23 also leaves first logits exactly unmasked in
 all four cases, as expected for this last-layer causal cut.
 
 One descriptive check prevents a misleading architectural interpretation.
-For the gold-375 case at only-layer19, the gold-3 versus fixed competitor-4
+For the gold-375 case at only-layer 19, the gold-3 versus fixed competitor-4
 margin is +0.125 unmasked, 0 under last-only masking, 0 under earlier-only
 masking, and -0.125 under both. Thus both together flip the argmax although
 the four-point fixed-pair margin interaction is exactly zero:
