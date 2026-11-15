@@ -1,0 +1,40 @@
+{
+  "status": "registered_before_cache_commit_implementation_or_second_native_smoke",
+  "created_utc": "2026-11-15T15:30:54.768038+00:00",
+  "parent_protocol": "configs/readout_adapter_training_plan.json",
+  "parent_protocol_sha256": "d8c7564a1dcaf73629a9d4a36fbd8a36f1bf566d4144b8a0adc1cfa664ae049b",
+  "parent_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-seal-20261115-01.json",
+  "parent_seal_sha256": "e9096d994c75d74382b33f8da4160fa2b7859085e1c64ff8c7728d6d3f5c66b0",
+  "parent_sources_immutable": 277,
+  "new_sources": [
+    "configs/readout_adapter_cache_commit_addendum.json",
+    "scripts/readout_adapter_cache_commit.py",
+    "scripts/run_readout_adapter_cache_training.py",
+    "scripts/analyze_readout_adapter_cache_training.py",
+    "tests/test_readout_adapter_cache_commit.py"
+  ],
+  "effective_sources": 282,
+  "failed_smoke": "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-smoke-20261115-01",
+  "failed_manifest_sha256": "f70163e4ba8b1159bceeea076fde5ec9f84ec0d57163b6f9990d7da17ab7d249",
+  "failed_log": "/media/990Pro/Code/SAS/logs/memory_update/readout-adapter-smoke-20261115-01.log",
+  "failed_log_sha256": "8b61a813b7cf1b76f0a82b6bcb11834af4864a373d8c7717d7b335c9de2f7308",
+  "failed_optimizer_updates": 0,
+  "mechanism": "Native LinearAttentionLayer.update_recurrent_state copies final recurrent state over the same initial-state tensor saved by native FLA chunk autograd. This invalidates its version counter before backward.",
+  "correction": "Only disposable regular teacher cache instances replace their18recurrent commit methods with copy-on-write tensor assignment. All native model and FLA functions,installed code,inference/deployment caches,normal source caches,old277sources and all scientific budgets remain unchanged. No detach,checkpoint suppression or gradient estimator.",
+  "execution": "Explicit new runner imports the corrected teacher. It retains the frozen runner logic; only imports,registered correction metadata and real forward-equivalence checks are added. Original runner and auditor remain unchanged. New audit extends original277source audit with all282source and correction validation.",
+  "native_proof": "For each arm compare native no-gradient cached teacher forward with corrected gradient-enabled forward at identical input before and after the throwaway optimizer update: complete logits,loss and all48final cache tensor bytes must match. Shared source cache remains unchanged. No answer accuracy gate.",
+  "cpu_tests": [
+    "Reproduce native inplace saved-tensor version failure; corrected writeback allows exact analytical gradient.",
+    "Native and corrected cache values match without aliasing or modifying initial tensor; repeated commits preserve saved tensors.",
+    "Only isolated18teacher-cache layer instances change; native class/source/inference caches untouched.",
+    "Reject inference tensors,uninitialized or incompatible recurrent state and duplicate installation."
+  ],
+  "full_regression_required": 364,
+  "source_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-cache-seal-20261115-01.json",
+  "native_smoke_output": "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-smoke-20261115-02",
+  "training_output": "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01",
+  "confirmation_generated": false,
+  "scientific_design_changed": false,
+  "native_kernel_or_installed_code_changed": false,
+  "old_277_sources_changed": false
+}
