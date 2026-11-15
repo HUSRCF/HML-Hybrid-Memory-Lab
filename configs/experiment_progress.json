@@ -12225,7 +12225,7 @@
     "primary_scientific_results_published": true
   },
   "update_budget_controls": {
-    "status": "both720smokes_audited_exact_opposite_order_replay_passed",
+    "status": "smokes_and240prefix_checks_passed_primary_pipeline_started",
     "previous_goal_turn_classification": "progress: completed audited6720new gate-component readouts and remotely byte-verified GitHub Release",
     "prior_head": "c3447ec3e2840c98a1c660a3a2ca0c19ada7dac7",
     "protocol": "configs/update_budget_controls_plan.json",
@@ -12265,8 +12265,8 @@
     "unified_logical_cells": 20160,
     "prior_failed_gates_unchanged": true,
     "auxiliary_prefix_utility": "scripts/verify_update_budget_prefix.py",
-    "last_updated_utc": "2026-11-15T02:25:54.754543+00:00",
-    "next_action": "Independent240prefix/cache/KV checks, then preregistered13440new measurements; no outcome-based condition selection.",
+    "last_updated_utc": "2026-11-15T02:26:17.902498+00:00",
+    "next_action": "Complete all13440new physical readouts across5x8cells, independently audit, then export every result and back up; no training or outcome-based selection.",
     "smoke_receipts": {
       "update-budget-smoke-forward-audit-20261115-01": {
         "status": "audited_update_budget_smoke",
@@ -12283,6 +12283,9 @@
     },
     "measurement_sources_unchanged": 197,
     "mask_structure_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/update-budget-mask-structure-20261115-01.json",
-    "mask_structure_limitation": "Each query chooses one SET among16/17/72/73. COPY selection is already determined by oracle type/count budget in all336queries; not a dependency-chain-discovery test."
+    "mask_structure_limitation": "Each query chooses one SET among16/17/72/73. COPY selection is already determined by oracle type/count budget in all336queries; not a dependency-chain-discovery test.",
+    "auxiliary_prefix_checks_passed": 240,
+    "auxiliary_receipt_sha256": "c0b8425151b539b9742a8b4017ac2fa78b9f967a2d915b8081c754dd5c9da8b2",
+    "primary_output": "/media/990Pro/Code/SAS/runs/memory_update/update-budget-controls-20261115-01"
   }
 }
