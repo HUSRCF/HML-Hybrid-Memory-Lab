@@ -1,0 +1,168 @@
+{
+  "models": {
+    "native": null,
+    "gdn_all_tokens": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "gdn_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+      "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.006321374711538502,
+        "teacher_numeric_tokens_correct": 2584,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    }
+  },
+  "model_order": [
+    "native",
+    "gdn_all_tokens"
+  ],
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "precision_addendum": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_precision_addendum.json",
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "installed_modeling_source": "/home/husrcf/anaconda3/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py",
+  "installed_modeling_source_sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded",
+  "generation": {
+    "max_tokens": 12,
+    "prefill": "cached",
+    "score_batch": false,
+    "candidates": "gold-only serial NLL; unconstrained greedy"
+  },
+  "profile": "normal_update_load_and_unrelated_fact_retention_v1",
+  "status": "registered_before_new_code_data_or_inference",
+  "registered_utc": "2026-11-15T09:06:43.170393+00:00",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/query-layer-primary-20261115-01",
+  "source_manifest_sha256": "942bb9f514e7a78ad4206ebaebd368776266218f11356beda33ba0e19ae05d2b",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/query-layer-primary-audit-corrected-20261115-01.json",
+  "source_audit_sha256": "85fc66e81746d5e243ad6ab596785c4ab7c8df5e953e4ba8ffee510d3cfbfaf0",
+  "source_publication": "/media/990Pro/Code/SAS/artifacts/memory_update/query-layer-publication-20261115-01.json",
+  "source_publication_sha256": "38a089267d537f9b1869e4edc6a455dd995749343ad38c2399a9a60731f9e93a",
+  "source_release": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/query-layer-localization-2026-11-15",
+  "prior_fresh_packet": "/media/990Pro/Code/SAS/datasets/memory_update/fresh-question-query-mediation-v1",
+  "prior_fresh_manifest_sha256": "78c42d760f1d0108e8a79adea427f8638bca5be88be3b8933574632ba1d82f60",
+  "registration_destination": "/media/990Pro/Code/SAS/datasets/memory_update/natural-update-load-v1",
+  "question": "Under normal unmodified encoding, does a larger independent active-update set impair fixed queried facts, at matched record/token budgets, beyond a length effect?",
+  "motivation": "Normal existing GDN adapter already reaches191/192 in the reused short SET cohort; old-state restoration and single-layer Query repair do not establish a naturally occurring defect or architecture necessity.",
+  "seed_rule": {
+    "start": 76000,
+    "count": 8,
+    "exclude": "All seeds in the prior fresh packet cases and its preserved prior-input inventory; take first8 available consecutive integers without output filtering."
+  },
+  "naming": [
+    "original",
+    "permuted"
+  ],
+  "roles": [
+    "target_current",
+    "target_initial",
+    "protected_current"
+  ],
+  "question_styles": [
+    "original",
+    "entity_first"
+  ],
+  "tail_records": [
+    64,
+    512
+  ],
+  "active_tail_entities": [
+    2,
+    16
+  ],
+  "tail_kinds": [
+    "unrelated",
+    "related"
+  ],
+  "reader_modes": [
+    "full",
+    "oracle"
+  ],
+  "task_construction": "Per seed, sample18 distinct uppercase single-letter accounts from A..Z, with target,protected and16distractors. Write one initial SET per account in shuffled order, then a second SET for target (19prefixrecords). Draw531 unique3digit values:19prefix+512tail. Both load arms use identical tail value sequence; low2 and high16 update entities equally often in shuffled complete cycles. Both64 and512 tails are prefixes of the same master arm. Related arm changes only final SET target to queried target. Other queried answers unchanged. Second naming is one independently drawn permutation of A..Z applied bijectively to all accounts; same values/event dependencies. All18 accounts already occur in every common prefix. No data/model-output selection.",
+  "token_control": "Require identical complete token counts and all record boundaries across load2/load16 and related/unrelated, both lengths and both naming variants within each seed. Require same per-record14token width, exact cached-boundary token prefix, same question-token lengths within a role/style across names, non-overlapping exact prior prefix/prompt digests. If feasibility fails, preserve failure and register a new addendum; never skip seeds or silently substitute names/lengths.",
+  "truth": "Execute all SET records with existing interpreter. Current target support is latest target SET, initial support first target SET, protected support its SET. Oracle keeps only instruction prelude plus exactly the registered support-record tokens. Oracle is a privileged separate readout, never an activation donor or candidate model.",
+  "prefill": "Same existing BF16 eager native path: full common prefix in one call, then entire normally encoded tail in one cached call using advance_tail(mode=none). No gate suppression, matrix restoration, Query exchange, chunking, token-position rescaling, candidate restriction, training or arithmetic change. Expected longest history351+7168=7519tokens; tokenizer feasibility must verify actual. If OOM or path check fails, preserve failed run and do not silently chunk/reduce.",
+  "schedule": "Per seed/naming/model build common prefix and all8after sources before any question/answer. Actual48tensor cache isolation, metadata/layout/storage/logits guards, exact historical12KV prefix bytes. Each question reads an isolated fork; no answer enters another question source. Observe all6Attention reader probabilities. All18tailGDN kernels observed in mode none.",
+  "counts": {
+    "streams": 8,
+    "naming_variants": 2,
+    "common_prefixes_per_model": 16,
+    "contexts": 144,
+    "after_contexts": 128,
+    "questions": 864,
+    "primary_readouts": 3456,
+    "models": 2,
+    "reader_modes": 2,
+    "primary_cells": 36,
+    "after_source_caches_both_models": 256,
+    "common_prefix_caches_both_models": 32
+  },
+  "smoke": {
+    "seed": "First registered fresh seed",
+    "naming": [
+      "original"
+    ],
+    "question_styles": [
+      "original"
+    ],
+    "all_tail_conditions": true,
+    "opposite_model_orders": true,
+    "contexts_each": 9,
+    "questions_each": 27,
+    "readouts_each": 108,
+    "accuracy_gate": false,
+    "equivalence": "All raw records,48field caches,logits,tail proofs,model/adapter bytes,legacy replay and hook restoration exactly equal, excluding run timing/order metadata."
+  },
+  "operational_controls": {
+    "prior_sources_immutable": 234,
+    "source_files_planned": 240,
+    "new_sources": [
+      "configs/natural_update_load_plan.json",
+      "scripts/natural_load_data.py",
+      "scripts/prepare_natural_load.py",
+      "scripts/run_natural_load.py",
+      "scripts/analyze_natural_load.py",
+      "tests/test_natural_load.py"
+    ],
+    "legacy_readouts_per_run": 96,
+    "kernel_checks_per_run": 10,
+    "prior_correction": "Keep original230source closure and all4audit-only correction sources; neither modify nor drop them. New auditor is separate.",
+    "cpu_validation": "Executable truth, all pairs/token lengths/cache boundaries/renaming/support, independent packet reconstruction; model constructors and weight loaders must not run. New-source AST imports must be within240source closure or external packages. Seal and commit before GPU smoke.",
+    "native": "Same loaded weight SHA,installed source,packages,EOS,generation-config and precision/validation addenda; same96legacy operational checks; adapter-none exact native endpoints and detach restoration; actual frozen adapter696192parameters with stable FP64 accumulate/FP32 output arithmetic."
+  },
+  "analysis": {
+    "complete_reporting": "All36model/reader/before-or-tail-condition cells, all8seeds and2names,3roles2styles, per-stream paired gains/losses and NLL. Same target questions before vs all tails including initial wrong answers. At each length compare active2vs16, separately unrelated/related. Compare lengths within every load/kind. Report related new-value accuracy and both prefix facts; all prior failed criteria unchanged.",
+    "unit": "Only8 independent underlying streams; renamings/styles/questions are paired repeats. Descriptive pilot only, no significance, power, fresh confirmation, architecture benefit or scaleup gate.",
+    "limits": "Load changes account recurrence frequency and text, although byte/token lengths and existing account set match; it is not a pure measurement of capacity or proof of GDN interference. Full includesAttention and native errors may have multiple causes. Oracle success only shows privileged conditional readability. BF16 full/cached differences remain existing fixed path; no causal memory claim from accuracy alone."
+  },
+  "training": false,
+  "new_adapters": false,
+  "new_models": false,
+  "new_environment": false,
+  "can_change_prior_gates": false,
+  "architecture_effectiveness_claim": false,
+  "fresh_confirmation": false,
+  "new_code_started": false,
+  "data_packet_generated": false,
+  "model_inference_started": false
+}

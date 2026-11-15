@@ -17,8 +17,7 @@ swaps are asymmetric: layer 15 gives 26/32, layer 19 gives 21/32, all six give 3
 Normal Full already scores 191/192. This localizes a defined intervention, not a new shared
 architecture's value; all earlier failed scientific criteria remain unchanged. The longest
 history is 1,107 tokens, so these data do not establish 100K-context behavior. No new training,
-environment or model download. Next complete the backup, then register natural-update load
-controls before generating any further data or considering another controller.
+environment or model download. Backup publication is verified. The [next natural-update load diagnostic](materials/updates/natural-load-20261115/README.md) is registered and sealed with 240 sources and 308 passing tests; native operational checks precede its 3,456 readouts.
 
 The previous [fresh state / question-Query diagnostic](materials/updates/fresh-query-20261115/README.md)
 retains all 3,264 readouts, 20 cells, 1,536 exact same-source replacements and its

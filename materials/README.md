@@ -130,3 +130,5 @@ ROCm/PyTorch/Transformers environment is a reproducibility constraint, not a
 portable installer guarantee.
 
 完整结果已发布至 [逐字节验证的 GitHub Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/query-layer-localization-2026-11-15)，目标提交 `0a6cb60609566d82a9b9fb8e85f549c78a39d95a`。备份包含 1,315 个文件，压缩包 SHA-256 为 `07c3fdff5b7af2852ad766f86fd8cfe9c1edd32c513ee1474952162dd25ac933`；三个附件均经远端下载校验。发布回执保存在本阶段材料中。
+
+[正常更新负载诊断](updates/natural-load-20261115/README.md)已登记、通过 308 项测试并封存 240 个源文件。完整设计为 3,456 次读出，历史最长 7,519 Token；当前尚无本轮模型科学结果。

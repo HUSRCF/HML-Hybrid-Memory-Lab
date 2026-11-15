@@ -1,0 +1,14 @@
+test_bijective_renaming_preserves_every_operation (tests.test_natural_load.NaturalLoadTests.test_bijective_renaming_preserves_every_operation) ... ok
+test_cache_guard_count_corruption_rejected (tests.test_natural_load.NaturalLoadTests.test_cache_guard_count_corruption_rejected) ... ok
+test_complete_fresh_grid_and_matched_tokens (tests.test_natural_load.NaturalLoadTests.test_complete_fresh_grid_and_matched_tokens) ... ok
+test_complete_two_model_audit_without_native_inference (tests.test_natural_load.NaturalLoadTests.test_complete_two_model_audit_without_native_inference) ... ok
+test_executable_independence_update_and_support (tests.test_natural_load.NaturalLoadTests.test_executable_independence_update_and_support) ... ok
+test_oracle_support_and_question_boundaries (tests.test_natural_load.NaturalLoadTests.test_oracle_support_and_question_boundaries) ... ok
+test_partial_grid_rejected_even_with_updated_raw_hash (tests.test_natural_load.NaturalLoadTests.test_partial_grid_rejected_even_with_updated_raw_hash) ... ok
+test_scope_and_all_prior_sources_unchanged (tests.test_natural_load.NaturalLoadTests.test_scope_and_all_prior_sources_unchanged) ... ok
+test_summary_keeps_initial_failures_and_all_cells (tests.test_natural_load.NaturalLoadTests.test_summary_keeps_initial_failures_and_all_cells) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 16.393s
+
+OK

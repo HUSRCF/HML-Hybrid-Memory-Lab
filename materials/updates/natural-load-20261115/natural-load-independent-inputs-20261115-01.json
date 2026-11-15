@@ -1,0 +1,21 @@
+{
+  "status": "independently_reconstructed_without_model_inference",
+  "completed_utc": "2026-11-15T09:17:37.395036+00:00",
+  "packet": "/media/990Pro/Code/SAS/datasets/memory_update/natural-update-load-v1",
+  "packet_manifest_sha256": "e229aa8487cd30d8c121dd14df9a6f48bb91bda73b1ade83d77be0f25bca2c9d",
+  "source_files": 240,
+  "cases": 16,
+  "contexts": 144,
+  "questions": 864,
+  "model_constructor_calls": 0,
+  "model_loader_calls": 0,
+  "weights_loader_calls": 0,
+  "gpu_initializations": 0,
+  "history_lengths": [
+    351,
+    1247,
+    7519
+  ],
+  "token_and_position_matches": true,
+  "all_prior_234_sources_unchanged": true
+}

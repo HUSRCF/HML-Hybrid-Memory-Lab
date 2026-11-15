@@ -12841,5 +12841,41 @@
       "bytes": 13373691,
       "sha256": "07c3fdff5b7af2852ad766f86fd8cfe9c1edd32c513ee1474952162dd25ac933"
     }
+  },
+  "natural_update_load": {
+    "status": "sealed_308_tests_passed_before_native_operational_smokes",
+    "protocol": "configs/natural_update_load_plan.json",
+    "protocol_sha256": "c0f32de5f7fc43b587300e82554e8609cfcf9a74da963659d9e1ea049b463903",
+    "packet": "/media/990Pro/Code/SAS/datasets/memory_update/natural-update-load-v1",
+    "packet_manifest_sha256": "e229aa8487cd30d8c121dd14df9a6f48bb91bda73b1ade83d77be0f25bca2c9d",
+    "seal": "/media/990Pro/Code/SAS/artifacts/memory_update/natural-load-seal-20261115-01.json",
+    "seal_sha256": "63af277d30321cec134fd27d856da4a379e6aa4a4df3e1db2c93a9ff091c9e64",
+    "independent_reconstruction": "/media/990Pro/Code/SAS/artifacts/memory_update/natural-load-independent-inputs-20261115-01.json",
+    "source_files_immutable": 240,
+    "prior_sources_unchanged": 234,
+    "tests_passed": 308,
+    "counts": {
+      "streams": 8,
+      "naming_variants": 2,
+      "common_prefixes_per_model": 16,
+      "contexts": 144,
+      "after_contexts": 128,
+      "questions": 864,
+      "primary_readouts": 3456,
+      "models": 2,
+      "reader_modes": 2,
+      "primary_cells": 36,
+      "after_source_caches_both_models": 256,
+      "common_prefix_caches_both_models": 32
+    },
+    "history_lengths": [
+      351,
+      1247,
+      7519
+    ],
+    "native_model_inference_started": false,
+    "new_training": false,
+    "new_environment": false,
+    "next_action": "Run opposite-model-order108readout smokes, independent audits and exact equivalence; then complete all3456registered normal-update readouts. No accuracy filtering."
   }
 }
