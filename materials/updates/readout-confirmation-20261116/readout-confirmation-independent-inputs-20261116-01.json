@@ -1,0 +1,38 @@
+{
+  "status": "all289sources1200physical_inputs_and1296logical_truths_independently_rechecked",
+  "created_utc": "2026-11-15T16:33:51.009669+00:00",
+  "packet_manifest_sha256": "6be43a69171f05c82a1827b3ae854b575541d1f8d1026627418100e1de3e93d0",
+  "source_files": 289,
+  "set_questions": 864,
+  "copy_questions": 336,
+  "copy_bindings": 432,
+  "actual_prior_input_files": 208,
+  "fixed_seeds": [
+    88000,
+    88001,
+    88002,
+    88003,
+    88004,
+    88005,
+    88006,
+    88007,
+    89000,
+    89001,
+    89002,
+    89003,
+    89004,
+    89005,
+    89006,
+    89007
+  ],
+  "prior_overlap": {
+    "seeds": [],
+    "ids": [],
+    "prompts": [],
+    "prefixes": []
+  },
+  "native_model_construction_calls": 0,
+  "gpu_initializations": 0,
+  "training_finished_before_generation": true,
+  "source_sha256": "714e0c0d41baa62e960d5ef8d371ca6b66a02f31eb21a397abe46c4803d53527"
+}

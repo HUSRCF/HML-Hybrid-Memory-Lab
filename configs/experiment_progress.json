@@ -6012,7 +6012,7 @@
     "branch_decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
   },
   "last_completed_phase": "question_state_freeze_all6912audited_negative_outcome",
-  "next_research_step": "Back up complete observed-fit materials and final checkpoints; lock all audited final432weights and generate the already sealed fixed SET/COPY confirmation. Fit improvement is not held-out or architecture evidence.",
+  "next_research_step": "Continue the existing live pipeline6705 without restart. Complete all6000physical readouts and independent full audit before aggregate performance claims;then retain every paired gain/regression,SETcondition andCOPYdepth/style/order/role. No tuning,checkpointselection orresampling.",
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
     "plan": "configs/copy_dependency_transfer_plan.json",
@@ -13162,7 +13162,7 @@
     "remote_assets_byte_verified": 3,
     "committed_snapshot_files_byte_verified": 325
   },
-  "latest_published_phase": "version_address_observation",
+  "latest_published_phase": "learned_readout_controls",
   "version_address_observation": {
     "status": "complete_audited_exported_and_published_remote_bytes_verified",
     "protocol": "configs/version_address_audit_plan.json",
@@ -13264,7 +13264,7 @@
     "broader_research_goal_active": true
   },
   "learned_readout_controls": {
-    "status": "completed_all1296steps_all5184fit_readouts_independently_audited_and_all_fit_exports_regraded",
+    "status": "complete_fit_audited_exported_and_published_remote_bytes_verified",
     "protocol": "configs/readout_adapter_training_plan.json",
     "protocol_sha256": "d8c7564a1dcaf73629a9d4a36fbd8a36f1bf566d4144b8a0adc1cfa664ae049b",
     "predecessor_sources_immutable": 268,
@@ -13277,7 +13277,7 @@
       "query_gate"
     ],
     "new_parameters_each": 131072,
-    "next_action": "Back up complete observed-fit materials and final checkpoints; lock all audited final432weights and generate the already sealed fixed SET/COPY confirmation. Fit improvement is not held-out or architecture evidence.",
+    "next_action": "Continue the frozen five-model SET/COPY confirmation pipeline6705. Observed fit gains are not architecture evidence;the joint model has one protected-query regression.",
     "implementation_started": true,
     "new_cpu_tests_passed": 8,
     "new_cpu_tests_seconds": 20.908,
@@ -13318,7 +13318,7 @@
     "training_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-training-audit-20261115-01.json",
     "native_safety_audited": true,
     "scheduled_training_started": true,
-    "confirmation_generated": false,
+    "confirmation_generated": true,
     "corrected_smoke_audit_sha256": "61d5ea47ce30e51e355afbed2d68dbf167ede0990c36f273ac3fbc240ae27a25",
     "corrected_smoke_correction_audit_sha256": "20b4f06ec7785c1eda9cde6b9136590f3896f3b9338817cf8d4163adfd91f3d4",
     "native_scratch_optimizer_updates": 3,
@@ -13401,10 +13401,18 @@
         }
       }
     },
-    "prior_failed_criteria_unchanged": true
+    "prior_failed_criteria_unchanged": true,
+    "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-fit-publication-20261116-01.json",
+    "publication_receipt_sha256": "6c3e9bfe2c9c99fc1380806442288e6c401a7591202520341100fcba8055e98d",
+    "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/readout-adapter-fit-2026-11-16",
+    "release_target_commit": "86e3b1bd963036d6a17af91caf49421cbe426e82",
+    "archive_sha256": "e4d5a8059781f5fe3c0b1139ad5eebc1e34c66ee4d716dddd9aa7fdbaed3316d",
+    "archive_bytes": 25428588,
+    "committed_snapshot_files_verified": 331,
+    "remote_assets_verified": 3
   },
   "readout_confirmation": {
-    "status": "all372regression_tests_passed289sources_sealed_no_future_cases_generated",
+    "status": "fixed_cases_generated_independently_verified_observed_replay_audited_full6000_running",
     "protocol": "configs/readout_adapter_confirmation_plan.json",
     "protocol_sha256": "30fe0e1107b57ff48dec43a2015ddd29c4e8f9c168b2b8e4dd1895c326a8fb33",
     "predecessor_sources_immutable": 282,
@@ -13412,8 +13420,8 @@
     "new_cpu_tests_passed": 8,
     "new_cpu_tests_seconds": 28.006,
     "new_cpu_tests_log": "/media/990Pro/Code/SAS/logs/memory_update/readout-confirmation-new-tests-20261116-01.log",
-    "prospective_cases_generated": false,
-    "native_confirmation_started": false,
+    "prospective_cases_generated": true,
+    "native_confirmation_started": true,
     "fixed_models": [
       "native",
       "fixed_gdn",
@@ -13441,13 +13449,25 @@
       89006,
       89007
     ],
-    "next_action": "All training gates are now complete. Execute the existing fixed confirmation pipeline after committing observed-fit results; reexecute training audit and pin all final files before any future case construction.",
+    "next_action": "Continue the existing live pipeline6705 without restart. Complete all6000physical readouts and independent full audit before aggregate performance claims;then retain every paired gain/regression,SETcondition andCOPYdepth/style/order/role. No tuning,checkpointselection orresampling.",
     "full_tests_passed": 372,
     "full_tests_seconds": 463.121,
     "source_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-source-seal-20261115-01.json",
     "source_seal_sha256": "3028efa175d7a9cb906540b4e831534344bbd16245ec870b8681a47648c3d7ac",
     "full_regression_session": 76793,
     "pending_pipeline": "/tmp/run_readout_confirmation_pipeline.py",
-    "pending_independent_inputs": "/tmp/check_readout_confirmation_packet.py"
+    "pending_independent_inputs": "/tmp/check_readout_confirmation_packet.py",
+    "packet": "/media/990Pro/Code/SAS/datasets/memory_update/readout-adapter-confirmation-v1",
+    "packet_manifest_sha256": "6be43a69171f05c82a1827b3ae854b575541d1f8d1026627418100e1de3e93d0",
+    "training_lock_sha256": "1b3205ec9aebb18b7edbe9b925d72c0ff7d886691f98ae599f2fcc648be81623",
+    "actual_prior_input_files": 208,
+    "all_prior_overlap_empty": true,
+    "observed_smoke_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-smoke-audit-20261116-01.json",
+    "observed_smoke_audit_sha256": "b549cef9ecf3471bcecce3c5fb09ad864f777d6260415e1a04add35e956dc6db",
+    "observed_smoke_readouts_exact": 30,
+    "pipeline_session": 6705,
+    "pipeline_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-pipeline-20261116-01.json",
+    "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-confirmation-primary-20261116-01",
+    "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-primary-audit-20261116-01.json"
   }
 }

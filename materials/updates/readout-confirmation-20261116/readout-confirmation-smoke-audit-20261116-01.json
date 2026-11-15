@@ -1,0 +1,32 @@
+{
+  "status": "audited_observed_fit_replay_before_confirmation",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-confirmation-smoke-20261116-01",
+  "manifest_sha256": "c9827f0a8912773a58cd650bfd607896dba860b88733e39e6431b7bbe3bfb3ff",
+  "packet_manifest_sha256": "6be43a69171f05c82a1827b3ae854b575541d1f8d1026627418100e1de3e93d0",
+  "source_files_verified": 289,
+  "physical_readouts_audited": 30,
+  "models": {
+    "native": {
+      "observed_readouts_exact": 6
+    },
+    "fixed_gdn": {
+      "observed_readouts_exact": 6
+    },
+    "query": {
+      "observed_readouts_exact": 6
+    },
+    "gate": {
+      "observed_readouts_exact": 6
+    },
+    "query_gate": {
+      "observed_readouts_exact": 6
+    }
+  },
+  "prior_failed_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "analysis_source_sha256": "0bdde1b9ffd12c8c5c308d72df3723586a75070b6f9c499adfc7ff539e9c61b5",
+  "completed_utc": "2026-11-15T16:35:27.616053+00:00"
+}

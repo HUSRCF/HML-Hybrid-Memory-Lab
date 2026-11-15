@@ -1,0 +1,9 @@
+{
+  "status": "first_archive_valid_snapshot_repacked_to_exclude_its_live_operation_log",
+  "prior_manifest_sha256": "c111f7fbffff91edb953ce15f0e1c897a67abc6c7206168d5c1bda3fe000a008",
+  "live_operation_log": "logs/readout-adapter-fit-package-20261116-01.log",
+  "archived_bytes": 0,
+  "closed_log_bytes": 906,
+  "scientific_run_or_fit_payload_changed": false,
+  "next_package": "readout-adapter-training-20261116-02"
+}
