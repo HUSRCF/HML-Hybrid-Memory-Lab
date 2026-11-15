@@ -1,0 +1,13 @@
+test_all_copy_snapshot_answers_recomputed_by_independent_plain_program (tests.test_readout_mixture.ReadoutMixtureTests.test_all_copy_snapshot_answers_recomputed_by_independent_plain_program) ... ok
+test_complete_observed_registry_and_all_exposure_budgets (tests.test_readout_mixture.ReadoutMixtureTests.test_complete_observed_registry_and_all_exposure_budgets) ... ok
+test_exposure_and_target_tampering_are_rejected (tests.test_readout_mixture.ReadoutMixtureTests.test_exposure_and_target_tampering_are_rejected) ... ok
+test_missing_test_seal_precedes_any_packet_build_or_native_runtime (tests.test_readout_mixture.ReadoutMixtureTests.test_missing_test_seal_precedes_any_packet_build_or_native_runtime) ... ok
+test_pairing_preserves_every_set_block_and_explicit_copy_duplicate_weight (tests.test_readout_mixture.ReadoutMixtureTests.test_pairing_preserves_every_set_block_and_explicit_copy_duplicate_weight) ... ok
+test_raw_wrong_or_malformed_answers_are_kept_as_failures (tests.test_readout_mixture.ReadoutMixtureTests.test_raw_wrong_or_malformed_answers_are_kept_as_failures) ... ok
+test_teacher_rejects_wrong_boundaries_targets_and_keeps_eval_no_grad (tests.test_readout_mixture.ReadoutMixtureTests.test_teacher_rejects_wrong_boundaries_targets_and_keeps_eval_no_grad) ... ok
+test_variable_teacher_supervises_exactly_four_shifted_targets_and_gradients (tests.test_readout_mixture.ReadoutMixtureTests.test_variable_teacher_supervises_exactly_four_shifted_targets_and_gradients) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 21.479s
+
+OK
