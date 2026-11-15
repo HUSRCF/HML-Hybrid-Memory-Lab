@@ -12225,8 +12225,8 @@
     "primary_scientific_results_published": true
   },
   "update_budget_controls": {
-    "status": "smokes_and240prefix_checks_passed_primary_pipeline_started",
-    "previous_goal_turn_classification": "progress: completed audited6720new gate-component readouts and remotely byte-verified GitHub Release",
+    "status": "native8conditions_complete_primary_continues_other4configs",
+    "previous_goal_turn_classification": "progress: audited opposite720smokes and240complete-prefix checks, committed receipts, started13440readout primary",
     "prior_head": "c3447ec3e2840c98a1c660a3a2ca0c19ada7dac7",
     "protocol": "configs/update_budget_controls_plan.json",
     "protocol_sha256": "46bb14453d6f67fa58bcafaba0b78232501ff3b86ce18bbc8c0b9b3a0f20da71",
@@ -12265,8 +12265,8 @@
     "unified_logical_cells": 20160,
     "prior_failed_gates_unchanged": true,
     "auxiliary_prefix_utility": "scripts/verify_update_budget_prefix.py",
-    "last_updated_utc": "2026-11-15T02:26:17.902498+00:00",
-    "next_action": "Complete all13440new physical readouts across5x8cells, independently audit, then export every result and back up; no training or outcome-based selection.",
+    "last_updated_utc": "2026-11-15T02:37:21.311121+00:00",
+    "next_action": "Complete all5fixed configurations and8new conditions; full independent audit before scientific interpretation, exports and publication.",
     "smoke_receipts": {
       "update-budget-smoke-forward-audit-20261115-01": {
         "status": "audited_update_budget_smoke",
@@ -12286,6 +12286,43 @@
     "mask_structure_limitation": "Each query chooses one SET among16/17/72/73. COPY selection is already determined by oracle type/count budget in all336queries; not a dependency-chain-discovery test.",
     "auxiliary_prefix_checks_passed": 240,
     "auxiliary_receipt_sha256": "c0b8425151b539b9742a8b4017ac2fa78b9f967a2d915b8081c754dd5c9da8b2",
-    "primary_output": "/media/990Pro/Code/SAS/runs/memory_update/update-budget-controls-20261115-01"
+    "primary_output": "/media/990Pro/Code/SAS/runs/memory_update/update-budget-controls-20261115-01",
+    "completed_models_at_last_observation": [
+      "native"
+    ],
+    "native_files_complete_verified": {
+      "random0_full": {
+        "rows": 336,
+        "sha256": "14f5cf362a0c89cf08086cc202a6d100f8b23f29ba27484feb82b46f243184b9"
+      },
+      "random0_oracle": {
+        "rows": 336,
+        "sha256": "22e68ab9ebcd76cef25f6036b9b0539fe27c722bcb3d352244855b47f1d0e33a"
+      },
+      "random1_full": {
+        "rows": 336,
+        "sha256": "166e21cc57b3207026533232a009fa76dbc3d6d67d4a6f5492a3cb2789925e8c"
+      },
+      "random1_oracle": {
+        "rows": 336,
+        "sha256": "e36a9c3c357d8ea0b7bf0b751fd98577ea36412b3af51bfb6abaac781877ea4d"
+      },
+      "early_full": {
+        "rows": 336,
+        "sha256": "360fdcc4a1956558623843038691609d2c28c7d6fa56132c4e027f4c67abde85"
+      },
+      "early_oracle": {
+        "rows": 336,
+        "sha256": "989c809e4196e3cd35088e90e34f06da1addacdfd84d241bbfe577b82e5c2923"
+      },
+      "recent_full": {
+        "rows": 336,
+        "sha256": "42d3c39d27e0d0253c30b12e760fe127d29dcd53e808d4c6f6124cb8a234be01"
+      },
+      "recent_oracle": {
+        "rows": 336,
+        "sha256": "a98681d260e54e71f8c50d9eda8612377b42f4cadff37847f03e4458cdc40d2d"
+      }
+    }
   }
 }
