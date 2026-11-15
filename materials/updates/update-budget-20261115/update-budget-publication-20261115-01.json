@@ -1,0 +1,60 @@
+{
+  "status": "published_remote_assets_roundtrip_byte_verified",
+  "started_utc": "2026-11-15T03:33:17.546430+00:00",
+  "repository": "HUSRCF/HML-Hybrid-Memory-Lab",
+  "tag": "update-budget-controls-2026-11-15",
+  "target_commit": "ad52962dc7f567ecfd11b685719b8ed2680a7b1b",
+  "audit_sha256": "63f80eacae657186032fd737d2832889c61abda1ce240ebb9b5baf7f6a96d463",
+  "archive_local_verification": {
+    "status": "all_archive_members_byte_verified",
+    "files_verified": 1632,
+    "archive_entries": 1633,
+    "archive": "update-budget-20261115.tar.gz",
+    "bytes": 21973452,
+    "sha256": "16a7f710d8a57a3d6530bf524da95b0258642f1deb27dced03d6bd7e550b94a7"
+  },
+  "committed_snapshot_files_byte_verified": 258,
+  "expected_assets": {
+    "update-budget-20261115.tar.gz": {
+      "bytes": 21973452,
+      "sha256": "16a7f710d8a57a3d6530bf524da95b0258642f1deb27dced03d6bd7e550b94a7"
+    },
+    "file_manifest.json": {
+      "bytes": 382578,
+      "sha256": "a6be4d963e21b82a1109431a45440b7e6324ae0fdfb35ff78fcd4288173cda02"
+    },
+    "local_verification.json": {
+      "bytes": 252,
+      "sha256": "a33fc7d51197f8f891ddef47912aaedda47c60981e25db4bdde732edcaded358"
+    }
+  },
+  "publication_source_sha256": "05bb8e9c83d5d74fddc062e77da2ed98e3b88013fee4eafb748295452335cdad",
+  "release_notes_sha256": "d010058a05d001b02b5116e76728d116c0284fa989e4fafe52ec137e4ebc0086",
+  "release_id": 445786339,
+  "completed_utc": "2026-11-15T03:34:16.919619+00:00",
+  "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/update-budget-controls-2026-11-15",
+  "published_at": "2026-11-15T03:34:14Z",
+  "remote_assets": [
+    {
+      "name": "update-budget-20261115.tar.gz",
+      "id": 749697946,
+      "bytes": 21973452,
+      "sha256": "16a7f710d8a57a3d6530bf524da95b0258642f1deb27dced03d6bd7e550b94a7",
+      "downloaded_bytes_verified": true
+    },
+    {
+      "name": "file_manifest.json",
+      "id": 749697950,
+      "bytes": 382578,
+      "sha256": "a6be4d963e21b82a1109431a45440b7e6324ae0fdfb35ff78fcd4288173cda02",
+      "downloaded_bytes_verified": true
+    },
+    {
+      "name": "local_verification.json",
+      "id": 749697956,
+      "bytes": 252,
+      "sha256": "a33fc7d51197f8f891ddef47912aaedda47c60981e25db4bdde732edcaded358",
+      "downloaded_bytes_verified": true
+    }
+  ]
+}

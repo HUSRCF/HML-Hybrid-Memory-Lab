@@ -12225,7 +12225,7 @@
     "primary_scientific_results_published": true
   },
   "update_budget_controls": {
-    "status": "all13440completed_audited_exported_visually_reviewed_ready_for_snapshot",
+    "status": "completed_audited_all_results_published_remote_assets_byte_verified",
     "previous_goal_turn_classification": "progress: completed and verified fourth2688readout configuration; clarified no-hold versus experimental prefix checks",
     "prior_head": "c3447ec3e2840c98a1c660a3a2ca0c19ada7dac7",
     "protocol": "configs/update_budget_controls_plan.json",
@@ -12265,8 +12265,8 @@
     "unified_logical_cells": 20160,
     "prior_failed_gates_unchanged": true,
     "auxiliary_prefix_utility": "scripts/verify_update_budget_prefix.py",
-    "last_updated_utc": "2026-11-15T03:29:02.832494+00:00",
-    "next_action": "Byte-verify and publish complete incremental evidence. Then register a new normally-encoded-prefix/later-update diagnostic with fixed historical KV and query-independent prefix states before new architecture training.",
+    "last_updated_utc": "2026-11-15T03:35:17.870795+00:00",
+    "next_action": "Register a fresh normally-encoded-prefix/later-update diagnostic: same complete cache before intervention, historical evidence KV fixed, question-independent prefix/write policy shared by all roles, plus relevant-update positive controls. Resolve evidence-encoding confound before new architecture training or scaleup.",
     "smoke_receipts": {
       "update-budget-smoke-forward-audit-20261115-01": {
         "status": "audited_update_budget_smoke",
@@ -12466,6 +12466,25 @@
       "scope": "posthoc descriptive on reused8streams; not new success gate"
     },
     "encoding_confound_not_resolved": true,
-    "new_training_or_scaleup_triggered": false
+    "new_training_or_scaleup_triggered": false,
+    "last_goal_turn_classification": "progress: completed13440new readouts and full audit, exported all60cells/100contrasts, verified retention equivalence with encoding confound, published complete byte-verified GitHub Release",
+    "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/update-budget-controls-2026-11-15",
+    "release_target_commit": "ad52962dc7f567ecfd11b685719b8ed2680a7b1b",
+    "release_id": 445786339,
+    "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/update-budget-publication-20261115-01.json",
+    "final_backup_directory": "/media/990Pro/Code/SAS/backups/update-budget-controls-20261115-01",
+    "backup": {
+      "status": "all_archive_members_byte_verified",
+      "files_verified": 1632,
+      "archive_entries": 1633,
+      "archive": "update-budget-20261115.tar.gz",
+      "bytes": 21973452,
+      "sha256": "16a7f710d8a57a3d6530bf524da95b0258642f1deb27dced03d6bd7e550b94a7"
+    },
+    "remote_assets_verified": 3,
+    "remote_assets_actual_download_bytes": 22356282,
+    "committed_snapshot_files_byte_verified": 258,
+    "source_files_unchanged_after_publication": 197,
+    "primary_scientific_results_published": true
   }
 }

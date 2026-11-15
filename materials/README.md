@@ -16,6 +16,8 @@
 241项测试、两轮720次smoke及240项完整缓存检查通过；197份测量源码与冻结参数不变。
 后续先从正常编码的相同前缀分叉，只干预后续更新，未追加训练或扩模。
 
+完整增量数据与原始运行已发布到[逐字节核验的Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/update-budget-controls-2026-11-15)。
+
 ## Complete gate-component decomposition
 
 [前轮衰减与Delta分解](updates/gate-components-20261115/README.md)的6720次新读出和6720项历史参考
