@@ -1,0 +1,84 @@
+--- scripts/run_readout_adapter_training.py
++++ scripts/run_readout_adapter_cache_training.py
+@@ -1,4 +1,8 @@
+-"""Train three exactly matched local readout controls over fixed normal histories."""
++"""Frozen matched readout protocol with registered teacher-cache commit correction.
++
++Copied from the sealed runner; native arithmetic, examples and optimizer budgets
++are unchanged. Explicit imports and safety receipts identify the correction.
++"""
+ import argparse
+ from datetime import datetime, timezone
+ import importlib.metadata
+@@ -16,10 +20,12 @@
+ from sas_memory.write_locality_data import streaming_hash
+ from sas_memory.training_data import data_fingerprint
+ from scripts.readout_adapter_data import ARMS, registered_inputs, verify_seal
+-from scripts.readout_adapter_runtime import (base, FixedGDN, normal_groups, teacher, normal_readout,
++from scripts.readout_adapter_runtime import (base, FixedGDN, normal_groups, normal_readout,
+                                              legacy_controls, check_normal_source)
+ from scripts.run_controller_trial import write_json, state_fingerprint
+ from scripts.fresh_layer_controls import tensor_hash
++from scripts.readout_adapter_cache_commit import (corrected_teacher as teacher,
++    cache_commit_equivalence, verify_correction_seal)
+ 
+ 
+ def gradient_norms(adapter):
+@@ -57,6 +63,8 @@
+             raise ValueError('Zero readout adapter changed an original normal answer')
+         zero.append({'id': e['id'], 'readout': value})
+         guard.check()
++    before_equivalence = cache_commit_equivalence(runtime, adapter, source, selected[0])
++    guard.check()
+     optimizer = optimizer_for(adapter, plan)
+     optimizer.zero_grad(set_to_none=True)
+     losses = []
+@@ -84,6 +92,8 @@
+     loss.backward()
+     second = gradient_norms(adapter)
+     del loss
++    after_equivalence = cache_commit_equivalence(runtime, adapter, source, selected[0])
++    guard.check()
+     if any(second[f'branches.{name}.a.weight'] is None or
+            not math.isfinite(second[f'branches.{name}.a.weight']) or second[f'branches.{name}.a.weight'] <= 0
+            for name in adapter.branches):
+@@ -96,6 +106,7 @@
+         updated_guard = base.CacheGuard(updated, logits)
+         rebuilt = check_normal_source(updated_guard, old_state['prefixes'][context['prefix_key']])
+     result = {'status': 'passed_real_one_update_readout_safety', 'zero_normal_readouts': zero,
++              'cache_commit_equivalence': {'before_update': before_equivalence, 'after_update': after_equivalence},
+               'scratch_optimizer_updates': 1, 'second_backward_without_update': True,
+               'first_gradient_norms': first, 'second_gradient_norms': second,
+               'checkpoint_sha256': streaming_hash(checkpoint / 'controller.safetensors'),
+@@ -188,11 +199,12 @@
+ def execute(args):
+     p, packet, old, cases, registry, queries, examples, references = registered_inputs(args.packet)
+     seal = verify_seal(packet)
++    correction = verify_correction_seal()
+     if args.output.exists() or args.smoke == bool(args.smoke_audit):
+         raise ValueError('Use a new smoke, or a new complete run with its audited smoke')
+     gate = None
+     if args.smoke_audit:
+-        from scripts.analyze_readout_adapter_training import audit_run
++        from scripts.analyze_readout_adapter_cache_training import audit_run
+         gate = json.loads(args.smoke_audit.read_text())
+         if gate != audit_run(Path(gate['source_run']), True) or gate['status'] != 'audited_readout_adapter_smoke':
+             raise ValueError('Real safety must be independently audited before full training')
+@@ -202,13 +214,15 @@
+          'packet': str(Path(p['registration_destination'])),
+          'packet_manifest_sha256': streaming_hash(Path(p['registration_destination']) / 'manifest.json'),
+          'protocol_sha256': packet['protocol_sha256'], 'source_sha256': packet['source_sha256'],
+-         'registration_seal': seal, 'smoke_gate': None if gate is None else
++         'registration_seal': seal, 'cache_commit_correction': correction,
++         'smoke_gate': None if gate is None else
+          {'path': str(args.smoke_audit), 'sha256': streaming_hash(args.smoke_audit)}, 'arms': {}}
+-    for name in m['source_sha256']:
++    for name in correction['source_sha256']:
+         target = args.output / 'sources' / name
+         target.parent.mkdir(parents=True, exist_ok=True)
+         target.write_bytes((ROOT / name).read_bytes())
+     write_json(args.output / 'plan.json', p)
++    write_json(args.output / 'cache-commit-correction.json', correction)
+     path = args.output / 'manifest.json'
+     write_json(path, m)
+     runtime = fixed = None

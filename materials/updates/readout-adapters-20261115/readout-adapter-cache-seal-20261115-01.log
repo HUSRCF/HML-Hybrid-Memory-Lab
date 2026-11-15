@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/tmp/seal_readout_cache_correction.py", line 25, in <module>
+    assert verify_seal(packet)==parent
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

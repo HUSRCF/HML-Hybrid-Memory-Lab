@@ -1,0 +1,9 @@
+test_exact_native_values_without_aliasing_and_repeated_saved_states (tests.test_readout_adapter_cache_commit.CacheCommitCorrectionTests.test_exact_native_values_without_aliasing_and_repeated_saved_states) ... ok
+test_only18_disposable_instances_change_and_native_class_stays_intact (tests.test_readout_adapter_cache_commit.CacheCommitCorrectionTests.test_only18_disposable_instances_change_and_native_class_stays_intact) ... ok
+test_reject_inference_uninitialized_incompatible_and_duplicate_policies (tests.test_readout_adapter_cache_commit.CacheCommitCorrectionTests.test_reject_inference_uninitialized_incompatible_and_duplicate_policies) ... ok
+test_reproduce_native_failure_and_recover_exact_analytical_gradient (tests.test_readout_adapter_cache_commit.CacheCommitCorrectionTests.test_reproduce_native_failure_and_recover_exact_analytical_gradient) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.004s
+
+OK
