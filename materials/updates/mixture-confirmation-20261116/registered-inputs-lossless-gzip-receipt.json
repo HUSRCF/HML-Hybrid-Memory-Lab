@@ -1,0 +1,16 @@
+{
+  "inputs.json": {
+    "original_bytes": 156461144,
+    "original_sha256": "7f989854c9f8ac246be48f0f3d78809e3e05962e7e1378b9248c371230f27726",
+    "gzip_bytes": 5950824,
+    "gzip_sha256": "0e1203d193550d806ac2e8f449bbc5b20726ba7b307c48c1b17bc857934de8ec",
+    "registered_native_file_unchanged": true
+  },
+  "prior-inputs.json": {
+    "original_bytes": 1898040,
+    "original_sha256": "043b0b06c41161a5cb82dadd7d9af6e30bdbaa199b3975ce95c5ded01edb43fd",
+    "gzip_bytes": 928972,
+    "gzip_sha256": "3cd77c750bfb560ae2a991c45959cf0746756395a1e977e2438d003bf9a56e1c",
+    "registered_native_file_unchanged": true
+  }
+}

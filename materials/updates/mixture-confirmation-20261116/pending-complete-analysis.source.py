@@ -68,7 +68,13 @@ def main():
                 for model in MODELS for r in meta]
         by_logical = {(r['model'], r['logical_id']): r for r in rows}
         reps = {r['physical_id']: r['logical_id'] for r in meta}
-        phys = [by_logical[model, reps[qid]] for model in MODELS for qid in data['query_order']]
+        bindings_by_physical = defaultdict(list)
+        for r in meta:
+            bindings_by_physical[r['physical_id']].append(r)
+        phys = [{**by_logical[model, reps[qid]],
+                 'logical_bindings_for_physical': len(bindings_by_physical[qid]),
+                 'associated_dependency_depths': '|'.join(str(d) for d in sorted({r['dependency_depth'] for r in bindings_by_physical[qid]}))}
+                for model in MODELS for qid in data['query_order']]
         assert len(phys) == 8400 and len(rows) == 9072
         logical.extend(rows); physical.extend(phys)
         for left, right in combinations(MODELS, 2):

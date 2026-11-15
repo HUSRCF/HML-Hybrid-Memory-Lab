@@ -13696,7 +13696,7 @@
       "set_copy_mix"
     ],
     "training_started": true,
-    "confirmation_generated": false,
+    "confirmation_generated": true,
     "next_action": "Publish complete paired training backup; execute alreadyregistered fixed seven-model confirmation. Fit isnotgeneralization; no checkpoint selection or extensions.",
     "new_cpu_tests_passed": 8,
     "new_cpu_tests_seconds": 21.479,
@@ -14177,16 +14177,16 @@
     "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/readout-mixture-fit-2026-11-16"
   },
   "mixture_confirmation": {
-    "status": "full388passed_sealed303_training_lock_and_registration_active",
+    "status": "complete_registered_cohorts_independently_checked_all42fit_replays_running",
     "protocol": "configs/readout_mixture_confirmation_plan.json",
     "protocol_sha256": "8b5c777474e14bcc2debcef76aa6c9cf16e46d0843dd999709548369ac0dda69",
     "planned_sources": 303,
     "predecessor_sources_immutable": 296,
     "cpu_tests_planned": 8,
     "full_cpu_tests_required": 388,
-    "cases_generated": false,
+    "cases_generated": true,
     "inference_started": false,
-    "next_action": "Continue live pipeline48521 through literal input audit, all42exact fit replays and full observed/fresh inference. Keep303sources unchanged; no accuracy-based selection or retry.",
+    "next_action": "Continue exact livepipeline48521, all42fit replays then independent smoke audit then all10800formal readouts. Analysis60665waits for complete16800row audit; no partial-outcome selection.",
     "implementation_started": true,
     "cpu_tests_passed": 8,
     "cpu_tests_seconds": 25.28,
@@ -14204,6 +14204,42 @@
       "latest_stage": "lock_complete_training_then_register_full_cohorts",
       "stage_has_finished": false,
       "pipeline_session": 48521
-    }
+    },
+    "packet": "/media/990Pro/Code/SAS/datasets/memory_update/readout-mixture-confirmation-v1",
+    "packet_manifest_sha256": "c3b6c898a083302d1f5586c63923cb641689913645d4896af1e61bc6c0729381",
+    "novelty": {
+      "overlap": {
+        "seeds": [],
+        "ids": [],
+        "prompts": [],
+        "prefixes": []
+      },
+      "base_seeds": [
+        160000,
+        160001,
+        160002,
+        160003,
+        160004,
+        160005,
+        160006,
+        160007,
+        161000,
+        161001,
+        161002,
+        161003,
+        161004,
+        161005,
+        161006,
+        161007
+      ],
+      "physical_prompts": 1200,
+      "contexts": 200,
+      "prior_input_files": 216
+    },
+    "analysis_pipeline_session": 60665,
+    "analysis_pipeline_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/mixture-confirmation-analysis-pipeline-20261116-01.json",
+    "analysis_starts_only_after_complete_primary_audit": true,
+    "independent_input_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/mixture-confirmation-independent-inputs-20261116-01.json",
+    "independent_input_audit_sha256": "64a802dfc4ba8c4d637ea812bb20134acf4dca90430721b2fe8f4cc62c8eaaa5"
   }
 }
