@@ -4803,7 +4803,12 @@
     "Report same-checkpoint question-only preservation/regressions and gains versus native overall/everydepth/streams. Deployment timing ablation cannot by itself prove semantic write necessity. Explicit semantic-controller training needs a separate matched prospective plan."
   ],
   "active_exec_sessions": [],
-  "tests_last_verified": 183,
+  "tests_last_verified": {
+    "count": 269,
+    "status": "passed",
+    "seconds": 160.147,
+    "phase": "post_tail_path_crossover"
+  },
   "training_started": true,
   "current_conclusion": "Fresh8stream confirmation still fails allthree overall scientific gates; original same-corpus canonical passes remain in their original scope. Completed final four-case conditional state diagnostic:32exact source replays,20full-answer readouts,112archived logit tensors,all183tests and independent audit passed. Complete K/V,allnon-target tensors,metadata and initial logits fixed;12intervened/partial-state conditions alter later gold logits and losses butnonechanges the complete generated answer. Four restore-both conditions exactly replay full cache,answer,NLL and everylaterlogit. This supports a conditional prediction-distribution effect,not memory repair,original-prefix write damage or architecture superiority. Four-case localization is closed. Registered one prospective unseen8stream same-shared-checkpoint timing test withall8natural baselines,3360full-answerreadouts; no newdata,inference ortraining for that phase yet.",
   "prepared_data": {
@@ -6547,7 +6552,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "six_state_cache_differences_change_later_logits_and_losses_but_no_generated_answer_inall20conditions",
-  "updated_utc": "2026-11-14T23:07:34.535552+00:00",
+  "updated_utc": "2026-11-15T05:47:03.202299+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -10070,7 +10075,7 @@
     "original129sealed_sources_unchanged": true,
     "sha256_verified_for_every_remote_asset": true
   },
-  "current_phase": "text_competence_factorial",
+  "current_phase": "post_tail_path_crossover",
   "matched_shared_training_timing": {
     "status": "completed_audited_and_published_confirmation_all_three_criteria_failed",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
@@ -12590,7 +12595,7 @@
     "remote_download_bytes_verified": 13839371
   },
   "post_tail_path_crossover": {
-    "status": "protocol_registered_before_new_crossover_implementation_or_inference",
+    "status": "214source_packet_sealed_before_new_crossover_inference",
     "protocol": "configs/post_tail_path_crossover_plan.json",
     "protocol_sha256": "ef761441d8bef022d1096d7bc851022c6199d219d544315f4c6793e72ad2a305",
     "previous_phase": "post_encoding_updates",
@@ -12606,7 +12611,10 @@
     "new_training": false,
     "new_environment": false,
     "new_counterfactual_inference_started": false,
-    "last_updated_utc": "2026-11-15T05:23:51.370918+00:00",
-    "next_action": "Implement model-independent cache composition and causal-source audits, test tensor/metadata/storage/reader failures, then seal the214source packet before any new crossover inference."
+    "last_updated_utc": "2026-11-15T05:47:03.202299+00:00",
+    "next_action": "Commit and push sealed code and registration; run opposite-order smokes, then registered primary only after exact equivalence.",
+    "packet_manifest_sha256": "209c3dc8185f66e60bbcb05abec9086082c64b17a825a2aca3753a82f8af9dfd",
+    "source_files": 214,
+    "full_unit_tests": 269
   }
 }

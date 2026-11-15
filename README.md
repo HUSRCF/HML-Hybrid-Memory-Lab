@@ -14,7 +14,8 @@ while an existing GDN adapter already reaches 48/48 with normal updates on both 
 tail lengths. These controls do not establish an architectural need for joint control.
 All 259 tests, opposite-order 510-readout smokes, 680 source caches and 206 measurement sources
 passed operational validation. Earlier failed scientific criteria remain unchanged.
-No new training, environment or model download. Next isolate post-tail state and tail-KV encoding.
+No new training, environment or model download. The [post-tail cache crossover](materials/updates/post-tail-path-20261115/README.md)
+is registered with214sealed sources and269passing tests; opposite-order checks precede4608new readouts.
 
 All 13,440 new whole-record budget-control readouts are independently audited.
 The [complete budget-control phase](materials/updates/update-budget-20261115/README.md)
