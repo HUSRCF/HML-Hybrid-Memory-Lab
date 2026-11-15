@@ -13164,7 +13164,7 @@
   },
   "latest_published_phase": "question_state_freeze",
   "version_address_observation": {
-    "status": "both216readout_orders_exact_36raw_fp32_files_primary_live",
+    "status": "all3456_normal_readouts_independently_audited_and_exported_publication_pending",
     "protocol": "configs/version_address_audit_plan.json",
     "protocol_sha256": "f3e1867a24b83bacbc5d5fbab0b2be682d818b27808a2f1d52082dc780da3bbe",
     "registered_utc": "2026-11-15T13:16:03.831922+00:00",
@@ -13199,7 +13199,7 @@
       82006,
       82007
     ],
-    "next_action": "Continue same live pipeline47029 through3456normal readouts and independent audit; no restart or source changes. Export all3456answers,41472observations and576raw FP32 files before interpretation.",
+    "next_action": "Inspect complete plots/tables, package all576primary and72smoke raw FP32 arrays plus all outcomes and publish byte-verified incremental release. Keep broader research active; no new architecture or causal attention claim.",
     "new_cpu_tests_passed": 9,
     "full_regression_session": 47843,
     "full_regression_log": "/media/990Pro/Code/SAS/logs/memory_update/version-address-full-tests-20261115-01.log",
@@ -13212,7 +13212,7 @@
     "registration_seal_sha256": "b9f517bd5b88c6dffaf76a7ea612288cfe29e9ff34d133b61369201d28aeb5e2",
     "independent_inputs": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-independent-inputs-20261115-01.json",
     "source_seal_commit": "498cf6f",
-    "pipeline_session": 47029,
+    "pipeline_session": null,
     "forward_run": "/media/990Pro/Code/SAS/runs/memory_update/version-address-smoke-forward-20261115-01",
     "reverse_run": "/media/990Pro/Code/SAS/runs/memory_update/version-address-smoke-reverse-20261115-01",
     "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/version-address-primary-20261115-01",
@@ -13222,6 +13222,34 @@
     "reverse_smoke_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-smoke-reverse-audit-20261115-01.json",
     "smoke_equivalence": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-smoke-equivalence-20261115-01.json",
     "opposite_order_exact_raw_files": 36,
-    "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-primary-audit-20261115-01.json"
+    "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-primary-audit-20261115-01.json",
+    "postprocess_session": null,
+    "physical_readouts_audited": 3456,
+    "reused_exact_replays_audited": 1728,
+    "raw_fp32_files_audited": 576,
+    "layer_position_rows_verified": 41472,
+    "primary_manifest_sha256": "798b044b2deb77c7b2e384f9d892fcfa3481e7266cf10f8e8fbc9f037be6e102",
+    "primary_audit_sha256": "a0f2317fd09b7ec9f068d717e20fb18ea2a66da95e2968af6f22c2c0d720bcf9",
+    "independent_observations": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-observations-20261115-01.json",
+    "independent_observations_sha256": "4ecb7fb89bbdc3a8f1cdb94c68f2cd3c0a8b31c0e610f0b55f3071ddc61725ba",
+    "exports": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-exports-20261115-01",
+    "complete_fresh_gdn": {
+      "correct": 819,
+      "questions": 864,
+      "same_account_other_version_errors": 45,
+      "protected_correct": 288,
+      "protected_questions": 288,
+      "paired_both_wordings_same_wrong": 19,
+      "wording_repairs": 3,
+      "wording_regressions": 4,
+      "primary_location_wrong_emitted_mass_greater": 35,
+      "primary_location_correct_support_mass_greater": 10
+    },
+    "prior_failed_criteria_unchanged": {
+      "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+      "matched_question_positive_joint_gain_over_native": false,
+      "matched_question_no_all_trained_all_deployed_correct_regression": false
+    },
+    "new_method_or_causal_attention_claim": false
   }
 }

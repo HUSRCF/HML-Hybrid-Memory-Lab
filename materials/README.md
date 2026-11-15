@@ -1,13 +1,15 @@
 # Research materials
 
-Current: [passive version-address observation](updates/version-address-20261115/README.md).
-All 352 CPU tests passed; 268 sources and complete old/fresh inputs are sealed before
-native inference. Opposite-model-order checks each completed 216 readouts with identical
-answers and all 36 raw FP32 files; the 3,456-readout primary pipeline is running. Old and
-fresh cohorts remain separate; eight fixed new streams, normal updates, unrestricted
-reading, no new training. Pooled attention is descriptive rather than causal.
+Latest completed: [normal-history version-address observations](updates/version-address-20261115/README.md).
+All 3,456 normal readouts, 1,728 exact old replays, 41,472 observations and 576 complete FP32
+arrays independently audited. On eight fixed fresh streams, the existing GDN adapter scores
+819/864; all45errors emit another version of the same account, protected reading288/288.
+At the fixed layer15/boundary23,35errors have higher wrong-record mass and10have higher
+correct-support mass. All352pre-inference tests and268sealed sources unchanged. All layers,
+positions,roles,wordings,old errors and empty strata retained. Full backup publication pending;
+no new training,architecture gain or causal attention claim. All old failed criteria remain false.
 
-Latest completed: [complete question-only local GDN controls](updates/question-state-freeze-20261115/README.md).
+Previous: [complete question-only local GDN controls](updates/question-state-freeze-20261115/README.md).
 All 6,912 readouts, 864 exact normal replays and all local controls independently audited;
 all 343 pre-inference tests and 261 sealed sources unchanged. Every local arm lowers accuracy
 in both wordings. Group 12/13/14 is 105/432 versus normal 412/432 in state terms (5 repairs,

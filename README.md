@@ -5,16 +5,21 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; normal-history version-address observations are running.**
-The [registered observation](materials/updates/version-address-20261115/README.md)
-retains all old questions and adds eight fixed new streams. All 352 CPU regression tests
-passed before sealing 268 sources. Opposite-model-order checks each completed 216 readouts;
-both models' answers and all 36 raw FP32 files match exactly. The 3,456-readout primary
-pipeline is live with normal recurrent updates and unrestricted full attention. Old exact
-replays and fresh synthetic streams will be reported separately. Pooled record weights
-are observations, not causal contributions or architecture gains.
+**Latest completed: all 3,456 normal-history version-address readouts independently audited.**
+The [complete passive diagnostic](materials/updates/version-address-20261115/README.md)
+retains every old question and eight prospectively fixed new streams. The existing frozen
+GDN adapter scores 819/864 on the fresh streams; all 45 errors emit another version of the
+queried account, while protected-account reading is 288/288. At the preregistered layer15,
+answer-boundary observation, the wrong-value record has higher pooled weight in 35 errors;
+the correct support has higher weight in 10. These counterexamples prevent treating pooled
+attention as causal answer use. Version-word contrasts appear at both layers15 and19.
+All 352 pre-inference tests, 268 sealed sources, opposite-order controls, 1,728 exact old
+replays and 576 complete raw FP32 arrays passed audit. No Oracle, donor, new training,
+architecture gain or unique-group attribution. All prior failed criteria remain false.
+Complete tables and plots are exported; full incremental backup publication is pending.
+The broader research goal remains active.
 
-**Latest completed: all 6,912 question-phase GDN control readouts independently audited.**
+**Previous: all 6,912 question-phase GDN control readouts independently audited.**
 The [complete eight-arm diagnostic](materials/updates/question-state-freeze-20261115/README.md)
 retains every normal history, both wordings, all roles and all baseline failures. Every local
 three-GDN freeze lowers accuracy in both wordings. The preregistered group 12/13/14 gives

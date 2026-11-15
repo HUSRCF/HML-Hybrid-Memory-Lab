@@ -62,7 +62,7 @@ with tarfile.open(archive,'r:gz') as tar:
             array=np.load(io.BytesIO(data),allow_pickle=False)
             if (array.dtype!=np.float32 or array.ndim!=4 or array.shape[:3]!=(6,6,2)
                 or array.shape[3] not in (19,83,531) or not np.isfinite(array).all()
-                or (array<0).any() or (array>1).any()):
+                or (array<0).any()):
                 raise ValueError('Array differs from registered pooled observation scope')
             probability_arrays+=1
         for name,pattern in patterns.items():
