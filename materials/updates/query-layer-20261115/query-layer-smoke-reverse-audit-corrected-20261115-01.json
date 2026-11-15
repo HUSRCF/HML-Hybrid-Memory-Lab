@@ -1,0 +1,39 @@
+{
+  "status": "audited_query_layer_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/query-layer-smoke-reverse-20261115-01",
+  "manifest_sha256": "9d9d4ceaf16c53f3d7fd3e05212df29ed768ce5ce31f9b03fc2744e1dd39a0f6",
+  "packet_manifest_sha256": "ddc38548a1ac566aac0d44d35b25c108f21a0edc1e58ffd98e79a8fde7e22737",
+  "new_primary_readouts_audited": 288,
+  "reference_operational_replays_audited": 96,
+  "single_layer_same_source_replays_audited": 48,
+  "question_only_captures_audited": 48,
+  "actual_donor_query_tensors_audited": 288,
+  "normal_prefix_caches_audited": 2,
+  "after_source_caches_audited": 16,
+  "legacy_operational_readouts": 96,
+  "source_files_verified": 230,
+  "audit_correction": {
+    "profile": "query_layer_audit_variable_scope_correction_v1",
+    "protocol_sha256": "471837b3a109dc5183431ab2d069441e907dd3b447b60a693bc59057664b7c91",
+    "base_sources_unchanged": 230,
+    "source_sha256": {
+      "configs/query_layer_audit_correction.json": "471837b3a109dc5183431ab2d069441e907dd3b447b60a693bc59057664b7c91",
+      "scripts/analyze_query_layer_corrected.py": "7a4e1fadecfa4f7dd3a741eb5fe2c81f0a3c3c6bd75e9405037b915deb7b77bc",
+      "scripts/run_query_layer_corrected.py": "a0ed64a54e1295f8020ca0600bda7412e78120a7cf19fbf4a3638d4258c2ddfa",
+      "tests/test_query_layer_audit_correction.py": "6e7a472b7238caa994800363ce9ea4515eae5f206a88f224fef967fdb467d304"
+    }
+  },
+  "audit_correction_sources_verified": 4,
+  "total_source_files_verified": 234,
+  "baseline_failures_excluded": 0,
+  "fresh_confirmation": false,
+  "prior_failed_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "original_ideal_kernel_failure_preserved": true,
+  "architecture_effectiveness_claim": false,
+  "metrics": null,
+  "analysis_source_sha256": "7a4e1fadecfa4f7dd3a741eb5fe2c81f0a3c3c6bd75e9405037b915deb7b77bc"
+}

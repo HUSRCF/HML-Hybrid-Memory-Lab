@@ -12729,7 +12729,7 @@
     }
   },
   "query_layer_localization": {
-    "status": "audit_correction_sealed_299tests_passed_ready_to_resume",
+    "status": "opposite_order_exact_equivalence_passed_primary_running",
     "protocol": "configs/query_layer_localization_plan.json",
     "protocol_sha256": "967a7693dd3f3c4ff2cb9e71353742e68297b460495b12f35ce3c5d7ec35aa56",
     "prior_sources_immutable": 222,
@@ -12741,20 +12741,20 @@
     "new_environment": false,
     "new_code_started": true,
     "model_inference_started": true,
-    "next_action": "Push correction with all234source provenance, re-audit exact existing forward, run reverse smoke, then gated4608primary. No new scientific outcomes inspected.",
+    "next_action": "Poll live pipeline44644 without restarting. Finish4608new readouts,1536reference replays,384self controls and768captures; audit all32new/archived cells, then export and publish. All234sources sealed; no scientific outcomes inspected.",
     "new_unit_tests_passed": 11,
     "new_unit_tests_seconds": 8.697,
     "input_feasibility_passed": true,
     "input_feasibility": "/media/990Pro/Code/SAS/artifacts/memory_update/query-layer-input-feasibility-20261115-01.json",
-    "last_updated_utc": "2026-11-15T08:21:46.711923+00:00",
+    "last_updated_utc": "2026-11-15T08:28:05.190357+00:00",
     "source_files_sealed": 230,
     "packet": "/media/990Pro/Code/SAS/datasets/memory_update/query-layer-localization-v1",
     "packet_manifest_sha256": "ddc38548a1ac566aac0d44d35b25c108f21a0edc1e58ffd98e79a8fde7e22737",
     "data_packet_generated": true,
     "tests_passed": 299,
-    "tests_seconds": 173.947,
+    "tests_seconds": 189.828,
     "registration_independent_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/query-layer-registration-audit-20261115-01.json",
-    "primary_inference_started": false,
+    "primary_inference_started": true,
     "forward_smoke": "/media/990Pro/Code/SAS/runs/memory_update/query-layer-smoke-forward-20261115-01",
     "forward_smoke_exit_code": 0,
     "failed_audit": "/media/990Pro/Code/SAS/logs/memory_update/query-layer-smoke-forward-audit-20261115-01.log",
@@ -12768,6 +12768,23 @@
     "total_verified_sources": 234,
     "audit_correction_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/query-layer-audit-correction-seal-20261115-01.json",
     "audit_correction_seal_sha256": "0ac57e31638aa59740ab9ccf22480ed377058dbbf5f860bd89460879e6798d20",
-    "original_forward_run_preserved": true
+    "original_forward_run_preserved": true,
+    "base_tests_seconds": 173.947,
+    "corrected_pipeline_session_id": 44644,
+    "forward_corrected_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/query-layer-smoke-forward-audit-corrected-20261115-01.json",
+    "forward_corrected_audited_readouts": 288,
+    "reverse_smoke": "/media/990Pro/Code/SAS/runs/memory_update/query-layer-smoke-reverse-20261115-01",
+    "smoke_equivalence": "/media/990Pro/Code/SAS/artifacts/memory_update/query-layer-smoke-equivalence-corrected-20261115-01.json",
+    "smoke_equivalence_sha256": "1a86435971c99246b3267f3c2d5afc41c28f4691296a305f0bb3c342145ca153",
+    "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/query-layer-primary-20261115-01",
+    "primary_started_utc": "2026-11-15T08:27:13.742436+00:00",
+    "primary_progress": {
+      "native": {
+        "completed_primary": 0,
+        "completed_reference_replays": 0,
+        "completed_same_source_replays": 0,
+        "completed_captures": 0
+      }
+    }
   }
 }
