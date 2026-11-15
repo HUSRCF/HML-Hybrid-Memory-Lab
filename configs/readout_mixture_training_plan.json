@@ -1,0 +1,235 @@
+{
+  "profile": "paired_gate_set_replay_vs_set_copy_mixture_v1",
+  "status": "registered_before_new_implementation_packet_or_training",
+  "registered_utc": "2026-11-15T17:25:33.328087+00:00",
+  "question": "Does reallocating half of a fixed Gate-adapter training exposure budget to COPY improve joint relational answers while preserving SET version reading and unrelated facts?",
+  "scope": "Task-coverage control on a simple output-gate adapter,not a shared four-layer method. Gate was chosen on the completed observed cohort because it nearly matched Query SET scores and retained every protected SET answer. This selection is prospective only for the new fixed confirmation cohorts.",
+  "parent_profile": "configs/readout_adapter_training_plan.json",
+  "parent_profile_sha256": "d8c7564a1dcaf73629a9d4a36fbd8a36f1bf566d4144b8a0adc1cfa664ae049b",
+  "parent_confirmation": "configs/readout_adapter_confirmation_plan.json",
+  "parent_confirmation_sha256": "30fe0e1107b57ff48dec43a2015ddd29c4e8f9c168b2b8e4dd1895c326a8fb33",
+  "parent_source_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-source-seal-20261115-01.json",
+  "parent_source_seal_sha256": "3028efa175d7a9cb906540b4e831534344bbd16245ec870b8681a47648c3d7ac",
+  "parent_confirmation_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-primary-audit-20261116-01.json",
+  "parent_publication": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-publication-20261116-01.json",
+  "predecessor_sources_immutable": 289,
+  "new_sources": [
+    "configs/readout_mixture_training_plan.json",
+    "scripts/readout_mixture_data.py",
+    "scripts/prepare_readout_mixture.py",
+    "scripts/readout_mixture_runtime.py",
+    "scripts/run_readout_mixture_training.py",
+    "scripts/analyze_readout_mixture_training.py",
+    "tests/test_readout_mixture.py"
+  ],
+  "planned_total_sources": 296,
+  "required_full_cpu_tests": 380,
+  "observed_files_sha256": {
+    "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-source-seal-20261115-01.json": "3028efa175d7a9cb906540b4e831534344bbd16245ec870b8681a47648c3d7ac",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-primary-audit-20261116-01.json": "234a068b713d4ecee658c3bf1be1977cbeefecbcab29357c3fd1e5a6b1ebb86c",
+    "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-publication-20261116-01.json": "75043c41bef62c3e100d7b0fab81cc558dd8ff520ac450604fc547db95ec41d7",
+    "/media/990Pro/Code/SAS/datasets/memory_update/readout-adapter-fit-v1/manifest.json": "3f1e2eeff44559530ee43a033917034da4dfffb8a403c1db190b56a2e192a9cf",
+    "/media/990Pro/Code/SAS/datasets/memory_update/readout-adapter-fit-v1/examples.json": "d25b44c6e987516d3a4bfe1dd199424309b50ae1e8b30798430d614f5d3354d1",
+    "/media/990Pro/Code/SAS/datasets/memory_update/version-address-observation-v1/registry.json": "daaccb317a6fd73077446b28100859aea6319dcab779aa4f7635fdb06af0fc1b",
+    "/media/990Pro/Code/SAS/datasets/memory_update/version-address-observation-v1/queries.json": "cafe6c39ca7c4bf233a5c9f8a33520512d3d57ea67e18a82ee117d23aab4f368",
+    "/media/990Pro/Code/SAS/datasets/memory_update/version-address-observation-v1/cases.json": "7d9a5068ff0a540e1b282cfccec7ce92759c0b93c0c72f89231b1d6e5e21f477",
+    "/media/990Pro/Code/SAS/datasets/memory_update/fresh-copy-memory-confirmation-v1/manifest.json": "9eff6d04307c32785000efb2b495ae6cf17ea3d24d28ff25f61a1778105c3a75",
+    "/media/990Pro/Code/SAS/datasets/memory_update/fresh-copy-memory-confirmation-v1/cases.json": "8df1f352770e8a25fe1516c97ba176863ab3dde0b9672c54d8b884bab73b7638",
+    "/media/990Pro/Code/SAS/datasets/memory_update/fresh-copy-memory-confirmation-v1/registry.json": "56423a779a97b5655dc380b3528bbd8831223ae7c480535244d5c260f960e5bf",
+    "/media/990Pro/Code/SAS/datasets/memory_update/readout-adapter-confirmation-v1/manifest.json": "6be43a69171f05c82a1827b3ae854b575541d1f8d1026627418100e1de3e93d0",
+    "/media/990Pro/Code/SAS/datasets/memory_update/readout-adapter-confirmation-v1/inputs.json": "8989396c6dc9f13b6848ffa2b34f88522757ce3f8b25a7bd064e920ed90bb223",
+    "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/manifest.json": "86cc706a473db9fd939734bba66dbb88aebc298f68458ba882e9bca01898c80a"
+  },
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "model_kind": "it",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "installed_modeling_source": "/home/husrcf/anaconda3/lib/python3.12/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py",
+  "installed_modeling_source_sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded",
+  "fixed_gdn": {
+    "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+    "training_arm": "gdn_only",
+    "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+    "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+    "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+    "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+    "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+    "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+    "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+    "final_step": 432,
+    "token_policy": "all",
+    "mode": "gdn_only",
+    "rank": 84,
+    "group_index": 3,
+    "adapt_gdn_keys": true,
+    "parameters": 696192,
+    "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+    "teacher_train_fit": {
+      "examples": 864,
+      "teacher_loss_including_newline": 0.006321374711538502,
+      "teacher_numeric_tokens_correct": 2584,
+      "teacher_numeric_tokens": 2592,
+      "teacher_newline_correct": 864
+    }
+  },
+  "fixed_gdn_state_sha256": "cb5ddf299e0a0335c64a3815da0a26e18a7179df938731b8895c6e9b437de7e7",
+  "attention_layer": 15,
+  "mode": "gate",
+  "rank": 32,
+  "new_trainable_parameters": 131072,
+  "initial_state_sha256": "794adcc220d640b5317a3c41447497481d4ef425505b5a5e14250672085e9a1e",
+  "regimes": [
+    "set_replay",
+    "set_copy_mix"
+  ],
+  "set_core": {
+    "seeds": [
+      76000,
+      76001,
+      76002,
+      76003,
+      76004,
+      76005,
+      76006,
+      76007
+    ],
+    "examples": 864,
+    "histories": 144,
+    "rule": "Every observed SET query from those eight seeds,all9conditions,two names,two one-token wordings and three roles,unchanged existing insertion order. No filtering by correctness."
+  },
+  "copy_core": {
+    "cohort_seeds": [
+      [
+        61000,
+        61001,
+        61002,
+        61003,
+        61004,
+        61005,
+        61006,
+        61007
+      ],
+      [
+        89000,
+        89001,
+        89002,
+        89003,
+        89004,
+        89005,
+        89006,
+        89007
+      ]
+    ],
+    "logical_exposures": 864,
+    "unique_physical_prompts": 672,
+    "unique_histories": 112,
+    "chunks": 144,
+    "rule": "All432logical bindings from each already observed cohort. Group in first-occurrence order by(base_case_id,dependency_depth,variant);each six-question group has two styles and three roles sharing one literal ledger. Retain repeated before-ledger bindings across depth:672unique physical prompts,864exposures. COPY89000was a previous confirmation and is now explicitly adaptation/fit data."
+  },
+  "schedule": "For SET context index i in all144originalcontexts,train its six questions,then repeat those same six for set_replay or train COPYgroup i for set_copy_mix. Twelve exposures per paired block,three4-exampleupdates. Both regimes start each block on the same six SET IDs;all six second-block questions are retained. No performance-driven ordering.",
+  "activation": "Question and answer tokens only at the known ledger boundary,matched during training and deployment. No task,role,entity,version,support or gold label enters the adapter interface.",
+  "arithmetic": "Reuse unchanged ReadoutAdapter and ConstantInputFrozenAffines,FP64 affine accumulation rounded to FP32;native BF16 kernels unchanged. Reuse disposable teacher-cache copy-on-write commits without detach;never edit installed kernels or frozen289sources.",
+  "variable_teacher": "SET has24known+3gold-prefix tokens;COPY has26or27known+3gold-prefix tokens. All losses use only the same four numeric-answer-plus-newline targets;logits_to_keep=4. New wrapper validates exact known/teacher/label correspondence and cache boundary. No artificial padding or input rewriting.",
+  "budget_match": "Equal131072newparameters,initialization,1728exampleexposures,432optimizersteps and6912supervisedanswertokens. Teacher-input tokens and extra COPYprefills are not FLOP-matched:46656SET-replay versus48816mixed teacher tokens(+4.63%). Report exact counts andelapsedcost,not a speed claim.",
+  "training": {
+    "initialization_seed": 1701,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "max_gradient_norm": 1.0,
+    "gradient_accumulation": 4,
+    "exposures_per_regime": 1728,
+    "optimizer_steps_per_regime": 432,
+    "epochs": 1,
+    "checkpoint_steps": [
+      144,
+      288,
+      432
+    ],
+    "evaluation_checkpoint_steps": [
+      432
+    ],
+    "supervised_answer_tokens_per_regime": 6912,
+    "teacher_input_tokens": {
+      "set_replay": 46656,
+      "set_copy_mix": 48816
+    },
+    "unique_questions": {
+      "set_replay": 864,
+      "set_copy_mix": 1536
+    },
+    "unique_histories": {
+      "set_replay": 144,
+      "set_copy_mix": 256
+    },
+    "no_early_stop_extension_or_best_checkpoint": true
+  },
+  "prefix_reference": "Before attaching new adapters,build a disabled-readout fixed-GDN reference bank on all256unique normally encoded observed histories,store complete48field/layout/metadata/logit digests,not GPU cache tensors. SET uses frozen normal-prefix/tail continuation;COPY uses native fullledgerprefill. During training and final readout every history must match this bank. Histories are question-independent andevery teacher/answer forks andguards its source.",
+  "safety": "After all380CPUtests and296source seal,run one discarded optimizer update per regime on first2SET andfirst2COPYknownexamples,covering COPY29/30teacher lengths;second backward must reach A. Check zero-adapter actual SET/COPY readouts,real native no-grad versus COW-grad logits/loss/all48finalcache bytes before andafter update for SET27/COPY29/COPY30. Rebuild fact histories after nonzero update andrequire exact reference. Freeze all native/existingGDNweights;retain legacy anchors andrestorehooks. Reset original initialization for scheduled training. Accuracy is never an operational gate.",
+  "final_observed_readout": "Evaluate each unique physical training input at final432only:864forSETreplay,1536formix. Retain every logical exposure-to-answer binding,including repeatedbeforequeries;teacherloss and unconstrained numericgeneration are both recorded. These are fit/development outcomes,not heldoutresults.",
+  "confirmation": {
+    "generation_gate": "No160000/161000case construction until both final432checkpoints,complete traininglogs and all unique observed readouts pass independent audit. Seal their exact bytes before new generation. Confirmation runtime receives a later pre-inference registration;seed lists,models andscope here remain fixed regardless of fit.",
+    "set_seeds": [
+      160000,
+      160001,
+      160002,
+      160003,
+      160004,
+      160005,
+      160006,
+      160007
+    ],
+    "copy_seeds": [
+      161000,
+      161001,
+      161002,
+      161003,
+      161004,
+      161005,
+      161006,
+      161007
+    ],
+    "models": [
+      "native",
+      "fixed_gdn",
+      "query",
+      "gate",
+      "query_gate",
+      "gate_set_replay",
+      "gate_set_copy_mix"
+    ],
+    "questions_per_model": 1200,
+    "new_cohort_physical_readouts": 8400,
+    "observed_development": "Also evaluate both new checkpoints on every1200previous88000/89000question(2400newreadouts),retaining all6000archivedbaselineanswers after exact legacy/smoke replay. COPY89000is now training data;this entire old cohort is observed development. Never pool it with new confirmation orcallitsCOPYanswersgeneralization.",
+    "new_primary_readouts_including_observed": 10800,
+    "scope": "Frozen generators,all864SETquestions/model and336physicalCOPYquestions/model,all432COPYbindings,all9conditions,two names,wordings,three roles andCOPYdepths1/2/3,styles,variants. Eight independent basestreams per task;pairedviewsdependent. No filtering,Oracle,donor,rewind,sparse reader oradditionaltraining.",
+    "novelty": "Before construction,inventory all actual old dataset/run inputs including new mixture exposure records. Reject anyseed,ID,completeprefix orfullprompt overlap for the fixed futurecohort;neverresample.",
+    "interpretation": "A mixed-training effect is a budgeted task-coverage result for Gate,not a proof that allQuery/co-designmethods behave alike. Negative432stepresults do not prove inherent incapacity or architectural necessity. Everyoldbaselineerror andeverynewregression remains;noarm/checkpoint/cohortselection."
+  },
+  "prospective_functional_checks": {
+    "copy_joint_gain": "Mixed > replay inCOPYjoint6 overall,nonnegative difference at eachdepth,andnetpositive inatleast3of8COPYbasestreams. Reportexactpairedrepairs/regressions.",
+    "set_retention": "MixedSETcorrect >= replay and >= unchangedoldgate on the same futurecohort;no protectedquestion correctunderfixedGDN may regress. Reporttargetcurrent/initialandprotected separately.",
+    "strong_copy_reference": "MixedCOPYjoint6 > unchangedoldgate and >= fixedGDN;retain everyfixedGDNjointsuccess andreportalllosses. Do notborrow earlierfailedcriterion names orrevise theirscope."
+  },
+  "prior_failed_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "dataset": "/media/990Pro/Code/SAS/datasets/memory_update/readout-mixture-fit-v1",
+  "source_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-mixture-source-seal-20261116-01.json",
+  "implementation_started": false,
+  "packet_generated": false,
+  "optimizer_updates_started": false,
+  "confirmation_generated": false,
+  "new_environment": false,
+  "new_backbone": false,
+  "oracle": false,
+  "donor": false,
+  "changes_fact_prefixes": false,
+  "architecture_superiority_claim": false
+}

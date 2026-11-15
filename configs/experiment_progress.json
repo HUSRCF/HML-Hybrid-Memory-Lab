@@ -6012,7 +6012,7 @@
     "branch_decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
   },
   "last_completed_phase": "readout_confirmation",
-  "next_research_step": "Register same-budget SET/COPY-mixture simple readout controls before new code,training or data; test task-coverage explanations for COPY joint regressions and protected-readout regressions. Preserve all289predecessor sources and fixed completed checkpoints;fresh fixed evaluation cohorts must be registered. No next-stage training or generation has started. Completed confirmation is now observed development for any future changes. Shared hybrid architecture advantage remains unestablished.",
+  "next_research_step": "Implement and independently test deterministic observed-input exposure registry and variable-length native teacher;run full380testsource seal before any new native smoke ortraining.",
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
     "plan": "configs/copy_dependency_transfer_plan.json",
@@ -6393,7 +6393,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "6000fresh_physical_answers_and6480logical_bindings_independently_audited_all5frozen_models",
-  "updated_utc": "2026-11-15T17:15:45.480806+00:00",
+  "updated_utc": "2026-11-15T17:25:33.507977+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -9899,7 +9899,7 @@
   "resumed_utc": "2026-11-14T18:25:03.068726+00:00",
   "resume_reason": "User explicitly asked to continue experiments after verified GitHub backup completion.",
   "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-publication-20261116-01.json",
-  "current_phase": "readout_confirmation_complete_published_next_baseline_registration_pending",
+  "current_phase": "readout_mixture_registration",
   "matched_shared_training_timing": {
     "status": "completed_audited_and_published_confirmation_all_three_criteria_failed",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
@@ -13682,5 +13682,21 @@
     "release_target_commit": "3d7163a74eca19d8d9b85d7611ab2801591ff755",
     "committed_snapshot_files_verified": 350,
     "remote_assets_verified": 3
+  },
+  "readout_mixture": {
+    "status": "registered_before_new_code_packet_ortraining",
+    "protocol": "configs/readout_mixture_training_plan.json",
+    "protocol_sha256": "ad9ee63e5e367e7e9ee4850585625102becc43cd624d03ad21950ca43b730f6e",
+    "predecessor_sources_immutable": 289,
+    "planned_sources": 296,
+    "new_cpu_tests_planned": 8,
+    "full_cpu_tests_required": 380,
+    "regimes": [
+      "set_replay",
+      "set_copy_mix"
+    ],
+    "training_started": false,
+    "confirmation_generated": false,
+    "next_action": "Implement and independently test deterministic observed-input exposure registry and variable-length native teacher;run full380testsource seal before any new native smoke ortraining."
   }
 }
