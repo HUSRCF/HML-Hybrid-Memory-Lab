@@ -12486,5 +12486,39 @@
     "committed_snapshot_files_byte_verified": 258,
     "source_files_unchanged_after_publication": 197,
     "primary_scientific_results_published": true
+  },
+  "post_encoding_updates": {
+    "status": "protocol_registered_runtime_and_data_implementation_in_preparation",
+    "previous_goal_turn_classification": "progress: completed13440new budget controls, full audit and published byte-verified complete GitHub Release; exposed initial-encoding confound",
+    "protocol": "configs/post_encoding_update_plan.json",
+    "protocol_sha256": "ccd180ff352e56064f1eb9bbd017e41c285f49cdf16ce39764992467d9a8bfd8",
+    "prior_inventory_summary": {
+      "registered_directories": 25,
+      "files": 114,
+      "exact_prefixes": 2240,
+      "exact_prompts": 7920,
+      "inventory_sha256": "f6f41cc5ccb2728bbef4b9e1ea3c08759adebab35932426f0b5e8127fe81bd21",
+      "seed_candidates": [
+        74000,
+        74001,
+        74002,
+        74003,
+        74004,
+        74005,
+        74006,
+        74007
+      ],
+      "model_inference": false
+    },
+    "data_source_files_planned": 206,
+    "previous_measurement_sources_immutable": 197,
+    "new_primary_readouts_planned": 8160,
+    "smoke_readouts_each": 510,
+    "new_training": false,
+    "new_environment": false,
+    "new_models": false,
+    "new_model_inference_started": false,
+    "last_updated_utc": "2026-11-15T03:56:30.853258+00:00",
+    "next_action": "Implement registered cached-prefix forks and tail-only controls, verify source/cache/reader invariants, lock fresh data and pass tests before native inference."
   }
 }
