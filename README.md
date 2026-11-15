@@ -5,12 +5,14 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; passive version-address observations are implemented and sealed.**
-The [registered normal-history observation](materials/updates/version-address-20261115/README.md)
+**Status: active; normal-history version-address observations are running.**
+The [registered observation](materials/updates/version-address-20261115/README.md)
 retains all old questions and adds eight fixed new streams. All 352 CPU regression tests
-passed before sealing 268 sources. Native and frozen-GDN models will retain normal updates
-and full attention; all pooled original-record weights at two known positions will be saved
-for independent reaggregation. No new model inference or scientific outcome at this seal.
+passed before sealing 268 sources. Opposite-model-order checks each completed 216 readouts;
+both models' answers and all 36 raw FP32 files match exactly. The 3,456-readout primary
+pipeline is live with normal recurrent updates and unrestricted full attention. Old exact
+replays and fresh synthetic streams will be reported separately. Pooled record weights
+are observations, not causal contributions or architecture gains.
 
 **Latest completed: all 6,912 question-phase GDN control readouts independently audited.**
 The [complete eight-arm diagnostic](materials/updates/question-state-freeze-20261115/README.md)

@@ -13164,7 +13164,7 @@
   },
   "latest_published_phase": "question_state_freeze",
   "version_address_observation": {
-    "status": "forward216_native_smoke_independently_audited_reverse_order_pending",
+    "status": "both216readout_orders_exact_36raw_fp32_files_primary_live",
     "protocol": "configs/version_address_audit_plan.json",
     "protocol_sha256": "f3e1867a24b83bacbc5d5fbab0b2be682d818b27808a2f1d52082dc780da3bbe",
     "registered_utc": "2026-11-15T13:16:03.831922+00:00",
@@ -13199,7 +13199,7 @@
       82006,
       82007
     ],
-    "next_action": "Continue verified live pipeline47029 through reverse-order native checks and exact equivalence before3456physical normal readouts. Keep all268measurement sources immutable.",
+    "next_action": "Continue same live pipeline47029 through3456normal readouts and independent audit; no restart or source changes. Export all3456answers,41472observations and576raw FP32 files before interpretation.",
     "new_cpu_tests_passed": 9,
     "full_regression_session": 47843,
     "full_regression_log": "/media/990Pro/Code/SAS/logs/memory_update/version-address-full-tests-20261115-01.log",
@@ -13218,6 +13218,10 @@
     "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/version-address-primary-20261115-01",
     "forward_smoke_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-smoke-forward-audit-20261115-01.json",
     "forward_smoke_readouts": 216,
-    "forward_raw_fp32_files_audited": 36
+    "forward_raw_fp32_files_audited": 36,
+    "reverse_smoke_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-smoke-reverse-audit-20261115-01.json",
+    "smoke_equivalence": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-smoke-equivalence-20261115-01.json",
+    "opposite_order_exact_raw_files": 36,
+    "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-primary-audit-20261115-01.json"
   }
 }
