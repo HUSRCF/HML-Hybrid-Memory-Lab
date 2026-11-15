@@ -4801,7 +4801,9 @@
     "Separate version selection,entity discrimination and output-format processing on normal failures while retaining native recurrent updates.",
     "Register any next intervention and fresh validation cohort before implementation,data or inference; require strong GDN baseline and preserve all prior failed criteria."
   ],
-  "active_exec_sessions": [],
+  "active_exec_sessions": [
+    47029
+  ],
   "tests_last_verified": {
     "count": 284,
     "status": "passed",
@@ -5051,7 +5053,9 @@
     "runner_implemented": true,
     "report": "artifacts/memory_update/single-fact-native-probe-20261114.json"
   },
-  "active_sessions": [],
+  "active_sessions": [
+    47029
+  ],
   "auditor_mutations_query_capacity": "artifacts/memory_update/gdn-query-capacity-auditor-mutations-20261114.json",
   "planned_paired_semantic_native_probe": {
     "plan": "configs/paired_semantic_native_probe.json",
@@ -6389,7 +6393,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "Allsixlocal_question_phase_freezes_lower_both_wordings_group3_protected144to1_all18non_integer",
-  "updated_utc": "2026-11-15T13:43:57.693671+00:00",
+  "updated_utc": "2026-11-15T13:49:26.171939+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -6967,7 +6971,12 @@
       }
     }
   },
-  "active_execution_sessions": [],
+  "active_execution_sessions": [
+    {
+      "session_id": 47029,
+      "role": "opposite-order passive216readout smokes then3456normal measurements and independent audits"
+    }
+  ],
   "proposal_literature_review_20261114": {
     "status": "primary_sources_checked_while_fixed_confirmation_runs_unchanged",
     "new_close_prior": {
@@ -9890,7 +9899,7 @@
   "resumed_utc": "2026-11-14T18:25:03.068726+00:00",
   "resume_reason": "User explicitly asked to continue experiments after verified GitHub backup completion.",
   "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-publication-20261115-01.json",
-  "current_phase": "version_address_observation_sealed",
+  "current_phase": "version_address_observation_native_checks",
   "matched_shared_training_timing": {
     "status": "completed_audited_and_published_confirmation_all_three_criteria_failed",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
@@ -13155,7 +13164,7 @@
   },
   "latest_published_phase": "question_state_freeze",
   "version_address_observation": {
-    "status": "352tests_passed_268sources_sealed_before_native_inference",
+    "status": "forward216_native_smoke_independently_audited_reverse_order_pending",
     "protocol": "configs/version_address_audit_plan.json",
     "protocol_sha256": "f3e1867a24b83bacbc5d5fbab0b2be682d818b27808a2f1d52082dc780da3bbe",
     "registered_utc": "2026-11-15T13:16:03.831922+00:00",
@@ -13163,7 +13172,7 @@
     "planned_source_files": 268,
     "code_started": true,
     "data_packet_generated": true,
-    "model_inference_started": false,
+    "model_inference_started": true,
     "counts": {
       "physical_readouts": 3456,
       "reused_exact_reference_replays": 1728,
@@ -13190,7 +13199,7 @@
       82006,
       82007
     ],
-    "next_action": "Push exact sealed sources and model-free evidence; then launch opposite-order216readout native checks before3456normal measurements.",
+    "next_action": "Continue verified live pipeline47029 through reverse-order native checks and exact equivalence before3456physical normal readouts. Keep all268measurement sources immutable.",
     "new_cpu_tests_passed": 9,
     "full_regression_session": 47843,
     "full_regression_log": "/media/990Pro/Code/SAS/logs/memory_update/version-address-full-tests-20261115-01.log",
@@ -13201,6 +13210,14 @@
     "independent_reconstruction_session": 97837,
     "registration_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-seal-20261115-01.json",
     "registration_seal_sha256": "b9f517bd5b88c6dffaf76a7ea612288cfe29e9ff34d133b61369201d28aeb5e2",
-    "independent_inputs": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-independent-inputs-20261115-01.json"
+    "independent_inputs": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-independent-inputs-20261115-01.json",
+    "source_seal_commit": "498cf6f",
+    "pipeline_session": 47029,
+    "forward_run": "/media/990Pro/Code/SAS/runs/memory_update/version-address-smoke-forward-20261115-01",
+    "reverse_run": "/media/990Pro/Code/SAS/runs/memory_update/version-address-smoke-reverse-20261115-01",
+    "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/version-address-primary-20261115-01",
+    "forward_smoke_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/version-address-smoke-forward-audit-20261115-01.json",
+    "forward_smoke_readouts": 216,
+    "forward_raw_fp32_files_audited": 36
   }
 }
