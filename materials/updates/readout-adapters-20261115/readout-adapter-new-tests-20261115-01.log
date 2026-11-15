@@ -1,0 +1,21 @@
+test_all48_inference_cache_fields_are_regular_and_isolated (test_readout_adapters.ReadoutAdapterTests.test_all48_inference_cache_fields_are_regular_and_isolated) ... ok
+test_all_observed_fit_inputs_and_old_errors_without_model_loading (test_readout_adapters.ReadoutAdapterTests.test_all_observed_fit_inputs_and_old_errors_without_model_loading) ... ok
+test_boundaries_in_full_cached_and_whole_prefix_calls (test_readout_adapters.ReadoutAdapterTests.test_boundaries_in_full_cached_and_whole_prefix_calls) ... FAIL
+test_causal_interface_rejects_checkpointing_and_unfrozen_backbone (test_readout_adapters.ReadoutAdapterTests.test_causal_interface_rejects_checkpointing_and_unfrozen_backbone) ... ok
+test_constant_frozen_affines_match_old_profile_with_global_grad (test_readout_adapters.ReadoutAdapterTests.test_constant_frozen_affines_match_old_profile_with_global_grad) ... ok
+test_every_head_preserves_the_inactive_half (test_readout_adapters.ReadoutAdapterTests.test_every_head_preserves_the_inactive_half) ... ok
+test_matched_parameters_paired_initialization_and_policy_validation (test_readout_adapters.ReadoutAdapterTests.test_matched_parameters_paired_initialization_and_policy_validation) ... ok
+test_zero_identity_gradients_through_attention_and_output_gate (test_readout_adapters.ReadoutAdapterTests.test_zero_identity_gradients_through_attention_and_output_gate) ... ok
+
+======================================================================
+FAIL: test_boundaries_in_full_cached_and_whole_prefix_calls (test_readout_adapters.ReadoutAdapterTests.test_boundaries_in_full_cached_and_whole_prefix_calls)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/husrcf/Code/SAS/tests/test_readout_adapters.py", line 89, in test_boundaries_in_full_cached_and_whole_prefix_calls
+    self.assertTrue(bits_equal(cached, full[:, 2:]))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 8 tests in 21.112s
+
+FAILED (failures=1)

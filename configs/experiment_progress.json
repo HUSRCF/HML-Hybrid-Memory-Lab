@@ -6012,7 +6012,7 @@
     "branch_decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
   },
   "last_completed_phase": "question_state_freeze_all6912audited_negative_outcome",
-  "next_research_step": "After verified backup, design a nondestructive version-address diagnostic on normal failures; retain native updates and strong frozen GDN baseline.",
+  "next_research_step": "Commit sealed sources and input receipts, then real one-update safety for Query,gate and joint controls; independent audit must pass before1296scheduled optimizer updates. No confirmation generated.",
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
     "plan": "configs/copy_dependency_transfer_plan.json",
@@ -13162,7 +13162,7 @@
     "remote_assets_byte_verified": 3,
     "committed_snapshot_files_byte_verified": 325
   },
-  "latest_published_phase": "question_state_freeze",
+  "latest_published_phase": "version_address_observation",
   "version_address_observation": {
     "status": "complete_audited_exported_and_published_remote_bytes_verified",
     "protocol": "configs/version_address_audit_plan.json",
@@ -13264,7 +13264,7 @@
     "broader_research_goal_active": true
   },
   "learned_readout_controls": {
-    "status": "registered_source_path_correction_applied_all_old_bytes_preserved_complete_regression_running",
+    "status": "all360tests_passed_literal_fit_independently_verified277sources_sealed_before_native_smoke",
     "protocol": "configs/readout_adapter_training_plan.json",
     "protocol_sha256": "d8c7564a1dcaf73629a9d4a36fbd8a36f1bf566d4144b8a0adc1cfa664ae049b",
     "predecessor_sources_immutable": 268,
@@ -13277,7 +13277,7 @@
       "query_gate"
     ],
     "new_parameters_each": 131072,
-    "next_action": "Continue same complete regression87156,then register literal1728fit examples and independently seal277sources before real one-update safety. Source-only correction restores historical glob inventory109without changing any268prior sources or tests.",
+    "next_action": "Commit sealed sources and input receipts, then real one-update safety for Query,gate and joint controls; independent audit must pass before1296scheduled optimizer updates. No confirmation generated.",
     "implementation_started": true,
     "new_cpu_tests_passed": 8,
     "new_cpu_tests_seconds": 20.908,
@@ -13285,13 +13285,20 @@
     "preserved_first_test_failure_log": "/media/990Pro/Code/SAS/logs/memory_update/readout-adapter-new-tests-20261115-01.log",
     "full_regression_session": 87156,
     "full_regression_log": "/media/990Pro/Code/SAS/logs/memory_update/readout-adapter-full-tests-20261115-02.log",
-    "packet_generated": false,
+    "packet_generated": true,
     "native_smoke_started": false,
     "optimizer_updates_started": false,
     "preserved_full_regression_failure": "/media/990Pro/Code/SAS/logs/memory_update/readout-adapter-full-tests-20261115-01.log",
     "source_inventory_addendum": "configs/readout_adapter_source_inventory_addendum.json",
     "effective_planned_sources": 277,
     "original_planned_sources": 276,
-    "source_inventory_addendum_sha256": "6bc94a32aceb7b9c4a293fc9be5e2a8a35805ec5048565bf0b85fd2b788d01c5"
+    "source_inventory_addendum_sha256": "6bc94a32aceb7b9c4a293fc9be5e2a8a35805ec5048565bf0b85fd2b788d01c5",
+    "full_tests_passed": 360,
+    "full_tests_seconds": 425.688,
+    "packet": "/media/990Pro/Code/SAS/datasets/memory_update/readout-adapter-fit-v1",
+    "packet_manifest_sha256": "3f1e2eeff44559530ee43a033917034da4dfffb8a403c1db190b56a2e192a9cf",
+    "registration_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-seal-20261115-01.json",
+    "registration_seal_sha256": "e9096d994c75d74382b33f8da4160fa2b7859085e1c64ff8c7728d6d3f5c66b0",
+    "independent_inputs": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-independent-inputs-20261115-01.json"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "status": "all277sources_and1728observed_fit_examples_independently_verified_without_inference",
+  "created_utc": "2026-11-15T15:26:45.736221+00:00",
+  "examples": 1728,
+  "contexts": 288,
+  "case_name_variants": 32,
+  "base_streams": 16,
+  "optimized_cached_input_tokens": 46656,
+  "answer_plus_newline_tokens": 6912,
+  "model_construction_calls": 0,
+  "gpu_initializations": 0,
+  "confirmation_cases_constructed": 0,
+  "source_sha256": "3bd16a4ed073e9337d7975f68ae923642459ecb2dbac7085e3c6c6f4e200c82b",
+  "packet_manifest_sha256": "3f1e2eeff44559530ee43a033917034da4dfffb8a403c1db190b56a2e192a9cf",
+  "all_observed_inputs_are_fit_not_confirmation": true
+}
