@@ -59,7 +59,7 @@ def package(audit,output):
         add(ROOT/name,ROOT,'code')
     tree(ROOT/'materials/updates/query-layer-20261115',ROOT,'code')
     for name in ('README.md','materials/README.md','.gitattributes','requirements.txt','configs/experiment_progress.json',
-        'scripts/run_query_layer_pipeline.sh','scripts/run_query_layer_corrected_pipeline.sh','scripts/export_query_layer.py','scripts/package_query_layer.py','scripts/publish_query_layer.py'):
+        'scripts/run_query_layer_pipeline.sh','scripts/run_query_layer_corrected_pipeline.sh','scripts/export_query_layer.py','scripts/package_query_layer.py','scripts/publish_query_layer.py','scripts/query_layer_observations.py'):
         add(ROOT/name,ROOT,'code')
     for model,state in m['models'].items():
         for kind in ('primary','same-source','donors','references'):
