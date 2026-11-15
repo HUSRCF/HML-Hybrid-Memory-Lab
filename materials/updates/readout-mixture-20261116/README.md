@@ -1,13 +1,43 @@
-# Matched Gate training: SET replay versus SET/COPY mixture
+# Gate 适配器：SET 重放与 SET/COPY 混合训练
 
-Registered before new implementation, packet construction or training. Both regimes add131072parameters and run432updates over1728exposures with6912answer targets. They start from the same seed1701Gate initialization on the unchanged frozen2B/GDN model.
+本轮检验：把一半训练曝光分给 COPY，能否改善关系链回答，同时保留 SET 版本读出和无关账户？这是四层联合设计之前的简单基线对照。
 
-SET replay uses every864question from the observed76000cohort twice. Mixed uses those864SETquestions plus all864logicalCOPYbindings from the observed61000and89000cohorts. The latter are672uniqueCOPYprompts;repeatedbeforebindings remainexplicit. SixSETquestions alternate with sixreplay/COPYquestions,covering everycondition. COPY89000is now fit data.
+协议在新代码、数据包和训练之前登记于 `abc9996`；实现提交为 `994c509`。使用现有 Conda base、2B IT 模型及冻结的 GDN 适配器，不创建环境或下载模型。此前 289 个科学代码文件和全部已完成检查点保持不变。
 
-Teacher chunks are27tokens forSET and29/30forCOPY. Exact teacher inputs are46656versus48816;updates andanswer supervision arematched,FLOPsare not. Existing kernels,289sealed sources andallfinishedcheckpoints stayunchanged.
+## 两组预算
 
-The fixed futureSET160000/COPY161000cohorts remain unconstructed until complete training/audit. Allseven models andallconditionswillbeevaluated;the old88000/89000cohort is retained as development andneverpooledwithnewconfirmation. This controls task coverage before proposing a sharedfourlayerarchitecture. Oneinitialization andeightbasestreams/taskremainlimits. All earlierfailedscientificcriteriaremainfalse.
+| 项目 | SET 重放 | SET＋COPY |
+| --- | ---: | ---: |
+| 新参数：第 15 层 Gate，rank 32 | 131,072 | 131,072 |
+| 初始化 | 同一 seed 1701 | 同一 seed 1701 |
+| 优化器更新 | 432 | 432 |
+| 问题曝光 | 1,728 | 1,728 |
+| 答案监督 Token | 6,912 | 6,912 |
+| 不同问题输入 | 864 | 1,536 |
+| 教师块输入 Token | 46,656 | 48,816 |
 
-The observed-input registry, variable native teacher, paired training runner and independent auditor are implemented. All eight new CPU tests passed in21.479seconds using only existing76000/61000/89000inputs, without native model construction orGPUinitialization. They cover complete exposure counts andtoken budgets, COPYsnapshottruth,repeatedbeforeweighting,paired scheduling, corruption rejection,answer alignment,maskedlossgradients andthepre-nativegate. The full380test regression is the next gate; no new native execution or futurecohortconstruction has started.
+两组均使用 AdamW、学习率 0.001、梯度累积 4，只评估最终第 432 步。教师块输入多约 4.6%，COPY 还增加事实前缀计算，因此不能称为 FLOPs 完全相等。无提前停止、最佳检查点选择或按表现追加预算。
 
-The no-retry pipeline is running the full380test suite. On success it seals all296scientific sources before observed-packet registration, then runs the actual native27/29/30token safety test and independent audit before scheduled training. Each failure stops the sequence with all artifacts preserved. The pipeline never generates either futurecohort; a separate literal/exposure checker is prepared. Existing Condabase,Torch/Transformers/FLA andmodelweights are reused.
+SET 核心包含已观察的 76000–76007 八条基础流，保留两种账户命名、全部九种历史条件、两种问法和三种角色，共 864 问。SET 重放将其重复两次。
+
+混合组另使用 61000–61007 与 89000–89007 的全部 864 个 COPY 逻辑绑定，对应 672 个不同问题输入。跨深度共享的 before 输入会重复曝光，权重明确保留。**89000 曾用于上一轮确认，现在明确作为训练／拟合数据。** 每个训练块先处理六个 SET 问题，再处理六个重放或 COPY 问题，共 144 个配对块。
+
+适配器只接收原有隐藏表示与已知问题边界，在问答阶段启用；事实前缀不启用。SET 教师块为 27 Token，COPY 为 29 或 30 Token，均只监督数字答案与换行的四个目标。训练期间使用已验证的临时缓存写入修正，原生模型及 FLA Kernel 保持不变。
+
+## 当前执行状态
+
+新增八项 CPU 测试已全部通过，用时 21.479 秒。检查覆盖独立 COPY 真值、完整曝光与重复权重、配对调度、错误输入拒绝、不同长度的答案对齐和梯度，以及原生执行前的门槛。
+
+完整 380 项回归已通过，用时 477.601 秒。全部 296 个科学源文件已封存，已观察训练输入已登记，27/29/30 Token 的真实 GPU 烟测正在运行。自动流程仅在独立烟测审计通过后执行两组训练及完整训练审计。任何失败均保留并停止，流程不自动重试；它不生成新确认样本。
+
+训练前会构建 256 份正常 GDN 历史的完整缓存摘要。每个训练／回答分支使用隔离缓存，并检查全部 48 个张量字段、布局、元数据和前缀 logits。烟测还比较正常无梯度执行与修正后的有梯度执行在零更新和非零更新后的逐字节一致性。
+
+## 已固定的后续评估
+
+未来 SET 种子为 160000–160007，COPY 为 161000–161007。**两组最终检查点、全部日志和拟合回答完成独立审计之前，不构造这些样本。** 后续确认实现需另行登记，种子和范围不得根据拟合分数改变。
+
+新确认保留原模型、固定 GDN、原 Query、原 Gate、原联合适配器和两个新 Gate 控制，共七组，合计 8,400 次读出。原 88000/89000 队列保留为开发集：复用全部 6,000 个已归档基线回答，再补两个新模型的 2,400 次读出。旧 COPY 队列已参与混合训练，其回答只能报告为拟合／开发表现，不与新确认合并。
+
+必须完整报告 SET 当前值、初始值、保护账户，以及 COPY 各深度、顺序、问法、逐题修复与退步和六问联合正确。每类任务只有八条独立基础流，成对变体不是独立样本；本轮只有一次训练初始化。选择 Gate 是基于已完成开发结果作出的明确选择，其结论不能直接推广到所有 Query 或联合结构。
+
+混合训练失败不证明模型缺乏能力或必须修改架构；混合训练成功也不证明共享四层控制有效。此前三项失败科学判据保留原判，整个混合记忆研究继续。

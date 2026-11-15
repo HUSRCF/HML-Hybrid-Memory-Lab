@@ -6012,7 +6012,7 @@
     "branch_decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
   },
   "last_completed_phase": "readout_confirmation",
-  "next_research_step": "Continue the specific live pipeline41032;full380regression ->296source seal ->observed packet registration ->real27/29/30native safety ->independent smoke audit ->both432step regimes ->complete training audit. No retry orfuturecasegeneration. Run the extra independent literal/exposure checker when the sealed observed packet exists.",
+  "next_research_step": "Continue live pipeline41032 during actual native27/29/30safety. Wait for independent smoke audit before both432step scheduledregimes;finish independent literal/exposure input audit. No source edits orfuturecases.",
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
     "plan": "configs/copy_dependency_transfer_plan.json",
@@ -6393,7 +6393,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "6000fresh_physical_answers_and6480logical_bindings_independently_audited_all5frozen_models",
-  "updated_utc": "2026-11-15T17:42:44.744408+00:00",
+  "updated_utc": "2026-11-15T17:50:52.229751+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -9899,7 +9899,7 @@
   "resumed_utc": "2026-11-14T18:25:03.068726+00:00",
   "resume_reason": "User explicitly asked to continue experiments after verified GitHub backup completion.",
   "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-publication-20261116-01.json",
-  "current_phase": "readout_mixture_full_regression",
+  "current_phase": "readout_mixture_native_variable_length_safety",
   "matched_shared_training_timing": {
     "status": "completed_audited_and_published_confirmation_all_three_criteria_failed",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
@@ -13684,7 +13684,7 @@
     "remote_assets_verified": 3
   },
   "readout_mixture": {
-    "status": "full380_regression_running_in_no_retry_pipeline",
+    "status": "all380passed296sourcessealed_observed_packet_registered_native_safety_running",
     "protocol": "configs/readout_mixture_training_plan.json",
     "protocol_sha256": "ad9ee63e5e367e7e9ee4850585625102becc43cd624d03ad21950ca43b730f6e",
     "predecessor_sources_immutable": 289,
@@ -13697,7 +13697,7 @@
     ],
     "training_started": false,
     "confirmation_generated": false,
-    "next_action": "Continue the specific live pipeline41032;full380regression ->296source seal ->observed packet registration ->real27/29/30native safety ->independent smoke audit ->both432step regimes ->complete training audit. No retry orfuturecasegeneration. Run the extra independent literal/exposure checker when the sealed observed packet exists.",
+    "next_action": "Continue live pipeline41032 during actual native27/29/30safety. Wait for independent smoke audit before both432step scheduledregimes;finish independent literal/exposure input audit. No source edits orfuturecases.",
     "new_cpu_tests_passed": 8,
     "new_cpu_tests_seconds": 21.479,
     "new_cpu_tests_log": "/media/990Pro/Code/SAS/logs/memory_update/readout-mixture-new-tests-20261116-01.log",
@@ -13706,6 +13706,12 @@
     "pipeline_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-mixture-pipeline-20261116-01.json",
     "pipeline_source_sha256": "31943a4241aa64a5a69bc00758e6fef3fcf154151fd4577432af816ef5d81f06",
     "pending_independent_input_checker": "/tmp/check_readout_mixture_inputs.py",
-    "native_execution_started": false
+    "native_execution_started": true,
+    "full_cpu_tests_passed": 380,
+    "full_cpu_tests_seconds": 477.601,
+    "source_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-mixture-source-seal-20261116-01.json",
+    "source_seal_sha256": "35d7c41e2f122197137772e43b1fb8f0612e3c268ab555d5aacc3ca2955ec247",
+    "packet": "/media/990Pro/Code/SAS/datasets/memory_update/readout-mixture-fit-v1",
+    "packet_manifest_sha256": "b20075118a989dd80ce2056ba846b2f32d705d6fe5bafafdb37fea89b7dc5a0f"
   }
 }
