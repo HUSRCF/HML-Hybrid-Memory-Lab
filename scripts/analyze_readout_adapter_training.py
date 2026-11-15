@@ -78,7 +78,7 @@ def audit_run(path, allow_smoke=False):
     m = json.loads((path / 'manifest.json').read_text())
     seal = verify_seal(packet)
     if (m['status'] != 'completed' or m['smoke'] and not allow_smoke
-        or m['source_sha256'] != packet['source_sha256'] or len(m['source_sha256']) != 276
+        or m['source_sha256'] != packet['source_sha256'] or len(m['source_sha256']) != 277
         or m['registration_seal'] != seal or m['protocol_sha256'] != packet['protocol_sha256']
         or m['packet_manifest_sha256'] != streaming_hash(Path(p['registration_destination']) / 'manifest.json')
         or json.loads((path / 'plan.json').read_text()) != p or list(m['arms']) != list(ARMS)
@@ -180,7 +180,7 @@ def audit_run(path, allow_smoke=False):
             raise ValueError('Complete disabled-readout teacher baseline required')
     return {'status': 'audited_readout_adapter_smoke' if m['smoke'] else 'completed_and_audited_readout_adapter_training',
             'source_run': str(path), 'manifest_sha256': streaming_hash(path / 'manifest.json'),
-            'packet_manifest_sha256': m['packet_manifest_sha256'], 'source_files_verified': 276,
+            'packet_manifest_sha256': m['packet_manifest_sha256'], 'source_files_verified': 277,
             'optimizer_updates_audited': 3 if m['smoke'] else 1296, 'checkpoints_audited': 3 if m['smoke'] else 9,
             'arms': output, 'prior_failed_criteria_unchanged': p['prior_failed_criteria_unchanged'],
             'all_data_observed_fit_not_confirmation': True,

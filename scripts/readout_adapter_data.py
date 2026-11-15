@@ -13,10 +13,15 @@ from sas_memory.write_locality_data import streaming_hash
 PROTOCOL = ROOT / 'configs/readout_adapter_training_plan.json'
 PROTOCOL_SHA256 = 'd8c7564a1dcaf73629a9d4a36fbd8a36f1bf566d4144b8a0adc1cfa664ae049b'
 ARMS = ('query', 'gate', 'query_gate')
-NEW_SOURCES = {'configs/readout_adapter_training_plan.json', 'sas_memory/readout_adapters.py',
+ORIGINAL_NEW_SOURCES = {'configs/readout_adapter_training_plan.json', 'sas_memory/readout_adapters.py',
     'scripts/readout_adapter_data.py', 'scripts/readout_adapter_runtime.py',
     'scripts/prepare_readout_adapters.py', 'scripts/run_readout_adapter_training.py',
     'scripts/analyze_readout_adapter_training.py', 'tests/test_readout_adapters.py'}
+ADDENDUM = ROOT / 'configs/readout_adapter_source_inventory_addendum.json'
+ADDENDUM_SHA256 = '6bc94a32aceb7b9c4a293fc9be5e2a8a35805ec5048565bf0b85fd2b788d01c5'
+NEW_SOURCES = (ORIGINAL_NEW_SOURCES - {'sas_memory/readout_adapters.py'}) | {
+    'scripts/readout_adapter_modules.py', 'configs/readout_adapter_source_inventory_addendum.json'}
+TOTAL_SOURCES = 277
 
 
 def read_plan():
@@ -26,13 +31,28 @@ def read_plan():
     if (p['training']['optimizer_steps_per_arm'] != 432 or p['training']['examples'] != 1728
         or p['training']['gradient_accumulation'] != 4 or p['training']['order'] != list(ARMS)
         or p['attention_layer'] != 15 or p['planned_total_sources'] != 276
-        or set(p['new_sources']) != NEW_SOURCES
+        or set(p['new_sources']) != ORIGINAL_NEW_SOURCES
         or any(p['arms'][a]['new_trainable_parameters'] != 131072 for a in ARMS)
         or any(p['prior_failed_criteria_unchanged'].values())
         or any(p[k] for k in ('implementation_started', 'packet_generated', 'native_smoke_started',
             'optimizer_updates_started', 'new_backbone', 'new_environment', 'oracle_reading',
             'donor_forward', 'changes_fact_prefixes', 'can_change_prior_gates', 'architecture_effectiveness_claim'))):
         raise ValueError('Complete fixed learned-readout controls required')
+    if streaming_hash(ADDENDUM) != ADDENDUM_SHA256:
+        raise ValueError('Registered source-path correction changed')
+    amendment = json.loads(ADDENDUM.read_text())
+    if (amendment['original_protocol_sha256'] != PROTOCOL_SHA256
+        or amendment['effective_total_sources'] != TOTAL_SOURCES
+        or amendment['replace_source'] != {'from': 'sas_memory/readout_adapters.py', 'to': 'scripts/readout_adapter_modules.py'}
+        or any(amendment[k] for k in ('scientific_design_changed', 'training_examples_changed',
+            'parameter_counts_changed', 'optimizer_budget_changed', 'old_tests_or_auditors_changed',
+            'packet_generated', 'model_inference_started', 'optimizer_updates_started'))
+        or streaming_hash(Path(amendment['failed_full_tests_log'])) != amendment['failed_full_tests_log_sha256']):
+        raise ValueError('Path-only correction must preserve the complete experiment and old sources')
+    p.update(original_planned_total_sources=276, planned_total_sources=TOTAL_SOURCES,
+             new_sources=sorted(NEW_SOURCES), source_inventory_addendum={
+                 'path': str(ADDENDUM), 'sha256': ADDENDUM_SHA256,
+                 'registered_utc': amendment['registered_utc']})
     return p
 
 
@@ -120,7 +140,7 @@ def registered_inputs(path=None):
     if (m['status'] != 'registered_observed_fit_inputs_before_training'
         or m['protocol_sha256'] != PROTOCOL_SHA256 or m['source_manifest_sha256'] != p['source_manifest_sha256']
         or set(m['source_sha256']) != set(old['source_sha256']) | NEW_SOURCES
-        or len(m['source_sha256']) != 276 or m['examples'] != 1728
+        or len(m['source_sha256']) != TOTAL_SOURCES or m['examples'] != 1728
         or m['training'] or m['model_inference'] or m['new_confirmation_inputs_generated']
         or json.loads((path / 'plan.json').read_text()) != p
         or not datetime.fromisoformat(p['registered_utc']) < datetime.fromisoformat(m['created_utc'])):

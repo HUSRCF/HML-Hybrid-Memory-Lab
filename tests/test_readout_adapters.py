@@ -6,7 +6,7 @@ from unittest.mock import patch
 
 import torch
 from torch import nn
-from sas_memory.readout_adapters import (ReadoutAdapter, StableTrainableAffine,
+from scripts.readout_adapter_modules import (ReadoutAdapter, StableTrainableAffine,
                                          ConstantInputFrozenAffines, bits_equal)
 from sas_memory.runtime import cache_tensors
 from scripts.readout_adapter_runtime import regular_cache_clone
@@ -196,7 +196,7 @@ class ReadoutAdapterTests(unittest.TestCase):
               patch('torch.cuda._lazy_init', side_effect=AssertionError('No GPU initialization'))):
             p, m, cases, registry, queries, rows = load_sources()
             examples = build_examples(tokenizer_runtime(p['model_path']), cases, registry, queries)
-            self.assertEqual(len(sources()), 276)
+            self.assertEqual(len(sources()), 277)
         self.assertEqual([e['id'] for e in examples], list(queries))
         self.assertEqual(len(examples), 1728)
         self.assertEqual(sum(not r['greedy_exact'] for r in rows), 95)

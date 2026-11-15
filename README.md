@@ -5,6 +5,13 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
+**Current: preparing matched learned Query/output-gate controls on the frozen GDN baseline.**
+The [registered training diagnostic](materials/updates/readout-adapters-20261115/README.md)
+uses all 1,728 observed questions as fit data, three exactly matched 131,072-parameter arms,
+and question/answer-only activation in both training and deployment. Eight new CPU checks
+passed; complete regression is running after a separately registered source-path correction
+that preserves every historical source and test. No new native inference or training yet.
+
 **Latest completed: all 3,456 normal-history version-address readouts independently audited.**
 The [complete passive diagnostic](materials/updates/version-address-20261115/README.md)
 retains every old question and eight prospectively fixed new streams. The existing frozen

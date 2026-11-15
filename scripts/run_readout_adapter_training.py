@@ -11,7 +11,7 @@ import time
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 import torch
-from sas_memory.readout_adapters import ReadoutAdapter
+from scripts.readout_adapter_modules import ReadoutAdapter
 from sas_memory.calibration import save_checkpoint
 from sas_memory.write_locality_data import streaming_hash
 from sas_memory.training_data import data_fingerprint

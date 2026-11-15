@@ -19,8 +19,8 @@ def main():
         raise ValueError('Never overwrite fit registration')
     examples = build_examples(tokenizer_runtime(p['model_path']), cases, registry, queries)
     digests = {name: streaming_hash(ROOT / name) for name in sorted(sources())}
-    if len(digests) != 276:
-        raise ValueError('Complete276source closure required')
+    if len(digests) != 277:
+        raise ValueError('Complete277source closure required')
     newline = {e['answer_ids'][-1] for e in examples}
     if len(newline) != 1:
         raise ValueError('Canonical four-token answers required without filtering')
@@ -39,7 +39,7 @@ def main():
          'training': False, 'model_inference': False, 'all_observed_inputs_are_fit_data': True,
          'new_confirmation_inputs_generated': False}
     write_json(destination / 'manifest.json', m)
-    print(json.dumps({'status': m['status'], 'examples': len(examples), 'sources': 276,
+    print(json.dumps({'status': m['status'], 'examples': len(examples), 'sources': 277,
                       'packet_manifest_sha256': streaming_hash(destination / 'manifest.json')}), flush=True)
 
 

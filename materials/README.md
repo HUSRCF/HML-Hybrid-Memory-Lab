@@ -1,5 +1,9 @@
 # Research materials
 
+Current: [registered learned Query/output-gate controls](updates/readout-adapters-20261115/README.md).
+Exactly matched new parameter budgets on the fixed GDN baseline; all observed inputs are
+fit data. Complete regression and source sealing precede any native safety/training.
+
 Latest completed: [normal-history version-address observations](updates/version-address-20261115/README.md).
 All 3,456 normal readouts, 1,728 exact old replays, 41,472 observations and 576 complete FP32
 arrays independently audited. On eight fixed fresh streams, the existing GDN adapter scores

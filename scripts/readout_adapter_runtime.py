@@ -7,7 +7,7 @@ from torch.nn import functional as F
 from safetensors.torch import load_file
 
 from sas_memory.controllers import GroupController
-from sas_memory.readout_adapters import ConstantInputFrozenAffines
+from scripts.readout_adapter_modules import ConstantInputFrozenAffines
 from sas_memory.runtime import fork_cache, cache_tensors, assert_cache_equal
 from sas_memory.write_locality_data import streaming_hash
 from scripts import run_natural_load as base
