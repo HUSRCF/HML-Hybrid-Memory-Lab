@@ -12488,7 +12488,7 @@
     "primary_scientific_results_published": true
   },
   "post_encoding_updates": {
-    "status": "completed8160_primary_audited_all170cells_exported_pending_byte_verified_publication",
+    "status": "completed_audited_exported_and_published_roundtrip_byte_verified",
     "previous_goal_turn_classification": "progress: completed259tests, sealed206sources and fresh8streams, passed opposite510smokes, audited8160primary readouts and exported all170cells with280contrasts.",
     "protocol": "configs/post_encoding_update_plan.json",
     "protocol_sha256": "ccd180ff352e56064f1eb9bbd017e41c285f49cdf16ce39764992467d9a8bfd8",
@@ -12518,8 +12518,8 @@
     "new_environment": false,
     "new_models": false,
     "new_model_inference_started": true,
-    "last_updated_utc": "2026-11-15T05:11:33.429214+00:00",
-    "next_action": "Package all source/input/raw-readout/control/provenance materials; byte-verify and publish incremental GitHub Release. Then separate post-tail recurrent state from tail-KV encoding before new training.",
+    "last_updated_utc": "2026-11-15T05:21:50.256095+00:00",
+    "next_action": "Register a reused-cohort frozen-model post-tail recurrent/convolution/KV crossover for native and the strong existing GDN adapter; preserve all206measurement sources and compare all fixed conditions before new training.",
     "implemented_sources": 206,
     "completed_full_suite": {
       "tests": 259,
@@ -12572,6 +12572,41 @@
     "gdnscope_normal_unrelated8_and64_each": "48/48",
     "delta_and_both_new_value_correct": "0/640 repeated diagnostic readouts",
     "prior_scientific_failed_gates_unchanged": true,
-    "new_architecture_effectiveness_claim": false
+    "new_architecture_effectiveness_claim": false,
+    "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/post-encoding-updates-2026-11-15",
+    "release_id": 445828354,
+    "release_target_commit": "8d68aab10de090aa724d79189352876ad39535ed",
+    "publication_receipt": "materials/updates/post-encoding-20261115/post-encoding-publication-20261115-01.json",
+    "archive": {
+      "status": "all_archive_members_byte_verified",
+      "files_verified": 1173,
+      "archive_entries": 1174,
+      "archive": "post-encoding-20261115.tar.gz",
+      "bytes": 13569024,
+      "sha256": "4df3035f06caec917994de6a2e6a27afb71af2cda79752d83abbd35bf29ccdb6"
+    },
+    "committed_snapshot_files_byte_verified": 269,
+    "remote_asset_count": 3,
+    "remote_download_bytes_verified": 13839371
+  },
+  "post_tail_path_crossover": {
+    "status": "protocol_registered_before_new_crossover_implementation_or_inference",
+    "protocol": "configs/post_tail_path_crossover_plan.json",
+    "protocol_sha256": "ef761441d8bef022d1096d7bc851022c6199d219d544315f4c6793e72ad2a305",
+    "previous_phase": "post_encoding_updates",
+    "prior_measurement_sources_immutable": 206,
+    "source_files_planned": 214,
+    "new_primary_readouts_planned": 4608,
+    "archived_endpoint_references": 1536,
+    "cohort": "all8reused streams; not fresh confirmation",
+    "model_order": [
+      "native",
+      "gdn_all_tokens"
+    ],
+    "new_training": false,
+    "new_environment": false,
+    "new_counterfactual_inference_started": false,
+    "last_updated_utc": "2026-11-15T05:23:51.370918+00:00",
+    "next_action": "Implement model-independent cache composition and causal-source audits, test tensor/metadata/storage/reader failures, then seal the214source packet before any new crossover inference."
   }
 }

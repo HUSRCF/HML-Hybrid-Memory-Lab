@@ -65,6 +65,7 @@ localize GDN damage or establish a new architecture. All earlier failed
 scientific criteria remain failed. GDN-only means adapter scope; Attention stays.
 
 - [All 170 normally encoded-prefix conditions and complete audit](materials/updates/post-encoding-20261115/README.md)
+- [Byte-verified normally encoded-prefix snapshot](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/post-encoding-updates-2026-11-15)
 - [All sixty budget-control cells and encoding-confound analysis](materials/updates/update-budget-20261115/README.md)
 - [Byte-verified budget-control snapshot](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/update-budget-controls-2026-11-15)
 - [All forty gate-component cells, explicit origins, controls and limitations](materials/updates/gate-components-20261115/README.md)

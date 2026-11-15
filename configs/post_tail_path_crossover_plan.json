@@ -1,0 +1,185 @@
+{
+  "profile": "post_tail_recurrent_convolution_kv_crossover",
+  "status": "registered_before_new_crossover_code_packet_and_inference",
+  "registered_utc": "2026-11-15T05:23:51.284586+00:00",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/post-encoding-updates-20261115-01",
+  "source_manifest_sha256": "3bdd8f7e7ee657d270911d77ab15bf8b6b292aaca11fcf68b5afdc6714829b8a",
+  "source_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/post-encoding-primary-audit-20261115-01.json",
+  "source_audit_sha256": "a1e86be89ca3ba4d3296f26659d8158c3c25727708df14b2428b7d9182260265",
+  "source_publication": "/media/990Pro/Code/SAS/artifacts/memory_update/post-encoding-publication-20261115-01.json",
+  "source_publication_sha256": "c737e5c6c49a327172fffc999096c553bade16011f761ab08ebeed4851990c2f",
+  "source_release": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/post-encoding-updates-2026-11-15",
+  "source_release_target": "8d68aab10de090aa724d79189352876ad39535ed",
+  "source_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/post-encoding-updates-v1",
+  "source_dataset_manifest_sha256": "d3e65bc72abd1a901c26c4c69f768bb83d9095c6bb2d9e0987ffa2a8545a0051",
+  "registration_destination": "/media/990Pro/Code/SAS/datasets/memory_update/post-tail-path-crossover-v1",
+  "cohort_scope": "Reuse all8previously measured streams74000..74007 and all32after-tail contexts. No case, role, style, answer or baseline-correctness filtering. Exploratory mechanism diagnostic, not fresh confirmation.",
+  "independent_streams": 8,
+  "seeds": [
+    74000,
+    74001,
+    74002,
+    74003,
+    74004,
+    74005,
+    74006,
+    74007
+  ],
+  "model_order": [
+    "native",
+    "gdn_all_tokens"
+  ],
+  "models": {
+    "native": null,
+    "gdn_all_tokens": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01",
+      "training_arm": "gdn_only",
+      "audit": "/media/990Pro/Code/SAS/artifacts/memory_update/semantic-single-path-20261114.json",
+      "audit_sha256": "f917da08160c9d6d2b953e070866b1e67dcbdabb565295664b9795754854d72a",
+      "manifest_sha256": "775db268e4085c57bc9471577395b9f985de4294a02cd4085a4fab418c057597",
+      "training_plan_sha256": "fd6c79dd77fb507aa4093f0af5ae31e836a37df7721891a71144f4fd667893e9",
+      "checkpoint": "/media/990Pro/Code/SAS/runs/memory_update/semantic-single-path-20261114-01/gdn_only/step-000432/controller.safetensors",
+      "checkpoint_sha256": "ed00c8108e5a9def80540e40fb6fd73b29f247dbb27e186d2971d89366047dbb",
+      "checkpoint_metadata_sha256": "20998c0bb4a029d1639a79b4a39f86e5d3b0c70cdcab407aaaacaa62259023a5",
+      "final_step": 432,
+      "token_policy": "all",
+      "mode": "gdn_only",
+      "rank": 84,
+      "group_index": 3,
+      "adapt_gdn_keys": true,
+      "parameters": 696192,
+      "initial_state_sha256": "270749bd7dbd53ff88be419f8e0b77fbc032c2ac4931d5098c8a4aaa20b23295",
+      "teacher_train_fit": {
+        "examples": 864,
+        "teacher_loss_including_newline": 0.006321374711538502,
+        "teacher_numeric_tokens_correct": 2584,
+        "teacher_numeric_tokens": 2592,
+        "teacher_newline_correct": 864
+      }
+    }
+  },
+  "model_path": "/media/990Pro/Code/SAS/models/Qwen3.5-2",
+  "packages": {
+    "torch": "2.9.1+rocm7.2.0.lw.git7e1940d4",
+    "transformers": "5.14.1",
+    "fla-core": "0.6.0"
+  },
+  "native_loaded_weights_sha256": "2fcdfb2c15878ad12794dcff913b5d43fe0787850a4b4d86185087bc9dcd6158",
+  "precision_addendum": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_precision_addendum.json",
+  "arithmetic_profile": "frozen_adapter_affine_fp64_accumulate_round_fp32_v1",
+  "generation": {
+    "max_tokens": 12,
+    "prefill": "cached",
+    "score_batch": false,
+    "candidates": "gold-only serial NLL; unconstrained greedy"
+  },
+  "source_origins": {
+    "N": "Normally encoded prefix, then normal complete tail using ComponentHold(none).",
+    "H": "The same normally encoded prefix, then both gates held only during the complete tail. All18recurrent matrices equal the normal prefix; convolution and KV still advance."
+  },
+  "component_order": [
+    "recurrent_matrices_all18",
+    "convolution_states_all18",
+    "attention_KV_all6layers"
+  ],
+  "conditions": [
+    "NNN",
+    "NNH",
+    "NHN",
+    "NHH",
+    "HNN",
+    "HNH",
+    "HHN",
+    "HHH"
+  ],
+  "archived_endpoint_conditions": {
+    "NNN": "none",
+    "HHH": "both"
+  },
+  "new_primary_conditions": [
+    "NNH",
+    "NHN",
+    "NHH",
+    "HNN",
+    "HNH",
+    "HHN"
+  ],
+  "construction": "After both tails finish, compose all8memory conditions before any question. Copy selected recurrent/conv fields and KV from independent N/H forks at the same natural positions. All12prefix KV slices must be equal, so N/H KV differences concern only the tail. Preserve complete native bookkeeping; require N/H bookkeeping equal. No tail or question recomputation after composition.",
+  "state_scope": "Only cached tensors are intervened on. Every question suffix is processed normally from the fixed composed cache. This changes subsequent Query computation; it is not a direct semantic-fact readout or a proof of natural representational equivalence.",
+  "hybrid_logits": "A composed cache has no claim to a corresponding last-token hidden/logit vector. Do not attach either source logits as a hybrid measurement. Cached suffix forwarding computes actual question logits anew.",
+  "question_independence": "Composition accepts caches and the origin label only, never a question, role, support or answer. Each cache serves all6role/style questions under both readers.",
+  "reader_modes": [
+    "full",
+    "oracle"
+  ],
+  "roles": [
+    "target_current",
+    "target_initial",
+    "protected_current"
+  ],
+  "question_styles": [
+    "original",
+    "entity_first"
+  ],
+  "source_control": "Reconstruct every N/H complete cache and normal prefix, require exact content fingerprints/complete bookkeeping and genuine source logits against the published original run. Compare all1536old endpoint five-field readouts exactly; these replays are operational controls excluded from new-primary counts.",
+  "cache_control": "Complete actual tensor inventory, all attributes, source contents/layouts/logits and storage isolation after every composition/readout. Report component equality and difference per layer; retain equivalent combinations without resampling and require identical composed caches to replay the same five readout fields.",
+  "attention_control": "Observe all6actual eager Attention layers for every new cached readout and endpoint replay; zero prefill calls, positive retained-record mass, oracle suppressed probability/mass exactly0.",
+  "counts": {
+    "normal_prefix_caches": 16,
+    "source_N_H_pairs": 64,
+    "source_N_H_caches": 128,
+    "new_composed_caches": 384,
+    "all_factorial_memory_conditions": 512,
+    "after_tail_contexts": 32,
+    "unique_after_tail_questions": 192,
+    "new_primary_readouts": 4608,
+    "archived_endpoint_references": 1536,
+    "unified_factorial_readouts": 6144,
+    "new_endpoint_operational_replays": 1536,
+    "legacy_operational_readouts_per_run": 96,
+    "archived_before_rows_in_primary": 0
+  },
+  "smoke": {
+    "seed": 74000,
+    "styles": [
+      "original"
+    ],
+    "model_order_reversed": true,
+    "new_primary_readouts_each": 288,
+    "endpoint_operational_readouts_each": 96,
+    "legacy_operational_readouts_each": 96,
+    "accuracy_gate": false,
+    "exact_raw_cache_component_source_and_restore_equivalence": true
+  },
+  "operational_controls": {
+    "prior_measurement_sources_immutable": 206,
+    "source_files_planned": 214,
+    "new_sources": [
+      "configs/post_tail_path_crossover_plan.json",
+      "scripts/post_tail_path_data.py",
+      "scripts/prepare_post_tail_path.py",
+      "scripts/post_tail_path_runtime.py",
+      "scripts/run_post_tail_path.py",
+      "scripts/post_tail_path_metrics.py",
+      "scripts/analyze_post_tail_path.py",
+      "tests/test_post_tail_path.py"
+    ],
+    "native_kernel_checks": "Reuse all10native-precision checks with the immutable addendum; preserve original ideal-FP32 failure.",
+    "legacy_ids": "The same12fixed legacy full-prefill anchors; initial12,preattach24,attached-none12,model-endpoint24,restore24.",
+    "frozen_weights_and_hooks": "Verify all native weights before/after, all fixed adapter bytes/freeze and removal of every installed hook/kernel wrapper."
+  },
+  "analysis": {
+    "all_cells": "Report all16condition×reader cells per model (32overall), both lengths, related/unrelated tails, all roles/styles and every stream. Joint3and6, full paired gains/losses and gold NLL; keep baseline failures.",
+    "contrasts": "At each fixed context compare single component changes with NNN and single component repairs with HHH, every factorial two/three-way NLL interaction, oracle/full and matched related/unrelated contexts. Related-current answers change; report those as new-value controls, separately from fixed-prefix evidence.",
+    "origins": "Clearly label4608new readouts versus1536archived endpoint references and1536new endpoint operational replays. Reused-cohort causal sensitivity, not independent confirmation.",
+    "limits": "Crossed states can be off distribution. State changes necessarily affect future Query/answer computation. Functional rescue does not prove a fact was stored or erased, a learned semantic update rule, or a new architecture advantage."
+  },
+  "training": false,
+  "new_adapters": false,
+  "new_models": false,
+  "new_environment": false,
+  "local_files_only": true,
+  "can_change_prior_gates": false,
+  "architecture_effectiveness_claim": false,
+  "significance_claim": false
+}

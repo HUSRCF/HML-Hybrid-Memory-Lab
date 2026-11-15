@@ -15,6 +15,8 @@
 更新会使新值读取全部失败。已有GDN适配器正常更新时，两档无关尾部都48/48。
 当前不能据此主张联合架构必要；下一步隔离尾部KV编码与递归状态对Query的影响。未新增训练、模型或环境；旧失败门槛不变。
 
+全部原始运行与登记材料已发布到[逐字节核验的增量Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/post-encoding-updates-2026-11-15)，三个附件均经实际下载核验。
+
 ## Complete whole-record budget controls
 
 [完整记录预算对照](updates/update-budget-20261115/README.md)已完成13440次新读出及独立审计，

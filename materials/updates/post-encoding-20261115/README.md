@@ -1,6 +1,8 @@
 # 正常编码后再更新：完整诊断
 
-8160项正式读出、两轮各510项相反顺序smoke、259项测试及独立审计全部完成。680份源缓存、640种尾部条件、320项额外no-op读出和206份源码均核对通过。没有新增训练、环境或模型。完整原始运行将随本轮增量Release保存；缓存保留逐张量指纹和检查回执，不保存680份完整缓存张量。
+8160项正式读出、两轮各510项相反顺序smoke、259项测试及独立审计全部完成。680份源缓存、640种尾部条件、320项额外no-op读出和206份源码均核对通过。没有新增训练、环境或模型。完整原始运行已在[本轮增量Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/post-encoding-updates-2026-11-15)归档；缓存保留逐张量指纹和检查回执，不保存680份完整缓存张量。
+
+归档含1173个文件、1174个tar成员，共13,569,024字节，SHA256为`4df3035f06caec917994de6a2e6a27afb71af2cda79752d83abbd35bf29ccdb6`。三个远端附件均下载回核验通过，269份代码/材料与Release目标提交`8d68aab10de090aa724d79189352876ad39535ed`逐字节一致。详见[发布回执](post-encoding-publication-20261115-01.json)；后续main更新不会改写该快照。恢复依赖前轮Release链和已有适配器检查点，权重及Conda环境不重复打包。
 
 [全部170条件与限制](exports/report.md)、[8160项逐问题读出](exports/readouts.csv)、[保持与退化](exports/before-after.csv)、[280项对比](exports/contrasts.csv)、[角色/文体/逐流分层](exports/strata.csv)、[独立审计](post-encoding-primary-audit-20261115-01.json)、[描述性提取及完整数值](post-encoding-observations-20261115-01.json)。[全部条件图](exports/all170cells.png)已人工检查170个标签与页脚，另有SVG。
 
