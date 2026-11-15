@@ -11438,7 +11438,7 @@
     "publication_fix_scope": "Release draft lookup and asset downloads by ID only; outside all180sealed measurement sources."
   },
   "gate_component_factorial": {
-    "status": "completed_audited_exported_ready_for_incremental_backup",
+    "status": "published_remote_assets_roundtrip_byte_verified",
     "registered_protocol": "configs/gate_component_factorial_plan.json",
     "protocol_sha256": "25971ba4eb6a75e929ba83cf06c01fba3cb26ee475e49b477ba13db0fc670b68",
     "preserved_prior_measurement_sources": 180,
@@ -11451,8 +11451,8 @@
     "targeted_tests_passed": 5,
     "auxiliary_prefix_utility": "scripts/verify_gate_component_prefix.py",
     "auxiliary_prefix_source_outside_measurement_closure": true,
-    "last_updated_utc": "2026-11-15T01:45:18.325775+00:00",
-    "next_action": "Repackage the clarified report with unchanged188measurement sources and6720raw outcomes, publish only byte-verified final02snapshot, then preregister budget-matched relevance controls.",
+    "last_updated_utc": "2026-11-15T01:50:39.761578+00:00",
+    "next_action": "Preregister update-budget-matched random/position controls, distinguishing per-question Oracle upper bounds from one reusable query-independent memory state. Retain all5configs and previous failed scientific gates; no training or scaleup yet.",
     "dataset_manifest_sha256": "45aaa5b75182c7e30083c0101a27cfaf2b61cfa8f51f7ee1a4a3428000e69f15",
     "full_tests_passed": 234,
     "full_tests_seconds": 158.182,
@@ -12204,6 +12204,24 @@
       "archive": "gate-components-20261115.tar.gz",
       "bytes": 55125588,
       "sha256": "ef1370fd84b967324477f78a230c793f4a12bf608fba509a4f077c8525626e7b"
-    }
+    },
+    "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/gate-components-factorial-2026-11-15",
+    "release_target_commit": "1ab9fd2c92d3c5f1c64d420f2460909ee224298a",
+    "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/gate-components-publication-20261115-01.json",
+    "final_backup_directory": "/media/990Pro/Code/SAS/backups/gate-components-factorial-20261115-02",
+    "backup": {
+      "status": "all_archive_members_byte_verified",
+      "files_verified": 1706,
+      "archive_entries": 1707,
+      "archive": "gate-components-20261115.tar.gz",
+      "bytes": 55217834,
+      "sha256": "5334309942230fc7e76ed9c638181c9e73088e2ddeaf63eaf2cbe893938e7b21"
+    },
+    "remote_assets_verified": 3,
+    "remote_assets_actual_download_bytes": 55624753,
+    "committed_snapshot_files_byte_verified": 248,
+    "source_files_unchanged_after_publication": 188,
+    "all_phase_jobs_terminal": true,
+    "primary_scientific_results_published": true
   }
 }

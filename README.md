@@ -42,6 +42,7 @@ localize GDN damage or establish a new architecture. All earlier failed
 scientific criteria remain failed. GDN-only means adapter scope; Attention stays.
 
 - [All forty gate-component cells, explicit origins, controls and limitations](materials/updates/gate-components-20261115/README.md)
+- [Byte-verified gate-component snapshot](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/gate-components-factorial-2026-11-15)
 - [All twenty fixed-input recurrent-hold cells, controls and limitations](materials/updates/oracle-write-hold-20261115/README.md)
 - [All twenty previous text-control cells, limitations and audit](materials/updates/text-competence-factorial-20261115/README.md)
 - [Previous frozen-prefix evidence-access diagnostic](materials/updates/trained-timing-evidence-access-20261115/README.md)
