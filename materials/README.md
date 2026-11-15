@@ -2,8 +2,10 @@
 
 Current: [passive version-address observation](updates/version-address-20261115/README.md).
 All 352 CPU tests passed; 268 sources and complete old/fresh inputs are sealed before
-native inference. Old/new864questions each; eight fixed new streams; no changed model
-updates,restricted reading or training.
+native inference. Opposite-model-order checks each completed 216 readouts with identical
+answers and all 36 raw FP32 files; the 3,456-readout primary pipeline is running. Old and
+fresh cohorts remain separate; eight fixed new streams, normal updates, unrestricted
+reading, no new training. Pooled attention is descriptive rather than causal.
 
 Latest completed: [complete question-only local GDN controls](updates/question-state-freeze-20261115/README.md).
 All 6,912 readouts, 864 exact normal replays and all local controls independently audited;

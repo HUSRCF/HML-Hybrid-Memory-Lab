@@ -98,8 +98,9 @@ def package(audit, output):
     for name in ('README.md', 'materials/README.md', '.gitattributes', 'requirements.txt',
                  'configs/experiment_progress.json', 'scripts/run_version_address_pipeline.sh',
                  'scripts/export_version_address.py', 'scripts/version_address_observations.py',
+                 'scripts/run_version_address_postprocess.sh',
                  'scripts/package_version_address.py',
-                 'scripts/publish_version_address.py'):
+                 'scripts/publish_version_address.py', 'scripts/check_version_address_publication_scope.py'):
         add(ROOT / name, ROOT, 'code')
     for name in ('native', 'gdn_all_tokens'):
         state = manifest['models'][name]
