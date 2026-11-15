@@ -1,0 +1,31 @@
+{
+  "status": "sealed_cpu_only_terminal_validation_recovery",
+  "created_utc": "2026-11-15T11:10:34.736617+00:00",
+  "descriptor": {
+    "profile": "version_query_terminal_json_replay_validation_recovery_v1",
+    "protocol_sha256": "992dd5a17738a40df80485df70e649ece733385bcfb21569f8fdedf7d22f2ad1",
+    "parent_run": "/media/990Pro/Code/SAS/runs/memory_update/version-query-primary-corrected-20261115-01",
+    "parent_manifest_sha256": "fd8b68046f33246a77510cd3aa49e283c9dd6a8a1625a9288191663a92e70318",
+    "original_native_execution_status": "failed_at_terminal_replay_after_all1728_readouts",
+    "original_error": "ValueError: Shared smoke/primary source bytes or guard bookkeeping differ",
+    "new_native_inference": false,
+    "base_sources_unchanged": 250,
+    "source_sha256": {
+      "configs/version_query_terminal_validation_recovery.json": "992dd5a17738a40df80485df70e649ece733385bcfb21569f8fdedf7d22f2ad1",
+      "scripts/finalize_version_query.py": "e689d5242d4b5d01b894e53a81d6461e929f4426b001785d525456c30bd1a5de",
+      "scripts/analyze_version_query_finalized.py": "209f15c983ea21b251a6e93cd665f5d882209e7039e02692a3974c5bfa94a2c7",
+      "tests/test_version_query_terminal_recovery.py": "6d9a560f357aebf2044ed0e5625718228fd99fdbe38eb230b561d268d0c4a5df"
+    }
+  },
+  "full_tests_passed": 331,
+  "full_tests_seconds": 296.542,
+  "full_tests_log": "/media/990Pro/Code/SAS/logs/memory_update/version-query-terminal-validation-full-tests-20261115-01.log",
+  "full_tests_log_sha256": "460bda2dc30a6ed70ebec568054dfea8baff2e8f5b3be621d838b29c92c6c214",
+  "new_tests_passed": 6,
+  "base250_sources_unchanged": true,
+  "additional_sources": 4,
+  "total_verified_sources": 254,
+  "new_native_inference": false,
+  "scientific_outcomes_inspected_for_correction": false,
+  "formal_CPU_recovery_not_started": true
+}

@@ -18,7 +18,12 @@ patterns, not proof of a recurrent-state mechanism or a new architecture's benef
 Maximum history is 7,519 tokens; no new training, model download or environment. All prior
 failed criteria remain false. The complete backup is published. Matched one-token version-question controls are
 registered before new code, data or inference. Their [implementation and input seal](materials/updates/version-query-20261115/README.md)
-passed all 319 tests; their first native check stopped after54readouts on an integer/string JSON layer-key comparison. All serialized cache values match. The246original sources and failed run are preserved; a separately registered four-source serialization correction is under CPU regression before fresh operational checks.
+passed all 319 tests. Both corrected opposite-order checks match exactly, and all 1,728
+new task readouts have now executed. Terminal smoke/primary replay validation stopped on
+a second integer/string JSON layer-key comparison. The failed complete run, earlier partial
+failure and original 250 sources are preserved. A separately registered four-source CPU-only
+validation recovery is under regression; it repeats no model inference. Scientific results
+will be reported after complete independent validation.
 
 **Previous diagnostic: all 4,608 single-layer question-Query readouts independently audited.**
 The [complete layer diagnostic](materials/updates/query-layer-20261115/README.md) retains all 24 new

@@ -1,0 +1,11 @@
+test_all250_sources_preserved_and_four_source_import_closure (tests.test_version_query_terminal_recovery.TerminalRecoveryTests.test_all250_sources_preserved_and_four_source_import_closure) ... ok
+test_existing_output_cannot_be_overwritten (tests.test_version_query_terminal_recovery.TerminalRecoveryTests.test_existing_output_cannot_be_overwritten) ... ok
+test_full_independent_auditor_is_delegated_without_alteration (tests.test_version_query_terminal_recovery.TerminalRecoveryTests.test_full_independent_auditor_is_delegated_without_alteration) ... ok
+test_missing_recovery_annotation_rejected (tests.test_version_query_terminal_recovery.TerminalRecoveryTests.test_missing_recovery_annotation_rejected) ... ok
+test_raw_mutation_and_unregistered_manifest_change_are_rejected (tests.test_version_query_terminal_recovery.TerminalRecoveryTests.test_raw_mutation_and_unregistered_manifest_change_are_rejected) ... ok
+test_real_complete_failed_run_materializes_without_native_runtime (tests.test_version_query_terminal_recovery.TerminalRecoveryTests.test_real_complete_failed_run_materializes_without_native_runtime) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 16.338s
+
+OK

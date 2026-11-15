@@ -49,7 +49,7 @@ def publish(args):
     verification=json.loads((args.backup/'local_verification.json').read_text())
     archive=args.backup/verification['archive']
     if (audit['status']!='completed_and_audited_version_query' or audit['primary_readouts_audited']!=1728 or audit['archived_full_references_audited']!=1728 or
-        audit['after_caches_audited']!=256 or audit['prefix_caches_audited']!=32 or audit['source_files_verified']!=246 or audit['total_source_files_verified']!=250 or
+        audit['after_caches_audited']!=256 or audit['prefix_caches_audited']!=32 or audit['source_files_verified']!=246 or audit['total_source_files_verified']!=254 or
         len(audit['metrics']['cells'])!=72 or inventory['primary_audit_sha256']!=sha(args.audit) or
         inventory['manifest_sha256']!=audit['manifest_sha256'] or inventory['release_tag']!=TAG or
         verification['status']!='all_archive_members_byte_verified' or verification['sha256']!=sha(archive) or
