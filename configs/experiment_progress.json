@@ -6012,7 +6012,7 @@
     "branch_decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
   },
   "last_completed_phase": "question_state_freeze_all6912audited_negative_outcome",
-  "next_research_step": "Execute registered real one-update safety for all three arms,independently audit zero/nonzero forward equivalence and frozen histories,then run exactly432steps per arm and all1728fit readouts. No confirmation generated.",
+  "next_research_step": "Monitor existing pipeline41240: complete three432step arms and all1728fit readouts per arm; independent full audit precedes any generation of SET88000/COPY89000confirmation. Current results establish training-path validity only.",
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
     "plan": "configs/copy_dependency_transfer_plan.json",
@@ -13264,7 +13264,7 @@
     "broader_research_goal_active": true
   },
   "learned_readout_controls": {
-    "status": "corrected282sources_sealed_all364tests_passed_before_second_native_smoke",
+    "status": "all_three_real_scratch_updates_and_independent282source_safety_passed_scheduled_training_process_running",
     "protocol": "configs/readout_adapter_training_plan.json",
     "protocol_sha256": "d8c7564a1dcaf73629a9d4a36fbd8a36f1bf566d4144b8a0adc1cfa664ae049b",
     "predecessor_sources_immutable": 268,
@@ -13277,7 +13277,7 @@
       "query_gate"
     ],
     "new_parameters_each": 131072,
-    "next_action": "Execute registered real one-update safety for all three arms,independently audit zero/nonzero forward equivalence and frozen histories,then run exactly432steps per arm and all1728fit readouts. No confirmation generated.",
+    "next_action": "Monitor existing pipeline41240: complete three432step arms and all1728fit readouts per arm; independent full audit precedes any generation of SET88000/COPY89000confirmation. Current results establish training-path validity only.",
     "implementation_started": true,
     "new_cpu_tests_passed": 8,
     "new_cpu_tests_seconds": 20.908,
@@ -13287,7 +13287,7 @@
     "full_regression_log": "/media/990Pro/Code/SAS/logs/memory_update/readout-adapter-full-tests-20261115-02.log",
     "packet_generated": true,
     "native_smoke_started": true,
-    "optimizer_updates_started": false,
+    "optimizer_updates_started": true,
     "preserved_full_regression_failure": "/media/990Pro/Code/SAS/logs/memory_update/readout-adapter-full-tests-20261115-01.log",
     "source_inventory_addendum": "configs/readout_adapter_source_inventory_addendum.json",
     "effective_planned_sources": 277,
@@ -13309,6 +13309,20 @@
     "cache_commit_full_tests_passed": 364,
     "cache_commit_full_tests_seconds": 427.136,
     "cache_commit_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-cache-seal-20261115-01.json",
-    "cache_commit_seal_sha256": "1a56ed6109ca2424d732987426b17dd540dfa9b7cd45b12d5022ccd44ffa75b8"
+    "cache_commit_seal_sha256": "1a56ed6109ca2424d732987426b17dd540dfa9b7cd45b12d5022ccd44ffa75b8",
+    "corrected_pipeline_session": 41240,
+    "corrected_pipeline_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-cache-pipeline-20261115-01.json",
+    "corrected_native_smoke": "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-smoke-20261115-02",
+    "corrected_smoke_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-smoke-audit-20261115-02.json",
+    "training_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01",
+    "training_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-training-audit-20261115-01.json",
+    "native_safety_audited": true,
+    "scheduled_training_started": false,
+    "confirmation_generated": false,
+    "corrected_smoke_audit_sha256": "61d5ea47ce30e51e355afbed2d68dbf167ede0990c36f273ac3fbc240ae27a25",
+    "corrected_smoke_correction_audit_sha256": "20b4f06ec7785c1eda9cde6b9136590f3896f3b9338817cf8d4163adfd91f3d4",
+    "native_scratch_optimizer_updates": 3,
+    "scheduled_training_process_started": true,
+    "native_forward_equivalence_each_arm_before_and_after_update": true
   }
 }

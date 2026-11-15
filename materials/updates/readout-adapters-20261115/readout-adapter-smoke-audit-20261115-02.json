@@ -1,0 +1,52 @@
+{
+  "status": "audited_readout_adapter_smoke",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-smoke-20261115-02",
+  "manifest_sha256": "9ca349d23a8ff982ea66bf4fbf6f41220cb025ada82e7cdf57e899dee8a1d70c",
+  "packet_manifest_sha256": "3f1e2eeff44559530ee43a033917034da4dfffb8a403c1db190b56a2e192a9cf",
+  "source_files_verified": 277,
+  "optimizer_updates_audited": 3,
+  "checkpoints_audited": 3,
+  "arms": {
+    "query": {
+      "initial_state_sha256": "9d84a8a04a0f8958b1eca604819fc109d3d0a2a42298c24509d8be96065d54bb",
+      "checkpoint": {
+        "step": 1,
+        "controller_sha256": "1f436583084d32d3d832f530a9fb8bcceeb3d52f67c30b874aa67fed845e4cbb",
+        "optimizer_sha256": "c859b20f380b045dbaf0463a656bd3773d102d49e4f51ecd6afbdba608e4d4dc",
+        "state_sha256": "557ed0a2556c1087c8c92af0b1ce9059eda3f6a0243f580d981e0a79fb95bf5e"
+      },
+      "new_parameters": 131072,
+      "native_prefix_identity": true
+    },
+    "gate": {
+      "initial_state_sha256": "794adcc220d640b5317a3c41447497481d4ef425505b5a5e14250672085e9a1e",
+      "checkpoint": {
+        "step": 1,
+        "controller_sha256": "b7f34231c771044762c138e578ff623a61194b7c8759074b6bf22c91e9977a4e",
+        "optimizer_sha256": "755377db880669729643aba2f4b412d753f90669b29f13fb69993fcf4eaedb06",
+        "state_sha256": "a4a16e928237a34c94bc18aedce550074bd7a0b8509664d324bc574fa753c71c"
+      },
+      "new_parameters": 131072,
+      "native_prefix_identity": true
+    },
+    "query_gate": {
+      "initial_state_sha256": "53541e82a528393ebba9ad64417fcf0c73841dd996c9241507483928f08d0253",
+      "checkpoint": {
+        "step": 1,
+        "controller_sha256": "d269fc7d399fb3289b317a24677b2f7620d4bbd851fd90428577c52b19eec297",
+        "optimizer_sha256": "e02f9d0caf4c981e486ec3e4a5a63f0a5a875180f8ab178e5d626f61a3d95f69",
+        "state_sha256": "47d9015df50e243165be59dcf1bae9a5ea7c124e6aef0e99ce932fbdf4eaff1b"
+      },
+      "new_parameters": 131072,
+      "native_prefix_identity": true
+    }
+  },
+  "prior_failed_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "all_data_observed_fit_not_confirmation": true,
+  "analysis_source_sha256": "9b9a4260ad6b908a3a22fe772e39fa9db6de812fe732a8c1ce4b26fadc7c57ea",
+  "completed_utc": "2026-11-15T15:45:53.134235+00:00"
+}

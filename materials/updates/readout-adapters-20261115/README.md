@@ -1,5 +1,7 @@
 # Frozen-GDN learned readout controls
 
+Current checkpoint: corrected real2B one-update safety and independent282source audit passed for all three arms. Native logits/loss/all48final tensors match bit-for-bit before and after scratch updates; original fact prefixes and frozen weights remain exact. The scheduled three-arm training process is running. No completed fit or future confirmation result is claimed.
+
 Protocol registered before implementation, packet construction and training: `configs/readout_adapter_training_plan.json`. Three matched131072parameter controls change only Query, only pre-sigmoid output gate,or both at layer15. Existing GDN weights and all normal fact-prefix caches remain fixed.
 
 All1728previously observed version-address questions are explicitly adaptation/fit data for these new models. Future fixed88000SET and89000COPY confirmation inputs are not generated until all final checkpoints and independent training audit complete. No new architecture claim, Oracle, donor, environment or backbone. All old failed criteria remain false.
