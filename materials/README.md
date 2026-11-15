@@ -7,6 +7,8 @@ from 2/32 to 32/32 in an old-state recipient; the reverse swap yields 3/32.
 A fixed-prefix answer regresses, and normal Full already scores 191/192.
 This is a fresh eight-stream mechanism diagnostic; no new architecture claim or training.
 
+[Complete byte-verified fresh-query backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/fresh-question-query-2026-11-15).
+
 [Previous byte-verified crossover backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/post-tail-path-crossover-2026-11-15).
 
 本目录记录 2026-11-15 暂停备份时点的材料。完整上传与校验完成后，用户已要求

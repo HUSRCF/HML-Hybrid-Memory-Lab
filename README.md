@@ -14,8 +14,12 @@ GDN adapter's new-value Full accuracy from 32/32 to 2/32. Replacing only questio
 Attention Queries restores 32/32; the reverse Query swap yields 3/32. The repair also loses
 one fixed-prefix answer. Normal Full already reaches 191/192: this is mechanism evidence,
 not a new shared-architecture success. Earlier failed criteria remain unchanged.
-No new training, environment or model download. Next register single-layer Query repair
-and reverse-damage controls across all six Attention layers before any further inference.
+No new training, environment or model download. The [single-layer follow-up](materials/updates/query-layer-20261115/README.md) is prospectively
+registered across all six Attention layers. Next implement and seal it before further inference.
+
+The [complete fresh-query Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/fresh-question-query-2026-11-15)
+retains all raw results and registrations. All three remote assets were downloaded and
+byte-verified; pretrained weights and environments are excluded.
 
 The previous [post-tail cache crossover](materials/updates/post-tail-path-20261115/README.md)
 retains all 4,608 new readouts, 32 factorial cells and 1,536 exact endpoint replays on eight
