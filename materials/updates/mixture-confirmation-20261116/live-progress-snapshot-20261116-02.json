@@ -1,0 +1,11 @@
+{
+  "captured_utc": "2026-11-15T18:40:08.760865+00:00",
+  "terminal": false,
+  "pipeline_session": 48521,
+  "latest_stage": "all10800_frozen_primary_readouts",
+  "primary_run_created": false,
+  "complete42exact_fit_replays_audited": true,
+  "primary_raw_accuracy_inspected": false,
+  "analysis_pipeline_session": 60665,
+  "analysis_waits_for_complete_primary_audit": true
+}

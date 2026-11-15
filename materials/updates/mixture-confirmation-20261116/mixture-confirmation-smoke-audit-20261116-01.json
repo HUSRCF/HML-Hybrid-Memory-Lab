@@ -1,0 +1,42 @@
+{
+  "status": "audited_seven_model_observed_fit_replay",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/mixture-confirmation-smoke-20261116-01",
+  "manifest_sha256": "7f32020738985ef64a82b8188188f9b95040d6cfd9da89c2b73b6309439c1bc7",
+  "source_files_verified": 303,
+  "new_physical_readouts_audited": 42,
+  "all_physical_rows_including_archived_audited": 42,
+  "cohorts": {
+    "smoke": {
+      "native": {
+        "observed_fit_replays_exact": 6
+      },
+      "fixed_gdn": {
+        "observed_fit_replays_exact": 6
+      },
+      "query": {
+        "observed_fit_replays_exact": 6
+      },
+      "gate": {
+        "observed_fit_replays_exact": 6
+      },
+      "query_gate": {
+        "observed_fit_replays_exact": 6
+      },
+      "gate_set_replay": {
+        "observed_fit_replays_exact": 6
+      },
+      "gate_set_copy_mix": {
+        "observed_fit_replays_exact": 6
+      }
+    }
+  },
+  "fresh_functional_checks": null,
+  "prior_failed_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "architecture_superiority_claim": false,
+  "analysis_source_sha256": "21ec4e39e06a9101afe4e0492759e32962f74ddabe1762575d337d7deefbf1f6",
+  "completed_utc": "2026-11-15T18:36:44.093372+00:00"
+}

@@ -9899,7 +9899,7 @@
   "resumed_utc": "2026-11-14T18:25:03.068726+00:00",
   "resume_reason": "User explicitly asked to continue experiments after verified GitHub backup completion.",
   "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-publication-20261116-01.json",
-  "current_phase": "mixture_confirmation_registered_pipeline_running",
+  "current_phase": "mixture_confirmation_primary_pipeline_running",
   "matched_shared_training_timing": {
     "status": "completed_audited_and_published_confirmation_all_three_criteria_failed",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
@@ -14177,7 +14177,7 @@
     "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/readout-mixture-fit-2026-11-16"
   },
   "mixture_confirmation": {
-    "status": "complete_registered_cohorts_independently_checked_all42fit_replays_running",
+    "status": "all42exactreplays_audited_full10800primary_pipeline_running",
     "protocol": "configs/readout_mixture_confirmation_plan.json",
     "protocol_sha256": "8b5c777474e14bcc2debcef76aa6c9cf16e46d0843dd999709548369ac0dda69",
     "planned_sources": 303,
@@ -14186,7 +14186,7 @@
     "full_cpu_tests_required": 388,
     "cases_generated": true,
     "inference_started": false,
-    "next_action": "Continue exact livepipeline48521, all42fit replays then independent smoke audit then all10800formal readouts. Analysis60665waits for complete16800row audit; no partial-outcome selection.",
+    "next_action": "Continue live primary pipeline48521 without restart through all10800executed readouts and16800row independent audit. Waiting analysis60665exports complete21modelpairs across separate observed/fresh cohorts onlyafter terminal audit. Preserve all303sources and old failedcriteria.",
     "implementation_started": true,
     "cpu_tests_passed": 8,
     "cpu_tests_seconds": 25.28,
@@ -14198,12 +14198,15 @@
     "source_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/mixture-confirmation-source-seal-20261116-01.json",
     "source_seal_sha256": "33394857a6d0cef11bb07dce36de27c7486f573988d04767025fe970f8d5619b",
     "live_progress": {
-      "captured_utc": "2026-11-15T18:30:56.149287+00:00",
+      "captured_utc": "2026-11-15T18:40:08.760865+00:00",
       "terminal": false,
-      "pipeline_receipt_sha256": "0a11258a4d83f28269eb0aead6a129b0aea56d3f08e9e6256c9fb9c5f82aad99",
-      "latest_stage": "lock_complete_training_then_register_full_cohorts",
-      "stage_has_finished": false,
-      "pipeline_session": 48521
+      "pipeline_session": 48521,
+      "latest_stage": "all10800_frozen_primary_readouts",
+      "primary_run_created": false,
+      "complete42exact_fit_replays_audited": true,
+      "primary_raw_accuracy_inspected": false,
+      "analysis_pipeline_session": 60665,
+      "analysis_waits_for_complete_primary_audit": true
     },
     "packet": "/media/990Pro/Code/SAS/datasets/memory_update/readout-mixture-confirmation-v1",
     "packet_manifest_sha256": "c3b6c898a083302d1f5586c63923cb641689913645d4896af1e61bc6c0729381",
@@ -14240,6 +14243,11 @@
     "analysis_pipeline_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/mixture-confirmation-analysis-pipeline-20261116-01.json",
     "analysis_starts_only_after_complete_primary_audit": true,
     "independent_input_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/mixture-confirmation-independent-inputs-20261116-01.json",
-    "independent_input_audit_sha256": "64a802dfc4ba8c4d637ea812bb20134acf4dca90430721b2fe8f4cc62c8eaaa5"
+    "independent_input_audit_sha256": "64a802dfc4ba8c4d637ea812bb20134acf4dca90430721b2fe8f4cc62c8eaaa5",
+    "primary_pipeline_started": true,
+    "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/mixture-confirmation-primary-20261116-01",
+    "smoke_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/mixture-confirmation-smoke-audit-20261116-01.json",
+    "smoke_audit_sha256": "28e75036d31e7b8bffd084db933c068f290e22c7eb15cffd7dba706041b04b7f",
+    "exact_smoke_readouts_audited": 42
   }
 }

@@ -1,0 +1,93 @@
+{
+  "locked_utc": "2026-11-15T18:30:00.202841+00:00",
+  "training": {
+    "mixture_training": {
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01",
+      "completed_utc": "2026-11-15T18:13:59.648260+00:00",
+      "files_sha256": {
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/manifest.json": "394a813c54f589cc4371177ace5f95881a053877b29649ba792f0a749341baf0",
+        "/media/990Pro/Code/SAS/artifacts/memory_update/readout-mixture-training-audit-20261116-01.json": "cf2b4e138e7da1a511edeb08e20f37d8c1482075a84da4433d2a183a4852a2e2",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/normal-history-references.json": "eb275d1588b2026bf141c4e9bf6e7648ddf48434c7bf8e9b3cef1e90dc15374c",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_replay/training.jsonl": "89eedbed2a9a40fd05fc785b544df8141ec8d8602ce4d40e3ef2438b7d961728",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_replay/final-fit.jsonl": "e21d7759ec932287705bf7d9711596ab19388af627bc21718611fdfa37af72a1",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_replay/step-000144/controller.safetensors": "011d5de0abc8cd68adf936cdf87ef3d6b2dc10dae6cc4543b397eef86627e273",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_replay/step-000144/checkpoint.json": "3272c3e95e800d5b8c962b8a86aa7de70d20c6cd511760d58f3e2d1cd1bbea91",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_replay/step-000144/optimizer.pt": "63a700b12d006032528d1d867c5fb0c2f066ae604bf16493b4119d3aa6b9609e",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_replay/step-000288/controller.safetensors": "c8c7ff1d3f0cc0a977da7ccd22d4e86cf86d04de352542fa2a75f5661d4cbc25",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_replay/step-000288/checkpoint.json": "b90a9f2402a44fbb3e32a33d6dee98c12d0cc5eea1b615909f0abd7ddbfb3741",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_replay/step-000288/optimizer.pt": "fad50452569b7929eb47099f25526a61890d05fea9d98084eb5449e04e521a92",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_replay/step-000432/controller.safetensors": "46199090ee775ffbb158268b6d3b19639c3a529a438815a36516c0b2fc3f9fcf",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_replay/step-000432/checkpoint.json": "caf9952e469efb7bc5d33e69697c410dda86b50f69217f51cac74ba74340271d",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_replay/step-000432/optimizer.pt": "4de0911e1ed3ea5b74dfad1fd06634216735521f84cd3ba46b6588cc052246ac",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_copy_mix/training.jsonl": "1f3a083037652244d4c4236f57c1e6a2b84e57f1a75a0e1c318ffc3f6d76c1fa",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_copy_mix/final-fit.jsonl": "593781afa53eec97538506c7da0ab3e9ab200d2807a8bc3555fefa724eb0e7d6",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_copy_mix/step-000144/controller.safetensors": "b86e3721d38a6fccb0e61f48f547f9f52e2139f10cabb4825ebedc73159ff24b",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_copy_mix/step-000144/checkpoint.json": "d4849882c0ed0894825692ee8327ea544d03a81b7fcee831822df9983f21a538",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_copy_mix/step-000144/optimizer.pt": "45d460db4a1383b6b3be606bd359f7c5080e2a7f29026aa3337aea6a6523d355",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_copy_mix/step-000288/controller.safetensors": "02e2bbd09fefc6d31c6cd63efd957456a3165ff715457b72278b0bb5a72e7b67",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_copy_mix/step-000288/checkpoint.json": "7997fe1b2ca2f05e21e7d0f911cffeb4ed8792d3bead804faae659126dc661e9",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_copy_mix/step-000288/optimizer.pt": "66cf0af72af86cd70b1f2eb81ef54ff7bb3387aa34d3874e1293226236525fe6",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_copy_mix/step-000432/controller.safetensors": "11c572091acb14e89cfc847e87dd33378a8b71b51da10b626faa55034005a89e",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_copy_mix/step-000432/checkpoint.json": "b13f4412cba6d229fb4515013d678b76692a09e87910960965e5b0da7ea0ce65",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01/set_copy_mix/step-000432/optimizer.pt": "bb522e4aee1636865faada741ee43d1afd6cb9b86985c2cf2da1527c0a769a86"
+      },
+      "final_states": {
+        "set_replay": "083a549bfa22ec7c1f4f21e2963e2d1ecddf9fbb6a526740ba012ff3c0bb9fed",
+        "set_copy_mix": "2966899929d6c1b57b0d91094149a996853d8dca57cb3e1427b1523c55435258"
+      }
+    },
+    "original_training": {
+      "status": "all_final_weights_and_complete_fit_independently_audited",
+      "training_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01",
+      "completed_utc": "2026-11-15T16:27:51.420812+00:00",
+      "files_sha256": {
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/manifest.json": "86cc706a473db9fd939734bba66dbb88aebc298f68458ba882e9bca01898c80a",
+        "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-training-audit-20261115-01.json": "b11fe2c5baf049d50d9e587ba64df22b736c41d682abebb40cb5dc43be6d0205",
+        "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-training-audit-20261115-01.correction.json": "108928ca0bea9edcba7070d227e1e76f33852482c6752eb8a3dac542f0c61450",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query/training.jsonl": "4ddda1b48676352336a27b931784f05aafe8fe00afb5ad0c32f3ac3ebc0abbfe",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query/final-fit.jsonl": "b34455e939d67ca667e0c94fbd9253cb8bd5ade20aa36d6aedba323fc6e94d21",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query/step-000144/controller.safetensors": "a933567da7f3fe9328c3e6d7d932726f8fbae406b0788cf7846534c92cd0d100",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query/step-000144/checkpoint.json": "69d9ce25a883bc491348f14d04d349909b8b059af04246c8cde60bb16ced8510",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query/step-000144/optimizer.pt": "d8cbf462a630fff1363780b75a2977300d51445f9d4654d42a080c33d9d6639e",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query/step-000288/controller.safetensors": "fe6767b792040a65efcb8b70a6ad3fff73ad6b8b01c890bf0d5b4c80885fd1a2",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query/step-000288/checkpoint.json": "c81983189e5f3a1d1501e3d83cfee64ce01355483810a8bedc74db6f7b9c2f88",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query/step-000288/optimizer.pt": "b79e10075056d4658067e1b3f9b15fe4b83b6c3badf51022b21c0f15c5b3ee08",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query/step-000432/controller.safetensors": "e2d16c08327bb641deadd5b180f1adb1835585dc76577000898fe6c28442e04a",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query/step-000432/checkpoint.json": "ef4fb1259b34177c6c29234f6d99f524cf96d41cdc872edd8c81dcb031188ab6",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query/step-000432/optimizer.pt": "b70af8df5a929959d5c515e725f6ed2a97895718eb103b754911cbfec6e4c653",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/gate/training.jsonl": "123ced2698a04948f5961cd615f8c2d851547f05e38ec5f44a982f5e7e955a31",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/gate/final-fit.jsonl": "3cdcd62a155e7c3743c5feedecc2023c2fb5d2c87c6705fbd72b0474d7185e26",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/gate/step-000144/controller.safetensors": "26eb6301c337a81dad0111a6886e371471d5a4c27384b076dba2092b799b65f0",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/gate/step-000144/checkpoint.json": "9f8611b6bda8dca8a407b1b8dadfdfeb42f4b2970fd56658c39805a1b8fb2840",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/gate/step-000144/optimizer.pt": "a82a60e6e93a8587e020df8560420a2642a755245a1e7856c0b68dccb365a407",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/gate/step-000288/controller.safetensors": "98b77246c8dbb63b35902e7b29e44c6d6158008a04081be67c407a7e24844669",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/gate/step-000288/checkpoint.json": "487b549a6a44917e952da811c075d03ba517eac2e15375b4e16d2a4ef5cf552c",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/gate/step-000288/optimizer.pt": "801f66307c3cd3340c060e415896d03f7675eb1fc4b3f1bd3dc91e8c487c02d0",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/gate/step-000432/controller.safetensors": "aec08106b931b349effc7b29ad040d011eb5e42fd85dea8251900d6834f4a764",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/gate/step-000432/checkpoint.json": "b5d6662ece99831d9f012b25e220c75c67ecd56836e1e24d086701c6122c5a7c",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/gate/step-000432/optimizer.pt": "4043b2c8d1f26d54cfc617fd4a694fe59a3729403254ba3e463e7342c896960f",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query_gate/training.jsonl": "ac767e3ea69de3f156c74ff340f1edacb8fd4c1dba0b8b071729f796bd7f8d8a",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query_gate/final-fit.jsonl": "93e8a954336612cb1935d9298345cf6e7ddc35a2c55a739f5564765330c9d45e",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query_gate/step-000144/controller.safetensors": "9cab7900f155b00cee276dc42efdbd788876d6ce2c84b35a81805917f5b8b343",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query_gate/step-000144/checkpoint.json": "96e9e0775ce921095b2aab4afc8c2598aead7acf916bea88af75abe041a2e8a6",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query_gate/step-000144/optimizer.pt": "a3ab4a5dab7e28227570d68203c2dea17574253f5350a1d233ae370c9c683501",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query_gate/step-000288/controller.safetensors": "030411f3fb5b9491ebcc088c79f573fb2b9c9ef3eba749650a55944a8b3916fa",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query_gate/step-000288/checkpoint.json": "ea4fca19a615b9d05f49df0ae20f0fae512b4919447cb9d3d5596251b7f74cbe",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query_gate/step-000288/optimizer.pt": "f2272deffb5b7307d11a5f716960aa9e8f0c14ab1d5f37fc2eb35dd8bfdede6b",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query_gate/step-000432/controller.safetensors": "152c1d90d2b2e9cae7a303e31496b3b3eaafeb5acbfda1bdca5998df8bc934bf",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query_gate/step-000432/checkpoint.json": "901e0a04b975ab6466604c6d62b9224689aec47cfafc7dea086e9838005c6f14",
+        "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01/query_gate/step-000432/optimizer.pt": "572b92c93b68c4d87fc3d0710613dc2c8d660f9a89db3aaaae70d69d2cbd608d"
+      },
+      "final_states": {
+        "query": "fd8f4eec0fe148229e11c601057d18246f45be4a7921364a47f3468b085ee262",
+        "gate": "ba9f5d1aade67e264e7d32d9fa2b08e601b7ac41a71442e92454ce76d4f1879c",
+        "query_gate": "7cbd0614860a047cc5d00dfab67e8f8fed72eabe3eab2a7ffcf22d21ab9bbcd7"
+      },
+      "prior_failed_criteria_unchanged": {
+        "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+        "matched_question_positive_joint_gain_over_native": false,
+        "matched_question_no_all_trained_all_deployed_correct_regression": false
+      }
+    }
+  }
+}

@@ -5,14 +5,17 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Current: paired Gate training and all 2,400 observed-fit answers independently audited.**
+**Current: paired Gate training audited and seven-model confirmation running.**
 The [complete task-coverage control](materials/updates/readout-mixture-20261116/README.md)
-retains both final432checkpoints: SET replay853/864; mixture SET857/864 and COPY619/672.
-The common SET fit has eight repairs and four regressions. These are observed fits, not generalization.
-The [seven-model confirmation](materials/updates/mixture-confirmation-20261116/README.md) was registered
-before implementation or new cases. Eight added CPU contracts passed; the full388regression is running.
-It will separately retain all archived development answers and the fixed new-stream comparison,
-without Oracle, donor forwards, checkpoint selection or additional training. Shared-block superiority remains unestablished.
+retains final432checkpoints: SET replay853/864; mixture SET857/864 and COPY619/672.
+The common SET fit has eight repairs and four regressions; these are observed fits, not generalization.
+The [complete training backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/readout-mixture-fit-2026-11-16)
+is published, with all three remote assets downloaded and byte-verified.
+The [fixed seven-model confirmation](materials/updates/mixture-confirmation-20261116/README.md)
+passed all388tests and sealed303sources. Both full cohorts were independently checked;
+all42exact final-fit replays passed audit. The10800new-readout primary pipeline is running.
+All6000archived baseline answers and complete literal inputs remain preserved, separately from new-stream confirmation.
+No Oracle, donor, checkpoint selection or further training is used; shared-block superiority remains unestablished.
 
 **Latest completed: all 6,000 new-stream readout-control answers independently audited.**
 The [complete SET/COPY confirmation](materials/updates/readout-confirmation-20261116/README.md)
