@@ -4797,9 +4797,9 @@
     }
   },
   "next_actions": [
-    "Retain published complete negative freeze control; no simple zero-gate deployment or larger-model scaleup.",
-    "Separate version selection,entity discrimination and output-format processing on normal failures while retaining native recurrent updates.",
-    "Register any next intervention and fresh validation cohort before implementation,data or inference; require strong GDN baseline and preserve all prior failed criteria."
+    "Complete the three fixed-budget readout controls and all observed-fit outputs; keep every baseline error and new regression.",
+    "After complete independent training audit,generate the already registered fixed SET88000 andCOPY89000 cohorts without resampling,then evaluate all five models.",
+    "Use normal-cache version and multihop evidence against native/fixedGDN/simple readout baselines to guide the broader hybrid-block research; preserve all old failed criteria."
   ],
   "active_exec_sessions": [
     47029
@@ -13342,7 +13342,7 @@
     "pending_complete_fit_exporter_sha256": "8eb0d0556e1db9ba8d85bbc110551ec660333e1d71704508dd945df3f1027855"
   },
   "readout_confirmation": {
-    "status": "protocol_registered_implementation_and_eight_observed_fixture_tests_passed_before_any_prospective_generation",
+    "status": "all372regression_tests_passed289sources_sealed_no_future_cases_generated",
     "protocol": "configs/readout_adapter_confirmation_plan.json",
     "protocol_sha256": "30fe0e1107b57ff48dec43a2015ddd29c4e8f9c168b2b8e4dd1895c326a8fb33",
     "predecessor_sources_immutable": 282,
@@ -13379,6 +13379,13 @@
       89006,
       89007
     ],
-    "next_action": "Run full372CPU regressions and seal289sources. Prospective inputs require completed current training pipeline41240 plus complete fit and independent original+correction audits. Tests reconstructed only already observed76000SET and61000COPY fixtures."
+    "next_action": "Wait for the existing training pipeline41240 to finish all3final432weights,all5184fit answers and complete independent audit; then run complete fit exporter,lock training bytes,and construct both unchanged prospective cohorts. All289sources stay frozen.",
+    "full_tests_passed": 372,
+    "full_tests_seconds": 463.121,
+    "source_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-source-seal-20261115-01.json",
+    "source_seal_sha256": "3028efa175d7a9cb906540b4e831534344bbd16245ec870b8681a47648c3d7ac",
+    "full_regression_session": 76793,
+    "pending_pipeline": "/tmp/run_readout_confirmation_pipeline.py",
+    "pending_independent_inputs": "/tmp/check_readout_confirmation_packet.py"
   }
 }
