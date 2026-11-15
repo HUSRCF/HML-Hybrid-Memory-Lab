@@ -12225,8 +12225,8 @@
     "primary_scientific_results_published": true
   },
   "update_budget_controls": {
-    "status": "native8conditions_complete_primary_continues_other4configs",
-    "previous_goal_turn_classification": "progress: audited opposite720smokes and240complete-prefix checks, committed receipts, started13440readout primary",
+    "status": "native_and_shared8conditions_complete_other3configs_continue",
+    "previous_goal_turn_classification": "progress: prepared all60cell/100contrast report and verified2688native readout hashes/order while primary advanced",
     "prior_head": "c3447ec3e2840c98a1c660a3a2ca0c19ada7dac7",
     "protocol": "configs/update_budget_controls_plan.json",
     "protocol_sha256": "46bb14453d6f67fa58bcafaba0b78232501ff3b86ce18bbc8c0b9b3a0f20da71",
@@ -12265,8 +12265,8 @@
     "unified_logical_cells": 20160,
     "prior_failed_gates_unchanged": true,
     "auxiliary_prefix_utility": "scripts/verify_update_budget_prefix.py",
-    "last_updated_utc": "2026-11-15T02:37:21.311121+00:00",
-    "next_action": "Complete all5fixed configurations and8new conditions; full independent audit before scientific interpretation, exports and publication.",
+    "last_updated_utc": "2026-11-15T02:46:33.318870+00:00",
+    "next_action": "Complete other3fixed model configurations, independent full audit, automatic all-cell exports, then visual review and interpretation before backup publication.",
     "smoke_receipts": {
       "update-budget-smoke-forward-audit-20261115-01": {
         "status": "audited_update_budget_smoke",
@@ -12288,7 +12288,8 @@
     "auxiliary_receipt_sha256": "c0b8425151b539b9742a8b4017ac2fa78b9f967a2d915b8081c754dd5c9da8b2",
     "primary_output": "/media/990Pro/Code/SAS/runs/memory_update/update-budget-controls-20261115-01",
     "completed_models_at_last_observation": [
-      "native"
+      "native",
+      "shared"
     ],
     "native_files_complete_verified": {
       "random0_full": {
@@ -12323,6 +12324,44 @@
         "rows": 336,
         "sha256": "a98681d260e54e71f8c50d9eda8612377b42f4cadff37847f03e4458cdc40d2d"
       }
-    }
+    },
+    "shared_files_complete_verified": {
+      "random0_full": {
+        "rows": 336,
+        "sha256": "130fe406d668864596557598eb5dd394e0727e63a8f071bd7cfa670d7301e735"
+      },
+      "random0_oracle": {
+        "rows": 336,
+        "sha256": "636bf2abee73fe64ab765478b062bc316fe5b65bb875922e3d49bad5de2890d2"
+      },
+      "random1_full": {
+        "rows": 336,
+        "sha256": "75e1df222e4abe846c3ca410a7ec141ca5c59656aa8dd77f1a5209b08da8fa16"
+      },
+      "random1_oracle": {
+        "rows": 336,
+        "sha256": "4122308b683161b8de24f378ab2757fe6d45af16789e0742370101e53e9ac6cb"
+      },
+      "early_full": {
+        "rows": 336,
+        "sha256": "ae88436e1b534095bc97a781bde474b03b4ca3c25d282322bff53d2eb1ea8a79"
+      },
+      "early_oracle": {
+        "rows": 336,
+        "sha256": "7f53832e0609f5fb06e0a66752106c5afd4a8ac45cfbbb73ecf9b2da227015b0"
+      },
+      "recent_full": {
+        "rows": 336,
+        "sha256": "995100065b1f5e4bb8a33703ef76c7e15f887ef3848edc1609c40a8f00c2e721"
+      },
+      "recent_oracle": {
+        "rows": 336,
+        "sha256": "b604eb8a24e1a9dba40d93edb8baa2b6cf2808072131ab47dcc87f19966fb4af"
+      }
+    },
+    "shared_adapter_unchanged_and_native_restored": true,
+    "queued_exports_script": "scripts/run_update_budget_exports.sh",
+    "queued_exports_pipeline_pid": 2188491,
+    "queued_exports_log": "/media/990Pro/Code/SAS/logs/memory_update/update-budget-exports-pipeline-20261115-01.log"
   }
 }
