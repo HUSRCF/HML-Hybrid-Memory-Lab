@@ -12,6 +12,42 @@ from scripts.run_controller_trial import write_json
 from sas_memory.write_locality_data import streaming_hash
 
 
+def operational_replay(run, manifest):
+    """Additional read-only check; never changes the sealed protocol or gates."""
+    gate=manifest['smoke_equivalence_gate'];gate_path=Path(gate['path'])
+    if streaming_hash(gate_path)!=gate['sha256']:raise ValueError('Operational equivalence receipt changed')
+    equivalence=json.loads(gate_path.read_text());forward=Path(equivalence['forward_run'])
+    before=json.loads((forward/'manifest.json').read_text())
+    if streaming_hash(forward/'manifest.json')!=equivalence['forward_manifest_sha256']:
+        raise ValueError('Completed smoke manifest changed')
+    if before['source_sha256']!=manifest['source_sha256'] or before['weights_before']!=manifest['weights_before']:
+        raise ValueError('Same source and native weights required for repeated subset')
+    result={}
+    def core(cache):return {k:v for k,v in cache.items() if k!='source_guard_checks'}
+    for model in ('native','gdn_all_tokens'):
+        smoke_path=forward/f'{model}.jsonl'
+        if streaming_hash(smoke_path)!=before['models'][model]['results_sha256']:
+            raise ValueError('Completed smoke raw bytes changed')
+        smoke=[json.loads(line) for line in smoke_path.read_text().splitlines()]
+        ids={r['id'] for r in smoke}
+        primary=[json.loads(line) for line in (run/f'{model}.jsonl').read_text().splitlines()]
+        overlapping=[r for r in primary if r['id'] in ids]
+        if len(smoke)!=54 or overlapping!=smoke:
+            raise ValueError('Primary first-stream original-style readouts differ from operational smoke')
+        old=before['models'][model];new=manifest['models'][model]
+        for key,cache in old['prefixes'].items():
+            if core(cache)!=core(new['prefixes'][key]):raise ValueError('Repeated normally encoded prefix differs')
+        for key,source in old['sources'].items():
+            actual=new['sources'][key]
+            if core(source['cache'])!=core(actual['cache']) or source['tail_proof']!=actual['tail_proof']:
+                raise ValueError('Repeated normal tail cache or actual gate proof differs')
+        result[model]={'raw_readouts_exact':54,'normal_prefix_cache_exact':1,'normal_tail_caches_exact':8,
+            'all48cache_fields_logits_and_layouts_exact':True,'tail_gate_and_historical_kv_proofs_exact':True}
+    return {'status':'additional_posthoc_read_only_operational_subset_replay_exact',
+        'forward_run':str(forward),'primary_run':str(run),'models':result,
+        'scope':'All shared first-stream original-style readouts and normal caches. Guard-check counts differ by registered number of questions; all remaining cache fields match. This adds no model inference, tolerance or scientific success criterion.'}
+
+
 def extract(audit_path):
     audit=json.loads(audit_path.read_text());run=Path(audit['source_run']);manifest=json.loads((run/'manifest.json').read_text())
     registered,_,_,queries,refs=registered_inputs()
@@ -78,6 +114,7 @@ def extract(audit_path):
         'physical_readouts':3456,'paired_comparisons':6912,'independent_streams':8,
         'summary':summarize(summaries,fields),'per_seed_summary':summarize(per_seed,(*fields,'seed')),
         'pairs':comparisons,'prior_failed_criteria_unchanged':refs['prior_failed_criteria'],
+        'additional_operational_replay':operational_replay(run,manifest),
         'limits':'No selection or success gate. Names/styles repeat8underlyingstreams. Oracle is privileged. Model/reader gains do not by themselves identify recurrent-memory interference or an architecture improvement.',
         'analysis_source_sha256':streaming_hash(Path(__file__))}
 

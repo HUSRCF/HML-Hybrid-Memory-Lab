@@ -6009,7 +6009,7 @@
     "branch_decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
   },
   "last_completed_phase": "unseen_shared_timing3360full_answers_completed_and_audited_both_registered_criteria_failed",
-  "next_research_step": "Prospectively register natural unrelated-update load controls on native and existing GDN baseline; preserve all earlier failed criteria.",
+  "next_research_step": "Complete backup, then test whether version-question wording explains the dominant exact-other-version errors on the complete cohort. The broader goal remains active; old failed criteria unchanged.",
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
     "plan": "configs/copy_dependency_transfer_plan.json",
@@ -12843,7 +12843,7 @@
     }
   },
   "natural_update_load": {
-    "status": "opposite_order_exact_smokes_audited_primary_running",
+    "status": "completed_independently_audited_exported_visually_inspected",
     "protocol": "configs/natural_update_load_plan.json",
     "protocol_sha256": "c0f32de5f7fc43b587300e82554e8609cfcf9a74da963659d9e1ea049b463903",
     "packet": "/media/990Pro/Code/SAS/datasets/memory_update/natural-update-load-v1",
@@ -12876,7 +12876,7 @@
     "native_model_inference_started": true,
     "new_training": false,
     "new_environment": false,
-    "next_action": "Complete all3456registered normal-update readouts and final independent audit; then inspect all36cells, roles and paired regressions before new architecture decisions.",
+    "next_action": "Package and publish the complete normal-update phase. Then prospectively register an unfiltered, token-matched version-question control before new inference; no new training or architecture claim.",
     "forward_smoke": "/media/990Pro/Code/SAS/runs/memory_update/natural-load-smoke-forward-20261115-01",
     "forward_started_utc": "2026-11-15T09:21:20.145261+00:00",
     "forward_progress": {
@@ -12896,8 +12896,38 @@
     "primary": "/media/990Pro/Code/SAS/runs/memory_update/natural-load-primary-20261115-01",
     "primary_started_utc": "2026-11-15T09:25:42.776844+00:00",
     "primary_progress": {
-      "native": 108
+      "native": 1728,
+      "gdn_all_tokens": 1728
     },
-    "primary_completed": false
+    "primary_completed": true,
+    "primary_process_exit_code": 0,
+    "primary_manifest_sha256": "6525a2b8d108460fee480008dee370c41bdba013b80b3c2e756695044b4c36cf",
+    "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/natural-load-primary-audit-20261115-01.json",
+    "primary_audit_sha256": "d6f85c30b13e8052afdcf80832f4f446a912d5cadf62490f2ebde33048fb86a5",
+    "scientific_outcomes_inspected": true,
+    "all_prior_234_sources_unchanged": true,
+    "exports": {
+      "path": "/media/990Pro/Code/SAS/artifacts/memory_update/natural-load-exports-20261115-01",
+      "csv_rows": {
+        "primary": 3456,
+        "reader-probabilities": 20736,
+        "cells": 36,
+        "strata": 432,
+        "contrasts": 192,
+        "per-stream-contrasts": 6144,
+        "episodes": 576
+      },
+      "figure_visually_inspected": true,
+      "all_files_byte_verified": true
+    },
+    "observations": "/media/990Pro/Code/SAS/artifacts/memory_update/natural-load-observations-20261115-01.json",
+    "version_attribution": "/media/990Pro/Code/SAS/artifacts/memory_update/natural-load-version-errors-20261115-01.json",
+    "all_readouts_retained": 3456,
+    "prior_failed_criteria_unchanged": {
+      "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+      "matched_question_positive_joint_gain_over_native": false,
+      "matched_question_no_all_trained_all_deployed_correct_regression": false
+    },
+    "publication_pending": true
   }
 }

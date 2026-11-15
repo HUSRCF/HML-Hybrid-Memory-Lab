@@ -5,7 +5,21 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; all 4,608 single-layer question-Query readouts are independently audited.**
+**Status: active; all 3,456 normal-update load readouts are independently audited.**
+The [complete normal-update diagnostic](materials/updates/natural-load-20261115/README.md)
+retains all 36 conditions, 576 episode cells and all baseline errors across eight fresh
+SET streams with two paired renamings. All 308 tests and exact opposite-order checks passed;
+240 measurement sources remain sealed. The existing frozen GDN adapter scores 821/864 Full
+and 864/864 with privileged Oracle evidence. Its protected account is correct in all 288
+answers; 40 of 43 Full errors emit another version of the queried account's value.
+The load effect is not monotonic: historical reading after 512 related updates improves
+from 16/32 to 28/32 when active accounts increase from 2 to 16. These are descriptive output
+patterns, not proof of a recurrent-state mechanism or a new architecture's benefit.
+Maximum history is 7,519 tokens; no new training, model download or environment. All prior
+failed criteria remain false. Next finish the complete backup, then register matched
+version-question controls before any further inference.
+
+**Previous diagnostic: all 4,608 single-layer question-Query readouts independently audited.**
 The [complete layer diagnostic](materials/updates/query-layer-20261115/README.md) retains all 24 new
 and 8 archived Full conditions, 128 episode cells and every baseline failure on eight reused
 streams. All 299 tests, opposite-order checks, 1,536 exact reference replays and 384 actual
@@ -17,7 +31,7 @@ swaps are asymmetric: layer 15 gives 26/32, layer 19 gives 21/32, all six give 3
 Normal Full already scores 191/192. This localizes a defined intervention, not a new shared
 architecture's value; all earlier failed scientific criteria remain unchanged. The longest
 history is 1,107 tokens, so these data do not establish 100K-context behavior. No new training,
-environment or model download. Backup publication is verified. The [next natural-update load diagnostic](materials/updates/natural-load-20261115/README.md) is registered and sealed with 240 sources and 308 passing tests; native operational checks precede its 3,456 readouts.
+environment or model download. Its backup publication is verified; all old results remain preserved.
 
 The previous [fresh state / question-Query diagnostic](materials/updates/fresh-query-20261115/README.md)
 retains all 3,264 readouts, 20 cells, 1,536 exact same-source replacements and its

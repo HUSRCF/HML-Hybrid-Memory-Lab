@@ -1,0 +1,65 @@
+{
+  "status": "all_complete_grid_exports_written_and_roundtrip_verified",
+  "audit_sha256": "d6f85c30b13e8052afdcf80832f4f446a912d5cadf62490f2ebde33048fb86a5",
+  "source_manifest_sha256": "6525a2b8d108460fee480008dee370c41bdba013b80b3c2e756695044b4c36cf",
+  "rows": {
+    "primary": 3456,
+    "reader-probabilities": 20736,
+    "cells": 36,
+    "strata": 432,
+    "contrasts": 192,
+    "per-stream-contrasts": 6144,
+    "episodes": 576
+  },
+  "files": {
+    "all-conditions.png": {
+      "bytes": 271707,
+      "sha256": "eb36642335413ac0f8985bd59a359d8d98a6fbea9a13195b06d1521549d2c443"
+    },
+    "all-conditions.svg": {
+      "bytes": 290795,
+      "sha256": "69a9e4c4f9bd6a674141c9ca7c1ca1406952acb73c33fbf6a3e76cd6e6d253fb"
+    },
+    "cells.csv": {
+      "bytes": 2275,
+      "sha256": "207e8c07861e04c5d239f7e0b8a061a90a01db90ddc7639f1e752c5b21b41a9a"
+    },
+    "contrasts.csv": {
+      "bytes": 17827,
+      "sha256": "41615ee420beb3e5e15255e5b3f90cc12ef2cf7b7ed67bc71002bf5529eba07b"
+    },
+    "episodes.csv": {
+      "bytes": 51143,
+      "sha256": "532e4dca58051f66a7371b659f98326a4fae5750c843c51a54034d77979ece55"
+    },
+    "export-source.py": {
+      "bytes": 7184,
+      "sha256": "67b2fbddaaceb218e2ed51fc2e6986925de6f944c01b29584a8637f968e004bc"
+    },
+    "metrics.json": {
+      "bytes": 5068303,
+      "sha256": "1585cac21609c58d0cbeec56ae6b8dcc43a15900b1c846abbe2ff17acff2ac2b"
+    },
+    "per-stream-contrasts.csv": {
+      "bytes": 1818374,
+      "sha256": "0c2fc9a95df33d867cde147204c9b98ade555a253d434fea0d448d1213ce94d7"
+    },
+    "primary.csv": {
+      "bytes": 877604,
+      "sha256": "e370d3502302469a355bdeb2dd8aa26d9c10212dc8bd0fbf186d83fa5a0a2106"
+    },
+    "reader-probabilities.csv": {
+      "bytes": 2706254,
+      "sha256": "5c90b832520fc4368eb701f09dd9f32b656949a400650f665654aa31f03f3842"
+    },
+    "report.md": {
+      "bytes": 2950,
+      "sha256": "c6eb3fa245f95b74207e69f77ca97cbac07520c6ce26409672df022d57519e4b"
+    },
+    "strata.csv": {
+      "bytes": 41562,
+      "sha256": "428aea8d4aba9b29d9969e0ebe79c1254d065cdcf1a725c5f3b00bdee9caba1b"
+    }
+  },
+  "export_source_sha256": "67b2fbddaaceb218e2ed51fc2e6986925de6f944c01b29584a8637f968e004bc"
+}

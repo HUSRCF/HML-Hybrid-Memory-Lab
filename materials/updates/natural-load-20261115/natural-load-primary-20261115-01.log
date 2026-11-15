@@ -1,0 +1,34 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<01:57,  2.72it/s]Loading weights:  11%|█         | 34/320 [00:00<00:03, 92.46it/s]Loading weights:  20%|██        | 64/320 [00:00<00:01, 150.68it/s]Loading weights:  29%|██▉       | 92/320 [00:00<00:01, 183.57it/s]Loading weights:  37%|███▋      | 119/320 [00:00<00:00, 206.41it/s]Loading weights:  46%|████▋     | 148/320 [00:00<00:00, 225.61it/s]Loading weights:  57%|█████▋    | 181/320 [00:00<00:00, 253.56it/s]Loading weights:  65%|██████▌   | 209/320 [00:01<00:00, 248.50it/s]Loading weights:  75%|███████▌  | 240/320 [00:01<00:00, 261.14it/s]Loading weights:  86%|████████▌ | 274/320 [00:01<00:00, 281.88it/s]Loading weights:  95%|█████████▌| 305/320 [00:01<00:00, 285.42it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 214.87it/s]
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76000-original", "readouts": 108}
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76000-permuted", "readouts": 216}
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76001-original", "readouts": 324}
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76001-permuted", "readouts": 432}
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76002-original", "readouts": 540}
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76002-permuted", "readouts": 648}
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76003-original", "readouts": 756}
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76003-permuted", "readouts": 864}
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76004-original", "readouts": 972}
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76004-permuted", "readouts": 1080}
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76005-original", "readouts": 1188}
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76005-permuted", "readouts": 1296}
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76006-original", "readouts": 1404}
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76006-permuted", "readouts": 1512}
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76007-original", "readouts": 1620}
+{"event": "normal_update_load", "model": "native", "case_id": "natural-load-s76007-permuted", "readouts": 1728}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76000-original", "readouts": 108}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76000-permuted", "readouts": 216}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76001-original", "readouts": 324}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76001-permuted", "readouts": 432}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76002-original", "readouts": 540}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76002-permuted", "readouts": 648}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76003-original", "readouts": 756}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76003-permuted", "readouts": 864}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76004-original", "readouts": 972}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76004-permuted", "readouts": 1080}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76005-original", "readouts": 1188}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76005-permuted", "readouts": 1296}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76006-original", "readouts": 1404}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76006-permuted", "readouts": 1512}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76007-original", "readouts": 1620}
+{"event": "normal_update_load", "model": "gdn_all_tokens", "case_id": "natural-load-s76007-permuted", "readouts": 1728}

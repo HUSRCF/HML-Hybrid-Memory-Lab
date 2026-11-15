@@ -55,7 +55,7 @@ def package(audit,output):
         add(ROOT/name,ROOT,'code')
     tree(ROOT/'materials/updates/natural-load-20261115',ROOT,'code')
     for name in ('README.md','materials/README.md','.gitattributes','requirements.txt','configs/experiment_progress.json',
-        'scripts/run_natural_load_pipeline.sh','scripts/export_natural_load.py','scripts/package_natural_load.py','scripts/publish_natural_load.py','scripts/natural_load_observations.py'):
+        'scripts/run_natural_load_pipeline.sh','scripts/export_natural_load.py','scripts/package_natural_load.py','scripts/publish_natural_load.py','scripts/natural_load_observations.py','scripts/natural_load_version_errors.py'):
         add(ROOT/name,ROOT,'code')
     for model,state in m['models'].items():
         path=run/f'{model}.jsonl'

@@ -1,6 +1,16 @@
 # Research materials
 
-Latest: [single-layer question-Query localization](updates/query-layer-20261115/README.md).
+Latest: [normal-update load diagnostic](updates/natural-load-20261115/README.md).
+All 3,456 readouts, 36 cells, 576 episode cells and all baseline errors are independently
+audited. The frozen GDN adapter is 821/864 Full and 864/864 privileged Oracle; 40 of its
+43 Full errors output another recorded version of the queried account. Protected-account
+reading is 288/288. More active accounts do not uniformly hurt performance. All 308 tests,
+240 sealed sources, opposite-order checks and repeated primary/smoke subset passed.
+The 7,519-token maximum and eight synthetic streams do not establish a general mechanism,
+architecture advantage or significance; no new training. Complete output tables and plots
+are retained. The current task is the full backup, followed by prospective wording controls.
+
+Previous: [single-layer question-Query localization](updates/query-layer-20261115/README.md).
 All 4,608 new readouts, 32 new/archived conditions and 128 episode cells are independently
 audited. GDN layer 15 restores new-value Full reading from 2/32 to 32/32, with one prefix
 regression; layer 19 gives 28/32 without a prefix regression. Reverse effects differ.
@@ -131,4 +141,4 @@ portable installer guarantee.
 
 完整结果已发布至 [逐字节验证的 GitHub Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/query-layer-localization-2026-11-15)，目标提交 `0a6cb60609566d82a9b9fb8e85f549c78a39d95a`。备份包含 1,315 个文件，压缩包 SHA-256 为 `07c3fdff5b7af2852ad766f86fd8cfe9c1edd32c513ee1474952162dd25ac933`；三个附件均经远端下载校验。发布回执保存在本阶段材料中。
 
-[正常更新负载诊断](updates/natural-load-20261115/README.md)已登记、通过 308 项测试并封存 240 个源文件。完整设计为 3,456 次读出，历史最长 7,519 Token；当前尚无本轮模型科学结果。
+[正常更新负载诊断](updates/natural-load-20261115/README.md)已登记、通过 308 项测试并封存 240 个源文件。完整设计为 3,456 次读出，历史最长 7,519 Token；本轮现已完成，完整结果见上述最新材料。
