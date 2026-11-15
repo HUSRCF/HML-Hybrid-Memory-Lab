@@ -1,0 +1,15 @@
+{
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/oracle-write-hold-factorial-20261115-01",
+  "audit_sha256": "7be39244115b2f489fabcb474d7583afc4bdec862ad8336adef905ecd3f9e680",
+  "manifest_sha256": "290d0cd3d8a4dc63340bf0cda5be695238ab581c641b0703f0feaa4bb8632fd3",
+  "source_sha256": "66d884ae008bb525f58dcb51daf934060b9f18241f80b4b4e720582a3249ef1f",
+  "all_outputs_sha256": {
+    "oracle-write-hold-figure-20261115-01.csv": "6d5512e70efb777e7c82efe23a6e4af9f1332945508a3a380234cfb585990390",
+    "oracle-write-hold-figure-20261115-01.pairs.csv": "2398eb6af214e3e37c14d6d1cf9f7a970d5b6e7d91a5464dbba4d86ea7f7c935",
+    "oracle-write-hold-figure-20261115-01.factorial.csv": "1fb35bbc2d34d43baed3f5edbbdcf7240a5bbc259ff99a57f17a52a17437334a",
+    "oracle-write-hold-figure-20261115-01.png": "4f1bc381965f8fd25107d646f33ae7adaeb25244e4cc3777a04329436e11dbf2",
+    "oracle-write-hold-figure-20261115-01.pdf": "7f01d205d731e640f12c4ef9e3f7e99327ea81c803099eb13a679c26b1d9213d",
+    "oracle-write-hold-figure-20261115-01.data.json": "3ae93faaa1f40f8f55204e8590eedeb0a62f4504cdf95177f6756164d886d656",
+    "oracle-write-hold-figure-20261115-01.source.py": "66d884ae008bb525f58dcb51daf934060b9f18241f80b4b4e720582a3249ef1f"
+  }
+}

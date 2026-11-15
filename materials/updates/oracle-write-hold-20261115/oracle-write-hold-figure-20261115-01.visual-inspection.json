@@ -1,0 +1,9 @@
+{
+  "status": "visually_inspected",
+  "width": 2880,
+  "height": 1980,
+  "all20cells_present": true,
+  "clipping_observed": false,
+  "labels_and_footer_readable": true,
+  "png_sha256": "4f1bc381965f8fd25107d646f33ae7adaeb25244e4cc3777a04329436e11dbf2"
+}

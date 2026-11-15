@@ -1,0 +1,62 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<02:02,  2.60it/s]Loading weights:   9%|▉         | 28/320 [00:00<00:03, 74.85it/s]Loading weights:  19%|█▉        | 60/320 [00:00<00:01, 139.25it/s]Loading weights:  29%|██▉       | 93/320 [00:00<00:01, 188.20it/s]Loading weights:  37%|███▋      | 119/320 [00:00<00:00, 205.79it/s]Loading weights:  46%|████▋     | 148/320 [00:00<00:00, 225.69it/s]Loading weights:  57%|█████▋    | 181/320 [00:01<00:00, 251.13it/s]Loading weights:  65%|██████▌   | 209/320 [00:01<00:00, 249.71it/s]Loading weights:  75%|███████▌  | 240/320 [00:01<00:00, 261.07it/s]Loading weights:  85%|████████▌ | 273/320 [00:01<00:00, 280.55it/s]Loading weights:  95%|█████████▍| 303/320 [00:01<00:00, 283.37it/s]Loading weights: 100%|██████████| 320/320 [00:01<00:00, 211.15it/s]
+{"event": "oracle_write_hold", "model": "native", "regime": "full", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "native", "regime": "full", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "native", "regime": "full", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "native", "regime": "hold", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "native", "regime": "hold", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "native", "regime": "hold", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "native", "regime": "oracle", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "native", "regime": "oracle", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "native", "regime": "oracle", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "native", "regime": "hold_oracle", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "native", "regime": "hold_oracle", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "native", "regime": "hold_oracle", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "shared", "regime": "full", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "shared", "regime": "full", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "shared", "regime": "full", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "shared", "regime": "hold", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "shared", "regime": "hold", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "shared", "regime": "hold", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "shared", "regime": "oracle", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "shared", "regime": "oracle", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "shared", "regime": "oracle", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "shared", "regime": "hold_oracle", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "shared", "regime": "hold_oracle", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "shared", "regime": "hold_oracle", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_all", "regime": "full", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_all", "regime": "full", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_all", "regime": "full", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_all", "regime": "hold", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_all", "regime": "hold", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_all", "regime": "hold", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_all", "regime": "oracle", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_all", "regime": "oracle", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_all", "regime": "oracle", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_all", "regime": "hold_oracle", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_all", "regime": "hold_oracle", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_all", "regime": "hold_oracle", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_question", "regime": "full", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_question", "regime": "full", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_question", "regime": "full", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_question", "regime": "hold", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_question", "regime": "hold", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_question", "regime": "hold", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_question", "regime": "oracle", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_question", "regime": "oracle", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_question", "regime": "oracle", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_question", "regime": "hold_oracle", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_question", "regime": "hold_oracle", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "shared_question_trained_question", "regime": "hold_oracle", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "gdn_all_tokens", "regime": "full", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "gdn_all_tokens", "regime": "full", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "gdn_all_tokens", "regime": "full", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "gdn_all_tokens", "regime": "hold", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "gdn_all_tokens", "regime": "hold", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "gdn_all_tokens", "regime": "hold", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "gdn_all_tokens", "regime": "oracle", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "gdn_all_tokens", "regime": "oracle", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "gdn_all_tokens", "regime": "oracle", "queries": 18, "total": 18}
+{"event": "oracle_write_hold", "model": "gdn_all_tokens", "regime": "hold_oracle", "queries": 6, "total": 18}
+{"event": "oracle_write_hold", "model": "gdn_all_tokens", "regime": "hold_oracle", "queries": 12, "total": 18}
+{"event": "oracle_write_hold", "model": "gdn_all_tokens", "regime": "hold_oracle", "queries": 18, "total": 18}

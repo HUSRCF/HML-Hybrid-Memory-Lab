@@ -5,11 +5,16 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Status: active; the fixed-input recurrent-hold factorial is running.**
-All 229 regression tests, two opposite-order 360-readout smokes and 120 complete
-historical-cache preservation checks passed. The full 6,720-readout experiment
-keeps original tokens and positions while crossing privileged recurrent-update
-holds with question-time evidence access. Complete outcomes are pending.
+**Status: active; the complete fixed-input recurrent-hold factorial is audited.**
+All 6,720 readouts, 229 regression tests, two opposite-order 360-readout smokes
+and 120 complete historical-cache preservation checks passed operational gates.
+The original tokens and positions stay fixed. Native joint accuracy is 1/48
+originally, 0/48 with update holds, 13/48 with oracle reading and 48/48 with both.
+Update holds alone give 0/48 in all five configurations. Shared/all already
+reaches 48/48 with oracle reading and falls to 47/48 with both interventions.
+These are hindsight-oracle controls on eight reused streams. They reveal
+conditional path interactions, without establishing natural GDN damage or a
+universal architectural benefit. All previous failed scientific criteria remain.
 
 The previous complete text-competence factorial diagnostic is audited.
 All 6,720 registered readouts and 223 regression tests passed operational checks.
@@ -20,12 +25,13 @@ cohort. Text, positions and prefix computation change; they do not uniquely
 localize GDN damage or establish a new architecture. All earlier failed
 scientific criteria remain failed. GDN-only means adapter scope; Attention stays.
 
-- [Running fixed-input recurrent-hold protocol and interpretation limits](materials/updates/oracle-write-hold-20261115/README.md)
+- [All twenty fixed-input recurrent-hold cells, controls and limitations](materials/updates/oracle-write-hold-20261115/README.md)
 - [All twenty previous text-control cells, limitations and audit](materials/updates/text-competence-factorial-20261115/README.md)
 - [Previous frozen-prefix evidence-access diagnostic](materials/updates/trained-timing-evidence-access-20261115/README.md)
 - [Previous matched-training confirmation](materials/updates/trained-shared-timing-20261115/README.md)
 - [Research status and archived materials](materials/README.md)
-- [Registered text-control protocol](configs/text_competence_factorial_plan.json)
+- [Registered fixed-input recurrent-hold protocol](configs/oracle_write_hold_factorial_plan.json)
+- [Previous registered text-control protocol](configs/text_competence_factorial_plan.json)
 - [Machine-readable progress](configs/experiment_progress.json)
 - [Full backup files](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases)
 
