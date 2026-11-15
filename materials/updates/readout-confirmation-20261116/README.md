@@ -66,10 +66,10 @@ The final column describes an output-value match, not proof of attending to a pa
 
 ## Complete artifacts
 
-- [Independent primary audit](readout-confirmation-primary-audit-20261116-01.json) and [complete run manifest](primary-run-manifest.json).
+- [Independent primary audit](readout-confirmation-primary-audit-20261116-01.json) and [complete run manifest](primary-run-manifest.json.gz).
 - [All 6,000 physical answers](exports/physical-readouts.csv), [6,480 logical bindings](exports/all-logical-bindings.csv), [all 1,080 role-condition cells](exports/all-role-condition-cells.csv), [all 80 base-stream rows](exports/all-base-streams.csv).
 - [All six-answer units](exports/all-joint6-units.csv), [all joint model pairs](exports/all-joint6-model-pairs.csv), [all model/task contrasts](exports/all-model-task-contrasts.csv).
 - [Wordings](exports/all-wording-pairs.csv), [current/initial](exports/all-current-initial-pairs.csv), [renaming](exports/all-account-renaming-pairs.csv), [tail lengths](exports/all-tail-length-pairs.csv), [nominal account pools](exports/all-active-account-pairs.csv), [update relevance](exports/all-update-relevance-pairs.csv), [before/after normal updates](exports/all-before-after-pairs.csv).
-- All five raw JSONL files, complete source/test/input receipts and complete logs are retained in this folder. The external archive additionally includes literal inputs, sealed sources and trained checkpoint dependencies. Native 2B pretrained weights and the existing Conda environment remain separate dependencies.
+- The complete run manifest is losslessly gzipped with a byte-verification receipt; the audited native run file is unchanged. All five raw JSONL files, complete source/test/input receipts and complete logs are retained in this folder. The external archive additionally includes literal inputs, sealed sources and trained checkpoint dependencies. Native 2B pretrained weights and the existing Conda environment remain separate dependencies.
 
 Full backup packaging/publication is the next operational step. The broader hybrid-memory research goal remains active.

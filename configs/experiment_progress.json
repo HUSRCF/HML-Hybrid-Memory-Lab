@@ -13660,6 +13660,16 @@
         }
       }
     },
-    "architecture_superiority_claim": false
+    "architecture_superiority_claim": false,
+    "repository_manifest_lossless_gzip": {
+      "status": "original_manifest_exact_bytes_preserved_in_lossless_gzip",
+      "audited_native_run_manifest": "/media/990Pro/Code/SAS/runs/memory_update/readout-confirmation-primary-20261116-01/manifest.json",
+      "original_sha256": "2e1134cd2feabb39581847f40b9716ab26e1e0fd083373d2754eaa8a6931a86a",
+      "original_bytes": 101641483,
+      "gzip_sha256": "f980aa092fecc80671f8293997951ad8ec0cc5f91805a0267bf2c21725c00960",
+      "gzip_bytes": 4430505,
+      "audited_native_run_unchanged": true,
+      "scientific_source_files_changed": false
+    }
   }
 }
