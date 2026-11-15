@@ -1,0 +1,16 @@
+{
+  "status": "complete_confirmation_archive_decompressed_bytes_verified",
+  "created_utc": "2026-11-15T17:11:18.368781+00:00",
+  "archive": "/media/990Pro/Code/SAS/backups/readout-confirmation-20261116-01/readout-confirmation-20261116.tar.gz",
+  "archive_sha256": "bf9c9e7b36523b0fafc443efbd5e834e8b6da94fd92af4cb18d47dbebe65934d",
+  "archive_bytes": 41425377,
+  "files": 1606,
+  "archive_members": 1607,
+  "manifest": "/media/990Pro/Code/SAS/backups/readout-confirmation-20261116-01/MANIFEST.files.json",
+  "manifest_sha256": "cf24f223ccd0875b431775afb7924a6a4df61c1a57cd766e7ad342cbcdf9bcbe",
+  "source_audit_sha256": "234a068b713d4ecee658c3bf1be1977cbeefecbcab29357c3fd1e5a6b1ebb86c",
+  "packaging_source_sha256": "8dbb633d68e541866f87f42ed3f25a570d0d505858348c691f8bfbfe5592e623",
+  "new_native_inference": false,
+  "active_packaging_logs_excluded": true,
+  "pretrained_llm_weights_included": false
+}

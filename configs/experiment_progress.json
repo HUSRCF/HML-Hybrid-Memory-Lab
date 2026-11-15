@@ -13412,7 +13412,7 @@
     "remote_assets_verified": 3
   },
   "readout_confirmation": {
-    "status": "complete6000_independently_audited_and_all_answers_exported",
+    "status": "complete_audited_exported_and_local_backup_byte_verified",
     "protocol": "configs/readout_adapter_confirmation_plan.json",
     "protocol_sha256": "30fe0e1107b57ff48dec43a2015ddd29c4e8f9c168b2b8e4dd1895c326a8fb33",
     "predecessor_sources_immutable": 282,
@@ -13449,7 +13449,7 @@
       89006,
       89007
     ],
-    "next_action": "Publish and roundtrip-verify the complete backup;interpret SET improvements and COPY retention against all frozen simple baselines before registering any further method. No tuning or resampling of this completed cohort.",
+    "next_action": "Publish the complete fixed-model confirmation Release and independently roundtrip-verify all remote assets. No new inference or scientific source changes.",
     "full_tests_passed": 372,
     "full_tests_seconds": 463.121,
     "source_seal": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-source-seal-20261115-01.json",
@@ -13670,6 +13670,11 @@
       "gzip_bytes": 4430505,
       "audited_native_run_unchanged": true,
       "scientific_source_files_changed": false
-    }
+    },
+    "package_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-package-20261116-01.json",
+    "package_receipt_sha256": "0c5c4915948d082e4a8704039998af74155a2a767baad2c6b79de16b2a7cd653",
+    "archive_sha256": "bf9c9e7b36523b0fafc443efbd5e834e8b6da94fd92af4cb18d47dbebe65934d",
+    "archive_bytes": 41425377,
+    "archive_files": 1606
   }
 }
