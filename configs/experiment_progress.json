@@ -6012,7 +6012,7 @@
     "branch_decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
   },
   "last_completed_phase": "question_state_freeze_all6912audited_negative_outcome",
-  "next_research_step": "Monitor existing pipeline41240: complete three432step arms and all1728fit readouts per arm; independent full audit precedes any generation of SET88000/COPY89000confirmation. Current results establish training-path validity only.",
+  "next_research_step": "Continue existing pipeline41240 with no restart and no source edits. Query has reached final432checkpoint; complete all1728fit readouts for Query,Gate and joint plus independent full audit before any confirmation construction. Prepared exporter independently regrades all6912baseline+adapted fit outputs,all5184pairs and all1296steps only after audited completion.",
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
     "plan": "configs/copy_dependency_transfer_plan.json",
@@ -13264,7 +13264,7 @@
     "broader_research_goal_active": true
   },
   "learned_readout_controls": {
-    "status": "all_three_real_scratch_updates_and_independent282source_safety_passed_scheduled_training_process_running",
+    "status": "three_arm_fixed_budget_training_running_query432complete_full_fit_in_progress",
     "protocol": "configs/readout_adapter_training_plan.json",
     "protocol_sha256": "d8c7564a1dcaf73629a9d4a36fbd8a36f1bf566d4144b8a0adc1cfa664ae049b",
     "predecessor_sources_immutable": 268,
@@ -13277,7 +13277,7 @@
       "query_gate"
     ],
     "new_parameters_each": 131072,
-    "next_action": "Monitor existing pipeline41240: complete three432step arms and all1728fit readouts per arm; independent full audit precedes any generation of SET88000/COPY89000confirmation. Current results establish training-path validity only.",
+    "next_action": "Continue existing pipeline41240 with no restart and no source edits. Query has reached final432checkpoint; complete all1728fit readouts for Query,Gate and joint plus independent full audit before any confirmation construction. Prepared exporter independently regrades all6912baseline+adapted fit outputs,all5184pairs and all1296steps only after audited completion.",
     "implementation_started": true,
     "new_cpu_tests_passed": 8,
     "new_cpu_tests_seconds": 20.908,
@@ -13317,12 +13317,28 @@
     "training_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-adapter-training-20261115-01",
     "training_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-adapter-training-audit-20261115-01.json",
     "native_safety_audited": true,
-    "scheduled_training_started": false,
+    "scheduled_training_started": true,
     "confirmation_generated": false,
     "corrected_smoke_audit_sha256": "61d5ea47ce30e51e355afbed2d68dbf167ede0990c36f273ac3fbc240ae27a25",
     "corrected_smoke_correction_audit_sha256": "20b4f06ec7785c1eda9cde6b9136590f3896f3b9338817cf8d4163adfd91f3d4",
     "native_scratch_optimizer_updates": 3,
     "scheduled_training_process_started": true,
-    "native_forward_equivalence_each_arm_before_and_after_update": true
+    "native_forward_equivalence_each_arm_before_and_after_update": true,
+    "training_progress_snapshot": {
+      "query": {
+        "optimizer_steps": 432,
+        "fit_readouts": 310
+      },
+      "gate": {
+        "optimizer_steps": 0,
+        "fit_readouts": 0
+      },
+      "query_gate": {
+        "optimizer_steps": 0,
+        "fit_readouts": 0
+      }
+    },
+    "pending_complete_fit_exporter": "/tmp/export_readout_adapter_fit.py",
+    "pending_complete_fit_exporter_sha256": "8eb0d0556e1db9ba8d85bbc110551ec660333e1d71704508dd945df3f1027855"
   }
 }

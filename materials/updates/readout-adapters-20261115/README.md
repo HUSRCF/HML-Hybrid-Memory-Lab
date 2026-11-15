@@ -1,6 +1,6 @@
 # Frozen-GDN learned readout controls
 
-Current checkpoint: corrected real2B one-update safety and independent282source audit passed for all three arms. Native logits/loss/all48final tensors match bit-for-bit before and after scratch updates; original fact prefixes and frozen weights remain exact. The scheduled three-arm training process is running. No completed fit or future confirmation result is claimed.
+Current checkpoint: corrected real2B one-update safety and independent282source audit passed for all three arms. Native logits/loss/all48final tensors match bit-for-bit before and after scratch updates; original fact prefixes and frozen weights remain exact. Query has completed its fixed432optimizer steps and is evaluating all1728observed fit questions. Gate and joint follow in the same audited pipeline. No completed three-arm fit or future confirmation result is claimed.
 
 Protocol registered before implementation, packet construction and training: `configs/readout_adapter_training_plan.json`. Three matched131072parameter controls change only Query, only pre-sigmoid output gate,or both at layer15. Existing GDN weights and all normal fact-prefix caches remain fixed.
 
