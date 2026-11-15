@@ -5,7 +5,6 @@ import hashlib
 import json
 from pathlib import Path
 import subprocess
-import tempfile
 
 ROOT=Path(__file__).resolve().parents[1]
 REPO='HUSRCF/HML-Hybrid-Memory-Lab'
@@ -23,6 +22,22 @@ def command(args,check=True):
 
 
 def api(path):return json.loads(command(['gh','api',path]).stdout)
+
+
+def find_release():
+    result=command(['gh','api',f'repos/{REPO}/releases/tags/{TAG}'],check=False)
+    if not result.returncode:return json.loads(result.stdout)
+    if '404' not in result.stderr.decode(errors='replace'):
+        raise RuntimeError('Cannot inspect release state; no mutation attempted')
+    # Unpublished drafts need not resolve through the public tag endpoint.
+    page=1
+    while True:
+        releases=api(f'repos/{REPO}/releases?per_page=100&page={page}')
+        matches=[r for r in releases if r['tag_name']==TAG]
+        if len(matches)>1:raise ValueError('Multiple matching drafts require explicit reconciliation')
+        if matches:return matches[0]
+        if len(releases)<100:return None
+        page+=1
 
 
 def write(path,value):path.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
@@ -59,17 +74,23 @@ def publish(args):
         'tag':TAG,'target_commit':target,'audit_sha256':sha(args.audit),'archive_local_verification':verification,
         'committed_snapshot_files_byte_verified':code_files,'expected_assets':expected,
         'publication_source_sha256':sha(Path(__file__)),'release_notes_sha256':sha(args.notes)}
+    if args.prior_receipt:
+        previous=json.loads(args.prior_receipt.read_text())
+        if previous['status']!='failed' or previous['target_commit']!=target or previous['audit_sha256']!=sha(args.audit):
+            raise ValueError('Retain the exact prior failed publication attempt')
+        receipt['prior_failed_receipt']={'path':str(args.prior_receipt),'sha256':sha(args.prior_receipt),
+            'source_sha256':previous['publication_source_sha256']}
     write(args.receipt,receipt)
     try:
-        route=f'repos/{REPO}/releases/tags/{TAG}'
-        existing=command(['gh','api',route],check=False)
-        if existing.returncode:
-            if '404' not in existing.stderr.decode(errors='replace'):
-                raise RuntimeError('Cannot inspect release state; no mutation attempted')
+        release=find_release()
+        if release is None:
             command(['gh','release','create',TAG,*map(str,files),'--repo',REPO,'--target',target,
                 '--draft','--title','Fixed-input recurrent-hold factorial: complete evidence',
                 '--notes-file',str(args.notes)])
-        release=api(route)
+            release=find_release()
+        if release is None:raise ValueError('Created draft is not visible to its owner')
+        route=f'repos/{REPO}/releases/{release["id"]}'
+        receipt['release_id']=release['id']
         if release['target_commitish']!=target:raise ValueError('Preserve a pre-existing release with a different target')
         assets={a['name']:a for a in release['assets']}
         if set(assets)<set(expected) and release['draft']:
@@ -85,16 +106,14 @@ def publish(args):
             a=assets[name]
             if a['size']!=want['bytes'] or a.get('digest')!='sha256:'+want['sha256']:
                 raise ValueError('Server-reported asset size/digest mismatch')
-        # Download the actual remote payloads into temporary storage, then remove duplicates.
-        with tempfile.TemporaryDirectory(prefix='hml-write-hold-roundtrip-') as folder:
-            command(['gh','release','download',TAG,'--repo',REPO,'--dir',folder])
-            actual={p.name:p for p in Path(folder).iterdir()}
-            if set(actual)!=set(expected):raise ValueError('Downloaded asset set mismatch')
-            for name,want in expected.items():
-                if actual[name].stat().st_size!=want['bytes'] or sha(actual[name])!=want['sha256']:
-                    raise ValueError('Downloaded remote bytes differ from verified local snapshot')
+        # Asset IDs also work while the tag has not been published.
+        for name,want in expected.items():
+            payload=command(['gh','api','-H','Accept: application/octet-stream',
+                f'repos/{REPO}/releases/assets/{assets[name]["id"]}']).stdout
+            if len(payload)!=want['bytes'] or hashlib.sha256(payload).hexdigest()!=want['sha256']:
+                raise ValueError('Downloaded remote bytes differ from verified local snapshot')
         if release['draft']:
-            command(['gh','release','edit',TAG,'--repo',REPO,'--draft=false','--latest=false'])
+            command(['gh','api','--method','PATCH',route,'-F','draft=false','-f','make_latest=false'])
         published=api(route)
         if (published['draft'] or published['target_commitish']!=target or
             api(f'repos/{REPO}/commits/{TAG}')['sha']!=target):raise ValueError('Final public release/tag verification failed')
@@ -115,6 +134,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--audit',type=Path,required=True)
     p.add_argument('--backup',type=Path,required=True);p.add_argument('--notes',type=Path,required=True)
     p.add_argument('--target',required=True);p.add_argument('--receipt',type=Path,required=True)
+    p.add_argument('--prior-receipt',type=Path)
     result=publish(p.parse_args());print(json.dumps({k:result[k] for k in ('status','release_url','target_commit','committed_snapshot_files_byte_verified')}),flush=True)
 
 if __name__=='__main__':main()

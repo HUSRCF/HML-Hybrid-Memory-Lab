@@ -96,3 +96,11 @@ CSV逐字段核验覆盖6720行原始表、1920行配对表及1680行交互表�
 全部源码、原始读出、预登记、反向顺序smoke、状态/门控/Attention/缓存证明及导出表随本轮快照备份。预登记内容见[原始说明](pre-inference-README.md)。
 
 ![全部配置与条件](oracle-write-hold-figure-20261115-01.png)
+
+## 完整快照已发布
+
+[Release及三个附件](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/oracle-write-hold-factorial-2026-11-15)。归档含1775个载荷文件、1776个成员，12781070字节；SHA256为`8c948947c3e9d2b209183acf94509117e417e3649e591f5e748232baed5e562d`。
+
+快照提交为`2593c263d408a15b8137ce300272827b173ccab8`，其中226份提交文件按归档逐字节核对；三个附件实际下载核验通过。最终回执是[publication-02](oracle-write-hold-publication-20261115-02.json)。
+
+首次上传后，草稿按标签查询返回404；改为按Release及附件ID下载、核验和发布。保留[首次记录](oracle-write-hold-publication-20261115-01.json)及两份对应源代码，修正限于发布工具，180份测量源码未变。快照保持发布前版本，最终操作回执与工具修正另存于主分支。

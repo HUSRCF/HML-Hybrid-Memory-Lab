@@ -1,0 +1,65 @@
+{
+  "status": "published_remote_assets_roundtrip_byte_verified",
+  "started_utc": "2026-11-15T00:21:40.378580+00:00",
+  "repository": "HUSRCF/HML-Hybrid-Memory-Lab",
+  "tag": "oracle-write-hold-factorial-2026-11-15",
+  "target_commit": "2593c263d408a15b8137ce300272827b173ccab8",
+  "audit_sha256": "7be39244115b2f489fabcb474d7583afc4bdec862ad8336adef905ecd3f9e680",
+  "archive_local_verification": {
+    "status": "all_archive_members_byte_verified",
+    "files_verified": 1775,
+    "archive_entries": 1776,
+    "archive": "oracle-write-hold-20261115.tar.gz",
+    "bytes": 12781070,
+    "sha256": "8c948947c3e9d2b209183acf94509117e417e3649e591f5e748232baed5e562d"
+  },
+  "committed_snapshot_files_byte_verified": 226,
+  "expected_assets": {
+    "oracle-write-hold-20261115.tar.gz": {
+      "bytes": 12781070,
+      "sha256": "8c948947c3e9d2b209183acf94509117e417e3649e591f5e748232baed5e562d"
+    },
+    "file_manifest.json": {
+      "bytes": 425904,
+      "sha256": "5b5826fd2657db388a480202e52c893fc7a5a77d4e23ea712d0623f7e4b06630"
+    },
+    "local_verification.json": {
+      "bytes": 256,
+      "sha256": "ba30e744a4301a22106c00475be69558880ee2b826e9239ddf635a93bbe50b9f"
+    }
+  },
+  "publication_source_sha256": "1a40e3ee8150f1f6d71f494a013760224b380bc836b6799a32f57499962d6555",
+  "release_notes_sha256": "698bd97a4bc14a6cade1e4e22562765cd5e1fc2ce496df2824dcc4491247f481",
+  "prior_failed_receipt": {
+    "path": "/media/990Pro/Code/SAS/artifacts/memory_update/oracle-write-hold-publication-20261115-01.json",
+    "sha256": "3205e3f0e981de2a36d5403494f65f2706f7e3ee106dbfa5ef2f4d5903101e2a",
+    "source_sha256": "f33f9baebe4b1b1795d33e236340105b5d785084b0b7990696cd23a680004547"
+  },
+  "release_id": 445696168,
+  "completed_utc": "2026-11-15T00:22:04.704240+00:00",
+  "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/oracle-write-hold-factorial-2026-11-15",
+  "published_at": "2026-11-15T00:22:02Z",
+  "remote_assets": [
+    {
+      "name": "oracle-write-hold-20261115.tar.gz",
+      "id": 749235543,
+      "bytes": 12781070,
+      "sha256": "8c948947c3e9d2b209183acf94509117e417e3649e591f5e748232baed5e562d",
+      "downloaded_bytes_verified": true
+    },
+    {
+      "name": "file_manifest.json",
+      "id": 749235530,
+      "bytes": 425904,
+      "sha256": "5b5826fd2657db388a480202e52c893fc7a5a77d4e23ea712d0623f7e4b06630",
+      "downloaded_bytes_verified": true
+    },
+    {
+      "name": "local_verification.json",
+      "id": 749235544,
+      "bytes": 256,
+      "sha256": "ba30e744a4301a22106c00475be69558880ee2b826e9239ddf635a93bbe50b9f",
+      "downloaded_bytes_verified": true
+    }
+  ]
+}

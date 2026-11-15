@@ -21,3 +21,5 @@
 - [初始完整研究备份与其他既有检查点](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/research-backup-2026-11-15)
 
 已冻结的运行和数据目录保持原名。重新执行会要求新的输出目录，便于同时保留原始证据与重放结果。
+
+归档保存发布前代码。最终发布回执与草稿查询工具修正随后记录于本目录的`oracle-write-hold-publication-20261115-02.json`及主分支，180份测量源码保持原哈希。

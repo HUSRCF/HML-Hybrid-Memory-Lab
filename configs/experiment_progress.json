@@ -11009,7 +11009,7 @@
     "gdn_only_denotes_adapter_scope": true
   },
   "oracle_write_hold_factorial": {
-    "status": "completed_audited_exported_pending_backup",
+    "status": "published_remote_assets_roundtrip_byte_verified",
     "protocol": "configs/oracle_write_hold_factorial_plan.json",
     "protocol_sha256": "b05fc0ee3b1a1134e54e2a0c43ee815a650b08599c9654122e87682d1f9710e1",
     "prior_runtime_sources_preserved": 172,
@@ -11018,7 +11018,7 @@
     "primary_readouts_planned": 6720,
     "new_scientific_results": true,
     "prior_failed_gates_unchanged": true,
-    "next_action": "Byte-verify full snapshot, commit exact artifacts, publish release and roundtrip all remote assets; retain all paired regressions and old failed criteria.",
+    "next_action": "Before any training or scaleup, preregister controls separating relevant-update selection from update budget and decay/write effects. Retain all5models, regressions and original failed scientific gates; no architecture superiority claim.",
     "full_tests_passed": 229,
     "full_tests_seconds": 157.269,
     "source_dataset": "/media/990Pro/Code/SAS/datasets/memory_update/oracle-write-hold-factorial-v1",
@@ -11040,17 +11040,41 @@
     "complete_cache_fields_per_prefix": 48,
     "historical_kv_fields_per_prefix": 12,
     "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/oracle-write-hold-factorial-20261115-01",
-    "last_progress_utc": "2026-11-14T23:42:00.547829+00:00",
-    "primary_completed_readouts_at_checkpoint": 992,
+    "last_progress_utc": "2026-11-15T00:22:04.704240+00:00",
+    "primary_completed_readouts_at_checkpoint": 6720,
     "primary_progress_at_checkpoint": {
       "native": {
         "full": 336,
         "hold": 336,
-        "oracle": 320,
-        "hold_oracle": 0
+        "oracle": 336,
+        "hold_oracle": 336
+      },
+      "shared": {
+        "full": 336,
+        "hold": 336,
+        "oracle": 336,
+        "hold_oracle": 336
+      },
+      "shared_question_trained_all": {
+        "full": 336,
+        "hold": 336,
+        "oracle": 336,
+        "hold_oracle": 336
+      },
+      "shared_question_trained_question": {
+        "full": 336,
+        "hold": 336,
+        "oracle": 336,
+        "hold_oracle": 336
+      },
+      "gdn_all_tokens": {
+        "full": 336,
+        "hold": 336,
+        "oracle": 336,
+        "hold_oracle": 336
       }
     },
-    "primary_scientific_results_published": false,
+    "primary_scientific_results_published": true,
     "completed_utc": "2026-11-15T00:05:39.366104+00:00",
     "primary_manifest_sha256": "290d0cd3d8a4dc63340bf0cda5be695238ab581c641b0703f0feaa4bb8632fd3",
     "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/oracle-write-hold-primary-audit-20261115-01.json",
@@ -11392,6 +11416,25 @@
     "source_files_verified": 180,
     "question_only_native_prefix_checks": 56,
     "all_inference_jobs_terminal": true,
-    "new_training_or_scaleup_triggered": false
+    "new_training_or_scaleup_triggered": false,
+    "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/oracle-write-hold-publication-20261115-02.json",
+    "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/oracle-write-hold-factorial-2026-11-15",
+    "release_target_commit": "2593c263d408a15b8137ce300272827b173ccab8",
+    "backup": {
+      "status": "all_archive_members_byte_verified",
+      "files_verified": 1775,
+      "archive_entries": 1776,
+      "archive": "oracle-write-hold-20261115.tar.gz",
+      "bytes": 12781070,
+      "sha256": "8c948947c3e9d2b209183acf94509117e417e3649e591f5e748232baed5e562d"
+    },
+    "backup_manifest_sha256": "5b5826fd2657db388a480202e52c893fc7a5a77d4e23ea712d0623f7e4b06630",
+    "remote_assets_verified": 3,
+    "remote_assets_actual_download_bytes": 13207230,
+    "committed_snapshot_files_byte_verified": 226,
+    "source_files_unchanged_after_publication": 180,
+    "all_phase_jobs_terminal": true,
+    "prior_publication_failure_preserved": "/media/990Pro/Code/SAS/artifacts/memory_update/oracle-write-hold-publication-20261115-01.json",
+    "publication_fix_scope": "Release draft lookup and asset downloads by ID only; outside all180sealed measurement sources."
   }
 }
