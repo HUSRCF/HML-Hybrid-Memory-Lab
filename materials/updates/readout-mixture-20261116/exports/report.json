@@ -1,0 +1,56 @@
+{
+  "status": "all2400_observed_final_fit_readouts_independently_regraded",
+  "created_utc": "2026-11-15T18:22:49.280161+00:00",
+  "source_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01",
+  "training_audit_sha256": "cf2b4e138e7da1a511edeb08e20f37d8c1482075a84da4433d2a183a4852a2e2",
+  "fit_not_confirmation": true,
+  "summary": {
+    "set_replay": {
+      "set": {
+        "correct": 853,
+        "questions": 864
+      },
+      "copy": {
+        "correct": 0,
+        "questions": 0
+      }
+    },
+    "set_copy_mix": {
+      "set": {
+        "correct": 857,
+        "questions": 864
+      },
+      "copy": {
+        "correct": 619,
+        "questions": 672,
+        "logical_correct": 811,
+        "logical_bindings": 864,
+        "joint6_correct": 52,
+        "joint6_units": 96,
+        "joint_by_depth": {
+          "1": 32,
+          "2": 15,
+          "3": 5
+        }
+      }
+    }
+  },
+  "set_mix_vs_replay_repairs": 8,
+  "set_mix_vs_replay_regressions": 4,
+  "table_rows": {
+    "physical-readouts.csv": 2400,
+    "all-logical-fit-bindings.csv": 2592,
+    "all864-training-steps.csv": 864,
+    "paired-set-fit.csv": 864,
+    "all96-copy-joint6-fit.csv": 96,
+    "all-role-condition-cells.csv": 162
+  },
+  "new_model_inference": false,
+  "architecture_superiority_claim": false,
+  "prior_failed_criteria_unchanged": {
+    "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+    "matched_question_positive_joint_gain_over_native": false,
+    "matched_question_no_all_trained_all_deployed_correct_regression": false
+  },
+  "source_sha256": "029a966313aeacaef1d2cd6526a1d9cda18b96772312c4dd64dcaa72c89bd26b"
+}

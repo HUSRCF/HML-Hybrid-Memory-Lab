@@ -1,0 +1,21 @@
+{
+  "status": "all2400_observed_final_fit_readouts_independently_regraded",
+  "table_rows": {
+    "physical-readouts.csv": 2400,
+    "all-logical-fit-bindings.csv": 2592,
+    "all864-training-steps.csv": 864,
+    "paired-set-fit.csv": 864,
+    "all96-copy-joint6-fit.csv": 96,
+    "all-role-condition-cells.csv": 162
+  },
+  "files_sha256": {
+    "all-logical-fit-bindings.csv": "f0216b3e90780dd3c3e614f1e632445508b6c1c47ff264d8a15d4e96813ad260",
+    "all-role-condition-cells.csv": "e6c5999745b0d48991eb0f5481778c3bb30dee2250115c8873f7e7cfc371243f",
+    "all864-training-steps.csv": "b1d4c258368f66c5a6bedc6433db2be2eb18a3e5b38529ad80d4e64175a5ad79",
+    "all96-copy-joint6-fit.csv": "d5507cbc1a3e22972b72b8526b87d0a3585b0d3344e00083008bf2f3bade603e",
+    "analysis.source.py": "029a966313aeacaef1d2cd6526a1d9cda18b96772312c4dd64dcaa72c89bd26b",
+    "paired-set-fit.csv": "de88e8ce1c1b6d84beacb08e9a1c503b14cc1045a735d1037765a9a4b36ddc66",
+    "physical-readouts.csv": "2100f1704793a8b67a9d3c6a7eacd9b2cf75825222def32495ce9593c4d4ea3f",
+    "report.json": "a2bdb0b424c4b90d10b0859c5e538c9c8fa2db352ea2823da9b7a24740fc74db"
+  }
+}

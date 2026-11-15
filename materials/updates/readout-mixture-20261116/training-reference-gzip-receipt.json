@@ -1,0 +1,8 @@
+{
+  "status": "full256normal_history_records_exact_bytes_preserved",
+  "original_sha256": "eb275d1588b2026bf141c4e9bf6e7648ddf48434c7bf8e9b3cef1e90dc15374c",
+  "original_bytes": 20761403,
+  "gzip_sha256": "550d691f23f7210c0693dcaa36ceaede50d04e8ff49c02f43ee16c9aadce52be",
+  "gzip_bytes": 987847,
+  "audited_native_run_unchanged": true
+}

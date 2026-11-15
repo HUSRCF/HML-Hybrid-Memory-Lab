@@ -6011,7 +6011,7 @@
     "provenance": "/media/990Pro/Code/SAS/artifacts/memory_update/overwrite-history-diagnostics-20261114.provenance.json",
     "branch_decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
   },
-  "last_completed_phase": "readout_confirmation",
+  "last_completed_phase": "readout_mixture_observed_fit",
   "next_research_step": "Continue the specific live pipeline41032 through both432step regimes and all2400unique observed final readouts;independently audit. Keep all296sources unchanged. No futurecaseconstruction until complete training lock and separately registered confirmation runtime.",
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
@@ -6294,7 +6294,7 @@
     "new_training": false,
     "first_failed_operational_smoke_cause": "Not established; failed run retained. Dedicated36exact replays, unchanged288query rerun and complete5376query run all passed exact controls. No tolerance, data or mask tuning."
   },
-  "latest_completed_phase": "readout_confirmation",
+  "latest_completed_phase": "readout_mixture_observed_fit",
   "planned_copy_evidence_necessity": {
     "status": "canonical8064_completed_audited_exported_gate_passed",
     "plan": "/home/husrcf/Code/SAS/configs/copy_evidence_necessity_plan.json",
@@ -9899,7 +9899,7 @@
   "resumed_utc": "2026-11-14T18:25:03.068726+00:00",
   "resume_reason": "User explicitly asked to continue experiments after verified GitHub backup completion.",
   "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-publication-20261116-01.json",
-  "current_phase": "readout_mixture_scheduled_training",
+  "current_phase": "mixture_confirmation_full_regression_before_registration",
   "matched_shared_training_timing": {
     "status": "completed_audited_and_published_confirmation_all_three_criteria_failed",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
@@ -13684,7 +13684,7 @@
     "remote_assets_verified": 3
   },
   "readout_mixture": {
-    "status": "audited_native_safety_passed_scheduled_optimizer_updates_active",
+    "status": "completed_and_audited_paired_mixture_training",
     "protocol": "configs/readout_mixture_training_plan.json",
     "protocol_sha256": "ad9ee63e5e367e7e9ee4850585625102becc43cd624d03ad21950ca43b730f6e",
     "predecessor_sources_immutable": 289,
@@ -13697,7 +13697,7 @@
     ],
     "training_started": true,
     "confirmation_generated": false,
-    "next_action": "Continue the specific live pipeline41032 through both432step regimes and all2400unique observed final readouts;independently audit. Keep all296sources unchanged. No futurecaseconstruction until complete training lock and separately registered confirmation runtime.",
+    "next_action": "Publish complete paired training backup; execute alreadyregistered fixed seven-model confirmation. Fit isnotgeneralization; no checkpoint selection or extensions.",
     "new_cpu_tests_passed": 8,
     "new_cpu_tests_seconds": 21.479,
     "new_cpu_tests_log": "/media/990Pro/Code/SAS/logs/memory_update/readout-mixture-new-tests-20261116-01.log",
@@ -13726,17 +13726,77 @@
     "scheduled_training_process_started": true,
     "training_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01",
     "training_progress_snapshot": {
-      "captured_utc": "2026-11-15T17:56:39.793749+00:00",
+      "captured_utc": "2026-11-15T18:24:12.297905+00:00",
       "actual_logged_optimizer_updates": {
-        "set_replay": 219,
-        "set_copy_mix": 0
+        "set_replay": 432,
+        "set_copy_mix": 432
       },
-      "terminal": false
+      "terminal": true
     },
-    "scheduled_optimizer_updates_started": true
+    "scheduled_optimizer_updates_started": true,
+    "training_completed": true,
+    "training_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-mixture-training-audit-20261116-01.json",
+    "training_audit_sha256": "cf2b4e138e7da1a511edeb08e20f37d8c1482075a84da4433d2a183a4852a2e2",
+    "observed_fit_report": {
+      "status": "all2400_observed_final_fit_readouts_independently_regraded",
+      "created_utc": "2026-11-15T18:22:49.280161+00:00",
+      "source_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-mixture-training-20261116-01",
+      "training_audit_sha256": "cf2b4e138e7da1a511edeb08e20f37d8c1482075a84da4433d2a183a4852a2e2",
+      "fit_not_confirmation": true,
+      "summary": {
+        "set_replay": {
+          "set": {
+            "correct": 853,
+            "questions": 864
+          },
+          "copy": {
+            "correct": 0,
+            "questions": 0
+          }
+        },
+        "set_copy_mix": {
+          "set": {
+            "correct": 857,
+            "questions": 864
+          },
+          "copy": {
+            "correct": 619,
+            "questions": 672,
+            "logical_correct": 811,
+            "logical_bindings": 864,
+            "joint6_correct": 52,
+            "joint6_units": 96,
+            "joint_by_depth": {
+              "1": 32,
+              "2": 15,
+              "3": 5
+            }
+          }
+        }
+      },
+      "set_mix_vs_replay_repairs": 8,
+      "set_mix_vs_replay_regressions": 4,
+      "table_rows": {
+        "physical-readouts.csv": 2400,
+        "all-logical-fit-bindings.csv": 2592,
+        "all864-training-steps.csv": 864,
+        "paired-set-fit.csv": 864,
+        "all96-copy-joint6-fit.csv": 96,
+        "all-role-condition-cells.csv": 162
+      },
+      "new_model_inference": false,
+      "architecture_superiority_claim": false,
+      "prior_failed_criteria_unchanged": {
+        "matched_question_positive_joint_gain_over_all_trained_question_deployed": false,
+        "matched_question_positive_joint_gain_over_native": false,
+        "matched_question_no_all_trained_all_deployed_correct_regression": false
+      },
+      "source_sha256": "029a966313aeacaef1d2cd6526a1d9cda18b96772312c4dd64dcaa72c89bd26b"
+    },
+    "pipeline_terminal": true
   },
   "mixture_confirmation": {
-    "status": "registered_before_confirmation_implementation_or_generation",
+    "status": "implemented_full388_cpu_regression_running",
     "protocol": "configs/readout_mixture_confirmation_plan.json",
     "protocol_sha256": "8b5c777474e14bcc2debcef76aa6c9cf16e46d0843dd999709548369ac0dda69",
     "planned_sources": 303,
@@ -13745,6 +13805,12 @@
     "full_cpu_tests_required": 388,
     "cases_generated": false,
     "inference_started": false,
-    "next_action": "Implement fixedsevenmodel/observed-fresh confirmation usingonlyknown76000/61000CPUfixtures;run388tests andseal303sources. Keep live training41032running;generatefuturecases onlyaftercomplete independent training audit andcheckpointlock."
+    "next_action": "Continue specific no-retrypipeline48521; seal303sources after388tests, lock complete training then construct fixedfuture cohorts; all42observed replays before10800primary answers. Preserveall296predecessors.",
+    "implementation_started": true,
+    "cpu_tests_passed": 8,
+    "cpu_tests_seconds": 25.28,
+    "implementation_commit": "ac2ed7e",
+    "pipeline_session": 48521,
+    "pipeline_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/mixture-confirmation-pipeline-20261116-01.json"
   }
 }

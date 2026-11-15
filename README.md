@@ -5,12 +5,14 @@ Gated DeltaNet / Attention hybrid language models. The working directory keeps
 its historical name `SAS`; the current research scope is broader than sparse
 attention routing.
 
-**Current: paired Gate task-coverage controls registered and implemented.**
-The [SET replay versus SET/COPY mixture study](materials/updates/readout-mixture-20261116/README.md)
-uses identical Gate initialization, 131,072 parameters and 432 updates per regime. All eight new
-CPU tests and all 380 regression tests passed; all 296 sources are sealed. Independent observed-input
-reconstruction and real native 27/29/30-token backward/forward-equivalence safety passed. Both
-432-step regimes are now in the scheduled training pipeline; fresh confirmation remains ungenerated.
+**Current: paired Gate training and all 2,400 observed-fit answers independently audited.**
+The [complete task-coverage control](materials/updates/readout-mixture-20261116/README.md)
+retains both final432checkpoints: SET replay853/864; mixture SET857/864 and COPY619/672.
+The common SET fit has eight repairs and four regressions. These are observed fits, not generalization.
+The [seven-model confirmation](materials/updates/mixture-confirmation-20261116/README.md) was registered
+before implementation or new cases. Eight added CPU contracts passed; the full388regression is running.
+It will separately retain all archived development answers and the fixed new-stream comparison,
+without Oracle, donor forwards, checkpoint selection or additional training. Shared-block superiority remains unestablished.
 
 **Latest completed: all 6,000 new-stream readout-control answers independently audited.**
 The [complete SET/COPY confirmation](materials/updates/readout-confirmation-20261116/README.md)
@@ -36,7 +38,7 @@ All 372 tests and 289 sealed sources passed; every learned readout's 200 normal 
 match fixed GDN across all 48 cache fields, layouts, metadata and prefix logits.
 Complete raw tables, audits and plots are committed. The [complete backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/readout-confirmation-2026-11-16)
 is published; all three assets were downloaded and byte-verified. Next: same-budget SET/COPY-mixture
-simple controls before a shared-block method. The next stage is not yet trained or generated.
+simple controls before a shared-block method; the paired training is now complete, as reported above.
 
 **Completed: all three readout controls trained and all observed-fit answers audited.**
 The [complete training record](materials/updates/readout-adapters-20261115/README.md)
