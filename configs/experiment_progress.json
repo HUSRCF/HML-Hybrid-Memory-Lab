@@ -13468,6 +13468,9 @@
     "pipeline_session": 6705,
     "pipeline_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-pipeline-20261116-01.json",
     "primary_run": "/media/990Pro/Code/SAS/runs/memory_update/readout-confirmation-primary-20261116-01",
-    "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-primary-audit-20261116-01.json"
+    "primary_audit": "/media/990Pro/Code/SAS/artifacts/memory_update/readout-confirmation-primary-audit-20261116-01.json",
+    "pending_complete_analysis": "/tmp/export_readout_confirmation.py",
+    "pending_complete_analysis_sha256": "ff3484b94db1ad4cb380b026f4518f87695c071d577b792c2ff550bc83c17074",
+    "pending_complete_analysis_scope": "After independent full audit only:all6000physical answers,6480logical bindings,all10model pairs,1080complete role-condition cells,80basestream rows,all960joint6units andeverywording/version/name/length/load/relevance/before-after pair. Semantic smoke checked on a separate trivial COPY fixture without reading prospective model answers."
   }
 }
