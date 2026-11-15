@@ -1,0 +1,233 @@
+{
+  "status": "public_commit_and_registered_synthetic_material_scope_verified",
+  "created_utc": "2026-11-15T12:57:07.201308+00:00",
+  "repository": "HUSRCF/HML-Hybrid-Memory-Lab",
+  "repository_visibility": "public",
+  "target_public_commit": "d44559b72e8d02793ef666f52fcb9dbf020b2532",
+  "prior_public_release": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/version-question-control-2026-11-15",
+  "archive_sha256": "75979d08eddad6f2de0694b27663b9c3f82dea323c6c4e5fb6f442996d671315",
+  "archive_members": 1474,
+  "members_identical_to_public_git_blob": 1432,
+  "remaining_registered_synthetic_or_runtime_members": [
+    {
+      "path": "storage/datasets/memory_update/question-state-freeze-v1/cases.json",
+      "bytes": 4932723,
+      "sha256": "502e6f16906e201aa4b595d8eded44089dd1ed7710ebfd0dd5c3dff5fbe916f0"
+    },
+    {
+      "path": "storage/datasets/memory_update/question-state-freeze-v1/queries.json",
+      "bytes": 41732943,
+      "sha256": "0c32b7023e89ccd0dd3259fd90263db9f5c26be0ec23e7e5474b4657bcae0b47"
+    },
+    {
+      "path": "storage/datasets/memory_update/question-state-freeze-v1/references.json",
+      "bytes": 17910136,
+      "sha256": "c154f0f6b9782a6c9abaa4a48eed5e6e803a3958c2bd38fd9229a73b48bc7ab6"
+    },
+    {
+      "path": "storage/datasets/memory_update/question-state-freeze-v1/registry.json",
+      "bytes": 9327416,
+      "sha256": "5f8775f3a1586e2328e22024a755b093a29924cf0f2cb8e69d5f53902c273589"
+    },
+    {
+      "path": "storage/logs/memory_update/question-state-freeze-independent-inputs-20261115-01.log",
+      "bytes": 613,
+      "sha256": "d03f76904368ba887a9978e33307a4e3eea5a3646da981eda5314d89fb71c0f1"
+    },
+    {
+      "path": "storage/logs/memory_update/question-state-freeze-registration-20261115-01.log",
+      "bytes": 168,
+      "sha256": "e76d909ab715be4d5b9ed86f27e770c7939b1ca75f34c23084d63dffd59d7e2e"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-primary-20261115-01/execution.jsonl",
+      "bytes": 49066719,
+      "sha256": "9f37a4fe4cda3cf7e1cbc4aeb11331bb8a281a875e7f64308765f44d9f13d0f9"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-primary-20261115-01/freeze_all18.jsonl",
+      "bytes": 10741976,
+      "sha256": "b21f934990cf6acb3d7da94fe7f4df34e07c650ba1c6ce7842d244a5e8af58d7"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-primary-20261115-01/freeze_group0.jsonl",
+      "bytes": 5617137,
+      "sha256": "67a44b72fab5bce4297c010385658c42e00c8de067484722a6d8f8c8dc1f6763"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-primary-20261115-01/freeze_group1.jsonl",
+      "bytes": 5616268,
+      "sha256": "1870052c649051dc426e7bc14bb3437dfce3ea41fb13c181ca5085b08e727e65"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-primary-20261115-01/freeze_group2.jsonl",
+      "bytes": 5618655,
+      "sha256": "6db3631e3271f4f8d1f35023e42ff379bcfaa5172e2320c4b03f3e67cfaa5b93"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-primary-20261115-01/freeze_group3.jsonl",
+      "bytes": 5622579,
+      "sha256": "ac3177eb6335772852eef539413f44d7925ef1c8b2447c2f0c71ffb08d552eae"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-primary-20261115-01/freeze_group4.jsonl",
+      "bytes": 5625717,
+      "sha256": "0c3bb0b6a66f9bf4e044a6da9d6b089585a5f3a0a4718d03843f8e48e188e790"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-primary-20261115-01/freeze_group5.jsonl",
+      "bytes": 5625111,
+      "sha256": "6b71bbaa7e6a46a2b56bd26ce19b2cb85e13899a9c86e64e0297227c8aeed0ff"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-primary-20261115-01/installed_modeling_source.py",
+      "bytes": 93139,
+      "sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-primary-20261115-01/manifest.json",
+      "bytes": 15470651,
+      "sha256": "bce45ddf6aeaca675d6ee797a96f44fc6b0c46947b9e828a0f9707e96ebdf225"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-primary-20261115-01/normal.jsonl",
+      "bytes": 4599276,
+      "sha256": "7e10471c4b44c48591408bec8dbba81c0d91a2e61768d466b60029da8cc0bd56"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-primary-20261115-01/references.jsonl",
+      "bytes": 1820748,
+      "sha256": "492b9db55c0948fd3dd54b4d2389639f7846a80024009ac24729087bda02bcec"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-forward-20261115-01/execution.jsonl",
+      "bytes": 3066861,
+      "sha256": "27f4d5be9f655d6001df12bc6824612cd4c2a1cd98509829a1c5c6f32493c048"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-forward-20261115-01/freeze_all18.jsonl",
+      "bytes": 671427,
+      "sha256": "a7019e8e522bda473eb2cad3e3394eabd2d78b1106dd48a6d6bf274ed3d7fc30"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-forward-20261115-01/freeze_group0.jsonl",
+      "bytes": 351039,
+      "sha256": "ce2123ef0f17f9a2413f994a6c4180f3a9c08e166ff7a3092cdb6422e08d3c2c"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-forward-20261115-01/freeze_group1.jsonl",
+      "bytes": 351026,
+      "sha256": "4bc4be39081ad44f6f4d39d340c924f1dfca5650ca84ec4a1dbf5e899ee6167a"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-forward-20261115-01/freeze_group2.jsonl",
+      "bytes": 351126,
+      "sha256": "2a7614fcd4a6aeb68ed9629e39a6d764c2a88734542e78a581640f868747c6ef"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-forward-20261115-01/freeze_group3.jsonl",
+      "bytes": 351494,
+      "sha256": "236600f39e7c3e1967f55cf3fa75f8382d1f828a0d2897af62b958de3ac926fc"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-forward-20261115-01/freeze_group4.jsonl",
+      "bytes": 351649,
+      "sha256": "bf8adb4f4a94eaa74df22bdc68817bd1a95c69729db56ba3f8c1bbf0f062d613"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-forward-20261115-01/freeze_group5.jsonl",
+      "bytes": 351609,
+      "sha256": "fae9ed57cfe5a7c18cc8ece4f00182f456f526ce6bf9e237e171aeb859c539ad"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-forward-20261115-01/installed_modeling_source.py",
+      "bytes": 93139,
+      "sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-forward-20261115-01/manifest.json",
+      "bytes": 1025285,
+      "sha256": "9b74ddef20b936ebbd919535289d804b93e8ec6a243b917321b9bc228229d63f"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-forward-20261115-01/normal.jsonl",
+      "bytes": 287491,
+      "sha256": "847bad7682e8f4d8d2196b06a610cad6ce09091a6a98656032ebd55bf1ee5fba"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-forward-20261115-01/references.jsonl",
+      "bytes": 1820748,
+      "sha256": "492b9db55c0948fd3dd54b4d2389639f7846a80024009ac24729087bda02bcec"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-reverse-20261115-01/execution.jsonl",
+      "bytes": 3066861,
+      "sha256": "c48c7b3f05bd1d773161ab291c6abe4f5a6880c4021d0d2fc1588c45df4fc464"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-reverse-20261115-01/freeze_all18.jsonl",
+      "bytes": 671427,
+      "sha256": "a7019e8e522bda473eb2cad3e3394eabd2d78b1106dd48a6d6bf274ed3d7fc30"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-reverse-20261115-01/freeze_group0.jsonl",
+      "bytes": 351039,
+      "sha256": "ce2123ef0f17f9a2413f994a6c4180f3a9c08e166ff7a3092cdb6422e08d3c2c"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-reverse-20261115-01/freeze_group1.jsonl",
+      "bytes": 351026,
+      "sha256": "4bc4be39081ad44f6f4d39d340c924f1dfca5650ca84ec4a1dbf5e899ee6167a"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-reverse-20261115-01/freeze_group2.jsonl",
+      "bytes": 351126,
+      "sha256": "2a7614fcd4a6aeb68ed9629e39a6d764c2a88734542e78a581640f868747c6ef"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-reverse-20261115-01/freeze_group3.jsonl",
+      "bytes": 351494,
+      "sha256": "236600f39e7c3e1967f55cf3fa75f8382d1f828a0d2897af62b958de3ac926fc"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-reverse-20261115-01/freeze_group4.jsonl",
+      "bytes": 351649,
+      "sha256": "bf8adb4f4a94eaa74df22bdc68817bd1a95c69729db56ba3f8c1bbf0f062d613"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-reverse-20261115-01/freeze_group5.jsonl",
+      "bytes": 351609,
+      "sha256": "fae9ed57cfe5a7c18cc8ece4f00182f456f526ce6bf9e237e171aeb859c539ad"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-reverse-20261115-01/installed_modeling_source.py",
+      "bytes": 93139,
+      "sha256": "0e2cd8dc50885b2701d26b116c585eedcdc62a24080ec34345af55b963126ded"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-reverse-20261115-01/manifest.json",
+      "bytes": 1025283,
+      "sha256": "15d72a3f675a656b2f412e8749c18c42ed712ff7c1be309f8f9af62a05605c5e"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-reverse-20261115-01/normal.jsonl",
+      "bytes": 287491,
+      "sha256": "847bad7682e8f4d8d2196b06a610cad6ce09091a6a98656032ebd55bf1ee5fba"
+    },
+    {
+      "path": "storage/runs/memory_update/question-state-freeze-smoke-reverse-20261115-01/references.jsonl",
+      "bytes": 1820748,
+      "sha256": "492b9db55c0948fd3dd54b4d2389639f7846a80024009ac24729087bda02bcec"
+    }
+  ],
+  "credential_pattern_hits": [],
+  "excluded": [
+    "pretrained weights",
+    "environments",
+    "caches",
+    "SSH/AWS material",
+    "credential files"
+  ],
+  "source_sha256": "3c172d138712fafae980cf82b5b565c4a91b036d55b7433431633a97b1ce1d61",
+  "scope": "User requested repository backup including materials and continued experiments. Remaining files are synthetic SET histories/questions, generated diagnostic outputs and runtime provenance under the registered phase paths. This is the same material scope as the preceding public release."
+}

@@ -16,7 +16,7 @@ history or uniquely locating a fault. The existing adapter was trained in group 
 All 343 pre-inference tests, 261 sealed sources, opposite-order raw-file checks and 864 exact
 normal replays passed. Independent raw grading agrees on all 6,912 answers and 6,048 pairs.
 No Oracle, donor, new parameters or training. All prior failed scientific criteria remain false.
-Complete incremental backup is being prepared; the broader research goal remains active.
+Complete [incremental backup](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/question-state-freeze-2026-11-15) is published and all three assets were downloaded and byte-verified; the broader research goal remains active.
 
 **Previous diagnostic: all 1,728 single-token version-question readouts independently audited.**
 The [complete wording diagnostic](materials/updates/version-query-20261115/README.md)

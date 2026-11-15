@@ -1,0 +1,60 @@
+{
+  "status": "published_remote_assets_roundtrip_byte_verified",
+  "started_utc": "2026-11-15T12:57:36.923301+00:00",
+  "repository": "HUSRCF/HML-Hybrid-Memory-Lab",
+  "tag": "question-state-freeze-2026-11-15",
+  "target_commit": "d44559b72e8d02793ef666f52fcb9dbf020b2532",
+  "audit_sha256": "6cff340e8385670b71dcd37db456fc45569198f0f5a308a085c3ede1a2f144a2",
+  "archive_local_verification": {
+    "status": "all_archive_members_byte_verified",
+    "files_verified": 1473,
+    "archive_entries": 1474,
+    "archive": "question-state-freeze-20261115.tar.gz",
+    "bytes": 28505899,
+    "sha256": "75979d08eddad6f2de0694b27663b9c3f82dea323c6c4e5fb6f442996d671315"
+  },
+  "committed_snapshot_files_byte_verified": 325,
+  "expected_assets": {
+    "question-state-freeze-20261115.tar.gz": {
+      "bytes": 28505899,
+      "sha256": "75979d08eddad6f2de0694b27663b9c3f82dea323c6c4e5fb6f442996d671315"
+    },
+    "file_manifest.json": {
+      "bytes": 346159,
+      "sha256": "b45b63340d412f180264f1ad9646c472609764134721290b6f9d66674380356b"
+    },
+    "local_verification.json": {
+      "bytes": 260,
+      "sha256": "92d5fb50aa2d47e710c86bdeb447c022878ea99c13b49c85a4dceb95c2b1cde2"
+    }
+  },
+  "publication_source_sha256": "55123d5a6583b37acdc13a85271d79a91b8069032a6c01d70259acd7cd88045b",
+  "release_notes_sha256": "5e9747668bec3ea5fc33aa46c5647557350ad3e4410bd335fcc556f87b2463e5",
+  "release_id": 446062216,
+  "completed_utc": "2026-11-15T13:02:30.233509+00:00",
+  "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/question-state-freeze-2026-11-15",
+  "published_at": "2026-11-15T13:02:26Z",
+  "remote_assets": [
+    {
+      "name": "question-state-freeze-20261115.tar.gz",
+      "id": 751010043,
+      "bytes": 28505899,
+      "sha256": "75979d08eddad6f2de0694b27663b9c3f82dea323c6c4e5fb6f442996d671315",
+      "downloaded_bytes_verified": true
+    },
+    {
+      "name": "file_manifest.json",
+      "id": 751010027,
+      "bytes": 346159,
+      "sha256": "b45b63340d412f180264f1ad9646c472609764134721290b6f9d66674380356b",
+      "downloaded_bytes_verified": true
+    },
+    {
+      "name": "local_verification.json",
+      "id": 751010044,
+      "bytes": 260,
+      "sha256": "92d5fb50aa2d47e710c86bdeb447c022878ea99c13b49c85a4dceb95c2b1cde2",
+      "downloaded_bytes_verified": true
+    }
+  ]
+}

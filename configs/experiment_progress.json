@@ -4797,9 +4797,9 @@
     }
   },
   "next_actions": [
-    "Preserve full measured outputs, independent grades, all local controls and failed criteria; byte-verify and publish incremental backup.",
-    "Retire simple all-suffix freeze policy; separate version/entity/output-format processing on normally built histories.",
-    "Preregister any new intervention before implementation/data/inference; no larger-model scaleup or architecture success claim from this negative control."
+    "Retain published complete negative freeze control; no simple zero-gate deployment or larger-model scaleup.",
+    "Separate version selection,entity discrimination and output-format processing on normal failures while retaining native recurrent updates.",
+    "Register any next intervention and fresh validation cohort before implementation,data or inference; require strong GDN baseline and preserve all prior failed criteria."
   ],
   "active_exec_sessions": [],
   "tests_last_verified": {
@@ -4996,7 +4996,7 @@
       "coverage": "Actual allfive cache-origin cuts, complete final-row KV and bookkeeping guards, source-cache mutation rejection after individual operations, original runtime greedy/gold raw-vector reconstruction, stopping/position/loss corruption checks and129-source input seal."
     }
   },
-  "last_completed_utc": "2026-11-14T17:46:46.404345+00:00",
+  "last_completed_utc": "2026-11-15T13:03:16.135201+00:00",
   "planned_blocked_reader_adaptation": {
     "status": "completed_and_audited",
     "plan": "configs/blocked_reader_adaptation_plan.json",
@@ -6389,7 +6389,7 @@
     "canonical_full8064_completed": true
   },
   "latest_completed_diagnostic": "Allsixlocal_question_phase_freezes_lower_both_wordings_group3_protected144to1_all18non_integer",
-  "updated_utc": "2026-11-15T12:51:54.019427+00:00",
+  "updated_utc": "2026-11-15T13:03:16.135201+00:00",
   "previous_completed_phase": "32posthoc_question_path_mediation_readouts_completed_and_audited",
   "canonical_copy_necessity": {
     "status": "completed_independently_audited_exported_visually_inspected",
@@ -9889,23 +9889,8 @@
   "repository": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab",
   "resumed_utc": "2026-11-14T18:25:03.068726+00:00",
   "resume_reason": "User explicitly asked to continue experiments after verified GitHub backup completion.",
-  "publication_receipt": {
-    "verified_utc": "2026-11-14T18:24:06.221926+00:00",
-    "repository": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab",
-    "commit": "6a4d719dbebeba2f18b46532e675665d944ab338",
-    "tree": "cdc96571f3cded6dbae7f78e7c938bf6a6b45691",
-    "release": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/research-backup-2026-11-15",
-    "release_id": 445493660,
-    "published_at": "2026-11-14T18:23:30Z",
-    "assets_verified": 20,
-    "uploaded_bytes": 512898870,
-    "archived_files_verified": 6815,
-    "git_worktree_clean": true,
-    "research_status": "paused",
-    "original129sealed_sources_unchanged": true,
-    "sha256_verified_for_every_remote_asset": true
-  },
-  "current_phase": "question_state_freeze_backup",
+  "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-publication-20261115-01.json",
+  "current_phase": "question_state_freeze_completed_next_diagnostic_not_registered",
   "matched_shared_training_timing": {
     "status": "completed_audited_and_published_confirmation_all_three_criteria_failed",
     "plan": "/home/husrcf/Code/SAS/configs/matched_shared_training_timing_plan.json",
@@ -13088,7 +13073,7 @@
     "wording_control_is_diagnostic_not_final_architecture_contribution": true
   },
   "question_state_freeze": {
-    "status": "all6912audited_and_independently_regraded_exports_complete_backup_pending",
+    "status": "completed_audited_published_all6912_negative_control",
     "protocol": "configs/question_state_freeze_plan.json",
     "protocol_sha256": "4a7bdf4e2e19c1a8bb6cf5c64094fdf6fc8ee550115ea8160c749bb7df266630",
     "registered_utc": "2026-11-15T11:32:57.782343+00:00",
@@ -13121,7 +13106,7 @@
       "expected_prefix_guard_checks": 442,
       "expected_after_guard_checks": 50
     },
-    "next_action": "Preserve complete negative outcome and publish verified backup. Do not adopt question-wide zero-gate strategy or infer erased history from format collapse.",
+    "next_action": "No deployment or scaleup of zero-gate policy. Preregister a nondestructive normal-failure version/entity/format diagnostic; keep native recurrence,existing GDN baseline and all prior failed criteria.",
     "new_cpu_tests_passed": 12,
     "full_regression_session": 37696,
     "immediate_readout_and_future_state_both_affected_by_zero_gates": true,
@@ -13157,6 +13142,16 @@
     "group3_state_losses": 312,
     "group3_state_protected_correct": 1,
     "all18_correct": 0,
-    "all18_non_integer_outputs": 864
-  }
+    "all18_non_integer_outputs": 864,
+    "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/question-state-freeze-publication-20261115-01.json",
+    "publication_receipt_sha256": "a3f0ced77dafb56f9a02f4abe0352adc4ad30fd8b912f82bf097069eaa74113c",
+    "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/question-state-freeze-2026-11-15",
+    "release_target_commit": "d44559b72e8d02793ef666f52fcb9dbf020b2532",
+    "archive_sha256": "75979d08eddad6f2de0694b27663b9c3f82dea323c6c4e5fb6f442996d671315",
+    "archive_files": 1473,
+    "archive_members": 1474,
+    "remote_assets_byte_verified": 3,
+    "committed_snapshot_files_byte_verified": 325
+  },
+  "latest_published_phase": "question_state_freeze"
 }
