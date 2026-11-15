@@ -2902,3 +2902,5 @@ The broader goal remains active; this result does not trigger new training.
 最新完成：[匹配训练/部署时机的完整新样本结果](materials/updates/trained-shared-timing-20261115/README.md)。5376次读出与独立审计完成；三项研究门槛均未通过，匹配训练的收益集中于一跳任务。
 
 后续完成：[冻结历史状态的证据访问诊断](materials/updates/trained-timing-evidence-access-20261115/README.md)。5040次正式读出、独立审计及全量导出完成；旧失败门槛保持原判，研究继续。
+
+完整结果已发布至 [逐字节验证的 GitHub Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/query-layer-localization-2026-11-15)，目标提交 `0a6cb60609566d82a9b9fb8e85f549c78a39d95a`。备份包含 1,315 个文件，压缩包 SHA-256 为 `07c3fdff5b7af2852ad766f86fd8cfe9c1edd32c513ee1474952162dd25ac933`；三个附件均经远端下载校验。发布回执保存在本阶段材料中。

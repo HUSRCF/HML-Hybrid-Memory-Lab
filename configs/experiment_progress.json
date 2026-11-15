@@ -6009,7 +6009,7 @@
     "branch_decision": "Registered counterbalanced repeat-loss primary failed in BOTH cohorts: each has only1positive guard-qualified base stream, versus required2. Retain all64pairs and384outcomes. Earlier historical-preservation primary remains failed; no architecture training, additional load hunting or scaling follows from this branch."
   },
   "last_completed_phase": "unseen_shared_timing3360full_answers_completed_and_audited_both_registered_criteria_failed",
-  "next_research_step": "Publish complete layer localization, then register natural-update load controls on the fixed native/GDN strong baseline before new data or training.",
+  "next_research_step": "Prospectively register natural unrelated-update load controls on native and existing GDN baseline; preserve all earlier failed criteria.",
   "planned_copy_dependency_transfer": {
     "status": "completed_and_independently_audited_shared_candidate_gate_failed",
     "plan": "configs/copy_dependency_transfer_plan.json",
@@ -12729,7 +12729,7 @@
     }
   },
   "query_layer_localization": {
-    "status": "completed_independently_audited_exported_visually_inspected",
+    "status": "completed_audited_exported_and_published",
     "protocol": "configs/query_layer_localization_plan.json",
     "protocol_sha256": "967a7693dd3f3c4ff2cb9e71353742e68297b460495b12f35ce3c5d7ec35aa56",
     "prior_sources_immutable": 222,
@@ -12741,7 +12741,7 @@
     "new_environment": false,
     "new_code_started": true,
     "model_inference_started": true,
-    "next_action": "Package and publish complete audited phase, preserving original failed audit and audit-only correction. Then prospectively register natural-update diversity/load diagnostic before generating data; no new training.",
+    "next_action": "Register prospective natural-update load diagnostic, then tokenizer-only feasibility and immutable packet; no new training.",
     "new_unit_tests_passed": 11,
     "new_unit_tests_seconds": 8.697,
     "input_feasibility_passed": true,
@@ -12828,6 +12828,18 @@
       "cache-fields": 6912
     },
     "figure_visually_inspected": true,
-    "publication_pending": true
+    "publication_pending": false,
+    "publication_receipt": "/media/990Pro/Code/SAS/artifacts/memory_update/query-layer-publication-20261115-01.json",
+    "publication_receipt_sha256": "38a089267d537f9b1869e4edc6a455dd995749343ad38c2399a9a60731f9e93a",
+    "release_url": "https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/query-layer-localization-2026-11-15",
+    "release_target_commit": "0a6cb60609566d82a9b9fb8e85f549c78a39d95a",
+    "archive_verification": {
+      "status": "all_archive_members_byte_verified",
+      "files_verified": 1315,
+      "archive_entries": 1316,
+      "archive": "query-layer-20261115.tar.gz",
+      "bytes": 13373691,
+      "sha256": "07c3fdff5b7af2852ad766f86fd8cfe9c1edd32c513ee1474952162dd25ac933"
+    }
   }
 }

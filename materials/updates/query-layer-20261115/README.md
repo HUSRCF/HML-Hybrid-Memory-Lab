@@ -57,3 +57,5 @@ GDN 的 NH.L11 总体 192/192，是在这批复用输入上的条件干预结果
 [下一步候选问题草稿](next-question-draft.md)保留其写作时点。它尚未登记、生成新数据或执行模型推理；完成本轮备份后再正式登记。暂不新增训练、环境或更大模型。
 
 恢复需要前序 Release 链、已有 GDN 检查点、本地 Qwen3.5-2B IT 权重和记录的 Conda base/ROCm/Transformers 后端。供体和缓存保存了实际字节指纹与布局，完整张量未另存重复副本，重建需同环境重跑。预训练权重与环境不打包。
+
+完整结果已发布至 [逐字节验证的 GitHub Release](https://github.com/HUSRCF/HML-Hybrid-Memory-Lab/releases/tag/query-layer-localization-2026-11-15)，目标提交 `0a6cb60609566d82a9b9fb8e85f549c78a39d95a`。备份包含 1,315 个文件，压缩包 SHA-256 为 `07c3fdff5b7af2852ad766f86fd8cfe9c1edd32c513ee1474952162dd25ac933`；三个附件均经远端下载校验。发布回执保存在本阶段材料中。
